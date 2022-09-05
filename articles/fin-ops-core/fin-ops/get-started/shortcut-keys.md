@@ -2,7 +2,7 @@
 title: Pikanäppäimet
 description: Tässä artikkelissa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet talous- ja toimintosovelluksia.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140436"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357574"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
@@ -135,10 +135,10 @@ Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan k�
 | Vieritys vaakasuunnassa                                                                                                   | Vaihto + vierityspainike             |
 | Siirry seuraavaan/edelliseen sarakkeeseen                                                                                       | Sarkain / Vaihto+Sarkain                 |
 | Siirry seuraavalle/edelliselle riville                                                                                          | Ylänuoli/alanuoli           |
-| Siirry seuraavalle/edelliselle riville valitsematta<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote> | Ctrl+Ylänuoli / Ctrl+Alanuoli |
-| Valitse/tyhjennä nykyinen rivi<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote>                    | Ctrl+Väli / Ctrl+Napsautus         |
-| Lisää seuraava/edellinen rivi valittuun joukkoon<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote>   | Shift+Space                     |
-| Lisää sarja rivejä valittuun joukkoon<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote>         | Vaihto+Napsautus                     |
+| Siirry seuraavalle/edelliselle riville valitsematta<br><br>**Huomautus:** Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita. | Ctrl+Ylänuoli / Ctrl+Alanuoli |
+| Valitse/tyhjennä nykyinen rivi<br><br>**Huomautus:** Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.                   | Ctrl+Väli / Ctrl+Napsautus         |
+| Lisää seuraava/edellinen rivi valittuun joukkoon<br><br>**Huomautus:** Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.  | Shift+Space                     |
+| Lisää sarja rivejä valittuun joukkoon<br><br>**Huomautus:** Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.         | Vaihto+Napsautus                     |
 | Siirry seuraavalle/edelliselle tietosivulle                                                                                   | Page Up / Page Down             |
 | Luo uusi rivi ruudukon alaosaan                                                                             | Alanuoli (edellisellä rivillä)  |
 | Siirry ensimmäiseen tietueeseen                                                                                               | Ctrl+Home                       |
@@ -148,7 +148,7 @@ Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan k�
 | Siirry seuraavalle merkitylle riville                                                                                            | Alt+Shift+M, L                  |
 | Siirry edelliselle merkitylle riville                                                                                        | Alt+Shift+M, P                  |
 | Siirry viimeiselle merkitylle riville                                                                                           | Alt+Shift+M, N                  |
-| Suorita ruudukon oletustoiminto<blockquote>[!NOTE] Tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä.</blockquote> | Enter                           |
+| Suorita ruudukon oletustoiminto<br><br>**Huomautus:** Tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä. | Enter                           |
 | Kohdistuksen siirtäminen valitun rivin ja otsikkorivin välillä                                                               | Alt+Vaihto+H                     |
 | Suurenna tai pienennä nykyistä saraketta (kohdistus otsikkorivillä)                                                  | Oikea nuoli, vasen nuoli        |
 | Siirrä nykyinen sarake seuraavaan/edelliseen asemaan (kohdistus otsikkorivillä)                                   | Ctrl+Vaihto+Oikea nuoli / Ctrl+Vaihto+Vasen nuoli |

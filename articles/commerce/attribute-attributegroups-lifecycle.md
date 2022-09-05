@@ -1,119 +1,114 @@
 ---
 title: Määritteiden ja määriteryhmien hallinta
-description: Näiden artikkelissa avulla voit kuvata tuotteen ja sen ominaisuudet käyttäjän kenttämääritteiden avulla.
+description: Tämä artikkeli kuvaa, kuinka määritteitä ja määriteryhmiä hallitaan tuotteiden ja niiden ominaisuuksien kuvaamiseen Microsoft Dynamics 365 Commercessa.
 author: ashishmsft
-ms.date: 04/28/2018
+ms.date: 08/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
+ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
-ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aad448ea733aabdff3dc4438dcb682d49e0665c0
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876661"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9386969"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Määritteiden ja määriteryhmien hallinta
 
 [!include [banner](includes/banner.md)]
 
-*Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Määritteitä voidaan liittää erilaisiin Commerce-yksiköihin, kuten tuoteluokkiin ja kanaviin, ja niille voidaan määrittää oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai kanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, kanavan tasolla tai luettelossa.
+Tämä artikkeli kuvaa, kuinka määritteitä ja määriteryhmiä hallitaan tuotteiden ja niiden ominaisuuksien kuvaamiseen Microsoft Dynamics 365 Commercessa.
 
+*Määritteet* tarjoavan tavan kuvata tuotteita ja niiden ominaisuuksia käyttäjän määrittämien kenttien avulla. Esimerkkeihin kuuluvat muistin koko, kovalevyn kapasiteetti ja Energy Star -yhteensopivuus.
+
+Määritteitä voidaan liittää erilaisiin Commerce-yksiköihin, kuten tuoteluokkiin ja kanaviin, ja niille voidaan määrittää oletusarvoja. Kun määritteet liittyvät tuoteluokkiin tai -kanaviin, tuotteet perivät nämä määritteet ja niiden oletusarvot. Määritteiden oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, kanavan tasolla tai luettelossa.
 
 Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 
-| Luokka   | Ominaisuus                | Sallitut arvot          | Oletusarvo |
-|------------|--------------------------|-----------------------------|---------------|
-| TV & Video | Brandi                    | Mikä tahansa voimassa oleva tuotemerkkiarvo       | None          |
-| TV         | Näytön koko              | 20–80 tuumaa                | None          |
-|            | Vertikaaliresoluutio      | 480i, 720p, 1080i, tai 1080p | 1080p         |
-|            | Näytön päivitystaajuus      | 60 Hz, 120 Hz, tai 240 Hz       | 60 Hz          |
-|            | HDMI-tuloja              | 0–10                        | 3             |
-|            | DVI-tuloja               | 0–10                        | 1             |
-|            | Komposiittituloja         | 0–10                        | 2             |
-|            | Komponenttituloja         | 0–10                        | 1             |
-| LCD-näyttö        | 3D-valmius                 | Kyllä tai Ei                   | Kyllä           |
-|            | 3D käytössä               | Kyllä tai Ei                   | Ei            |
-| Plasma     | Toimintalämpötila vähintään      | 0–43 astetta              | 32            |
-|            | Toimintalämpötila korkeintaan        | 0–43 astetta              | 100           |
-| Projektio | Projektiokuvaputken takuu | 6, 12, tai 18 kuukautta         | 12            |
-|            | \# projektiokuvaputkea   | 1–5                         | 3             |
+| Luokka   | Ominaisuus           | Sallitut arvot                        | Oletusarvo |
+|------------|---------------------|-------------------------------------------|---------------|
+| TV & Video | Tuotemerkki               | Mikä tahansa voimassa oleva tuotemerkkiarvo                     | Ei mikään          |
+| TV         | Näytön koko         | 20–85 tuumaa                              | 55 tuumaa     |
+|            | Vertikaaliresoluutio | 4K (2160p), Täysi HD (1080p) tai HD (720p) | 4K (2160p)    |
+|            | Näytön päivitystaajuus | 60 Hz, 120 Hz, tai 240 Hz                     | 60 Hz          |
+|            | HDMI-tuloja         | 0–10                                      | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Määritteet ja määritetyypit
 
-Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkälaista tietoa voi lisätä tiettyyn määritteeseen. Seuraavia määritetyyppejä tuetaan:
+Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkälaista tietoa voi lisätä tiettyyn määritteeseen. Commercessa tuetaan seuraavia määritetyyppejä:
 
 - **Valuutta** – Tämä tyyppi tukee valuutta-arvoja. Se voidaan sitoa (eli se voi tukea arvoaluetta) tai se voidaan jättää avoimeksi.
 - **DateTime** – Tämä tyyppi tukee päivämäärä- ja aika-arvoja. Se voidaan sitoa tai jättää avoimeksi.
 - **Desimaali** – Tämä tyyppi tukee numeerista arvoa, jota sisältää desimaaleja. Se tukee myös mittayksikköä. Se voidaan sitoa tai jättää avoimeksi.
 - **Kokonaisluku** – Tämä tyyppi tukee numeerista arvoa. Se tukee myös mittayksikköä. Se voidaan sitoa tai jättää avoimeksi.
-- **Teksti** – Tämä tyyppi tukee tekstiarvoa. Se tukee myös etukäteen määritettyä mahdollisten arvojen joukkoa (eli *luettelointia*).
+- **Teksti** – Tämä tyyppi tukee tekstiarvoa. Se tukee myös etukäteen määritettyä mahdollisten arvojen joukkoa, kun **Kiinteä luettelo** -asetus on käytössä.
 - **Totuusarvo** – Tämä tyyppi tukee binaariarvoa (**tosi** tai **epätosi**).
 - **Viite** – Tämä tyyppi viittaa muihin määritteisiin.
 
+> [!NOTE]
+> [Azure-hakuindeksin rajoituksista](/rest/api/searchservice/data-type-map-for-indexers-in-azure-search) johtuen **Desimaali**-määritetyyppiä ei tueta pilvipohjaisille hakukokemuksille. Azure Cognitive Search ei tue **Desimaali**-määritetyyppien muuntamista **Edm.Double** -kohdeindeksin kenttätyypeiksi , koska tämä muunto vähentäisi tarkkuutta.
+
 ### <a name="set-up-attribute-types"></a>Määritä määritetyypit
 
-1. Kirjaudu tausta-asiakasohjelmaan myynninedistämispäällikkönä.
-2. Valitse **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Luokat ja määritteet** &gt; **Määritetyypit**.
-3. Luo kaksi **Teksti**-tyyppistä määritetyyppiä, valitse **Kiinteä luettelo** -asetukseksi **Kyllä** ja lisää sitten arvoluettelo:
+Määritä määritetyypit noudattamalla tämän esimerkkitoimenpiteen vaiheita.
 
-    - Anna toisen määritetyypin nimeksi **Linssin muoto** ja lisää seuraavat arvot: **Soikea**, **Neliö** ja **Suorakaide**.
-    - Anna toisen määritetyypin nimeksi **Aurinkolasien merkki** ja lisää seuraavat arvot: **Ray ban**, **Aviator** ja **Oakley**.
+1. Kirjaudu Commerce headquartersiin tuotepäällikkönä.
+1. Siirry kohtaan **Tuotetietojen hallinta \> Määritys \> Luokat ja määritteet \> Määritetyypit**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Syötä  **Määritetyypin nimi** -kenttään **Laukkutyyppi**.
+1. Valitse **Tyyppi**-kentässä **Teksti**.
+1. Määritä **Kiinteä luettelo** -asetuksen arvoksi **Kyllä**.
+1. Valitse **Arvot**-pikavälilehdessä **Lisää**.
+1. Syötä uuden rivin **Arvo**-kenttään **Olkalaukku**.
+1. Lisää viisi riviä. Syötä kunkin **Arvo**-kenttään eri arvo: **Pideltävä**, **Käsilaukku**, **Reppu**, **Postilaukku** tai **Lompakko**.
+1. Valitse toimintoruudussa **Tallenna**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Syötä  **Määritetyypin nimi** -kenttään **Aurinkolasimerkki**.
+1. Valitse **Tyyppi**-kentässä **Teksti**.
+1. Määritä **Kiinteä luettelo** -asetuksen arvoksi **Kyllä**.
+1. Valitse **Arvot**-pikavälilehdessä **Lisää**.
+1. Syötä uuden rivin **Arvo**-kenttään **Ray ban**.
+1. Lisää kaksi riviä. Syötä kunkin **Arvo**-kenttään eri arvo: **Aviator** tai **Oakley**.
+1. Valitse toimintoruudussa **Tallenna**.
 
-![Määritetyypit.](media/AttributeType.png)
+![Määritetyypit-sivu.](media/AttributeType_2022Series.png)
 
 ### <a name="set-up-an-attribute"></a>Määritteen määrittäminen
 
-1. Kirjaudu tausta-asiakasohjelmaan myynninedistämispäällikkönä.
-2. Valitse **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Luokat ja määritteet** &gt; **Määritteet**.
-3. Luo määrite, jonka nimi on **Linssi**.
-4. Määritä **Määritteen tyyppi** -kentän arvoksi **Linssin muoto**.
+Määritä määritetyyppi noudattamalla tämän esimerkkitoimenpiteen vaiheita.
 
-![Määritteet.](media/Attribute.png)
+1. Kirjaudu Commerce headquartersiin tuotepäällikkönä.
+1. Siirry kohtaan **Tuotetietojen hallinta \> Määritys \> Luokat ja määritteet \> Määritteet**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Syötä **Nimi**-kentään **Laukkutyyppi**.
+1. Valitse  **Määritetyyppi** -kentässä **Laukkutyyppi**.
+1. Valitse toimintoruudussa **Tallenna**.
+
+![Määritteet-sivu.](media/Attribute_2022Series.png)
 
 ## <a name="attribute-metadata"></a>Määritteen metatiedot
 
 *Määritteen metatiedoissa* voit valita asetuksia, jotka määrittävät, miten kunkin tuotteen määritteet toimivat. Voit esimerkiksi määrittää, ovatko määritteet pakollisia sekä voiko niitä käyttää hauissa ja suodattimina.
 
-Tuotteiden määritteiden metatietoasetukset voidaan korvata kanavatasolla. Tätä ominaisuutta käsitellään myöhemmin tässä artikkelissa.
+Tuotteiden määritteiden metatietoasetukset voidaan korvata kanavatasolla.
 
-Olet ehkä huomannutkin, että **Määritteet**-sivulla on määritteen metatietoihin liittyviä vaihtoehtoja. **POS:n määritteen metatiedot** -kohdan **Voidaan tarkentaa** -asetus vaikuttaa määritearvojen toimintaan myyntipisteessä tai tapaan, jolla järjestelmä käsittelee kyseisiä määritearvoja. Vain määritteet, joiden **Voidaan tarkentaa** -asetukseksi voi valita **Kyllä**, näkyvät myyntipisteessä tuotteiden tarkennusta tai suodatusta varten.
-
-Muut **Määritteet**-sivun määritteen metatietoasetukset:
-
-- Etsittävissä
-- Noudettavissa
-- Voidaan kysellä
-- Lajiteltavissa
-- Salli useat arvot
-- Ohita kirjainkoko ja muoto
-- Täysi vastaavuus
-
-Nämä asetukset oli tarkoitettu alun perin verkkokaupan hakutoimintojen parantamista varten. Vaikka verkkokauppa ei ole heti käytettävissä Commercessa, se sisältää eCommerce Publishing Software Development Kitin (SDK). Asiakkaat voivat viedä tuotteita tämän SDK:n avulla valitsemaansa hakuindeksiin. Vaikka tuotetiedot tuodaan, asiakkaiden on silti voitava erottaa toisistaan haettavissa olevat tiedot, tiedot, joissa voidaan tehdä hakuja ja niin edelleen. Tällä tavoin voidaan luoda optimaalinen indeksi, jolla voi varmistaa, että vain *heidän mielestään* indeksoitavat määritteet indeksoidaan.
-
-Lisätietoja edellä mainittujen asetusten tarkoituksesta on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](/SharePoint/search/search-schema-overview).
+**Määritteet**-sivulla on useita määritteen metatietoihin liittyviä vaihtoehtoja. Voit esimerkiksi määrittää **Voidaan tarkentaa** -valinnaksi **Kyllä** kohdan **Määritteiden metatiedot Commerce-kanaville** alla ja määrite näytetään tuotteiden tarkennusta tai suodatusta varten hakutuloksissa ja luokkien selaussivuilla. Voit määrittää määritteen tarkennettavaksi valitsemalla ensin **Suodatusasetukset** toimintopaneelissa ja vahvistamalla määritteen suodatusasetukset.
 
 ## <a name="filter-settings-for-attributes"></a>Määritteiden suodatusasetukset
 
-Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suodattimet näytetään myyntipisteessä. Voit käyttää määritteen suodatusasetuksia valitsemalla **Määritteet**-sivulla ensin määritteen ja sitten toimintoruudussa **Suodatusasetukset**.
+Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suodattimet näytetään myyntipisteessä (POS). Voit käyttää määritteen suodatusasetuksia valitsemalla määritteen **Määritteet**-sivulla toimintoruudussa **Suodatusasetukset**.
 
-**Suodatuksen näyttöasetukset** -sivulla on seuraavat kentät:
+**Suodatusasetukset**-sivulla on seuraavat kentät:
 
 - **Nimi** – Tämä kentän arvo on oletusarvoisesti määritteen nimi. Voit kuitenkin muuttaa arvon.
 - **Näyttöasetus** – Seuraavat asetukset ovat käytettävissä:
 
-    - **Yksi arvo** – Tämä asetus on seuraavien määritetyyppien valittavissa: **Totuusarvo**, **Valuutta**, **Desimaali**, **Kokonaisluku** ja **Teksti**. Tällä asetuksella näille määritteille voidaan valita yksi arvo tarkennettavaksi asiakasohjelmassa.
-    - **Useita arvoja** – Tämä asetus on seuraavien määritetyyppien valittavissa: **Valuutta**, **Desimaali**, **Kokonaisluku** ja **Teksti**. Tällä asetuksella tälle määritteelle voidaan valita useita arvoja tarkennettavaksi asiakasohjelmassa.
+    - **Yksi arvo** – Tämä asetus on seuraavien määritetyyppien valittavissa: **Totuusarvo**, **Valuutta**, **Desimaali**, **Kokonaisluku** ja **Teksti**. Se sallii vain yksittäisen arvon valinnan tuoteluettelosivujen tarkennuksille, kuten luokkien selaamiselle ja tuotehakutulossivuille.
+    - **Useita arvoja** – Tämä asetus on seuraavien määritetyyppien valittavissa: **Valuutta**, **Desimaali**, **Kokonaisluku** ja **Teksti**. Se mahdollistaa useiden arvojen valinnan määritteelle asiakasohjelmassa tarkennusta varten.
 
 - **Näytön ohjaus** – Seuraavat asetukset ovat käytettävissä:
 
@@ -124,7 +119,7 @@ Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suod
 
 - **Raja-arvo** – Tämä asetus on pakollinen, jos olet valinnut näytön ohjaustyypiksi **Alue**. Voit määrittää arvot käyttämällä puolipistettä (;) erottimena.
 
-    Jos suodattimena on esimerkiksi **Laukkumäärä**, raja-arvo voi olla **10; 20; 50; 100; 200; 500; 1000; 5000**. Siinä tapauksessa seuraavat alueet näkyvät myyntipisteessä. Jos jollakin tulosjoukon alueella ei ole tuotteita, kyseinen alue näkyy himmennettynä.
+    Esimerkiksi **Laukun tilavuus** -määritteelle, jonka määritetyyppi on **Kokonaisluku**, kynnysarvo voi olla **10; 20; 50; 100; 200; 500; 1000; 5000**. Siinä tapauksessa seuraavat alueet näkyvät myyntipisteessä. Jos jollakin tulosjoukon alueella ei ole tuotteita, kyseinen alue näkyy himmennettynä.
 
     - Alle 10
     - 10–20
@@ -134,126 +129,204 @@ Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suod
     - 200–500
     - 500 tai enemmän
 
-![Määritteen suodatusasetukset.](media/AttributeFilterSettings.PNG)
+Suodatinasetukset määritteille soveltuvat vain tuotemääritteille ja niitä voidaan käyttää tuotehaun ja luokkien selaamisen tulosten tarkentamiseen. Niitä ei käytetä asiakashakuun tai tilaushakuun, vaikka samoja määritteitä voidaan käyttää rikastamaan asiakas-tai tilaustietoja.
+
+Commercen oletusmoduuleissa ei ole mukana tukea **Näytön hallinta** -suodatinasetuksille, kuten **Alue**, **Liukukytkin** ja **Liukukytkin palkeilla**. The **Väli**- ja **Liukusäädin**-asetuksia tuetaan jatkossakin myyntipisteratkaisuille, kun taas **Liukusäädin palkeilla** -asetusta käytetään vanhoissa SharePoint-verkkokaupoissa ja se on jatkossakin saatavilla kolmannen osapuolen integrointeja ja mukautettuja skenaarioita varten.
+
+Suosittelemme, että tarkennettavilla määritteillä on **Teksti**-tyyppinen määrite, jossa **Kiinteä luettelo** -valinta on käytössä ja että luettelo pidetään hallittavan kokoisena (enintään 100-200 yksilöllistä arvoa). Jos tarkentajalla on 1 000 tai useampia yksilöllisiä arvoja, on sopivampaa käyttää **Teksti**-tyyppistä määritettä, jossa **Kiinteä luettelo** -valinta on pois käytöstä.
+
+Käännökset ovat kriittisiä määritteiden nimien ja niiden arvojen kannalta. **Teksti**-tyyppisille määritteille, joissa **Kiinteä luettelo** -valinta on käytössä, käännöksen voidaan määrittää määritteiden arvoille kohdan **Määritetyyppi** alla. Voit määrittää muille määritetyypeille käännökset sivulla, jolla määritteiden arvot määritetään. Voit esimerkiksi määrittää **Teksti**-tyyppiselle määritteelle oletusarvon käännökset määritteen **Määritteet**-sivulla. Jos kuitenkin ohitat oletusarvon tuotetasolla, voit määrittää määritteen käännökset tuotteen **Tuotemääritteet**-sivulla .
+
+Kun määrite on merkitty tarkennettavaksi kanavalle, määritetyyppiä ei tule päivittää. Muutoin vaikutat tuotetietojen julkaisemiseen hakuindeksiin. Suosittelemme sen sijaan, että luot uuden määritteen uudelle tarkentajatyypille ja poistat määritteen käytöstä muista määriteryhmistä.
+
+Järjestelmä tukee hakutuloksia määritteiden perusteella, mutta hakee vain hakusanojen tarkat vastaavuudet. Esimerkiksi **Kangas**-määritteen arvo on **Cashmere-puuvilla**. Jos asiakas etsii haulla "Cash", mitään tuotteita, joissa **Cashmire-puuvilla** kankaana, ei noudeta. Jos asiakas kuitenkin etsii haulla "Cashmere", "Puuvilla" tai "Cashmere Puuvilla", tuotteet, joiden kankaana on **Cashmere-puuvilla** haetaan.
+
+### <a name="additional-attribute-metadata-options"></a>Lisämääritteiden metatietojen asetukset
+
+> [!NOTE]
+> Nämä määritteen metatietojen vaihtoehdot koskevat vain vanhoja SharePoint online -kauppoja ja ulkoisia integrointeja. Lisätietoja näistä määritteiden metatietoasetuksista on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](/SharePoint/search/search-schema-overview).
+
+Seuraavat määritteiden metatietojen lisäasetukset ovat myös käytettävissä **Määritteet**-sivulla:
+
+- Etsittävissä
+- Noudettavissa
+- Voidaan kysellä
+- Lajiteltavissa
+- Ohita kirjainkoko ja muoto
+- Täysi vastaavuus
+
+Nämä asetukset oli tarkoitettu alun perin vanhojen SharePoint-pohjaisten verkkokauppojen hakutoimintojen parantamista varten. Ne eivät välttämättä koske Commercen sähköisen kaupankäynnin internet-sivustoja tai pos-päätteet. Koska headless -integrointia tuetaan edelleen, nämä vaihtoehdot ovat käytettävissä määritteen metatietojen viemiseen Commerce software development kit (SDK) -rakenteen avulla. Commerce SDK:n avulla voit asettaa tuotteet mukautettuun, optimoituun ulkoiseen hakuindeksiin. Näin voit varmistaa, että vain määritteet, jotka pitää indeksoida, indeksoidaan.
 
 ## <a name="attribute-groups"></a>Määriteryhmät
 
-Kun määritteet on määritetty, ne voidaan määrittää määriteryhmiin *Määriteryhmää* käytetään komponentin tai alikomponentin yksittäisten määritteiden ryhmittelemiseen tuotemääritysmallissa. Määrite voi sisältyä useisiin määriteryhmiin. Määriteryhmät voivat auttaa käyttäjiä tuotteiden määrityksessä, sillä eri valinnat järjestetään tietyn kontekstin mukaan. Määriteryhmät voidaan määrittää luokkiin tai kanaviin.
+*Määriteryhmää* käytetään komponentin tai alikomponentin yksittäisten määritteiden ryhmittelemiseen tuotemääritysmallissa. Määrite voi sisältyä useisiin määriteryhmiin. Määriteryhmät voivat auttaa käyttäjiä tuotteiden määrityksessä, sillä eri valinnat järjestetään tietyn kontekstin mukaan. Määriteryhmät voidaan määrittää luokkiin tai kanaviin. Voit määrittää oletusarvot myös määriteryhmään sisältyvillä määritteille.
 
-Voit määrittää oletusarvot myös määriteryhmään sisältyvillä määritteille. Voit esimerkiksi lisätä värin määritteen määriteryhmään ja valita määritteen oletusarvoksi **sinisen**. Kun määriteryhmä sitten lisätään tuotteeseen, jossa väri on yksi määritteistä, **Sininen** näkyy kyseisen tuotteen oletusvärinä.
-
-![Määriteryhmät.](media/AttributeGroup.png)
+![Määriteryhmät-sivu.](media/AttributeGroup_2022Series.png)
 
 ### <a name="create-an-attribute-group"></a>Luo ominaisuusryhmä
 
-1. Kirjaudu tausta-asiakasohjelmaan myynninedistämispäällikkönä.
-2. Valitse **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Luokat ja määritteet** &gt; **Määriteryhmät**.
-3. Luo määriteryhmä, jonka nimi on **Merkkiaurinkolasit**.
-4. Lisää seuraavat määritteet: **Linssin muoto** ja **Aurinkolasien merkki**.
+Luo määriteryhmä noudattamalla tämän esimerkkitoimenpiteen vaiheita.
+
+1. Kirjaudu Commerce headquartersiin tuotepäällikkönä.
+1. Valitse **Tuotetietojen hallinta \> Asetukset \> Luokat ja määritteet \> Määriteryhmät**.
+1. Luo määriteryhmä, jonka nimi on **Kauluspaidat**.
+1. Lisää seuraavat määritteet: **PesuTapa**, **KaulusTyyppi**, **Kokoelma** ja **Malli**.
+
+> [!NOTE]
+> Määriteryhmän määritteiden näyttöjärjestysarvot eivät vaikuta haku- ja luokkaselaustulosten järjestykseen tai määritteiden järjestykseen. Ne koskevat vain tilausmääriteskenaariota.
 
 ### <a name="assign-attribute-groups-to-categories"></a>Määriteryhmien määrittäminen luokkiin
 
-Vähintään yksi määriteryhmä voidaan liittää luokkasolmuihin seuraavan tyyppisiä vähittäismyynnin luokkahierarkioissa: Commerce-tuotehierarkia, Kanavan siirtymisluokkahierarkia ja Lisätuoteluokkahierarkia. Kun tuotteet sitten luokitellaan, ne perivät määriteryhmiin sisältyvät määritteet.
+Määriteryhmiä voi liittää seuraavantyyppisten luokkahierarkioiden luokkasolmuihin:
 
-![Tuotehierarkia – Tuotemääriteryhmät.](media/AGRetailProdHierarchy.PNG)
+- Kaupankäynnin tuotehierarkia
+- Vähittäismyyntikanavan luokkahierarkia
+- Lisätuoteluokan hierarkia
 
-Määritä määriteryhmät luokkiin Commerce-tuotehierarkiassa seuraavasti.
+Kun tuotteet luokitellaan määriteryhmiin liitettyihin luokkiin, ne perivät näihin määriteryhmiin sisältyvät määritteet.
 
-1. Kirjaudu tausta-asiakasohjelmaan myynninedistämispäällikkönä.
-2. Valitse **Retail ja Commerce** &gt; **Luokka- ja tuotehallinta** &gt; **Commerce-tuotehierarkia**.
-3. Valitse **muodin siirtymishierarkia**.
-4. Valitse **Miesten vaatteet** -kohdassa **Housut**-luokka ja lisää sitten **Tuotemääriteryhmät**-pikavälilehdessä **Miesten vyöt** -määriteryhmä.
-5. Valitse **Merkkiaurinkolasit**-luokka ja tarkista **Merkkiaurinkolasit**-määriteryhmän uudet määritteet valitsemalla **Näytä määritteet**.
+![Tuotteen määriteryhmien pikavälilehti Commercen tuotehierarkiasivulla.](media/AGRetailProdHierarchy_2022Series.png)
 
-    Määriteryhmässä pitäisi nyt näkyä uudet **Linssin muoto**- ja **Aurinkolasien merkki** -määritteet.
+Määritä määriteryhmät luokkiin Commerce-tuotehierarkiassa seuraamalla tämän esimerkkikäytännön vaiheita.
 
-6. Valitse **Miesten vaatteet** -kohdassa **Housut**-luokka ja tarkista **Miesten vyöt** määriteryhmän määritteet valitsemalla **Näytä määritteet**.
+1. Kirjaudu Commerce headquartersiin tuotepäällikkönä.
+1. Valitse **Retail ja Commerce \> Luokka- ja tuotehallinta \> Commerce-tuotehierarkia**.
+1. Valitse siirtymishierarkia **Muoti**.
+1. Valitse **Miesten vaatteet** -kohdassa **Housut**-luokka ja lisää sitten **Tuotemääriteryhmät**-pikavälilehdessä **Miesten vyöt** -määriteryhmä.
+1. Valitse **Merkkiaurinkolasit**-luokka ja tarkista **Merkkiaurinkolasit**-määriteryhmän uudet määritteet valitsemalla **Näytä määritteet**. Määriteryhmässä pitäisi nyt näkyä uudet **Linssin muoto**- ja **Aurinkolasien merkki** -määritteet.
+1. Valitse **Housut**-luokka ja tarkista **Miesten vyöt** määriteryhmän määritteet valitsemalla **Näytä määritteet**. Määriteryhmässä pitäisi nyt näkyä määritteet **Miesten vyön merkki**, **Vyön materiaali** ja **Vyön koko**.
 
-    Määriteryhmässä pitäisi nyt näkyä määritteet **Miesten vyön merkki**, **Vyön materiaali** ja **Vyön koko**.
+Samalla perusmenettelyllä voi määrittää myös määriteryhmiä luokkiin kanavan siirtymisluokkahierarkiaan ja lisätuoteluokkahierarkiaan. Vaiheessa 2 voit kuitenkin käyttää yhtä seuraavista polkuista sen hierarkian mukaan, johon haluat liittää määriteryhmiä:
+
+- **Kanavan siirtymisluokkahierarkia:** Siirry kohtaan **Vähittäismyynti ja Commerce \> Luokkien ja tuotteiden hallinta \> Kanavan siirtymisluokat**.
+- **Lisätuoteluokkahierarkia:** Siirry kohtaan **Vähittäismyynti ja Commerce \> Luokkien ja tuotteiden hallinta \> Lisätuoteluokat**.
 
 > [!NOTE]
-> Tällä menettelyllä voi määrittää myös määriteryhmiä luokkiin kanavan siirtymisluokkahierarkiaan ja lisätuoteluokkahierarkiaan. Käytä vaiheessa 2 seuraavia siirtymispolkuja:
->
-> - Retail ja Commerce &gt; Luokka- ja tuotehallinta &gt; Kanavan siirtymisluokat
-> - Retail ja Commerce &gt; Luokka- ja tuotehallinta &gt; Lisätuoteluokat
+> Varmista, että liität määriteryhmiä luokkahierarkiaan vain **Tuotteen määriteryhmät** -pikavälilehdellä, ei **Luokan määritearvot** -pikavälilehdellä. Jos määritteet näkyvät Luokkamääritteen **Luokkamääritteen arvot** -pikavälilehdellä, valitse **Muokkaa luokkahierarkiaa** toimintoruudusta. Valitse sitten **Luokkamääritteen ryhmät** -pikavälilehdessä luokkasolmut ja valitse **Poista**. Määritteitä ei voi hakea luokan mukaan Commerce Scale Unitin kautta.
 
-### <a name="assign-attribute-groups-to-stores"></a>Määriteryhmien määrittäminen myymälöihin
+## <a name="identify-viewable-and-refinable-attributes-for-commerce-channels-for-the-default-product-collection"></a>Commerce-kanavien tarkasteltavat ja tarkennettavissa olevat määritteet oletustuotekokoelmaa varten
 
-Vähintään yksi määriteryhmä voidaan liittää vähintään yhteen myymälähierarkian myymälään. Kun tuotteet sitten lisätään tiettyihin myymälöihin, ne perivät määriteryhmään sisältyvät määritteet.
+Kun olet liittänyt useita määriteryhmiä eri hierarkioiden luokkiin (Commerce-tuotehierarkia tai kanavasiirtymäluokat) ja kunkin tuotteen määritearvot luokkaliitoksen perusteella, sinun on otettava **Näytä määrite kanavassa** käyttöön, jotta nämä määritteet näkyvät tietyssä kanavassa.
 
-1. Kirjaudu tausta-asiakasohjelmaan myynninedistämispäällikkönä.
-2. Valitse **Retail ja Commerce** &gt; **Kanavan asetukset** &gt; **Kanavaluokat ja tuotemääritteet**.
-3. Määriteryhmien määrittäminen Houston-kanavaan:
+1. Valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
+1. Valitse **Määritä määritteen metatiedot** ja valitse sitten määrite vasemmassa siirtymäruudussa.
+1. Määritä **Kanavan tuotemääritteet** -pikavälilehdellä (ei **Luokan määritteet** -pikavälilehdellä) **Näytä määrite kanavassa** -valinnaksi **Kyllä** näyttääksesi määritteen.
+1. Jos haluat määritteen olevan myös tarkennettavissa, määritä **Voiko tarkentaa** -asetukseksi **Kyllä**.
 
-    1. Valitse **Houston**-kanava.
-    2. Valitse **Määriteryhmä**-pikavälilehdessä ensin **Lisää** ja sitten **Nimi**-kentässä **SharePointProvisionedProductAttributeGroup**.
-    3. Valitse **Lisää** uudelleen ja valitse sitten **Nimi**-kentässä **Miesten vyöt**.
-    4. Valitse **Lisää** uudelleen ja valitse sitten **Nimi**-kentässä **Merkkiaurinkolasit**.
+### <a name="control-visibility-of-dimension-based-refiners-such-as-size-style-and-color"></a>Dimensioihin perustuvien tarkentajien näkyvyyden hallinta, esimerkiksi koko, tyyli ja väri
 
-        > [!NOTE]
-        > Voit määrittää asetuksen avulla, että kanava perii määriteryhmät ylätason kanavasta hierarkiassa. Jos valitset **Peri**-asetukseksi **Kyllä**, alatason kanavasolmu perii kaikki määriteryhmät ja kaikki kyseisten määriteryhmien määritteet.
+Tuotedimensiot, kuten koko, tyyli ja väri, ovat useimmin käytettyjä tarkentajia. Jos haluat määrittää nämä tuotedimensiot käyttöön tarkennuksissa, liitä se määriteryhmä kanavatasolla, joka sisältää viitteen määritteen tyyppiin, joka perii arvot automaattisesti tuotedimensioarvoista.
 
-4. Määritteiden ottaminen käyttöön Houston-kanavaa varten:
+Voit määrittää, että tuotedimensiot ovat näkyviä ja tarkennettavissa päivittämällä **kanavaluokkien ja tuotemääritteiden** sivun merkinnät. Valitse siirtymisruudussa juurisolmu ja aseta sitten **Kanavan tuotemääritteet** -pikavälilehdellä **Näytä määrite kanavassa** -valinnaksi **Kyllä** määritteille **Koko**, **Tyyli** ja **Väri**. Jos haluat näiden määritteiden olevan myös tarkennettavissa, määritä jokaisen **Voiko tarkentaa** -asetukseksi **Kyllä**.
 
-    1. Valitse toimintoruudussa **Määritä määritteen metatiedot**.
-    2. Valitse ensin **Muoti**-luokkasolmu ja valitse sitten **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
-    3. Valitse ensin **Muodin asusteet** -luokkasolmu, sitten **Merkkiaurinkolasit**-luokka ja lopuksi **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
-    4. Valitse ensin **Miesten vaatteet** -luokkasolmu, sitten **Housut**-luokka ja lopuksi **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
+![Dimension tarkentajien määritteen metatietojen määrittäminen.](./media/ProductDimensionRefinersMetadataSetup_2022Series.png)
 
-![Kanavaluokat ja tuotemääritteet – Määriteryhmät.](media/CCPAttrGrp.png)
+Jos haluat ottaa määritteet käyttöön esittelytietoihin perustuvassa Houston-kanavassa, seuraa esimerkkikäytännön vaiheita.
 
-## <a name="overriding-attribute-values"></a>Määritearvojen ohittaminen
+1. Valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
+1. Valitse **Houston**-kanava.
+1. Valitse toimintoruudussa **Määritä määritteen metatiedot**.
+1. Valitse ensin **Muoti**-luokkasolmu ja valitse sitten **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
+1. Valitse ensin **Muodin asusteet** -luokkasolmu, sitten **Merkkiaurinkolasit**-luokka ja lopuksi **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
+1. Valitse ensin **Miesten vaatteet** -luokkasolmu, sitten **Housut**-luokka ja lopuksi **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
+1. Kun olet päivittänyt aiottujen määritteiden ja tarkentajien määritteen metatiedot, varmista, että tallennat muutokset ja suoritat **Julkaise kanavan päivitys** -työn. Päivitysten julkaisemisen jälkeen on sitten suoritettava seuraavat työt: **1070** (**kanavan konfiguraatio**), **1040** (**Tuotteet**) ja **1150** (**luettelo**).
 
-Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla. Myös sellaisten yksittäisten tuotteiden oletusarvot voidaan ohittaa, jotka ovat tietyissä tiettyihin kanaviin suunnatuissa luetteloissa.
+> [!NOTE]
+> - Jos yrityksesi edellyttää, että lisäät tai poistat usein tuotteita siirtymishierarkiassa tai teet muutoksia, kuten näyttötilausten arvojen päivittämistä, uusien luokkien lisäämistä ja uusien määriteryhmien lisäämistä luokkiin, suosittelemme, että määrität **Julkaise kanavan päivitykset** -työn suoritettavaksi säännöllisenä erätyönä. Vaihtoehtoisesti voit käynnistää manuaalisesti **Julkaise kanavan päivitykset** -työn ja sitten seuraavat Commerce Data Exchange (CDX) -työt: **1070** (**Kanavan määritys**), **1040** (**Tuotteet**) ja **1150** (**Luettelo**).
+> - Voit määrittää **Perintä**-asetuksen avulla, että kanava perii määriteryhmät ylätason kanavasta hierarkiassa. Jos valitset **Peri**-asetukseksi **Kyllä**, alatason kanavasolmu perii kaikki määriteryhmät ja kaikki kyseisten määriteryhmien määritteet.
+> - Jos toimintoruudun **Määritä määritteen metatiedot** -painike ei ole käytettävissä, varmista,että **siirtymishierarkia** on liitetty **Yleinen**-pikavälilehdellä kanavaan.
+> - Et saa liittää määriteryhmiä lukuun ottamatta dimensioihin perustuvia määriteryhmiä kanavan tasolla (esimerkiksi **Määriteryhmiä**  **Kanavaluokat ja tuotemääritteet**-sivulla).
+> - Kun asiakaskohtaisille B2B-luetteloille on tehty tuki Commerce-versiolle 10.0.27, sinun odotetaan tunnistavan kunkin B2B-luettelon tarkentajan ja määritteen asetukset samalla tavalla kuin tässä artikkelissa on kuvattu.
+
+## <a name="override-attribute-values"></a>Määritearvojen ohittaminen
+
+Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla. Ne voidaan myös ohittaa yksittäisille tuotteille, jotka ovat tietyissä tiettyihin kanaviin suunnatuissa luetteloissa.
 
 ### <a name="override-the-attribute-values-of-an-individual-product"></a>Yksittäisen tuotteen määritearvojen ohittaminen
 
-1. Kirjaudu tausta-asiakasohjelmaan myynninedistämispäällikkönä.
-2. Valitse **Retail ja Commerce** &gt; **Luokka- ja tuotehallinta** &gt; **Vapautetut tuotteet luokittain**.
-3. Valitse **Muoti** &gt; **Muodin asusteet** &gt; **Merkkiaurinkolasit**-luokkasolmu.
-4. Valitse tarvittava tuote ruudukossa. Valitse sitten toimintoruudun **Tuote**-välilehden **Asetukset**-ryhmässä **Tuotemääritteet**.
-5. Valitse määrite vasemmassa ruudussa ja päivitä sen arvo oikeassa ruudussa.
+Voit ohittaa yksittäisen tuotteen määritteen arvot noudattamalla tämän esimerkin ohjeita.
 
-![Tuotetiedot-sivu – Tuotemääriteryhmät.](media/ProdDetailsProdAttrValues.png)
+1. Kirjaudu Commerce headquartersiin tuotepäällikkönä.
+1. Valitse **Vähittäismyynti ja Commerce \> Luokka- ja tuotehallinta \> Julkaistut tuotteet luokittain**.
+1. Valitse **Muoti \> Asusteet \> Aurinkolasit**.
+1. Valitse tarvittava tuote ruudukossa. Valitse sitten toimintoruudun **Tuote**-välilehden **Asetukset**-ryhmässä **Tuotemääritteet**.
+1. Valitse määrite vasemmassa ruudussa ja päivitä sen arvo oikeassa ruudussa.
 
-### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Luettelon tuotteiden määritearvojen ohittaminen
+![Tuotemääritearvot-sivu.](media/ProdDetailsProdAttrValues_2022Series.png)
 
-1. Kirjaudu tausta-asiakasohjelmaan myynninedistämispäällikkönä.
-2. Valitse **Retail ja Commerce** &gt; **Luettelon hallinta** &gt; **Kaikki luettelot**.
-3. Valitse **Fabrikamin perusluettelo** -luettelo.
-4. Valitse **Muoti** &gt; **Muodin asusteet** &gt; **Merkkiaurinkolasit**-luokkasolmu.
-5. Valitse **Tuotteet**-pikavälilehdessä tarvittava tuote ja valitse sitten **Määritteet** tuoteruudukon yläpuolella.
-6. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
+### <a name="override-the-attribute-values-of-all-products-in-a-catalog"></a>Luettelon kaikkien tuotteiden määritearvojen ohittaminen
 
-    - Jaettu tuotemedia
-    - Yhteiset tuotemääritteet
-    - Kanavamedia
-    - Kanavan tuotemääritteet
+Voit ohittaa kaikkien tuotteiden määritteiden arvot noudattamalla tämän esimerkin ohjeita.
 
-    > [!NOTE]
-    > Jos jaettu tuotemedia ja jaettuja tuotemääritteitä luodaan, niitä käytetään kaikkiin tuotteisiin.
-
-![Luettelon tuotemääriteryhmät.](media/CatalogProdAttrValues.png)
-
-### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Kanavan tuotteiden määritearvojen ohittaminen
-
-1. Kirjaudu tausta-asiakasohjelmaan myynninedistämispäällikkönä.
-2. Valitse **Retail ja Commerce** &gt; **Kanavan asetukset** &gt; **Kanavaluokat ja tuotemääritteet**.
-3. Valitse **Houston**-kanava.
-4. Valitse **Tuotteet**-pikavälilehdessä tarvittava tuote ja valitse sitten **Määritteet** tuoteruudukon yläpuolella.
-
-    > [!NOTE]
-    > Jos tuotteita ei ole käytettävissä, lisää tuotteita valitsemalla **Lisää** **Tuotteet**-pikavälilehdessä ja valitsemalla sitten tarvittavat tuotteet **Lisää tuotteita** -valintaikkunassa.
-
-5. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
+1. Kirjaudu Commerce headquartersiin tuotepäällikkönä.
+1. Valitse **Retail ja Commerce \> Luettelon hallinta \> Kaikki luettelot**.
+1. Valitse **Fabrikamin perusluettelo** -luettelo.
+1. Valitse **Muoti \> Asusteet \> Aurinkolasit**.
+1. Valitse **Tuotteet**-pikavälilehdessä tarvittava tuote ja valitse sitten **Määritteet** tuoteruudukon yläpuolella.
+1. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
 
     - Jaettu tuotemedia
     - Yhteiset tuotemääritteet
     - Kanavamedia
     - Kanavan tuotemääritteet
 
-    > [!NOTE]
-    > Jos jaettu tuotemedia ja jaettuja tuotemääritteitä luodaan, niitä käytetään kaikkiin tuotteisiin.
+### <a name="override-the-attribute-values-of-all-products-in-a-channel"></a>Kanavan kaikkien tuotteiden määritearvojen ohittaminen
 
+Voit ohittaa kaikkien kanavan tuotteiden määritteiden arvot noudattamalla tämän esimerkin ohjeita.
+
+1. Kirjaudu Commerce headquartersiin tuotepäällikkönä.
+1. Valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
+1. Valitse **Houston**-kanava.
+1. Valitse **Tuotteet**-pikavälilehdessä tarvittava tuote ja valitse sitten **Määritteet** tuoteruudukon yläpuolella.
+1. Jos tuotteita ei ole käytettävissä, valitse **Lisää** **Tuotteet**-pikavälilehdessä ja valitse sitten tarvittavat tuotteet **Lisää tuotteita** -valintaikkunassa.
+1. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
+
+    - Jaettu tuotemedia
+    - Yhteiset tuotemääritteet
+    - Kanavamedia
+    - Kanavan tuotemääritteet
+
+### <a name="define-variant-specific-attribute-values-and-define-multiple-values-for-product-attributes"></a>Muuttujakohtaisten määritteen arvojen määrittäminen ja useiden arvojen määrittäminen tuotemääritteitä varten
+
+Jos haluat määrittää muuttujakohtaisia määritteen arvoja ja määrittää tuotemääritteitä varten useita arvoja, noudata tämän esimerkin ohjeita.
+
+1. Kirjaudu Commerce headquartersiin tuotepäällikkönä.
+1. Valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
+1. Valitse **Houston**-kanava.
+1. Valitse **Tuotteet**-pikavälilehdessä tarvittava tuotevariantti ja valitse sitten **Määritteet** tuoteruudukon yläpuolella.
+1. Jos tuotteita ei ole käytettävissä, valitse **Lisää** **Tuotteet**-pikavälilehdessä ja valitse sitten tarvittavat tuotevariantit **Lisää tuotteita** -valintaikkunassa.
+1. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
+
+    - Jaettu tuotemedia
+    - Yhteiset tuotemääritteet
+    - Kanavamedia
+    - Kanavan tuotemääritteet
+
+#### <a name="example-of-variant-specific-attribute-configuration"></a>Esimerkki varianttikohtaisesta määritteen määrityksestä
+        
+Tässä esimerkissä **P001-Päätuote** on monitehtäväinen, ja siinä on kolme muuttujaa: **Juokseminen**, **Kävely** ja **Vaellus**. Jokaiselle muuttujalle on määritettävä **tehtävä**-määritteen arvo erikseen. Määritä **Tuotteet**-pikavälilehdellä kanavan **kanavaluokat ja tuotemääritteet** -sivulla **aktiviteetti**-määritteen arvon varianteille, kuten on kuvattu seuraavassa taulukossa.
+
+| Muuttuja     | Aktiviteettimääritteen arvo |
+|-------------|--------------------------|
+| P001-Päätuote | Urheilu                   |
+| P001-1      | Käynnissä                  |
+| P001-2      | Kävely                  |
+| P001-3      | Vaellus                 |
+
+Jos käyttäjä etsii hakusanaa "kenkä", **P001-päätuote** näkyy hakutuloksissa. Jos määritit **Aktiviteetti**-määritteen tarkennettavaksi, **Aktiviteetti**-tarkentaja luetteloi vain **Urheilun** tarkennettavaksi arvoksi, koska kyseinen arvo määritettiin **Aktiviteetti**-määritteelle **P001-Päätuote**-tuotetasolla.
+
+Oletusarvon mukaan muuttujatason määritteitä on tarkoitus käyttää vain tuotetietosivuilla (PDPt). Kun valitset tietyn tuotevariantin PDP:ssä, PDP-tuotemääritykset päivitetään kyseiselle variantille.
+
+Jotta tarkentajat poimivat tuotemuuttujatasolla määritetyt määritteen arvot, sinun on määritettävä määrite tuotteen päätasolla, valittava **Salli useita arvoja** -valintaruutu ja määritettävä määritteen tyypiksi **Teksti**.
+
+Seuraavaksi tuotemuuttujan kaikki mahdolliset arvot on määritettävä. Tämän esimerkin **Aktiviteetti**-määritteen mahdolliset arvot ovat **Juoksu**, **Kävely**, **Lenkkeily**, **Vaellus**, **Telttailu**, **Vesiurheilu** ja **Talviurheilu**.
+
+Kun olet määrittänyt variantin määritteen arvot, voit määrittää ne tuotteen päätasolla käyttämällä pystyviivoin erotettuja arvoja. Voit määrittää **Aktiviteetti**-määritteelle tuotteen päätietoihin määritteen arvon **Juoksu|Kävely|Lenkkeily|Vaellus|Telttailu|Vesiurheilu|Talviurheilu**.
+
+Kunkin variantin määritteen arvot voidaan sitten määrittää kirjoittamalla joko pystyviivoin erotellut arvot tai yksittäiset arvot. **Aktiviteetti**-määritteen yksittäinen tuotevariantti voidaan määrittää esimerkiksi **Juoksu|Kävely|Lenkkeily**, **Juoksu**, **Juoksu|Lenkkeily|Vesiurheilu** ja niin edelleen.
+
+Kun olet määrittänyt variantin määritteen arvot, valitse **Kanavaluokat ja tuotemääritteet** -sivun toimintoruudussa **Julkaise kanavapäivitykset** ja suorita työt **1150**, **1040** ja **1070**.
+
+Kun työt on tehty ja hakuindeksi on päivitetty, odotettujen arvojen pitäisi näkyä hakutuloksissa ja luokkien selaustuloksissa.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 6b42252a37f01a2b387c2393760998a6b2e4761d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271512"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357629"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unitin alustaminen (pilvi)
 
@@ -69,8 +69,8 @@ Commerce Scale Unitia voi käyttää seuraavilla alueilla.
 | APAC            | Itä-Aasia           | Rajallinen kapasiteetti    |   Ei kommentteja.                           |
 | APAC            | Intia, etelä         | Rajoitettu kapasiteetti | Käyttöönottoja ei sallita.    |
 | APAC            | Keskinen Intia       | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin. |
-| EMEA            | Länsi-Eurooppa         | Rajallinen kapasiteetti    | Ei saatavana LCS:ssä tällä hetkellä. |
-| EMEA            | Pohjois-Eurooppa        | Rajallinen kapasiteetti    | Ei saatavana LCS:ssä tällä hetkellä. |
+| EMEA            | Länsi-Eurooppa         | Yleisesti saatavilla    |  Ei kommentteja. |
+| EMEA            | Pohjois-Eurooppa        | Yleisesti saatavilla    |  Ei kommentteja. |
 | EMEA            | Yhdistynyt kuningaskunta, etelä            | Yleisesti saatavilla |    Ei kommentteja.                          |
 | EMEA            | Yhdistynyt kuningaskunta, länsi             | Yleisesti saatavilla |    Ei kommentteja.                          |
 | Sveitsi     | Sveitsi, pohjoinen   | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin. |

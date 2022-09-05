@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin (ER) kohteet
 description: Tässä artikkelissa esitetään tietoja sähköisen raportoinnin kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281964"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360976"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -247,6 +247,52 @@ Valitse **Yleinen**-pikavälilehden **Lähetä kansio nimellä** -kentästä jok
 ### <a name="limitations"></a>Rajoitukset
 
 Jos määrität **Lähetä kansio muodossa** -kentän arvoksi **Erota tiedostot** **Kansio**-komponentille, joka sisältää muita sisäkkäisiä **Kansion** osia, asetusta ei käytetä uudelleen sisäkkäisiin **Kansio**-komponentteihin.
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a> Mallin sivun asettelun ominaisuuksien muuttaminen
+
+Voit konfiguroida ER-muodon komponentin ER-kohteen , joka on suunniteltu käyttämään raportin luontia varten mallia Microsoft Office (Excel- tai Word) -muodossa. Jos et ole tämän muodon omistaja ja sinun on muutettava muodon sivuasettelun ominaisuuksia Financen versioissa ennen versiota 10.0.29, sinun on luotava johdettu muoto ja muokattava mallin ominaisuuksia. Sen jälkeen on ylläpidettävä johdettua muotokonfiguraatiota. Versiossa 10.0.29 ja sitä myöhemmässä versiossa voit muuttaa mallin sivuasettelun ominaisuuksia ajon aikana, jotta johdettua muotokonfiguraatiota ei luoda ja ylläpidetä. Voit tehdä tämän määrittämällä halutut ominaisuudet osana konfiguroitun ER-kohteen asetuksia. Kun suoritat ER-muodon ja suoritat ER-kohteen, joka on määritetty käyttämään tiettyjä sivun asettelun ominaisuuksia, käyttöönotettavan kohteen sivuasetteluominaisuuksien arvot kohdistetaan käytettävään malliin, jolloin alkuperäisen mallin ominaisuudet korvataan. Voit konfiguroida saman muodon komponentin eri kohteet määrittämällä eri sivuasetusten ominaisuudet käytössä olevalle mallille.
+
+Seuraavat ominaisuudet voidaan konfiguroida ER-kohteessa muodon komponentille,, joka on suunniteltu käyttämään mallia  Excel- tai Word -muodossa.
+
+- Sivun suunta
+    - Pystytulostus
+    - Vaakatulostus
+- Paperin koko
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Juridiset tiedot
+    - Kirjain
+    - Statement
+    - Tabloid
+- Sivun reunukset
+    - Ylälaita
+        - Ylätunniste
+    - Alalaita
+        - Alatunniste
+    - Vasemmalle
+    - Oikealle
+
+> [!NOTE]
+> Tällä tavalla määritetyn mallin sivun suunta on kohdistettava [PDF-muunnoksen sivun suunnan mukaan](#select-a-page-orientation-for-pdf-conversion), jos PDF-muunnos on konfiguroitu.
+
+Määritä sivun marginaalit valitsemalla pituusyksikkö:
+
+- Tuumat
+- Senttimetrit
+- Millimetrit
+
+![Määritä sivun asettelun ominaisuudet sähköisen raportoinnin kohdesivulla.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> Kun marginaalin arvo ilmoitetaan senttimetreinä ja määritetään usealla desimaalilla, se pyöristetään suoritusaikana lähimpään arvoon desimaalin tarkkuudella.
+>
+> Kun marginaalin arvo ilmoitetaan millimetreinä ja määritetään usealla desimaalilla, se pyöristetään suoritusaikana Excelille lähimpään kokonaislukuarvoon ilman desimaalipistettä.
+>
+> Kun marginaalin arvo ilmoitetaan millimetreinä ja määritetään usealla desimaalilla, se pyöristetään suoritusaikana Wordille lähimpään arvoon yhden desimaalin tarkkuudella.
 
 ## <a name="security-considerations"></a>Tietojen suojaamisesta
 

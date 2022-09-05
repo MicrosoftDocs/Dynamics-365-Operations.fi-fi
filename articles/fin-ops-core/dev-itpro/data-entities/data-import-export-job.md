@@ -2,7 +2,7 @@
 title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: peakerbl
-ms.date: 04/25/2022
+ms.date: 08/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109459"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357588"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -76,6 +76,19 @@ Valitse yksikölle tuonnin tai viennin tietomuoto sitä valitessasi. Muodot mä�
 
 > [!NOTE]
 > Jos tiedostomuoto on XML-perustainen, varmista, että käytät vain sallittuja merkkejä. Lisätietoja kelvollista merkeistä on kohdassa [Sallitut merkit XML 1.0:ssä](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 ei salli ohjausmerkkejä lukuun ottamatta sarkaimia, rivinvaihtoja ja rivisyöttöjä. Virheellisiä merkkejä ovat esimerkiksi hakasulkeet, aaltosulkeet ja kenoviivat. 
+
+Käytä tietojen tuomiseen tai viemiseen Unicodea erityisen koodisivun asemesta. Tämä auttaa antamaan kaikkein yhdenmukaisimmat tulokset ja eliminoimaan tietojenhallintatöiden epäonnistumisen, koska niissä on Unicode-merkkejä. Järjestelmän määrittämillä lähdetietomuodoilla, jotka käyttävät Unicodea, on lähteen nimessä **Unicode**. Unicode-muotoa käytetään valitsemalla Unicode-koodauksen ANSI-koodisivu **Koodisivuksi** **Alueasetukset**-välilehdessä. Valitse jokin seuraavista Unicode-koodisivuista:
+
+| Koodisivu | Näyttönimi                |
+|-----------|-----------------------------|
+| 1 200      | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001     | Unicode (UTF-32 Big-Endian) |
+| 1201      | Unicode (Big-Endian)        |
+| 65000     | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+Lisätietoja koodisivuista on kohdassa [Koodisivun tunnukset](/windows/win32/intl/code-page-identifiers/).
 
 ### <a name="sequence-the-entities"></a>Aseta yksiköt sarjaan
 Yksiköt voi järjestää tietomallissa tai tuonti- ja vientitöissä. Kun suoritat työn, joka sisältää useamman tietoyksikön, varmista, että yksiköt on järjestetty oikein. Yksiköt järjestetään ensisijaisesti siten, että voit käsitellä kaikki yksiköiden väliset toiminnalliset riippuvuudet. Jos yksiköillä ei ole toiminnallisia riippuvuuksia, ne voidaan ajoittaa tuotavaksi tai vietäväksi rinnakkain. 
