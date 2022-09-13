@@ -2,7 +2,7 @@
 title: Varastoasetusten käyttäminen
 description: Tässä artikkelissa käsitellään varastoasetuksia ja kuvataan, miten niitä käytetään Microsoft Dynamics 365 Commerce -ohjelmassa.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: ''
-ms.openlocfilehash: bc55715b7c74f3b572459dd1aa7d409b7175535b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49310a44f8b9c636734e04d4eed9445384b55791
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287589"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405317"
 ---
 # <a name="apply-inventory-settings"></a>Varastoasetusten käyttäminen
 
@@ -51,12 +51,12 @@ Commercessa varastoasetukset määritetään sivustotyökalussa kohdassa **Sivus
     > [!IMPORTANT] 
     > **Usean varaston varastotaso** -asetus on käytettävissä Commerce-versiosta 10.0.19 lähtien. Jos päivität vanhemmasta Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeita on kohdassa [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Tuoteluettelosivujen varastoasetukset** – Tällä asetuksella määritetään, miten varastosta loppuneet tuotteet näkyvät tuotekokoelman ja hakutulosten moduulien muodostamisissa tuoteluetteloissa. Käytettävissä ovat arvot **Näytä tilauksessa muiden tuotteiden kanssa**, **Piilota varastosta loppuneet tuotteet luettelosta** ja **Näytä varastosta loppuneet tuotteet luettelon lopussa**. Tämän asetuksen käyttö edellyttää, että tietyt edellytysasetukset määritetään ensin Commerce-pääkonttorisovelluksessa. Lisätietoja: [Varastotietoisuuden käyttöönotto hakutulosmoduulissa](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+- **Tuoteluettelosivujen varastoasetukset** – Tällä asetuksella määritetään, miten varastosta loppuneet tuotteet näkyvät tuotekokoelman ja hakutulosten moduulien muodostamisissa tuoteluetteloissa. Käytettävissä ovat arvot **Näytä tilauksessa muiden tuotteiden kanssa**, **Piilota varastosta loppuneet tuotteet luettelosta** ja **Näytä varastosta loppuneet tuotteet luettelon lopussa**. Tämän asetuksen käyttö edellyttää, että tietyt edellytysasetukset määritetään ensin Commerce-pääkonttorisovelluksessa. Lisätietoja on kohdassa [Varaston huomioon ottava tuoteluettelo](inventory-aware-product-listing.md).
 
     > [!IMPORTANT] 
     > **Tuoteluettelosivujen varastoasetukset** -asetus on käytettävissä Commerce-versiosta 10.0.20 lähtien. Jos päivität vanhemmasta Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeita on kohdassa [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Varastoalueet** – Tämä asetus määrittää, mitkä varastoalueet, joille sanoma näytetään sivustomoduuleissa. Sitä voi käyttää vain, jos **Käytettävissä oleva kokonaisarvo** tai **Käytettävissä oleva fyysinen** arvo on valittu **Varastotaso perusteella** -asetukselle. Käytettävissä olevat arvot ovat **Kaikki**, **Alhaiset ja loppunut varastosta** ja **Loppunut varastosta**.
+- **Varastoalueet** – Tämä asetus määrittää varastoalueen sanomat, jotka näytetään sivustomoduuleissa. Sitä voi käyttää vain, jos **Käytettävissä oleva kokonaisarvo** tai **Käytettävissä oleva fyysinen** arvo on valittu **Varastotaso perusteella** -asetukselle. Käytettävissä olevat arvot ovat **Kaikki**, **Alhaiset ja loppunut varastosta** ja **Loppunut varastosta**.
 
     - Kun **Kaikki** on valittu, näkyviin tulevat kaikkien varastoalueiden sanomat kohteesta varastossa ("käytettävissä" oleva sanoma) kohteeseen loppunut varastosta ("loppunut varastosta").
     - Kun **Vähissä ja loppunut varastosta** on valittu, näkyviin tulevat kaikkien varastoalueiden sanomat kohteesta paitsi varastossa ("käytettävissä" oleva sanoma).

@@ -2,7 +2,7 @@
 title: Pikanäppäimet
 description: Tässä artikkelissa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet talous- ja toimintosovelluksia.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357574"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405434"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,6 +88,8 @@ Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan k�
 | Avaa suodatinruutu (tai siirrä kohdistus suodatinruudusta päälomakkeeseen ja takaisin, jos suodatinruutu on jo avoinna) | ALT + M,F tai Ctrl + F3       |
 | Sulje suodatinruutu (kun kohdistus on suodatinruudussa)                                                               | Esc                      |
 | Avaa lisäasetusten suodatus/lajittelu                                                                                        | Ctrl+Vaihto+F3            |
+| Käytä pikasuodatinta (kun kohdistus on pikasuodattimessa)                                                              | Enter                    |
+| Käytä ruudukkosuodatinta (kun kohdistus on sarakkeen otsikon suodatuskentässä)                                             | Enter                    |
 
 ## <a name="form-shortcuts"></a>Lomakkeen pikanäppäimet
 
@@ -157,12 +160,13 @@ Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan k�
 
 ## <a name="input-control-shortcuts"></a>Syötteiden ohjausobjektien pikanäppäimet
 
-| Toiminto                                                                   | Paina                          |
+| Toiminto                                                                   | Näppäinyhdistelmä                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Avaa hyperlinkki                                                           | Ctrl+Enter                    |
-| Lisää istuntopäivämäärä päivämääräkenttään                                       | T                             |
+| Avaa hyperlinkki (kun kohdistus on vain luku -ohjausobjektissa)<br><br>**Huomautus:** Tämä pikanäppäin on käytössä vain, kun **Standardoi näppäimistön toiminta yhdistelmäruudulle ja haun ohjausobjekteille** -ominaisuus on käytössä                   | Enter    |
+| Lisää istuntopäivämäärä päivämääräkenttään                                       | D                             |
 | Lisää nykyinen päivämäärä päivämääräkenttään                                       | T                             |
-| Avaa haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                         | Alt+Alanuoli                |
+| Avaa haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                         | Alt+Alanuoli<br><br>Syötä (kun **Standardoi näppäimistön toiminta yhdistelmäruudulle ja haun ohjausobjekteille** -ominaisuus on käytössä)                |
 | Sulje haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                        | Esc                           |
 | Siirrä kohdistus hakuun (kun haku on avoinna)                   | Alt+Alanuoli                |
 | Avaa ohjausobjektin tarkennettu esikatselu                                          | Alt+Ylänuoli                  |

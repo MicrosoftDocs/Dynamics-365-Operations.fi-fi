@@ -2,7 +2,7 @@
 title: Hakutulosmoduuli
 description: Tässä artikkelissa on tietoja hakutulosmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: d10e9ed78dfc90833ff3c09021f863f6ef0b80d9
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: eeb7cd0769fcb866a3d7dcc03e8e87daf24b2c5d
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286807"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405290"
 ---
 # <a name="search-results-module"></a>Hakutulosmoduuli
 
@@ -86,48 +86,16 @@ Lisää hakutulosmoduuli luokkasivulle sivustonmuodostimessa seuraavasti.
 1. Tarkista sivun konfigurointi kohdassa **Tarkista ja viimeistele**. Jos haluat muokata sivun tietoja, valitse **Takaisin**. Jos sivun tiedot ovat oikein, valitse **Luo sivu**.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
-## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Varastotietoisuuden käyttöönotto hakutulosmoduulissa
+## <a name="inventory-aware-search-results-module"></a>Varaston huomioon ottava hakutulosmoduuli
 
-Asiakkaat yleensä odottavat, että sähköisen kaupankäynnin verkkosivusto on varastotietoinen selauskokemuksen eri osissa, jotta he voivat päättää, mitä tehdä, jos tuotetta ei ole varastossa. Hakutulosmoduulia voidaan määrittää sisältämään varastotietoja, ja tarjoamaan seuraavat kokemukset:
+Hakutulosmoduulia voidaan määrittää sisältämään varastotietoja, ja tarjoamaan seuraavat kokemukset:
 
-- Näyttää varastosaatavuusotsikon tuotteen yhteydessä.
+- Näytä varastotason etiketit yhdessä tuotteiden kanssa.
 - Piilota varastosta loppuneet tuotteet tuoteluettelosta.
 - Näytä varastosta loppuneet tuotteet tuoteluettelon lopussa.
-- Suodata tuotteet hakutuloksissa varastotason mukaan.
+- Tukee varastoon perustuvaa tuotesuodatusta.
 
-Ennen kuin voit ottaa nämä kokemukset käyttöön , sinun on otettava **Parannettu sähköisen kaupankäynnin tuotteiden etsintä, joka ottaa varaston huomioon** -ominaisuus käyttöön **ominaisuudenhallinnan** työtilassa.
-
-> [!NOTE]
-> **Parannettu varastotietoinen sähköisen kaupankäynnin tuotteiden etsintä** -ominaisuus on käytettävissä Commercen version 10.0.20 julkaisusta alkaen.
-
-Varastotietoinen tuotehaku käyttää tuotemääritteitä varaston käytettävyyden tietojen saamista varten. Toiminnon edellytyksenä on, että erilliset tuotemääritteet luodaan, niille on syötettävä varastotiedot ja ne on lisättävä online-kanavaan. 
-
-Noudattamalla seuraavia ohjeita voit luoda erillisiä tuotemääritteitä, jotka tukevat varastotietoista hakutulosmoduulia.
-
-1. Siirry headquartersissa kohtaan **Jälleenmyynti ja kaupankäynti \> Vähittäismyynnin ja kaupankäynnin IT \> Tuotteet ja varasto**.
-1. Valitse ja avaa **Täytä tuotemääritteisiin varastotaso**.
-1. Lisää seuraavat tiedot valintaikkunassa:
-
-    1. Määritä **Tuotemääritteen ja tyypin nimi** -kentässä nimi erilliselle tuotemääritteelle, joka luodaan taltioimaan varastotiedot.
-    1. Valitse **Varastosaatavuuden peruste** -kentässä määrätyyppi, johon varastotason laskenta perustuu (esimerkiksi **Saatavissa oleva fyysinen**). 
-
-1. Suorita työ taustalla. Koska tuotteen varastosaatavuus muuttuu jatkuvasti monikanavaisessa ympäristössä, suosittelemme vahvasti tehtävän ajoittamista eräprosessin muodossa.
-
-> [!NOTE]
-> Jotta varastotaso laskettaisiin yhdenmukaisesti sähköisen kaupankäynnin sivuston sivuilla ja moduuleissa, valitse sama määrätyyppi sekä Commerce-pääkonttorisovelluksen **Varastosaatavuuden peruste** -asetuksessa että Commercen sivunmuodostimen **Varastotason peruste** -asetuksessa. Lisätietoja varastoasetusten ottamisesta käyttöön sivunmuodostimessa: [Varastoasetusten käyttäminen](inventory-settings.md).
-
-Voit konfiguroida online-kanavan tuotemääritteet noudattamalla seuraavia vaiheita. 
-
-1. Pääkonttorissa valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
-1. Valitse online-kanava, jolle varastotietoinen hakutulosmoduuli luodaan.
-1. Valitse ja avaa liittyvä määriteryhmä, ja lisää sitten juuri luotu tuotemäärite siihen.
-1. Valitse Commerce-versiota 10.0.27 vanhemmissa versioissa **Määritä määritteen metatiedot**, valitse juuri lisätty tuotemäärite ja ota sitten käyttöön asetukset **Näytä määrite kanavassa**, **Noudettavissa**, **Voidaan tarkentaa** ja **Voidaan kysellä**.
-1. Siirry kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu** ja suorita työ **1150 (luettelo)**. Jos ajoitat **Täytä tuotemääritteisiin varastotaso** -työn eräkäsittelynä, on suositeltavaa ajoittaa 1150-työ myös eräkäsittelyksi, joka suoritetaan samalla tiheydellä.
-
-> [!NOTE]
-> Hakutulosmoduulissa näkyvien tuotteiden varastotaso näytetään päätuotetasolla yksittäisen varianttitason sijaan. Sillä on vain kaksi mahdollista arvoa: "saatavilla" ja "loppu varastosta". Arvon todellinen selite haetaan [varastotason profiilin](inventory-buffers-levels.md) määritelmästä. Päätuotteen katsotaan loppuneen varastosta vain, kun kaikki sen variantit ovat loppuneet varastosta.
-
-Kun kaikki edeltävät määritysvaiheet on suoritettu, hakutulossivujen tarkennukset näyttävät varastopohjaisen suodattimen ja hakutulosmoduuli hakee varastotiedot taustalla. Tämän jälkeen voit määrittää Commercen sivunmuodostimen **Tuoteluettelosivujen varastoasetukset** -asetuksen, jolla hallitaan sitä, miten hakutulosmoduuli näyttää varastosta loppuneet tuotteet. Lisätietoa kohdassa [Varastoasetusten käyttöönotto](inventory-settings.md).
+Ennen kuin voit ottaa nämä kokemukset käyttöön, on otettava käyttöön **Parannettu sähköisen kaupankäynnin tuotteiden etsintä, joka ottaa varaston huomioon** -ominaisuus ja määritettävä joitakin edellytysten asetuksia Commerce headquartersissa. Lisätietoja on kohdassa [Varaston huomioon ottava tuoteluettelo](inventory-aware-product-listing.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

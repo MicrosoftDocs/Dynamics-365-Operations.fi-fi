@@ -2,7 +2,7 @@
 title: Ruudukon ominaisuudet
 description: Tässä artikkelissa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uusi ruudukkotoiminto on otettava käyttöön näiden ominaisuuksien käyttämistä varten.
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a8968a1263dfafd67b07b4beb78c51493e95756e
-ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
+ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9258944"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405462"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -178,20 +178,22 @@ Kuten Excelissä käyttäjät voivat automaattisesti pakottaa sarakkeen koon muu
 
 Tämä ominaisuus oli oletusarvoisesti käytössä versiossa 10.0.21. Se on tulossa pakolliseksi lokakuussa 2022.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Uuden ruudukon käyttämisen kieltäminen yksittäissivuilta 
+## <a name="developer-topics"></a>Kehittäjän aiheet
+
+### <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Uuden ruudukon käyttämisen kieltäminen yksittäissivuilta 
 Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.
 
 ```this.forceLegacyGrid();```
 
 Tämä ohjelmointirajapinta vanhentuu lopulta, jotta tämä vanha ruudukon ohjausobjekti voidaan poistaa käytöstä. Se on kuitenkin käytettävissä vähintään 12 kuukauden ajan sen poiston jälkeen. Jos jokin ongelma edellyttää tämän ohjelmointirajapinnan käyttöä, ilmoita siitä Microsoftille.
 
-### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Sivun pakottaminen käyttämään uutta ruudukkoa sen jälkeen, kun ruudukon käyttöä ei hyväksytty aiemmin
+#### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Sivun pakottaminen käyttämään uutta ruudukkoa sen jälkeen, kun ruudukon käyttöä ei hyväksytty aiemmin
 Jos yksittäinen sivu on jätetty pois uudesta ruudukosta, uusi ruudukko halutaan ehkä myöhemmin ottaa uudelleen käyttöön, kun taustalla olevat ongelmat on ratkaistu. Se tehdään yksinkertaisesti poistamalla `forceLegacyGrid()`-kutsu. Muutos tulee voimaan vasta, kun jokin seuraavista tapahtuu:
 
 - **Ympäristön ottaminen uudelleen käyttöön**: kun ympäristö päivitetään ja otetaan uudelleen käyttöön, ne sivut sisältävä taulukko, jotka eivät ole ottaneet uutta taulukkoa (FormControlReactGridState) käyttöön, tyhjennetään automaattisesti.
 - **Taulukon manuaalinen tyhjentäminen**: Kehitysskenaarioissa FormControlReactGridState-taulukon tyhjentämiseen ja AOS:n uudelleenkäynnistämiseen on käytettävä SQL:ää. Tämä toimintojen yhdistelmä nollaa niiden sivujen välimuistiin tallennuksen, jotka eivät ole ottaneet uutta ruudukkoa käyttöön:
 
-## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Kehittäjä] Yksittäisten ruudukoiden poisvalitseminen Järjestelmän ennakoiva kirjoitus -toiminnosta
+### <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Kehittäjä] Yksittäisten ruudukoiden poisvalitseminen Järjestelmän ennakoiva kirjoitus -toiminnosta
 Jotkin skenaariot eivät toimi hyvin ruudukon *Järjestelmän ennakoiva kirjoitus* -ominaisuuden kanssa. (Esimerkiksi jokin koodi, joka laukeaa, kun rivi tarkistetaan, aiheuttaa tietolähdetutkimusta, ja tutkimus voi tämän jälkeen aiheuttaa vahvistamattomien muokkausten vahingoittumisen aiemmin luoduilla riveillä.) Jos organisaatiosi havaitsee tällaisia skenaarioita, käytettävissä on sovellusliittymä, jonka avulla kehittäjä voi poisvalita yksittäisen ruudukon asynkronisesta rivitarkistuksesta ja palauttaa sen vanhaan toimintoon.
 
 Kun asynkroninen rivitarkistus poistetaan käytöstä ruudukossa, käyttäjät eivät voi luoda uutta riviä tai siirtyä ruudukon eri riville, kun nykyisellä rivillä on oikeellisuustarkistusongelmia. Tämän toimenpiteen sivuvaikutuksena tauluja ei voi liittää Excelistä talous- ja toimintosovellusten ruudukkoihin.
@@ -204,13 +206,18 @@ Jos haluat kieltää ruudukolta asynkronisen rivitarkistuksen käyttämisen, lis
 > - Tämä kutsu tulee kutsua vain poikkeustapauksissa, eikä se saa olla kaikkien ruudukoiden normi.
 > - Tätä sovellusliittymää ei suositella käyttöön otettavaksi suorituksen aikana lomakkeen lataamisen jälkeen.
 
-## <a name="developer-size-to-available-width-columns"></a>[Kehittäjä] Size-to-available-width -sarakkeet
+### <a name="developer-size-to-available-width-columns"></a>[Kehittäjä] Size-to-available-width -sarakkeet
 Jos sovellu kehittäjä määrittää **widthmode**-ominaisuuden arvoksi **SizeToAvailable** uudessa ruudukossa oleville sarakkeille, näillä sarakkeilla on aluksi sama leveys kuin niillä olisi, jos ominaisuuden arvona olisi **SizeToContent**. Ne kuitenkin venyvät käyttämään kaiken ruudukon sisällä olevan leveyden. Jos useiden sarakkeiden ominaisuuden arvoksi on määritetty **SizeToAvailable**, kyseiset sarakkeet jakavat ruudukossa käytettävissä olevan tilan. Jos käyttäjä kuitenkin muuttaa jonkin tällaisen sarakkeen kokoa manuaalisesti, sarake muuttuu staattiseksi. Se pysyy samanlevyisenä eikä enää laajene käyttämään ruudukossa olevaa ylimäärästä leveyttä.
 
-## <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Kehittäjä] Sarakkeen määrittäminen, jossa alkuperäinen kohdistus vastaanotetaan, kun uusia rivejä luodaan alanuolinäppäimellä
+### <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Kehittäjä] Sarakkeen määrittäminen, jossa alkuperäinen kohdistus vastaanotetaan, kun uusia rivejä luodaan alanuolinäppäimellä
 Kuten kohdassa [Erot, kun tietoja syötetään ennen järjestelmää](#differences-when-entering-data-ahead-of-the-system) mainittiin, Järjestelmän ennakoiva kirjoitus -ominaisuus on käytössä ja käyttäjä luo uuden rivin **alanuoli** näppäintä käyttäen, oletustoiminta on uuden rivin ensimmäisen sarakkeen kohdistus. Tämä kokemus voi olla eri kuin kokemus vanhassa ruudukossa tai kun **Uusi**-painike on valittu.
 
 Käyttäjät ja organisaatiot voivat luoda tallennettuja näkymiä, jotka on optimoitu tietojen syöttöä varten. (Voit esimerkiksi järjestää sarakkeet uudelleen siten, että ensimmäinen sarake on sarake, josta haluat aloittaa tietojen syötön.) Lisäksi version 10.0.29 jälkeen organisaatiot voivat muuttaa tätä toimintatapaa käyttäen **selectedControlOnCreate()**-menetelmää. Tämän menetelmän avulla kehittäjä voi määrittää sarakkeen, joka saa ensimmäisen kohdistuksen, kun uusi rivi luodaan **alanuoli** näppäimellä. Syötteenä tämä ohjelmointirajapinta ottaa sitä saraketta vastaavan ohjaustunnuksen, jonka olisi saatava alkuperäinen kohdistus.
+
+### <a name="developer-handling-grids-with-non-react-extensible-controls"></a>[Kehittäjä] Ruudukoiden käsitteleminen ei-reaktiivisten laajennettavien ohjausobjektien avulla
+Jos järjestelmä löytää ei-reaktiivisen laajennettavan ohjausobjektin ruudukon lataamisen aikana, järjestelmä hahmontaa vanhan ruudukon. Kun käyttäjä havaitsee tällaisen tilanteen ensimmäisen kerran, näyttöön tulee sivun päivitystarpeesta kertova sanoma. Tämän jälkeen tämä sivu lataa vanhan ruudukon automaattisesti ilman lisäilmoituksia käyttäjille seuraavaan järjestelmän päivitykseen asti. 
+
+Tämä tilanne ratkeaa pysyvästi, jos laajennettavien ohjausobjektien tekijät luovat ruudukossa käytettävistä ohjausobjekteista reaktiivisia versioita.  Kehittämisen jälkeen ohjausobjektin X++-luokka voidaan varustaa **FormReactControlAttribute**-määritteellä. Näin määritetään reaktiivisen nipun sijainti kyseiseen ohjausobjektiin lataamista varten. Luokka `SegmentedEntryControl` on esimerkkinä.  
 
 ## <a name="known-issues"></a>Tunnetut ongelmat
 Tässä osassa luettelo uuden ruudukko-ohjausobjektin tunnetuista ongelmista.
@@ -218,9 +225,12 @@ Tässä osassa luettelo uuden ruudukko-ohjausobjektin tunnetuista ongelmista.
 ### <a name="open-issues"></a>Avoimet asiat
 - Kun **Uusi ruudukon ohjausobjekti** -toiminto on otettu käyttöön, jotkin sivut jatkavat olemassa olevan ruudukon ohjausobjektin käyttämistä. Näin tapahtuu seuraavissa tilanteissa:
  
-    - Sivulla on korttiluettelo, joka hahmonnetaan käyttämällä useaa saraketta.
-    - Sivulla on ryhmitelty korttiluettelo.
-    - Ruudukkosarake, jolla on ei-reaktiivinen laajennettava ohjausobjekti.
+    - [Ratkaistu] Sivulla on korttiluettelo, joka hahmonnetaan käyttämällä useaa saraketta.
+        - **Uusi ruudukon ohjausobjekti** tukee tätä korttiluettelotyyppiä versiosta 10.0.30 alkaen. Kaikki käyttö, joissa forceLegacyGrid() on mukana tätä tarkoitusta varten, voidaan poistaa. 
+    - [Ratkaistu] Sivulla on ryhmitelty korttiluettelo.
+        - **Uusi ruudukon ohjausobjekti** tukee ryhmiteltyjä korttiluetteloita versiosta 10.0.30 alkaen. Kaikki käyttö, joissa forceLegacyGrid() on mukana tätä tarkoitusta varten, voidaan poistaa. 
+    - [Ratkaistu] Ruudukkosarake, jolla on ei-reaktiivinen laajennettava ohjausobjekti.
+        - Laajennettavat ohjausobjektit voivat määrittää ohjausobjektin reaktiivisen version, joka ladataan, kun se sijoitetaan ruudukkoon. Se muokkaa ohjausobjektin määritystä tämän ohjausobjektin lataamiseksi ruudukossa käyttöä varten. Lisätietoja on vastaavassa kehittäjän osassa. 
 
     Kun käyttäjä havaitsee jonkin näistä tilanteista, näyttöön tulee sivun päivityksestä kertova sanoma. Kun tämä sanoma tulee näyttöön, sivu jatkaa aiemmin luodun ruudukon käyttämistä kaikille käyttäjille seuraavaan tuoteversiopäivitykseen asti. Näiden skenaarioiden parempi käsittely ja uuden ruudukon käyttäminen otetaan huomioon seuraavassa päivityksessä.
 

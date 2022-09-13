@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dda931c33ce286d5a2fee9fba5e7ed0264bae8f8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8c6c62c724ce1788ab98df04505aad801d0e9a54
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9292760"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423840"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Dynamics 365 Commercen järjestelmänvalvojien oppimisluettelo
 
@@ -27,26 +27,23 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
 
-| Sisältö  | Kuvaus  | Muoto  | Pituus    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Tämä oppimiskokemus vie sinut matkalle, joka alkaa näyttämällä, miten digitaalinen muutos ja liiketoimintasovellusten teho voivat muuttaa liiketoimintaasi. Me katsomme, miten Dynamics 365 ja Power Platform auttavat sinua tekemään perusteltuja päätöksiä, jotka perustuvat organisaation tarpeisiin ja tavoitteisiin, digitaalisen muutoksen neljän rakennuspalikan kautta – moderni, yhtenäinen, älykäs ja mukautuva.| Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 6.5 tuntia |
+| Sisältö | Kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Dynamics 365 Commercen käytön aloittaminen](/learn/paths/get-started-dynamics-365-commerce/)| Dynamics 365 Commerce, joka perustuu hyväksi todettuihin Dynamics 365 Retail -ominaisuuksiin, tarjoaa kattavan omnikanavaratkaisun, jossa yhdistyvät taustajärjestelmän, myymälän ja digitaaliset kokemukset. Dynamics 365 Commercen avulla voi luoda tuotemerkkiuskollisuutta mukautettujen asiakaskontaktien avulla, lisätä tuottoa ja parantaa työntekijäuskollisuutta, optimoida toimintoja ja pienentää kustannuksia sekä tehostaa toimitusketjua sekä lopulta saavuttaa parempia liiketoimintatuloksia. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia   |
 | [Dynamics 365 Fraud Protectionin käytön aloittaminen](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection on pilvipohjainen sovellus, joka on suunniteltu sähköistä kaupankäyntiä, kivijalkaliikkeitä ja monikanavaisia kauppiaita varten. Se auttaa suojaamaan tuottoa ja mainetta työkaluilla ja ominaisuuksilla, jotka vähentävät petoksia ja väärinkäytöksiä sekä toimintokustannuksia, lisäävät hyväksyntäprosentteja ja turvaavat käyttäjätilit petosyrityksiltä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 35 minuuttia |
 
 ## <a name="commerce"></a>Commerce<a name="commerce"></a>
 
-| Sisältö  | kuvaus  | Muoto  | Pituus    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Dynamics 365 Commercen käyttöönotto ja laajentaminen](/learn/paths/deploy-dynamics-365-commerce/) | Tässä oppimispolussa kuvataan, miten Dynamics 365 Commerce -ympäristöt otetaan käyttöön ja miten valmistelun jälkeiset vaiheet suoritetaan, jotta kunkin vähittäismyyjän liiketoimintatarpeiden Commercen käyttöönotot onnistuvat oikean topologian avulla. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5 tuntia   |
 | [Myyntipisteen määrittäminen ja käyttäminen Dynamics 365 Commercessa](/learn/paths/configure-use-pos-commerce/)         | Tapahtumatiedot luodaan myyntipisteessä ja ladataan Dynamics 365 Commerce Headquarters -sovellukseen käsittelyä varten. Tässä oppimispolussa kuvataan, miten myyntipiste voidaan asentaa ja aktivoida sekä miten päivittäiset tapahtumat luodaan myyntipisteessä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4.5 tuntia |
 | [Dynamics 365 Commercen puhelinkeskusten määrittäminen ja käsitteleminen](/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce on monikanavaratkaisu, joka sisältää puhelinkeskuskanavan ja puhelinkeskuskanavan käyttäjien luomat ominaisuudet tietyn tilauskäsittelyn oletusasetuksiin ja tietojen oletusarvot myyntitilauksiin.                                  | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia   |
 
 ## <a name="e-commerce"></a>Sähköinen kaupankäynti<a name="e-commerce"></a>
 
-| Sisältö  | kuvaus  | Muoto  | Pituus    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Dynamics 365 Commercen sähköisen kaupankäynnin määrittäminen ja käsitteleminen](/learn/paths/configure-work-e-commerce/)              | Dynamics 365 Commercen verkkokanavat ja sähköisen kaupankäynnin sivusto antavat vähittäismyyjille mahdollisuuden luoda tuotemerkille näkyvyyttä Internetissä. |
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

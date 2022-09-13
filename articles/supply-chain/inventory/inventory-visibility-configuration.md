@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306315"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423566"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibilityn määrittäminen
 
@@ -303,13 +303,13 @@ Ratkaisu sisältää oletusarvon mukaan tämän osiointimäärityksen. Näin oll
 
 Suurimman osan aikaa käytettävissä olevan varaston kysely ei ole vain korkeimmalla kokonaistasolla. Sen sijaan halutaan ehkä nähdä tuloksia, jotka kootaan varastodimensioiden perusteella.
 
-Varaston näkyvyyssovellus tuo joustavuutta antamalla mahdollisuuden _indeksien_ määrittämiseen. Nämä indeksit perustuvat dimensioon tai dimensioyhdistelmään. Indeksi koostuu *joukon numerosta*, *dimensiosta* ja *hierarkiasta*, jotka on määritetty seuraavan taulukon mukaisesti.
+Varaston näkyvyys mahdollistaa joustavuuden, koska voit määrittää _indeksejä_ kyselyjen suorituskyvyn parantamiseksi. Nämä indeksit perustuvat dimensioon tai dimensioyhdistelmään. Indeksi koostuu *joukon numerosta*, *dimensiosta* ja *hierarkiasta*, jotka on määritetty seuraavan taulukon mukaisesti.
 
 | Nimi | kuvaus |
 |---|---|
 | Joukon numero | Samaan joukkoon (indeksiin) kuuluvat dimensiot ryhmitellään yhteen ja niille määritetään sama joukon numero. |
 | Dimensio | Perusdimensiot, joiden perusteella kyselyn tulos koostetaan. |
-| Hierarkia | Hierarkian avulla määritetään tuetut dimensioyhdistelmät, joissa voidaan tehdä kyselyjä. Määritetään esimerkiksi dimensiojoukko, jonka hierarkiajärjestys on `(ColorId, SizeId, StyleId)`. Tässä tapauksessa järjestelmä tukee neljän dimensioyhdistelmän kyselyitä. Ensimmäinen yhdistelmä on tyhjä, toinen on `(ColorId)`, kolmas `(ColorId, SizeId)` ja neljäs `(ColorId, SizeId, StyleId)`. Muita yhdistelmiä ei tueta. Lisätietoja seuraavassa esimerkissä. |
+| Hierarkia | Hierarkian avulla voit parantaa tiettyjen dimensioyhdistelmien suorituskykyä suodatus- ja ryhmittelykyselyparametreissa. Jos dimensiojoukko määritetään esimerkiksi käyttämällä hierarkiasarjaa `(ColorId, SizeId, StyleId)`, järjestelmä voi käsitellä neljään dimensioyhdistelmään liittyvät kyselyt aiempaa nopeammin. Ensimmäinen yhdistelmä on tyhjä, toinen on `(ColorId)`, kolmas `(ColorId, SizeId)` ja neljäs `(ColorId, SizeId, StyleId)`. Muiden yhdistelmien käsittelemistä ei voi nopeuttaa. Suodattimia ei rajoiteta järjestyksen mukaan. Niiden on kuitenkin oltava näiden dimensioiden sisällä, jos suorituskykyä halutaan parantaa. Lisätietoja seuraavassa esimerkissä. |
 
 Tuotehierarkiaindeksi määritetään seuraavasti:
 
@@ -319,14 +319,13 @@ Tuotehierarkiaindeksi määritetään seuraavasti:
 1. Indeksiluettelo annetaan oletusarvoisesti. Muokkaa aiemmin luotua indeksiä valitsemalla **Muokkaa** tai **Lisää** kyseisen indeksin kohdalla. Luo uusi indeksijoukko valitsemalla **Uusi indeksijoukko**. Tee indeksijoukon kunkin rivin **Dimensio**-kentässä valinta perusdimensioluettelossa. Seuraavien kenttien arvot luodaan automaattisesti:
 
     - **Joukon numero** – samaan ryhmään (indeksiin) kuuluvat dimensiot ryhmitellään yhteen ja niille määritetään sama joukon numero.
-    - **Hierarkia** – Hierarkian avulla määritetään tuetut dimensioyhdistelmät, joissa voidaan tehdä kyselyjä dimensioryhmässä (indeksissä). Jos määritetään esimerkiksi dimensioryhmä, jonka hierarkiajärjestys on *tyyli*, *väri* ja *koko*, järjestelmän tukee kolmen kyselyryhmän tuloksia. Ensimmäinen ryhmä on vain tyyli. Toinen ryhmä on tyylin ja värin yhdistelmä. Kolmas ryhmä on puolestaan tyylin, värin ja koon yhdistelmä. Muita yhdistelmiä ei tueta.
+    - **Hierarkia** – Hierarkia parantaa tiettyjen dimensioyhdistelmien suorituskykyä suodatus- ja ryhmittelykyselyparametreissa.
 
 > [!TIP]
 > Seuraavassa on muutamia vinkkejä, jotka on hyvä pitää mielessä, kun määrität indeksihierarkiaa:
 >
 > - Osiomäärityksessä määritettyjä perusdimensioita ei saa määrittää indeksimäärityksissä. Jos indeksikonfiguraatiossa on määritetty uudelleen perusdimensio, tällä indeksillä ei voi tehdä kyselyä.
 > - Jos sinun tarvitsee kysellä vain varastoa, joka koostetaan kaikkien dimensioyhdistelmien perusteella, voit määrittää yksittäisen hakemiston, joka sisältää perusdimension `Empty`.
-> - Sinulla on oltava vähintään yksi indeksihierarkia (esimerkiksi joka sisältää perusdimension `Empty`), muussa tapauksessa kyselyt epäonnistuvat virheellä "Indeksihierarkiaa ei ole määritetty".
 
 ### <a name="example"></a>Esimerkki
 

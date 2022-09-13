@@ -1,23 +1,23 @@
 ---
 title: Oppimisluettelo käyttöönoton projektipäälliköille, jotka työskentelevät Dynamics 365 Financen parissa
 description: Etsi kaikki koulutusvaihtoehdot henkilöille, jotka työskentelevät käyttöönoton projektipäällikköinä Dynamics 365 Financessa
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b4c0a108c581eafee45fa3ab31d532d3acc7ed2
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9f75a7f6fad3fb8a204c579083b9ffaca46e7592
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067647"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424518"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Oppimisluettelo käyttöönoton projektipäälliköille, jotka työskentelevät Dynamics 365 Financen parissa
 
@@ -27,9 +27,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
 
-| Sisältö | kuvaus  | Muoto  | Pituus    |
+| Sisältö | Kuvaus  | Muoto  | Pituus    |
 |-------------|-----------------|-------------|------------|
-| [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia |
 | [Talous- ja toimintosovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten talous- ja toimintosovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat talous- ja toimintosovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
 | [Ennen ostamista](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Vaiheista opasta voidaan käyttää sekä talous- ja toimintosovellusten arviointiin että silloin, kun sen hankintaan ollaan valmiita. sen. | Dokumentaatio | |
@@ -58,13 +57,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Talous- ja toimintosovellukset: Regression Suite Automation Tool -- taustat ja määritys (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Tämä on Regression Suite Automation Testing (RSAT) -testauksen ensimmäinen osa kahdesta. Tässä istunnossa käsitellään, miten jatkuvia päivityksiä voidaan hallita automaattisten testien avulla RSAT-testauksen kautta. Oppimiset ja suositukset luoda tehtävän nauhoituksia ja suorittaa testejä RSAT:ia käyttäen katetaan – sekä askel askeleelta -ohje läpi asennuksen ja määrityksen. | Tech Talk (nauhoitettu webinaari) | 70 minuuttia |
 | [Talous- ja toimintosovellukset: Regression Suite Automation Tool -- testauksen elinkaaren esittely (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Tämä on Regression Suite Automation Testing (RSAT) -testauksen toinen osa kahdesta. Tämä istunto kattaa esittelyn koko syklistä, jossa luodaan ja tallennetaan tehtävätallenteita talous- ja toimintosovelluksista BPM-kirjastoon LCS:ssä. Tämä synkronoi BPM-kirjaston luodakseen testitapauksia Azure DevOpsissa ryhmittelemällä testitapaukset testikokoelmiksi sekä ladatakseen ja suorittaakseen testauspaketit RSAT:issa. | Tech Talk (nauhoitettu webinaari) | 70 minuuttia |
 | [Suorituskyvyn testaaminen (DYN449PAL2)](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) | Liity meihin keskustelemaan siitä, miten lähestyä suorituskyvyn testausta. Tietoja testaamisen perusteista, parhaista käytännöistä, käytettävissä olevista työkaluista ja tekniikoista testien suorittamista ja suorituskyvyn mittaamista sekä tulosten optimointia varten. | Tech Talk (nauhoitettu webinaari) | 45 minuuttia |
-| [Päivittäminen 7.2 (heinäkuu 2017) -versiosta 7.0 (RTW)- /7.1 (Release 1611) -versioon (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | Tässä istunnossa käsitellään Dynamics 365:n talous- ja toimintosovelluksen version 7.0 (RTW) tai 7.1 (1611) päivittämistä versioon 7.2 (heinäkuu 2017). Teemme selkeän eron ratkaisun julkaisseiden asiakkaiden ja käynnissä olevien projektien välillä (ei vielä julkaistu). | Tech Talk (nauhoitettu webinaari) | 58 minuuttia |
-| [Talous- ja toimintosovellukset: päivitys versiosta 7.x versioon 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Osallistu seuraavaan TechTalkiin, jossa käsitellään päivitysprosessia versiosta 7.X versioon 8.X. Käsittelyssä on eri skenaarioita ja vaiheita, jotka suoritetaan koodin päivitystä ja tietojen päivitystä varten. Lisäksi käsitellään myös laajennuspyyntöskenaarioita ja niiden nostamista tarvittaessa. Osa 1/2. | Tech Talk (nauhoitettu webinaari) | 61 minuuttia |
-| [AX 2012:n päivittäminen talous- ja toimintosovellusten (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tämä Tech Talk antaa yleiskuvan siitä, miten päivittää koodit ja tiedot Dynamics AX 2012 -versiosta Dynamics 365 for Operationsiin. | Tech Talk (nauhoitettu webinaari) | 45 minuuttia |
+| [Ohjelmistopäivitys AX2012:sta talous- ja toimintosovelluksiin - 3. syyskuuta 2020](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | Tämä Tech Talk antaa yleiskuvan siitä, miten Dynamics AX 2012:n koodit ja tiedot päivitetään talous- ja toimintosovelluksiin. | Tech Talk (nauhoitettu webinaari) | 66 minuuttia |
 | [Analytiikka ja raportointivaihtoehdot: Tulostaminen ja asiakirjareitityksen agentti](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Liity tähän TechTalk-keskusteluun kahdesta liittyvästä aiheesta. Ensin keskustellaan Dynamics 365 Finance, Enterprise Editionin analytiikka- ja raportointiratkaisun malleista ja työkaluista. Sen jälkeen käsitellään tulostusskenaarioita ja Document Routing Agentista. | Tech Talk (nauhoitettu webinaari) | 45 minuuttia |
-| [Kurssi MB-300T01-A: Dynamics 365 Financen keskeiset ominaisuudet](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Kurssilla käsitellään Microsoft Dynamics 365 Financen yleisiä keskeisiä ominaisuuksia. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
-| [Kurssi MB-300T02-A: Dynamics 365 Financen perusmääritykset](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Tämä kurssi käsittelee Microsoft Dynamics 365 Financen määrityksen perustehtäviä. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
-| [Kurssi MB-300T03-A: Tietojen siirtäminen ja valmistautuminen Dynamics 365 Financen julkaisuun](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | Tämä kurssi käsittelee tietojen siirtoa ja Microsoft Dynamics 365 Financen julkaisun valmistelua. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
 | [Käyttöönoton elinkaaren aloitussivu](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Nämä aiheet kuvaavat ohjelmia, työkaluja ja prosesseja, jotka ovat käytettävissä Microsoft Dynamics 365 Finance -projektin toteutuskaaren aikana. | Dokumentaatio | |
 
 ## <a name="financial-management"></a>Taloushallinto<a name="financial-management"></a>
@@ -81,13 +75,10 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Dynamics 365 Financen määrittäminen julkiselle sektorille](/learn/modules/configure-public-sector-dyn365-finance/) | Dynamics 365 Finance mahdollistaa liiketoimintaprosessit, jotka ovat yhteisiä julkiselle ja yksityiselle sektorille, kuten budjetointiin, ostoon, ostoreskontraan ja myyntireskontraan liittyvät tehtävät. Käytä Julkinen sektori -toiminnallisuutta noudattaaksesi sääntöjä, määräyksiä ja raportointivaatimuksia julkista sektoria palvelevissa organisaatioissa. | Maksuton, omaan tahtiin etenevä online-moduuli | 1 tunti |
 | [Talousraportointi (DYN305PAL)](https://community.dynamics.com/365/b/techtalks/posts/financial-reporting-april-25-2017) | Tämä Tech Talk keskustelee talousraportoinnin asetuksista ja raporttiluetteloista Dynamics 365 for Operationsissa. Istunto kattaa myös datamart-nollauksen UAT-ympäristössä sekä vianmäärityksen ja hotfix-korjausten etsimisen LCS:n avulla. | Verkkokokouksen maksuton tallenne | 57 minuuttia |
 | [Talous- ja toimintosovellukset: Yhdistyneen kuningaskunnan digitaalivero – ALV-ilmoitus Dynamics 365 For Finance and Operationsissa (DYN599PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) | Tässä istunnossa käsitellään Yhdistyneen kuningaskunnan HMRC:n määrittämästä uudesta lähetysprosessista ALV-ilmoitusten osalta. Lisäksi selitetään, miten ALV-ilmoitus ja sähköinen viestintä voidaan määrittää Dynamics 365 Financessa. Esittelyssä on lähetysprosessi HMRC-sovellukseen eristysympäristössä. Tämä istunto on erityisen tärkeä konsulteille, jotka ottavat toiminnon käyttöön ja tarjoavat koulutusta käyttäjille. | Verkkokokouksen maksuton tallenne | 63 minuuttia |
-| [Kurssi MB-310T01-A: Taloushallinnon keskeisten komponenttien määrittäminen ja käyttäminen Dynamics 365 Financessa](https://www.microsoft.com/learning/course.aspx?cid=MB-310T01) | Voit määrittää ja syöttää käyttöomaisuuden hankintatiedot ja hallita niitä tekemällä käyttöomaisuuden poistoja ja määrittämällä aktivointirajan. Käyttöomaisuuserien käsittelytavan on vastattava sekä kansainvälisiä kirjanpidon säännöksiä että kunkin maan tai alueen kirjanpitoon liittyvää lainsäädäntöä. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 2 päivää |
-| [Kurssi MB-310T02-A: Ostoreskontran, myyntireskontran ja perinnän määrittäminen ja käyttäminen talous- ja toimintosovelluksissa](https://www.microsoft.com/learning/course.aspx?cid=MB-310T02) | Kustannuslaskentaan voidaan kerätä tietoja useista eri lähteistä, kuten kirjanpidosta, alareskontrista, budjeteista ja tilastotiedoista. Kustannustietoja voidaan analysoida, arvioida ja tehdä yhteenvetoja, jotta yritysjohto voi tehdä tarvittavat päätökset esimerkiksi hinnanpäivityksistä, budjeteista ja kustannusseurannasta. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
-| [Kurssi MB-310T03-A: Budjetoinnin, käyttöomaisuuden ja lisätoimintojen määrittäminen ja käyttäminen talous- ja toimintosovelluksissa](https://www.microsoft.com/learning/course.aspx?cid=MB-310T03) | Voit tehdä päätöstoimenpiteet jakson tai vuoden lopussa. Lopetusprosessit valmistavat järjestelmän uudelle jaksolle. Tietoja kausittaisten prosessien valmistelemisesta, määrittämisestä ja suorittamisesta Dynamics 365 Financessa. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
 
 ## <a name="exams"></a>Tentit<a name="exams"></a>
 
-| Sisältö | kuvaus | Muoto |
+| Sisältö | Kuvaus | Muoto |
 |---|---|---|
 | [Tentti MB-300: Microsoft Dynamics 365 Unified Operationsin perustoiminnot](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: Käytä yleisiä toimintoja ja toteutustyökaluja; Määritä suojaus, prosessit ja asetukset; tietojen siirron suorittaminen; tukea ratkaisua. | Tentti, kustannukset vaihtelevat alueittain |
 | [Tentti MB-310: Microsoft Dynamics 365 Finance, taloushallinto](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: taloushallinnon määrittäminen ja konfiguroiminen; hallita ja soveltaa yhteisiä prosesseja; toimeenpanee ja hallinnoi osto- ja myynti saamisia; budjetoinnin ja käyttöomaisuuden hallinta. | Tentti, kustannukset vaihtelevat alueittain |

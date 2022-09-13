@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 45a35eb32cb9e51d9f63f6687808fb511f894887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873721"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403693"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
 
@@ -33,6 +33,7 @@ Koska ilmoitukset eivät näy, kun suunnittelun optimointi päivitetään ympär
 
 | Muutokset | Ominaisuuksien hallinnan tiedot | Vapautuspäivät |
 |---|---|---|
+| <p>Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuksien hallintaa ei tarvita. | 29.8.–3.9.2022 |
 | <p>Yleiset suorituskyvyn, laadun ja vakauden parannukset.<p>[Suunnittelun optimointi - keskitetty kalenterin ylläpito](../supply-chain-calendars-master-planning.md)<p>[Optimointiehdotusten suunnittelu aiemmin luodun toimituksen optimointia varten](../action-messages.md)<p>[Alihankinnan tuki suunnittelun optimoinnissa](../../production-control/manage-subcontract-work-production.md) | Ominaisuuksien hallintaa ei tarvita. | 7.–11. maaliskuuta 2022 |
 | <p>Tuotantotilausten suunnittelun prioriteetin tuki lisätty. | Saatavana versiossa 10.0.25 osana toimintoa nimeltä *Suunnittelun optimointiin perustuva prioriteetin MRP-tuki*. | 12.-18.11.2021 |
 | <p>Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuksien hallintaa ei tarvita. | 12.-18.11.2021 |

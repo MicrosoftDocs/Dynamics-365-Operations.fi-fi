@@ -1,23 +1,23 @@
 ---
 title: Dynamics 365 Financen järjestelmänvalvojan oppimisluettelo
 description: Etsi kaikki Dynamics 365 Financen järjestelmänvalvojien koulutusvaihtoehdot.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 811ff0eb9d13c34a5fa21014415981574833d256
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7772de29030475c45a86f305e74a7048508887ba
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065245"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424547"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Dynamics 365 Financen järjestelmänvalvojien oppimisluettelo
 
@@ -62,9 +62,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | Sisältö | Kuvaus  | Muoto | Pituus    |
 |---------|--------------|--------|-----------|
 | [Dynamics AX 2012:n päivittäminen talous- ja toimintosovelluksiin](/learn/paths/upgrade-ax-2012-finance-operations/) | Lue tärkeimmät elementit ja parhaat käytännöt, jotka koskevat Dynamics AX 2012 -ratkaisun päivittämistä talous- ja toimintosovelluksiksi. Tutustu tärkeimpiin eroavaisuuksien löytämiseen, päivitysprosessin aloittaminen sekä koodin ja tietojen päivitystyökalujen aloittaminen parhaisiin tapoihin suunnitella integroinnit, analysoinnit ja raportit uusimpien ominaisuuksien mukaan. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
-| [Talous- ja toimintosovellukset: päivitys versiosta 7.x versioon 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Osallistu seuraavaan TechTalkiin, jossa käsitellään päivitysprosessia versiosta 7.X versioon 8.X. Käsittelyssä on eri skenaarioita ja vaiheita, jotka suoritetaan koodin päivitystä ja tietojen päivitystä varten. Lisäksi käsitellään myös laajennuspyyntöskenaarioita ja niiden nostamista tarvittaessa. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
-| [Päivittäminen 7.2 (heinäkuu 2017) -versiosta 7.0 (RTW)- /7.1 (Release 1611) -versioon (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | Tässä istunnossa käsitellään Dynamics 365:n talous- ja toimintosovelluksen version 7.0 (RTW) tai 7.1 (1611) päivittämistä versioon 7.2 (heinäkuu 2017). Teemme selkeän eron ratkaisun julkaisseiden asiakkaiden ja käynnissä olevien projektien välillä (ei vielä julkaistu). | Verkkokokouksen maksuton tallenne | 58 minuuttia |
-| [Päivitys AX2012-versiosta Dynamics 365 for Operations -versioon (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tämä Tech Talk antaa yleiskuvan siitä, miten päivittää koodit ja tiedot Dynamics AX 2012 -versiosta Dynamics 365 for Operationsiin. | Verkkokokouksen maksuton tallenne | 45 minuuttia |
+| [Ohjelmistopäivitys AX2012:sta talous- ja toimintosovelluksiin - 3. syyskuuta 2020](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | Tämä Tech Talk antaa yleiskuvan siitä, miten Dynamics AX 2012:n koodit ja tiedot päivitetään talous- ja toimintosovelluksiin. | Tech Talk (nauhoitettu webinaari) | 66 minuuttia |
 | [AX2009 - siirtotyökalu](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Tämä istunto kattaa työkalut, jotka auttavat sinua siirtymään AX2009-versiosta D365 for Operationsiin. | Verkkokokouksen maksuton tallenne | 55 minuuttia |
 
 ## <a name="servicing"></a>Ylläpito<a name="servicing"></a>
@@ -72,10 +70,9 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | Sisältö  | Kuvaus   | Muoto  | Pituus    |
 |----------|---------------|---------|-----------|
 | [Talous- ja toimintosovellukset: ominaisuuksien hallinta (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Tech Talk ominaisuuksien hallinnasta. Se sisältää työtilan, jossa voit tarkastella, ottaa käyttöön, poistaa käytöstä ja ajoittaa kussakin julkaisussa toimitettuja toimintoja. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota. Osallistu tähän kokoukseen ja katso, mitä toimitetaan versiossa 10.0.3 ja tulevien versioiden suunnitelmat. | Verkkokokouksen maksuton tallenne | 47 minuuttia |
-| [Talous- ja toimintosovellukset: tuotannon palvelu, tuki ja ylläpito (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Teknisiä keskusteluja siitä, kuinka voidaan tehokkaasti tukea, ylläpitää ja palvella Dynamics 365 Finance -tuotantoympäristöä. | Verkkokokouksen maksuton tallenne | 53 minuuttia |
-| [Finance And Operations: Microsoftin hallinnoimat jatkuvat päivitykset (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Talous- ja toimintosovellusten jatkuvat päivitykset ovat alkaneet. Liity meihin tämän tunnin aikana keskustellaksesi Microsoftin hallinnoimista jatkuvista päivityksistä, nyt jo käytettävissä olevasta Lifecycle Services -käyttökokemuksesta ja tulevista päivityksistä. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
-| [Microsoftin hallinnoimat jatkuvat päivitykset: uudet ominaisuudet (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | Tämän tunnin aikana kerrotaan, mikä on uutta Microsoftin hallinnoimien jatkuvien päivitysten alkuperäisen julkistamisen jälkeen. Käsittelyssä on päivitystiheys, vastaukset asiakkaiden arvokkaaseen palautteeseen prosessista ja vilkaisu tulevan Lifecycle Services -käyttäjäkokemukseen, jonka avulla voi hallita päivityksiä. | Verkkokokouksen maksuton tallenne | 56 minuuttia |
-| [Microsoftin hallinnoimat jatkuvat päivitykset (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Keskustelemme Microsoftin suunnitelmista pitää järjestelmä ajan tasalla uusimman version avulla. Tulemme kattamaan aikajanat, suurten ja pienten päivitysten tiheyden, suunnitellut menettelyt, vaikutukset, ja mitä pitäisi tehdä optimaalisen tuloksen saavuttamiseksi. | Verkkokokouksen maksuton tallenne | 62 minuuttia |
+| [Talous- ja toimintosovellukset: Tuotannon palvelu, tuki ja ylläpito (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Teknisiä keskusteluja siitä, kuinka voidaan tehokkaasti tukea, ylläpitää ja palvella Dynamics 365 Finance -tuotantoympäristöä. | Verkkokokouksen maksuton tallenne | 53 minuuttia |
+| [Talous- ja toimintosovellukset: Microsoftin hallinnoimat jatkuvat päivitykset (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Talous- ja toimintosovellusten jatkuvat päivitykset ovat alkaneet. Liity meihin tämän tunnin aikana keskustellaksesi Microsoftin hallinnoimista jatkuvista päivityksistä, nyt jo käytettävissä olevasta Lifecycle Services -käyttökokemuksesta ja tulevista päivityksistä. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
+| [Talous- ja toimintosovellukset: Microsoftin hallinnoimat jatkuvat päivitykset - 2. huhtikuuta 2019](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Finance and Operations jatkuvat päivitykset ovat alkaneet. Liity meihin tämän tunnin aikana keskustellaksesi Microsoftin hallinnoimista jatkuvista päivityksistä, nyt jo käytettävissä olevasta Lifecycle Services -käyttökokemuksesta ja tulevista päivityksistä. | Tech Talk (nauhoitettu webinaari) | 61 minuuttia |
 | [Seuranta, optimointiavustaja ja kriittiset KB-päivitykset (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | Käsittelyssä on seurantatoiminnot ja se, mitä Microsoft valvoo tuotantoympäristössä sekä optimointineuvoja ja miten sitä voidaan laajentaa. Lisäksi käsittelyssä ovat Tärkeät X++ -päivitykset -kokemus LCS:ssä ja Ilmoita tuotantokatkoksesta -asetuksen parhaat käytännöt LCS:ssä. | Verkkokokouksen maksuton tallenne | 40 minuuttia |
 
 ## <a name="testing"></a>Testataan<a name="testing"></a>
@@ -84,7 +81,6 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 |----------|--------------|---------|-----------|
 | [Talous- ja toimintosovellukset: Regression Suite Automation Tool -- taustat ja määritys (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Tämä on Regression Suite Automation Testing (RSAT) -testauksen ensimmäinen osa kahdesta. Tässä istunnossa käsitellään, miten jatkuvia päivityksiä voidaan hallita automaattisten testien avulla RSAT-testauksen kautta. Oppimiset ja suositukset luoda tehtävän nauhoituksia ja suorittaa testejä RSAT:ia käyttäen katetaan – sekä askel askeleelta -ohje läpi asennuksen ja määrityksen. | Verkkokokouksen maksuton tallenne | 70 minuuttia |
 | [Talous- ja toimintosovellukset: Regression Suite Automation Tool -- testauksen elinkaaren esittely (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Tämä on Regression Suite Automation Testing (RSAT) -testauksen toinen osa kahdesta. Tämä istunto kattaa esittelyn koko syklistä, jossa luodaan ja tallennetaan tehtävätallenteita talous- ja toimintosovelluksista BPM-kirjastoon LCS:ssä. Tämä synkronoi BPM-kirjaston luodakseen testitapauksia Azure DevOpsissa ryhmittelemällä testitapaukset testikokoelmiksi sekä ladatakseen ja suorittaakseen testauspaketit RSAT:issa. | Verkkokokouksen maksuton tallenne | 70 minuuttia |
-| [Talous- ja toimintosovellukset: Dynamics 365:n suorituskyvyn vianetsintätyökalut (DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | Tässä Tech Talk -keskustelussa esitellään erilaisia työkaluja, joita voidaan käyttää Microsoft Dynamics 365 Financen suorituskykyongelmien vianmääritykseen. Tämä istunto sisältää joitakin skenaarioon perustuvia esittelyjä ja alustavia ohjeita tavanomaisia suorituskykyongelmia varten. | Verkkokokouksen maksuton tallenne | 64 minuuttia |
+| [Talous- ja toimintosovellukset: suorituskyvyn vianetsintätyökalut Dynamics 365:ssä(DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | Tässä Tech Talk -keskustelussa esitellään erilaisia työkaluja, joita voidaan käyttää Microsoft Dynamics 365 Financen suorituskykyongelmien vianmääritykseen. Tämä istunto sisältää joitakin skenaarioon perustuvia esittelyjä ja alustavia ohjeita tavanomaisia suorituskykyongelmia varten. | Verkkokokouksen maksuton tallenne | 64 minuuttia |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

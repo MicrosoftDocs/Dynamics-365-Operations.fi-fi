@@ -4,22 +4,17 @@ description: Tässä artikkelissa kerrotaan, miten toimialueita käsitellään M
 author: BrianShook
 ms.date: 08/19/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
-ms.search.validFrom: ''
-ms.dyn365.ops.version: Release 10.0.12
-ms.search.industry: retail
-ms.search.form: ''
-ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336666"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405493"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Toimialueet Dynamics 365 Commercessa
 
@@ -110,10 +105,10 @@ Jos haluat määrittää mukautettuja toimialueita Front Door Service -palvelun 
 
 - Määritä Front Door Service -palvelu, kuten Azure Front Door Service, joka käsittelee edustaliikennettä, ja muodosta yhteys Commerce-ympäristöön. Tämä parantaa toimialueiden ja varmenteiden hallintaa sekä enemmän yksityiskohtaisia suojauskäytäntöjä.
 
+- Käytä Commercen mukana toimitettua Azure Front Door -esiintymää. Tämä edellyttää Dynamics 365 Commercen ryhmän koordinointitoimintoja toimialueen todentamiseksi ja SSL-varmenteiden hankkimista tuotannon toimialueelle.
+
 > [!NOTE]
 > Jos käytössä on ulkoinen CDN tai Front Door Service -palvelu, varmista, että Commerce-ympäristöön saapuvalla pyynnöllä on Commercen antaman isäntänimi, mutta X-Forwarded-Host (XFH) -otsikko \<custom-domain\>. Jos esimerkiksi Commerce-päätepiste on `xyz.dynamics365commerce.ms` ja mukautettu toimialue `www.fabrikam.com`, edelleenlähetetyn pyynnön isännän otsikon on oltava `xyz.dynamics365commerce.ms` ja XFH-otsikon `www.fabrikam.com`.
-
-- Käytä Commercen mukana toimitettua Azure Front Door -esiintymää. Tämä edellyttää Dynamics 365 Commercen ryhmän koordinointitoimintoja toimialueen todentamiseksi ja SSL-varmenteiden hankkimista tuotannon toimialueelle.
 
 Lisätietoja CDN-palvelun määrittämisestä suoraan on kohdassa [Sisällön toimitusverkoston (CDN) tuen lisääminen](add-cdn-support.md).
 

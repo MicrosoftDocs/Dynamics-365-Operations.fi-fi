@@ -1,23 +1,23 @@
 ---
 title: Microsoft-kumppaneiden myynti- ja markkinointiroolien oppimisluettelo Dynamics 365 Financessa
 description: Etsi kaikki opetusvalinnat Dynamics 365 Financea käyttäville henkilöille Microsoft-kumppanin myynti- ja markkinointirooleissa.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a53522acb89fc2b766e5b245a5b095a038d1b282
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2adacf9a3408b0cc4ee62204e50fceedf740b8fa
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067145"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424537"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-finance"></a>Microsoft-kumppaneiden myynti- ja markkinointiroolien oppimisluettelo Dynamics 365 Financessa
 
@@ -27,9 +27,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
 
-| Sisältö  | kuvaus  | Muoto  | Pituus    |
+| Sisältö  | Kuvaus  | Muoto  | Pituus    |
 |-------------|-----------------|-------------|------------|
-| [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia |
 | [Talous- ja toimintosovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten talous- ja toimintosovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat talous- ja toimintosovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
 | [Dynamics 365 Financen käyttämisen aloittaminen](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Financen avulla yrityskäyttäjät voivat nopeasti sopeutua muuttuviin liiketoimintaympäristöihin. Se tarjoaa yrityksille kaiken. Sen avulla voidaan hallita taloutta ja varoja tarkasti ja milloin tahansa taloussuunnitteluun ja ennustamiseen avulla sekä pysyä ajan tasalla analytiikkatyökalujen avulla. Koska talous on kaikkien yritysten tärkein alue, on tärkeää tutustua Dynamics 365 Financen ominaisuuksiin. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 1 tunti |

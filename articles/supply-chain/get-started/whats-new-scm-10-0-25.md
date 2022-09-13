@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219091"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403681"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.25 (huhtikuu 2022)
 
@@ -161,7 +161,7 @@ Taulukossa luetellaan myös aiemmat julkisen esiversion ominaisuudet, mutta jotk
 | Varastonhallinta   | [Toimipaikan rekisterikilpien paikannus](../warehousing/location-license-plate-positioning.md) | Pakollinen |
 | Varastonhallinta   | [Tuotedimensioiden yhdistäminen sijainnissa](../warehousing/location-product-dimension-mixing.md) | Pakollinen |
 | Varastonhallinta   | Tee mobiililaitteen varastosiirron varaston tilan kentästä muokattava | Pakollinen |
-| Varastonhallinta   | Manuaalinen myyntirivin keräyspalvelu järjestelmänvalvojalle tai vastaaville luotettaville käyttäjille | Pakollinen |
+| Varastonhallinta   | [Manuaalinen myyntirivin keräyspalvelu järjestelmänvalvojalle tai vastaaville luotettaville käyttäjille](../warehousing/manual-order-line-picking-exception-handling.md) | Pakollinen |
 | Varastonhallinta   | [Estä siirtotilauksen lähetettyjen rekisterikilpien käyttäminen muissa varastoissa kuin kohdevarastossa.](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Pakollinen |
 | Varastonhallinta   | Moniselitteisten sijainnin ja rekisterikilven nimien ratkaisukehote | Pakollinen |
 | Varastonhallinta   | [Laaduntarkistus](../warehousing/quality-check.md) | Pakollinen |

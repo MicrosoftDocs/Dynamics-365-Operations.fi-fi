@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313880"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410447"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -32,6 +32,20 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!NOTE]
 > Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Financen version 10.0.30 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="revenue-recognition"></a>Tuottokirjaus
+
+[Tuottokirjaus](../../finance/accounts-receivable/revenue-recognition-overview.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Poiston tai vanhentumisen syy** |Korvattu parannetulla ominaisuudella, joka on [tilauslaskutus](../../finance/accounts-receivable/subscription-billing-summary.md)
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan** | Hakemus |
+| **Käytön asetukset** | Kaikki |
+| **Tila** | Vanhentunut: Huhtikuun 2023 jälkeen tuoton kirjauksen toiminto Dynamics 365 Financessa ei enää vastaanota tukea ohjelmakorjauksien muodossa. Pyydämme asiakkaita käyttämään parannettua ominaisuutta, joka on [tilauslaskutus](../../finance/accounts-receivable/subscription-billing-summary.md). Lokakuussa 2023 tuottojen tunnistustoiminto ei ole enää käytettävissä. Pyydämme asiakkaita siirtymään parannetun tilauslaskutustoiminnon käyttäjiksi.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Financen version 10.0.29 poistetut tai vanhentuneet ominaisuudet
 

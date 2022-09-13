@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334772"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403692"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.28. (elokuu 2022)
 
@@ -50,7 +50,7 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 | Varastonhallinta | (Intia) Ohita siirron hintasäännöt sijainnille, kun Varastokoodista-asetuksen arvoksi on määritetty Kaikki | <p>Tämä toiminto koskee vain Intiaa. Tämä ominaisuus tekee siirtohintojen määrittämisestä varastosiirtoja varten intuitiivisempaa.</p><p>Määrität siirtohinnat määrittämällä kullekin nimikkeelle siirtohinnoittelusäännöt. Yksi tapa tehdä tämä konfigurointi on sisällyttää sääntörivi, jossa **Varastokoodista** -kenttä on määritetty arvoon *Kaikki*. Tämä asetus ilmaisee, että rivin määrittämää siirtohintaa tulee käyttää riippumatta siitä, mistä varastosta nimike kerätään. Kun tämä ominaisuus on käytössä, siirtohintasäännöt, joissa **Varastokoodista** -kenttä on määritetty arvoon *Kaikki*, ohittavat **Sijainti**-asetuksen. Näin ollen sääntö on voimassa riippumatta siirtotilauksessa määritetystä sijainnista. Tämä toiminta on odotettavissa, koska sijainti on varaston alapuolella varastodimensiohierarkiassa.</p><p>Jos tätä toimintoa ei ole, järjestelmä käyttää tämäntyyppisiä sääntöjä vain, kun siirtotilauksen sijainti vastaa täsmälleen säännölle määritettyä sijaintia. (Jos sääntöä varten on määritetty tyhjä sijainti, järjestelmä käyttää sääntöä vain siirtotilauksiin, joissa on myös tyhjä arvo sijainnille.)</p> |
 | Varastonhallinta | Käytettävissä olevan varaston raportin tietojen siivous | Tämä ominaisuus tarjoaa tavan siivota tiedot, joita on käytetty *Käytettävissä olevan varaston raporttitallennus* -raporttien luomiseen. |
 | Tuotannonhallinta | Määritä projektitoiminnot huoltosopimukselle ja huoltotilausriveille | Tämä ominaisuus lisää **Projektitehtävä**-kentän huoltosopimukselle ja huoltotilausriveille, jotta niille voi määrittää projektitehtävän. Tämä ominaisuus auttaa estämään estovirheet, kun kirjaat palvelunhallinnan kirjauskansioita, jotka vaativat projektitehtävän määrittämistä.  |
-| Varastonhallinta   | Manuaalinen siirtorivin keräyspalvelu järjestelmänvalvojalle tai vastaaville luotettaville käyttäjille | Tämän ominaisuuden avulla järjestelmänvalvojat voivat poimia siirtoriveihin liittyvät varastotapahtumat manuaalisesti. Nämä rivit sisältävät rivit, jotka on jo vapautettu varastoon. Järjestelmänvalvojien on tehtävä tämä keräily vain poikkeustapauksissa, esimerkiksi silloin, kun järjestelmä on vioittunut. |
+| Varastonhallinta   | Manuaalinen siirtorivin keräyspalvelu järjestelmänvalvojalle tai vastaaville luotettaville käyttäjille | Tämän ominaisuuden avulla järjestelmänvalvojat voivat poimia siirtoriveihin liittyvät varastotapahtumat manuaalisesti. Nämä rivit sisältävät rivit, jotka on jo vapautettu varastoon. Järjestelmänvalvojien on tehtävä tämä keräily vain poikkeustapauksissa, esimerkiksi silloin, kun järjestelmä on vioittunut. Lisätietoja on kohdassa [Myynti- ja siirtorivin keräilypoikkeusten manuaalinen käsitteleminen](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 

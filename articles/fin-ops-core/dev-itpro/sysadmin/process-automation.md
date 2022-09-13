@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: 1a1d152a01e0ebe6a20e2e6b31f12ed7b8deb024
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9114932"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423956"
 ---
 # <a name="process-automation"></a>Prosessien automatisointi
 
@@ -30,7 +30,9 @@ Prosessien automatisointi mahdollistaa eräpalvelimen käyttämien prosessien yk
 
 Kaikkien prosessien automatisointien keskitetty hallintasivu löytyy **Asetukset**-valikon Järjestelmänhallinta-moduulista. Tällä sivulla luetellaan kaikki järjestelmään määritetyt automaattiset prosessit (sarjat). Sen avulla voit myös lisätä uusia prosessiautomaatioita suoraan tältä sivulta. Kun sarja on määritetty, voit hallita kutakin sarjaa tästä luettelosta. Voit halutessasi muokata koko sarjaa, poistaa sen, tarkastella kaikkia luettelonäkymän esiintymiä tai poistaa sarjan käytöstä, jos haluat keskeyttää ajoitetun työn tietyksi aikaa. 
 
-Kaikki ominaisuuksien hallinnassa käytöstä poistetut prosessit eivät näy, kun toiminto on poistettu käytöstä. Lisäksi prosessiautomaation ajoitusmoduuli ei ajoita esiintymiä tai taustaprosesseja käytöstä poistetun ominaisuuden osalta. Kun ominaisuus otetaan uudelleen käyttöön, kaikki ajoitetut esiintymät tai taustaprosessit suoritetaan heti. Prosessin automatisoinnin ajoitusmoduuli käyttää suorituksessa järjestelmän erätyötä, **Prosessin automatisoinnin kyselyjärjestelmän työ**. Työtä ei saa muuttaa eikä peukaloida missään vaiheessa. Jos tämä erätyö ei ole käynnissä tai jos se on virhetilassa, nollaa erätyö valitsemalla **Alusta prosessien automatisoinnit**. Tämä nollaus varmistaa, että uudet automatisoinnit, jotka on julkaistu sovelluksen uudemmassa versiossa, alustetaan. 
+Käytä tämän sivun **Taustaprosessit**-välilehteä, jos haluat hallinnoida jotain ympäristössä suoritettavaa taustaprosessia. Valitse **Muokkaa**, jos haluat ajoittaa taustaprosessiin muutoksia. Muutoksia voivat olla lepotilajakso, jonka aikana prosessi "lepää", tai tauko suorituksessa tiettynä jaksona joka päivä. Valitse **Tarkastele viimeisimpiä tuloksia**, jos haluat tarkastella kunkin taustaprosessin suorituksen tuloksia.
+
+Kaikki ominaisuuksien hallinnassa käytöstä poistetut prosessit eivät näy, kun toiminto on poistettu käytöstä. Lisäksi prosessiautomaation ajoitusmoduuli ei ajoita esiintymiä tai taustaprosesseja käytöstä poistetun ominaisuuden osalta. Kun ominaisuus otetaan uudelleen käyttöön, kaikki ajoitetut esiintymät tai taustaprosessit suoritetaan heti. Prosessin automatisoinnin ajoitusmoduuli käyttää suorituksessa järjestelmän erätyötä, **Prosessin automatisoinnin kyselyjärjestelmän työ**. Työtä ei saa muuttaa eikä peukaloida missään vaiheessa. Jos tätä erätyötä ei suoriteta tai sillä on virheellinen tila, valitse **Alusta prosessien automatisoinnit** ja nollaa erätyö. Nollaus varmistaa, että sovelluksen uudemmissa versioissa julkaistut uudet automaatiot alustetaan. 
 
 ## <a name="calendar-view"></a>Kalenterinäkymä
 

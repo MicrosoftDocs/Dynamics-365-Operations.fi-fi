@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a4a36d773e0790747c017dca35492af5caf410ab
+ms.sourcegitcommit: 61be5f43c9678e9f12b4a90410876b4a179ac585
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357629"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427073"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unitin alustaminen (pilvi)
 
@@ -73,8 +73,6 @@ Commerce Scale Unitia voi käyttää seuraavilla alueilla.
 | EMEA            | Pohjois-Eurooppa        | Yleisesti saatavilla    |  Ei kommentteja. |
 | EMEA            | Yhdistynyt kuningaskunta, etelä            | Yleisesti saatavilla |    Ei kommentteja.                          |
 | EMEA            | Yhdistynyt kuningaskunta, länsi             | Yleisesti saatavilla |    Ei kommentteja.                          |
-| Sveitsi     | Sveitsi, pohjoinen   | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin. |
-| Yhdistyneet arabiemiirikunnat             | Yhdistyneet arabiemiirikunnat, pohjoinen           | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin. |
 
 Rajallisen kapasiteetin alueilla on erittäin rajoitettu käyttökapasiteetti. Käyttöönottopyynnöt arvioidaan tapauskohtaisesti. Jos rajallisen kapasiteetin alueilla on tehtävä liiketoimintaa, voit lisätä tukipyynnön odotusluetteloon. Rajoitetun kapasiteetin alueet eivät tällä hetkellä mahdollista Commerce Scale Unit -käyttöönottoa. 
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357638"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423592"
 ---
 # <a name="inventory-visibility-public-apis"></a>Varaston näkyvyyden julkiset ohjelmointirajapinnat
 
@@ -41,6 +41,8 @@ Seuraavassa taulukossa on tällä hetkellä käytettävissä olevat ohjelmointir
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Kirjaa | [Käytettävissä olevien varastosaldomäärien määrittäminen tai ohittaminen](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Kirjaa | [Yhden varaustapahtuman luominen](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Kirjaa | [Useiden varaustapahtumien luominen](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Kirjaa | [Yhden varaustapahtuman peruuttaminen](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Kirjaa | [Useiden varaustapahtumien peruuttaminen](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Kirjaa | [Yhden aikataulutetun käytettävissä olevan saldon muutoksen luominen](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Kirjaa | [Useiden aikataulutettujen käytettävissä olevien varastosaldojen muutosten luominen](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Kirjaa | [Post-menetelmää käyttävä kysely](#query-with-post-method) |
@@ -56,7 +58,7 @@ Seuraavassa taulukossa on tällä hetkellä käytettävissä olevat ohjelmointir
 > 
 > Joukkotoimintosovellusliittymä voi palauttaa kullekin pyynnölle enintään 512 tietuetta.
 
-Microsoft on antanut käyttöön *Postman*-pyyntökokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
+Microsoft on antanut käyttöön *Postman*-pyyntökokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Lifecycle Services -ympäristön mukaisen päätepisteen etsiminen
 
@@ -146,7 +148,7 @@ Palvelun suojaustunnus haetaan seuraavasti:
    - **HTTP-otsikko:** Ohjelmointirajapinnan versio on sisällytettävä. (Avain on `Api-Version` ja arvo `1.0`.)
    - **Tekstisisältö:** sisällytetään edellisessä vaiheessa luotu JSON-pyyntö.
 
-   Vastauksena pitäisi olla käyttöoikeustietue (`access_token`). Tätä tunnusta on käytettävä haltijatunnuksena, jolla varaston näkyvyyden ohjelmointirajapintaa kutsutaan. Esimerkki:
+   Vastauksena pitäisi olla käyttöoikeustietue (`access_token`). Tätä tunnusta on käytettävä haltijatunnuksena, jolla varaston näkyvyyden ohjelmointirajapintaa kutsutaan. Alla on esimerkki.
 
    ```json
    {
@@ -168,9 +170,9 @@ Käytettävissä olevien varastosaldon muutostapahtumien luontiin on käytettäv
 
 Seuraavassa taulukossa on yhteenveto JSON-tekstiosan kunkin kentän merkityksestä.
 
-| Kentän tunnus | kuvaus |
+| Kentän tunnus | Kuvaus |
 |---|---|
-| `id` | Tietyn muutostapahtuman yksilöivä tunnus. Tämän tunnuksen avulla varmistetaan, että jos viestintä palveluun epäonnistuu kirjauksen aikana, samaa tapahtumaa ei lasketa järjestelmässä kahdesti, jos se lähetetään uudelleen. |
+| `id` | Tietyn muutostapahtuman yksilöivä tunnus. Jos uudelleenlähettäminen tapahtuu palvelun virheen vuoksi, tämän tunnuksen avulla varmistetaan, että samaa tapahtumaa ei lasketa järjestelmässä kahdesti. |
 | `organizationId` | Tapahtumaan linkitetyn organisaation tunniste. Tämä arvo yhdistetään Supply Chain Managementin organisaatioon tai tietoalueen tunnukseen. |
 | `productId` | Tuotteen tunniste. |
 | `quantities` | Määrä, jolla käytettävissä olevaa varastosaldoa on muutettava. Jos hyllylle lisättiin esimerkiksi 10 uutta kirjaa, tämä arvo on `quantities:{ shelf:{ received: 10 }}`. Jos hyllystä poistettiin tai myytiin kolme kirjaa, tämä arvo on `quantities:{ shelf:{ sold: 3 }}`. |
@@ -178,7 +180,7 @@ Seuraavassa taulukossa on yhteenveto JSON-tekstiosan kunkin kentän merkityksest
 | `dimensions` | Dynaaminen avain- ja arvopari. Arvot yhdistetään joihinkin Supply Chain Managementin dimensioihin. Lisäksi voidaan kuitenkin lisätä myös mukautettuja dimensioita (kuten _Lähde_) ilmaisemaan, tuleeko tapahtuma Supply Chain Managementista vai ulkoisesta järjestelmästä. |
 
 > [!NOTE]
-> `SiteId`- ja `LocationId`-parametrit muodostavat [osiomäärityksen](inventory-visibility-configuration.md#partition-configuration). Siksi ne on määritettävä dimensioissa, kun luodaan käytettävissä olevan varaston muutostapahtumia, määritetään tai ohitetaan käytettävissä olevan varaston määriä tai luodaan varaustapahtumia.
+> `siteId`- ja `locationId`-parametrit muodostavat [osiomäärityksen](inventory-visibility-configuration.md#partition-configuration). Siksi ne on määritettävä dimensioissa, kun luodaan käytettävissä olevan varaston muutostapahtumia, määritetään tai ohitetaan käytettävissä olevan varaston määriä tai luodaan varaustapahtumia.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Yhden käytettävissä olevan varastosaldon muutostapahtuman luominen
 
@@ -216,14 +218,14 @@ Seuraavassa esimerkissä on näytteen tekstisisältö. Tässä näytteessä kirj
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
+    "organizationId": "SCM_IV",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "PosMachineId": "0001",
-        "ColorId&quot;: &quot;Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "posMachineId": "0001",
+        "colorId&quot;: &quot;red"
     },
     "quantities": {
         "pos": {
@@ -238,12 +240,12 @@ Seuraavassa esimerkissä on näytteen tekstisisältö ilman `dimensionDataSource
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -293,13 +295,13 @@ Seuraavassa esimerkissä on näytteen tekstisisältö.
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_1",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId&quot;: &quot;0001"
+            "posSiteId": "posSite1",
+            "posLocationId": "posLocation1",
+            "posMachineId&quot;: &quot;0001"
         },
         "quantities": {
             "pos": { "inbound": 1 }
@@ -307,12 +309,12 @@ Seuraavassa esimerkissä on näytteen tekstisisältö.
     },
     {
         "id": "654321",
-        "organizationId": "usmf",
-        "productId": "Pants",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_2",
         "dimensions": {
-            "SiteId": "1",
-            "LocationId": "11",
-            "ColorId&quot;: &quot;black"
+            "siteId": "iv_postman_site",
+            "locationId": "iv_postman_location",
+            "colorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -362,13 +364,13 @@ Seuraavassa esimerkissä on näytteen tekstisisältö. Tämän ohjelmointirajapi
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
+        "organizationId": "SCM_IV",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-             "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId": "0001"
+            "posSiteId": "iv_postman_site",
+            "posLocationId": "iv_postman_location",
+            "posMachineId": "0001"
         },
         "quantities": {
             "pos": {
@@ -381,7 +383,7 @@ Seuraavassa esimerkissä on näytteen tekstisisältö. Tämän ohjelmointirajapi
 
 ## <a name="create-reservation-events"></a>Varaustapahtumien luominen
 
-*Reserve*-ohjelmointirajapinnan käyttäminen edellyttää varausominaisuuden avaamista ja varausmääritysten tekemistä. Lisätietoja on kohdassa [Varausmääritykset (valinnainen)](inventory-visibility-configuration.md#reservation-configuration).
+*Reserve*-ohjelmointirajapinnan käyttäminen edellyttää varausominaisuuden ottamista käyttöön ja varausmääritysten tekemistä. Lisätietoja on kohdassa [Varausmääritykset (valinnainen)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Yhden varaustapahtuman luominen
 
@@ -389,7 +391,7 @@ Varauksia voidaan tehdä erilaisten tietolähdeasetusten perusteella. Voit mää
 
 Kun kutsut varausten ohjelmointirajapintaa, voit ohjata varausten vahvistamista määrittämällä `ifCheckAvailForReserv`-totuusarvoparametrin pyynnön tekstiosassa. `True`-arvo tarkoittaa, että vahvistus vaaditaan, ja `False`-arvo, että vahvistusta ei vaadita. Oletusarvona on `True`.
 
-Jos haluat perua varauksen tai poistaa tiettyjen varastomäärien varauksen, määritä määräsi negatiivinen arvo ja ohita vahvistus määrittämällä `ifCheckAvailForReserv`-parametrin arvoksi `False`.
+Jos haluat peruuttaa varauksen tai poistaa tiettyjen varastomäärien varauksen, määritä määräsi negatiivinen arvo ja ohita vahvistus määrittämällä `ifCheckAvailForReserv`-parametrin arvoksi `False`. Lisäksi on olemassa määritetty unreserve-ohjelmointirajapinta, joka tekee samat toiminnot. Erona on ainoastaan se, miten näitä kahta ohjelmointirajapintaa kutsutaan. On helpompi peruuttaa tietty varaustapahtuma käyttämällä tunnusta `reservationId` kuin *unreserve*-ohjelmointirajapintaa. Lisätietoja on [_Peruuta yhden varaustapahtuman varaaminen_](#reverse-reservation-events) -osassa.
 
 ```txt
 Path:
@@ -427,24 +429,36 @@ Seuraavassa esimerkissä on näytteen tekstisisältö.
 ```json
 {
     "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "quantity": 1,
     "quantityDataSource": "iv",
-    "modifier": "softreservordered",
+    "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId&quot;: &quot;Small"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red",
+        "sizeId&quot;: &quot;small"
     }
 }
 ```
 
+Seuraavassa esimerkissä näytetään onnistunut vastaus.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a><a name="create-multiple-reservation-events"></a>Useiden varaustapahtumien luominen
 
-Tämä ohjelmointirajapinta on [yhden tapahtuman ohjelmointirajapinnan](#create-one-reservation-event) joukkoversio.
+Tämä ohjelmointirajapinta on [yhden tapahtuman ohjelmointirajapinnan](#create-reservation-events) joukkoversio.
 
 ```txt
 Path:
@@ -480,9 +494,107 @@ Body:
     ]
 ```
 
+## <a name="reverse-reservation-events"></a>Varaustapahtumien peruuttaminen
+
+*Unreserve*-ohjelmointirajapinta toimii [*varaustapahtumien*](#create-reservation-events)  peruutustoimintona. Sen avulla voi peruuttaa varaustapahtuman, jonka `reservationId` on määrittänyt, tai vähentää varausmäärää.
+
+### <a name="reverse-one-reservation-event"></a><a name="reverse-one-reservation-event"></a>Yhden varaustapahtuman peruuttaminen
+
+Kun varaus luodaan, `reservationId` sisällytetään vastauksen tekstiin. Anna sama `reservationId`, jos haluat peruuttaa varauksen, ja sisällytä samat varauksen ohjelmointirajapintakutsussa käytetyt tunnukset `organizationId` ja `dimensions`. Määritä lopuksi arvo `OffsetQty`, joka vastaa edellisestä varauksesta vapautettujen nimikkeiden määrää. Varaus voidaan varata kokonaan tai osittain määritetyn arvon `OffsetQty` mukaisesti. Jos esimerkiksi varattiin *100* yksikköä, voit määrittää arvoksi `OffsetQty: 10`, jolloin alkuperäisestä varausmäärästä poistetaan *10* varausta.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+Seuraavassa koodissa on esimerkki tekstisisällöstä.
+
+```json
+{
+    "id": "unreserve-0",
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId&quot;: &quot;small"
+    },
+    "OffsetQty": 1
+}
+```
+
+Seuraavassa koodissa näytetään onnistuneen vastaustekstin esimerkki.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> Jos vastaustekstissä `OffsetQty` on pienempi tai yhtä suuri kuin varausmäärä, `processingStatus` on *success* ja `totalInvalidOffsetQtyByReservId` on *0*.
+>
+> Jos `OffsetQty` on suurempi kuin varattu summa, `processingStatus` on *partialSuccess* ja `totalInvalidOffsetQtyByReservId` on arvon `OffsetQty` ja varatun summan välinen ero.
+>
+>Jos varauksen määrä on esimerkiksi *10* ja kohdassa `OffsetQty` on arvo *12*, `totalInvalidOffsetQtyByReservId` on *2*.
+
+### <a name="reverse-multiple-reservation-events"></a><a name="reverse-multiple-reservation-events"></a>Useiden varaustapahtumien peruuttaminen
+
+Tämä ohjelmointirajapinta on [yhden tapahtuman ohjelmointirajapinnan](#reverse-one-reservation-event) joukkoversio.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
+        ...
+    ]
+```
+
 ## <a name="query-on-hand"></a>Käytettävissä olevan varastosaldon kysely
 
-_Query on-hand_-ohjelmointirajapinnalla voit noutaa tuotteiden tämän hetkiset käytettävissä olevat varastosaldotiedot. Sovellusrajapinta tukee tällä hetkellä kyselyä, jossa on enintään 100 yksittäistä nimikettä `ProductID`-arvon mukaan. Jokaisessa kyselyssä voi määrittää myös useita `SiteID`- ja `LocationID`-arvoja. Enimmäisrajaksi määritetään `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+*Query on-hand*-ohjelmointirajapinnalla voit noutaa tuotteiden tämän hetkiset käytettävissä olevat varastosaldotiedot. Sovellusrajapinta tukee tällä hetkellä kyselyä, jossa on enintään 5000 yksittäistä nimikettä `productID`-arvon mukaan. Jokaisessa kyselyssä voi määrittää myös useita `siteID`- ja `locationID`-arvoja. Seuraava yhtälö määrittää enimmäisrajan:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Post-menetelmää käyttävä kysely
 
@@ -517,7 +629,7 @@ Tämän pyynnön tekstiosassa `dimensionDataSource` on edelleen valinnainen para
 - `productId` voi sisältää yhden tai useampia arvoja. Jos se on tyhjä matriisi, kaikki tuotteet palautetaan.
 - Kenttiä `siteId` ja `locationId` käytetään varaston näkyvyydessä osiointiin. *Varastosaldokysely*-pyynnössä voi määrittää useita `siteId`- ja `locationId`-arvoja. Nykyisessä versiossa on määritettävä sekä `siteId`- että `locationId`-arvo.
 
-`groupByValues`-parametrin pitäisi noudattaa indeksointimääritystä. Lisätietoja on kohdassa [Tuoteindeksihierarkian määrittäminen](./inventory-visibility-configuration.md#index-configuration).
+Kun määritystä seurataan indeksointia varten, kannattaa käyttää parametria `groupByValues`. Lisätietoja on kohdassa [Tuoteindeksihierarkian määrittäminen](./inventory-visibility-configuration.md#index-configuration).
 
 Parametri `returnNegative` määrittää, sisältävätkö tulokset negatiivisia merkintöjä.
 
@@ -530,13 +642,13 @@ Seuraavassa esimerkissä on näytteen tekstisisältö.
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "siteId": ["1"],
-        "LocationId": ["11"],
-        "ColorId": ["Red"]
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
+        "colorId": ["red"]
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -546,12 +658,12 @@ Seuraavassa esimerkissä esitetään, miten kaikkia tuotteita kysellään tietyl
 ```json
 {
     "filters": {
-        "organizationId": ["usmf"],
+        "organizationId": ["SCM_IV"],
         "productId": [],
-        "siteId": ["1"],
-        "LocationId": ["11"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -574,10 +686,10 @@ Query(Url Parameters):
     [Filters]
 ```
 
-get URL -esimerkki: Tämä get-pyyntö täsmälleen sama kuin aiemmin annettu post-näyte.
+Alla on get URL -esimerkki. Tämä get-pyyntö täsmälleen sama kuin aiemmin annettu post-näyte.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="available-to-promise"></a>Luvattavissa oleva määrä (ATP)

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: eb17f24b90933dac0f875bb0ef2d5039a240b197
+ms.sourcegitcommit: 1ca4ad100f868d518f3634dca445c9878962108e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306051"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388537"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibilityn asentaminen ja määrittäminen
 
@@ -56,7 +56,9 @@ Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:
 1. Siirry ympäristösivulla alaspäin **Power Platform -integrointi** -osan **Ympäristön lisäosat** -osaan. Dataverse-ympäristön nimi löytyy sieltä. Varmista, että Dataverse-ympäristön nimi on se, jota halutaan käyttää varaston näkyvyydessä.
 
     > [!NOTE]
-    > Tällä hetkellä vain LCS:n avulla luotuja Dataverse-ympäristöjä tuetaan. Jos Dataverse-ympäristö luotiin jollain muulla tavalla (esimerkiksi Power Apps -hallintakeskuksessa) ja jos se on linkitetty Supply Chain Management -ympäristöön, yhdistämismäärityksen ongelma voidaan korjata ottamalla ensin yhteys varaston näkyvyyden tuotetiimiin osoitteessa [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com). Varaston näkyvyyden apuohjelma voidaan asentaa sen jälkeen.
+    > Tällä hetkellä vain LCS:n avulla luotuja Dataverse-ympäristöjä tuetaan. Jos Dataverse-ympäristö luotiin jollain muulla tavalla (esimerkiksi PowerApps -hallintakeskuksessa) ja jos se on linkitetty Supply Chain Management -ympäristöön, yhdistämismäärityksen ongelma on korjattava ennen varaston näkyvyyden apuohjelman asentamista.
+    >
+    > On mahdollista, että kaksoiskirjoitusympäristö on linkitetty Dataverse-esiintymään, kun taas LCS:tä ei ole määritetty Power Platform -integrointia varten. Linkittämisen vastaamattomuus voi aiheuttaa odottamattomia toimintoja. LCS-ympäristön tietojen tulee vastata sen ympäristön tietoja, johon käyttäjällä on yhteys kaksoiskirjoituksessa, jotta liiketoimintatapahtumat, virtuaalitaulukot ja apuohjelmat voivat käyttää samaa yhteyttä. Lisätietoja yhdistämismäärityksen ongelman korjaamisesta on kohdassa [Linkitysristiriita](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). Kun yhdistämismäärityksen ongelma on ratkaistu, voit jatkaa varaston näkyvyyden asentamista.
 
 1. Valitse **Ympäristöapuohjelmat**-osassa **Asenna uusi apuohjelma**.
 
@@ -140,11 +142,11 @@ Seuraavien ohjeiden avulla voit poistaa varaston näkyvyyden apuohjelman asennuk
 1. Valitse siirtymispalkissa **Ympäristö**
 1. Valitse Dataverse-ympäristö, joka on sidottu LCS-ympäristöön.
 1. Valitse **Ratkaisut** ja poista nämä viisi ratkaisua seuraavassa järjestyksessä:
-    1. Ankkuriratkaisu Inventory Visibility ‑sovellukselle Dynamics 365 ‑ratkaisuissa.
-    1. Dynamics 365 FNO SCM:n varaston näkyvyyden sovellusratkaisu
-    1. Varastopalvelumääritykset
-    1. Erillinen varaston näkyvyys
-    1. Dynamics 365 FNO SCM:n varaston näkyvyyden perusratkaisu
+    1. Dynamics 365:n varaston näkyvyys - ankkuri
+    1. Dynamics 365:n varaston näkyvyys - sovellus
+    1. Dynamics 365:n varaston näkyvyys - ohjausobjektit
+    1. Dynamics 365:n varaston näkyvyys - laajennukset
+    1. Dynamics 365:n varaston näkyvyys - perusmääritys
 
     Kun nämä ratkaisut on poistettu, myös taulukoihin tallennetut tiedot poistetaan.
 
