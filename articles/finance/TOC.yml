@@ -12,6 +12,8 @@
               items:
                 - name: Financen uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.30 (marraskuu)
+                  href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (lokakuu)
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (elokuu)
@@ -1138,6 +1140,8 @@
                       href: general-ledger/subledger-transfer.md
                     - name: Kirjanpitolähteen hallinta
                       href: accounts-payable/accounting-source-explorer.md
+                    - name: Kirjanpitoa odottavat asiakirjat
+                      href: general-ledger/documents-pending-accounting.md
             - name: Raportit ja kyselyt
               items:
                 - name: Kirjauskansiovientien ja tapahtumien näyttäminen

@@ -3409,12 +3409,10 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Konttien pakkaaminen lähetystä varten
                       href: warehousing/packing-containers.md
-                    - name: Lähtevien konttien pakkaaminen ja toimitusten käsittely
+                    - name: Lähtevien konttien pakkaaminen ja lähetysten käsittely
                       href: warehousing/packing-work.md
                     - name: Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                    - name: Varaston työn peruuttaminen poikkeuksien käsittelyä varten
-                      href: warehousing/cancel-warehouse-work.md
                     - name: Järjestelmäohjattu työjärjestys
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Keräilyrivin ryhmittely
@@ -3431,6 +3429,10 @@
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: Lähtevän kuormituksen visualisointi
                       href: warehousing/outbound-workload-visualization.md
+                    - name: Myynti- ja siirtorivin keräilypoikkeuksien manuaalinen käsitteleminen
+                      href: warehousing/manual-order-line-picking-exception-handling.md
+                    - name: Varaston työn peruuttaminen poikkeuksien käsittelyä varten
+                      href: warehousing/cancel-warehouse-work.md
                 - name: Täydennys
                   items:
                     - name: Täydennyksen yleiskatsaus

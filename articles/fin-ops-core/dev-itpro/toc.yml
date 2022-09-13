@@ -14,6 +14,8 @@
               items:
                 - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Käyttöympäristöpäivitykset versioon 10.0.30 (marraskuu 2022)
+                  href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.29 (lokakuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.28 (elokuu 2022)
