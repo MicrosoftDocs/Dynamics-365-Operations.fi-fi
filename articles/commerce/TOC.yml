@@ -734,6 +734,8 @@
                   href: enable-ADLS-environment.md
                 - name: Tuotesuositusten ottaminen käyttöön
                   href: enable-product-recommendations.md
+                - name: Vaihtoehtoisen tietovuon määrittäminen
+                  href: set-up-alternate-data-flow.md
                 - name: Kohdennetut suositukset
                   items:
                     - name: Kohdennettujen suositusten ottaminen käyttöön
@@ -2319,7 +2321,7 @@
                 - name: Kustannusten hallinta
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Kulujenhallinta
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/commerce/toc.json
                 - name: Käytettävissä oleva varasto
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Laskun hyväksynnät
@@ -2327,11 +2329,11 @@
                 - name: Oma ryhmä
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Project-mobiilisovellusten yleiskuvaus
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/commerce/toc.json
                 - name: Projektin aikamerkintä
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/commerce/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fcommerce%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/commerce/toc.json
                 - name: Ostotilauksen hyväksyntä
                   href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Myyntitilaukset

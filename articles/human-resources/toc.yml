@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
               items:
+                - name: Human Resources 10.0.30 (yhdistetty infrastruktuuri)
+                  href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (yhdistetty infrastruktuuri)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (yhdistetty infrastruktuuri)
@@ -474,13 +476,15 @@
               href: hr-workflow-manage-employee-information.md
             - name: Osoitemuutosten tarkasteleminen ja hallinta
               href: hr-personnel-view-address-changes.md
-            - name: Muokkaa toimen raportointisuhteita
+            - name: Toimen raportointisuhteiden muokkaaminen
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Yksinkertaistettu työntekijän lisääminen
               href: stream-employee-entry.md
+            - name: Otsikon ohjausobjektin mukauttaminen
+              href: hr-worker-header-control.md
             - name: Työntekijän tietojen syöttäminen
               href: hr-personnel-enter-worker-information.md
-            - name: 'Työntekijät, joilla ei työsuhdetta'
+            - name: 'Työntekijät, joilla ei ole työsuhdetta'
               href: hr-personnel-workers-without-employment.md
             - name: Työntekijöiden lainauskohteet
               href: hr-personnel-loan-item-worker.md

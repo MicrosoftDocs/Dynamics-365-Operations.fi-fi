@@ -12,6 +12,8 @@
               items:
                 - name: Supply Chain Managementin uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.30 (marraskuu 2022)
+                  href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (lokakuu 2022)
                   href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (elokuu 2022)
@@ -1715,10 +1717,32 @@
                   href: inventory/inventory-visibility-allocation.md
                 - name: Inventory Visibilityn käytettävissä olevan varaston muutosaikataulu ja luvattavissa oleva määrä
                   href: inventory/inventory-visibility-available-to-promise.md
-                - name: Varaston näkyvyyden julkiset ohjelmointirajapinnat
+                - name: Inventory Visibilityn julkiset ohjelmointirajapinnat
                   href: inventory/inventory-visibility-api.md
-                - name: Varaston näkyvyyteen liittyvät vihjeet
+                - name: Inventory Visibilityyn liittyvät vihjeet
                   href: inventory/inventory-visibility-tips.md
+        - name: Sensor Data Intelligence
+          items:
+            - name: Sensor Data Intelligencen aloitussivu
+              href: sensor-data-intelligence/sdi-home-page.md
+            - name: Sensor Data Intelligencen ottaminen käyttöön omalle järjestelmälle
+              href: sensor-data-intelligence/sdi-enable-feature.md
+            - name: IoT-ratkaisun ottaminen käyttöön Azuressa
+              href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
+            - name: Sensor Data Intelligencen parametrit
+              href: sensor-data-intelligence/sdi-parameters.md
+            - name: Simuloidun anturin määrittäminen testausta varten
+              href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+            - name: Resurssin käyttökatkon skenaario
+              href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+            - name: Resurssin ylläpidon skenaario
+              href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+            - name: Koneen tilan skenaario
+              href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+            - name: Tuotteen laadun skenaario
+              href: sensor-data-intelligence/sdi-scenario-product-quality.md
+            - name: Tuotannon viiveiden skenaario
+              href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: IoT-analyysi
           items:
             - name: IoT-analyysi – aloitussivu
@@ -1940,7 +1964,7 @@
                 - name: Kustannusten hallinta
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Kulujenhallinta
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Käytettävissä oleva varasto
                   href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Laskun hyväksynnät
@@ -1948,11 +1972,11 @@
                 - name: Oma ryhmä
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Project-mobiilisovellusten yleiskuvaus
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
                 - name: Projektin aikamerkintä
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
                 - name: Ostotilauksen hyväksyntä
                   href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Myyntitilaukset
@@ -3463,7 +3487,7 @@
                       href: warehousing/small-parcel-shipping.md
                 - name: Lähetyksen konsolidoinnin käytännöt
                   items:
-                    - name: Lähetyksen konsolidoinnin käytännöt
+                    - name: Lähetyksen konsolidoinnin käytäntöjen yleiskatsaus
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Lähetyksen konsolidoinnin käytäntöjen määrittäminen
                       href: warehousing/configure-shipment-consolidation-policies.md

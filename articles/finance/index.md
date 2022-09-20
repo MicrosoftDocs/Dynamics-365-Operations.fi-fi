@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9299a0ef4def8a41620ada24e8b13d7b41ed7cb7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a51a601f6e283c5f6d7298b1cf342056707ebbb8
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887887"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475579"
 ---
 # <a name="finance-home-page"></a>Financen aloitussivu
 
@@ -41,7 +41,7 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
         - [Kustannuslaskenta](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
+        - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Käyttöomaisuuserät](fixed-assets/fixed-assets.md)
         - [Finance insights](finance-insights/finance-insights-home-page.md)
         - [Pääkirjanpito ja talousraportointi](general-ledger/general-ledger.md) 
@@ -64,7 +64,7 @@ Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channe
 
 ### <a name="countryregion-functionality"></a>Maa/alue-toiminto
 
-Maan tai alueen säännökset vaikuttavat verojärjestelyihin ja muihin taloushallinnon osa-alueisiin. Lisätietoja maa- tai aluekohtaisista toiminnoista on kohdassa [Lokalisointi- ja sääntelyominaisuudet](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json).
+Maan tai alueen säännökset vaikuttavat verojärjestelyihin ja muihin taloushallinnon osa-alueisiin. Lisätietoja maa- tai aluekohtaisista toiminnoista on kohdassa [Lokalisointi- ja sääntelyominaisuudet](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json).
 
 ### <a name="additional-content"></a>Lisäsisältö
 
@@ -80,6 +80,6 @@ Lisätietoja ostojen, varaston ja valmistuksen hallinnan ominaisuuksista on [Sup
 
 ## <a name="elearning-courses"></a>eLearning-kurssit
 
-Online-kursseista ja koulutuksesta saat tietoa [Dynamics 365 Financen Microsoft Learn -sivulta](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
+Tietoja online-kursseista ja koulutuksesta saat kohteesta [Dynamics 365 Finance ‑oppimispolut](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
