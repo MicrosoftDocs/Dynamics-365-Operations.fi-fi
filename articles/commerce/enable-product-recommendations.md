@@ -2,7 +2,7 @@
 title: Ota tuotesuositukset käyttöön
 description: Tässä artikkelissa kerrotaan, miten tekoälyn koneoppimiseen perustuvia tuotesuosituksia voidaan tehdä Microsoft Dynamics 365 Commerce -asiakkaiden käyttöä varten.
 author: bebeale
-ms.date: 08/31/2021
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dceec9e8e994a81b43cd5d1bd13970f2d246f40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc1b43fa70e6652d38b1141e2d93cf323f70a756
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892068"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460018"
 ---
 # <a name="enable-product-recommendations"></a>Ota tuotesuositukset käyttöön
 
@@ -36,8 +36,15 @@ Tässä artikkelissa kerrotaan, miten tekoälyn koneoppimiseen perustuvia tuotes
 1. Vahvista, että Azure AD -käyttäjätietojen määritys sisältää suositusten merkinnän. Lisätietoja tästä toiminnosta alla.
 1. Varmista, että yksikkösäilön päivittäinen päivitys Azure Data Lake Storage Gen 2:een on ajoitettu. Lisätietoja on kohdassa [Varmista, että yksikkösäilön päivitys on automatisoitu](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Ota RetailSale-mittaukset käyttöön yksikkösäilössä. Lisätietoja tämän prosessin määrittämisestä: [Mittayksiköiden käsitteleminen](/dynamics365/ai/customer-insights/pm-measures).
+1. Varmista, että ympäristö on määrittänyt palvelu- ja ruuanlaittoalueet tällä hetkellä tuetuilla alueilla seuraavasti:
+
+    - **Tuetut alueet ruuanlaittoa varten:** EU/US/CA/AU.
+    - **Tuetut alueet palvelua varten:** US/CA/AU. Jos palvelualue ei vastaa olemassa olevia tuettuja alueita, suosituspalvelu valitsee lähimmän tuetun palvelualueen.
 
 Kun edellä mainitut vaiheet on suoritettu, olet valmis ottamaan suositukset käyttöön.
+
+> [!NOTE]
+> Tunnetaan ongelma, jossa suositukset eivät näy alla olevien vaiheiden suorittamisen jälkeen. Tämän ongelman aiheuttavat ympäristön tietovuo-ongelmat. Jos ympäristö ei näytä suositustuloksia, määritä vaihtoehtoiset tiedot suosituspalvelulle kohdan [Vaihtoehtoisen tietovuon määrittäminen suosituksia varten](set-up-alternate-data-flow.md) ohjeiden avulla. Sinulla on oltava Azuren järjestelmänvalvojan oikeudet näiden vaiheiden suorittamiseksi. Jos tarvitset apua, ota yhteys FastTrack-edustajaan.
 
 ## <a name="azure-ad-identity-configuration"></a>Azure AD -tunnisteen konfiguraatio
 
@@ -94,9 +101,11 @@ Lisätietoja mukautetuista suosituksista on kohdassa [Mukautettujen suositusten 
 
 [Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
 
+[Vaihtoehtoisen tietovuon määrittäminen suosituksia varten](set-up-alternate-data-flow.md)
+
 [Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 
-["Osta samankaltaisia tyylejä" -suositusten käyttöönotto](shop-similar-looks.md)
+[Vastaavien tuotteiden ostosuositusten ottaminen käyttöön](shop-similar-looks.md)
 
 [Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
 
@@ -111,6 +120,7 @@ Lisätietoja mukautetuista suosituksista on kohdassa [Mukautettujen suositusten 
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
 
 
 

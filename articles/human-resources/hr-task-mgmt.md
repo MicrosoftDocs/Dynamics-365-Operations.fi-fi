@@ -2,7 +2,7 @@
 title: Tehtävien hallinta
 description: Tässä artikkelissa kerrotaan Tehtävänhallinta-toiminnosta, joka on käytettävissä Microsoft Dynamics 365 Human Resourcesissa.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b547ff4f55b572ab774e7e70949ec8cb53ef42
+ms.sourcegitcommit: 167f73a834629752c6b79c312d744e52df7f0927
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897861"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9445891"
 ---
 # <a name="task-management"></a>Tehtävienhallinta
 
@@ -69,7 +69,13 @@ Kaikissa kolmessa välilehdessä henkilöstöhallinnon avustajat ja esimiehet vo
 
 Voit luoda tehtävät yksitellen ja käyttää niitä uudelleen useissa tarkistusluetteloissa. Voit luoda tehtävän valitsemalla **Perehdytyksen asetukset** -sivun **Tehtävät**-välilehdessä **Uusi**.
 
+Voit liittää luodun tehtävän useisiin tarkistusluetteloihin valitsemalla tehtävän ja valitsemalla sitten valikossa **Käytä valintaluetteloissa** -kohdan.
+
 Voit myös lisätä tehtäviä suoraan tarkistusluetteloon. Voit lisätä tehtävän tarkistusluetteloon luomalla **Perehdytyksen asetukset** -sivun **Tarkistusluettelo**-välilehdessä uuden tarkistusluettelon, johon tehtävä lisätään, tai lisätä tehtävän aiemmin luotuun tarkistusluetteloon.
+
+Jos haluat muokata tehtävää kirjastossa, valitse **Muokkaa** tehtäväkirjaston valikosta. Jos tehtävä on liitetty tarkistusluetteloihin, nämä tarkistusluettelot näkyvät **Muokkaa tehtävää** -sivulla. Jos haluat, että mille tahansa tarkistusluettelon tehtävälle päivitetään muokkaukset, valitse kyseiset tarkistusluettelot **Kohdista tarkistusluetteloihin** -osasta.
+
+Voit poistaa tehtäviä kirjastosta valitsemalla **Poista**-vaihtoehdon. Jos tehtävä liittyy tarkistusluetteloon, tämä toiminto ei poista tehtävää tarkistusluettelosta. Tehtävä on poistettava tarkistusluettelosta erillisenä toimintona.
 
 > [!NOTE]
 > Jos lisäät tehtävän suoraan tarkistusluetteloon, et voi käyttää sitä uudelleen muissa tarkistusluetteloissa.
@@ -133,7 +139,15 @@ Monimutkaisissa tehtävissä saattaa olla useita vaiheita tai tehtäviä suoritt
 
 ## <a name="setting-up-checklists"></a>Tarkistusluetteloiden määrittäminen
 
-Tarkistusluettelo on tehtäväryhmä. Voit luoda niin monta tarkistusluetteloa kuin on tarpeen, ja voit määrittää samat tehtävät useisiin tarkistusluetteloihin. Kun luot tarkistusluettelon, määrität omistajan ja kalenterin.
+Tarkistusluettelo on tehtäväryhmä. Voit luoda niin monta tarkistusluetteloa kuin on tarpeen, ja voit määrittää samat tehtävät useisiin tarkistusluetteloihin.
+
+Voit luoda uuden tehtävän tarkistusluettelossa valitsemalla **Uusi**-kohdan **Tehtävät**-valikkorivillä. Kun luot uuden tehtävän, voit lisätä sen tehtäväkirjastoon ja jakaa tehtävän usean tarkistusluettelon välillä. Voit lisätä tehtävän kirjastoon vain, jos **Käytä tehtävää kirjastossa** -vaihtoehdon arvona on **Kyllä**. Jos lisäät tehtävän tehtäväkirjastoon, voit lisätä sen myös muihin tarkistusluetteloihin samalla kertaa valitsemalla nämä luettelot **Kohdista tarkistusluetteloihin** -osaa. Jos tehtävää ei lisätä kirjastoon, se on vain tarkistusluettelossa, jossa luot tehtävän.
+
+Jos haluat muokata tehtävää tarkistusluettelossa, valitse **Muokkaa**. Jos tehtävä on liitetty tarkistusluetteloihin, nämä tarkistusluettelot näkyvät **Muokkaa tehtävää** -sivulla. Jos haluat, että mille tahansa tarkistusluettelon tehtävälle päivitetään muokkaukset, valitse kyseiset tarkistusluettelot **Kohdista tarkistusluetteloihin** -osasta.
+
+Jos haluat poistaa tehtäviä tarkistusluettelosta, valitse **Poista**. Tämä toiminto vain siirtää tehtävät pois tarkistusluettelosta. Se ei poista niitä pysyvästi tehtäväkirjastosta. Jos haluat poistaa tehtävän kirjastosta pysyvästi, siirry tehtäväkirjaston sivulle ja valitse **Poista**.
+
+Kun luot tarkistusluettelon, määrität omistajan ja kalenterin.
 
 Jos tehtävän **Määrityksen tyyppi** -kentän arvona on **Toimi**, **Esimies** tai **Ryhmä**, mutta määrityksen tyypistä ei voi johtaa tiettyä henkilöä, tehtävä määritetään tarkistusluettelon omistajalle. Seuraavassa on esimerkkejä tilanteista, joissa tehtävät määritetään tarkistusluettelon omistajalle:
 

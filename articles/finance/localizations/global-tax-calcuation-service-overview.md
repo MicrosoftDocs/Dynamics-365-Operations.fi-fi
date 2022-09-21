@@ -2,7 +2,7 @@
 title: Verolaskennan yleiskatsaus
 description: Tässä artikkelissa selitetään verolaskentamahdollisuuden yleinen laajuus ja ominaisuudet.
 author: EricWangChen
-ms.date: 03/02/2022
+ms.date: 09/08/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2765b922bcc58837c32973b7ca96e0d63eb8b9d6
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: a193db82b2b079c1e10fbfb6bfde7aa43b18bc4a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295988"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465163"
 ---
 # <a name="tax-calculation-overview"></a>Verolaskennan yleiskatsaus
 
@@ -74,18 +74,10 @@ On suositeltavaa tuoda ja määrittää verolaskelman konfiguraatio versiolle, j
 
 | Financen tai Supply Chain Managementin versio | Veromääritysten versio               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Veromääritys – Eurooppa 30.12.82     |
-| 10.0.19         | Verolaskentamääritys 36.38.193 |
-| 10.0.20         | Verolaskentamääritys 40.43.208 |
-| 10.0.21         | Verolaskentamääritys 40.48.215 |
-| 10.0.22         | Verolaskentamääritys 40.48.215 |
-| 10.0.23         | Verolaskentamääritys 40.50.221 |
-| 10.0.24         | Verolaskentamääritys 40.50.225 |
-| 10.0.25         | Verolaskentamääritys 40.50.225 |
-| 10.0.26         | Verolaskentamääritys 40.54.234 |
-| 10.0.27         | Verolaskentamääritys 40.54.234 |
-| 10.0.28         | Verolaskentamääritys 40.54.234 |
+| 10.0.30         | Verolaskentamääritys 40.55.239 |
 | 10.0.29         | Verolaskentamääritys 40.55.236 |
+| 10.0.28         | Verolaskentamääritys 40.54.234 |
+| 10.0.27         | Verolaskentamääritys 40.54.234 |
 
 
 ## <a name="data-flow"></a>Tietojen virtaus
@@ -104,120 +96,27 @@ Verolaskennan tietovuoprosessin yhteenveto.
 
 Tapahtumat voivat ottaa verolaskennan käyttöön. 
 
-Seuraavia tapahtumia tuetaan versiossa 10.0.21: 
+Seuraavassa taulukossa ovat vastaavan version tukemat tapahtumat.
 
-- Myynti
-
-    - Myyntitarjous
-    - Myyntitilaus
-    - Vahvistus
-    - Materiaaliluettelo
-    - Pakkausluettelo
-    - Myyntilasku
-    - Hyvityslasku
-    - Palautustilaus
-    - Otsikon muu kulu
-    - Rivin muu kulu
-
-- Osto
-
-    - Ostotilaus
-    - Vahvistus
-    - Saapumisluettelo
-    - Tuotteen vastaanotto
-    - Ostolasku
-    - Otsikon muu kulu
-    - Rivin muu kulu
-    - Hyvityslasku
-    - Palautustilaus
-    - Ostoehdotus
-    - Ostoehdotuksen rivin muu kulu
-    - Tarjouspyyntö
-    - Tarjouspyynnön otsikon muu kulu
-    - Tarjouspyynnön rivin muu kulu
-
-- Varasto
-
-    - Siirtotilaus – lähetä
-    - Siirtotilaus – vastaanota
-
-Seuraavia tapahtumia tuetaan versiossa 10.0.23: 
-
-- Vapaatekstilasku
-
-Seuraavia tapahtumia tuetaan versiossa 10.0.26: 
-
-- Yleiset kirjauskansiot
-- Toimittajan laskun kirjauskansio
-
-Seuraavia tapahtumia tuetaan versiossa 10.0.28: 
-
-- Toimittajan maksukirjauskansio
-- Asiakkaan maksukirjauskansio
-
-Seuraavia tapahtumia tuetaan versiossa 10.0.29: 
-
-
-- Kausikirjauskansiot
+| Versio | Tapahtumat |
+|---------|--------------|
+| 10.0.29 | Kausikirjauskansiot |
+| 10.0.28 | Toimittajan maksukirjauskansio<br> Asiakkaan maksukirjauskansio | 
+| 10.0.26 | Yleiset kirjauskansiot<br> Toimittajan laskun kirjauskansio |
+| 10.0.23 | Vapaatekstilasku |
+| 10.0.21| Myynti<br><ul><li>Myyntitarjous</li><li>Myyntitilaus</li><li>Vahvistus</li><li>Materiaaliluettelo</li><li>Pakkausluettelo</li><li>Myyntilasku</li><li>Hyvityslasku</li><li>Palautustilaus</li><li>Otsikon muu kulu</li><li>Rivin muu kulu</li></ul>Osto<br><ul><li>Ostotilaus</li><li>Vahvistus</li><li>Saapumisluettelo</li><li>Tuotteen vastaanotto</li><li>Ostolasku</li><li>Otsikon muu kulu</li><li>Rivin muu kulu</li><li>Hyvityslasku</li><li>Palautustilaus</li><li>Ostoehdotus</li><li>Ostoehdotuksen rivin muu kulu</li><li>Tarjouspyyntö</li><li>Tarjouspyynnön otsikon muu kulu</li><li>Tarjouspyynnön rivin muu kulu</li></ul>Varasto<ul><li>Siirtotilaus – lähetä</li><li>Siirtotilaus – vastaanota</li></ul>|
 
 ## <a name="supported-countriesregions"></a>Tuetut maat/alueet
 
-Verolaskelma voidaan suorittaa yhdessä seuraavien maiden/alueiden tuettujen lokisointiominaisuuksien kanssa yrityksen ensisijaista osoitetta varten: 
+Verolaskelma voidaan suorittaa tuetuilla lokalisointiominaisuuksilla. Seuraavassa taulukossa ovat yrityksen ensisijaisen osoitteen maat/alueet.
 
-Tuettu versiossa 10.0.21:
-
-- Itävalta
-- Belgia
-- Tanska
-- Viro
-- Suomi
-- Ranska
-- Saksa
-- Unkari
-- Islanti
-- Irlanti
-- Italia
-- Latvia
-- Liettua
-- Alankomaat
-- Norja
-- Puola
-- Ruotsi
-- Sveitsi
-- Yhdistynyt kuningaskunta
-- Yhdysvallat
-
-Tuettu versiossa 10.0.22:
-
-- Australia
-- Bahrain
-- Kanada
-- Egypti
-- Hongkong, erityishallintoalue
-- Kuwait
-- Uusi-Seelanti
-- Oman
-- Qatar
-- Saudi-Arabia
-- Etelä-Afrikka
-- Yhdistyneet arabiemiirikunnat
-
-Tuettu versiossa 10.0.23:
-
-- Thaimaa
-- Japani
-- Malesia
-- Singapore
-
-Tuettu versiossa 10.0.24:
-
-- Meksiko
-
-Tuettu versiossa 10.0.26:
-
-- Kiina
-- Tšekin tasavalta
-- Espanja
+| Versio | Maa/alue |
+|---------|----------------|
+| 10.0.26 | - Kiina <br>- Tšekin tasavalta<br>- Espanja |
+| 10.0.24 | Meksiko |
+| 10.0.23 | - Thaimaa <br>- Japani <br>- Malesia <br>- Singapore |
+| 10.0.22 | - Australia<br>- Bahrain <br>- Kanada<br>- Egypti <br>- Hongkong, Kiinan erityishallintoalue <br>- Kuwait <br>- Uusi-Seelanti <br>- Oman <br>- Qatar <br>- Saudi-Arabia <br>- Etelä-Afrikka <br>- Yhdistyneet arabiemiirikunnat |
+| 10.0.21 | - Itävalta <br>- Belgia <br>- Tanska <br>- Viro <br>- Suomi <br>- Ranska <br>- Saksa <br>- Unkari <br>- Islanti <br>- Irlanti <br>- Italia <br>- Latvia <br>- Liettua <br>- Alankomaat <br>- Norja <br>- Puola <br>- Ruotsi <br>- Sveitsi <br>- Yhdistynyt kuningaskunta <br>- Yhdysvallat |
 
 Verolaskelman voi ottaa käyttöön ja suorittaa myös muissa yleisissä ominaisuuksissa, kun maa tai alue ei ole Microsoftin lokalisoima.
 

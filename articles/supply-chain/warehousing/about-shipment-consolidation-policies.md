@@ -1,5 +1,5 @@
 ---
-title: Lähetyksen konsolidoinnin käytännöt
+title: Lähetyksen konsolidointikäytäntöjen yleiskatsaus
 description: Tässä artikkelissa on lähetyksen konsolidointikäytäntöjen joustavan määrityksen mahdollistavan toiminnon yleiskatsaus.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7113fc635a7c01e4b9cc44898daa3d2617058b6b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903895"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427925"
 ---
-# <a name="shipment-consolidation-policies"></a>Lähetyksen konsolidoinnin käytännöt
+# <a name="shipment-consolidation-policies-overview"></a>Lähetyksen konsolidointikäytäntöjen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Ennen lähetyksen konsolidointikäytäntöjen käyttöönottoa konsolisointitoim
 
 Käytettävä lähetyksen konsolidointikäytäntö määritetään kyselyjen avulla, minkä jälkeen muokattavalla kenttäjoukolla määritetään kuormarivien määritys lähetystasolla. (Tämä malli muistuttaa aaltomallien käyttämää mallia.) Jokaiseen käytäntöön on lisäksi lisätty **Konsolidoi aiemmin luotujen lähetysten kanssa** -vaihtoehto. Kun tämä vaihtoehto on valittu, *Vapauta varastoon* -menettely etsii konsolidoitavat lähetykset tekemällä haun niissä aiemmin luoduissa lähetyksissä, jotka perustuvat samaan konsolidointikäytäntöön. Tässä tapauksessa järjestelmä valitsee aiemmin luodun lähetyksen tai kuorman sen sijaan, että se loisi uuden. Järjestelmä kuitenkin konsolidoi vain sellaiset aiemmin luodut lähetykset, joiden tila on *Avoin*. Konsolidointikohteina ei pidetä lähetyksiä, jotka kuuluvat aaltojulkaisuun ja joiden tila on vähintään *Vapautettu*.
 
-Kun lähetyksen konsolidointikäytännöt saadaan käyttöön, aiemmin **Varastot**-asetussivulla ollut **Konsolidoi lähetys varastoon vapautettaessa** -asetus piilotetaan. Uuteen lähetyksen konsolidointitoimintoon siirtymistä helpottaa **Lähetyksen konsolidointikäytännöt** -sivulla oleva toiminto, jonka luoma oletuskäytäntö sisältää automaattisesti nykyisten varastojen vanhan asetuksen. Kun tämä oletuskäytäntö on luotu, **Varastot**-asetussivun **Konsolidoi lähetys varastoon vapautettaessa** -asetusta ei oteta enää huomioon.
+Kun *Lähetyksen konsolidointikäytännöt* -ominaisuus on käytössä järjestelmässä, aiemmin **Varastot**-asetussivulla ollut **Konsolidoi lähetys varastoon vapautettaessa** -asetus piilotetaan. Uuteen lähetyksen konsolidointitoimintoon siirtymistä helpottaa **Lähetyksen konsolidointikäytännöt** -sivulla oleva toiminto, jonka luoma oletuskäytäntö sisältää automaattisesti nykyisten varastojen vanhan asetuksen. Kun tämä oletuskäytäntö on luotu, **Varastot**-asetussivun **Konsolidoi lähetys varastoon vapautettaessa** -asetusta ei oteta enää huomioon. Lisätietoja: [Lähetyksen konsolidoinnin käytäntöjen määrittäminen](configure-shipment-consolidation-policies.md).
 
 Voit korvata käytettävän konsolidointikäytännön manuaalisesti **Vapauta varastoon** -sivulla samalla tavoin kuin täyttämiskäytännöt korvataan.
 

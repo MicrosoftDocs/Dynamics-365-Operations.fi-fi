@@ -2,7 +2,7 @@
 title: Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille
 description: Tässä artikkelissa kuvataan, miten voidaan määrittää kiertoteitä valikkokohteille, jotta työntekijät voivat pysäyttää kulloisenkin tehtävän, suorittaa toisen tehtävän ja palata alkuperäiseen tehtävään tietoja menettämättä.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.dyn365.ops.version: 10.0.30
+ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336122"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428060"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille
 
@@ -35,8 +35,11 @@ Ennen kuin voit määrittää mobiililaitteiden valikkokohteiden vaiheiden kiert
 
 1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
 1. Varmista, että *Varastosovelluksen vaiheohjeet* -ominaisuus on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md). Tämä ominaisuus on edellytys *Warehouse Management -sovelluksen kiertotiet* -ominaisuudelle.
-1. Ota *Warehouse Management -sovelluksen kiertotiet* -ominaisuus käyttöön. Tämä ominaisuus kuvataan tässä artikkelissa. Supply Chain Managementin versiosta 10.0.29 alkaen se on poistettu oletusarvoisesti käytöstä.
-1. Jos *Warehouse Management -sovelluksen kiertotiet* -ominaisuus ei ole vielä käytössä, päivitä kenttien nimet Warehouse Management -mobiilisovelluksessa valitsemalla **Varastonhallinta \> Asetukset \> Mobiililaite \> Varastosovelluksen kenttien nimet** ja valitsemalla **Luo oletusasetus**. Toista tämä vaihe jokaiselle yritykselle, jossa käytät Warehouse Management -mobiilisovellusta. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
+1. Ota käyttöön seuraavat toiminnot, jotka sisältävät tässä artikkelissa kuvattuja toimintoja:
+    - *Warehouse Management -sovelluksen kiertotie*<br>(Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
+    - *Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa*
+1. Jos *Warehouse Management -sovelluksen kiertotiet*- ja/tai *Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa* -ominaisuus ei ole vielä käytössä, päivitä kenttien nimet Warehouse Management -mobiilisovelluksessa valitsemalla **Varastonhallinta \> Asetukset \> Mobiililaite \> Varastosovelluksen kenttien nimet** ja valitsemalla **Luo oletusasetus**. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
+1. Toista edellinen vaihe kullekin yritykselle, jossa käytät Warehouse Management -mobiilisovellusta.
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Valikkokohtaisen ohituksen kiertotien määrittäminen
 
@@ -147,3 +150,6 @@ Tässä menettelyssä suoritetaan sijaintikysely Warehouse Management -mobiiliso
 1. Huomaa, että rekisterikilpi on kopioitu valitsemastasi kortista. Vahvista arvo.
 1. Voit nyt suorittaa siirron noudattamalla vakiotehtävänkulkua. Kun työ on valmis, avaa toimintovalikko ja valitse **Peruuta**.
 1. Palaat **Sijaintikysely**-sivulle. Huomaa, että arvoja ei päivitetä automaattisesti. Näin ollen sivu on päivitettävä manuaalisesti, jotta näet siirtokiertotien muutokset.
+
+> [!NOTE]
+> *Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa* -ominaisuuden avulla voit määrittää monitasoisia kiertoteitä (kiertoteitä kiertoteiden sisällä), joiden avulla työntekijät voivat siirtyä olemassa olevalta kiertotieltä hetkessä toiselle ja taas takaisin. Ominaisuus tukee valmiiden kiertoteiden kahta tasoa. Tarvittaessa voit mukauttaa järjestelmää niin, että se tukee kolmea tai useampaa kiertoteiden tasoa luomalla koodilaajennukset tauluun `WHSWorkUserSessionState`.

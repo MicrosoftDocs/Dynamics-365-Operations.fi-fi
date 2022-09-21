@@ -2,7 +2,7 @@
 title: Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 description: Tässä artikkelissa selitetään, miten määritetyt sähköisen raportoinnin (ER) komponentit voidaan tarkistaa mahdollisten suorituksen aikaisten ongelmien välttämiseksi.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277847"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476851"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 
@@ -243,6 +243,15 @@ Seuraavassa taulukossa on yhteenveto ER:n tarjoamista tarkistuksista. Lisätieto
 <td>
 <p>ORDERBY-toiminnon luettelolausekkeesta ei voi tehdä kyselyjä.</p>
 <p><b>Suorituksenaikainen virhe:</b> Lajittelua ei tueta. Vahvista määritykset saadaksesi tästä lisätietoja.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Vanhentunut sovellusartefakti</a></td>
+<td>Tietojen eheys</td>
+<td>Varoitus</td>
+<td>
+<p>Elementti &lt;polku&gt; on merkitty vanhentuneeksi.<br>tai<br>Elementti &lt;polku&gt; on merkitty vanhentuneeksi viestillä &lt;viestin teksti&gt;.</p>
+<p><b>Suorituspalvelun virhemalli:</b> Luokan &lt;polkua&gt; ei löytynyt.</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ Sen sijaan, että lisättäisiin sisäkkäinen kenttä, jonka tyyppi on **Lasket
 #### <a name="option-2"></a>Asetus 2
 
 Muuta tietolähteen **FilteredVendors** lauseke arvosta `ORDERBY("Query", Vendor, Vendor.AccountNum)` arvoksi `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Emme suosittele sellaisen taulukon lausekkeen muuttamista, jossa on suuri tietomäärä (tapahtumataulu), koska kaikki tiedot haetaan ja tarvittavien tietojen järjestäminen tehdään muistissa. Näin ollen tämä lähestymistapa voi heikentää suorituskykyä.
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a>Vanhentunut sovellusartefakti
+
+Kun suunnittelet ER-mallin yhdistämismäärityksen komponenttia tai ER-muotokomponenttia, voit määrittää ER-lausekkeen, joka kutsuu sovellusartefaktia ER:ssä. Se voi olla esimerkiksi tietokantataulu tai luokan menetelmä. Financen versiossa 10.0.30 ja uudemmissa versioissa voit pakottaa ER:n varoittamaan, että viitattu sovellusartefakti on merkitty lähdekoodissa vanhentuneeksi. Tämä varoitus voi olla hyödyllinen, koska yleensä vanhentuneet artefaktit poistetaan lopulta lähdekoodista. Kun artefaktin tilasta kerrotaan, vanhentuneita artefakteja ei ehkä käytetä muokattavassa ER-komponenteissa ennen sen poistamista lähdekoodista. Tämä auttaa ehkäisemään virheitä, kun sovellusartefakteja, joita ei ole olemassa, kutsutaan ER-komponentissa suorituspalvelussa.
+
+Ota käyttöön **Tarkista sähköisen raportoinnin tietolähteiden vanhentuneet elementit** -ominaisuus **Ominaisuuksien hallinta** -työtilassa ja aloita sovellusartefaktien vanhentuneen määritteen arviointi muokattavan ER-komponentin tarkastuksen aikana. Vanhentuneet määritteet arvioidaan tällä hetkellä seuraaville sovellusartefaktien tyypeille:
+
+- Tietokantataulu
+    - Taulun tyyppi
+    - Taulun menetelmä
+- Sovellusluokka
+    - Luokan menetelmä
+
+> [!NOTE]
+> Varoitus annetaan muokattavan ER-komponentin tarkastuksen aikana tietolähteessä, joka viittaa vanhentuneeseen artefaktiin vain, jos tätä tietolähdettä käytetään vähintään yhdessä tämän ER-komponentin sidonnassa.
+
+> [!TIP]
+> Kun [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute)-luokkaa käytetään ilmoitettaessa kääntäjälle varoitussanomavirheestä virheiden sijaan, tarkastusvaroitus näyttää määritetyn lähdekoodin varoituksen suunnittelussa **Tiedot**-pikavälilehdessä **Mallin yhdistämismäärityksen suunnitteluohjelma**- tai **Muodon suunnitteluohjelma** -sivulla.
+
+Seuraavassa kuvassa näkyy vahvistusvaroitus, joka näytetään, kun vanhentunut `DEL_Email`-kenttä `CompanyInfo`-sovellustaulussa on sidoksissa tietomallikenttään käyttämällä määritettyä `company`-tietolähdettä.
+
+![Tarkista vahvistusvaroitukset Tiedot-pikavälilehdessä Mallin yhdistämismäärityksen suunnitteluohjelma -sivulla.](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>Automaattinen ratkaisu
+
+Tätä ongelmaa ei voi korjata automaattisesti.
+
+### <a name="manual-resolution"></a>Manuaalinen ratkaisu
+
+Muokkaa määritettyä mallin yhdistämismääritystä tai muotoa poistamalla tietolähteen kaikki sidonnat, jotka viittaavat vanhentuneeseen sovellusartefaktiin.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5cb2c1234de03e9777921c18e4cbb81eec7feef9
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903504"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462271"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Laskurivien luominen toimittajan laskuja tuotaessa
 
@@ -45,7 +45,7 @@ Voit ottaa laskurivien automaattisen luonnin käyttöön noudattamalla seuraavia
 **Toimittajan laskun otsikko** -tietoyksikköä on parannettu, jotta se tukee tässä artikkelissa kuvattua toimintoa. Kolme kenttää on lisätty
 
 - **HeaderOnlyImport** – Tämän kentän arvona on oltava **Kyllä**, jotta voidaan luoda laskuotsikkojen rivit.
-- **PurchIdRange** – Ostotilausnumeroiden luettelo. Laskunumerot voivat olla alueita, kuten **INV0001..INV0009** (jossa kaksi pistettä erottavat alueen alun ja lopun), tai erillisiä arvoja, kuten **INV0001, INV0003, INV0006**. Kaikkien ostotilausten on kuuluttava samaan toimittajatiliin laskuotsikossa. Muussa tapauksessa saat seuraavan virhesanoman: Laskurivien luonti epäonnistui. Ostotilauksilla on eri toimittajatilit.
+- **PurchIdRange** – Ostotilausnumeroiden luettelo. Laskunumerot voivat olla alueita, kuten **PO0001..PO0009** (jossa kaksi pistettä erottavat alueen alun ja lopun), tai erillisiä arvoja, kuten **PO0001, PO0003, PO0006**. Kaikkien ostotilausten on kuuluttava samaan toimittajatiliin laskuotsikossa. Muussa tapauksessa saat seuraavan virhesanoman: Laskurivien luonti epäonnistui. Ostotilauksilla on eri toimittajatilit.
 - **PackingslipRange** – Tuotteen vastaanottonumeroiden luettelo. Toimittajan laskun rivejä voi luoda tuotevastaanotoista. Tuotteen vastaanottonumeroita ei kuitenkaan yleensä sisällytetä toimittajan laskuihin. Syötä tähän kenttään tuotteen vastaanottonumeroita vain, jos pystyt selkeästi tunnistamaan, mitkä tuotteen vastaanotot kuuluvat mihinkin erillisiin laskuihin. Laskurivejä voidaan luoda tuotteiden vastaanottojen perusteella. Jos tätä kenttää käytetään, **Ostoreskontran parametrit** -sivun **Valitse laskurivien automaattisen luonnin oletusmäärä** -kentän asetusta ei oteta huomioon. 
 
 **Rajoitus**: Jos syötät useita tuotteen vastaanottonumeroita, samalla laskunumerolla luodaan useita odottavia toimittajan laskuja. Ne on konsolidoitava manuaalisesti ennen laskun käsittelyn jatkamista. Tulevissa julkaisuissa aiomme mahdollistaa laskujen automaattisen konsolidoinnin, jolloin rajoitus poistuu.

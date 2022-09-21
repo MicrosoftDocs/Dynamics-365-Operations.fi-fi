@@ -14,21 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35c38ad25380b940d050b4e498fabca017c35997
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 975b620dc911d154f6f67420a957bd72c02321ed
+ms.sourcegitcommit: 6b013a423ed91973d60a895330046db2a07d92c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336878"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "9472710"
 ---
 # <a name="benefits-management-workspace"></a>Etujen hallinnan työtila
 
-[!include [preview feature](./includes/preview-feature.md)]
-
 Tässä artikkelissa kuvataan Dynamics 365 Human Resources -sovellukseen sisältyvä **etujen hallinnan** työtila.
-
-> [!NOTE]
-> Jos haluat nähdä **etujen hallinnan työtilan**, sinun täytyy ottaa **(Esikatselu) Etujen hallinnan työtila** -ominaisuus käyttöön ominaisuuksien hallinnasta. Lisätietoja esiversiotoimintojen käyttöönotosta on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br><br>![Etujen hallinnan työtilan käyttöönotto.](./media/hr-benefits-management-workspace-enable.png)
 
 **Etujen hallinnan työtilan** avulla voit katsastaa nopeasti etujen nimikkeet, jotka vaativat huomiotasi. Tällä sivulla näytetään seuraavat tiedot:
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.form: EROperationDesigner, ERParameters
-ms.openlocfilehash: 2feadf8e196936220cf557989cae40b742447d99
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: ff44226b7deb15bc673d121d62cad44309b5d78b
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280921"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476816"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -186,6 +186,9 @@ Jos **Solu**-osa on määritetty antamaan arvo Excel-kuvana, se voidaan sitoa ti
 
 > [!NOTE]
 > Jokainen Excel-kuva ja -muoto katsotaan ankkuroiduksi vasemmasta yläkulmasta tiettyyn Excel-soluun tai -alueeseen. Jos Excel-kuva tai -muoto halutaan replikoida, se solu tai alue, johon se on ankkuroitu, on määritettävä replikoiduksi soluksi tai alueeksi.
+
+> [!TIP]
+> Jos suunnittelet käyttäväsi kuvaa ja mukautettua skaalausta ja kuvasuhdetta suorituspalvelun aikana, kannattaa määrittää **Noudata kuvien skaalausta** -arvo pääelementissä [Excel-tiedoston komponentti](#excel-file-component) -kohdan arvoksi **Kyllä**, jolloin skaalauksen ja kuvasuhde on sama kuin Excel-mallin kuvan paikkamerkki.
 
 Lisätietoja kuvien ja muotojen upottamisesta on kohdassa [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](electronic-reporting-embed-images-shapes.md).
 

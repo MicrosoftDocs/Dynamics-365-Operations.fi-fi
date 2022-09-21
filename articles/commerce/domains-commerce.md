@@ -2,19 +2,19 @@
 title: Toimialueet Dynamics 365 Commercessa
 description: Tässä artikkelissa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
 author: BrianShook
-ms.date: 08/19/2022
+ms.date: 09/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405493"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465190"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Toimialueet Dynamics 365 Commercessa
 
@@ -144,9 +144,9 @@ Commercen toimittama Azure Front Door -esiintymä ei tue Apex-toimialueita (juur
 
 - **Vaihtoehto 1**: Käytä DNS-toimittajaa ja ohjaa Apex-toimialue uudelleen www-toimialueelle. Esimerkiksi fabrikam.com ohjaa uudelleen osoitteeseen `www.fabrikam.com`, jossa `www.fabrikam.com` on CNAME-tietue, joka viittaa Commercen isännöimään Azure Front Door -esiintymään.
 
-- **Vaihtoehto 2** – Jos DNS-palveluntarjoaja tukee ALIAS-tietueita, voit osoittaa Apex-toimialueen Front Door -päätepisteeseen. Näin varmistat, että Front Door -päätepisteen tekemä IP-osoitteen muutos otetaan huomioon.
+- **Vaihtoehto 2** - Jos DNS-toimittaja tukee ALIAS-tietueita, voit osoittaa apex-toimialuetta Azure Front Door -päätepisteeseen. Näin varmistetaan, että päätepisteen IP-muutos otetaan huomioon. Isännöi Azure Front Door -esiintymää itse.
   
-- **Vaihtoehto 3** – Jos DNS-palveluntarjoaja ei tue ALIAS-tietueita, määritä CDN tai Front Door -esiintymä itse Apex-toimialueen isännöintiä varten.
+- **Vaihtoehto 3** - Jos DNS-toimittaja ei tue ALIAS-tietueita, muuta DNS-toimittajaksi Azure DNS ja isännöi sekä Azure DNS- että Azure Front Door -esiintymää itse.
 
 > [!NOTE]
 > Jos käytät Azure Front Door -palvelua, sinun on määritettävä myös Azure DNS -palvelu samassa tilauksessa. Azure DNS:n isännöimä Apex-toimialue voi osoittaa Azure Front Door -palveluun alias-tietueena. Tämä on ainoa ratkaisu, koska Apex-toimialueiden on aina osoitettava IP-osoitteeseen.

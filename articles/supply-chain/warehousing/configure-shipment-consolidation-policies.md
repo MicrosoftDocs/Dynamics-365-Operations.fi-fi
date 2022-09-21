@@ -2,7 +2,7 @@
 title: Lähetyksen konsolidoinnin käytäntöjen määrittäminen
 description: Tässä artikkelissa käsitellään lähetyksen oletusarvoisten ja mukautettujen konsolidointikäytäntöjen määrittämistä.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 0312d425d2ebc5311e894030423a916b90f1881a
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336489"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427979"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Lähetyksen konsolidointikäytäntöjen määrittäminen
 
@@ -28,75 +28,49 @@ Lähetyksen konsolidointikäytäntöjä käyttävän lähetyksen konsolidointipr
 
 Tämän artikkelin skenaarioiden avulla näytetään, miten määritetään oletusarvoiset ja mukautetut lähetyksen konsolidointikäytännöt.
 
-## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Lähetyksen konsolidointikäytäntötoiminnon ottaminen käyttöön
+> [!WARNING]
+> Jos päivität sen Microsoft Dynamics 365 Supply Chain Management -järjestelmän version, jossa olet käyttänyt vanhaa lähetyksen konsolidointitoimintoa, konsolidointi ei ehkä enää toimi odotetulla tavalla, jos et noudata tässä annettuja ohjeita.
+>
+> Kun Supply Chain Managementin asennuksissa *Lähetyksen konsolidoinnin käytännöt* -ominaisuus on poistettu käytöstä, voit ottaa lähetyksen konsolidoinnin käyttöön **Konsolidoi lähetys varastoon vapautettaessa** -asetuksen avulla yksittäisissä varastoissa. Tämä ominaisuus on pakollinen versiosta 10.0.29 alkaen. Kun ominaisuus on käytössä, **Konsolidoi lähetys varastoon vapautettaessa** -asetus piilotetaan ja toiminto korvataan tässä artikkelissa kuvatuilla *lähetyksen konsolidoinnin käytännöillä*. Jokainen käytäntö muodostaa konsolidointisäännöt ja sisältää kyselyn, jolla ohjataan käytännön käyttökohteita. Kun otat käyttöön ominaisuuden ensimmäisen kerran, lähetyksen konsolidointikäytäntöjä ei määritetä **Lähetyksen konsolidointikäytännöt** -sivulla. Kun käytäntöjä ei ole määritetty, järjestelmä käyttää vanhaa toimintatapaa. Tämän vuoksi jokainen olemassa oleva varasto jatkaa **Konsolidoi lähetys varastoon vapautettaessa** -asetuksen noudattamista, vaikka tämä asetus on nyt piilotettu. Kuitenkin vähintään yhden lähetyksen konsolidointikäytännön luomisen yhteydessä **Konsolidoi lähetys varastoon vapautettaessa** -asetus ei ole enää voimassa, ja konsolidointitoiminto on kokonaan käytäntöjen hallinnoima.
+>
+> Kun olet määrittänyt vähintään yhden lähetyksen konsolidointikäytännön, järjestelmä tarkistaa konsolidointikäytännöt aina, kun tilaus vapautetaan varastoon. Järjestelmä käsittelee käytännöt käyttämällä järjestystä, joka on määritetty kunkin käytännön **Käytäntöjärjestys**-arvon mukaan. Se käyttää ensimmäistä käytäntöä, jossa kysely vastaa uutta tilausta. Jos kyselyt eivät vastaa tilausta, jokainen tilausrivi luo erillisen lähetyksen, jossa on yksi kuormarivi. Tämän vuoksi varmuudeksi kannattaa luoda oletuskäytäntö, jota käytetään kaikissa varastoissa ja ryhmissä tilausnumeron mukaan. Anna tälle varmistuskäytännölle korkein mahdollinen **käytäntöjärjestyksen** arvo, jotta se käsitellään viimeisenä.
+>
+> Jos haluat luoda vanhan toimintatavan uudelleen, luo käytäntö, joka ei ryhmittele tilausnumeron mukaan ja jolla on kyselyehdot, jotka sisältävät soveltuvat varastot.
 
-> [!IMPORTANT]
-> Artikkelin [ensimmäisessä skenaariossa](#scenario-1) määritetään ensin varasto siten, että se käyttää aiemman lähetyksen konsolidointitoimintoa. Tämän jälkeen otetaan käyttöön lähetyksen konsolidointikäytännöt. Tällä tavoin näytetään, miten päivitysskenaario toimii. Jos ensimmäisessä skenaariossa on tarkoitus käyttää demotietoympäristöä, älä ota toimintoa käyttöön ennen skenaarioon toteuttamista.
+## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Lähetyksen konsolidointikäytäntötoiminnon ottaminen käyttöön
 
 Jos haluat käyttää *Lähetyksen konsolidointikäytännöt* -toimintoa, se on otettava järjestelmässä käyttöön. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Lähetyksen konsolidoinnin käytännöt* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-## <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
+## <a name="set-up-your-initial-consolidation-policies"></a><a name="initial-policies"></a>Määritä alkuperäiset konsolidointikäytännöt
 
-Artikkelin kaikissa skenaarioissa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu **USMF** ennen aloittamista.
-
-## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Skenaario 1: Lähetyksen oletusarvoisten konsolidointikäytäntöjen määrittäminen
-
-Sen jälkeen kun *Lähetyksen konsolidointikäytännöt* -toiminto on otettu käyttöön, vähimmäismäärä oletuskäytäntöjä on määritettävä kahdessa tilanteessa:
-
-- päivitettävässä ympäristössä on jo tietoja
-- määritettävänä on täysin uusi ympäristö.
-
-### <a name="upgrade-an-environment-where-warehouses-are-already-configured-for-cross-order-consolidation"></a>Ympäristön päivittäminen, kun tilausten välinen konsolidointi on jo määritetty varastoissa
-
-Kun tämä menettely aloitetaan, *Lähetyksen konsolidointikäytännöt* -toiminnon on oltava pois käytöstä, sillä vain niin voidaan simuloida ympäristöä, jossa on jo käytössä perustason tilausten välinen konsolidointitoiminto. Toiminto otetaan sitten käyttöön ominaisuuden hallinnassa, jolloin saat tietää, miten lähetyksen konsolidointikäytännöt määritetään päivityksen jälkeen.
-
-Oletusarvoiset lähetyksen konsolidointikäytännöt määritetään seuraavien ohjeiden avulla ympäristössä, joissa tilausten välinen konsolidointi on jo määritetty varastoissa.
-
-1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Varastot**.
-1. Etsi ja avaa luettelossa sopiva varastotietue (kuten varasto *24* **USMF**-demotiedoissa).
-1. Valitse toimintoruudussa **Muokkaa**.
-1. Valitse **Varasto**-pikavälilehdessä **Konsolidoi lähetys varastoon vapautettaessa** -asetukseksi *Kyllä*.
-1. Toista vaiheet 2–4 kaikissa varastoissa, joissa on tehtävä konsolidointi.
-1. Sulje sivu.
-1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**. Selain on ehkä päivitettävä, ennen kuin uusi **Lähetyksen konsolidointikäytännöt** -valikkovaihtoehto näkyy toiminnon käyttöönottamisen jälkeen.
-1. Luo seuraavat käytännöt valitsemalla toimintoruudussa **Luo oletusasetukset**:
-
-    - *Myyntitilaukset*-käytäntötyypin **Tilaustenvälinen**-käytäntö (mikäli vähintään yksi varasto on määritetty käyttämään aiempaa konsolidointitoimintoa)
-    - *Myyntitilaukset*-käytäntötyypin **Oletus**-käytäntö
-    - *Siirtovarasto-otto*-käytäntötyypin **Oletus**-käytäntö
-    - *Siirtovarasto-otto*-käytäntötyypin **Tilaustenvälinen**-käytäntö (mikäli vähintään yksi varasto on määritetty käyttämään aiempaa konsolidointitoimintoa)
-
-    > [!NOTE]
-    > - Molemmissa **Tilaustenvälinen**-käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää lukuun ottamatta. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
-    > - Molemmissa **Oletus**-käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää mukaan lukien. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi tilausnumero, varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
-
-1. Valitse *Myyntitilaukset*-käytäntötyypiksi **Tilaustenvälinen**-käytäntö ja valitse sitten toimintoruudussa **Muokkaa kyselyä**.
-1. Kiinnitä huomiota kyselyeditorin valintaikkunassa on luettelo, jossa varastojen **Konsolidoi lähetys varastoon vapautettaessa** -asetukseksi on määritetty *Kyllä*. Tämän vuoksi ne sisältyvät kyselyyn.
-
-### <a name="create-default-policies-for-a-new-environment"></a>Uuden ympäristön oletuskäytäntöjen luominen
-
-Määritä lähetyksen oletusarvoiset konsolidointikäytännöt seuraavien ohjeiden mukaisesti:
+Jos käytät uutta järjestelmää tai järjestelmää, jossa juuri otit käyttöön *Lähetyksen konsolidointikäytännöt* -ominaisuuden ensimmäisen kerran, määritä ensimmäiset lähetyksen konsolidointikäytännöt alla olevien vaiheiden avulla.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Luo seuraavat käytännöt valitsemalla toimintoruudussa **Luo oletusasetukset**:
 
-    - *Myyntitilaukset*-käytäntötyypin **Oletus**-käytäntö
-    - *Siirtovarasto-otto*-käytäntötyypin **Oletus**-käytäntö
+    - Käytäntö, jonka nimi on *Myyntitilaukset*-käytäntötyypin *Oletusarvo*.
+    - Käytäntö, jonka nimi on *Siirtovarasto-otto*-käytäntötyypin *Oletusarvo*.
+    - Käytäntö, jonka nimi on *Siirtovarasto-otto*-käytäntötyypin *Tilaustenvälinen*. (Tämä käytäntö luodaan vain, jos sinulla on vähintään yksi varasto, jossa vanha **Konsolidoi lähetys varastoon vapautettaessa** -asetus on otettu käyttöön.)
+    - Käytäntö, jonka nimi on *Myyntitilaukset*-käytäntötyypin *Tilaustenvälinen*. (Tämä käytäntö luodaan vain, jos sinulla on vähintään yksi varasto, jossa vanha **Konsolidoi lähetys varastoon vapautettaessa** -asetus on otettu käyttöön.)
 
     > [!NOTE]
-    > Molemmissa **Oletus**-käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää mukaan lukien. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi tilausnumero, varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
+    > - Molemmissa *Tilaustenvälinen*-käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa. Tilauksen numerokenttä otetaan kuitenkin myös huomioon. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
+    > - Molemmissa *Oletusarvo*-käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa. Tilauksen numerokenttä otetaan kuitenkin myös huomioon. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi tilausnumero, varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
 
-## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Skenaario 2: Lähetyksen mukautettujen konsolidointikäytäntöjen määrittäminen
+1. Jos järjestelmä loi *Myyntitilaukset*-käytäntötyypiksi *Tilaustenvälinen*-käytännön, valitse se ja valitse sitten toimintoruudussa **Muokkaa kyselyä**. Kyselyeditorissa näkyvissä on, missä varastossa **Konsolidoi lähetys varastoon vapautettaessa** -asetus oli aikaisemmin käytössä. Siksi tämä käytäntö sisältää näiden varastojen aiemmat asetukset.
+1. Mukauta uusia oletuskäytäntöjä tarpeen mukaan lisäämällä tai poistamalla kenttiä ja/tai muokkaamalla kyselyitä. Voit myös lisätä tarvittavan määrän uusia käytäntöjä. Esimerkkejä käytäntöjen mukauttamisesta ja määrittämisestä on myöhemmin tämän artikkelin esimerkkiskenaariossa.
 
-Tässä skenaariossa näytetään, miten lähetyksen mukautetut konsolidointikäytännöt määritetään. Mukautetut käytännöt voivat tukea monimutkaisia liiketoimintavaatimuksia, joissa lähetyksen konsolidointi määräytyy useiden ehtojen perusteella. Kunkin tämän skenaarion esimerkkikäytäntö sisältää lyhyen liiketoimintatapauksen kuvauksen. Nämä esimerkkikäytännöt on määritettävä järjestyksessä, joka varmistaa kyselyjen alhaalta ylöspäin etenevän arvioinnin. (Toisin sanoen käytännöt, joissa on eniten ehtoja arvioidaan korkeimman prioriteetin käytäntönä.)
+## <a name="scenario-configure-custom-shipment-consolidation-policies"></a>Skenaario: Lähetyksen mukautettujen konsolidointikäytäntöjen määrittäminen
 
-### <a name="turn-on-the-feature-and-prepare-master-data-for-this-scenario"></a>Toiminnon ottaminen käyttöön ja skenaarion päätietojen valmisteleminen
+Tässä skenaariossa on esimerkki siitä, miten mukautetun lähetyksen konsolidointikäytännöt määritetään ja miten ne testataan esittelytietojen avulla. Mukautetut käytännöt voivat tukea monimutkaisia liiketoimintavaatimuksia, joissa lähetyksen konsolidointi määräytyy useiden ehtojen perusteella. Kunkin tämän skenaarion esimerkkikäytäntö sisältää lyhyen liiketoimintatapauksen kuvauksen. Nämä esimerkkikäytännöt on määritettävä järjestyksessä, joka varmistaa kyselyjen alhaalta ylöspäin etenevän arvioinnin. (Toisin sanoen käytännöt, joissa on eniten ehtoja arvioidaan korkeimman prioriteetin käytäntönä.)
 
-Ennen kuin tämän skenaarion harjoituksia tehdään, toiminto on otettava käyttöön ja suodatukseen tarvittavat päätiedot on valmisteltava jäljempänä annettavien ohjeiden mukaisesti. (Nämä edellytykset koskevat myös skenaarioluetteloa, joka on kohdassa [Esimerkkiskenaarioita lähetyksen konsolidointikäytäntöjen käyttämisestä](#example-scenarios).)
+### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-#### <a name="turn-on-the-feature-and-create-the-default-policies"></a>Toiminnon ottaminen käyttöön ja oletuskäytäntöjen luominen
+Tässä skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Supply Chain Management -sovelluksen [vakiodemotietoihin](../../fin-ops-core/fin-ops/get-started/demo-data.md). Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu *USMF* ennen aloittamista.
 
-Ota toiminto käyttöön toimintojen hallinnassa, jos sitä ei ole vielä otettu käyttöön, ja luo [skenaariossa 1](#scenario-1) kuvatut oletuskonsolidointikäytännöt.
+### <a name="prepare-master-data-for-this-scenario"></a>Päätietojen valmisteleminen tälle skenaariolle
+
+Ennen kuin tämän skenaarion harjoituksia tehdään, suodatukseen tarvittavat päätiedot on valmisteltava jäljempänä annettavien ohjeiden mukaisesti. (Nämä edellytykset koskevat myös skenaarioluetteloa, joka on [Esimerkkiskenaarioita lähetyksen konsolidointikäytäntöjen käyttämisestä](#example-scenarios) -osassa.)
 
 #### <a name="create-two-new-product-filter-codes"></a>Kahden uuden tuotteen suodatinkoodin luominen
 
@@ -300,7 +274,7 @@ Tässä esimerkissä luodaan *Varastot sallivat konsolidoinnin* -käytäntö, jo
 - Avoimien lähetysten konsolidointi on poistettu käytöstä.
 - Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Konsolidoi lähetys luovutettaessa varastoon**-valintaruutu).
 
-Yleensä tämä liiketoimintatapaus otetaan huomioon käyttämällä [skenaariossa 1](#scenario-1) luotoja oletuskäytäntöjä. Samanlaisia käytäntöjä voi kuitenkin luoda myös seuraavien ohjeiden mukaisesti:
+Yleensä tämä liiketoimintatapauksessa käytetään kohdassa [Määritä alkuperäiset konsolidointikäytännöt](#initial-policies) luotujen oletuskäytäntöjen avulla. Samanlaisia käytäntöjä voi kuitenkin luoda myös seuraavien ohjeiden mukaisesti:
 
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Määritä **Käytännön tyyppi** -kentän asetukseksi *Myyntitilaukset*.
@@ -345,7 +319,7 @@ Seuraavat skenaariot näyttävät, miten tämän artikkelin mukaisesti luotuja l
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Lähetyksen konsolidoinnin käytännöt](about-shipment-consolidation-policies.md)
+- [Lähetyksen konsolidointikäytäntöjen yleiskatsaus](about-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

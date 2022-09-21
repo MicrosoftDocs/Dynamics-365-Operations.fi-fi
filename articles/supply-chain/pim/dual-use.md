@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5147a837be91aab519c373e624acc036f9293641
+ms.sourcegitcommit: 555de844b8ba02fe095c28a2d447fc7c441ae549
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878900"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460545"
 ---
 # <a name="dual-use-goods"></a>Kaksikäyttötuotteet
 
@@ -85,7 +85,14 @@ Tuote määritetään kaksikäyttötuotteeksi ja kaksikäyttöluokka otetaan sii
 1. Määritä **Ulkomaankauppa**-pikavälilehden **Kaksoiskäyttötuotteet**-asetukseksi **Kyllä**, jolloin kyseessä oleva tuote tunnistetaan kaksikäyttötuotteeksi.
 1. Määritä **Kaksikäyttökoodi**-kenttään nykyistä tuotetta koskeva koodi. (Tämä koodi määritettiin **Kaksikäyttöluokat**-sivulla.)
 
-Tämä asetus tarkistetaan myyntitilauksen luonnin yhteydessä.
+> [!NOTE]
+>
+> Järjestelmä tekee seuraavat kaksoiskäyttötarkistukset luodessaan myyntivahvistuksen:
+>
+> 1. Sisältääkö tilaus kaksoiskäyttötavaroita?
+> 1. Jos näin on, edellyttääkö kohdemaa kaksoiskäyttösertifikaatit?
+> 1. Jos näin on, onko kohdemaalla jokaiselle kaksoiskäyttötavaralle sertifikaatit ja ovatko nämä sertifikaatit voimassa vahvistettuina lähetyspäivinä?
+> 1. Jos vastaus kysymykseen 1 ja 2 on Kyllä ja vastaus kysymykseen 3 on Ei, järjestelmä näyttää varoituksen ilmoittaakseen käyttäjälle, että kaksoiskäyttösertifikaatti puuttuu vähintään yhdeltä myyntitilauksen kaksoiskäyttötavaralta. Käyttäjän tulisi todennäköisesti hankkia tarvittavat todistukset ja yrittää sitten uudelleen, mutta hän voi halutessaan poistaa varoituksen ja jatkaa myyntivahvistuksen jatkamista.
 
 ## <a name="set-up-dual-use-certificates"></a>Kaksikäyttövarmenteiden määrittäminen
 

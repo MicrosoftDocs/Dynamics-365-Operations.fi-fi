@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893175"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428033"
 ---
 # <a name="release-to-warehouse"></a>Vapauta varastoon
 
@@ -34,7 +34,7 @@ Varastoon vapauttaminen on prosessi, jossa varastotuotteet valmistellaan lähety
 
 Varaston *työ* on mikä tahansa varastotoimenpide, jonka suorittaa varastotyöntekijä. Yleensä varastotyötoiminnot koostuvat vähintään kahdesta peräkkäisestä toiminnosta: varaston työntekijä keräilee käsillä olevan varaston yhdessä sijainnissa ja asettaa sen sitten toiseen paikkaan.
 
-Kun tilauksia vapautetaan varastoon, järjestelmä luo *kuormarivejä* ja ryhmittelee ne lähetyksiksi. Lähetyksen konsolidointiprosessi mahdollistaa lähetyksen automaattisen konsolidoinnin varastoon vapauttamisen prosessin aikana. Lisätietoja: [Lähetyksen konsolidointikäytännöt](about-shipment-consolidation-policies.md).
+Kun tilauksia vapautetaan varastoon, järjestelmä luo *kuormarivejä* ja ryhmittelee ne lähetyksiksi. Lähetyksen konsolidointiprosessi mahdollistaa lähetyksen automaattisen konsolidoinnin varastoon vapauttamisen prosessin aikana. Lisätietoja: [Lähetyksen konsolidointikäytäntöjen yleiskatsaus](about-shipment-consolidation-policies.md).
 
 Järjestelmä käyttää poimintatöiden ja lähetyskuormien luonnissa *aaltoja*. Luotavalle aaltotyypille ja tilausrivin varastolle on oltava käytettävissä *aaltomalli*. *Lähetys*-tyypin aaltomalleja käytetään myynti- ja siirtotilausten nimikkeiden lähettämiseen.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
-ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
+ms.openlocfilehash: 184da494b9998e3e1cf6bd1639b452192d7e7857
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9403692"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427817"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.28. (elokuu 2022)
 
@@ -67,7 +67,7 @@ Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merki
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.28 sisältää Platform updateja. Lisätietoja on kohdassa [Talous- ja toimintosovellusten (kesäkuu 2022) käyttöympäristön päivitysversio 10.0.28](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.28 sisältää Platform updateja. Lisätietoja on kohdassa [Talous- ja toimintosovellusten (elokuu 2022) käyttöympäristön päivitysversio 10.0.28](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

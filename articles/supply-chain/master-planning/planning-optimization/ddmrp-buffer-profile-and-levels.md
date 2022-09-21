@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186662"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428141"
 ---
 # <a name="buffer-profile-and-levels"></a>Puskuriprofiili ja -tasot
 
@@ -77,6 +77,14 @@ Jos edellisessä kuvassa kuluva päivä on aamu 11. kesäkuuta, edellisen kolmen
 
 - **ADU (mennyt)** = (29 + 11 + 23) ÷ 3 = 21
 
+Seuraavat tapahtumat otetaan huomioon laskettaessa päivittäistä (mennyttä) keskimääräistä kulutusta:
+
+- Tapahtumat, jotka vähentävät nimikkeen määrää (taulussa `inventtrans`, jossa määrä on pienempi kuin nolla)
+- Tapahtumat, joiden tila on *Tilattaessa*, *Tilaukseen varattu*, *Varattu fyysinen*, *Valittu*, *Toimitettu* tai *Myyty*
+- Tapahtumat, jotka on päivätty taaksepäin (keskimääräinen päivittäinen käyttö edellisellä kaudella)
+- Muut tapahtumat kuin varastotyö, karanteeni, myyntitarjoukset tai laskelmat (`WHSWork`, `WHSQuarantine`, `SalesQuotation` tai `Statement`)
+- Muut tapahtumat kuin siirtokirjauskansiot, jotka ovat samassa kattavuusdimensiossa
+
 ### <a name="average-daily-usage-forward"></a>Keskimääräinen päivittäinen käyttö (tuleva)
 
 Jos kyse on uudesta tuotteesta, aiempia kulutustietoja ei ehkä ole. Niinpä käytössä onkin ehkä ennustettu ADU tulevaisuudessa (joka perustuu esimerkiksi ennustettuun kysyntään). Seuraava kuva näyttää, miten tämä menetelmä toimii, kun laskelma kattaa kolme tulevaa päivää (kuluva päivä mukaan lukien).
@@ -86,6 +94,11 @@ Jos kyse on uudesta tuotteesta, aiempia kulutustietoja ei ehkä ole. Niinpä kä
 Jos edellisessä kuvassa kuluva päivä on aamu 11. kesäkuuta, seuraavan kolmen päivän (11.–13. kesäkuuta) ADU on 21,66.
 
 - **ADU (tuleva)** = (18 + 18 + 29) ÷ 3 = 21,66
+
+Seuraavat tapahtumat otetaan huomioon laskettaessa päivittäistä (tulevaa) keskimääräistä kulutusta:
+
+- Ennustetapahtumat nimikkeelle, jonka ennuste on valittu pääsuunnitelmassa
+- Tapahtumat, jotka on päivätty eteenpäin (keskimääräinen päivittäinen käyttö seuraavalla kaudella)
 
 ### <a name="average-daily-usage-blended"></a>Keskimääräinen päivittäinen käyttö (sekoitettu)
 

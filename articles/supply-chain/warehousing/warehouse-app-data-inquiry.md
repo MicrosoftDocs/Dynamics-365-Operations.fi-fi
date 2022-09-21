@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 39677ebfb9babeb7246ece4d27ab1813435ca12e
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336602"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427845"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Tietojen kyseleminen Warehouse Management ‑mobiilisovelluksen kiertoteillä
 
@@ -268,6 +268,6 @@ Testaa mobiilisovelluksesi uusia asetuksia noudattamalla seuraavia ohjeita.
     ![Ostotilauksen vastaanotto hakemalla ostostilaus toimittajan perusteella, esimerkki 2.](media/wma-purchase-receive-lookup-po-vendor-detours.png "Ostotilauksen vastaanotto hakemalla ostostilaus toimittajan perusteella, esimerkki 2")
 
 > [!TIP]
-> Sen sijaan, että suorittaisit vastaanottotyönkulun tekemällä haun **Ostotilauksen vastaanotto** -valikkovaihtoehdosta, voit aloittaa kyselytyönkulusta (**Päävalikko \> Kysele \> Hae ostotilauksia toimittajan mukaan**) ja kutsua kiertotietä käynnistämään haluamasi työnkulku valitsemalla kortin luettelosta. Jos haluat käyttää tätä lähestymistapaa, voit määrittää **Mobiililaitteen vaiheet** -sivulla kiertotien vaiheelle, jonka **Vaihetunnus**-arvo on *GenericDataInquiryList*. Koska tämä työnkulku on kiertotietyönkulku, et voi kutsua enempää kiertoteitä siitä. Näin ollen esimerkiksi nimiketunnusten syöttönäytön haku ei ole käytettävissä, koska järjestelmä tukee tällä hetkellä vain yhtä tasoa kiertoteitä.
+> Sen sijaan, että suorittaisit vastaanottotyönkulun tekemällä haun **Ostotilauksen vastaanotto** -valikkovaihtoehdosta, voit aloittaa kyselytyönkulusta (**Päävalikko \> Kysele \> Hae ostotilauksia toimittajan mukaan**) ja kutsua kiertotietä käynnistämään haluamasi työnkulku valitsemalla kortin luettelosta. Jos haluat käyttää tätä lähestymistapaa, voit määrittää **Mobiililaitteen vaiheet** -sivulla kiertotien vaiheelle, jonka **Vaihetunnus**-arvo on *GenericDataInquiryList*. Jos [*Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa*](warehouse-app-detours.md) -ominaisuus on otettu käyttöön järjestelmässä, voit myös lisätä kiertotien tarvittaessa (tämä ominaisuus lisää tuen enintään kahdelle kiertotien tasolle, ja sitä voi muokata lisätasojen tukemiseksi).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

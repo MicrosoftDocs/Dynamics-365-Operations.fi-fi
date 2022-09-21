@@ -2,7 +2,7 @@
 title: Oheislaitteet
 description: Tässä artikkelissa esitellään Commercen oheislaitteisiin liittyvät käsitteet.
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -12,12 +12,12 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3113626b18ad7f074c808d7631d13b09071bef2
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880078"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9459989"
 ---
 # <a name="peripherals"></a>Oheislaitteet
 
@@ -141,6 +141,9 @@ Myyntipisteiden oheislaitteissa voidaan ottaa käyttöön useita USB-laitteita n
 Modern POS tukee universaalia Windows-ympäristöä ja skannereita. Kun Modern POS on valmis ottamaan vastaan jonkin mainitun laitteen syötteen ja yhdistetty laite kuuluu johonkin mainituista laiteluokista, laitetta voidaan käyttää. Jos esimerkiksi automaattisesti tunnistettava viivakoodin lukulaite kytketään Windows 10 -tietokoneeseen ja viivakoodin kirjautuminen on määritetty Modern POS -myyntipistettä varten, viivakoodin lukulaite aktivoidaan kirjautumissivulla. Lisäasetuksia ei vaadita.
 
 Windowsiin lisätään muita POS-oheislaitteita, kuten kassakoneita ja kuittitulostimia. Näiden uusien laiteluokkien Modern POS -tuki on tulossa.
+
+> [!NOTE] 
+> Tietyt USB-laitteet voivat olla epäluotettavia tai ne eivät vastaa, kun niitä hallitaan Windows 10 power management -ominaisuuden avulla. Se on nimeltään [USB:n valikoiva keskeytys](/windows-hardware/drivers/usbcon/usb-selective-suspend). Jos USB-oheislaite ei vastaa, on ehkä poistettava valikoiva keskeytystoiminto käytöstä laitteessa. Lisätietoja on kohdassa [Valikoivan keskeytyksen käyttöönotto](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
 
 ### <a name="keyboard-wedge"></a>Näppäimistön kortinlukija
 

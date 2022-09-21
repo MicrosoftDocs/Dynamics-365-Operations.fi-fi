@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
-ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
+ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9410447"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462298"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -45,7 +45,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
 | **Tuotealueet, joihin vaikutetaan** | Hakemus |
 | **Käytön asetukset** | Kaikki |
-| **Tila** | Vanhentunut: Huhtikuun 2023 jälkeen tuoton kirjauksen toiminto Dynamics 365 Financessa ei enää vastaanota tukea ohjelmakorjauksien muodossa. Pyydämme asiakkaita käyttämään parannettua ominaisuutta, joka on [tilauslaskutus](../../finance/accounts-receivable/subscription-billing-summary.md). Lokakuussa 2023 tuottojen tunnistustoiminto ei ole enää käytettävissä. Pyydämme asiakkaita siirtymään parannetun tilauslaskutustoiminnon käyttäjiksi.|
+| **Tila** | Vanhentunut: Huhtikuun 2023 jälkeen tuoton kirjauksen toiminto Dynamics 365 Financessa ei enää vastaanota tukea ohjelmakorjauksien muodossa. Pyydämme asiakkaita käyttämään parannettua ominaisuutta, joka on [tilauslaskutus](../../finance/accounts-receivable/subscription-billing-summary.md). Lokakuussa 2023 tuottojen tunnistustoiminto ei ole enää käytettävissä. Pyydämme asiakkaita siirtymään parannetun tilauslaskutustoiminnon käyttäjiksi. Tuottokirjauksen osana olevalle nipputoiminnolle ei ole suunniteltu korvaustoimintoa tällä hetkellä.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Financen version 10.0.29 poistetut tai vanhentuneet ominaisuudet
 

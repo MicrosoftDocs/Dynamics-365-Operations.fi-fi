@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-ms.openlocfilehash: 3620fa886fd4b609a0f1f08b2338ab725065efe7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 283c882300ece460c18ffebe572238e7629f8dee
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287925"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476798"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
@@ -137,7 +137,29 @@ Seuraavassa kuvassa esitellään tämäntyyppisiä lausekkeita. (Esimerkkinä k�
 > 
 > Tämän asetuksen perusteella kullekin velallisen maksulle luotu **Ustrd**-XML-elementti sisältää joko maksuhuomautusten tekstin tai, kun teksti on tyhjä, tämän maksun tilittämiseen käytetyt pilkulla erotetut laskunumerot.
 
-## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Määritettyjen kaavojen oikeellisuustarkistus
+## <a name="assistance-in-formulas-writing"></a>Kaavojen kirjoittamisen apu
+
+### <a name="data-sources-navigator"></a>Tietolähteiden etsintä
+
+Voit muokata kaavaa, joka edustaa rakenteellisen tietolähteen elementtiä. Kun määrität ER-parametrit edustamaan rakenteellisen tietolähteen elementin polkua [relatiivisena polkuna](relative-path-data-bindings-er-models-format.md),kaavassa [näkyy](er-formula-language.md#relative-path) "at" (@-merkki) käytetyn hierarkkisen puurakenteen jäljellä olleen absoluuttisen polun osan sijaan. Tämä jäljellä oleva absoluuttisen polun osa osoittaa muokattavan osan pääelementtiin. Financen versiossa **10.0.30 ja uudemmassa versiossa** **Kaavojen suunnittelutoiminto** -sivulla **Tietolähteet**-ruudussa voit valita **Siirry kohteeseen @** -asetuksen ja sijoittaa tietolähteiden puun kohdistimen elementtiin, joka on muokattavan osan pääelementti. Kaikkien kutistettujen, nousevien elementtien rakenne laajennetaan automaattisesti ja rekursiivisesti tarvittaessa. Tämä laajennus voi auttaa visualisoimaan nopeasti muokattavan osan peruselementin, tarkkailla muokattavan elementin sisaruksia ja käyttää kaikkia tarvittaessa muokattavassa kaavassa.
+
+![Käytä Siirry kohteeseen @ -vaihtoehtoa kohdistaessasi tietolähteiden puun kohdistimen elementtiin, joka on muokattavan osan pääelementti Kaavan suunnittelutoiminto -sivulla.](./media/er_formula-designer-data-sources-navigator.gif)
+
+### <a name="data-sources-picker"></a>Tietolähteiden valitsin
+
+Valitse **Kaavan suunnittelutoiminto** -sivulla **Tietolähteet**-ruudun vasemmalla puolella tietolähteenelementti, jonka haluat tuoda muokattavaan kaavaan. Valitse sitten **Lisää tietolähde**. Huomaa, että valittu elementti lisätään muokattavan kaavan tekstiin.
+
+> [!TIP]
+> Kun käytät **Lisää tietolähde** -vaihtoehtoa oletuskaavaeditorissa, valittu elementti lisätään aina kaavan tekstin loppuun. Kun teet saman [kehittyneessä kaavaeditorissa](er-advanced-formula-editor.md), valittu elementti lisätään kaavan tekstiin kohdistimen nykyisessä sijainnissa.
+
+### <a name="built-in-functions-picker"></a>Valmiiden funktioiden valitsin
+
+Valitse **Kaavan suunnittelutoiminto** -sivulla **Funktiot**-ruudussa oikealla ER:n valmis funktio, jonka haluat tuoda muokattavaan kaavaan. Valitse sitten **Lisää funktio**. Huomaa, että valittu funktio lisätään muokattavan kaavan tekstiin.
+
+> [!TIP]
+> Kun käytät **Lisää funktio** -vaihtoehtoa oletuskaavaeditorissa, valittu funktio lisätään aina kaavan tekstin loppuun. Kun teet saman [kehittyneessä kaavaeditorissa](er-advanced-formula-editor.md), valittu funktio lisätään kaavan tekstiin kohdistimen nykyisessä sijainnissa.
+
+### <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Määritettyjen kaavojen oikeellisuustarkistus
 
 Valitse **Kaavansuunnittelija**-sivulla **Testaa** vahvistaaksesi, miten määritetty kaava toimii.
 

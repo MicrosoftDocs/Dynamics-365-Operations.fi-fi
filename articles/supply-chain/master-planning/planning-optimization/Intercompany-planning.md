@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65467fd9525ae8fb5a65a9316b7307f611fa6e42
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850667"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475609"
 ---
 # <a name="intercompany-planning"></a>Konsernin sisäinen suunnittelu
 
@@ -45,8 +45,8 @@ Jos pääsuunnittelu suoritetaan pääsuunnitelmasta, joka sisältää suunnitel
 
 Järjestelmä on valmisteltava konsernin sisäisen suunnittelun käyttöä varten seuraavasti:
 
-1. Tarvittavat tuotteet on vapautettava kaikkiin tarvittaviin yrityksiin. Lisätietoja on Microsoft Learnissa kohdassa [Konsernin sisäisen kaupan määrittäminen ja käyttäminen Dynamics 365 Supply Chain Managementissa](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
-1. Alapuolinen kysyntä on katettava ostoilla sellaiselta toimittajalta, jolla on konsernin sisäinen suhde yläpuoliseen yritykseen ja tarvittaviin oletusvarastodimensioihin (toimipaikka ja varasto) asiakkaalla. Lisätietoja on Microsoft Learnissa kohdassa [Konsernin sisäisen kaupan määrittäminen ja käyttäminen Dynamics 365 Supply Chain Managementissa](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. Tarvittavat tuotteet on vapautettava kaikkiin tarvittaviin yrityksiin. Lisätietoja on kohdassa [Konsernin sisäisen kaupan määrittäminen ja käyttäminen Dynamics 365 Supply Chain Managementissa](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. Alapuolinen kysyntä on katettava ostoilla sellaiselta toimittajalta, jolla on konsernin sisäinen suhde yläpuoliseen yritykseen ja tarvittaviin oletusvarastodimensioihin (toimipaikka ja varasto) asiakkaalla. Lisätietoja on kohdassa [Konsernin sisäisen kaupan määrittäminen ja käyttäminen Dynamics 365 Supply Chain Managementissa](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
 1. Yläpuolisen yrityksen pääsuunnitelman on sisällettävä suunniteltu alapuolinen kysyntä. Alapuolisissa suunnitelmissa on myös määritettävä tarvittava yritys ja pääsuunnitelma.
 
 ## <a name="include-planned-downstream-demand"></a>Sisällytä suunniteltu tuotantovirran kysyntä
@@ -85,6 +85,5 @@ Tässä esimerkissä suunniteltu ostotilaus luodaan USMF-yrityksessä kattamaan 
 Seuraavassa kuvassa näkyy, miltä tämä esimerkki näyttäisi suunnittelun tuotantotilauksen **Monitasoinen tarvekohdistus** -sivulla.
 
 ![Kolme konsernin sisäistä yritystä sisältävä esimerkki.](media/IntercompanyPlanning2.png)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
