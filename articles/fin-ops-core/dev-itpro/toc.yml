@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.28 (elokuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Käyttöympäristöpäivitykset versioon 10.0.27 (heinäkuu 2022)
-                  href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
@@ -510,6 +508,8 @@
                   href: dev-tools/access-instances.md
                 - name: Kattavien kehitysympäristöjen määrittäminen
                   href: dev-tools/configure-developer-vm.md
+                - name: Suojatut kattavat kehitysympäristöt
+                  href: dev-tools/secure-developer-vm.md
                 - name: 'Sovelluskehityksen ja koonnin virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä – usein kysytyt kysymykset'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Ladattavan virtuaalisen kovalevyn määrittäminen ensimmäistä käyttökertaa varten
