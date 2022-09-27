@@ -2,7 +2,7 @@
 title: Päivitysprosessi
 description: Microsoft Dynamics 365 Human Resourceson todellinen ohjelmisto palveluna (SaaS), joka tarjoaa jatkuvia ja kosketusvapaita palvelupäivityksiä sovellus- ja ympäristömuutoksille.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178440"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520807"
 ---
 # <a name="update-process"></a>Päivitysprosessi
 
 _**Kohde:** Human Resources itsenäisessä infrastruktuurissa_ 
 
 > [!NOTE]
-> Kesäkuusta 2022 alkaen uusia Human Resources -ympäristöjä ei voi valmistella erillisessä Human Resources -infrastruktuurissa, eikä siinä voi myöskään luoda uusia Microsoft Dynamics Lifecycle Services (LCS) -projekteja. Asiakkaat voiva ottaa Human Resources -ympäristöt voidaan käyttöön vain talous- ja toimintosovellusinfrastruktuurissa. Lisätietoja kohdassa [Human Resourcesin valmisteleminen talous- ja toimintosovellusinfrastruktuurissa](/hr-admin-setup-provision-fo.md).
+> Kesäkuusta 2022 alkaen uusia Human Resources -ympäristöjä ei voi valmistella erillisessä Human Resources -infrastruktuurissa, eikä siinä voi myöskään luoda uusia Microsoft Dynamics Lifecycle Services (LCS) -projekteja. Asiakkaat voiva ottaa Human Resources -ympäristöt voidaan käyttöön vain talous- ja toimintosovellusinfrastruktuurissa. Lisätietoja kohdassa [Human Resourcesin valmisteleminen talous- ja toimintosovellusinfrastruktuurissa](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > Talous- ja toimintosovellusinfrastruktuurin päivitys- ja hotfix-korjausprosessi eroaa erillisen Human Resources -version päivitys- ja hotfix-korjausprosessista. Lisätietoja päivitysprosessista on kohdassa [Talous- ja toimintosovellusten uusimpaan päivitykseen siirtymisprosessi](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Lisätietoja hotfix-korjauksista on kohdassa [Päivitysten lataaminen Lifecycle Servicesistä (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 

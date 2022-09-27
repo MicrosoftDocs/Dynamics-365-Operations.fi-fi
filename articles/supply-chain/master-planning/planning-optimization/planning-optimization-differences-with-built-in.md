@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897571"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520834"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
 
@@ -26,7 +26,7 @@ Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuun
 | Ominaisuus | Nykyinen suunnittelun optimoinnin toiminta |
 |---|---|
 | Todellisen painon tuotteet | Todellisen painon tuotteita pidetään tavallisina tuotteina.|
-| Laajennettavat dimensiot | Laajennettavat dimensiot ovat tyhjiä suunnitelluissa tilauksissa, vaikka **Kattavuussuunnitelma dimension mukaan** -valintaruutu olisi valittu **Varastodimensioryhmät** tai **Seurantadimensioryhmät**-sivulla. |
+| Laajennettavat dimensiot | Suunnittelun optimointi ei tue laajennettavia dimensioita. Suunnittelun optimoinnin käyttämisen aikana laajennettavat dimensiot ovat tyhjiä suunnitelluissa tilauksissa, vaikka **Kattavuussuunnitelma dimension mukaan** -valintaruutu olisi valittu **Varastodimensioryhmät** tai **Seurantadimensioryhmät**-sivulla. |
 | Suodatetut tuotantoajot | Lisätietoja on kohdassa [Tuotannon suunnittelu – suodattimet](production-planning.md#filters). |
 | Ennusteen suunnittelu | Ennusteen suunnittelua ei tueta. Pääsuunnittelua kannattaa käyttää, jos ennustemalli on määritetty pääsuunnitelmaan. |
 | Suunniteltujen tilausten numerosarjat | Suunniteltujen tilausten numerosarjoja ei tueta. Suunnitellut tilausnumerot luodaan palvelupuolelle. Suunnitellussa tilausnumerossa näkyy tavallisesti 10 numeroa, mutta numerosarja perustuu todellisuudessa 20 merkkiin, joista suunnittelusuorituksen laskentaan kohdistetaan 10 numeroa ja suunniteltujen tilausten laskentaan 10 muuta numeroa. |
@@ -38,6 +38,7 @@ Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuun
 | Kuljetuskalenteri | **Toimitustavat**-sivun **Kuljetuskalenteri**-sarakkeen arvo ohitetaan. |
 | Kattavuuden vähimmäis-/enimmäiskoodi ilman arvoja| Kun käytössä on sisäinen suunnittelumoduuli, jossa käytetään vähimmäis-/enimmäiskattavuuskoodia, jossa ei ole määritetty vähimmäis- tai enimmäisarvoja, suunnittelumoduuli käsittelee kattavuuskoodia vaatimuksena ja luo yhden tilauksen kutakin tarvetta varten. Suunnittelun optimointia käytetään, kun järjestelmä luo yhden tilauksen päivää kohden, jotta se kattaa päivän koko summan.  |
 | Nettotarpeet ja manuaalisesti luodut suunnitellut tilaukset | Sisäänrakennetun suunnittelumoduulin avulla nimikkeelle luodut manuaalisesti luodut toimitustilaukset näkyvät automaattisesti nimikkeen nettovaatimusten joukossa. Kun esimerkiksi luot ostotilauksen myyntitilauksesta, ostotilaus näkyy **Nettotarpeet**-sivulla ilman, että aiempia toimenpiteitä tarvitaan. Tämä johtuu siitä, että sisäänrakennettu suunnittelumoduuli kirjaa varastotapahtumat `inventLogTTS`-tauluun ja näyttää muutokset dynaamisten suunnitelmien **Nettotarpeet**-sivulla. Suunnittelun optimointia käytettäessä manuaalisesti luodut tilaukset eivät kuitenkaan näy nimikkeen nettotarpeissa, ennen kuin suunnittelun optimointi suoritetaan (käyttäen suunnitelmaa, joka sisältää nimikkeen) tai ennen kuin valitset **Nettotarpeet**-sivun toimintoruudussa **Päivitä \> Pääsuunnittelu**, mikä suorittaa nimikkeen pääsuunnittelun. Lisätietoja **Nettotarpeet**-sivun käytöstä on kohdassa [Nettotarpeet ja tarvekohdistaminen suunnittelun optimointia käyttämällä](net-requirements.md). |
+| Resurssimääritys | Kun käytössä ovat rajattomat kapasiteetit, sisäinen pääsuunnittelumoduuli määrittää kaikki suunnitellut tilaukset tietyn resurssiryhmän samalle resurssille. Suunnittelun optimointi parantaa tätä valitsemalla resurssit satunnaisessa järjestyksessä, jotta eri tuotantotilaukset voivat käyttää eri resursseja. Jos haluat käyttää samaa resurssia kaikissa suunnitelluissa tilauksissa, sinun on määritettävä tämä resurssi reitille. |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

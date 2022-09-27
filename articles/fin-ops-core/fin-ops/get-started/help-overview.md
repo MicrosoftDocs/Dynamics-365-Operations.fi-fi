@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: fa1a120fac66997658908a61469d45e96bcc4912
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462354"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538834"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -40,14 +40,14 @@ Tuotekohtaista ohjetta käytetään kaikissa näissä sovelluksissa **Ohje**-ruu
 
 ![Ohje-ruutu.](./media/help-pane-ops-help.png)
 
-## <a name="help-on-microsoft-docs"></a>Microsoft Docsin ohje
+## <a name="help-on-microsoft-learn"></a>Microsoft Learn -ohje
 
-Microsoft Docs ([Microsoft Dynamics 365 -ohjeet](/dynamics365/)) on oletuslähde tuotteen ohjeille aiemmissa sovelluksissa. Sivustossa on seuraavat toiminnot:
+Microsoft Learnin ([Microsoft Dynamics 365 -ohjeet](/dynamics365/)) on oletuslähde tuotteen ohjeille aiemmissa sovelluksissa. Sivustossa on seuraavat toiminnot:
 
 - **Uusin sisältö** – Microsoft voi luoda, toimittaa ja päivittää tuoteohjeistusta nopeasti ja joustavasti sivustossa. Niinpä käytössä onkin aina uusimmat tekniset tiedot.
 - **Asiantuntijoiden kirjoittama sisältö** – Sekä Microsoftin omat että ulkopuoliset yhteisön jäsenet voivat tuottaa sisältöä sivustoon.
 
-Microsoft Docsin sisältöä voi etsiä millä tahansa hakukoneella. Parhaat tulokset saa käyttämällä sivustohaku, kuten **site:docs.microsoft.com dynamics 365 "hakusana"**.
+Microsoft Learnin sisältöä voi etsiä millä tahansa hakukoneella. Parhaat tulokset saa käyttämällä sivustohakua, joka voi olla esimerkiksi **site:learn.microsoft.com dynamics 365 "hakusana"**.
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Tiedot muutoksista RSS-syötteillä
 
@@ -87,7 +87,7 @@ Voit osallistua dokumentaation tekemiseen ja muokkaukseen. Aloita valitsemalla a
 
 [Miten osallistua Microsoft Dynamics 365 -doumentaation tekemiseen](https://youtu.be/m5djioozRbg) -video (näytetty yllä) sisältyy Microsoft Dynamics 365:n YouTube-kanavaan.
 
-Lisätietoja on [Microsoft Docs -sisällöntuottajan oppaassa](/contribute). Tämän oppaan julkaisija on Microsoft Docs -sivuston luonut tiimi.
+Lisätietoja on [Microsoft Docsin sisällöntuottajan ohjeissa](/contribute), joiden julkaisija on Microsoft Learn -sivuston luonut tiimi.
 
 > [!NOTE]
 > Tällä hetkellä hyväksymme sisältöä vain englanninkieliseen sisältöön.
@@ -169,14 +169,11 @@ Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti 
 | Sivusto | Kuvaus |
 |------|-------------|
 | [Microsoft Dynamics 365 -ohjeet](/dynamics365/) | Tämä sivusto ylläpitää kaikkea Dynamics 365:n tuoteohjeistusta tai sisältää linkit ohjeistukseen. |
-| [Microsoft Learn](/learn/) | Sivusto on Microsoftin maksuton eLearning-sivusto. |
+| [Microsoft Learn -koulutus](/training/) | Sivusto on Microsoftin maksuton eLearning-sivusto. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Sivuston on pilvipohjainen yhteistyötila, jota asiakkaat ja heidän kumppaninsa voivat käyttää projektien hallintaan ennen myyntiä sekä täytäntöönpanon ja toiminnan aikana. Siitä on apua käyttöönoton kaikissa vaiheissa. |
 | [Tuen blogi](https://aka.ms/AXSupportBlog) | Sivustossa on tukiryhmän julkaisemia vinkkejä. |
 | [Aiemmat versiot](/previous-versions/dynamics/) | Sivuston ylläpitää aiempien versioiden sisältöä. |
 | [Dynamics-yhteisö](https://community.dynamics.com/) | Sivusto ylläpitää blogeja, keskustelupalstoja ja videoita. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Sivusto sisältää arviointi- ja myyntitietoja. |
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

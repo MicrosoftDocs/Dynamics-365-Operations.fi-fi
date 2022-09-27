@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
-ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
+ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9347286"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542349"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -62,7 +62,7 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | --- | --- | --- | --- |
 | Toimenpiteet | Kattavuusryhmät, joissa toimenpidelaskenta on käytössä: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. | Tuettu |
 | Peruskalenterit | Kalenterit, joissa käytetään peruskalenteria: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. | Tuettu | 
-| Erän käsittelykoodit | Ei-netottavissa olevan erän käsittelykoodin päätiedot: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä erän käsittelykoodit ohitetaan, kun suunnittelun optimointi on otettu käyttöön. | Vuoden 2022 julkaisuaalto 2 |
+| Erän käsittelykoodit | Ei-netottavissa olevan erän käsittelykoodin päätiedot: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä erän käsittelykoodit ohitetaan, kun suunnittelun optimointi on otettu käyttöön. | Vuoden 2022 julkaisuaalto 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
 | Saatavuus (CTP) | Tilauksen oletusasetukset, joiden toimituspäivämäärä on asetettu saatavuuteen (CTP): *\#* | Supply Chain Managementin versiossa 10.0.28 ja sitä uudemmassa versiossa on *Saatavuus (CTP) suunnittelun optimointia varten* -prosessi, joka tuo vahvistetut lähetys- ja vastaanottopäivämäärät saataville dynaamisen suunnittelun suorittamisen jälkeen. Supply Chain Managementin vanhojen versioiden saatavuus (CTP) -asetus ohitetaan, kun suunnittelun optimoitu on otettu käyttöön. | Tuettu |
 | Kopioi staattinen dynaamiseen suunnitelmaan | Staattisen kopioiminen ja dynaamiseen suunnitelmaan on käytössä pääsuunnitteluparametreissa. | Suunnittelun optimointi ei kopioi staattista suunnitelmaa dynaamiseen suunnitelmaan riippumatta tästä asetukseen. Yleensä tämä käsite ei ole yhtä merkityksellinen, koska suunnittelu optimointi tarjoaa nopeuden ja täydellisen uudistamisen. Jos käytössä on vähintään kaksi suunnitelmaa, pääsuunnittelu on käynnistettävä kunkin suunnitelman osalta. | – |
 | Vahvistus | Automaattisen vahvistuksen aikaraja ja kattavuusryhmiä määritetty: *\#* | Version 10.0.7 ja uudempien versioiden vahvistamista tuetaan erillisenä kiinteyttämiserätyönä, kun pääsuunnittelu on suoritettu (jos *suunnittelun optimoinnin automaattinen vahvistus* -toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Huomaa, että suunnittelun optimoinnin automaattinen vahvistus perustuu tilauspäivämäärään (aloituspäivämäärä), ei tarvepäivämäärään (päättymispäivämäärä). Näin varmistetaan, että suunniteltujen tilausten vahvistaminen tapahtuu ajallaan ilman, että läpimenoaikaa tarvitsee sisällyttää vahvistuksen aikarajakohtaan. | Tuettu |

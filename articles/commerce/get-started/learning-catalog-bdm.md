@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b8403a01720ffdc90e0e04742e7e254166b66955
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 1adb4f1722272915b1b4989f7fff45083e36608e
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423939"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538994"
 ---
 # <a name="learning-catalog-for-business-and-technical-decision-makers-considering-dynamics-365-commerce"></a>Oppimisluettelo yrityksen päätöksentekijöille ja teknisille päätöksentekijöille, jotka harkitsevat Dynamics 365 Commercen käyttöönottoa
 
@@ -31,7 +31,7 @@ Lisätietoja muiden talous- ja toimintosovellusten kanssa jaettujen ominaisuuksi
 
 | Sisältö | Kuvaus | Muoto | Pituus |
 |---------|-------------|--------|--------|
-| [Dynamics 365 Commercen käytön aloittaminen](/learn/paths/get-started-dynamics-365-commerce/)                                                       | Dynamics 365 Commerce, joka perustuu hyväksi todettuihin Dynamics 365 Retail -ominaisuuksiin, tarjoaa kattavan omnikanavaratkaisun, jossa yhdistyvät taustajärjestelmän, myymälän ja digitaaliset kokemukset. Dynamics 365 Commercen avulla voi luoda tuotemerkkiuskollisuutta mukautettujen asiakaskontaktien avulla, lisätä tuottoa ja parantaa työntekijäuskollisuutta, optimoida toimintoja ja pienentää kustannuksia sekä tehostaa toimitusketjua sekä lopulta saavuttaa parempia liiketoimintatuloksia. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku                                          | 2 tuntia   |
-| [Dynamics 365 Fraud Protectionin käytön aloittaminen](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection on pilvipohjainen sovellus, joka on suunniteltu sähköistä kaupankäyntiä, kivijalkaliikkeitä ja monikanavaisia kauppiaita varten. Se auttaa suojaamaan tuottoa ja mainetta työkaluilla ja ominaisuuksilla, jotka vähentävät petoksia ja väärinkäytöksiä sekä toimintokustannuksia, lisäävät hyväksyntäprosentteja ja turvaavat käyttäjätilit petosyrityksiltä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 35 minuuttia |
+| [Dynamics 365 Commercen käytön aloittaminen](/training/paths/get-started-dynamics-365-commerce/)                                                       | Dynamics 365 Commerce, joka perustuu hyväksi todettuihin Dynamics 365 Retail -ominaisuuksiin, tarjoaa kattavan omnikanavaratkaisun, jossa yhdistyvät taustajärjestelmän, myymälän ja digitaaliset kokemukset. Dynamics 365 Commercen avulla voi luoda tuotemerkkiuskollisuutta mukautettujen asiakaskontaktien avulla, lisätä tuottoa ja parantaa työntekijäuskollisuutta, optimoida toimintoja ja pienentää kustannuksia sekä tehostaa toimitusketjua sekä lopulta saavuttaa parempia liiketoimintatuloksia. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku                                          | 2 tuntia   |
+| [Dynamics 365 Fraud Protectionin käytön aloittaminen](/training/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection on pilvipohjainen sovellus, joka on suunniteltu sähköistä kaupankäyntiä, kivijalkaliikkeitä ja monikanavaisia kauppiaita varten. Se auttaa suojaamaan tuottoa ja mainetta työkaluilla ja ominaisuuksilla, jotka vähentävät petoksia ja väärinkäytöksiä sekä toimintokustannuksia, lisäävät hyväksyntäprosentteja ja turvaavat käyttäjätilit petosyrityksiltä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 35 minuuttia |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
