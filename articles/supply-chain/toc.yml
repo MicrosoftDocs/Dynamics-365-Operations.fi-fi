@@ -1799,10 +1799,12 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Tuotannon suunnittelu
                   href: master-planning/planning-optimization/production-planning.md
-                - name: Rajatun säilyvyysajan tuotteiden pääsuunnittelu
+                - name: 'Pääsuunnittelu tuotteille, joiden säilyvyysaika on rajallinen'
                   href: master-planning/planning-optimization/shelf-life.md
                 - name: Aikatauluttaminen äärettömällä kapasiteetilla
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Rajallisen kapasiteetin suunnittelu ja aikatauluttaminen
+                  href: master-planning/planning-optimization/finite-capacity.md
                 - name: Aikatauluttaminen resurssien valinnalla kykyjen perusteella
                   href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Prioriteettipohjainen suunnittelu
