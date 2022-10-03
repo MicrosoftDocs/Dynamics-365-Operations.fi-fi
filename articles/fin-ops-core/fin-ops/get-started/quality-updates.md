@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
-ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
+ms.openlocfilehash: c2d26b7c5e110d05806c064e15a3ad2af34d0fbd
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473602"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592043"
 ---
 # <a name="proactive-quality-updates"></a>Ennakoivat laatupäivitykset
 
@@ -57,7 +57,7 @@ Prosessimuutosten joukko otetaan käyttöön ennen ennakoivan laatupäivityksen 
 - **Rakenne** – Työkalut varmistavat, että laatupäivitysten koontiversiot sisältävät vain rakennemuutoksia, jotka voidaan ottaa käyttöön palvelun ollessa online-tilassa. Tämä menetelmä auttaa säilyttämään päivitysmahdollisuuden niin, että käyttämättömyysaika on lähes nolla.
 - **Lisääntynyt muutosten tarkastelu** – Tällä hetkellä käytössä on jo uusi prosessivaihe laatupäivityksen muutosten sisällytyksen hyväksyntää varten. Lisävaiheessa tapahtuvaa sisällytystä lisätään, jotta mahdollisten regressioiden mahdollisuutta voidaan vähentää. Laatupäivitykset eivät sisällä tärkeimpiä muutoksia. Muutosten sisällytysten lisääminen varmistaa, että tämä tavoite saavutetaan.
 - **Näkyvyys** – Lähetämme ilmoitukset tulevista ennakoivista laatupäivityksistä sähköpostitse ja Lifecycle Services -palvelun kautta. Lisäksi tukiryhmät ja tapahtumaliidit näkevät, missä laatupäivitykset on otettu käyttöön ennakoivasti.
-- **Versiovarmistus** – Väliversiotestausta käytetään ennakoivan laatupäivityksen kaikkien muutosten ryhmittelyssä. Jos varmistusta tarvitaan ennakoivan käyttöönoton jälkeen, se voidaan tehdä väliversiotestausjärjestelmän avulla.
+- **Fail Safe -väliversiotestauksen avulla** – Väliversiotestausta käytetään koodimuutosten tallentamiseen laatupäivityksen ohjelmistovirheen ja korjaukseen liittyvän olemassa olevan toiminnon väliversiotestauksen aikana. Jos varmistuksen tai muutoksen poistaminen käytöstä on pakollista ennakoivan käyttöönoton jälkeen, se voidaan tehdä väliversiotestausjärjestelmän avulla muiden virheiden välttämiseksi.
 - **Eristysympäristön synkronoinnin määritys** – Alle 20 prosentilla asiakkaista on nykyään useita eristysympäristöjä. Asiakkailla on käytössä yksi eristysympäristö, jossa versio vastaa tuotantoa. Tämä helpottaa vianmääritystä. Jos asiakas käyttää eristysympäristöä tuotantoympäristön versiota uudemman version testaamisessa, eristysympäristö vastaanottaa uuden version laatupäivityksiä.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Mikä on laatupäivitysten toimituksen toteutussuunnitelma?
@@ -69,7 +69,7 @@ Seuraavan kuuden kuukauden jakson aikana lisäämme vähittäin ennakoivia päiv
 Asiakkaat vastaanottavat jatkuvasti pieniä määriä tietoja, joten ajan tasalla pysyminen on todennäköisesti aiempaa helpompaa. Muutamme päivityksen käyttöönoton väliä, kun prosessi voidaan suorittaa ilman keskeytyksiä. Tämä prosessi toimii jo tehokkaasti Dataverse-ympäristössä ja -sovelluksissa. Prosessi tuo toivottuja parannuksia palvelun laatuun. Haluamme toimia samalla tavalla talous- ja toimintosovellusten kanssa.
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Milloin tuotantoympäristöjen laatupäivitykset alkavat?
-Tällä hetkellä laatupäivitykset koskevat vain eristysympäristöjä. Tuotantoympäristöjen päivitykset alkavat vuoden 2022 marraskuun jälkeen.
+Tällä hetkellä laatupäivitykset koskevat vain eristysympäristöjä. Tähän tilaan päivitetään tuotantoympäristöjen aloituspäivämäärä, kun käytettävissä on eristysympäristöjen ennakoivien päivitysten konkreettisia tietoja ja mittauksia tuotannon valmiusasteen mittaamiseksi.
 
 ## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Mikä on eristysympäristön laatupäivitysten aikataulu?
 Lisätietoja kunkin alueen yöajasta on kohdassa [Mikä on ennakoivien laatupäivitysten aikataulu?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).

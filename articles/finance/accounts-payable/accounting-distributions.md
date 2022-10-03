@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
+ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894197"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9588950"
 ---
 # <a name="accounting-distributions"></a>Kirjanpidolliset jaot
 
@@ -51,7 +51,7 @@ Yleiset kirjanpidolliset jako-ominaisuudet tarjoavat seuraavia vaihtoehtoja kirj
     -   Voit tarkastella nykyisen asiakirjan kirjanpidollista tilaa kohdassa **Viite**. Tila on koko asiakirjalle ja ilmaisee, onko asiakirja on keskeneräinen tai valmis.
 -   **Tarkastele jakoja** – Näytä asiakirjan kirjanpidolliset jaot kaikille riveille ja rahasummille. Et voi muokata kirjanpidollisia jakoja tästä näkymästä.
 
-Versioon 10.0.13 on lisätty toiminto, joka vahvistaa kirjanpidon jakotaulukon sen varmistamiseksi, että uudet kentät on määritetty oikein. Tämän toiminnon nimi on **Ota lisävahvistus asiakirjojen tiedoille käyttöön käyttämällä lähdeasiakirjan kirjanpitokehystä**. Jos haluat käyttää ominaisuutta, sinun on otettava se käyttöön **Toiminnonhallinta**-työtilan avulla. Jos haluat ottaa toiminnon käyttöön, etsi sen nimeä **Toiminnonhallinta**-sivun **Haku**-kentässä ja valitse sitten **Ota käyttöön nyt**.
+Versioon 10.0.13 on lisätty toiminto, joka vahvistaa kirjanpidon jakotaulukon sen varmistamiseksi, että uudet kentät on määritetty oikein. Tämän toiminnon nimi on **Ota lisävahvistus asiakirjojen tiedoille käyttöön käyttämällä lähdeasiakirjan kirjanpitokehystä**. Tämä ominaisuus otetaan oletusarvoisesti käyttöön versiossa 10.0.29. 
 
 Lisätietoja on kohdassa [Toimittajan laskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
 

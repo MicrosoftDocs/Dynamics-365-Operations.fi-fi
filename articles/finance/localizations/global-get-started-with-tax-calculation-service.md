@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 0f005352970ec3dadb178dfafeaf4f7e36f8c18d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279807"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573302"
 ---
 # <a name="get-started-with-tax-calculation"></a>Verolaskennan aloittaminen
 
@@ -186,9 +186,9 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 
     | Veroryhmä    | Verokoodit           |
     | ------------ | ------------------- |
-    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_Dom | DEU_VAT19; DEU_VAT7 |
     | DEU_EU       | DEU_Exempt          |
-    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
 20. Valitse **Nimikkeen veroryhmä**-välilehdessä **Nimikkeen veroryhmä**-sarake, lisää se matriisiin syöttöehdon ja lisää sitten rivit ylläpitämään nimikkeen veroryhmän päätietoja.
@@ -206,9 +206,9 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 
     | Liiketoimintaprosessi | Lähettäjän osoite | Toimitusosoite | Veroryhmä    |
     | ---------------- | --------- | ------- | ------------ |
-    | Myynti            | DEU       | DEU     | DEU_Domestic |
+    | Myynti            | DEU       | DEU     | DEU_Dom |
     | Myynti            | DEU       | FRA     | DEU_EU       |
-    | Myynti            | BEL       | BEL     | BEL_Domestic |
+    | Myynti            | BEL       | BEL     | BEL_Dom |
     | Myynti            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]

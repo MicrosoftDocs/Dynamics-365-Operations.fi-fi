@@ -2,7 +2,7 @@
 title: Finance Insightsin määritykset
 description: Tässä artikkelissa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 05bf5fe5a5ff86bbf52ed58ee6b1e84c15bf2c1e
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861413"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573191"
 ---
 # <a name="configuration-for-finance-insights"></a>Finance Insightsin määritykset
 
@@ -39,7 +39,7 @@ Määritä ympäristöt näiden ohjeiden avulla.
 1. Luo tai päivitä Dynamics 365 Finance -ympäristö LCS-sovelluksessa. Ympäristö edellyttää, että käytössä on sovelluksen versio 10.0.21 tai sitä uudempi versio.
 
     > [!NOTE]
-    > Ympäristön on oltava korkean käytettävyyden ympäristö. (Tämä ympäristötyyppi tunnetaan myös tason 2 ympäristönä.) Lisätietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+    > Ympäristön on oltava korkean käytettävyyden ympäristö. (Tämä ympäristötyyppi tunnetaan myös tason 2 ympäristönä.) Lisätietoja on kohdassa [Ympäristön suunnittelu](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 2. Jos Finance Insightsia määritetään eristysympäristössä, tuotantotiedot on ehkä kopioitava tähän ympäristöön, jotta ennusteet toimisivat. Ennustemallissa käytetään useiden vuosien tietoja ennusteiden luomiseen. Contoso-esittelytiedot eivät sisällä riittävästi historiatietoja ennustemallin kouluttamiseen. 
 
@@ -51,13 +51,16 @@ Tarkista, että seuraavat asetukset on tehty:
 
 - Sinulla on **järjestelmänvalvojan** ja **järjestelmän mukauttajan** käyttöoikeus Power Portal -hallintakeskuksessa.
 - Finance Insights -lisäosan asentavalla käyttäjällä on Dynamics 365 Finance -lisenssi tai vastaava lisenssi.
+- Seuraavat Azure AD -sovellukset on rekisteröity Azure AD:ssä.
 
-Seuraavat Azure AD -sovellukset on rekisteröity Azure AD:ssä.
+    |  Hakemus                             | Sovelluksen tunnus                               |
+    |------------------------------------------|--------------------------------------|
+    | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-|  Hakemus                             | Sovelluksen tunnus                               |
-|------------------------------------------|--------------------------------------|
-| Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    
+    Jos haluat tarkistaa, että sovellus on rekisteröity Azure AD:hen, tarkista **Kaikki sovellukset** -luettelo. Lisätietoja on kohdassa [Yrityssovellusten tarkasteleminen](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    Jos sovellusta ei ole rekisteröity Azure AD:hen, ota yhteyttä tukeen.
+  
 ## <a name="configure-dataverse"></a>Määritä Dataverse
 
 Näitä ohjeita noudattamalla voit määrittää Dataversen Finance Insightsille.

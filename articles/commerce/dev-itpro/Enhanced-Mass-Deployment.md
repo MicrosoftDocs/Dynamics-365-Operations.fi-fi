@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 66a711aff90221e594f4b2a0df3735eac93d0c9b
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: 426473c14cdf9e171810aafd97dbb1afd5988b2f
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387016"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589086"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Sinetöityjen Commerce-itsepalvelukomponenttien joukkokäyttöönotto
 
@@ -47,7 +47,7 @@ Seuraavassa taulukossa näkyvät erottimet, joita voidaan käyttää komentorivi
 | -EnvironmentId | Ympäristön tunnus. |
 | -HardwareStationAppInsightsInstrumentationKey | Hardware Stationin AppInsights-instrumentointiavain. |
 | Asenna | Parametri, joka määrittää, tuleeko tämän asennusohjelman komponenttia asentaa. Tämä parametri on pakollinen asennusta varten, eikä sillä ole väliviivamerkkiä. |
-| -InstallOffline | Jos käytössä on Modern POS, tämä parametri määrittää, että offline-tietokanta tulee myös asentaa ja konfiguroida. Käytä myös **-SQLServerName**-parametria. Muutoin asennusohjelma yrittää etsiä edellytykset täyttävän oletusesiintymän. |
+| -InstallOffline | Jos käytössä on Modern POS, tämä parametri määrittää, että offline-tietokanta tulee myös asentaa ja konfiguroida. Käytä myös **-SQLServerName**-parametria. Muutoin asennusohjelma yrittää etsiä edellytykset täyttävän oletusesiintymän. Kun käytetään Azure Active Directory (Azure AD) -todennusta, offline-tilassa oleva myyntipiste ei toimi, koska online-yhteys vaaditaan aina. |
 | -Port | Portti, johon Retail Serverin virtuaalihakemisto liitetään ja jota se käyttää. Oletusporttia 443 käytetään, jos porttia ei ole määritetty. |
 | -Register | Rekisteritunnus pääkonttorin **Rekisterit**-sivulla näkyvällä tavalla. |
 | -RetailServerAadClientId | Asiakastunnus Azure AD, jota Retail Server käyttää viestinnässä Pääkonttorin kanssa. |

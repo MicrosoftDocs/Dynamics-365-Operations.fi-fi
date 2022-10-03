@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 26fc6518f0b4eae815e047db1dbaadd7c56a2e67
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 6e346c6ff881d3a33743196b45247493fd19ed1d
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220666"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573248"
 ---
 # <a name="allow-edits-to-internal-data-on-general-ledger-vouchers"></a>Salli sisäisten tietojen muokkaus kirjanpitotositteissa
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 
 Kun kirjaat kirjanpidon kirjauksia kirjanpitoon, **Kuvaus**-kenttää käytetään usein sisäisten huomautusten tai asiakirjojen tallentamista varten. Jos tiedot ovat virheelliset, se voi aiheuttaa sekaannusta ja vaikeuttaa kausien sulkemista. Tämän ominaisuuden avulla laskentapäällikkö tai taloushallintopäällikkö voi korjata virheitä muokkaamalla kirjanpitoon kirjattujen tositteiden **Kuvaus**-kenttää.
@@ -84,7 +83,7 @@ Kirjausketjua ylläpidetään erityisesti tämän ominaisuuden avulla tehtyjen m
    
     Avaamalla kyselyn tällä tavalla voit keskittyä kaikkiin yhteen tositetietueeseen tehtyihin muokkauksiin.
   
-  - Valitse** Kirjanpito** > **Kausittaiset tehtävät** > **Tositteiden muokkausten kirjausketju**. Kirjoita valintaikkunaan ehdot, joiden mukaan voit määrittää tositteet, joiden muokkausten kirjausketjua haluat tarkastella. Jos haluat tarkastella kaikkien tositteiden kirjausketjua, jätä ehdot tyhjiksi ja valitse **OK**. 
+  - Valitse **Kirjanpito** > **Kausittaiset tehtävät** > **Tositteiden muokkausten kirjausketju**. Kirjoita valintaikkunaan ehdot, joiden mukaan voit määrittää tositteet, joiden muokkausten kirjausketjua haluat tarkastella. Jos haluat tarkastella kaikkien tositteiden kirjausketjua, jätä ehdot tyhjiksi ja valitse **OK**. 
     
     Kun avaat kyselyn tällä tavalla, voit suodattaa tietyn päivän tai tietyn käyttäjän tekemät muutokset.
 

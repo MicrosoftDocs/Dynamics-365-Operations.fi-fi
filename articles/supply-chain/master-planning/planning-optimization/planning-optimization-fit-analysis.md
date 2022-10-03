@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
+ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542349"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9591847"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -94,7 +94,7 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Tuotantoympäristö | Kaavan versiot ja saanto: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä tuotto, joka liittyy kaavaversioon ohitetaan, kun suunnittelun optimointi on käytössä. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Suunnitelmat, joissa käytetään järjestystä: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä järjestys ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Aloittamattomat vapautetut tuotantotilaukset, joiden aikataulutettu aloitus on ennen kuluvaa päivää: *\#* | Tämä ominaisuus odottaa. Jos tuotantotilaus tällä hetkellä viivästyy, pääsuunnittelu olettaa, että se valmistuu saman päivän aikana. Tällä on merkitystä vapautetuille tuotantotilauksille, joiden toimituspäivä on menneisyydessä mutta joita ei ole vielä saatu valmiiksi. | Tuleva aalto |
-| Tuotantoympäristö | Aikataulutetut resurssit, joilla on rajallinen kapasiteetti: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä rajallisella kapasiteetilla ajoitetut resurssit ohitetaan, kun suunnittelun optimointi on käytössä. Ajoittaminen tapahtuu tuotteen oletusläpimenoajan perusteella. | Vuoden 2022 julkaisuaalto 2 |
+| Tuotantoympäristö | Aikataulutetut resurssit, joilla on rajallinen kapasiteetti: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä.| Tuettu |
 | Tuotantoympäristö | Suunnittelussa käytetyt reitit: *\#* | Tätä ominaisuutta tuetaan. | Tuettu |
 | Tuotantoympäristö | Hajotusta käyttävä myyntirivin varaus: *\#* | Hajotustoimintoa käyttävä myyntirivin varaus ei ole tuettu, kun suunnittelun optimointi on käytössä. | Tuleva aalto |
 | Tuotantoympäristö | Aikataulutus tuotantotilausten hajotuksen kanssa: *\#* | Aikataulu, joka käyttää tuotantotilausten räjähdystä ei ole tuettu, kun suunnittelun optimointi on käytössä. Tuotantotilaukset voidaan ajoittaa yksitellen. | Tuleva aalto |
