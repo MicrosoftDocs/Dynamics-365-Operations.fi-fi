@@ -2,19 +2,19 @@
 title: Tuotevertailumoduulit
 description: Tässä artikkelissa kuvataan tuotevertailumoduuleita ja niiden toteuttamista, jotta asiakkaat voivat vertailla tuotteita Microsoft Dynamics 365 Commerce -verkkokauppasivustoilla.
 author: ashishmsft
-ms.date: 08/09/2022
+ms.date: 10/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 6fd851ce6b32d0772c3fe23c4d7bd4dae2616fdc
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 9ff45f3fbcc86b21f336d580582adef586417de4
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474123"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618382"
 ---
 # <a name="product-comparison-modules"></a>Tuotevertailumoduulit
 
@@ -91,6 +91,19 @@ Lisää tuotevertailupainike haku- ja luokkatulosten sivuilla oleviin tuoteruutu
 1. Määritä **Tuotevertailupainike**-moduulin ominaisuudet oikeanpuoleisessa ominaisuuksien ikkunassa.
 1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
+
+## <a name="add-a-product-comparison-preview-panel-module-to-pages-on-your-website"></a>Tuotevertailun esikatselupaneelin moduulin lisääminen sivuille sivustossa
+
+Tuotevertailun esikatselupaneelin moduuli antaa asiakkaille mahdollisuuden tarkistaa tuotteita, joita he lisäävät vertailuun tai poistavat sieltä. Esikatselupaneelissa on myös vertailusivulle suoraan siirtymisen ja koko tuoteluettelon tyhjentämisen vaihtoehdot. 
+
+Kaikkien niiden sivujen esikatselupaneeli kannattaa ottaa käyttöön, joissa **tuotevertailupainike** on käytössä. Moduuli voidaan lisätä **tuotevertailupainikkeeseen** paikkana tai sitä voidaan käyttää yksittäisenä moduulina, joka voidaan määrittää millä tahansa sivulla, vaikka vertailtavien tuotteiden lisäys- tai poistotoimintoa ei olisikaan. 
+
+Lisää tuotevertailun esikatselupaneelin moduuli sivulle manuaalisesti. Lisää sivulle vain yksi esikatselupaneelin moduuli. Jos lisäät sivun moduuliin useita esiintymiä, ensimmäinen moduuli hahmonnetaan ja muut ohitetaan.
+
+![Tuotevertailun esikatselupaneeli](./media/product-comparison-preview-panel-2.png)
+
+Jos määrität tuotevertailulle raja-arvon, voit ottaa käyttöön esikatselupaneelin harmaat paikkamerkit. Ne osoittavat, miten monta tuotetta vertailuun voi lisätä. Harmaat paikkamerkit korvataan tuotteilla vertailuun lisäämisen yhteydessä. Jos haluat määrittää tuotevertailun rajan ja ottaa käyttöön harmaat paikkamerkit, siirry sivustonmuodostimessa kohtaan **Sivuston asetukset > Laajennukset** ja tee muutokset **Tuotevertailut**-osassa. Määritystä käytetään kaikkien sivujen kaikissa esikatselupaneeleissa. 
+
 
 ## <a name="specify-the-maximum-number-of-products-to-show-in-the-comparison-tray"></a>Vertailualueella näytettävien tuotteiden enimmäismäärän määrittäminen
 

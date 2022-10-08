@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
 ms.custom: ''
 ms.search.industry: Retail
-ms.openlocfilehash: b93852bfb7c6f5a9f2f83f30a1f76da3f9559c7e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d01ad490301dd2f4103b8bd3f702db12b93a45a8
+ms.sourcegitcommit: bd7b1ffe90b25eb4c68d6aaebd063bf33e09d9cd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286834"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "9627493"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Kanavan palautus- ja maksuhyvityskäytännön luominen ja päivittäminen
 
@@ -36,12 +36,8 @@ Tämän käytännön soveltamisala rajoittuu tällä hetkellä siihen, että voi
 
 ## <a name="enable-return-policy"></a>Ota käyttöön palautuskäytäntö
 
-Jos haluat ottaa käyttöön kanavanpalautuskäytäntötoiminnon Commerce headquarters -sovelluksessa, toimi seuraavasti.
+Tämä ominaisuus on otettu oletusarvoisesti käyttöön. Voit etsiä sen **Ominaisuuksien hallinta** -työtilasta hakemalla **Ota kanavien palautuskäytännöt käyttöön** ominaisuuksien nimien luettelosta.
 
-1. Avaa **Ominaisuuksien hallinta** -työtilaan Dynamics 365 Commercessa.
-1. Etsi ominaisuuksien nimien luettelosta **Ota käyttöön kanavan palautuksen käytännöt** -toiminto.
-1. Valitse **Ota käyttöön nyt**.
-1. Suorita **1110** (Yleinen konfigurointi) -työ **Jakeluaikataulu**-sivulta jakaaksesi ominaisuuden muutoksen.
 
 ## <a name="configure-return-policy"></a>Määritä palautuskäytäntö
 

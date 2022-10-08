@@ -2,19 +2,19 @@
 title: Tarkistusyksikön integrointimalli – Ruotsi
 description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Ruotsi).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: 3376e6a901b692371a44b5c74c1e6b4afd0cd573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 966ba3fab780991736f0c84d7eb68356c28a4022
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9275063"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631259"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Tarkistusyksikön integrointimalli – Ruotsi
 
@@ -103,7 +103,7 @@ Suorita verointegraation määritysvaiheet [Commerce-kanavien kirjanpidon integr
 
 1. [Kirjanpidon rekisteröintiprosessin määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Ota myös huomioon verorekisteröintiprosessin asetukset, jotka [liittyvät tähän tarkistusyksikön integraatioesimerkkiin](#set-up-the-registration-process).
 1. [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Ota käyttöön lykätyn tilikausirekisteröinnin manuaalinen käyttö](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Lykätyn kirjanpidon rekisteröinnin manuaalisen suorituksen käyttöönotto](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Määritä kanavakomponentit](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Rekisteröintiprosessin määrittäminen

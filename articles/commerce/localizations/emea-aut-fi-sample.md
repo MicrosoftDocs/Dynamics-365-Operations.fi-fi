@@ -2,19 +2,19 @@
 title: Itävallan tilikausirekisteröintipalvelun integroinnin malli
 description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Itävalta).
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: f3429df2732d7d1ed6d2f0783a600c2b994c022b
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 603316ea07e5951b3bc5f96af28f549bdafd3b0e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473874"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631339"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Itävallan tilikausirekisteröintipalvelun integroinnin malli
 
@@ -220,7 +220,7 @@ Suorita verointegraation määritysvaiheet [Commerce-kanavien kirjanpidon integr
 
 1. [Kirjanpidon rekisteröintiprosessin määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Ota myös huomioon verorekisteröintiprosessin asetukset, jotka [liittyvät tähän verorekisteröintipalvelun integraatioesimerkkiin](#set-up-the-registration-process).
 1. [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Ota käyttöön lykätyn tilikausirekisteröinnin manuaalinen käyttö](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Lykätyn kirjanpidon rekisteröinnin manuaalisen suorituksen käyttöönotto](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Määritä kanavakomponentit](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Rekisteröintiprosessin määrittäminen

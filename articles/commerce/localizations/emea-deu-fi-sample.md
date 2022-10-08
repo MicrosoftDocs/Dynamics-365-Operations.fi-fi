@@ -2,19 +2,19 @@
 title: Saksan tilikausirekisteröintipalvelun integroinnin malli
 description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Saksa).
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-05-29
-ms.openlocfilehash: c3fdc0c378ad57300213357eccd50d817e06789a
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: a725badbce498e4e7b35aecb2500e273586c7b77
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313938"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631450"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Saksan tilikausirekisteröintipalvelun integroinnin malli
 
@@ -265,7 +265,7 @@ Suorita verointegraation määritysvaiheet [Commerce-kanavien kirjanpidon integr
     > - Suosittelemme, että jätät **Jatka virheen ilmetessä** -vaihtoehdon pois käytöstä **Verorekisteröintiprosessi**-sivulla, koska kaikki tapahtumat on rekisteröitävä oikein, vaikka verorekisteröinnin ensimmäinen yritys ei onnistu.
     > - Ennen kuin siirryt **Verorekisteröintiprosessi**-sivun **Ohita**- tai **Merkitse rekisteröidyksi** -valintaan, sinun on hyvä keskustella näistä muutoksista verokonsultin tai paikallisen veroviraston kanssa.
 
-1. [Ota käyttöön lykätyn tilikausirekisteröinnin manuaalinen käyttö](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Lykätyn kirjanpidon rekisteröinnin manuaalisen suorituksen käyttöönotto](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Määritä kanavakomponentit](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Rekisteröintiprosessin määrittäminen

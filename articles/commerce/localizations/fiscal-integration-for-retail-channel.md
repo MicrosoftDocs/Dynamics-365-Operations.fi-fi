@@ -2,19 +2,19 @@
 title: Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 description: Tämä artikkeli on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 0a56df2a463153c6c3986ce84907e25ea7d965b8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286496"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631233"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -95,16 +95,20 @@ Tätä konfiguraatiota käytetään, kun myymälän paikalliseen verkkoon kuuluu
 
 Kirjanpidon integrointikehikossa on seuraavat asetukset, joilla voi käsitellä kirjanpidon rekisteröinnin aikana tapahtuvia virheitä:
 
-- **Yritä uudelleen** – Käyttäjät voivat käyttää tätä asetusta, kun virhe voidaan ratkaista nopeasti ja kirjanpidon rekisteröinti voidaan suorittaa uudelleen. Tätä asetusta voi käyttää esimerkiksi silloin, kun kirjanpidon laitetta ei ole liitetty, kuittitulostimessa ei ole paperia tai kuittitulostimessa on paperitukos.
-- **Peruuta** – Käyttäjät voivat siirtää tällä asetuksella nykyisen transaktion tai tapahtuman kirjanpidon rekisteröinnin myöhemmäksi, jos se epäonnistuu. Kun rekisteröintiä on siirretty myöhemmäksi, käyttäjä voi jatkaa työskentelyä myyntipisteessä ja suorittaa loppuun toiminnot, joissa kirjanpidon rekisteröintiä ei tarvita. Kun myyntipisteessä tapahtuu kirjanpidon rekisteröintiä edellyttävä tapahtuma (avataan esimerkiksi uusi tapahtuma), virheen käsittelyn valintaikkuna avautuu automaattisesti ilmoittamaan, että edellistä tapahtumaan eri rekisteröity oikein. Valintaikkunassa on myös vaihtoehtoja virheen käsittelemiseen.
-- **Ohita** – Käyttäjä voi käyttää tätä asetusta, kun kirjanpidon rekisteröinti voidaan jättää tekemättä tietyissä tilanteissa ja tavallisia toimintoja voidaan jatkaa myyntipisteessä. Tätä asetusta voidaan käyttää esimerkiksi silloin, kun se myyntitapahtuma, jonka kirjanpidon rekisteröinti epäonnistui, voidaan rekisteröidä erityiseen painettuun kirjauskansioon.
-- **Merkitse rekisteröidyksi** – käyttäjät voivat käyttää tätä asetusta, kun tapahtuma kyllä rekisteröitiin kirjanpidon laitteeseen (esimerkiksi verokuitti tulostettiin), mutta virhe tapahtui, kun kirjanpidon vastausta tallennettiin kanavatietokantaan.
-- **Viivytä** – Operaattorit voivat käyttää tätä vaihtoehtoa, kun tapahtumaa ei rekisteröidä, koska rekisteröintipalvelu ei ole ollut käytettävissä. 
+- **Yritä uudelleen** – Käyttäjä voi käyttää tätä asetusta, kun virhe voidaan ratkaista nopeasti, ja kirjanpidon rekisteröinti voidaan suorittaa uudelleen. Tätä asetusta voi käyttää esimerkiksi silloin, kun kirjanpidon laitetta ei ole liitetty, kuittitulostimessa ei ole paperia tai kuittitulostimessa on paperitukos.
+- **Peruuta** – Tämän asetuksen avulla käyttäjä voi lykätä nykyisen transaktion tai tapahtuman kirjanpidon rekisteröinnin myöhemmäksi, jos se epäonnistuu. Kun rekisteröintiä on lykätty, käyttäjä voi jatkaa työskentelyä myyntipisteessä ja suorittaa loppuun toiminnot, joissa kirjanpidon rekisteröintiä ei tarvita. Kun myyntipisteessä tapahtuu kirjanpidon rekisteröintiä edellyttävä tapahtuma (avataan esimerkiksi uusi tapahtuma), virheen käsittelyn valintaikkuna avautuu automaattisesti ilmoittamaan, että edellistä tapahtumaan eri rekisteröity oikein. Valintaikkunassa on myös vaihtoehtoja virheen käsittelemiseen.
+- **Ohita** – Käyttäjä voi käyttää tätä asetusta, jos nykyisen transaktion tai tapahtuman kirjanpidon rekisteröintiä ei voi tehdä valmiiksi esimerkiksi silloin, kun kuittitulostin ei toimi **ja** kirjanpidon rekisteröinti voidaan jättää pois tietyissä olosuhteissa. Tätä asetusta voidaan käyttää esimerkiksi silloin, kun se myyntitapahtuma, jonka kirjanpidon rekisteröinti epäonnistui, voidaan rekisteröidä erityiseen painettuun kirjauskansioon. Kun kirjanpidon rekisteröinti on ohitettu, myyntipisteessä voidaan jatkaa normaalien toimintojen suorittamista. 
+- **Merkitse rekisteröidyksi** – Käyttäjä voi käyttää tätä asetusta, kun nykyinen transaktio tai tapahtuma on rekisteröity kirjanpidon laitteeseen (esimerkiksi verokuitti on tulostettu), mutta virhe tapahtuu, kun kirjanpidon vastausta tallennetaan kanavatietokantaan. Kun nykyinen transaktio tai tapahtuma on merkitty rekisteröidyksi, myyntipisteessä voidaan jatkaa säännöllisiä toimintoja.
+- **Siirrä myöhemmäksi** – Käyttäjä voi käyttää tätä vaihtoehtoa, kun tapahtumaa ei ole rekisteröity, koska rekisteröintilaite tai -palvelu ei ole käytettävissä **ja** jokin seuraavista pitää paikkansa:
+    - Käytettävissä on kirjanpidon rekisteröinnin varmistusvaihtoehto sekä mahdollisuus jatka kirjanpidon rekisteröintiprosessia nykyisen transaktion osalta. Esimerkiksi paikallinen [kirjanpidon laite](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) voi olla kirjanpidon rekisteröinnin online-palvelun varmistusvaihtoehto, jos palvelu ei ole käytettävissä.
+    - Kirjanpidon rekisteröinti voidaan tehdä valmiiksi myöhemmin muun tavan kuin kirjanpidon integrointikehyksen avulla. Esimerkiksi myöhemmäksi siirretyt tapahtumat voidaan rekisteröidä fyysisesti myöhemmin erässä [erillisten toimintojen](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode) avulla.
+    
+    Kun nykyistä transaktiota tai tapahtumaa on siirretty myöhemmäksi, myyntipisteessä voidaan jatkaa säännöllisiä toimintoja.
 
-> [!NOTE]
-> **Ohita**-, **Merkitse rekisteröidyksi**- ja **Viivytä**-asetukset on aktivoitava kirjanpidon rekisteröintiprosessissa ennen käyttöä. Käyttäjille on myös myönnettävä vastaavat käyttöoikeudet.
+> [!WARNING]
+> **Ohita**-, **Merkitse rekisteröidyksi**- ja **Siirrä myöhemmäksi** -asetuksia tulee käyttää vain hätätilanteiden asetuksina poikkeustapauksissa. Keskustele näistä virheidenkäsittelyvaihtoehdoista asianajajan tai veroneuvojan kanssa. Harkitse asiaa tarkkaan, ennen kuin käytät niitä. Asetukset on aktivoitava kirjanpidon rekisteröintiprosessissa ennen käyttöä. Voit varmistaa, että käyttäjät eivät käytä niitä säännöllisesti, myöntämällä käyttäjille vastaavat käyttöoikeudet.
 
-**Ohita**-, **Merkitse rekisteröidyksi**- ja **Viivytä**-asetuksella otetaan käyttöön tietokoodit taltioimaan tiettyjä virhettä koskevia tietoja, kuten virheen syy tai oikeutus kirjanpidon rekisteröinnin ohittamiselle tai tapahtuman merkitsemiselle rekisteröidyksi. Lisätietoja virheen käsittelyparametrien määrittämisestä on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+[Kirjanpitotapahtuma](#storing-fiscal-response-in-fiscal-transaction) luodaan, kun valittuna on **Ohita**, **Merkitse rekisteröidyksi**- tai **Siirrä myöhemmäksi** -tapahtuma. Kirjanpitotapahtuma ei sisällä kirjanpidon vastausta. Näin voit siepata kirjanpidon rekisteröinnin virheen aiheuttaman tapahtuman. Näiden asetusten avulla otetaan käyttöön tietokoodit, jotka sieppaavat tiettyjä virhettä koskevia tietoja, kuten virheen syy tai oikeutus kirjanpidon rekisteröinnin ohittamiselle tai tapahtuman merkitsemiselle rekisteröidyksi. Lisätietoja virheen käsittelyparametrien määrittämisestä on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Valinnainen kirjanpidon rekisteröinti
 
@@ -112,11 +116,7 @@ Kirjanpidon rekisteröinti voi olla pakollisista joillekin toiminnoille mutta va
 
 ### <a name="manually-rerun-fiscal-registration"></a>Kirjanpidon rekisteröinnin suorittaminen uudelleen
 
-Jos transaktion tai tapahtuman kirjanpidon rekisteröinti on lykätty virheen jälkeen (esimerkiksi silloin, kun toimittaja on valinnut **Peruuta** virheen käsittely valintaruudussa), voit suorittaa kirjanpidon rekisteröinnin manuaalisesti käynnistämällä vastaavan toiminnon. Lisätietoja on kohdassa [Lykätyn kirjanpidon rekisteröinnin manuaalisen suorittamisen ottaminen käyttöön](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Viivytä-vaihtoehto
-
-**Viivytä**-vaihtoehdolla voit jatkaa verorekisteröintiprosessia, jos nykyinen vaihe epäonnistuu. Sitä voidaan käyttää, kun verorekisteröinnin varmistusvaihtoehto on käytössä.
+Jos transaktion tai tapahtuman kirjanpidon rekisteröinti on lykätty virheen jälkeen (esimerkiksi silloin, kun toimittaja on valinnut **Peruuta** virheen käsittely valintaruudussa), voit suorittaa kirjanpidon rekisteröinnin manuaalisesti käynnistämällä vastaavan toiminnon. Lisätietoja on kohdassa [Lykätyn kirjanpidon rekisteröinnin manuaalisen suorittamisen ottaminen käyttöön](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### <a name="fiscal-registration-health-check"></a>Kirjanpidon rekisteröinnin kuntotarkastus
 
@@ -138,7 +138,7 @@ Jos kuntotarkastus epäonnistuu, kuntotarkastuksen valintaikkuna avautuu myyntip
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Kirjanpidon vastauksen tallentaminen kirjanpitotapahtumassa
 
-Kun transaktion tai tapahtuman kirjanpidon rekisteröinti onnistuu, kirjanpitotapahtuma luodaan kanavatietokannassa ja linkitetään alkuperäiseen transaktioon tai tapahtumaan. Vastaavasti jos epäonnistuneelle kirjanpidon rekisteröinnille valitaan **Ohita**- tai **Merkitse rekisteröidyksi** -asetus, tämä tieto tallennetaan kirjanpitotapahtumaan. Kirjanpitotapahtuma säilyttää kirjanpidon laitteen tai palvelun kirjanpidon vastauksen. Jos kirjanpidon rekisteröintiprosessissa on useita vaiheita, kirjanpitotapahtuma luodaan jokaiselle prosessin vaiheelle, jonka seurauksena oli onnistunut tai epäonnistunut rekisteröinti.
+Kun transaktion tai tapahtuman kirjanpidon rekisteröinti onnistuu, kirjanpitotapahtuma luodaan kanavatietokannassa ja linkitetään alkuperäiseen transaktioon tai tapahtumaan. Jos vastaavasti **Ohita**, **Merkitse rekisteröidyksi** tai **Siirrä myöhemmäksi** -asetus on valittu epäonnistuneelle kirjanpidon rekisteröinnille, tiedot tallennetaan kirjanpitotapahtumaan. Kirjanpitotapahtuma säilyttää kirjanpidon laitteen tai palvelun kirjanpidon vastauksen. Jos kirjanpidon rekisteröintiprosessissa on useita vaiheita, kirjanpitotapahtuma luodaan jokaiselle prosessin vaiheelle, jonka seurauksena oli onnistunut tai epäonnistunut rekisteröinti.
 
 *P-työ* siirtää kirjanpitotapahtumat Headquartersiin yhdessä vähittäismyyntitapahtumien kanssa. Voit tarkastella **Myymälän tapahtumat** -sivun **Tilikauden tapahtumat** -pikavälilehdellä tapahtumiin linkitettyjä kirjanpitotapahtumia.
 

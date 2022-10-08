@@ -2,19 +2,19 @@
 title: Kaupan kirjanpidon integroinnin määrittäminen
 description: Tässä artikkelissa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28097341c7b39660b834eb81786c3f56045e1496
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276129"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631420"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Kaupan kirjanpidon integroinnin määrittäminen
 
@@ -30,9 +30,10 @@ Ota Commerce-kanavien kirjanpidon integrointitoimintoon liittyvät toiminnot kä
 1. Etsi ja ota käyttöön seuraavat toiminnot:
 
     - **Kassakoneiden suora verotuksen integrointi** – Tämä ominaisuus laajentaa verojen integroinnin kehystä lisäämällä mahdollisuuden luoda myyntipisteessä suoritettavia veroliittimiä. Tämäntyyppinen liitin kommunikoi verolaitteen tai -palvelun kanssa, joka tarjoaa HTTP-sovellusohjelmaliittymän (API) eikä vaadi myymälässä erillistä fyysistä laitetta. Tämä ominaisuus mahdollistaa esimerkiksi verojen integroinnin matkapuhelimista vaatimatta jaettua laitteistoasemaa.
-    - **Verointegraation tekniset profiili-ohitukset** – Tämän ominaisuuden avulla voidaan laajentaa verojen integroinnin asetuksia ja mahdollistaa kassapäätteiden asetussivun yhteysparametrien tarkistamisen. Kun tämä ominaisuus on käytössä, voit ohittaa teknisen profiilin parametrit.
+    - **Kirjanpidon integraation teknisen profiilin ohitukset** – Tämän ominaisuuden avulla voidaan laajentaa kirjanpidon integroinnin asetuksia ja mahdollistaa teknisen profiilin parametrien ohituksen. Voit esimerkiksi määrittää yksittäisen myyntipisteen kassakoneen tason kirjanpidon yhteysmerkkijonot. Ominaisuus lisää myös mahdollisuuden tarkistaa yhteysparametrit myyntipisteen kassan **Asetukset**-sivulla. 
     - **Kassakoiden verorekisteröinnin tila** – Kun tämä ominaisuus on käytössä, voit poistaa verojen rekisteröintiprosessin käytöstä tietyistä kassakoneista. Jos kassakoneen verorekisteröinti on poistettu käytöstä, myyntitapahtumia ei voi suorittaa siinä kassapäätteessä.
-    - **Verointegraation paikallinen tallennusvarmuuskopiointi** – Tämä ominaisuus laajentaa verointegraatiokehyksen virheenkäsittelyominaisuuksia. Se myös mahdollistaa verorekisteröintitietojen automaattisen varmuuskopioinnin tietojen menettämisen yhteydessä, jotta paikallisen tallennuksen tiedot palautetaan, kun laite aktivoidaan.
+    - **Fiscal integration local storage backup** – Tämä ominaisuus laajentaa kirjanpidon integrointikehyksen virheidenkäsittelyominaisuuksia ottamalla käyttöön kirjanpidon rekisteröintitietojen automaattisen varmuuskopioinnin, jotta paikallisen varaston tiedot voidaan palauttaa, kun laitetta aktivoidaan.
+    - **Asiakirjojen rekisteröintiä on lykätty** - Tämä toiminto laajentaa kirjanpidon integrointikehyksen virheidenkäsittelyominaisuuksia ottamalla käyttöön asetuksen, jonka avulla kirjanpidon rekisteröintiä voi siirtää myöhemmäksi, jos kirjanpidon rekisteröinti epäonnistuu ja käyttää kirjanpidon rekisteröinnin varmuuskopiointivaihtoehtoa tai kirjanpidon rekisteröinti tehdään valmiiksi myöhemmin käyttämällä muuta toimintoa kuin kirjanpidon integrointikehystä.
 
 ## <a name="set-up-commerce-parameters"></a>Määritä Commercen parametrit
 
@@ -286,16 +287,15 @@ Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että my
     1. Lisää uusi painike ja määritä **Tulosta kuitti Z** -painikeominaisuus.
     1. Siirrä muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
 
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Ota käyttöön lykätyn tilikausirekisteröinnin manuaalinen käyttö
+## <a name="enable-manual-execution-of-deferred-fiscal-registration"></a>Lykätyn kirjanpidon rekisteröinnin manuaalisen suorituksen käyttöönotto
 
-Jos haluat ottaa käyttöön lykätyn tilikausirekisteröinnin manuaalisen käytön, lisää uusi painike POS-asetteluun.
+Jos haluat ottaa käyttöön lykätyn kirjanpidon rekisteröinnin manuaalisen suorituksen, lisää uusi painike myyntipisteen asetteluun.
 
 - Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Myyntipistetoimintojen lisääminen myyntipisteasetteluihin käyttämällä painikeruudukon suunnittelutoimintoa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.
 
     1. Valitse päivitettävä asettelu.
     1. Lisää uusi painike, määritä **Viimeistele tilikausirekisteröintiprosessi** -painikeominaisuus.
     1. Siirrä tekemäsi muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
-
 
 ## <a name="view-connection-parameters-and-other-information-in-pos"></a>Yhteysparametrien ja muiden tietojen tarkasteleminen myyntipisteessä
 

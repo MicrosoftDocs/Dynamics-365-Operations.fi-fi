@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.29 (lokakuu 2022) -sovelluksen uudet ja muuttuneet ominaisuudet
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Commercein 10.0.29 uusia tai muuttuneita toimintoja.
 author: josaw1
-ms.date: 08/17/2022
+ms.date: 09/29/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
-ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
+ms.openlocfilehash: 0629228516d688abf4dcd4280d1ad676f8f35331
+ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "9475900"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9601568"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Dynamics 365 Commercein version 10.0.29 uudet tai muuttuneet ominaisuudet (lokakuu 2022)
 
@@ -39,6 +39,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän art
 | Sähköinen kaupankäynti | Verkkokaupan tuotevertailun tuki | Salli ostajien vertailla tuotteita eri luokkien välillä, jotta he voivat tehdä oikean ostopäätöksen itse. Tämä ominaisuus on käytettävissä sekä B2C- että B2B-sivustoilla. | Sivuston luontiohjelma | 
 | Lahjakortit | Vähittäismyynnin lahjakorttitaulujen tuki tietojen jakamiseksi yritysten välillä | Dynamics headquarters tukee tietojen jakamisen sallimista yritysten välillä tiettyjen taulujen osalta Dynamics-arkkitehtuurissa. Tässä ominaisuudessa Dynamics 365 Commerce sallii tietojen jakamisen yritysten välillä myös vähittäismyynnin lahjakorttitaulujen osalta. Näin ollen yhdessä yrityksessä olevan lahjakortin tiedot voidaan nyt kopioida toiseen samassa ympäristössä olevaan yritykseen. Alkuperäisen yrityksen lahjakorttitauluun tehdyt muutokset välitetään toisen yrityksen kopioituun lahjakorttitauluun. | Kehittäjät |
 | Maailmanlaajuinen toiminta | [Commerce-lokalisointitoimintojen käyttöönotto uutta Commerce SDK:tä varten](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Uusi toiminto mahdollistaa Commerce-lokalisointitoimintojen käyttöönoton Commerce headquartersissa toimintojen hallintakehyksen tai -parametrien avulla. Kirjanpidon integrointimallit ovat nyt mukana uudessa Commerce SDK:ssa. Ne tukevat itsenäistä pakkausta. Tämä toiminto ottaa käyttöön myös Store Commerce -sovelluksen käyttöönoton yleisten Commerce-asiakkaiden mukaan.<p><p>Tämä julkaisu sisältää Commerce-lokalisointitoiminnot ja kirjanpidon integrointimallit [Itävaltaa](../localizations/emea-aut-fi-sample.md), [Tšekin tasavaltaa](../localizations/emea-cze-fi-sample.md), [Ranskaa](../localizations/emea-fra-cash-registers.md), [Germany](../localizations/emea-deu-fi-sample.md), [Italiaa](../localizations/emea-ita-fpi-sample.md), [Norjaa](../localizations/emea-nor-cash-registers.md) ja [Puolaa](../localizations/emea-pol-fpi-sample.md) varten. | Järjestelmänvalvoja/päättäjät ottavat käyttöön |
+| Offline | [Myyntipisteen offline-tietokannan pakkaus](../dev-itpro/implementation-considerations-offline.md#important-offline-features) | Tämä uusi ominaisuus pienentää offline-tietokantojen kokoa ottamalla käyttöön automaattisen indeksin pakkaamisen kanavan [myymälän aukioloajan](../dev-itpro/store-hours.md) ulkopuolella. | Toimintojen hallinta<p>*Myyntipisteen offline-tietokannan pakkaus* |
 | Suorituskyky | RTS-riippuvuuden poistaminen "Muokkaa asiakasta" -skenaarioissa | Hyvä saatavuus ja korkea suorituskyky ovat normaaleja odotuksia myyntipisteiden (POS) ja sähköisen kaupankäynnin kanavissa. Näiden odotusten täyttämiseksi Dynamics 365 Commerce -kanavien ei tarvitse enää olla riippuvaisia reaaliaikaisesta kommunikoinnista Commerce headquarters -sovelluksen kanssa, kun asiakastietoja muokataan. Kyky muokata asynkronisten ja ei-asynkronisten asiakkaiden asiakastietoja asynkronisesti voi auttaa vähentämään reaaliaikaisia kutsuja Commerce headquarters -sovellukseen. | Järjestelmänvalvoja/päättäjät ottavat käyttöön |
 
 ## <a name="feature-state-changes-in-this-release"></a>Tämän julkaisun toiminnon tilan muutokset
