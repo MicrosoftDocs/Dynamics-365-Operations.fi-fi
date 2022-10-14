@@ -394,6 +394,8 @@
                   items:
                     - name: Store Commerce -sovellus
                       href: dev-itpro/store-commerce.md
+                    - name: Store Commerce ‑sovellus mobiiliympäristöille
+                      href: dev-itpro/store-commerce-mobile.md
                     - name: Siirry Modern POS -sovelluksesta Store Commerceen
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Laitehallinnan käyttöönotto-ohje
