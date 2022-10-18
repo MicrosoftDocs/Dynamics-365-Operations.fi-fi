@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 description: Tässä artikkelissa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Financesta.
 author: kfend
-ms.date: 06/29/2022
+ms.date: 10/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462298"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643791"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -32,6 +32,18 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!NOTE]
 > Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10031-release"></a>Financen version 10.0.31 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="edifact-paymul-at-configuration-under-payment-model"></a>EDIFACT PAYMUL (AT) -määritys maksumallissa
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella muodolla, joka perustana on ISO 20022 pain.001.001.09. | 
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Itävallan pankeissa poistetaan käytöstä EDICFACT-PAYMUL kansainvälisissä maksuissa vuoden 2022 marraskuuhun mennessä. Se korvataan XML-versiolla pain.001.001.09N. Uusi määritys on lisätty yleiseen määrityssäilöön, jonka avulla käyttäjät voivat tehdä kansainvälisiä maksupyyntöjä. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Financen version 10.0.30 poistetut tai vanhentuneet ominaisuudet
 

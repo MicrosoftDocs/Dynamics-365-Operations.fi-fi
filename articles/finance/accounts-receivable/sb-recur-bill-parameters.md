@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 64d6e21c2d8c588a64f0f4cf8b7a0bafc853bcab
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903331"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644000"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Toistuvan sopimuksen laskutusparametrit
 
@@ -46,7 +46,8 @@ ms.locfileid: "8903331"
 8. Valitse **Laskutapahtuman tyyppi** -kentässä uusien laskutusaikataulujen laskutapahtumatyypin oletusarvo.
 9. Määritä **Tasaa lykkäys laskutukseen** -asetuksen arvoksi **Kyllä**, jos haluat kohdistaa vastaavan lykkäysaikataulun niin, että se käyttää samoja päivämääriä kuin laskutusaikataulu. Määritä sen arvoksi **Ei**, jos haluat käyttää eri päiviä.
 10. Jos käytät tuottojen jakotoimintoa, määritä **Luo tuoton jako automaattisesti** -asetuksen arvoksi **Kyllä**, kun nimikkeet lisätään laskutusaikatauluun. **Tuoton jako** -valintaruutu valitaan automaattisesti laskutusaikataulun rivillä, jos nimike on määritetty tuoton jaon nimikkeeksi. Valitse **Ei**-vaihtoehto, jos haluat valita **Tuoton jako** -valintaruudun manuaalisesti.
-11. Määritä myyntitilauksen luonnin kentät:
+11. Määritä **Asiakkaan jako** -vaihtoehdon arvoksi **Kyllä**, jos haluat sallia laskutusaikataulun laskuttamisen eri asiakkailta. Kun arvoksi on määritetty **Kyllä**, **Asiakkaan jako** -vaihtoehto on käytettävissä laskutusaikataulun otsikossa ja rivillä. 
+12. Määritä myyntitilauksen luonnin kentät:
 
     - Laskut voidaan konsolidoida kauden, asiakkaan tai nimikkeen mukaan. Mikä tahansa **Kyllä**- ja **Ei**-arvojen yhdistelmä voidaan määrittää. Laskut voidaan jakaa myös nimikeryhmän mukaan.
     - Seuraavat kirjausvaihtoehdot ovat saatavilla laskuille:
@@ -92,6 +93,9 @@ ms.locfileid: "8903331"
     - **Myönnä hyvitys** – Luo hyvityslasku, kun laskutusaikataulu- tai laskutusaikataulurivi on päättynyt.
     - **Luotto-oikaisu** – Luo luotto-oikaisu laskutusaikataulua varten, kun rivi on päättynyt. Luotto-oikaisu näkyy laskutusaikataulun tulevalla laskutuskaudella. Kredit-oikaisu päivittää seuraavan laskutuskauden laskun summaa, kunnes hyvitys on otettu laskutusaikatauluun.
     - **Ei hyvitystä** – Älä luo luotto-oikaisua, kun laskutusaikataulu- tai laskutusaikataulurivi on päättynyt. Tämä vaihtoehto on käytettävissä vain, kun käytät **Ei oikaisua** -vaihtoehtoa laskutusaikataulun päättämiseen.
+18. Kun **Hyvityksellä voidaan irtisanoa kertaluontoisesti** -vaihtoehdon arvoksi on määritetty **Ei** ja laskutusaikataulun laskutusväli on **Kerran**, laskutusaikataulurivin tilaksi muutetaan **Päätetty**, kun laskutusaikataulu on laskutettu. Laskutusaikataulua ei voi päättää eikä luottoa voi myöntää. Kun **Hyvityksellä voidaan irtisanoa kertaluontoisesti** -vaihtoehdon arvoksi on määritetty **Kyllä** ja laskutusaikataulurivin laskutusväli on **Kerran**, tilaksi muutetaan **Aktiviinen**, kun laskutusaikataulu on laskutettu. Laskutusaikataulurivi voidaan päättää ja hyvitys käsitellä. 
+19. Parametreissa määritetty **Päivittäinen suhteellinen jako** -vaihtoehto saa oletusarvon joukkopäättämisen sivulta ja laskutusaikataulun otsikon ja rivin Päätä-valintaikkunoissa. Sitä voidaan muuttaa päättämisprosessin aikana. Kun arvoksi on määritetty **Kyllä**, hyvityssumma lasketaan päivähinnan avulla. Kun arvoksi on määritetty **Ei**, hyvitys perustuu päättämispäivämäärään ja laskutusväliin. Jos esimerkiksi käytetään kuukausittaista toistumisväliä ja laskutussumma oli 100 $ kuukaudessa, hyvityssumman lisäysarvo on 100 $. Jos laskutusväli on Kerran, hyvityssumma on 0,00 $. Päivittäinen suhteellinen jako -kohdan arvoksi on määritettävä Kyllä, jotta hyvitys saadaan laskutustiheyden ollessa Kerran. 
+20. Määritä **Luo lykkäys luottoa varten** -vaihtoehdon arvoksi **Kyllä**, jos haluat luoda uuden lykkäysaikataulun olemassa olevan lykkäysaikataulun hyvityksen yhteydessä. Jätä vaihtoehdon arvoksi **Ei**, jos haluat luoda hyvityksen olemassa olevalle lykkäysaikataululle.
 
 ## <a name="sequence-number-tab"></a>Järjestysnumero-välilehti
 

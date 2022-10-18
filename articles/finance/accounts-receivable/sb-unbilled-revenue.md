@@ -2,7 +2,7 @@
 title: Laskuttamaton tuotto
 description: Tässä artikkelissa kuvataan, kuinka nimikkeet ja tilit määritetään käyttämään laskuttamattoman tuoton ominaisuutta tilauslaskutuksessa.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adf6f06ee454f368fa194315a87cfdec9e5e13da
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879679"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644165"
 ---
 # <a name="unbilled-revenue"></a>Laskuttamaton tuotto
 
@@ -123,15 +123,15 @@ Jakaumat lasketaan uudelleen valitun kohdistustyypin perusteella (**Prosentti**,
 
 Laskutussuunnitelma kirjataan kolmelle vuodelle, ja laskut laskutetaan vuosittain kolmen vuoden jaksolla. Koko sopimuksen summa kirjataan laskuttamattomalle tuottotilille, josta vuosittaiset laskut luodaan. Vastatili on tuottotili tai lykätty tuottotili.
 
-Huomaa, että ylimpien laskutus ja laskuttamaton tuotto eivät toimi yhdessä, koska täsmäytysongelmia voi ilmetä kirjanpidossa. Esimerkiksi **Nimikeryhmän asetukset** -sivulla nimikeryhmä A määritetään niin, että **Ylimpien rivien määrä** -kentän arvoksi määritetään **2**. **Laskutusaikataulut**- sivulla on kolme nimikettä. Kaikki kolme nimikettä kuuluvat nimikeryhmään A. Kun laskuttamatonta tuottoa varten luodaan alkuperäinen kirjauskansion kirjaus, kaikkien kolmen nimikkeen summa käsitellään laskuttamattomalle tilille. Kun laskutusaikataulun lasku luodaan, vain kahden ylimmän nimikkeen summat sisällytetään. Näin ollen laskun summa ei vastaa laskuttamatonta tuottotiliä ja täsmäytysongelmia tapahtuu kirjanpidossa.
+Ylimpien laskutus ja laskuttamaton tuotto eivät toimi yhdessä, koska täsmäytysongelmia voi ilmetä kirjanpidossa. Esimerkiksi **Nimikeryhmän asetukset** -sivulla nimikeryhmä A määritetään niin, että **Ylimpien rivien määrä** -kentän arvoksi määritetään **2**. **Laskutusaikataulut**- sivulla on kolme nimikettä. Kaikki kolme nimikettä kuuluvat nimikeryhmään A. Kun laskuttamatonta tuottoa varten luodaan alkuperäinen kirjauskansion kirjaus, kaikkien kolmen nimikkeen summa käsitellään laskuttamattomalle tilille. Kun laskutusaikataulun lasku luodaan, vain kahden ylimmän nimikkeen summat sisällytetään. Näin ollen laskun summa ei vastaa laskuttamatonta tuottotiliä ja täsmäytysongelmia tapahtuu kirjanpidossa.
 
 Jos haluat käyttää laskuttamatonta tuottoa, jätä **Nimikeryhmän asetus** -sivu tyhjäksi tai määritä kaikki nimikeryhmät niin, että **Ylimpien rivien määrä** -kentän arvoksi määritetään **0** (nolla). Jos haluat käyttää ylimpien laskutusta, laskuttamattoman tuoton toimintoja ei ole käytettävissä.
 
 ### <a name="examples"></a>Esimerkkejä
 
-Versiosta 10.0.27 lähtien käytössä on uusi tili, jota käytetään, kun käytetään laskuttamatonta tuottoa. Kun ensimmäinen **Luo kirjauskansiovienti** -prosessi kirjataan, kredit merkitään uudelle laskuttamattoman tuoton vastatilille. Tätä tiliä käytetään tuottotilin asemesta, koska sama arvo on peruutettava, kun laskutusaikataulu laskutetaan. Jos vaihtokurssi- tai pyöristyseroja ilmenee, **Luo lasku** -prosessin aikana lasketut summat voivat olla erilaiset. Näin varmistetaan, että tilien nettosumma on 0 (nolla).
+Versiosta 10.0.29 lähtien uusi parametri lisätään toistuvan sopimuksen laskutusparametreihin. Kun arvoksi määritetään Kyllä, **Käytä laskuttamattomia vastatilejä** -parametri ottaa käyttöön kaksi uutta tiliä **Laskuttamattoman tuoton määritys** -kohdassa. Laskuttamattoman tuoton ja laskuttamattomien alennusten vastatilit ovat käytettävissä. Niitä kannattaa käyttää, kun laskutusaikataulut luodaan muuna kuin kirjanpitovaluuttana. Vastatilien käyttäminen varmistaa sen, että laskuttamaton tuotto ja laskuttamattomien alennusten tilit palautetaan käyttämällä alkuperäisten kirjausten vaihtokursseja. Alkuperäinen **Luo kirjauskansiovienti** -prosessi on sama kuin debet laskuttamattomassa tuotossa ja kredit tuotossa. Jos alennusta käytetään, alkuperäinen kirjauskansiomerkintä on sama kuin debet alennuksessa ja kredit laskuttamattomassa alennuksessa. 
 
-Tässä esimerkissä kerrotaan, kuinka laskuttamatonta tuottoa käytetään, kun sopimuksen koko summa taseessa tunnistetaan laskuttamattomaksi tuotoksi. Kirjauksen toinen puoli on laskuttamattoman tuoton vastakirjaus. Kun laskutat asiakasta, laskuttamaton tuotto ja laskuttamattoman tuoton vastakirjaus käännetään. Tuoton kirjaus tapahtuu joko laskutuksen yhteydessä tai määritetyn lykkäystunnistusaikataulun mukaan.
+Tässä esimerkissä kerrotaan, kuinka laskuttamatonta tuottoa käytetään, kun sopimuksen koko summa taseessa tunnistetaan laskuttamattomaksi tuotoksi. Merkinnän toinen puoli on tuotto tai lykätty tuotto. Kun laskutat asiakasta, laskuttamaton tuotto palautetaan. Tuoton kirjaus tapahtuu joko laskutuksen yhteydessä tai määritetyn lykkäystunnistusaikataulun mukaan.
 
 #### <a name="assumptions"></a>Oletustiedot
 
@@ -151,47 +151,38 @@ Tässä esimerkissä kerrotaan, kuinka laskuttamatonta tuottoa käytetään, kun
 
     | Nimike | Aloituspäivämäärä | Päättymispäivämäärä | Määrä | Laskutustiheys | Lykkäysnimike | Laskuttamaton tuotto | Kuvaus |
     |---|---|---|---|---|---|---|---|
-    | Käyttöoikeus | 01. tammikuuta, CY | 31. joulukuuta CY + 2 | 100,00 USD | Vuosittain | En | Kyllä | Asiakasta laskutetaan 100,00 USD vuosittain. Kokonaissumma 300,00 USD kirjataan ennakkoon laskuttamattomana tuottona taseessa ja tuottona voittoihin ja tappioihin. Jokainen lasku pienentää laskuttamatonta summaa. |
-    | Ylläpito | 01. tammikuuta, CY | 31. joulukuuta CY + 2 | 30,00 USD | Vuosittain | Kyllä | Kyllä | Asiakasta laskutetaan 30,00 USD vuosittain. Kokonaissumma 90,00 USD kirjataan ennakkoon laskuttamattomana tuottona ja lykättynä tuottona taseessa. Jokainen lasku pienentää laskuttamatonta summaa. Lykätty tuotto kirjataan kuukausittain 36 kuukauden kuluessa. |
+    | Käyttöoikeus | 01. tammikuuta 2022 | 31. joulukuuta 2024 | 100,00 USD | Vuosittain | En | Kyllä | Asiakasta laskutetaan 100,00 USD vuosittain. Kokonaissumma 300,00 USD kirjataan ennakkoon laskuttamattomana tuottona taseessa ja tuottona voittoihin ja tappioihin. Jokainen lasku pienentää laskuttamatonta summaa. |
+    | Ylläpito | 01. tammikuuta 2022 | 31. joulukuuta 2024 | 30,00 USD | Vuosittain | Kyllä | Kyllä | Asiakasta laskutetaan 30,00 USD vuosittain. Kokonaissumma 90,00 USD kirjataan ennakkoon laskuttamattomana tuottona ja lykättynä tuottona taseessa. Jokainen lasku pienentää laskuttamatonta summaa. Lykätty tuotto kirjataan kuukausittain 36 kuukauden kuluessa. |
 
 6. Käytä **Kaikki laskutusaikataulut** -sivulla **Luo kirjauskansionmerkintä** -prosessia, kun haluat kirjata sopimuksen arvon taseeseen laskuttamattomana tuottona.
 
 Ohjelma luo kaksi kirjauskansiomerkintää, yhden jokaista laskutusaikataulun riviä varten.
 
-| Laskuttamattoman tuoton tili | Laskuttamattoman tuoton vastatili | Veloitussumma | Luottosumma |
-|---|---|---|---|
-| Laskuttamattoman tuoton tili | | 300,00 USD | |
-| | Laskuttamattoman tuoton vastatili | | 300,00 USD |
+| Tili | Veloitussumma | Luottosumma |
+|---|---|---|
+| Laskuttamattoman tuoton tili | 300,00 USD | |
+| Tuottotili | | 300,00 USD |
 
-| Laskuttamattoman tuoton tili | Viivästetty tuotto | Veloitussumma | Luottosumma |
-|---|---|---|---|
-| Laskuttamattoman tuoton tili | | 90,00 USD | |
-| |Lykätty ylläpidon tuotto | | 90,00 USD |
+| Tili | Veloitussumma | Luottosumma |
+|---|---|---|
+| Laskuttamattoman tuoton tili | 90,00 USD | |
+| Viivästetty tuotto | | 90,00 USD |
 
-Ensimmäinen kirjauskansiomerkintä kirjataan laskuttamattoman tuoton vastatilille ja toinen kirjataan lykättyjen tuottojen tilille. Jos laskutusrivillä on sekä laskuttamaton että lykätty tuotto, käytetään lykättyjen tuottojen tiliä, ei laskuttamattoman tuoton vastatiliä. Sopimus edellyttää, että asiakkaan lasku luodaan kunkin vuoden alussa. Luo lasku **Luo lasku** -prosessia käyttämällä. Seuraavat kirjauskansiomerkinnät luodaan, kun lasku luodaan.
+Sopimus edellyttää, että asiakkaan lasku luodaan kunkin vuoden alussa. Luo lasku **Luo lasku** -prosessia käyttämällä. Kun lasku luodaan, kirjataan seuraava laskutosite.
 
-| Päätili | Laskuttamattoman tuoton tili | Veloitussumma | Luottosumma |
-|---|---|---|---|
-| Laskuttamattoman tuoton vastakirjaus | | 100,00 USD | |
-| | Laskuttamattoman tuoton tili | | 100,00 USD |
-| Myyntireskontra | | 100,00 USD | |
-| | Tuottotili | | 100,00 USD |
+| Tili| Veloitussumma | Luottosumma |
+|---|---|---|
+| Laskuttamattoman tuoton tili | | 130,00 $ |
+| Myyntireskontra | 130,00 $ | |
 
-| Päätili | Laskuttamattoman tuoton tili | Veloitussumma | Luottosumma |
-|---|---|---|---|
-| Lykätty ylläpidon tuottotili | | 30,00 USD | |
-| | Laskuttamattoman tuoton tili | | 30,00 USD |
-| Myyntireskontra | | 30,00 USD | |
-| | Lykätty ylläpidon tuottotili | | 30,00 USD |
+Tämä sama kirjauskansiomerkintä luodaan laskuilla, jotka kirjataan seuraavan kahden vuoden alussa. Laskuttamattoman tuoton tiliä vähennetään joka vuosi **Luo lasku** -prosessin aikana. Laskuttamattoman tuoton vastatiliä käytetään oikaistaessa laskuttamattoman tuoton tili, kun käytetään eri vaihtokursseja. 
 
-Tämä sama kirjauskansiomerkintä luodaan laskuilla, jotka kirjataan seuraavan kahden vuoden alussa. Lykättyjen tuottojen tilin nettosumma on 0 (nolla), koska pyöristys- tai vaihtokurssieroja ei ole. Lykätty tuotto on peruutettava samoin kuin se kredit-merkittiin **Luo kirjauskansiovienti** -prosessin aikana. Koska tuottoa lykätään edelleen ja se tuloutetaan myöhemmin, lykätyn tuoton tilille tulee kredit jälleen.
+Viimeisessä vaiheessa tuloutuksen kirjauskansiovienti luodaan kuukausittain, jotta lykätty tuotto ylläpitokuluista tuloutetaan. Kirjauskansiomerkinnän voi luoda **Tuloutuksen käsittely** -sivua käyttäen. Voit luoda sen myös valitsemalla **Lykkäysaikataulu**-sivujen riveille **Tulouta**-vaihtoehdon.
 
-Viimeisessä vaiheessa tuloutuksen kirjauskansiovienti luodaan kuukausittain, jotta lykätty ylläpitomaksun tuotto tuloutetaan. Kirjauskansiomerkinnän voi luoda **Tuloutuksen käsittely** -sivua käyttäen. Voit luoda sen myös valitsemalla **Lykkäysaikataulu**-sivujen riveille **Tulouta**-vaihtoehdon.
-
-| Lykätty tuottotili | Tuottotili | Veloitussumma | Luottosumma |
-|---|---|---|---|
-| Lykätty ylläpidon tuotto | | 2,50 USD | |
-| | Ylläpidon tuotto | | 2,50 USD |
+| Päätili | Veloitussumma | Luottosumma |
+|---|---|---|
+| Viivästetty tuotto | 2,50 USD | |
+| Tuotto | | 2,50 USD |
 
 Tämä kirjauskansiomerkintä luodaan aina, kun tälle lykätylle nimikkeelle suoritetaan tuloutusprosessi (yhteensä 36 kertaa).
 
@@ -269,18 +260,18 @@ Koska molemmat nimikkeet käyttävät laskuttamatonta tuottoa ja tuottojen kohdi
 
 Seuraavassa taulukossa on nimikkeiden ja laskun alkuperäinen kirjauskansiomerkintä.
 
-| Laskuttamattoman tuoton tili | Lykätty tuottotili | Veloitussumma | Luottosumma |
-|---|---|---|---|
-| **Nimikkeen 1000 kirjauskansiovienti** | | | |
-| Debit – laskuttamattoman tuoton tili (401250) | | 1 465,26 USD | |
-| | Kredit – Lykätty tuottotili (250600) | | 1 465,26 USD |
-| **Nimikkeen 0021 kirjauskansiovienti** | | | |
-| Debit – laskuttamattoman tuoton tili (401250) | | 274,74 USD | |
-| | Kredit – Lykätty tuottotili (250600) | | 274,74 USD |
-| **Lasku** | | | |
-| | Kredit – Laskuttamattoman tuoton tili | | 1 465,26 USD |
-| | Kredit – Laskuttamattoman tuoton tili | | 274,74 USD |
-| Debet – Myyntireskontratili (130100) | | 1 488,16 USD | |
+| Päätili | Veloitussumma | Luottosumma |
+|---|---|---|
+| **Nimikkeen 1000 kirjauskansiovienti** | | | 
+| Laskuttamattoman tuoton tili (401250) | 1 465,26 USD | |
+| Lykätty tuottotili (250600) | | 1 465,26 USD |
+| **Nimikkeen 0021 kirjauskansiovienti** | | | 
+| Laskuttamattoman tuoton tili (401250) | 274,74 USD | |
+| Lykätty tuottotili (250600) | | 274,74 USD |
+| **Lasku** | | |
+| Laskuttamattoman tuoton tili | | 1 465,26 USD |
+| Laskuttamattoman tuoton tili | | 274,74 USD |
+| Myyntireskontratili (130100) | 1 488,16 USD | |
 
 #### <a name="changes-to-the-billing-schedule-line-billing-detail-line-or-revenue-allocation"></a>Laskutusaikataulun rivin, laskutustietojen rivin tai tuoton kohdistuksen muutokset
 

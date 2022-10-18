@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 42ea8884c357bcb26ac96df8dca75e7ff449d4f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f04ef1a0de815596f629fede25a247c58e026f4
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881959"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643874"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insightsin aloitussivu
 
@@ -98,9 +98,5 @@ Kassavirtaennusteominaisuus voi auttaa kassatilanteen tarkemmassa arvioimisessa.
 ### <a name="using-budget-proposal"></a>Budjettiehdotuksen käyttäminen
 
 Lisätietoja budjetin luomisen nopeuttamisesta on kohdassa [Budjettiehdotukset](budget-proposals.md). 
-
-## <a name="feedback-and-support"></a>Palaute ja tuki
-
-Lähetä sähköpostia [Finance Insightsiin](mailto:fiap@microsoft.com), jos haluat antaa palautetta tai tarvitset tukea.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

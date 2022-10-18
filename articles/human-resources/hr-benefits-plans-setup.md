@@ -2,7 +2,7 @@
 title: Luo etusuunnitelma
 description: Tässä artikkelissa kerrotaan, miten etuussuunnitelmia määritetään Dynamics 365 Human Resourcesissa.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c8d4488f1782d80484a8b91f4ae7303fea0e464
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 001318be00efcda1e7ee07513e240059d3c5e135
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336920"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643934"
 ---
 # <a name="create-a-benefit-plan"></a>Etuussuunnitelmien luominen
 
@@ -42,8 +42,9 @@ Tässä artikkelissa kerrotaan, miten etuussuunnitelmia määritetään Dynamics
    | **Ohjelma** | Määrittää ohjelman, jolle suunnitelma osoitetaan vaihtoehtoisesti. |
    | **Nippu** | Määrittää nipun, jolle suunnitelma osoitetaan vaihtoehtoisesti. |
    | **Päärahtikirja** | Määrittää, onko suunnitelma pääsuunnitelma, johon on liitetty nippu. |
+   | **Vaadittu** | Osoittaa, että suunnitelma on valittava nipun minkä tahansa muun suunnitelman uloskuittaamiseksi. Useita suunnitelmia voi merkitä **pakollisiksi**. Tällöin kaikki **pakollisiksi** merkityt suunnitelmat on valittava, jotta nipusta voi kuitata ulos jonkin suunnitelman.|
    | **Voimaantulopäivämäärä ja -aika** | Suunnitelman alkamispäivä ja -aika. Oletusarvo on nykyinen järjestelmän päivämäärä. |
-   | **Voimassaolon päättymispäivämäärä ja -aika** | Suunnitelman päättymispäivä ja -aika. Oletusarvona on 12/31/2154, joka tarkoittaa ei koskaan. |
+   | **Voimassaolon päättymispäivämäärä ja -aika** | Suunnitelman päättymispäivä ja -aika. Oletusarvona on 12/31/2154, joka tarkoittaa ei koskaan.  |
 
 4. Määritä **Määritys**-välilehdessä seuraavien kenttien arvot luotavan suunnitelman tyypin mukaan:
 

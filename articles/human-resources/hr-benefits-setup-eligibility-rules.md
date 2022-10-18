@@ -2,7 +2,7 @@
 title: Oikeutussääntöjen ja -asetusten määrittäminen
 description: Tässä artikkelissa käsitellään oikeutussääntöjen ja -asetusten määrittämistä Microsoft Dynamics 365 Human Resourcesi etujenhallinnassa.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 916a9955327aef67ac768d4505bdb343862058a1
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336913"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644081"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Oikeutussääntöjen ja -asetusten määrittäminen 
 
@@ -175,6 +175,7 @@ Niput ovat liittyvien etuussuunnitelmien joukko. Etuusnippujen avulla voit ryhmi
    | **Nippu** | Nipun yksilöivä tunniste. |
    | **Kuvaus** | Nipun kuvaus. |
    | **Päärahtikirja** | Ilmaisee, kuuluuko jokin nipun suunnitelmista merkitä pääsuunnitelmaksi. Pääsuunnitelma on valittava avoimen rekisteröinnin yhteydessä osana pakettia, ennen kuin etujen järjestelmänvalvoja voi vahvistaa työntekijän etuvalinnat. |
+   | **Vaadittu**| Osoittaa, että suunnitelma on valittava nipun minkä tahansa muun suunnitelman uloskuittaamiseksi. Useita suunnitelmia voi merkitä **pakollisiksi**. Tällöin kaikki **pakollisiksi** merkityt suunnitelmat on valittava, jotta nipusta voi kuitata ulos jonkin suunnitelman.|
    | **Voimaantulopäivämäärä ja -aika** | Päivämäärä ja aika, jolloin nipusta tulee aktiivinen. |
    | **Voimassaolo päättyy** | Nipun vanhentumisen päivämäärä. Oletusarvo on 12/31/2154, joka vastaa ei koskaan -arvoa. |
 
