@@ -888,6 +888,8 @@
               href: async-customer-mode.md
             - name: Asynkronisten asiakkaiden muuntaminen synkronisiksi asiakkaiksi
               href: convert-async-to-sync.md
+            - name: Asiakastoimintojen synkronoinnin seuranta
+              href: audit-async-customer-operations.md
             - name: Asynkroninen asiakkaan luontitila – usein kysytyt kysymykset
               href: async-customer-mode-faq.md
             - name: Asiakashallinta
@@ -1296,11 +1298,17 @@
                       href: cookie-consent-module.md
                 - name: Keskustelumoduulit
                   items:
-                    - name: Commercen keskustelumoduuli
+                    - name: Commerce-keskusteluominaisuuksien yleiskatsaus
+                      href: commerce-chat-overview.md
+                    - name: Commerce-keskustelu Customer Servicen monikanava -moduulilla
                       href: commerce-chat-module.md
+                    - name: Commerce-keskustelu Power Virtual Agents -moduulilla
+                      href: chat-module-pva.md
+                    - name: Commerce-keskustelumoduulin ennakoivan keskustelun parametrit
+                      href: chat-proactive-chat-parameters.md
             - name: Haku
               items:
-                - name: Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus
+                - name: Luokan oletusarvoisen saapumissivun ja hakutulossivun yleiskatsaus
                   href: category-search-page-overview.md
                 - name: Pilvipohjaisen haun yleiskatsaus
                   href: cloud-powered-search-overview.md

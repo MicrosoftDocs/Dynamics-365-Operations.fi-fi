@@ -14,6 +14,8 @@
               items:
                 - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Käyttöympäristöpäivitykset versioon 10.0.31 (helmikuu 2023)
+                  href: get-started/whats-new-platform-updates-10-0-31.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.30 (marraskuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.29 (lokakuu 2022)
@@ -180,8 +182,10 @@
                       href: data-entities/configuration-data-packages.md
                 - name: Konfigurointitietomallit
                   href: data-entities/configuration-data-templates.md
-                - name: Muutosten seuranta yksikköön
+                - name: Entiteetin muutosten seuranta
                   href: data-entities/entity-change-track.md
+                - name: Entiteetin rivien versioiden muutosten seurannan salliminen
+                  href: data-entities/rowversion-change-track.md
                 - name: Tietojen etsiminen vakiotietoyksiköistä
                   href: data-entities/data-entities-report.md
                 - name: Useita laskentataulukoita sisältävät tietomallit
@@ -1228,6 +1232,8 @@
                   href: power-platform/admin-reference.md
                 - name: Dataverse-virtuaaliyksiköiden ottaminen käyttöön
                   href: power-platform/enable-virtual-entities.md
+                - name: Virtuaalitaulukoiden muutosten seuranta Dataversessä
+                  href: power-platform/track-changes-fin-ops-virtual-table.md
                 - name: Power Apps -portaalit talous- ja toimintosovellusten kanssa
                   href: power-platform/power-portal-reference.md
                 - name: Talous- ja toimintosovellusten virtuaaliyksiköiden usein kysytyt kysymykset

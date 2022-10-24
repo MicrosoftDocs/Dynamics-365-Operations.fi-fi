@@ -12,14 +12,12 @@
               items:
                 - name: Supply Chain Managementin uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.31 (helmikuu 2022)
+                  href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (marraskuu 2022)
                   href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (lokakuu 2022)
                   href: get-started/whats-new-scm-10-0-29.md
-                - name: Supply Chain Management 10.0.28 (elokuu 2022)
-                  href: get-started/whats-new-scm-10-0-28.md
-                - name: Supply Chain Management 10.0.27 (heinäkuu 2022)
-                  href: get-started/whats-new-scm-10-0-27.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
@@ -1775,10 +1773,14 @@
                   href: master-planning/supply-schedule.md
                 - name: Suodattimien käyttäminen suunnitelmaan
                   href: master-planning/planning-optimization/plan-filters.md
-                - name: Pääsuunnittelu ja kysynnän ennuste
+                - name: Pääsuunnittelu ja kysynnän ennusteet
                   href: master-planning/planning-optimization/demand-forecast.md
+                - name: Pääsuunnittelu ja tarjontaennusteet
+                  href: master-planning/planning-optimization/supply-forecast.md
                 - name: Pääsuunnittelu ja ostokauppasopimukset
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: Tarjouksiin ja tarjouspyyntöihin perustuva suunnitelma
+                  href: master-planning/planning-optimization/quotation-planning.md
                 - name: Suunnittelun optimoinnissa käytetyt päivämäärä- ja aikaparametrit
                   href: master-planning/planning-optimization/date-time-used.md
                 - name: Varmuusmarginaalit
@@ -2319,10 +2321,12 @@
                   href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
                 - name: Uuden tuotteen luominen
                   href: pim/tasks/create-new-product.md
-                - name: Luo päätuote
+                - name: Päätuotteen luominen
                   href: pim/tasks/create-product-master.md
-                - name: Luo ennalta määriteltyjä tuotevariantteja
+                - name: Ennalta määriteltyjen tuotevarianttien luominen
                   href: pim/tasks/create-predefined-product-variants.md
+                - name: Tuotteiden käännettyjen nimien ja kuvausten näyttäminen käyttöliittymässä
+                  href: pim/show-translated-product-info.md
                 - name: Mittayksiköiden hallinta
                   href: pim/tasks/manage-unit-measure.md
                 - name: Mittayksiköiden tuotevarianttikohtaiset muunnokset
@@ -3629,10 +3633,12 @@
                       href: warehousing/warehouse-configuration.md
                     - name: Varaston määrittäminen varaston konfigurointimallin avulla
                       href: inventory/warehouse-template.md
-                    - name: Työnhallinta työmallien ja sijaintidirektiivien avulla
+                    - name: Töiden hallinta työmallien ja sijaintidirektiivien avulla
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Sijaintidirektiivien käsitteleminen
                       href: warehousing/create-location-directive.md
+                    - name: Sijaintidirektiivien testaaminen hyväksyntätesteillä
+                      href: warehousing/location-directive-acceptance-tests.md
                     - name: Varastotapahtumien tuotesuodattimien määrittäminen
                       href: warehousing/filters-and-filter-codes.md
                     - name: Sijainnin varastointirajoitukset
