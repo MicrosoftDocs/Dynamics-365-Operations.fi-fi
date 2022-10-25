@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643729"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689991"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -62,7 +62,7 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | --- | --- | --- | --- |
 | Toimenpiteet | Kattavuusryhmät, joissa toimenpidelaskenta on käytössä: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. | Tuettu |
 | Peruskalenterit | Kalenterit, joissa käytetään peruskalenteria: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. | Tuettu | 
-| Erän käsittelykoodit | Ei-netottavissa olevan erän käsittelykoodin päätiedot: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä erän käsittelykoodit ohitetaan, kun suunnittelun optimointi on otettu käyttöön. | Vuoden 2022 julkaisuaalto 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
+| Erän käsittelykoodit | Ei-netottavissa olevan erän käsittelykoodin päätiedot: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Erien merkitseminen käytettävissä tai ei-käytettävissä oleviksi käsittelykoodien avulla](../../inventory/batch-disposition-codes.md) | Tuettu |
 | Saatavuus (CTP) | Tilauksen oletusasetukset, joiden toimituspäivämäärä on asetettu saatavuuteen (CTP): *\#* | Supply Chain Managementin versiossa 10.0.28 ja sitä uudemmassa versiossa on *Saatavuus (CTP) suunnittelun optimointia varten* -prosessi, joka tuo vahvistetut lähetys- ja vastaanottopäivämäärät saataville dynaamisen suunnittelun suorittamisen jälkeen. Supply Chain Managementin vanhojen versioiden saatavuus (CTP) -asetus ohitetaan, kun suunnittelun optimoitu on otettu käyttöön. | Tuettu |
 | Kopioi staattinen dynaamiseen suunnitelmaan | Staattisen kopioiminen ja dynaamiseen suunnitelmaan on käytössä pääsuunnitteluparametreissa. | Suunnittelun optimointi ei kopioi staattista suunnitelmaa dynaamiseen suunnitelmaan riippumatta tästä asetukseen. Yleensä tämä käsite ei ole yhtä merkityksellinen, koska suunnittelu optimointi tarjoaa nopeuden ja täydellisen uudistamisen. Jos käytössä on vähintään kaksi suunnitelmaa, pääsuunnittelu on käynnistettävä kunkin suunnitelman osalta. | – |
 | Vahvistus | Automaattisen vahvistuksen aikaraja ja kattavuusryhmiä määritetty: *\#* | Version 10.0.7 ja uudempien versioiden vahvistamista tuetaan erillisenä kiinteyttämiserätyönä, kun pääsuunnittelu on suoritettu (jos *suunnittelun optimoinnin automaattinen vahvistus* -toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Huomaa, että suunnittelun optimoinnin automaattinen vahvistus perustuu tilauspäivämäärään (aloituspäivämäärä), ei tarvepäivämäärään (päättymispäivämäärä). Näin varmistetaan, että suunniteltujen tilausten vahvistaminen tapahtuu ajallaan ilman, että läpimenoaikaa tarvitsee sisällyttää vahvistuksen aikarajakohtaan. | Tuettu |
@@ -104,7 +104,7 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Varmuusmarginaalit | Pääsuunnitelmat varmuusmarginaalin kanssa: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Varmuusmarginaalit](safety-margins.md) |  Tuettu |
 | Varmuusvaraston täyttäminen | Nimikkeiden kattavuustiedot, joissa on "täytä vähimmäisvaatimukset", poikkeavat tämän päivän päivämäärästä ja hankinta-ajasta: *\#* | Suunnittelun optimointi käyttää aina *kuluvan päivän päivämäärää ja hankinta-aikaa*. Tämä muutos tehdään, kun halutaan valmistautua yksinkertaistettuihin suunnitteluasetuksiin tulevaisuudessa. Jos toimitusaika ei sisälly varmuusvarastoon, nykyiselle alhaiselle käytettävissä olevalle varastolle luodut suunnitellut tilaukset viivästyvät aina läpimenoajan vuoksi. Tämä voi aiheuttaa merkittäviä meluongelmia ja ei-toivottuja suunniteltuja tilauksia. Paras käytäntö on muuttaa asetusta siten, että *kuluvan päivän päivämäärää + hankinta-aikaa* käytetään. Päivitä päätiedot ja varoitusten välttämiseksi. | Ei saatavilla |
 | Myyntitarjoukset | Pääsuunnitelmat ja myyntitarjoukset käytössä: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä tarjouksia ei oteta huomioon, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 tai sitä uudempi |
-| Säilyvyysaika | Pääsuunnitelmat, joissa säilyvyysaika on otettu käyttöön: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. | Tuettu |
+| Säilyvyysaika | Pääsuunnitelmat, joissa säilyvyysaika on otettu käyttöön: *\#* | Tämä ominaisuus odottaa. | Vuoden 2022 julkaisuaalto 2 |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

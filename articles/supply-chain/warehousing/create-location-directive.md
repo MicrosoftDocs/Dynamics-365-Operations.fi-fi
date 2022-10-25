@@ -2,7 +2,7 @@
 title: Sijaintidirektiivien käyttäminen
 description: Tässä artikkelissa käsitellään sijaintidirektiivien käyttämistä. Sijaintidirektiivit ovat käyttäjän määrittämiä sääntöjä, jotka auttavat tunnistamaan keräily- ja poispanosijainnit varaston siirrossa.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ef8ec0732cd3bd50bca8d334c43d0354e9e3316
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903692"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689663"
 ---
 # <a name="work-with-location-directives"></a>Sijaintidirektiivien käyttäminen
 
@@ -47,6 +47,20 @@ Ennen kuin voit luoda sijaintidirektiivin, sinun on varmistettava, että edellyt
 1. Luo toimipaikat, toimipaikkojen tyypit, toimipaikkojen profiilit ja toimipaikkojen muodot. Lisätietoja on kohdassa [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Luo toimipaikkoja, alueita ja vyöhykeryhmiä. Lisätietoja on kohdassa [Varaston määrittäminen](../../commerce/channels-setup-warehouse.md) ja [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="turn-the-location-directive-scopes-feature-on-or-off"></a><a name="scopes-feature"></a>Sijaintidirektiivin vaikutusalueiden toiminnon käyttöönotto tai käytöstäpoisto
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+*Sijaintidirektiivin vaikutusalueet* -ominaisuuden avulla voit suunnitella sijaintidirektiivejä vapaasti. Se myös auttaa vähentämään turhia määrityksiä. Se lisää **Vaikutusalue**-vaihtoehdon, joka korvaa edellisen **Useita varastointiyksiköitä**-vaihtoehdon. **Useita varastointiyksiköitä** -vaihtoehdon arvoksi voi määrittää vain *Kyllä* tai *Ei*. **Vaikutusalue**-vaihtoehto taas määrittää nämä kaksi asetusta (*Yksi nimike*- ja *Useita nimikkeitä* -arvojen avulla) sekä kaksi muuta (*Yksi nimike tai tilaus* ja *Kaikki*-arvojen avulla). Lisätietoja näistä asetuksista on kohdassa [Sijaintidirektiivit-pikavälilehti](#location-directives-tab).
+
+Kun tämä on käytössä, **Vaikutusalue**-vaihtoehto korvaa **Useita varastointiyksiköitä** -vaihtoehdon. Se on täysin yhteensopiva olemassa olevien määritysten kanssa.
+
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat tarkistaa toiminnon tilan ja ottaa sen käyttöön tai poistaa sen käytöstä [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetusten avulla. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+
+- **Moduuli:** *Varastonhallinta*
+- **Ominaisuuden nimi:** *Sijaintidirektiivin vaikutusalueet*
+
 ## <a name="work-order-types-for-location-directives"></a>Sijaintidirektiivien työtilaustyypit
 
 Monet sijaintidirektiiveille määritettävät kentät ovat samoja kaikissa työtilaustyypeissä. Muut kentät ovat kuitenkin työtilaustyyppikohtaisia.
@@ -68,10 +82,10 @@ Seuraavassa taulukossa on kaikille työtilaustyypeille yhteiset kentät.
 | Sijaintidirektiivit | Toimipaikka |
 | Sijaintidirektiivit | Varasto |
 | Sijaintidirektiivit | Direktiivikoodi |
-| Sijaintidirektiivit | Useita varastointiyksiköitä |
-| Rivejä | Järjestysnumero |
-| Rivejä | Määrästä |
-| Rivejä | Määrälle |
+| Sijaintidirektiivit | Vaikutusalue *tai* Useita varastointiyksiköitä |
+| Rivit | Järjestysnumero |
+| Rivit | Määrästä |
+| Rivit | Määrälle |
 | Rivejä | Yksikkö |
 | Rivejä | Etsi määrä |
 | Rivejä | Rajoita yksikön mukaan |
@@ -117,7 +131,9 @@ Tällä sivulla voi tarkastella, luoda ja muokata sijaintidirektiivejä toiminto
 
 - **Siirrä ylös** – Siirrä valittua sijaintidirektiiviä ylöspäin järjestyksessä. Voit esimerkiksi muuttaa sen järjestysnumeron 4:stä 3:ksi.
 - **Siirrä alas** – Siirrä valittua sijaintidirektiiviä alaspäin järjestyksessä. Voit esimerkiksi muuttaa sen järjestysnumeron 4:stä 5:ksi.
+- **Kopioi** – Avaa valintaikkuna, jossa voit luoda tarkan kopion nykyisestä sijaintidirektiivistä.
 - **Muokkaa kyselyä** – Avaa valintaikkuna ja määritä ehdot, joiden mukaan valittu sijaintidirektiivi käsitellään. Voit esimerkiksi päättää käyttää sitä vain tietyssä varastossa.
+- **Hyväksyntätestit** – Avaa sivu, jossa voit määrittää automaattiset testit määrittääksesi, miten sijaintidirektiivit toimivat erilaisissa aloitusolosuhteissa. Näin voit tarkistaa nopeasti direktiivit niiden luomisen ja ylläpitämisen yhteydessä. Lisätietoja on kohdassa [Sijaintidirektiivien testaaminen hyväksyntätestien avulla](location-directive-acceptance-tests.md).
 
 ## <a name="location-directives-header"></a>Sijaintidirektiivien otsikko
 
@@ -126,7 +142,7 @@ Sijaintidirektiivin otsikko sisältää seuraavat järjestysnumeron kentät ja s
 - **Järjestysnumero** – Tämä kenttä ilmaisee järjestyksen, jossa järjestelmä yrittää käyttää kutakin valitun työtilaustyypin sijaintidirektiiviä. Pienet numerot käytetään ensin. Järjestystä voi muuttaa toimintoruudun **Siirrä ylös**- ja **Siirrä alas** -painikkeilla.
 - **Nimi** – Anna sijaintidirektiiville kuvaava nimi. Tämä nimi auttaa tunnistamaan direktiivin yleisen tarkoituksen. Anna nimeksi esimerkiksi *Myyntitilauksen keräily varastossa 24*.
 
-## <a name="location-directives-fasttab"></a>Sijaintidirektiivit-pikavälilehti
+## <a name="location-directives-fasttab"></a><a name="location-directives-tab"></a>Sijaintidirektiivit-pikavälilehti
 
 **Sijaintidirektiivit**-pikavälilehden kentät ovat työtilaustyyppikohtaisia, joka on valittu luetteloruudun **Työtilaustyyppi**-kentässä.
 
@@ -145,7 +161,29 @@ Sijaintidirektiivin otsikko sisältää seuraavat järjestysnumeron kentät ja s
     > [!TIP]
     > Jos direktiivikoodi on määritetty, järjestelmä ei etsi sijaintidirektiivejä järjestysnumeron perustella, kun työ on luotava. Sen sijaan haku tehdään direktiivikoodin perusteella. Tällä tavoin voit tarkentaa tietyssä työmallin vaiheessa käytettävää sijaintidirektiiviä. Kyse voi olla esimerkiksi materiaalien valmisteluvaihe.
 
-- **Useita varastointiyksiköitä** – Valitse tässä asetukseksi *Kyllä*, jos haluat, että sijainnissa voi käyttää useita varastointiyksiköitä. Useita varastointiyksiköitä voidaan ottaa käyttöön esimerkiksi lastausovisijainnissa. Jos otat useat varastointiyksiköt käyttöön, hyllytyssijainti määritetään odotetusti työssä. Hyllytyssijainti voi kuitenkin käsitellä vain moninimikkeisen hyllytyksen (jos työ sisältää useita varastointiyksiköitä, joita on kerättävä ja hyllytettävä). Se ei voi käsitellä yhden varastointiyksikön hyllytystä. Jos asetuksena on *Ei*, hyllytyssijainti määritetään vain, jos hyllytyksessä on vain yhdenlaista varastointiyksikköä.
+- **Vaikutusalue** – Tämän vaihtoehdon avulla voit määrittää skenaariot, joissa sijaintidirektiivejä käytetään. Tämä vaihtoehto korvaa **Useita varastointiyksiköitä** -vaihtoehdon. Se on käytettävissä vain, jos *Sijaintidirektiivin vaikutusalueet* -ominaisuus on otettu käyttöön järjestelmässä. (Lisätietoja on kohdassa [Sijaintidirektiivin vaikutusalueiden toiminnon käyttöönotto tai käytöstäpoisto](#scopes-feature).)
+
+    | Vaikutusalueasetus | Yksi tilaus ja yksi nimike | Useita tilauksia ja sama nimike | Yksi tilaus ja useita nimikkeitä | Useita tilauksia ja useita nimikkeitä |
+    |---|---|---|---|---|
+    | Yksittäinen nimike | Kyllä | Kyllä | En | En |
+    | Useita nimikkeitä | En | En | Kyllä | Kyllä |
+    | Yksittäinen nimike tai tilaus | Kyllä | Kyllä | Kyllä | En |
+    | Kaikki | Kyllä | Kyllä | Kyllä | Kyllä |
+
+    Seuraavassa taulukossa kuvataan, milloin vaikutusalue on käytettävissä ja onko **Muokkaa kyselyä** -toiminto käytettävissä.
+
+    | Vaikutusalue | Tuettu työtyyppi | Tuetut työtilausten tyypit | Muokkauskyselyn salliminen |
+    |---|---|---|---|
+    | Yksittäinen nimike | Kaikki | Kaikki | Kyllä |
+    | Useita nimikkeitä | Kaikki | Kaikki | En |
+    | Yksittäinen nimike tai tilaus | Hyllytykset | Rinnakkaistuotteen ja sivutuotteen hyllytys, valmiiden tavaroiden hyllytys, kanban-hyllytys, ostotilaukset, laatutilaukset, täydennys, palautustilaukset, myyntitilaukset, siirto-otto ja siirron vastaanotto | Kyllä |
+    | Kaikki | Hyllytykset | Kaikki | En |
+
+    > [!NOTE]
+    > - Jos tehdään useiden nimikkeiden ja yhden nimikkeen hyllytyksiä, varmista, että olemassa on molemmat skenaariot kattavat sijaintidirektiivit. Saatat esimerkiksi haluta määrittää vähintään yhden *Yksittäinen nimike tai tilaus* -sijaintidirektiivin kattamaan skenaariot, joissa vaaditaan hienosäätöä (kuten kyselyn muokkauksia) ja tämän jälkeen vähintään yhden *Kaikki*-sijaintidirektiivit kattamaan jäljellä olevat skenaariot.
+    > - Vaikka *Yksi nimike*- ja *Useita nimikkeitä* -vaikutusalueita voi käyttää hyllytyksissä, tämä lähestymistapa yleensä johtaa tarpeettomiin määrityksiin. Harkitse *Yksi nimike tai tilaus*- ja *Kaikki*-vaikutusalueiden käyttämistä sen sijaan, koska tämä lähestymistapa tuottaa siistin asetuksen.
+
+- **Useita varastointiyksiköitä** – Tämän vaihtoehdon avulla voit määrittää skenaarion, jossa sijaintidirektiivejä käytetään. Tämä asetus korvataan **vaikutusalueella**, jos *Sijaintidirektiivien vaikutusalueet* -ominaisuus on otettu käyttöön järjestelmässä. (Lisätietoja on kohdassa [Sijaintidirektiivin vaikutusalueiden toiminnon käyttöönotto tai käytöstäpoisto](#scopes-feature).) Määritä tämän vaihtoehdon arvoksi *Kyllä*, jos haluat ottaa käyttöön useat varastointiyksiköt tässä sijainnissa. Useita varastointiyksiköitä voidaan ottaa käyttöön esimerkiksi lastausovisijainnissa. Jos otat useat varastointiyksiköt käyttöön, hyllytyssijainti määritetään odotetusti työssä. Hyllytyssijainti voi kuitenkin käsitellä vain moninimikkeisen hyllytyksen (jos työ sisältää useita varastointiyksiköitä, joita on kerättävä ja hyllytettävä). Se ei voi käsitellä yhden varastointiyksikön hyllytystä. Jos asetuksena on *Ei*, hyllytyssijainti määritetään vain, jos hyllytyksessä on vain yhdenlaista varastointiyksikköä.
 
     > [!IMPORTANT]
     > Sekä moninimikkeisen hyllytyksen että yhden varastointiyksikön hyllytyksen käyttöönottaminen edellyttää kahden sellaisen rivin määrittämistä, jolla on sama rakenne ja samat määritykset. Toisen rivin **Useita varastointiyksiköitä** -asetukseksi on valittava *Kyllä* ja toisen *Ei*. Tämän vuoksi hyllytystoimintoja on oltava kaksi samanlaista sijaintidirektiiviä, vaikka työn tunnuksessa ei tehdä erottaa yhtä varastointiyksikköä ja useita varastointiyksiköitä. Jos molempia sijaintidirektiivejä ei määritetä, käytetystä sijaintidirektiivistä tulee usein esille odottamattomia liiketoimintaprosessisijainteja. Sijaintidirektiiveillä, joiden **työtyyppi** on *keräily*, on oltava samanlaisen määritys, jos käsiteltävissä tilauksissa on useita varastointiyksiköitä.
@@ -255,6 +293,5 @@ Kun olet luonut sijaintidirektiivit, voit liittää kunkin direktiivikoodin työ
 
 - Video: [Perusteellinen varastonhallinnan määrityksen tarkastelu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Ohjeartikkeli: [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

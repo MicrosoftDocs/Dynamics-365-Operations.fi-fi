@@ -2,7 +2,7 @@
 title: Verolaskelmien tuominen ja vieminen
 description: Tässä artikkelissa on tietoja veron laskentapalvelun tuonti- ja vientitoiminnosta.
 author: Kai-Cloud
-ms.date: 11/22/2021
+ms.date: 10/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 9daee683763d7cb0eb9573497eb4e20cba9b1863
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8666d4971e36279ebd2b1396de7cab37680980e6
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855170"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690230"
 ---
 # <a name="import-and-export-tax-calculations"></a>Verolaskelmien tuominen ja vieminen
 
@@ -98,3 +98,21 @@ Lataamasi Excel-laskentataulukon rakenne sisältää **Määritä veroryhmän k�
 2. Valitse RCS:n **Veron laskenta** -ominaisuussivun **Veroryhmän soveltuvuus** -välilehdeltä **Lisää**, jos haluat lisätä tyhjän tietueen **Määritä veroryhmän soveltuvuus** -ruudukon alaosaan.
 3. Liitä kopioidut rivit ruudukkoon painamalla näppäinyhdistelmää **CTRL+V**.
 4. Valitse **Tallenna**.
+
+## <a name="import-feature-demo-data"></a>Ominaisuuden esittelytietojen tuominen
+
+Tuo ominaisuuden esittelytiedot alla olevien ohjeiden avulla.
+
+1. Kirjaudu sisään [RCS:ään](https://marketing.configure.global.dynamics.com/).
+2. Valitse **Globalisaatio-ominaisuudet** -työtilaan, valitse **Ominaisuudet** ja sitten **Verolaskenta**-ruutu.
+3. Valitse **Tuo** ja valitse sitten **Ominaisuuden tuonti yleisestä tietovarastosta** -sivulla **Synkronoi**. 
+4. Valitse taulukossa **veronlaskentaominaisuuden esittelytietojen** ominaisuus ja valitse sitten **Tuo**.
+5. Valitse **Näytä**, jos haluat tarkistaa tuodussa ominaisuudessa määritetyt verokoodit, -ryhmät ja veron käytettävyyssäännöt.
+6. Vaihda Financessa **DEMF**-yritykseen ja siirry kohtaan **Vero** \> **Asetus** \> **Verokonfiguraatio** \> **Verolaskennan parametrit**.
+7. Valitse **Ota käyttöön veron laskentapalvelu** -vaihtoehto **Yleiset**-välilehdessä.
+8. Valitse **Ominaisuuden asetusten nimi** -kentässä **veronlaskentaominaisuuden esittelytietojen** ominaisuus.
+9. Valitse uusille esittelyverokoodeille **Tilityskausi** ja **Kirjanpidon kirjausryhmä** ja valitse sitten **Vahvista**.
+10. Valitse **Tallenna**.
+
+> [!NOTE]
+> **Veronlaskentaominaisuuden esittelytietojen** esittelyominaisuus perustuu ominaisuuden versioon **40.54.234**. Se on suunniteltu **DEMF**-esittely-yritystä varten. Varmista, että Finance ja RCS päivitetään versioon 10.0.26 tai sitä uudempaan versioon.

@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 2d103406118be4385177b678de424df12af69c2e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9644054"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689397"
 ---
 # <a name="the-asset-maintenance-scenario"></a>Resurssien ylläpitoskenaario
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 *Resurssien ylläpitoskenaarion* avulla voit käyttää tunnistimen tietoja laskuritietueiden luomisessa. Laskuritietueet seuraavat koneen resurssin käyttöä. Niitä käytetään tulosteina luotaessa koneen resurssien ylläpitoaikataulua.
 
@@ -115,6 +116,9 @@ Kun tiedot on valmisteltu ja *resurssien ylläpitoskenaario* on määritetty ja 
 1. Valitse **Resurssien hallinta \> Resurssit \> Kaikki resurssit**.
 1. Etsi ja valitse tarkastettava resurssi. (Jos käytät aiemmin tässä artikkelissa luotuja esittelytietoja, valitse *AK-101*.)
 1. Valitse toimintoruudun **Resurssi**-välilehden **Ennaltaehkäisevä**-ryhmässä **Laskurit**, jos haluat avata resurssin *AK-101* laskuritietueiden sivun.
+
+> [!NOTE]
+> Laskuritietueet on määritetty oletusarvon mukaan lisättäväksi kolmen tunnin välein. Tämä tarkoittaa sitä, että anturin tiedot kootaan kolmen tunnin välein. Voit muuttaa aikaväliä muokkaamalla kyselyä Azure Stream Analytics -komponentissa.
 
 ### <a name="generate-maintenance-work-orders"></a>Ylläpitotyötilausten luominen
 

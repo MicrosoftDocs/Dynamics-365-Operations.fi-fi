@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334862"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682503"
 ---
 # <a name="engineering-change-management-overview"></a>Suunnittelun muutostenhallinnan yleiskuvaus
 
@@ -73,6 +73,9 @@ Ota seuraavaksi määritysavaimet käyttöön seuraavia vaiheita noudattamalla. 
 1. Tietokanta tulee synkronoida, että voidaan varmistaa, että määritysavaimet on päivitetty muutostesi mukaisesti. Tee jokin seuraavista toimista käytettävän ympäristötyypin mukaan:
     - **Tier 1 (development) -ympäristöissä**: Avaa projekti Microsoft Visual Studiossa ja valitse sitten **Dynamics 365 \> Synchronize database \> Synchronize**.
     - **Tier 2 (ja sitä suuremmat) ympäristöt**: Tietokanta synkronoi automaattisesti sen jälkeen, kun ympäristö on laitettu ylläpitotilaan ja siitä pois, joten voit ohittaa tämän vaiheen.
+
+> [!NOTE]
+> Jos haluat käyttää suunnittelun muutosten hallintaa, tuotantorakenteen ja kaavan numerosarja (jos kaava on käytössä) on määritettävä *automaattiseksi* **Numerosarjat**-sivulla.
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Suunnittelun muutostenhallinnan lisäominaisuuksien ottaminen käyttöön
 

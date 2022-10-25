@@ -12,12 +12,12 @@ ms.search.region: Finland
 ms.author: atrukawk
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6ea171f21531d42f9ad22872e9304cfd84042069
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 139ab9653141fd40c9b91accb381a2a7b8d9ebec
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269353"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689231"
 ---
 # <a name="vat-declaration-finland"></a>ALV-ilmoitus (Suomi)
 
@@ -115,6 +115,8 @@ Seuraavia ohjeita noudattamalla voit määrittää, mitkä Financen liikevaihtov
 5. Valitse **Arvonlisävero**-välilehden **Veroasetukset**-pikavälilehden **ALV-ilmoituksen muodon määritys** -kentästä **ALV-ilmoitus-Excel (FI)** ER-muoto.
 
     Tämä muoto tulostetaan, kun suoritat **Ilmoita arvonlisävero tilityskaudelle** -raportin. Se tulostetaan myös, kun valitset **Arvonlisäveromaksut**-sivulla **Tulosta**.
+
+6. Jos korjaukset on raportoitava, määritä **Erityisraportti**-osan **Sisällytä korjaukset** -kohdan arvoksi **Kyllä**.
 
 Jos konfiguroit ALV-ilmoituksen Suomessa yrityksessä, jossa on [useita ALV-rekisteröintejä](emea-reporting-for-multiple-vat-registrations.md), toimi seuraavasti.
 

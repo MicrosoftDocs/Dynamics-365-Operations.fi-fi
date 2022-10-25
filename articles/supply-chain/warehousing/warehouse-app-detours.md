@@ -4,23 +4,25 @@ description: Tässä artikkelissa kuvataan, miten voidaan määrittää kiertote
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 2e387dd4e6499912f2d53dddc17ccc053f1ca699
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428060"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689307"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > Tässä artikkelissa käsitellyt toiminnot koskevat vain uutta Warehouse Management -mobiilisovellusta. Niillä ei ole vaikutusta vanhaan varastosovellukseen, joka on nyt vanhentunut.
@@ -38,6 +40,7 @@ Ennen kuin voit määrittää mobiililaitteiden valikkokohteiden vaiheiden kiert
 1. Ota käyttöön seuraavat toiminnot, jotka sisältävät tässä artikkelissa kuvattuja toimintoja:
     - *Warehouse Management -sovelluksen kiertotie*<br>(Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
     - *Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa*
+    - *Lähetä Warehouse Management ‑mobiilisovelluksen kiertotievaiheet automaattisesti*
 1. Jos *Warehouse Management -sovelluksen kiertotiet*- ja/tai *Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa* -ominaisuus ei ole vielä käytössä, päivitä kenttien nimet Warehouse Management -mobiilisovelluksessa valitsemalla **Varastonhallinta \> Asetukset \> Mobiililaite \> Varastosovelluksen kenttien nimet** ja valitsemalla **Luo oletusasetus**. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
 1. Toista edellinen vaihe kullekin yritykselle, jossa käytät Warehouse Management -mobiilisovellusta.
 
@@ -49,7 +52,7 @@ Seuraavalla menettelyllä voit määrittää valikkokohtaisen ohituksen kertotie
 1. Etsi muokattavat **Vaiheen tunnus**- ja **Valikkovaihtoehdon nimi** -arvot ja valitse sitten arvo **Vaiheen tunnus** -sarakkeessa.
 1. Valitse näkyviin tulevan sivun **Käytettävissä olevat kiertotiet (valikkokohteet)** -pikavälilehdellä voit määrittää valikkokohteen, joka toimii kiertotienä. Voit valita myös, mitkä päätehtävän kenttäarvot kopioidaan automaattisesti kiertotiehen ja kiertotieltä. Esimerkkejä näiden asetusten käytöstä on skenaarioissa myöhemmin tässä artikkelissa.
 
-## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Esimerkkiskenaario 1: Myynnin keräily, jossa sijaintikysely toimii kiertotienä
+## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a><a name="scenario-1"></a>Esimerkkiskenaario 1: Myynnin keräily, jossa sijaintikysely toimii kiertotienä
 
 Tässä skenaariossa esitetään, miten sijaintikysely määritetään kiertotieksi työntekijän ohjaamassa myynnin keräilyn tehtävänkulussa. Tämän kiertotien avulla työntekijät voivat etsiä kaikki rekisterikilvet sijainnista, jossa he suorittavat keräilyä, ja valita rekisterikilven, jota he haluavat käyttää keräilyn loppuun suorittamisessa. Tällainen kiertotie voi olla hyödyllinen, jos viivakoodi on vahingoittunut ja skanneri ei voi lukea sitä. Vaihtoehtoisesti se voi olla hyödyllinen silloin, kun työntekijän on saatava tietää, mitä järjestelmässä todella on käytettävissä. Huomaa, että tämä skenaario toimii vain, jos keräily suoritetaan rekisterikilpiin perustuvissa sijainnissa.
 
@@ -74,11 +77,13 @@ Tässä menettelyssä määrität kiertotien **Myynnin keräily** -valikkokohtee
 
     - **Kopioi myynnin keräilystä:** *Sijainti*
     - **Liitä sijaintikyselyyn:** *Sijainti*
+    - **Automaattinen lähetys:** *Valittu* (sivu päivitetään liitetyllä *sijainnin* arvolla)
 
 1. Koska tämän skenaarion kiertotie määritetään rekisterikilpivaiheessa, olisi hyödyllistä, että työntekijät voisivat tuoda rekisterikilven kyselystä takaisin päätyönkulkuun. Valitse siksi **Tuo takaisin sijaintikyselystä** -osan työkalupalkista **Lisää** lisätäksesi rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat arvot:
 
     - **Kopioi sijaintikyselystä:** *Rekisterikilpi*
     - **Liitä myynnin keräilyyn:** *Rekisterikilpi*
+    - **Automaattinen lähetys:** *Tyhjennetty* (automaattista päivitystä ei tehdä, kun kiertotieltä palataan *rekisterikilven* arvon kanssa)
 
 1. Valitse **OK**.
 
@@ -131,6 +136,7 @@ Tässä menettelyssä määrität kiertotien **Myynnin keräily** -valikkokohtee
 
     - **Kopioi sijaintikyselystä:** *Sijainti*
     - **Liitä siirtoon:** *Loc / LP*
+    - **Automaattinen lähetys:** *Tyhjennetty* (automaattista päivitystä ei tehdä)
 
     Tässä kiertotiessä ei oleteta, että tietoja kopioidaan takaisin, koska päätyönkulku oli kysely, jossa ei tarvita lisävaiheita.
 
@@ -153,3 +159,5 @@ Tässä menettelyssä suoritetaan sijaintikysely Warehouse Management -mobiiliso
 
 > [!NOTE]
 > *Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa* -ominaisuuden avulla voit määrittää monitasoisia kiertoteitä (kiertoteitä kiertoteiden sisällä), joiden avulla työntekijät voivat siirtyä olemassa olevalta kiertotieltä hetkessä toiselle ja taas takaisin. Ominaisuus tukee valmiiden kiertoteiden kahta tasoa. Tarvittaessa voit mukauttaa järjestelmää niin, että se tukee kolmea tai useampaa kiertoteiden tasoa luomalla koodilaajennukset tauluun `WHSWorkUserSessionState`.
+>
+> *Lähetä Warehouse Management ‑mobiilisovelluksen kiertotievaiheet automaattisesti* -ominaisuuden avulla työntekijät voivat tehdä kiertotietyönkulkuja aiempaa nopeammin ja helpommin Warehouse Management -mobiilisovelluksessa. Näin joitakin työnkulun vaiheita voidaan ohittaa, kun sovellus täyttää kiertotietiedot taustalla ja siirtyy sitten automaattisesti seuraavaan vaiheeseen lähettämällä sivun automaattisesti [*Esimerkkiskenaario 1: Myynnin keräily, jossa sijaintikysely toimii kiertotienä*](#scenario-1) -kohdassa näytetyllä tavalla.

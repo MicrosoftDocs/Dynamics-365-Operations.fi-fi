@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
-ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
+ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9671422"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689221"
 ---
 # <a name="proactive-quality-updates"></a>Ennakoivat laatupäivitykset
 
@@ -56,7 +56,9 @@ Prosessimuutosten joukko otetaan käyttöön ennen ennakoivan laatupäivityksen 
 
 - **Rakenne** – Työkalut varmistavat, että laatupäivitysten koontiversiot sisältävät vain rakennemuutoksia, jotka voidaan ottaa käyttöön palvelun ollessa online-tilassa. Tämä menetelmä auttaa säilyttämään päivitysmahdollisuuden niin, että käyttämättömyysaika on lähes nolla.
 - **Lisääntynyt muutosten tarkastelu** – Tällä hetkellä käytössä on jo uusi prosessivaihe laatupäivityksen muutosten sisällytyksen hyväksyntää varten. Lisävaiheessa tapahtuvaa sisällytystä lisätään, jotta mahdollisten regressioiden mahdollisuutta voidaan vähentää. Laatupäivitykset eivät sisällä tärkeimpiä muutoksia. Muutosten sisällytysten lisääminen varmistaa, että tämä tavoite saavutetaan.
-- **Näkyvyys** – Lähetämme ilmoitukset tulevista ennakoivista laatupäivityksistä sähköpostitse ja Lifecycle Services -palvelun kautta. Lisäksi tukiryhmät ja tapahtumaliidit näkevät, missä laatupäivitykset on otettu käyttöön ennakoivasti.
+- **Näkyvyys** – Ilmoitukset lähetetään hallintakeskuksen, Lifecycle Servicesin (LCS) ja muiden käytettävissä olevien kanavien kautta saapuvia ennakoivia laatupäivityksiä varten. Lisäksi tukiryhmät ja tapahtumaliidit näkevät, missä laatupäivitykset on otettu käyttöön ennakoivasti.
+ > [!NOTE]
+ > Microsoft Communications -tiimi tutkii meneillään olevaa sähköpostityökalun heikentymistä. Se estää sähköposti-ilmoitusten toimittamisen. Jatka Microsoft 365:n viestikeskuksen seurantaa perehdyttämistä ja ilmoituksia koskevia viestejä varten.
 - **Fail Safe -väliversiotestauksen avulla** – Väliversiotestausta käytetään koodimuutosten tallentamiseen laatupäivityksen ohjelmistovirheen ja korjaukseen liittyvän olemassa olevan toiminnon väliversiotestauksen aikana. Jos varmistuksen tai muutoksen poistaminen käytöstä on pakollista ennakoivan käyttöönoton jälkeen, se voidaan tehdä väliversiotestausjärjestelmän avulla muiden virheiden välttämiseksi.
 - **Eristysympäristön synkronoinnin määritys** – Alle 20 prosentilla asiakkaista on nykyään useita eristysympäristöjä. Asiakkailla on käytössä yksi eristysympäristö, jossa versio vastaa tuotantoa. Tämä helpottaa vianmääritystä. Jos asiakas käyttää eristysympäristöä tuotantoympäristön versiota uudemman version testaamisessa, eristysympäristö vastaanottaa uuden version laatupäivityksiä.
 
@@ -80,10 +82,10 @@ Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut yllä
 
 | Asema | Alueet | Valmis aikataulu| Tuleva eristysympäristön aikataulu
 |---|---|---|---|
-| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 15.–18. syyskuuta 2022 ja 19.–22. syyskuuta 2022 | 7.–10. lokakuuta 2022 |
-| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 25.–28. syyskuuta 2022 | 7.–10. lokakuuta 2022 |
-| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 26.–29. syyskuuta 2022 | 7.–10. lokakuuta 2022 |
-| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 28. syyskuuta – 1.lokakuuta 2022 | 7.–10. lokakuuta 2022 |
+| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 15.-18. syyskuuta 2022, 19.-22. syyskuuta 2022 ja 7.-10. lokakuuta 2022 | 25.–28. lokakuuta 2022 |
+| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 25.–28. syyskuuta 2022 ja 7.–10. lokakuuta 2022 | 25.–28. lokakuuta 2022 |
+| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 26.–29. syyskuuta 2022 ja 7.–10. lokakuuta 2022 | 25.–28. lokakuuta 2022 |
+| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 28. syyskuuta - 1. lokakuuta 2022 ja 7.–10. lokakuuta 2022 | 25.–28. lokakuuta 2022 |
 | Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu | Ei suunniteltu |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.29

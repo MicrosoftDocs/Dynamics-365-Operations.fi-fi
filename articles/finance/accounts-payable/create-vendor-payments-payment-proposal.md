@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b868db915385a8433845e810cf169f1bf1686e3d
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845371"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682869"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Toimittajamaksujen luominen maksuehdotuksen avulla
 
@@ -111,7 +111,7 @@ Dimension ohjauksen avulla voit hallita maksuehdotuksen luotujen rivien ryhmitte
 -   **Dimension ohjaus** -kenttä on aktivoitu määrittämättä dimensioita. Maksuehdotus luodaan ottamatta huomioon dimensioita. Luotu tapahtuma ei peri dimensioita käytetystä tietueesta.
 -   **Dimension ohjaus** -kenttä on aktivoitu ja lisädimensioita on aktivoitu. Määritä nyt, miten dimensiot kopioidaan kirjauskansioon. Esimerkiksi: • Valitse **Liiketoimintayksikkö** -valintaruutu luodaksesi maksutavalle maksuehdotuksen per liiketoimintayksikkö • Valitse valintaruutu **Kustannuspaikka** -valintaruutu luodaksesi kustannuspaikkakohtaisen maksuehdotuksen maksutavalle
 
-> [[!NOTE]
+>[!NOTE]
 > Jos valitset kolmannessa vaihtoehdossa useita dimensioita, maksuehdotus luodaan dimensioiden yhdistelmälle.
 
 #### <a name="bank-account-selection"></a>Pankkitilin valitseminen

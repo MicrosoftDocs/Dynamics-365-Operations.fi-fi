@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: d894b83afe822e013c0c4375e5cfe5e7e8ac8d1d
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186689"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689485"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Kysyntäperustainen materiaalitarvesuunnittelu (DDMRP)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Yritykset ovat käyttäneet vuosien ajan tarvelaskentaa (MRP:tä) tuotteen valmistamiseen tarvittavien materiaalien ja komponenttien laskentajärjestelmänä. Toimitusketjut ovat kuitenkin nykyisin erilaisia. Osien läpimenoajat ovat pidentyneet, sillä niiden alkuperä on enenevässä määrin ulkomailla. Monet yritykset ovatkin ilmoittaneet varaston loppumisesta tai liian suurista varastoista, sillä varaston kokoa ei osata arvioida oikein. Myös markkinoilla on vaihtelua (jota ennakoidaan joskus virheellisesti), minkä lisäksi asiakkaat edellyttävät, että tuotteiden läpimenoaika on lyhyt. Tämän vuoksi toimitusketjuissa esiintyy puutteita kaikkialla maailmassa. Tämän lisäksi MRP-työkalut antavat usein suunnittelijoille valtavasti tehtäviä toimintoja. Se taas hankaloittaa keskittymistä oleelliseen. Usein monet näistä ongelmista voidaan ratkaista siirtymällä kysyntäperustainen materiaalitarvesuunnitteluun (DDMRP:hen).
 

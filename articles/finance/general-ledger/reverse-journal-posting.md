@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
-ms.openlocfilehash: 7e3a22f43bcc312fe60b77db2fc3bc94d15950c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8912409ec0d2016ea4af12843319febda98663c5
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284848"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680381"
 ---
 # <a name="reverse-journal-posting"></a>Käänteinen kirjauskansion kirjaus
 
@@ -37,7 +37,7 @@ Ennen jonkin tässä artikkelissa käsitellyn toiminnon käyttöä se on otettav
 Voit muuttaa kirjauskansion rivejä käänteisiksi yksittäin. Käänteisen kirjauskansion kirjauksen avulla voit myös muuttaa koko talouskirjauskansion käänteiseksi. Kirjauskansion muuttaminen käänteiseksi: 
 
 - Suodata kirjattuja kirjauskansioita ja avaa kirjauskansion **Rivit**-näkymä.
-- Valitse **Käänteinen**-valikko sivun ylälaidasta.
+- Valitse **Peruuta koko kirjauskansio** -valikko sivun ylälaidasta.
 - Näet tositteiden ja tositerivien kokonaismäärän sekä käänteiseksi muunnettavien rivien kokonaissumman.
 - Valitse **Kyllä** käyttääksesi olemassa olevia tapahtumapäiviä tai **Ei** luodaksesi uuden. Joissakin tapauksissa alkuperäisen tapahtuman ajanjakso voi olla suljettu, ja sinun on syötettävä uusi tapahtumapäivä käänteiseksi muuttamista varten.
 - Jos valitsit **Ei**, syötä tapahtumapäivä käänteiseksi muutamista varten. 

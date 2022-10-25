@@ -2,19 +2,19 @@
 title: Commerce-keskustelu ja Customer Servicen monikanava -moduuli
 description: Tässä artikkelissa kerrotaan Commerce-keskustelu ja Customer Servicen monikanava -moduulista Microsoft Dynamics 365 Commercessa.
 author: gvrmohanreddy
-ms.date: 08/23/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-07-20
-ms.openlocfilehash: b8eaed3eb015e96b1db6fa2297c341ea9d3ff8ad
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 99e8b9d66a04390ab70fd1deff9f95fe28bdfae3
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473806"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690313"
 ---
 # <a name="commerce-chat-with-omnichannel-for-customer-service-module"></a>Commerce-keskustelu ja Customer Servicen monikanava -moduuli
 
@@ -82,6 +82,9 @@ Voit lisätä keskustelumoduulin sivuston ylätunnistekatkelmaan Commercen sivus
 1. Valitse **Valitse moduulit** -valintaikkunassa keskustelukatkelma, jonka loit aiemmin, ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 
+> [!NOTE]
+> Määritysparametrien täydellinen luettelo on kohdassa [Commerce-keskustelun moduulin ennakoivat keskustelun parametrit](chat-proactive-chat-parameters.md).
+
 ## <a name="add-commerce-headquarters-as-an-application-tab-for-omnichannel-for-customer-service"></a>Commerce headquartersin lisääminen sovellusvälilehtenä Customer Servicen monikanavaan
 
 Voit lisätä sovellusvälilehden Commerce headquartersille Customer Servicen monikanavassa. Live-asiakaspalvelijat voivat tämän jälkeen käyttää Customer Servicen monikanavan asiakaspalvelijakokemuksen käyttöliittymää ja käyttää helposti Dynamics 365 Commerce Customer Service -moduulia. Se sisältää kontekstuaalista tietoa asiakkaista ja näiden myyntitilauksista. Lisäksi asiakaspalvelun asiakaspalvelijat voivat tehdä uusia tilauksia, käynnistää palautuksia ja vahvistaa tilaustietoja.
@@ -115,6 +118,9 @@ Jos haluat ottaa käyttöön uuden sovellusvälilehden asiakaspalvelijoille Dyna
 1. Avaa asiakaspalvelijoille luotu työnkulku ja valitse **Lisäasetukset**-kohdassa **Istunnon oletusarvot**.
 1. Valitse **Sovellusvälilehdet**-kohdassa **Lisää olemassa oleva sovellusvälilehti** ja lisää aiemmin luomasi sovellusvälilehti. Tämä vaihe varmistaa, että Commerce headquartersin iFrame-moduulissa lataava sovellusvälilehti näkyy asiakaspalvelijan vastaanottaessa saapuvan keskustelun sähköisen kaupankäynnin sivustossa.
 
+> [!NOTE]
+> Et voi muokata keskusteluistunnon oletusmallia työnkulussa. Tämän vuoksi haluat ehkä luoda uuden mallin tai kopioida olemassa olevan mallin ja päivittää sen. Lisätietoja on kohdassa [Mallien liittäminen työnkulkuihin](/dynamics365/app-profile-manager/associate-templates).
+
 ## <a name="add-context-variables-in-dynamics-365-omnichannel-for-customer-service"></a>Kontekstimuuttujien lisääminen Dynamics 365 Omnichannel for Customer Servicessa
 
 Alla olevien ohjeiden avulla voit lisätä kontekstimuuttujia Dynamics 365 Omnichannel for Customer Servicessa.
@@ -128,3 +134,11 @@ Alla olevien ohjeiden avulla voit lisätä kontekstimuuttujia Dynamics 365 Omnic
 
 > [!NOTE]
 > Jos haluat lukea sähköisen kaupankäynnin kanavaan kirjautuneiden käyttäjien sähköpostiosoitteet ja nimet, voit lisätä **AccountNumber**-kontekstimuuttujan lisäksi **Sähköposti**- ja **Nimi**-kohdat kontekstimuuttujina, jonka tyyppi on **Teksti**.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Commerce-keskusteluominaisuuksien yleiskatsaus](commerce-chat-overview.md)
+
+[Commerce-keskustelu ja Power Virtual Agents -moduuli](chat-module-pva.md)
+
+[Commerce-keskustelumoduulin ennakoivan keskustelun parametrit](chat-proactive-chat-parameters.md)

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: a23256f3e092b32e1f1d09b708a8d0ca5f403785
+ms.sourcegitcommit: 5d33a3398e7e1d3494bfc3cad342fffa7cfa5b76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520834"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680005"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
 
@@ -34,11 +34,12 @@ Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuun
 | Palautustilaukset | Palautustilauksia ei ole oteta huomioon. |
 | Liittyvien ominaisuuksien aikatauluttaminen | Lisätietoja on kohdassa [Ajoittaminen rajattoman kapasiteetin avulla](infinite-capacity-planning.md#limitations). |
 | Varmuusvaraston täyttäminen | Suunnittelun optimointi käyttää aina *Tämän päivän päivämäärä + hankinta-aika* -vaihtoehtoa **Täytä vähimmäisarvo** -kentälle **Nimikkeen kattavuus** -sivulla. Tämä helpottaa tahattoman suunnitellun tilauksen ja muiden ongelmien estämistä, sillä jos toimitusaika ei sisälly varmuusvarastoon, nykyiselle alhaiselle käytettävissä olevalle varastolle luodut suunnitellut tilaukset viivästyvät aina läpimenoajan vuoksi. |
-| Varmuusvaraston tarvekohdistus ja nettotarpeet | *Varmuusvarasto*-vaatimustyyppi ei kuulu **Nettotarpeet**-sivuun eikä se näy kyseisellä sivulla. Varmuusvarasto ei edusta kysyntää eikä siihen liity tarvepäivämäärää. Sen sijaan se asettaa rajoituksen sille, kuinka paljon varastoa on oltava aina käytettävissä. **Pienin arvo**-kenttä otetaan silti huomioon, kun suunniteltuja tilauksia lasketaan pääsuunnittelun aikana. On suositeltavaa tarkistaa **Kertynyt määrä** -sarake **Nettotarpeet**-sivulla, jotta nähdään, että tämä arvo otettiin huomioon. |
+| Varmuusvaraston tarvekohdistus ja nettotarpeet | *Varmuusvarasto*-vaatimustyyppi ei kuulu **Nettotarpeet**-sivuun eikä se näy kyseisellä sivulla. Varmuusvarasto ei edusta kysyntää eikä siihen liity tarvepäivämäärää. Sen sijaan se asettaa rajoituksen sille, kuinka paljon varastoa on oltava aina käytettävissä. **Pienin arvo**-kenttä otetaan silti huomioon, kun suunniteltuja tilauksia lasketaan pääsuunnittelun aikana. On suositeltavaa tarkistaa **Kertynyt määrä** -sarake **Nettotarpeet**-sivulla, jotta nähdään, että tämä arvo otettiin huomioon. Koska tarvekohdistus on erilaista, saatetaan ehdottaa erilaisia toimintoja. |
 | Kuljetuskalenteri | **Toimitustavat**-sivun **Kuljetuskalenteri**-sarakkeen arvo ohitetaan. |
 | Kattavuuden vähimmäis-/enimmäiskoodi ilman arvoja| Kun käytössä on sisäinen suunnittelumoduuli, jossa käytetään vähimmäis-/enimmäiskattavuuskoodia, jossa ei ole määritetty vähimmäis- tai enimmäisarvoja, suunnittelumoduuli käsittelee kattavuuskoodia vaatimuksena ja luo yhden tilauksen kutakin tarvetta varten. Suunnittelun optimointia käytetään, kun järjestelmä luo yhden tilauksen päivää kohden, jotta se kattaa päivän koko summan.  |
 | Nettotarpeet ja manuaalisesti luodut suunnitellut tilaukset | Sisäänrakennetun suunnittelumoduulin avulla nimikkeelle luodut manuaalisesti luodut toimitustilaukset näkyvät automaattisesti nimikkeen nettovaatimusten joukossa. Kun esimerkiksi luot ostotilauksen myyntitilauksesta, ostotilaus näkyy **Nettotarpeet**-sivulla ilman, että aiempia toimenpiteitä tarvitaan. Tämä johtuu siitä, että sisäänrakennettu suunnittelumoduuli kirjaa varastotapahtumat `inventLogTTS`-tauluun ja näyttää muutokset dynaamisten suunnitelmien **Nettotarpeet**-sivulla. Suunnittelun optimointia käytettäessä manuaalisesti luodut tilaukset eivät kuitenkaan näy nimikkeen nettotarpeissa, ennen kuin suunnittelun optimointi suoritetaan (käyttäen suunnitelmaa, joka sisältää nimikkeen) tai ennen kuin valitset **Nettotarpeet**-sivun toimintoruudussa **Päivitä \> Pääsuunnittelu**, mikä suorittaa nimikkeen pääsuunnittelun. Lisätietoja **Nettotarpeet**-sivun käytöstä on kohdassa [Nettotarpeet ja tarvekohdistaminen suunnittelun optimointia käyttämällä](net-requirements.md). |
 | Resurssimääritys | Kun käytössä ovat rajattomat kapasiteetit, sisäinen pääsuunnittelumoduuli määrittää kaikki suunnitellut tilaukset tietyn resurssiryhmän samalle resurssille. Suunnittelun optimointi parantaa tätä valitsemalla resurssit satunnaisessa järjestyksessä, jotta eri tuotantotilaukset voivat käyttää eri resursseja. Jos haluat käyttää samaa resurssia kaikissa suunnitelluissa tilauksissa, sinun on määritettävä tämä resurssi reitille. |
+| Laajennetut tietotyypit (EDT:t) | Suunnittelun optimointi ei tue EDT:n tarkkuuden muutoksia. Jos esimerkiksi laajennat tuotemäärän tarkkuuden kahdesta desimaalista (oletusarvo) neljään, suunnittelun optimointi käyttää edelleen vain kahta desimaalia. |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

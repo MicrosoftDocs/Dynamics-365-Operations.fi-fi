@@ -2,19 +2,19 @@
 title: Asynkroninen asiakkaan luontitila
 description: Tässä artikkelissa kuvataan asynkronista asiakkaan luontitilaa Microsoft Dynamics 365 Commercessa.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 95102936871e15f8e525abca736fa75927569b34
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: b2926339021991f87dd3eadef94da3b500c954cf
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473703"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690286"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Asynkroninen asiakkaan luontitila
 
@@ -46,6 +46,7 @@ Kun haluat auttaa organisaatioita käyttämään asynkronista asiakkaan luontiti
 | Ota käyttöön pariteetti synkronisen ja asynkronisen asiakkaan luonnin välillä. | 10.0.24 ja sitä uudempi | <p>Ominaisuusvalitsin: **Ota käyttöön laajennettu asynkronisen asiakkaan luonti**</p><p>Ominaisuuksien tiedot: Mahdollisuus siepata lisätietoja, kuten otsikko, liitokset oletusasiakkaalta sekä toissijaiset yhteystiedot (puhelinnumero ja sähköpostiosoite), kun asiakkaita luodaan asynkronisesti</p> |
 | Käyttäjäystävälliset virhesanomat | 10.0.28 ja sitä uudempi | Nämä parannukset auttavat parantamaan käyttäjäystävällisiä virhesanomia, jos käyttäjä ei voi muokata tietoja heti synkronoinnin aikana. Voit ottaa nämä parannukset käyttöön käyttämällä **Salli se, että asynkroninen asiakas ei voi muokata tiettyjä käyttöliittymäelementtejä** -asetusta kohdassa **Sivuston asetukset \> Laajennukset** Commercen sivustonmuodostimessa. |
 | Mahdollisuus muokata asiakastietoja asynkronisesti | 10.0.29 ja sitä uudempi | <p>Ominaisuusvalitsin: **Ota käyttöön asiakkaiden muokkaaminen asynkronisessa tilassa**</p><p>Ominaisuuksien tiedot: Mahdollisuus muokata asiakastietoja asynkronisesti</p><p>Vastauksia yleisiin kysymyksiin, jotka liittyvät asiakastietojen asynkroniseen muokkaamiseen, on kohdassa [Asynkroninen asiakkaan luontitila – Usein kysytyt kysymykset](async-customer-mode-faq.md).</p> |
+| Asiakkaiden hallintatoimintojen synkronisoinnin tarkistusmahdollisuus | 10.0.31 ja sitä uudempi | Tämän parannuksen avulla käyttäjät voivat tarkistaa asiakkaiden hallintatoimintojen synkronoinnin Commerce headquartersissa. Lisäksi käyttäjät voivat tarvittaessa tehdä muutoksia ja synkronoida tiedot. |
 
 ### <a name="feature-switch-hierarchy"></a>Ominaisuusvalitsimen hierarkia
 

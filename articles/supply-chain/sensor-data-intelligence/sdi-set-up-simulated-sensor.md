@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc8bd020a53214abab28ec51ffc6d6be74979932
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: f12d6e1d417a260477b1eb4e027b850d1862f51f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643973"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689801"
 ---
 # <a name="set-up-a-simulated-sensor-for-testing"></a>Simuloidun tunnistiminen määrittäminen testaamista varten
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Jos haluat testata Sensor Data Intelligencen ilman fyysisten tunnistimien asentamista, voit käyttää *Raspberry PI Azure IoT -verkkosimulaattori* -palvelua tunnistimien signaalien emuloimiseksi ja lähettämiseksi Microsoft Azuren esineiden internet (IoT) -ratkaisulle. Lisätietoja simulaattorista on kohdassa [Raspberry Pi -verkkosimulaattorin yhdistäminen Azure IoT -keskittimeen (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started).
 

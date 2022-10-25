@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 477b27bf77d2a3ef91a5c2d39f2dfb06d8ad4e59
-ms.sourcegitcommit: 562ea02e1f7409f18ee1cc4750a838bff4381e91
+ms.openlocfilehash: 18fec49f2388159cae0809c63685102a04e90c57
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9429120"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689183"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10030-november-2022"></a>Dynamics 365 Supply Chain Managementin esiversio 10.0.30 (Marraskuu 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.30 (marraskuu 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esikatseluversion 10.0.30 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1362. Se on käytettävissä seuraavan aikataulun mukaisesti:
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.30 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1362. Se on käytettävissä seuraavan aikataulun mukaisesti:
 
 - **Julkaisun esiversio:** Syyskuu 2022
 - **Version yleinen saatavuus (oma päivitys):** lokakuu 2022
@@ -35,7 +34,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän art
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---|---|---|---|
 | Valmistus | [Laitteiston valvominen Sensor Data Intelligencen avulla](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligencen aloitussivu](../sensor-data-intelligence/sdi-home-page.md) | Toimintojen hallinta:<br>*(Esiversio) Anturitietojen analyysi* |
-| Varastonhallinta   | Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa <!-- KFM: Add link when RP updates --> | [Mobiililaitteen valikkokohteiden vaiheiden kiertämisen määrittäminen](../warehousing/warehouse-app-detours.md) | Toimintojen hallinta:<br>*Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa* |
+| Varastonhallinta   | [Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Mobiililaitteen valikkokohteiden vaiheiden kiertämisen määrittäminen](../warehousing/warehouse-app-detours.md) | Toimintojen hallinta:<br>*Monitasoiset kiertotiet Warehouse Management ‑mobiilisovelluksessa* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnon parannukset
 
@@ -52,7 +51,7 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.30 sisältää Platform updateja. Lisätietoja on kohdassa [rahoitus- ja toiminta -sovellusten (marraskuu 2022) käyttöympäristön päivitysversio 10.0.30.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.30 sisältää Platform updateja. Lisätietoja on kohdassa [rahoitus- ja toiminta -sovellusten (marraskuu 2022) käyttöympäristön päivitysversio 10.0.30.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

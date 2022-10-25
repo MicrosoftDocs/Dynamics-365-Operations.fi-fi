@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 2e4cd8d4d4ffcd10d02fbf26615f12cdd6ccca9e
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: ba030364056db8b0524de22aacbc6528ef77813b
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428367"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689854"
 ---
 # <a name="sensor-data-intelligence-home-page"></a>Sensor Data Intelligencen aloitussivu
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Microsoft Dynamics 365 Supply Chain Managementin Sensor Data Intelligence ottaa käyttöön organisaatiot, jotka tehostavat Supply Chain Managementin liiketoimintaprosesseja esineiden internetin (IoT) signaalien ja tuotannon laitteiston perusteella. Tämä on päivitetty, uudelleennimetty versio *IoT-analyysi*-ominaisuudesta, joka oli aiemmin käytettävissä Supply Chain Managementissa.
 

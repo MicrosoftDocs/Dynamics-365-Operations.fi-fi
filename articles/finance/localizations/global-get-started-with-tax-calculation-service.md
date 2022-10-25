@@ -2,7 +2,7 @@
 title: Verolaskennan aloittaminen
 description: Tässä artikkelissa kuvataan, kuinka voit määrittää verolaskennan.
 author: EricWangChen
-ms.date: 03/25/2022
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 42898823ffc366351c6f58f1fe9b924678ab4b49
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573302"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690380"
 ---
 # <a name="get-started-with-tax-calculation"></a>Verolaskennan aloittaminen
 
@@ -124,6 +124,10 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 7. Siirry kohtaan **Verotietomalli**, laajenna tiedostopuu ja valitse sitten **Veromääritys**.
 8. Valitse oikea [veromääritysversio](global-tax-calcuation-service-overview.md#versions) Finance-version perusteella ja valitse sitten **Tuo**.
 9. Valitse **Globalisaatio-ominaisuudet** -työtilaan, valitse **Ominaisuudet**, valitse **Verolaskenta**-ruutu ja valitse sitten **Lisää**.
+
+    > [!NOTE]
+    > Versiossa 10.0.26 ja tätä uudemmissa versioissa on mahdollista tuoda esittelyominaisuus **DEMF**-esittely-yritykseen. Lisätietoja on kohdassa [Ominaisuuden esittelytietojen tuominen](tax-calculation-import-export-feature.md).
+
 10. Valitse jokin seuraavista ominaisuustyypeistä:
 
     - **Uusi ominaisuus** – Luo ominaisuusasetus, jonka sisältö on tyhjä.
@@ -154,8 +158,8 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     - **Toimittajan verorekisteröintinumeron käytettävyys** – Jos yhdellä toimittajalla on useita verorekisteröintinumeroita, verolaskenta voi määrittää automaattisesti oikean verorekisteröintinumeron. Tämän välilehden matriisissa määritetään säännöt, joita on käytettävä määrityksessä. Muutoin Finance ja Supply Chain Management jatkavat veron oletusrekisteröintinumeron käyttöä ostotapahtumien verotettavissa asiakirjoissa.
     - **Luettelokoodin käytettävyys** – Määrittää automaattisesti **Luettelokoodi**-kentän arvon entistä joustavampien ja määrittävämpien sääntöjen avulla. Tämän välilehden matriisissa määritetään säännöt, joita on käytettävä määrityksessä. Muutoin Finance ja Supply Chain Management jatkavat oletuskoodin käyttöä verotettavissa asiakirjoissa.
 
-14. Valitse **Verokoodit**-välilehdessä **Lisää** ja kirjoita verokoodi sekä kuvaus.
-15. Valitse **Verokomponentti**. Verokomponentti on ryhmä tapoja, jotka on määritetty valitun verokonfiguraation aiemmassa versiossa. Seuraavat verkokomponentit ovat käytettävissä:
+15. Valitse **Verokoodit**-välilehdessä **Lisää** ja kirjoita verokoodi sekä kuvaus.
+16. Valitse **Verokomponentti**. Verokomponentti on ryhmä tapoja, jotka on määritetty valitun verokonfiguraation aiemmassa versiossa. Seuraavat verkokomponentit ovat käytettävissä:
 
     - Nettosumman mukaan
     - Bruttosumman mukaan
@@ -163,8 +167,8 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     - Katteen mukaan
     - Veron vero
 
-16. Valitse **Tallenna**. Käytettävissä on lisää kenttiä valitsemasi verokomponentin perusteella.
-17. Määritä verokoodin luonne seuraavien vaihtoehtojen avulla:
+17. Valitse **Tallenna**. Käytettävissä on lisää kenttiä valitsemasi verokomponentin perusteella.
+18. Määritä verokoodin luonne seuraavien vaihtoehtojen avulla:
 
     - On veroton
     - On käyttövero
@@ -179,8 +183,8 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 
     Ylläpidä tämän verokoodin veroprosentteja ja verosumman rajoja.
 
-18. Toista vaiheet 14-17 lisätäksesi kaikki muut pakolliset verokoodit.
-19. Valitse **Veroryhmä**-välilehdessä **Veroryhmä**-sarake, lisää se matriisiin syöttöehdon ja lisää sitten rivit ylläpitämään veroryhmän päätietoja.
+19. Toista vaiheet 15-18 lisätäksesi kaikki muut pakolliset verokoodit.
+20. Valitse **Veroryhmä**-välilehdessä **Veroryhmä**-sarake, lisää se matriisiin syöttöehdon ja lisää sitten rivit ylläpitämään veroryhmän päätietoja.
 
     Esimerkki:
 
@@ -191,7 +195,7 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-20. Valitse **Nimikkeen veroryhmä**-välilehdessä **Nimikkeen veroryhmä**-sarake, lisää se matriisiin syöttöehdon ja lisää sitten rivit ylläpitämään nimikkeen veroryhmän päätietoja.
+21. Valitse **Nimikkeen veroryhmä**-välilehdessä **Nimikkeen veroryhmä**-sarake, lisää se matriisiin syöttöehdon ja lisää sitten rivit ylläpitämään nimikkeen veroryhmän päätietoja.
 
     Esimerkki:
 
@@ -200,7 +204,7 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     | Täysi           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
     | Vähennetty        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-21. Valitse **Veroryhmän käytettävyys** -välilehdessä sarakkeet, joita tarvitaan oikean veroryhmän määrittämiseen, ja valitse sitten **Lisää**. Määritä tai valitse arvot kullekin sarakkeelle. **Veroryhmä**-kenttä on tämän matriisin tuotos. Jos tätä välilehteä ei määritetä, tapahtumarivin arvonlisäveroryhmää käytetään.
+22. Valitse **Veroryhmän käytettävyys** -välilehdessä sarakkeet, joita tarvitaan oikean veroryhmän määrittämiseen, ja valitse sitten **Lisää**. Määritä tai valitse arvot kullekin sarakkeelle. **Veroryhmä**-kenttä on tämän matriisin tuotos. Jos tätä välilehteä ei määritetä, tapahtumarivin arvonlisäveroryhmää käytetään.
 
     Esimerkki:
 
@@ -214,7 +218,7 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     > [!NOTE]
     > Jos verotettavan asiakirjan rivien oletusarvoinen arvonlisäveroryhmä on oikein, jätä tämä matriisi tyhjäksi. Lisätietoja on myöhemmin tämän artikkelin [Suorituksenaikainen rakenne](#runtime) -osassa.
 
-22. Valitse **Nimikkeen veroryhmän käytettävyys** -välilehdessä sarakkeet, joita tarvitaan oikean verokoodin määrittämiseen, ja valitse sitten **Lisää**. Määritä tai valitse arvot kullekin sarakkeelle. **Nimikkeen veroryhmä** -kenttä on tämän matriisin tuotos. Jos tätä välilehteä ei määritetä, tapahtumarivin nimikkeen arvonlisäveroryhmää käytetään.
+23. Valitse **Nimikkeen veroryhmän käytettävyys** -välilehdessä sarakkeet, joita tarvitaan oikean verokoodin määrittämiseen, ja valitse sitten **Lisää**. Määritä tai valitse arvot kullekin sarakkeelle. **Nimikkeen veroryhmä** -kenttä on tämän matriisin tuotos. Jos tätä välilehteä ei määritetä, tapahtumarivin nimikkeen arvonlisäveroryhmää käytetään.
 
     Esimerkki:
 
@@ -228,10 +232,10 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 
     Lisätietoja verokoodien määrittämisestä verolaskennassa on kohdassa [Arvolisäveroryhmän ja nimikkeen arvonlisäveroryhmän määrityslogiikka](global-sales-tax-group-determination.md).
 
-23. Määritä asiakkaan verorekisteröintinumeroiden, toimittajien verorekisteröintinumeroiden ja luettelokoodien käytettävyydet liiketoimintatarpeiden perusteella.
-24. Valitse **Tallenna** ja sulje sitten sivu.
-25. Valitse **Muutoksen tila** \> **Viimeistele**. Kun tilaksi muutetaan **Valmis**, versiota ei voi enää muokata.
-26. Valitse **Muuta tilaa** \> **Julkaise**. Tämä verotoiminnon asetusten versio työnnetään yleiseen tietovarastoon ja se näkyy kullekin Financen yritykselle.
+24. Määritä asiakkaan verorekisteröintinumeroiden, toimittajien verorekisteröintinumeroiden ja luettelokoodien käytettävyydet liiketoimintatarpeiden perusteella.
+25. Valitse **Tallenna** ja sulje sitten sivu.
+26. Valitse **Muutoksen tila** \> **Viimeistele**. Kun tilaksi muutetaan **Valmis**, versiota ei voi enää muokata.
+27. Valitse **Muuta tilaa** \> **Julkaise**. Tämä verotoiminnon asetusten versio työnnetään yleiseen tietovarastoon ja se näkyy kullekin Financen yritykselle.
 
 ## <a name="set-up-tax-calculation-in-dynamics-365"></a>Verolaskennan määrittäminen Dynamics 365:ssä
 
