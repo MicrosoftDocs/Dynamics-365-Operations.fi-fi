@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14d6ba013a93756f86e959756dd3073851881095
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864336"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713886"
 ---
 # <a name="configure-ledgers"></a>Kirjanpitojen määrittäminen
 
@@ -42,7 +42,7 @@ Kaikki Dynamics 365 Financen yritykset voidaan määrittää niin, että ne käy
 
 Ota huomioon, että jos tilirakenteita on useita, voit valita vain tilirakenteen, joka ei ole päällekkäinen päätilien ja taloushallinnon dimensioiden yhdistelmien kanssa. Yksi tilirakenne voi olla määritetty esimerkiksi lisäämään päätilien liiketoimintayksikkö välille 1 000 ja 1 999. Toisessa tilirakenteessa olet lisännyt osaston taloushallinnon dimension päätileille, jotka alkavat luvulla 1. Tässä tapauksessa vain yksi tilirakenne voidaan lisätä samaan yritykseen.
 
-Voit määrittää kirjanpidon tilirakenteet **Kirjanpito**-sivulla **Tilirakenteet**-pikavälilehdessä valitsemalla **Lisää** ja valitsemalla sitten tilirakenteen luettelosta. Valitse lopuksi **Valitse**. Tilirakenteiden lisääminen ja tallentaminen voi kestää joitakin minuutteja. Huomaa, että valitsemiesi tilirakenteiden on oltava aktiivisia. Muussa tapauksessa tilirakenteiden tiedot eivät ole käytössä yrityksissä, joihin ne on linkitetty.
+Voit määrittää kirjanpidon tilirakenteet **Kirjanpito**-sivulla **Tilirakenteet**-pikavälilehdessä valitsemalla **Lisää** ja valitsemalla sitten tilirakenteen luettelosta. Valitse lopuksi **Valitse**. Tilirakenteiden lisääminen ja tallentaminen voi kestää joitakin minuutteja. Kun muutettu tilirakenne tallennetaan kirjanpitoon, kaikkien kirjaamattomien tapahtumien synkronointiprosessi alkaa. Odota, kunnes nykyisen kirjanpidon muutos on tehty yrityksessä, jossa muutos tehdään, ennen kuin muutat kirjanpidon tilirakennetta toisessa yrityksessä. Huomaa, että valitsemiesi tilirakenteiden on oltava aktiivisia. Muussa tapauksessa tilirakenteiden tiedot eivät ole käytössä yrityksissä, joihin ne on linkitetty.
 
 Voit poistaa tilirakenteen **Kirjanpito**-sivun **Tilirakenteet**-pikavälilehdessä **Poista**. Huomaa, että jos poistat tilirakenteen kirjanpidosta, et poista tapahtumia, jotka on kirjattu käyttämällä kyseisen tilirakenteen määritystä.
 

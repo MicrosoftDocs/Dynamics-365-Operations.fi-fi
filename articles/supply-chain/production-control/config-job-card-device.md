@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c3024ca2e3b7eb24ac9a171def4a72cde7493a7a
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860722"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708614"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfiguroi työkortti laitteita varten
 
@@ -73,7 +73,7 @@ Seuraavissa osissa on lisätietoja kustakin työkorttilaitteiden konfigurointias
 - **Resurssiryhmä** - Valitse resurssiryhmä, jota käytetään kullekin työntekijälle näytettävän luettelon oletussuodatusehtona. Laite näyttää aluksi vain valittuun resurssiryhmään ryhmitetyillä resursseilla ajoitetut työt. Jos **Salli työntekijöiden määrittää henkilökohtaiset suodattimet** on käytössä, työntekijät voivat muokata tätä arvoa. Muuten tätä suodatinta käytetään aina, kun tämä laitekonfiguraatio on aktiivinen.
 - **Resurssi** - Valitse resurssi, jota käytetään kullekin työntekijälle näytettävän luettelon oletussuodatusehtona. Laite näyttää aluksi vain valittuun resurssiin ajoitetut työt. Jos **Salli työntekijöiden määrittää henkilökohtaiset suodattimet** on käytössä, työntekijät voivat muokata tätä arvoa. Muuten tätä suodatinta käytetään aina, kun tämä laitekonfiguraatio on aktiivinen.
 - **Luo rekisterikilpi** – Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat luoda uuden rekisterikilven aina, kun työntekijä käyttää työkorttilaitetta ilmoittaakseen olevansa valmis. Rekisterikilpinumero muodostetaan **Varastonhallinnan parametrit** -sivulla määritetystä numerosarjasta. Kun asetus on **Ei**, työntekijöiden on määritettävä aiemmin määritetty rekisterikilpi, kun ilmoittavat työn valmistumisesta.
-- **Tulosta etiketti** - Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat tulostaa käyttöoikeuskilven otsikon, kun työntekijä käyttää työkorttilaitetta valmiiksi raportoidessaan. Etiketin konfiguraatio määritetään tiedoston reitityksessä, kuten on kuvattu kohteessa [Rekisterimerkintöjen asiakirjan reititysasettelu](../warehousing/document-routing-layout-for-license-plates.md).
+- **Tulosta etiketti** - Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat tulostaa käyttöoikeuskilven otsikon, kun työntekijä käyttää työkorttilaitetta valmiiksi raportoidessaan. Etiketin konfiguraatio määritetään tiedoston reitityksessä, kuten on kuvattu kohdassa [Asiakirjan reitityksen etikettien asettelut](../warehousing/document-routing-layout-for-license-plates.md).
 
 <a name="assigned-users"></a>
 

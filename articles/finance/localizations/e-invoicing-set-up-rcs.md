@@ -2,7 +2,7 @@
 title: Määritä Regulatory Configuration Service (RCS)
 description: Tässä artikkelissa kuvataan, miten Regulatory Configuration Service (RCS) määritetään.
 author: gionoder
-ms.date: 02/09/2022
+ms.date: 10/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 63a4f77d6e80133947dff678cef3885167ec55be
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 32ced98925ee66e02f0b073b4acbd586666ac20c
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9285784"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710778"
 ---
 # <a name="set-up-regulatory-configuration-service-rcs"></a>Määritä Regulatory Configuration Service (RCS)
 
@@ -39,7 +39,16 @@ Tässä artikkelissa kuvataan, miten Regulatory Configuration Service (RCS) mä�
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Määritä RCS-integroinnin parametrit sähköisen laskutuksen avulla
 
 1. Valitse **Globalisaatiotoiminnot**-työtilan **Liittyvät asetukset** -osassa **Sähköisen raportoinnin parametrit**.
-2. Kirjoita **Sähköinen laskutus** -välilehdessä **Palvelun päätepisteen URI** -kenttään asianmukainen Microsoft Azure -alueen palvelun päätepiste, joka näkyy seuraavassa taulukossa.
+2. Kun määrität parametreja ensimmäisen kerran, sinua pyydetään muodostamaan yhteys Life Cycle Services (LCS) -ratkaisuun. Valitse **Muodosta yhteys Lifecycle Servicesiin napsauttamalla tästä** ja valitse yhteyden muodostamisen jälkeen **OK**.
+
+    > [!IMPORTANT]
+    > Jos tietojen sijaintia käytetään jossakin maassa tai jollakin alueella ja jos RCS:n valmistelualue on eri kuin LCS:n valmistelualue, saatat saada seuraavan yhteysvirhesanoman RCS:ssä: Pyynnön URI-tunnusta vastaavaa HTTP-resurssia ei löytynyt. Valitse **OK**. Saatat saada toisen virhesanoman RCS:ssä: Dynamics Lifecycle Services -palvelujen käyttäjätunnuksen luominen käyttäjän () puolesta epäonnistui. Ota yhteys järjestelmänvalvojaan.
+    >  
+    > Näin tapahtuu, koska LCS on yleinen palvelu ja se valmistellaan Yhdysvalloissa. Tietojen sijaintikäytännön vuoksi nykyisen alueen RCS ei voi muodostaa yhteyttä LCS:ään. Tähän on seuraavat 2 mahdollista ratkaisua:
+    > - Poista RCS nykyiseltä alueelta ja luo se Yhdysvaltojen alueelle.
+    > - Ohita virheet ja jatka sähköisen laskutuksen asetusten määrittämistä. Nämä virheet eivät vaikuta sähköiseen laskutuksen toimintoon.
+
+3. Kirjoita **Sähköinen laskutus** -välilehdessä **Palvelun päätepisteen URI** -kenttään asianmukainen Microsoft Azure -alueen palvelun päätepiste, joka näkyy seuraavassa taulukossa.
 
     | Konesalin Azure-alue | Palvelun päätepisteen URI-osoite |
     |----------------------------|----------------------|
@@ -55,8 +64,10 @@ Tässä artikkelissa kuvataan, miten Regulatory Configuration Service (RCS) mä�
     | Kanada                     | <p>`https://gw.ca-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.ca-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Ranska                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Intia                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Norja                     | <p>`https://gw.no-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Etelä-Afrikka               | <p>`https://gw.za-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-3. Varmista, että **Sovellustunnus**-kentän arvo on **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Tämä arvo on kiinteä arvo. Varmista, että kenttään syötetään vain yleinen yksilöivä tunnus (GUID) eikä arvo sisällä muita symboleja, kuten välilyöntejä, pilkkuja, pisteitä tai lainausmerkkejä.
+3. Tarkista **Sovelluksen tunnus** -kenttä ja syötä siihen kiinteä arvo **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Varmista, että kenttään syötetään vain yleinen yksilöivä tunnus (GUID) eikä arvo sisällä muita symboleja, kuten välilyöntejä, pilkkuja, pisteitä tai lainausmerkkejä.
 4. Syötä **LCS-ympäristötunnus**-kenttään Microsoft Dynamics Lifecycle Services (LCS) -ympäristösi tunnus. Tätä arvoa käytetään viittauksena Finance- tai Supply Chain Management -ympäristöön, jota käytät sähköisen laskutuksen palvelun kanssa. Voit saada tunnuksesi kirjautumalla sisään [LCS:ään](https://lcs.dynamics.com/), avaamalla projektin ja katsomalla sitten **Ympäristön hallinta** -välilehden **Ympäristön tiedot** -osassa **Ympäristön tunnus** -kentän.
 
     > [!IMPORTANT]

@@ -6,18 +6,19 @@ ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c67fd12c31b475b323bc4c7feee4cc5267da7793
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336542"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714696"
 ---
 # <a name="usmca-certification-of-origin"></a>USMCA-alkuperätodistus
 
@@ -57,7 +58,7 @@ Lisätietoja kustakin elementistä ja niiden arvoista on tämän artikkelin jäl
 Lähetyksen USMCA-alkuperätodistusasiakirja tulostetaan seuraavasti:
 
 1. Tee jompikumpi seuraavista toimista:
-    - Valitse ensin **Kuljetustenhallinta > Lähetykset > Kaikki lähetykset** ja valitse sitten lähetys, jolle haluat tulostaa asiakirjan.
+    - Siirry kohtaan **Kuljetustenhallinta \> Suunnittelu \> Lähetykset \> Kaikki lähetykset** ja valitse sitten lähetys, jolle haluat tulostaa asiakirjan.
     - Avaa sen lähetyksen **Lähetyksen tiedot** -sivu, jolle haluat tulostaa asiakirjan. (Sen voi tehdä monella eri tavalla esimerkiksi **Kaikki lähetykset** -sivulta.)
 1. Avaa toimintoruudussa **Lähetykset**-välilehti ja valitse **Tulosta**-ryhmässä **USMCA-alkuperätodistus**.
 1. **Alkuperätodistus**-valintaikkuna avautuu. Määritä seuraavissa aliosissa kuvatut asetukset ja luo asiakirja sitten valitsemalla **OK**.

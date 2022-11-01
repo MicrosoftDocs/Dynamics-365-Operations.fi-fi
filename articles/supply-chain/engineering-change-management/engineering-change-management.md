@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c578609a64c21a33f10b64a1d77f006b45bac41
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849587"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714733"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Suunnittelutuotteiden muutostenhallinta
 
@@ -141,6 +141,8 @@ Kun tarkastelet tuotantotilauksen ilmoituksia **Suunnitteluilmoitukset**-sivulla
 ### <a name="create-a-change-order-from-a-change-request"></a>Muutostilauksen luominen muutospyynnöstä
 
 Suunnittelun muutospyyntöä tarkistava suunnittelija voi luoda suunnittelun muutostilauksen suoraan **Suunnittelun muutospyynnöt** -sivulta. Valitse toimintoruudun **Muutospyyntö**-välilehden **Suunnittelun muutostilaus** -ryhmässä **Kopioi linkki ja tuotteet**.
+
+Varmista, että valitset oikean yrityksen uutta suunnittelun muutostilausta varten. Jos muutostilauksentuloksena suunnittelutuote itsessään muuttuu (uusi versio, uusi tuote tai uusi variantti), muutostilaus on liitettävä suunnitteluyritykseen. Jos tarvitaan vain paikallinen muutos (**Vaikutus**-kohdan arvoksi on määritetty *Ei mitään*), muutostilaus voidaan liittää paikalliseen yritykseen ja muutokset otetaan käyttöön nykyisessä tuotteessa.
 
 ## <a name="engineering-change-orders"></a>Tekniset muutostilaukset
 

@@ -2,7 +2,7 @@
 title: Hakijatoimintojen integraation tulos
 description: Tässä artikkelissa kuvataan Hakemuksen yhdistämisen tulos -asetusjoukkoa Dynamics 365 Human Resourcesissa.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 09/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 84f0ba9b197866935535a68006cfdb8c18fa3ad1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 86f3f75e538268644cea4f927f04c07aae115f00
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902311"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702225"
 ---
 # <a name="applicant-integration-result"></a>Hakijatoimintojen integraation tulos
 

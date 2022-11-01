@@ -1,5 +1,5 @@
 ---
-title: Rekisterikilven otsikoiden asiakirjareitityksen asettelu
+title: Asiakirjan reitityksen etikettien asettelut
 description: Tässä artikkelissa kuvataan, miten tarrojen arvot tulostetaan muotoilumenetelmien avulla.
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847872"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708641"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>Rekisterikilven otsikoiden asiakirjareitityksen asettelu
+# <a name="document-routing-label-layout"></a>Asiakirjan reitityksen etiketin asettelu
 
 [!include [banner](../includes/banner.md)]
 
+Tässä artikkelissa kerrotaan, miten rekisterikilven ja kontin etikettien sekä aaltoetikettien asettelut luodaan. Artikkelissa kerrotaan myös, miten asettelut luodaan ZPL:n (Zebra Programming Language) avulla.
 
-Tiedoston reititysasettelu määrittää rekisterikilpietikettien asettelun ja niihin tulostettavat tiedot. Voit määrittää tulostuksen käynnistyspisteet, kun määrität matkaviestimen valikkokohteita ja työmalleja.
+Asiakirjan reitityksen etikettien asettelut määrittävät, miten etiketit asetellaan ja miten tiedot tulostetaan niihin. Voit määrittää tulostuksen käynnistyspisteet, kun määrität matkaviestimen valikkokohteita ja työmalleja.
 
-Tyypillisessä skenaariossa varaston vastaanottajat tulostavat rekisterikilpitarrat heti, kun ne tallentavat vastaanottoalueelle saapuvien kuormalavojen sisällön. Fyysisiä etikettejä käytetään kuormalavoihin. Tämän jälkeen niitä voidaan käyttää oikeellisuustarkistuksessa osana seuraavaa lähtevien nimikkeiden hyllytysprosessia ja tulevia lähtevien nimikkeiden poimintatoimintoja.
+Tämän artikkelin tiedot koskevat kaikkia asiakirjan reitityksen etikettien asetteluita, myös [rekisterikilpien etikettejä](tasks/license-plate-label-printing.md), [konttien etikettejä](print-container-labels.md) ja [aaltoetikettejä](configure-wave-label-printing.md).
 
-Voit tulostaa erittäin monimutkaisia etikettejä, jos tulostuslaite pystyy tulkitsemaan sille lähetettävän tekstin. Esimerkiksi viivakoodin sisältävä Zebra-ohjelmointikielen (ZPL) asettelu voi muistuttaa seuraavaa esimerkkiä.
+Voit tulostaa erittäin monimutkaisia etikettejä, jos tulostuslaite pystyy tulkitsemaan sille lähetettävän tekstin. Esimerkiksi viivakoodin sisältävä ZPL-asettelu voi muistuttaa alla olevaa esimerkkiä.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ Voit tulostaa erittäin monimutkaisia etikettejä, jos tulostuslaite pystyy tulk
 ^PQ1,,,Y^XZ
 ```
 
-Tämän esimerkin teksti `$LicensePlateId$` korvautuu data-arvolla osana etiketin tulostusprosessia.
+Tämän esimerkin teksti `$LicensePlateId$` korvautuu data-arvolla osana etiketin tulostusprosessia. Useiden laajalti käytettävissä olevien etikettityökalujen avulla voit muotoilla etiketin asettelun tekstin. Monet näistä työkaluista tukevat `$FieldName$`-muotoa. Lisäksi Microsoft Dynamics 365 Supply Chain Management käyttää erityismuotoilulogiikkaa osana tiedoston reitityksen asettelun kenttien yhdistämismääritystä.
 
 Jos haluat nähdä tulostettavat arvot, siirry kohtaan **Varaston hallinta \> Kyselyt ja raportit \> Rekisterikilven tarrat**.
-
-Useiden laajalti käytettävissä olevien etikettityökalujen avulla voit muotoilla etiketin asettelun tekstin. Monet näistä työkaluista tukevat `$FieldName$`-muotoa. Lisäksi Microsoft Dynamics 365 Supply Chain Management käyttää erityismuotoilulogiikkaa osana tiedoston reitityksen asettelun kenttien yhdistämismääritystä.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Tämän ominaisuuden ottaminen käyttöön järjestelmällesi
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>Lisätietoja tarrojen tulostamisesta
 
-Lisätietoja etikettien määrittämisestä ja tulostamisesta on kohdassa [Rekisterikilven tarratulostuksen ottaminen käyttöön](tasks/license-plate-label-printing.md).
+Lisätietoja etikettien määrittämisestä ja tulostamisesta on seuraavissa artikkeleissa:
 
+- [Rekisterikilven etiketin tulostus](tasks/license-plate-label-printing.md)
+- [Tulosta kontin etiketit](print-container-labels.md)
+- [Aallon etiketin tulostus](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

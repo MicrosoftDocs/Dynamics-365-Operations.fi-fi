@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 11378991a24e1a5f5e213d64f0f414db2e5c2573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9d4a408f2169b220fefd9ab7e9f3b37217fb3cfe
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279897"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710832"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Globalisaatio-ominaisuuden suorittaminen, julkaiseminen ja käyttöönottaminen
 
@@ -59,8 +59,8 @@ RCS:ssä käytetään **Ota käyttöön** -komentoa sähköisen laskutusominaisu
 2. Valitse sivun oikeanpuoleisesta **Versiot**-välilehdestä sähköinen laskutusominaisuusversio, jonka haluat ottaa käyttöön palveluympäristössä tai liitetyssä sovelluksessa. Valitun version tilan täytyy olla **Valmis** tai **Julkaistu**.
 3. Valitse **Ota käyttöön** ja määritä käyttöönoton kohde valitsemalla yksi tai molemmat seuraavista vaihtoehdoista:
 
-    - **Liitetty sovellus** – Sovelluksen asetusten konfiguraatio on kirjoitettu Microsoft Dynamics 365 Financeen tai Dynamics 365 Supply Chain Managementin esiintymään, joka oli aiemmin liitetty siihen.
-    - **Palveluympäristö** – Sähköisen laskutuksen ominaisuusversio otetaan käyttöön palveluympäristössä. Sähköinen laskutus on tämän jälkeen valmis vastaanottamaan ja käsittelemään sähköisiä asiakirjoja, jotka Finance tai Supply Chain Management lähettää.
+    - **Liitetty sovellus** – Tämä on valinnainen toiminto, mutta sitä on käytettävä, jos sovelluksen asetuksissa annettu määritys kirjoitetaan Microsoft Dynamics 365 Financen tai Dynamics 365 Supply Chain Managementin esiintymään, joka oli aiemmin liitetty siihen. Tämän käyttöönottotyypin ohittaminen vaatii Financen tai Supply Chain Managementin sovelluksen määrityksen parametrien manuaalisen määrityksen.
+    - **Palveluympäristö** – Tämä ottaa käyttöön sähköisen laskutuksen ominaisuusversion palveluympäristössä. Sähköinen laskutus on tämän jälkeen valmis vastaanottamaan ja käsittelemään sähköisiä asiakirjoja, jotka Finance tai Supply Chain Management lähettää.
 
 > [!NOTE]
 > Tavallisesti muutat sen sähköisen raportoinnin (ER) ominaisuuden parametreja, joka on otettava käyttöön palveluympäristössä. Liitetyn sovelluksen muutokset ovat harvinaisia. Ota uudet versiot käyttöön liitetyssä sovelluksessa vain, kun muutat sovelluksen vastaavia parametreja.

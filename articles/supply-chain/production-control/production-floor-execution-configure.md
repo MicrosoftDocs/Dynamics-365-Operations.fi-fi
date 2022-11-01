@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336182"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708722"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -164,7 +164,7 @@ Määritä seuraavaksi valitun konfiguraation eri asetukset seuraavissa aliosiss
 - **Salli kosketusnäytön lukitseminen** – Jos asetuksena on *Kyllä*, työntekijät voivat lukita työkorttilaitteen tuotannon käyttöliittymän, jotta he voivat puhdistaa sen. Jos asetuksena on *Kyllä*, kirjautumissivulla on **Lukitse näyttö puhdistusta varten** -painike. Kun työntekijä valitsee tämän painikkeen, kosketusnäyttö lukittuu tilapäisesti tahattoman syötön estämiseksi. Näkyvissä on myös ajastin. Työntekijä voi sitten puhdistaa laitteen ja näytön turvallisesti. Kun ajastimen aika päättyy, kosketusnäyttö avautuu automaattisesti.
 - **Näytön lukituksen kesto** – Jos **Salli kosketusnäytön lukitus** -asetuksena on *Kyllä*, tällä asetuksella voi määrittää, kuinka monta sekuntia kosketusnäyttö on lukittu puhdistusta varten. Keston on oltava 5 – 120 sekunnin välillä.
 - **Luo rekisterikilpi** – Jos asetuksena on *Kyllä*, voit luoda uuden rekisterikilven aina, kun työntekijä ilmoittaa tuotannon käyttöliittymässä olevansa valmis. Rekisterikilpinumero muodostetaan **Varastonhallinnan parametrit** -sivulla määritetystä numerosarjasta. Kun asetus on *Ei*, työntekijöiden on määritettävä aiemmin määritetty rekisterikilpi, kun he ilmoittavat työn valmistumisesta.
-- **Tulosta etiketti** – Jos asetuksena on *Kyllä*, voit haluat tulostaa rekisterikilven otsikon, kun työntekijä ilmoittaa valmistumisesta tuotannon käyttöliittymällä. Etiketin konfiguraatio määritetään tiedoston reitityksessä, kuten on kuvattu kohteessa [Rekisterimerkintöjen asiakirjan reititysasettelu](../warehousing/document-routing-layout-for-license-plates.md).
+- **Tulosta etiketti** – Jos asetuksena on *Kyllä*, voit haluat tulostaa rekisterikilven otsikon, kun työntekijä ilmoittaa valmistumisesta tuotannon käyttöliittymällä. Etiketin konfiguraatio määritetään tiedoston reitityksessä, kuten on kuvattu kohdassa [Asiakirjan reitityksen etikettien asettelut](../warehousing/document-routing-layout-for-license-plates.md).
 
 ### <a name="the-tab-selection-fasttab"></a>Välilehden valinta -pikavälilehti
 
