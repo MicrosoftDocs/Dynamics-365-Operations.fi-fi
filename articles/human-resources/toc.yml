@@ -10,18 +10,14 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
               items:
+                - name: Human Resources 10.0.31 (yhdistetty infrastruktuuri)
+                  href: ./get-started/whats-new-changed-10-0-31.md
                 - name: Human Resources 10.0.30 (yhdistetty infrastruktuuri)
                   href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (yhdistetty infrastruktuuri)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (yhdistetty infrastruktuuri)
                   href: ./get-started/whats-new-changed-10.0.28.md
-                - name: Human Resources 10.0.27 (yhdistetty infrastruktuuri)
-                  href: ./get-started/hr-whats-new-changed-10-0-27.md
-                - name: Human Resources 10.0.26 (yhdistetty infrastruktuuri)
-                  href: ./get-started/hr-whats-new-changed-10-0-26.md
-                - name: Human Resources 10.0.25 (yhdistetty infrastruktuuri)
-                  href: ./get-started/hr-whats-new-changed-10-0-25.md
                 - name: Dynamics 365 Human Resourcesin (erillisen version) uudet ominaisuudet
                   items:
                     - name: Dynamics 365 Human Resourcesin (erillisen version) vuoden 2021 arkistojen uudet ominaisuudet
@@ -718,6 +714,8 @@
               href: hr-develop-create-performance-review.md
         - name: Oppiminen
           items:
+            - name: Kurssin yleiskatsaus
+              href: hr-course-overview.md
             - name: Koulutuskurssien määrittäminen
               href: hr-learning-courses.md
             - name: Kyselylomakkeiden yleiskatsaus

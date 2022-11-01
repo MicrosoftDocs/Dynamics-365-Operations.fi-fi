@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.29 (lokakuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: Käyttöympäristöpäivitykset versioon 10.0.28 (elokuu 2022)
-                  href: get-started/whats-new-platform-updates-10-0-28.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
@@ -1605,12 +1603,16 @@
             - name: Käyttöoikeuskoodien ja määritysavainten raportti
               href: sysadmin/license-codes-configuration-keys-report.md
             - name: Yritystenvälinen tietojen jakaminen
-              href: sysadmin/cross-company-data-sharing.md
+              href: sysadmin/srs-overview.md
+            - name: Tietojen jakamisessa tuetut taulut
+              href: sysadmin/drs-srs-tables.md
+            - name: Kehittäjien tietojen jakaminen
+              href: sysadmin/drs-srs-dev.md
             - name: Ylläpitotila
               href: sysadmin/maintenance-mode.md
             - name: Esimääritetyt järjestelmätilit
               href: sysadmin/pre-configured-system-accounts.md
-            - name: 'Vie B2B-käyttäjät Azure AD:hen'
+            - name: 'Yritysten välisten käyttäjien vieminen Azure AD:hen'
               href: sysadmin/implement-b2b.md
             - name: Tietojen ylläpito
               href: sysadmin/DataMaintenancePortal.md

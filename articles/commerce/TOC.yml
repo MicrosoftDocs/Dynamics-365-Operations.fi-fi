@@ -12,6 +12,8 @@
               items:
                 - name: Commercen uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.31 (helmikuu 2023)
+                  href: get-started/whats-new-commerce-10-0-31.md
                 - name: Commerce 10.0.30 (marraskuu 2022)
                   href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (lokakuu 2022)
@@ -568,7 +570,9 @@
                       href: call-center-refund-payments.md
                     - name: 'Luottokorttien määrittäminen, varmennus ja tietojen tarkistus'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
-                    - name: Myyntipisteen käteisvarojen arvojen määritys
+                    - name: Maksutunnuksen käytön rajoittaminen
+                      href: dev-itpro/limit-token-usage.md
+                    - name: Myyntipisteen käteisvarojen arvojen määrittäminen
                       href: cash-denominations.md
                     - name: Luottokorttien käsittelyn määrittäminen
                       href: tasks/configure-credit-card-processing.md
@@ -1236,6 +1240,8 @@
                       href: cart-icon-module.md
                     - name: Kassamoduuli
                       href: add-checkout-module.md
+                    - name: Kassamoduulin virheviitekoodit
+                      href: checkout-module-error-codes.md
                     - name: Maksumoduuli
                       href: payment-module.md
                     - name: Toimitusosoitemoduuli

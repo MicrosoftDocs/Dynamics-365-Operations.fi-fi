@@ -12,7 +12,7 @@
               items:
                 - name: Supply Chain Managementin uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
-                - name: Supply Chain Management 10.0.31 (helmikuu 2022)
+                - name: Supply Chain Management 10.0.31 (helmikuu 2023)
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (marraskuu 2022)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -3243,6 +3243,8 @@
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
             - name: Alkuperäin USMCA-sertifiointi
               href: transportation/usmca-certification-of-origin.md
+            - name: Kauppalaskut
+              href: transportation/commercial-invoice.md
             - name: Rahtikirjan luominen
               href: transportation/create-bill-of-lading.md
             - name: Rahdin kuljetusreittien suunnittelu
@@ -3433,8 +3435,14 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Konttien pakkaaminen lähetystä varten
                       href: warehousing/packing-containers.md
+                    - name: Kontin etikettien tulostaminen
+                      href: warehousing/print-container-labels.md
                     - name: Lähtevien konttien pakkaaminen ja lähetysten käsittely
                       href: warehousing/packing-work.md
+                    - name: Konttien pakkaaminen Warehouse Management ‑mobiilisovelluksella
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: Esimerkkiskenaario – konttien pakkaaminen Warehouse Management ‑mobiilisovelluksella
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
                     - name: Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Järjestelmäohjattu työjärjestys
@@ -3691,7 +3699,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: Järjestelmän ryhmittely avoimessa työluettelossa
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: Rekisterikilven otsikoiden asiakirjareitityksen asettelu
+                    - name: Asiakirjan reititysetikettien asettelut
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: GS1-viivakoodit ja QR-koodit
                       href: warehousing/gs1-barcodes.md
@@ -3701,6 +3709,12 @@
                   items:
                     - name: 'Päivitä varastonhallinnan prosessit Microsoft Dynamics AX 2012:sta talous- ja toimintosovelluksiin'
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Varastoinnin telemetria
+              items:
+                - name: Varastoinnin telemetrian ottaminen käyttöön Application Insightsilla
+                  href: warehousing/application-insights-warehousing.md
+                - name: Mobiililaitteen käytön ja suorituskyvyn valvonta
+                  href: warehousing/application-insights-wma.md
         - name: Supply Chain Managementin kehittäminen
           items:
             - name: Gantt-ohjausobjektin kehitysopas

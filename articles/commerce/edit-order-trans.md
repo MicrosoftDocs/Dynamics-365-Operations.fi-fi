@@ -2,7 +2,7 @@
 title: Online-tilauksen ja asynkronisten asiakastilausten tapahtumien muokkaaminen ja tarkistaminen
 description: Tässä artikkelissa kerrotaan, miten online-tilauksen ja asynkronisen asiakastilauksen tapahtumia muokataan ja tarkistetaan Microsoft Dynamics 365 Commercessa.
 author: josaw1
-ms.date: 11/04/2020
+ms.date: 10/21/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.industry: Retail
-ms.openlocfilehash: dac7ffe6d62aaea11f2f5af0476db446b091938b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: dbeeff47446c1617da44f34ae56f333717f577a1
+ms.sourcegitcommit: 18b7a02c497709e8d9c7b943d82f1fcc3dafa4cd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287674"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9712105"
 ---
 # <a name="edit-and-audit-online-order-and-asynchronous-customer-order-transactions"></a>Online-tilauksen ja asynkronisten asiakastilausten tapahtumien muokkaaminen ja tarkistaminen
 
@@ -34,12 +34,13 @@ Commerce-sovelluksen versioiden 10.0.5 ja 10.0.6 välillä lisättiin itsepalvel
 
 ## <a name="edit-and-audit-order-transactions"></a>Tilaustapahtumien muokkaaminen ja tarkistaminen
 
-Voit muokata ja tarkistaa Commerce-pääkonttorisovelluksen tapahtumia seuraamalla alla olevia ohjeita.
+Voit muokata ja tarkistaa Commerce headquarters ‑sovelluksen tapahtumia seuraamalla alla olevia ohjeita.
 
 1. Asenna [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
-1. Määritä **Tilaus**-pikavälilehden **Asiakastilaukset**-välilehden **Vähittäismyynnin parametrit** -sivun **Tilauksen synkronointivirheiden estokoodi** -kohdassa estokoodi.
-1. Avaa **Myymälän myyntitiedot** -työtila. **Online-tilauksen synkronointivirheet**- ja **Asiakastilauksen synkronointivirheet** -ruuduissa on vähittäismyyntitapahtuman sivun esisuodatettu näkymä. Ne näyttävät tapahtumatietueet, joiden vastaavan tilaustyypin synkronointi epäonnistui.
-1. Avaa **Online-tilauksen synkronointivirheet**- tai **Asiakastilauksen synkronointivirheet** -sivu. Valitse tietue, jonka synkronointivirheen tietoja haluat tarkastella. **Synkronoinnin tila** -pikavälilehdessä ovat seuraavat virhetiedot:
+1. Määritä **Tilaus**-pikavälilehden **Asiakastilaukset**-välilehden **Commercen parametrit** -sivun **Tilauksen synkronointivirheiden estokoodi** -kohdassa estokoodi.
+2. Keskeytä muut tilausten synkronointityöt, jotka ovat ristiriidassa muokkauksen ja seurannan ajoituksen kanssa.
+3. Avaa **Myymälän myyntitiedot** -työtila. **Online-tilauksen synkronointivirheet**- ja **Asiakastilauksen synkronointivirheet** ‑ruuduissa on vähittäismyyntitapahtuman sivun esisuodatettu näkymä. Ne näyttävät tapahtumatietueet, joiden vastaavan tilaustyypin synkronointi epäonnistui.
+4. Avaa **Online-tilauksen synkronointivirheet**- tai **Asiakastilauksen synkronointivirheet** -sivu. Valitse tietue, jonka synkronointivirheen tietoja haluat tarkastella. **Synkronoinnin tila** -pikavälilehdessä ovat seuraavat virhetiedot:
 
     - Odottavan tilauksen tila
     - Tilausvirheen tiedot
@@ -67,7 +68,15 @@ Voit muokata ja tarkistaa Commerce-pääkonttorisovelluksen tapahtumia seuraamal
 
 1. Syötä Excel-tiedoston **Odottava tilauksen tila** -kenttään **Muokkaus** ja julkaise muutos. Näin voit estää sen, että erätilassa suoritettava **Synkronoi tilaus** -työ ohittaa tämän tietueen käsittelyn aikana.
 1. Excel-tiedostossa muokataan soveltuvia kenttiä. Tämän jälkeen tiedot ladataan takaisin Commerce-pääkonttorisovellukseen Dynamics Excel -lisäosan julkaisutoiminnon avulla. Kun tiedot on julkaistu, ne näkyvät järjestelmässä. Julkaisemisen aikana käyttäjien tekemiä muutoksia ei tarkisteta.
-1. Voit tarkastella muutosten täydellistä kirjausketjua valitsemalla otsikkotason muutoksille **Näytä kirjausketju** -kohdan **Vähittäismyyntitapahtuma**-otsikossa soveltuvan tapahtumasivun osassa ja tietueessa. Esimerkiksi kaikki myyntiriveihin liittyvät muutokset näkyvät **Myyntitapahtumat**-sivulla ja maksuihin liittyvät muutokset **Maksutapahtumat**-sivulla. Seuraavia tarkistustietoja muutetaan:
+    > [!NOTE]
+    > Jos muokattavaa kenttää ei löydy, lisää puuttuva kenttä laskentataulukkoon noudattamalla seuraavia ohjeita.
+    >   1. Valitse tietoyhdistimessä **Rakenne**.
+    >   1. Valitse kynäkuvake sen taulun vieressä, johon haluat lisätä kentän.
+    >   1. Valitse kenttä **Käytettävissä olevat kentät** ‑osassa ja valitse sitten **Lisää**.
+    >   1. Lisää tarvittava määrä kenttiä ja valitse sitten **Päivitä**.
+    >   1. Kun päivitys on valmis, sinun tarvitsee ehkä päivittää arvot valitsemalla **Päivitä**.
+
+3. Voit tarkastella muutosten täydellistä seurantaketjua valitsemalla otsikkotason muutoksille **Näytä seurantaketju** ‑kohdan **Vähittäismyyntitapahtuma**-otsikossa soveltuvan tapahtumasivun osassa ja tietueessa. Esimerkiksi kaikki myyntiriveihin liittyvät muutokset näkyvät **Myyntitapahtumat**-sivulla ja maksuihin liittyvät muutokset **Maksutapahtumat**-sivulla. Seuraavia tarkistustietoja muutetaan:
 
     - Muokkauksen päivämäärä ja aika
     - Kenttä
