@@ -2235,10 +2235,20 @@
               items:
                 - name: Ostokäytäntöjen yleiskatsaus
                   href: procurement/purchase-policies.md
-                - name: Luo ostokäytännöt
+                - name: Ostokäytäntöjen luominen
                   href: procurement/tasks/create-purchasing-policies.md
-                - name: Aseta menettelytavat hankintaluokkahierarkioille
+                - name: Käytäntöjen määrittäminen hankintaluokkahierarkioille
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Toimitusriskin arviointi
+              items:
+                - name: Toimitusriskin arvioinnin yleiskatsaus
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: Toimitusriskin arvioinnin määrittäminen
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: Toiminnallinen työtila toimitusriskien havaitsemista ja hallintaa varten
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: Power BI ‑raportit riskianalyysiä ja suorituskykyluokitusta varten
+                  href: procurement/supply-risk-assessment-reports.md
             - name: Tuotteiden vastaanotot ja laskutus
               items:
                 - name: Tuotteen vastaanotto ostotilausten perusteella

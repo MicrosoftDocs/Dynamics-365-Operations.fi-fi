@@ -692,20 +692,14 @@
               items:
                 - name: Pankkitilin täsmäytyksen lisätoimintojen asetusprosessi
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
                 - name: Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen sähköisen raportoinnin avulla
                   href: accounts-payable/import-bai2-er.md
                 - name: Pankkitilin täsmäytyksen vastaavuussääntöjen määrittäminen
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: MT940-tuonnin pankkitilin täsmäytyksen lisätoiminnot – yhdistelmätietoyksikön päivitys
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: Pankkitilin täsmäytyksen lisätoimintojen yleiskatsaus
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Tiliotetiedoston tuonnin vianmääritys
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: Pankin kirjauskansioiden yhdistelmäyksikön päivittäminen
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Kustannuslaskenta

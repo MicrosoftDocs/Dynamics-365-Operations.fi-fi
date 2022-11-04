@@ -256,8 +256,6 @@
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Commercen kaupallisen teknologiapinon modernisointi (tekninen raportti)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Commercen käyttöönotto offline-tilassa ja vianmääritys
-                  href: dev-itpro/implementation-considerations-offline.md
                 - name: Verkkokaupan kuvaston julkaiseminen
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI -sisältö
@@ -396,13 +394,17 @@
                   items:
                     - name: Store Commerce -sovellus
                       href: dev-itpro/store-commerce.md
+                    - name: Store Commerce ‑sovelluksen ominaisuudet
+                      href: store-commerce-capabilities.md
                     - name: Store Commerce ‑sovellus mobiiliympäristöille
                       href: dev-itpro/store-commerce-mobile.md
                     - name: Siirry Modern POS -sovelluksesta Store Commerceen
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Laitehallinnan käyttöönotto-ohje
                       href: implementation-considerations-devices.md
-                    - name: Valitse Store Commerce tai Cloud POS
+                    - name: Commercen käyttöönotto offline-tilassa ja vianmääritys
+                      href: dev-itpro/implementation-considerations-offline.md
+                    - name: 'Valitseminen Store Commercen ja Cloud POS:n välillä'
                       href: MPOS-or-CPOS.md
                     - name: Online- ja offline-myyntipistepalvelut
                       href: pos-operations.md
