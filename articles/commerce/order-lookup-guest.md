@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 4f381f1ec0ea08f18db3cac474e8990906364504
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 757e83887e318dd6aa54106fb78305f1d94e0f90
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286888"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734245"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Tilaushaun käyttöönotto vierailijoiden uloskuittauksessa
 
@@ -73,6 +73,11 @@ Ennen kuin vieraskäyttäjät voivat tarkastella tilaustietojaan, sähköisen ku
 Voit lähettää tilaukseen liittyviä sähköpostiviestejä linkin tai painikkeen, jonka avulla asiakkaat voivat avata tilauksen tietosivun. Voit lisätä tämän linkin tai painikkeen luomalla HTML-hyperlinkin, joka osoittaa sähköisen kauppasivuston tilaustietosivulle, ja siirrä tilausvahvistustunnus ja asiakkaan sähköpostiosoite URL-parametreiksi seuraavan esimerkin mukaisesti.
 
 `<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
+
+> [!NOTE]
+> Jos haluat ottaa tilausten hakutoiminnon käyttöön, varmista, että **Tarjoukset**-avain on käytössä kohdassa **Käyttöoikeuden konfiguraatio** > **Konfigurointiavaimet**.
+>
+>![Tarjousten käyttöoikeusavaimen konfiguraation täytyy olla käytössä](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

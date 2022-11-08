@@ -2,7 +2,7 @@
 title: Mallit ja asettelut – yleiskatsaus
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Commercen malleja ja asetteluja.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: e0bf7e942339775b2e9ee15060d555be07c1cdc5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0664dd1ae06d09557cf8b8ec58baf6d27c1198bd
+ms.sourcegitcommit: 023ae5557e1351a8329a59a41a551e8901db99a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277930"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9733381"
 ---
 # <a name="templates-and-layouts-overview"></a>Mallit ja asettelut – yleiskatsaus
 
@@ -65,6 +65,12 @@ Seuraavassa esimerkissä näkyy, miten perusmalli (malli X) voidaan määrittä�
 Tässä esimerkissä malli määrittää yksinkertaisen rakenteen ja asetusjoukon verkosta ladattavan sisällön tekijöille. Ota huomioon, että jotkin sivun osat (tässä tapauksessa ylätunniste) on kokonaan määritetty ja lukittu mallissa. Verkosta tietoja lataavat tekijät eivät voi muuttaa niitä. Muut osat (tässä tapauksessa tekstiosa) voidaan määrittää verkosta tietoja lataaville tekijöille tiettyjen ohjeiden mukaisesti (tässä tapauksessa tietty vähimmäis- ja enimmäismäärä erilaisia moduuleja). Ja muut osat (tässä tapauksessa alatunniste) määritetään mallissa. Verkosta tietoja lataavat käyttäjät eivät voi korvata niitä.
 
 Toimipaikan ja tuotemerkin hallinnoijien on tärkeää määrittää alussa oikea rajoituksen ja joustavuuden välinen tasapaino alitason asettelulle ja sivun tekijöille. Kun malleja käytetään, tämä tasapaino on täysin määritettävissä. Se vaikuttaa siihen, päivitetäänkö sivun elementit keskitetysti (lukittu mallissa) vai jätetäänkö ne yksittäisille alitasoille, jotka ovat alempana sivuhierarkiassa.
+
+### <a name="relationship-between-template-defaults-and-page-content"></a>Mallin oletusarvojen ja sivun sisällön välinen suhde
+
+Mallin ensisijainen tarkoitus on tehdä moduulin luomiskokemusta virtaviivaisempaa, kun sivu luodaan. Vaikka moduulin oletusarvot olisi määritetty tai jopa lukittu mallissa, sivun moduulin määrityksistä ei ole tietoyhteyttä mallin oletusarvoihin , paitsi kun sivua muokataan. Mallit ohjaavat sivurakenteen luontikokemusta. Kun sivu on luotu, mallin oletusarvot eivät ole enää linkitettyjä sivun lokalisoitavaan sisältöön. Toisin sanoen moduulin oletusarvot, jotka on määritetty mallissa, ohjaavat alitason sivujen luontikokemusta. Ne eivät ohjaa kyseisten sivujen sisältöä sen jälkeen, kun sivut on luotu ja niitä on muokattu.
+
+Ainoa poikkeus aiemmin kuvattuun toimintaan tapahtuu, kun malliin lisätään [osa](work-with-fragments.md). Osia voidaan käyttää dynaamisesti lokalisoitavan sisällön lisäämiseen tai muokkaamiseen mallin tai asettelun kaikille alitason sivuille kerralla tai jopa silloin, kun tietystä mallista on luotu useita sivuja. Suosittelemme käyttämään osia malleissa ja asetteluissa aina, kun lokalisoitavaa sisältöä tulisi lisätä, poistaa tai muokata dynaamisesti kaikilla alitason sivuilla. Osia tulisi käyttää esimerkiksi ylätunnisteille, alatunnisteille, yleisille metatiedoille/komentosarjoille tai muulle sisällölle, jota tulisi voida muokata keskitetysti ja jonka tulisi olla sama kaikilla alitason sivuilla. Osat tarjoavat tavan käyttää malleja ja asetteluita kaikkien alitason sivujen sisällön hallintaan.
 
 Lisätietoja mallien käyttämisen aloittamisesta on kohdassa [Mallien käsitteleminen](work-with-templates.md).
 

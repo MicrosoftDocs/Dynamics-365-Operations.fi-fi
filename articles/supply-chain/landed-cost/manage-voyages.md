@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905860"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725466"
 ---
 # <a name="manage-voyages"></a>Hallitse matkoja
 
@@ -29,7 +29,8 @@ Matka edustaa yleensä alusta. Käytäntöjen ja menettelyiden mukaan se voi kui
 **Kaikki matkat** -sivu sisältää matkan yksityiskohdat, toimitus- ja kustannuslaskentatiedot sekä tietoja nimikkeistä, ostotilauksista ja siirtotilauksista. Voit avata **Kaikki matkat** -sivun siirtymällä kohtaan **Aiheutunut kustannus \> Matkat \> Kaikki matkat**. Tällä sivulla on luettelo kaikista nykyisistä matkoista. Toimintoruudun painikkeiden avulla voit luoda, poistaa ja käsitellä matkoja. Katso minkä tahansa luettelon matkan tiedot valitsemalla se.
 
 > [!NOTE]
-> Kuljetuskontit ja pakkaukset on linkitetty matkaan. Ostorivit on linkitetty kuljetuskonttiin. Jos kuljetuskontit ja pakkaukset on poistettu käytöstä, ne voidaan linkittää myös suoraan matkaan. Lisäksi tähän syötetyt kustannukset jaetaan kaikkien liitettyjen ostorivien kesken.
+> Kuljetuskontit ja pakkaukset on linkitetty matkaan. Ostorivit on linkitetty kuljetuskonttiin. Lisäksi tähän syötetyt kustannukset jaetaan kaikkien liitettyjen ostorivien kesken.
+> Projektin ostotilausta ei tueta aiheutuneissa kustannuksissa.
 
 ## <a name="action-pane"></a>Toimintoruutu
 

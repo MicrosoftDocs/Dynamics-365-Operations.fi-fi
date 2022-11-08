@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
+ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689221"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "9731607"
 ---
 # <a name="proactive-quality-updates"></a>Ennakoivat laatupäivitykset
 
@@ -40,13 +40,13 @@ Seuraavia laatupäivitysten ennakoivan toimittamisen mahdollistavia toimintoja o
 
 - **Päivittäminen niin, että käyttämättömyysaika on lähes nolla** – Jos haluat toimittaa päivityksiä ympäristöihin säännöllisesti, on tärkeää, että vaikutusta ympäristön käytettävyyteen pienennetään ja noudatetaan näin Dynamics 365:n palvelutasosopimuksia. Päivittäminen niin, että käyttämättömyysaika on lähes nolla, otettiin käyttöön alun perin parantamaan kuukausittaisia järjestelmäkorjauksia. Niissä käytettiin klusterin vikasietoa päivitetyn kuvan aktivoimiseksi ilman suuria häiriöitä. Päivitysten kohdistusmekanismia on parannettu niin, että se aiheuttaa vielä aiempaakin vähemmän häiriöitä ja kattaa sekä käyttöjärjestelmän korjaukset että laatupäivitysten käyttöönoton.
 
-    Vuorovaikutteisten käyttäjien aktiivinen istunto saattaa keskeytyä, joten heidän on kirjauduttava uudelleen päivitettyyn ympäristöön. Uuden, suostumukseen perustuvan [prioriteettiin perustuvan erien ajoituksen](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) avulla erien ajoitus ja käsittely palautuu ja jatkaa toimintoja heti päivityksen jälkeen. Prioriteettiin perustuva erien ajoitus on asiakkaiden käytettävissä ennen kuin he ottavat osaa tuotantoympäristöjen laatupäivitysten ennakoivaan jakeluun.
+Vuorovaikutteisten käyttäjien aktiivinen istunto saattaa keskeytyä, joten heidän on kirjauduttava uudelleen päivitettyyn ympäristöön. Uuden [prioriteettiin perustuvan erien ajoituksen](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) avulla erien ajoitus ja käsittely palautuu ja jatkaa toimintoja heti päivityksen jälkeen. Prioriteettiin perustuva erien ajoitus on asiakkaiden käytettävissä ennen kuin he ottavat osaa tuotantoympäristöjen laatupäivitysten ennakoivaan jakeluun.
 
 - **Yöaika** – Kullekin Azure-alueelle määritetään yöaika, jonka aikana tehdään päivitykset niin, että käyttämättömyysaika on lähes nolla.
 
 ## <a name="the-proactive-update-process"></a>Ennakoiva päivitysprosessi
 
-Ennakoivien laatupäivitysten käyttöönotto noudattaa turvallista käyttöönottoprosessia. Turvallisen käyttöönottoprosessin yksityiskohdat muuttuvat, mutta laatupäivitykset otetaan ensin käyttöön eristysympäristöissä. Prosessi alkaa ympäristöistä, joissa on hyväksytty varhainen käyttöönotto. Onnistuneiden eristysympäristön käyttöönottojen prosenttiosuuden noustessa aloitetaan käyttöönotot tuotantoympäristöissä. Prosessi alkaa jälleen ympäristöistä, joissa on hyväksytty varhainen käyttöönotto. Kuuntelujärjestelmät valvovat järjestelmän telemetria- ja live-sivustotapahtumia ja lopettavat tietyn version päivittämisen, jos havaitaan regressiota. Asiakkaat voivat yhä halutessaan hakea laatupäivityksiä ennen ennakoivaa käyttöönottoa.
+Ennakoivien laatupäivitysten käyttöönotto noudattaa turvallista käyttöönottoprosessia. Turvallisen käyttöönottoprosessin yksityiskohdat muuttuvat, mutta laatupäivitykset otetaan ensin käyttöön eristysympäristöissä. Onnistuneiden eristysympäristön käyttöönottojen prosenttiosuuden noustessa aloitetaan käyttöönotot tuotantoympäristöissä. Kuuntelujärjestelmät valvovat järjestelmän telemetria- ja live-sivustotapahtumia ja lopettavat tietyn version päivittämisen, jos havaitaan regressiota. Asiakkaat voivat yhä halutessaan hakea laatupäivityksiä ennen ennakoivaa käyttöönottoa.
 
 Nykyiset julkaisujen hallintatiedot kertovat, että vähemmän kuin 3 prosenttia regressioista tapahtuu laatupäivityksissä. Kun keskitytään regressioiden poistamiseen ja turvallisen käyttöönottoprosessin parantamiseen, regressioiden mahdollinen vaikutus on huomattavasti alhaisempi kuin laadun parantumisen aiheuttamat hyödyt, jotka saadaan korjausten nopeasta toimittamisesta asiakkaille laajasti.
 
@@ -92,13 +92,13 @@ Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut yllä
 **Sovellusversio: 10.0.1326.70**
 **Vastaava uusin tietokanta-artikkeli: 748926**
 
-| Asema | Alueet | Tuleva eristysympäristön aikataulu
-|---|---|---|
-| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 14.–17. lokakuuta 2022 |
-| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 15.–18. lokakuuta 2022 |
-| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 16.–19. lokakuuta 2022 |
-| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 17.–20. lokakuuta 2022 |
-| Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu |
+| Asema | Alueet | Valmis aikataulu | Tuleva eristysympäristön aikataulu|
+|---|---|---|---|
+| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 14.–17. lokakuuta 2022 | 2.–5. marraskuuta 2022 |
+| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 15.–18. lokakuuta 2022 | 2.–5. marraskuuta 2022 |
+| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 16.–19. lokakuuta 2022 | 2.–5. marraskuuta 2022 |
+| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 17.–20. lokakuuta 2022 | 2.–5. marraskuuta 2022 |
+| Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu | Ei suunniteltu |
 
 > [!IMPORTANT] 
 > Microsoft päivittää edellisen aikataulun viisi päivää etukäteen ja lähettää sähköposti-ilmoitukset niille ympäristöille, jotka on ajoitettu vastaanottamaan nämä laatupäivitykset. Edellinen aikataulu koskee vain ympäristöjä, joille on ilmoitettu tulevasta päivityksestä. Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut ylläpitoikkunat alueen mukaan?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab5729cd441246a6c04ac060d5a69f949bfe47c5
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905889"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725474"
 ---
 # <a name="manage-folios"></a>Pakkausten hallinta
 
@@ -48,9 +48,9 @@ Seuraavassa taulukossa kuvataan painikkeet, jotka ovat käytettävissä toiminto
 
 | Painike | kuvaus |
 |---|---|
-| Kirjaa vastaanottoluettelo | Kirjaa vastaanottoluettelo kaikille pakkauksen ostotilausriveille. Jos käytetään usean yrityksen lähetyksiä, kunkin yrityksen osalta avautuu uusi vastaanottoluettelon kirjaamisen valintaikkuna. |
-| Kirjaa tuotteen vastaanotto | Kirjaa tuotteen vastaanotto kaikille pakkauksen tilausriveille. Jos käytetään usean yrityksen merikuljetuksia, kunkin yrityksen osalta avautuu uusi tuotteen vastaanottoluettelon kirjaamisen valintaikkuna. |
-| Kirjaa lasku | Kirjaa lasku kaikille pakkauksen tilausriveille. Jos käytetään usean yrityksen merikuljetuksia, kunkin yrityksen osalta avautuu uusi laskun kirjaamisen valintaikkuna. |
+| Kirjaa vastaanottoluettelo | Kirjaa vastaanottoluettelo kaikille pakkauksen ostotilausriveille.  |
+| Kirjaa tuotteen vastaanotto | Kirjaa tuotteen vastaanotto kaikille pakkauksen tilausriveille. |
+| Kirjaa lasku | Kirjaa lasku kaikille pakkauksen tilausriveille.  |
 | Lähetyksen siirtotilaus | Kirjaa siirtotilaus kaikille siirtotilausriveille, jotka liittyvät liittyvässä lähetyksessä nykyiseen tilaukseen. |
 | Vastaanota siirtotilaus | Kirjaa siirtotilauksen vastaanotto kaikille siirtotilausriveille, jotka liittyvät liittyvässä lähetyksessä nykyiseen tilaukseen. |
 | Vastaanota matkalla olevat tavarat | Vastaanota kaikki tilausrivit, jotka ovat kuljetettavana pakkauksessa. |
@@ -65,7 +65,7 @@ Seuraavassa taulukossa kuvataan painikkeet, jotka ovat käytettävissä toiminto
 
 | Painike | kuvaus |
 |---|---|
-| Saapumisluettelo | Kirjaa vastaanottoluettelo kaikille pakkauksen ostotilausriveille. Jos käytetään usean yrityksen matkoja, kunkin yrityksen osalta avautuu uusi vastaanottoluettelon kirjaamisen valintaikkuna. |
+| Saapumisluettelo | Kirjaa vastaanottoluettelo kaikille pakkauksen ostotilausriveille.  |
 | Tuotteen vastaanotto | Näytä tuotteen vastaanottotietue, jos sellaista käytetään. |
 | Nimikkeen saapuminen | Tarkastele nimikkeen saapumisten kirjauskansiota, jos sitä käytetään. |
 | Kustannuskysely | Avaa kustannuskyselysivu, jossa voit tarkastella kaikkia merikuljetuksen kustannuksia, mukaan lukien kuljetuskontti, pakkaus ja ostotilaus. Voit muokata sivun tarkkaa näkymää käyttämällä Näytä-toimintoa. Voit tarkastella kustannuskyselysivulla alueita sekä nimike- ja kustannustyyppikoodia. Poistamalla nämä nimikkeet voit muokata sivua ryhmittäen kustannuksia yhteen. Tämä ominaisuus voi olla hyödyllinen, kun käytät kokoja ja värejä. Voit muuttaa sivulla näkyviä dimensioita. **Kustannus**-sivulla näkyvät vain kustannuslajikoodit, joissa **Dr**-merkinnän arvona **Kirjaus**-välilehdessä on *Nimike*. |

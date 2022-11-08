@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b409017407ce1c027184bdc2292197840c61e04a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906150"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725438"
 ---
 # <a name="manage-shipping-containers"></a>Kuljetuskonttien hallinta
 
@@ -40,9 +40,9 @@ Seuraavassa taulukossa kuvataan painikkeet, jotka ovat käytettävissä toiminto
 
 | Painike | Kuvaukset |
 |---|---|
-| Kirjaa vastaanottoluettelo | Kirjaa vastaanottoluettelo tai tarkastele kaikkien kuljetuskontin ostotilausrivien tuotteen vastaanottoluetteloja. Jos käytetään usean yrityksen lähetyksiä, kunkin yrityksen osalta avautuu uusi vastaanottoluettelon kirjaamisen valintaikkuna. |
+| Kirjaa vastaanottoluettelo | Kirjaa vastaanottoluettelo tai tarkastele kaikkien kuljetuskontin ostotilausrivien tuotteen vastaanottoluetteloja.  |
 | Kirjaa tuotteen vastaanotto | Kirjaa tuotteen vastaanotto kaikille kuljetuskontin tilausriveille. |
-| Kirjaa lasku | Kirjaa lasku kaikille kuljetuskontin tilausriveille. Jos käytetään usean yrityksen lähetyksiä, kunkin yrityksen osalta avautuu uusi laskun kirjaamisen valintaikkuna. |
+| Kirjaa lasku | Kirjaa lasku kaikille kuljetuskontin tilausriveille.  |
 | Lähetyksen siirtotilaus | Kirjaa siirtotilauslähetys kaikille kuljetuskontin siirtotilausriveille. Valintaikkunassa näkyvät vain ne kuljetuskontin rivit, joiden tyyppi on siirtotilaus. |
 | Vastaanota siirtotilaus | Kirjaa vastaanotto kaikille kuljetuskontin siirtotilausriveille. Vastaanoton valintaikkuna on yksinkertaisin tapa vastaanottaa kuljetuskontin tai matkan tuotteita, ja se on yksi kolmesta vaihtoehdosta. Voit vastaanottaa myös saapumisten kirjauskansioiden tai mobiililaitekäsittelyn avulla. |
 | Luo saapumisen kirjauskansio | Voit luoda saapumisten kirjauskansion organisaatioille käyttämällä edistyneitä varastotoimintoja. Vaihtoehdot ovat _Alusta määrä_ (suositeltava) ja joko _Luo kuljetettavista tavaroista_ tai _Luo ostotilauksista_. Kaksi viimeksi mainittua vaihtoehtoa määräytyvät sen mukaan, käytetäänkö kuljetettavien tuotteiden käsittelyä. |
@@ -56,7 +56,7 @@ Seuraavassa taulukossa kuvataan painikkeet, jotka ovat käytettävissä toiminto
 
 | Painike | Kuvaukset |
 |---|---|
-| Saapumisluettelo | Kirjaa vastaanottoluettelo kaikille kuljetuskontin tilausriveille. Jos käytetään usean yrityksen matkoja, kunkin yrityksen osalta avautuu uusi vastaanottoluettelon kirjaamisen valintaikkuna. |
+| Saapumisluettelo | Kirjaa vastaanottoluettelo kaikille kuljetuskontin tilausriveille.  |
 | Tuotteen vastaanotto | Näytä tuotteen vastaanottotietue, jos sellaista käytetään. Tuotteen vastaanottoprosessia käytetään vain, jos tuotteissa ei käytetä kuljetettavien tuotteiden toimintoa. |
 | Nimikkeen saapuminen | Näytä kuljetuskontin nimikkeiden saapumisen kirjauskansio, jos kyseistä kirjauskansiota käytetään. |
 | Etapit | Etappeja käytetään matkan eri osien yksilöintiin. Kullekin etapille voi määrittää läpimenoajan helpottamaan lähetyksen jäljitystä. Lisätietoja: [Usean etapin matkan määrittäminen](multi-leg-journey-setup.md). |

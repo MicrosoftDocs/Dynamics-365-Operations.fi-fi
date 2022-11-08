@@ -2,19 +2,19 @@
 title: Kassamoduulin virheiden viitekoodit
 description: Tässä artikkelissa kerrotaan kassamoduulin virheiden viitekoodit, jotka näkyvät Microsoft Dynamics 365 Commercen käyttäjille näytettävissä virhesanomissa.
 author: BrianShook
-ms.date: 10/20/2022
+ms.date: 10/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
-ms.openlocfilehash: cd8269a71e56f23dbe3782ec3ffc69ec3ea6b151
-ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
+ms.openlocfilehash: 952cb932522b4e0bb91be985e4f8974cb6cd8bc0
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9709650"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728242"
 ---
 # <a name="checkout-module-error-reference-codes"></a>Kassamoduulin virheiden viitekoodit
 
@@ -31,9 +31,13 @@ Tämän artikkelin taulukko sisältää löydetystä virheestä riippuen seuraav
 - Ympäristön tai maksuyhdistinmääritysten huomioon otettavia tietoja
 - Tiedot, joihin voidaan viitata tukipalvelupyynnössä, jos tarvitaan lisätukea
 
+## <a name="prerequisites"></a>Edellytykset
+
+Jos haluat ottaa käyttöön alla olevassa luettelossa kuvatut kassamoduulin virheiden viitekoodit, avaa sivustosi luontityökalusta **Sivuston asetukset \> Laajennus** ja valitse **Ostoskori ja kassa** -osiosta **Ota käyttöön parannetut verkkokanavan virheiden näyttämisen viestit**. 
+
 ## <a name="checkout-module-error-reference-codes"></a>Kassamoduulin virheiden viitekoodit
 
-Seuraavan taulukon avulla saat lisätietoja virhekoodien viitteistä, jotka asiakkaat antavat tai jotka saadaan verkkokaupasta.
+Seuraavan taulukon avulla saat lisätietoja virhekoodien viitteistä, jotka asiakkaat antavat tai jotka saadaan verkkokaupasta. Vieritä näyttöä oikealle nähdäksesi **Virheen kuvaus** -sarakkeen.
 
 | Virhekoodi | Dynamicsiin liittyvä virhekoodi | Virheen kuvaus |
 | ---------- | ------------------------------ | ----------------- |

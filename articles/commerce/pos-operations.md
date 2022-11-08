@@ -2,7 +2,7 @@
 title: Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 description: Tässä artikkelissa on tietoja Dynamics 365 Commercen myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272846"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728273"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -101,7 +101,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 212  | Kuljetuskalustokortin tiedot                                   | Tätä toimintoa ei tueta.                                                                                                                                                                                | Ei käytettävissä | Ei käytettävissä     | Ei käytettävissä | Ei käytettävissä    | Ei käytettävissä  |
 | 213  | Maksa hyvityslaskulla                                   | Hyväksy myymälän luoma hyvityslasku (tosite).                                                                                                                                                          | Kyllä            | Kyllä                | En             | En                | En              |
 | 214  | Maksa lahjakortilla                                     | Hyväksy myymälän luoma lahjakortti.                                                                                                                                                                      | Kyllä            | Kyllä                | En             | En                | En              |
-| 215  | Lunasta lahjakortti                                | Tätä toimintoa ei tueta.                                                                                                                                                                                | Kyllä            | Kyllä                | En             | En                | En              |
+| 215  | Lunasta lahjakortti                                | Hyvitystapahtuma lahjakortin saldon koko summalla, jos se on määritetyn lunastusrajan sisällä.                                                                                                                                                                              | Kyllä            | Kyllä                | En             | En                | En              |
 | 216  | Maksa kortilla tarkka summa                                    | Tätä toimintoa ei tueta.                                                                                                                                                                                | Ei käytettävissä | Ei käytettävissä     | Ei käytettävissä | Ei käytettävissä    | Ei käytettävissä  |
 | 217  | Maksa sekillä tarkka summa                                   | Tätä toimintoa ei tueta.                                                                                                                                                                                | Ei käytettävissä | Ei käytettävissä     | Ei käytettävissä | Ei käytettävissä    | Ei käytettävissä  |
 | 218  | Maksa asiakastililtä tarkka summa                        | Tätä toimintoa ei tueta.                                                                                                                                                                                | Ei käytettävissä | Ei käytettävissä     | Ei käytettävissä | Ei käytettävissä    | Ei käytettävissä  |

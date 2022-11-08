@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871975"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725518"
 ---
 # <a name="landed-cost-parameters-setup"></a>Aiheutuneen kustannuksen parametrien määritys
 
@@ -125,14 +125,11 @@ Tämän välilehden asetukset määrittävät kunkin yrityksille määritetyn si
 
 **Aiheutuneen kustannuksen parametrit** -sivun **Numerosarjat**-välilehdessä näkyvät kaikki viitenumerosarjatyypit, joita aiheutunut kustannus edellyttää, mutta joita ei jaeta yrityksille. Valitse kullekin luettelon viitteelle numerosarjan koodi.
 
-> [!NOTE]
-> Moniyrityskonfiguraatiossa kullekin yritykselle on luotava eri numerosarjat.
 
 ## <a name="shared-number-sequences-tab"></a>Jaetut numerosarjat -välilehti
 
 **Aiheutuneen kustannuksen parametrit** -sivun **Jaetut numerosarjat**-välilehdessä näkyvät kaikki viitenumerosarjatyypit, jotka on jaettu yrityksille aiheutuneen kustannuksen kohdalla. Luettelossa on tällä hetkellä vain yksi numerosarja. Tätä numerosarjaa käytetään merikuljetuksen tunnuksessa.
 
-**Kaikki merikuljetukset** -sivulla käyttäjät voivat tarkastella kaikkia merikuljetuksia kaikissa yrityksissä. Käyttäjien on kuitenkin oltava valitun tietueen yrityksessä, jotta he voivat muokata ja käsitellä merikuljetusta.
 
 ## <a name="feature-visibility-tab"></a>Ominaisuuden näkyvyys -välilehti
 

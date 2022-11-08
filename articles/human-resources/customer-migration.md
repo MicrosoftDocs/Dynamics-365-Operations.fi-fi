@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a6f883da07bd1d3a6b0379f1582dc8556e166ff
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 0e11d26ebe084762a8616c8aa0aa041a87306473
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151079"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734355"
 ---
 # <a name="human-resources-customer-migration"></a>Human Resourcesin asiakkaiden siirto
 
@@ -40,7 +40,7 @@ Muita sovelluksia talous- ja toimintosovellusinfrastruktuurissa käyttävillä a
 Kunkin yrityksen siirtymä määräytyy yrityksen nykyisistä määrityksistä ja valmiudesta siirtyä talous- ja toimintosovellusinfrastruktuuriin. Asiakkaita suositellaan määrittämään yhdessä Microsoft-kumppanin kanssa paras tapa edetä.
 
 - **Human Resources** -moduulia Dynamics 365 Financessa käyttävien organisaatioiden on otettava Dynamics 365 Human Resourcesin uudet ominaisuudet käyttöön tavanomaisen One Version -päivitysprosessin osana. Uusien ominaisuuksien on tarkoitus olla yleisesti saatavana tammikuusta 2022 alkaen.
-- Dynamics 365 Human Resourcesia käyttävillä organisaatioilla on mahdollisuus käyttää työkaluja, joiden avulla infrastruktuurin yhdistäminen voidaan viimeistellä. Microsoft tekee yhteistyötä asiakkaiden kanssa siirtymän aikana, jotta palvelukatkoksilta vältyttäisiin. Asiakkailla 12–18 kuukautta aikaa siirtymiseen. Tämä aika alkaa siitä, kun siirtymistyökalut tulevat saataville.
+- Dynamics 365 Human Resourcesia käyttävillä organisaatioilla on mahdollisuus käyttää työkaluja, joiden avulla infrastruktuurin yhdistäminen voidaan viimeistellä. Microsoft tekee yhteistyötä asiakkaiden kanssa siirtymän aikana, jotta palvelukatkoksilta vältyttäisiin. Asiakkailla 12 kuukautta aikaa siirtymiseen. Tämä aika alkaa siitä, kun siirtymistyökalut tulevat saataville.
 - Sekä Dynamics 365 Human Resourcesia että **Human Resources** -moduulia käyttävät asiakkaat voivat siirtää erillisen Human Resources -infrastruktuurin talous- ja toimintosovellusinfrastruktuuriin. Toinen vaihtoehto on siirtää ympäristöt samaan ympäristöön yhdistämistyökalujen avulla. Kahden ympäristön yhdistämiselle ei ole mitään tarvetta eikä aikarajaa.
 
 Ajantasaiset tiedot kannattaa tarkistaa säännöllisesti [julkaisusuunnitelmista](/dynamics365/release-plans/).
@@ -166,4 +166,4 @@ Microsoft määrittää edelleen, mitkä FastTrackin työkalut ja resurssit ovat
 
 ## <a name="licensing-impact"></a>Vaikutus lisensseihin
 
-Lisätietoja vaikutuksista käyttöoikeuksiin on kohdassa [Dynamics 365 Human Resourcesin infrastruktuurin yhdistämisen usein kysytyt kysymykset](hr-infrastructure-merge-faq.md#licensing-impact).
+Lisätietoja vaikutuksista käyttöoikeuksiin on kohdassa [Dynamics 365 Human Resourcesin infrastruktuurin yhdistäminen](hr-infrastructure-merge.md#licensing).
