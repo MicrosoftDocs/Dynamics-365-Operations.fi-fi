@@ -96,9 +96,9 @@
                       href: hr-admin-setup-remove-instance.md
                     - name: Päivitysprosessi
                       href: hr-admin-setup-update-process.md
-            - name: Määritä tietojen integrointi
+            - name: Tietojen integroinnin määrittäminen
               items:
-                - name: Valitse tietojen integrointiteknologia
+                - name: Tietojen integrointiteknologian valitseminen
                   href: hr-admin-integration-choose-technology.md
                 - name: Rajoittamisen usein kysytyt kysymykset
                   href: hr-admin-integration-throttling-faq.md
@@ -540,8 +540,12 @@
                   items:
                     - name: Ehdokkaiden työhönotto
                       href: hr-personnel-recruit.md
-        - name: Tehtävienhallinta
-          href: hr-task-mgmt.md
+        - name: Tehtävien hallinta
+          items:
+            - name: Yleiskatsaus
+              href: hr-task-mgmt.md
+            - name: Tehtävien hallinnan ohjelmistopäivitys
+              href: hr-task-update.md
         - name: Loma ja poissaolo
           items:
             - name: Yleiskatsaus
@@ -832,9 +836,13 @@
           href: hr-developer-entities.md
         - name: Mukautetut kentät
           href: hr-developer-custom-fields.md
-        - name: Määritä tietojen integrointi
+        - name: Kehittäminen ja mukauttaminen
           items:
-            - name: Valitse tietojen integrointiteknologia
+            - name: Sukupuoliperusteinen luettelointi
+              href: enum-exten.md
+        - name: Tietojen integroinnin määrittäminen
+          items:
+            - name: Tietojen integrointiteknologian valitseminen
               href: hr-admin-integration-choose-technology.md
             - name: Määritä Dataverse-integrointi
               href: hr-admin-integration-common-data-service.md

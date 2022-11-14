@@ -488,7 +488,7 @@
                       href: help/migrate-dynamicsax2012.md
                 - name: Kielen ja aluekohtaisten asetusten kuvaus koko tuotteessa ja ohjeessa
                   href: help/language-locale.md
-                - name: 'Ohjeen laajentaminen, mukauttaminen ja käyttäminen yhdessä'
+                - name: Ohjeen laajentaminen ja käyttäminen yhdessä
                   href: help/contributor-guide.md
             - name: Talous- ja toimintosovellusten aluepalvelut
               items:
@@ -1624,6 +1624,10 @@
               href: sysadmin/DataMaintenancePortal.md
             - name: Kaikkien yritysyksiköiden verkkotulostimien käytön hallinta
               href: sysadmin/sys-admin-tools-network-printer.md
+            - name: Valvonta ja telemetria Application Insightsin avulla
+              items:
+                - name: Yleiskatsaus
+                  href: sysadmin/monitoring-and-telemetry-appinsights.md
             - name: Suojaus
               items:
                 - name: Rooliperustainen suojaus
