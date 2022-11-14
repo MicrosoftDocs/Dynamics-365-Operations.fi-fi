@@ -450,6 +450,8 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Laskutusaikataulun kopioiminen
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Asiakkaan jako laskutusaikataulun avulla
+                      href: accounts-receivable/sb-customer-split.md
                     - name: Laskutusaikataulujen ominaisuudet
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Tavoitteisiin perustuva laskutus
@@ -1172,6 +1174,8 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Tilikauden sulkemisen työtila
                   href: general-ledger/financial-period-close-workspace.md
+                - name: Tilinpäätöksen optimointi
+                  href: general-ledger/optimize-year-end-close.md
                 - name: Tilinpäätös
                   href: general-ledger/year-end-close.md
                 - name: Tilikauden sulkeminen
