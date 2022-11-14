@@ -384,7 +384,7 @@
                       href: ../finance/localizations/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
         - name: Jaettu hybriditopologia
           items:
-            - name: Mittayksikön skaalaustoiminto on tällä hetkellä keskeytetty uusien asiakkaiden osalta
+            - name: Supply Chain Managementin mittayksikön skaalaustoiminto on tällä hetkellä keskeytettynä
               href: cloud-edge/cloud-edge-landing-page.md
         - name: Resurssien hallinta
           items:
@@ -1753,36 +1753,54 @@
           items:
             - name: Pääsuunnittelun aloitussivu
               href: master-planning/master-planning-home-page.md
-            - name: Siirtyminen suunnittelun optimointiin pääsuunnittelua varten
-              href: master-planning/new-master-planning-engine.md
-            - name: Suunnittelun optimointi
+            - name: Pääsuunnittelun käytön aloittaminen
+              href: master-planning/planning-optimization/get-started.md
+            - name: Pääsuunnittelujärjestelmän arkkitehtuuri
+              href: master-planning/master-planning-architecture.md
+            - name: Pääsuunnittelun hallinta
               items:
-                - name: Suunnittelun optimoinnin yleiskatsaus
-                  href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Suunnittelun optimoinnin aloittaminen
-                  href: master-planning/planning-optimization/get-started.md
                 - name: Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
                   href: master-planning/planning-optimization/release-process.md
-                - name: Suunnittelun optimoinnin sopivuusanalyysi
-                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
-                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
-                - name: 'Parametrit, joita ei käytetä suunnittelun optimoinnissa'
-                  href: master-planning/planning-optimization/not-used-parameters.md
-                - name: Toimitusaikataulu
-                  href: master-planning/supply-schedule.md
-                - name: Suodattimien käyttäminen suunnitelmaan
-                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Suunnittelun optimoinnin vianmääritys
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Ajoitusmoduulin "Kapasiteettia ei löytynyt tarpeeksi" -virheen ratkaiseminen
+                  href: master-planning/not-enough-capacity-error-resolution.md
+                - name: Suunnittelutyön peruuttaminen
+                  href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Suunnittelun optimoinnin laajennettavuus
+                  href: master-planning/planning-optimization/extensibility.md
+                - name: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Suunnittelun optimoinnissa käytetyt päivämäärä- ja aikaparametrit
+                  href: master-planning/planning-optimization/date-time-used.md
+            - name: Pääsuunnittelun parametrien määrittäminen
+              items:
+                - name: Viiveet
+                  href: master-planning/delays.md
+                - name: Seurannan käyttäminen hajotuksessa
+                  href: master-planning/trace-explosion.md
+                - name: Tilauksesta valmistukseen -tarjonnan automatisointi
+                  href: master-planning/make-to-order-supply-automation.md
+                - name: Negatiiviset päivät ja dynaamiset negatiiviset päivät
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: Kalenterit ja pääsuunnittelu
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Aikataulun luominen toimipisteelle
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: Suunnitelman luominen toimipisteelle
+                  href: master-planning/tasks/create-plan-site.md
                 - name: Pääsuunnittelu ja kysynnän ennusteet
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Pääsuunnittelu ja tarjontaennusteet
                   href: master-planning/planning-optimization/supply-forecast.md
+                - name: Toimitusaikataulu
+                  href: master-planning/supply-schedule.md
+                - name: Suunnittelun suorittaminen nimikkeiden osajoukolle
+                  href: master-planning/planning-optimization/plan-filters.md
                 - name: Pääsuunnittelu ja ostokauppasopimukset
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Tarjouksiin ja tarjouspyyntöihin perustuva suunnitelma
                   href: master-planning/planning-optimization/quotation-planning.md
-                - name: Suunnittelun optimoinnissa käytetyt päivämäärä- ja aikaparametrit
-                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Varmuusmarginaalit
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Viivetoleranssi (negatiiviset päivät)
@@ -1799,55 +1817,21 @@
                   href: master-planning/planning-optimization/finite-capacity.md
                 - name: Aikatauluttaminen resurssien valinnalla kykyjen perusteella
                   href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: Prioriteettipohjainen suunnittelu
-                  href: master-planning/planning-optimization/priority-based-planning.md
-                - name: Kysyntäperustainen materiaalitarvesuunnittelu (DDMRP)
-                  items:
-                    - name: 'DDMRP:n yleiskatsaus'
-                      href: master-planning/planning-optimization/ddmrp-overview.md
-                    - name: DDMRP-ominaisuuden käynnistäminen järjestelmässä
-                      href: master-planning/planning-optimization/ddmrp-enable.md
-                    - name: Varaston sijoittelu
-                      href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
-                    - name: Puskuriprofiili ja tasot
-                      href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
-                    - name: Tarveperusteinen laskenta
-                      href: master-planning/planning-optimization/ddmrp-planning.md
-                    - name: Visuaalinen ja yhteiskäyttöinen suoritus
-                      href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
-                - name: Varaston merkintä suunnittelun optimoinnin avulla
+                - name: Varastomerkintä
                   href: master-planning/planning-optimization/marking.md
                 - name: Konsernin sisäinen suunnittelu
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Tuotteiden sulkeminen pois tietyistä tuotteen elinkaaren tiloista
                   href: master-planning/planning-optimization/product-lifecycle-state.md
-                - name: Täydennysmenetelmät ja määrän muokkaus
-                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Kattavuuden aikarajat
                   href: master-planning/planning-optimization/coverage-time-fence.md
-                - name: Nettotarpeet ja tarvekohdistustiedot suunnittelun optimoinnin avulla
+                - name: Nettotarpeet ja tarvekohdistustiedot
                   href: master-planning/planning-optimization/net-requirements.md
-                - name: Suunniteltujen tilausten hyväksyminen
-                  href: master-planning/planning-optimization/approved-planned-order.md
-                - name: Vahvista suunnitellut tilaukset
-                  href: master-planning/planning-optimization/planned-order-firming.md
-                - name: Yksinkertaiset suunnitellut tilaukset
-                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Suunnittelu negatiivisilla käytettävissä olevalla määrillä
                   href: master-planning/planning-optimization/negative-on-hand.md
-                - name: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
-                  href: master-planning/planning-optimization/plan-history-logs.md
-                - name: Suunnittelutyön peruuttaminen
-                  href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Toimintosanomat
-                  href: master-planning/action-messages.md
                 - name: Myyntitilauksen toimituspäivien laskeminen saatavuudella (CTP)
                   href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
-                - name: Suunnittelun optimoinnin vianmääritys
-                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-                - name: Suunnittelun optimoinnin laajennettavuus
-                  href: master-planning/planning-optimization/extensibility.md
-            - name: Pääsuunnitelmat
+            - name: Pääsuunnitelmien määrittäminen
               items:
                 - name: Pääsuunnitelmien yleiskatsaus
                   href: master-planning/master-plans.md
@@ -1855,74 +1839,60 @@
                   href: master-planning/master-planning-setup.md
                 - name: Pääsuunnittelun asetusten ohjattu toiminto
                   href: master-planning/master-planning-setup-wizard.md
+                - name: Rajoitetun suunnitelman luominen
+                  href: master-planning/tasks/constrained-plan.md
+            - name: Täydennysstrategioiden määrittäminen
+              items:
                 - name: Kattavuusasetukset
                   href: master-planning/coverage-settings.md
                 - name: Nimikkeiden kattavuussääntöjen määrittäminen
                   href: master-planning/tasks/define-coverage-rules-items.md
-                - name: Rajoitetun suunnitelman luominen
-                  href: master-planning/tasks/constrained-plan.md
-                - name: Rinnakkaistuotteiden materiaalisuunnitelman luominen
-                  href: master-planning/tasks/create-material-plan-co-products.md
-                - name: Suunniteltujen tilausten ylläpito
-                  href: master-planning/maintain-planned-orders.md
-                - name: Tuotteiden varmuusvaraston toteutuminen
+                - name: Lähdetuotteet ja -materiaalit useilta toimittajilta
+                  href: master-planning/source-from-multiple-vendors.md
+                - name: Prioriteettipohjainen suunnittelu
+                  href: master-planning/planning-optimization/priority-based-planning.md
+                - name: Täydennysmenetelmät ja määrän muokkaaminen
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
+            - name: Pääsuunnitelmat ja usean toimipaikan toiminnot
+              items:
+                - name: Pääsuunnittelu ja usean toimipaikan toiminnot – yleiskatsaus
+                  href: master-planning/master-plan-multisite-functionality.md
+                - name: 'Pääsuunnittelu toimipaikan kattavuudelle, varasto pakollinen'
+                  href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                - name: 'Pääsuunnittelu toimipaikan kattavuudelle, varasto ei pakollinen'
+                  href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                - name: 'Toimipaikan ja varaston kattavuuden pääsuunnittelu, varasto pakollinen'
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                - name: 'Toimipaikan ja varaston kattavuuden pääsuunnittelu, varasto ei pakollinen'
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                - name: Tuoterakenneversion määrittäminen
+                  href: master-planning/master-plan-bom-version-determined.md
+                - name: Hajotettu tuoterakenneversio
+                  href: master-planning/master-plan-explosion-bom-version.md
+            - name: Varmuusvarasto
+              items:
+                - name: Nimikkeiden varmuusvaraston täyttäminen
                   href: master-planning/safety-stock-replenishment.md
                 - name: Varmuusvaraston kirjauskansion käyttäminen tuotteiden vähimmäiskattavuuden päivittämiseen
                   href: master-planning/safety-stock-journal.md
-                - name: Viiveet
-                  href: master-planning/delays.md
-                - name: Pääsuunnittelutyön peruuttaminen
-                  href: master-planning/cancel-master-planning-job.md
-                - name: Räjähdyksen seurannan käyttäminen
-                  href: master-planning/trace-explosion.md
-                - name: Pääsuunnitteluajon valvonta
-                  href: master-planning/tasks/monitor-master-planning-run.md
-                - name: Aikataulun luominen toimipisteelle
-                  href: master-planning/tasks/create-schedule-site.md
-                - name: Suunnitelman luominen toimipisteelle
-                  href: master-planning/tasks/create-plan-site.md
-                - name: Kalenterit ja pääsuunnittelu
-                  href: master-planning/supply-chain-calendars-master-planning.md
-                - name: Ajoitusmoduulin "Kapasiteettia ei löytynyt tarpeeksi" -virheen ratkaiseminen
-                  href: master-planning/not-enough-capacity-error-resolution.md
-                - name: Pääsuunnittelun suorituskyvyn parantaminen
-                  href: master-planning/master-planning-performance.md
-                - name: Aikataulutusmoduulin suorituskyvyn parantaminen
-                  href: master-planning/scheduling-engine-performance.md
-                - name: Pääsuunnitelmat ja multisite-toiminnot
-                  items:
-                    - name: Pääsuunnittelu ja multisite-toiminnot – yleiskatsaus
-                      href: master-planning/master-plan-multisite-functionality.md
-                    - name: 'Pääsuunnittelu toimipaikan kattavuudelle, varasto pakollinen'
-                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
-                    - name: 'Pääsuunnittelu toimipaikan kattavuudelle, varasto ei pakollinen'
-                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
-                    - name: 'Toimipaikan ja varaston kattavuuden pääsuunnittelu, varasto pakollinen'
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
-                    - name: 'Toimipaikan ja varaston kattavuuden pääsuunnittelu, varasto ei pakollinen'
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
-                    - name: Tuoterakenneversion määrittäminen
-                      href: master-planning/master-plan-bom-version-determined.md
-                    - name: Hajotettu tuoterakenneversio
-                      href: master-planning/master-plan-explosion-bom-version.md
-                - name: Negatiiviset päivät ja dynaamiset negatiiviset päivät
-                  href: master-planning/more-about-dynamic-negative-days.md
-                - name: Konsernin sisäisen suunnitelman luominen
-                  href: master-planning/tasks/create-intercompany-plan.md
-                - name: 'Lähtevän, suunnitellun konsernin sisäisen kysynnän tarkasteleminen'
-                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Nettotarpeet ja tarvekohdistustiedot sisäänrakennetun pääsuunnittelun avulla
-                  href: master-planning/net-requirements-built-in-master-planning.md
-                - name: Tilauksesta valmistukseen -tarjonnan automatisointi
-                  href: master-planning/make-to-order-supply-automation.md
+            - name: Suunniteltujen tilausten hallinta
+              items:
+                - name: Suunniteltujen tilausten ylläpito
+                  href: master-planning/maintain-planned-orders.md
+                - name: 'Suunniteltujen tilausten tarkasteleminen, hallinta ja hyväksyminen'
+                  href: master-planning/planning-optimization/approved-planned-order.md
+                - name: Suunniteltujen tilausten vahvistaminen
+                  href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Yksinkertaiset suunnitellut tilaukset
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
+                - name: Toimintosanomat
+                  href: master-planning/action-messages.md
             - name: Ennusteet
               items:
-                - name: Kysynnän ja tarjonnan ennusteet
-                  items:
-                    - name: Varastoennusteet
-                      href: master-planning/inventory-forecast.md
-                    - name: 'Opas: kysynnän ennusteen manuaalinen muokkaaminen'
-                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Varastoennusteet
+                  href: master-planning/inventory-forecast.md
+                - name: 'Opas: kysynnän ennusteen manuaalinen muokkaaminen'
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
                 - name: Kysynnän ennusteet
                   items:
                     - name: Kysynnän ennusteiden yleiskatsaus
@@ -1943,10 +1913,50 @@
                       href: master-planning/monitor-forecast-accuracy.md
                     - name: 'Opas: perusennusteen luominen'
                       href: master-planning/tasks/create-baseline-forecast.md
-                - name: Pääsuunnittelu ja ennuste
-                  items:
-                    - name: Ennusteen vähennysavaimet
-                      href: master-planning/reduction-keys.md
+                - name: Ennusteen vähennysavaimet
+                  href: master-planning/reduction-keys.md
+            - name: Kysyntäperustainen materiaalitarvesuunnittelu (DDMRP)
+              items:
+                - name: 'DDMRP:n yleiskatsaus'
+                  href: master-planning/planning-optimization/ddmrp-overview.md
+                - name: DDMRP-ominaisuuden käynnistäminen järjestelmässä
+                  href: master-planning/planning-optimization/ddmrp-enable.md
+                - name: Varaston sijoittelu
+                  href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
+                - name: Puskuriprofiili ja tasot
+                  href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
+                - name: Tarveperusteinen laskenta
+                  href: master-planning/planning-optimization/ddmrp-planning.md
+                - name: Visuaalinen ja yhteiskäyttöinen suoritus
+                  href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+            - name: Vanhentunut suunnittelumoduuli
+              items:
+                - name: Vanhentuneen suunnittelumoduulin yleiskatsaus
+                  href: master-planning/deprecated-master-planning-overview.md
+                - name: Siirtyminen suunnittelun optimointiin pääsuunnittelua varten
+                  href: master-planning/new-master-planning-engine.md
+                - name: 'Parametrit, joita ei käytetä suunnittelun optimoinnissa'
+                  href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Suunnittelun optimoinnin ja vanhentuneen pääsuunnittelumoduulin erot
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+                - name: Suunnittelun optimoinnin sopivuusanalyysi
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Pääsuunnittelun suorituskyvyn parantaminen
+                  href: master-planning/master-planning-performance.md
+                - name: Aikataulutusmoduulin suorituskyvyn parantaminen
+                  href: master-planning/scheduling-engine-performance.md
+                - name: Konsernin sisäisen suunnitelman luominen
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: 'Lähtevän, suunnitellun konsernin sisäisen kysynnän tarkasteleminen'
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: Pääsuunnittelun suorittamisen valvonta
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: Nettotarpeet ja tarvekohdistustiedot vanhentuneessa pääsuunnittelumoduulissa
+                  href: master-planning/net-requirements-built-in-master-planning.md
+                - name: Rinnakkaistuotteiden materiaalisuunnitelman luominen
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: Vanhentunutta pääsuunnittelumoduulia käyttämällä luodun työn peruuttaminen
+                  href: master-planning/cancel-master-planning-job.md
         - name: Mobiilisovellus
           items:
             - name: Mobiilisovelluksen aloitussivu
