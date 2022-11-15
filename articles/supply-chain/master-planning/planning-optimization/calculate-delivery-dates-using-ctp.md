@@ -1,6 +1,6 @@
 ---
 title: Myyntitilauksen toimituspäivien laskeminen saatavuudella
-description: Saatavuus-toiminnolla voit antaa asiakkaille realistisia päivämääriä, jolloin voit luvata tiettyjä tuotteita. Tässä artikkelissa kuvaillaan, kuinka saatavuus määritetään ja kuinka sitä käytetään kullekin suunnittelumoduulille (suunnittelun optimointi ja sisäinen moduuli).
+description: Saatavuus-toiminnolla voit antaa asiakkaille realistisia päivämääriä, jolloin voit luvata tiettyjä tuotteita. Tässä artikkelissa kuvaillaan, kuinka saatavuus määritetään ja kuinka sitä käytetään kullekin suunnittelumoduulille (suunnittelun optimointi ja vanhentunut pääsuunnittelumoduuli).
 author: t-benebo
 ms.date: 07/20/2022
 ms.topic: article
@@ -11,28 +11,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-20
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 3b8e3dc9f0e7aaf019aa4d7284458206e7daadb2
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 4a3b8ba89d9fb224026cf32cad89d7f28321ee79
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714857"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741200"
 ---
-# <a name="calculate-sales-order-delivery-dates-using-ctp"></a>Myyntitilauksen toimituspäivien laskeminen saatavuudella
+# <a name="calculate-sales-order-delivery-dates-using-ctp"></a>Myyntitilauksen toimituspäivien laskeminen saatavuudella (CTP)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+<!-- KFN: Split into two topics, one for PO and one for classic. -->
 
 Saatavuus-toiminnolla voit antaa asiakkaille realistisia päivämääriä, jolloin voit luvata tiettyjä tuotteita. Voit määrittää kullekin myyntiriville päivämäärän, jossa otetaan huomioon käytettävissä oleva varasto, tuotantokapasiteetti ja kuljetusajat.
 
 Saatavuus laajentaa [Luvattavissa oleva määrä](../../sales-marketing/delivery-dates-available-promise-calculations.md) (ATP) -toimintoja ottamalla huomioon kapasiteettitiedot. ATP ottaa huomioon vain materiaalin saatavuuden ja olettaa, että kapasiteetit ovat rajattomia, kun taas saatavuudessa sekä raaka-aineiden että kapasiteetin saatavuus otetaan huomioon. Näin ollen se antaa realistisemman kuvan siitä, voiko kysyntää täyttää tietyn ajan kuluessa.
 
-Saatavuus toimii hieman eri tavalla riippuen käyttämästäsi pääsuunnittelumoduulista (suunnittelun optimointi vai sisäinen moduuli). Tässä artikkelissa käsitellään sen määrittämistä kullekin moduulille. Saatavuus (CTP) suunnittelun optimointia varten tukee tällä hetkellä vain saatavuuden skenaarioiden alijoukkoa, joita sisäinen moduuli tukee.
+Saatavuus toimii hieman eri tavalla riippuen käyttämästäsi pääsuunnittelumoduulista (suunnittelun optimointi vai vanhentunut pääsuunnittelumoduuli). Tässä artikkelissa käsitellään sen määrittämistä kullekin moduulille. Saatavuus (CTP) suunnittelun optimointia varten tukee tällä hetkellä vain saatavuuden skenaarioiden alijoukkoa, joita vanhentunut pääsuunnittelumoduuli tukee.
 
 ## <a name="turn-on-ctp-for-planning-optimization"></a>Ota käyttöön saatavuus suunnittelun optimointia varten
 
-Saatavuus sisäiselle pääsuunnittelumoduulille on aina saatavana. Jos kuitenkin haluat käyttää suunnittelun optimoinnissa saatavauutta, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Saatavuus vanhentuneelle pääsuunnittelumoduulille on aina saatavana. Jos kuitenkin haluat käyttää suunnittelun optimoinnissa saatavauutta, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Pääsuunnittelu*
 - **Ominaisuuden nimi:** *(Esiversio) Saatavuus (CTP) suunnittelun optimointia varten*
@@ -47,9 +48,9 @@ Sekä materiaalit että resurssit huomioon ottava saatavuuslaskelma voi näyttä
 
 ## <a name="how-ctp-differs-depending-on-the-master-planning-engine-that-you-use"></a>Kuinka saatavuus vaihtelee käytettävän pääsuunnittelumoduulin mukaan
 
-Seuraavassa taulukossa on yhteenveto saatavuuden (CTP) suunnittelun optimointia varten ja saatavuuden sisäiselle pääsuunnittelumoduulille välisistä eroista.
+Seuraavassa taulukossa on yhteenveto saatavuuden (CTP) eroavaisuuksista suunnittelun optimoinnissa ja vanhentuneessa pääsuunnittelumoduulissa.
 
-| Elementti | Suunnittelun optimointi | Sisäinen pääsuunnittelumoduuli |
+| Elementti | Suunnittelun optimointi | Vanhentunut pääsuunnittelumoduuli |
 |---|---|---|
 | Tilausten, tilausrivien ja tuotteiden **Toimituspäivän tarkistus** -asetus | *Saatavuus (CTP) suunnittelun optimointia varten* | *Saatavuus* |
 | Laskenta-aika | Laskenta käynnistetään ajamalla dynaaminen suunnitelma ajoitetuksi tehtäväksi. | Laskenta käynnistyy heti aina, kun lisäät myyntitilausrivin tai päivität sitä. |
@@ -70,8 +71,8 @@ Oletustoimituspäivän tarkistusmenetelmää käytetään kaikille uusille tilau
     - *Myynnin läpimenoaika* – Myynnin läpimenoaika on myyntitilauksen luomisen ja nimikkeiden toimituksen välinen aika. Toimituspäivän laskenta perustuu päivien oletusmäärään eikä siinä oteta huomioon varastotilannetta, tiedettyä kysyntää eikä suunniteltua tarjontaa.
     - *Luvattavissa oleva määrä (ATP)* – ATP on nimikkeen käytettävissä oleva määrä, joka voidaan luvata asiakkaalle tiettynä päivänä. ATP-laskelmaan sisältyy varaamaton varasto, läpimenoajat, suunnitellut vastaanotot ja varasto-otot.
     - *ATP + toimitusmarginaali* – Lähetyspäivämäärä vastaa ATP-päivämäärää sekä nimikkeen toimitusmarginaalia. Toimitusmarginaali on lähetettävien nimikkeiden valmisteluun kuluva aika.
-    - *Saatavuus (CTP)* – Käytä sisäisen pääsuunnittelumoduulin toimittamaa saatavuuslaskelmaa. Jos käytät suunnittelun optimointia, *saatavuuden (CTP)* toimituspäivän valvontamenetelmä ei ole sallittu, ja jos se on valittuna, se aiheuttaa virheen, kun laskenta suoritetaan.
-    - *Saatavuus (CTP) suunnittelun optimointia varten* – Käytä suunnittelun optimoinnin mahdollistamia saatavuuslaskelmia. Tällä asetuksella ei ole vaikutusta, jos käytössä on sisäinen pääsuunnittelumoduuli.
+    - *Saatavuus (CTP)* – Käytä vanhentuneen pääsuunnittelumoduulin toimittamaa saatavuuslaskelmaa. Jos käytät suunnittelun optimointia, *saatavuuden (CTP)* toimituspäivän valvontamenetelmä ei ole sallittu, ja jos se on valittuna, se aiheuttaa virheen, kun laskenta suoritetaan.
+    - *Saatavuus (CTP) suunnittelun optimointia varten* – Käytä suunnittelun optimoinnin mahdollistamia saatavuuslaskelmia. Tällä asetuksella ei ole vaikutusta, jos käytät vanhentunutta pääsuunnittelumoduulia.
 
 ### <a name="set-delivery-date-control-overrides-for-individual-products"></a>Aseta toimituspäivän tarkistuksen ohitukset yksittäisille tuotteille
 
@@ -85,7 +86,7 @@ Voit määrittää ohitukset tietyille tuotteille, joissa haluat käyttää toim
 
 ## <a name="schedule-ctp-for-planning-optimization-calculations"></a><a name="batch-job"></a>Saatavuus (CTP) suunnittelun optimointia varten -laskelmien ajoittaminen
 
-Kun käytät Saatavuus (CTP) suunnittelun optimointia varten -toimintoa, järjestelmän on suoritettava dynaaminen suunnitelma, jotta järjestelmä käynnistetään suorittamaan saatavuuslaskelmat ja määrittää sitten kaikkien asiaankuuluvien tilausten vahvistetut lähetys- ja vastaanottopäivämäärät. Suunnitelmaan on sisällytettävä kaikki nimikkeet, joita varten tarvitaan vahvistettavat lähetys- ja vastaanottopäivämäärät. (Kun käytät saatavuutta sisäiselle suunnittelumoduulille, saatavuuslaskelmat tehdään välittömästi paikallisesti. Näin ollen dynaamista suunnitelmaa ei tarvitse suorittaa saatavuuden tulosten tarkastelemiseksi.)
+Kun käytät Saatavuus (CTP) suunnittelun optimointia varten -toimintoa, järjestelmän on suoritettava dynaaminen suunnitelma, jotta järjestelmä käynnistetään suorittamaan saatavuuslaskelmat ja määrittää sitten kaikkien asiaankuuluvien tilausten vahvistetut lähetys- ja vastaanottopäivämäärät. Suunnitelmaan on sisällytettävä kaikki nimikkeet, joita varten tarvitaan vahvistettavat lähetys- ja vastaanottopäivämäärät. (Kun käytät saatavuutta vanhentuneella suunnittelumoduulille, saatavuuslaskelmat tehdään välittömästi paikallisesti. Näin ollen dynaamista suunnitelmaa ei tarvitse suorittaa saatavuuden tulosten tarkastelemiseksi.)
 
 On suositeltavaa määrittää erätyöt käyttämään suunnitelmia toistuvasti, jotta päivämäärät ovat kaikkien käyttäjien käytettävissä ajoissa. Jos esimerkiksi erätyö on määritetty suorittamaan dynaaminen suunnitelma 30 minuutin välein, vahvistettu lähetys- ja vastaanottopäivä määritetään 30 minuutin välein. Tämän vuoksi tilausten syöttävien ja tuovien käyttäjien on odotettava enintään 30 minuuttia saadakseen vahvistetut lähetys- ja vastaanottopäivät.
 
@@ -98,17 +99,17 @@ Kun haluat määrittää erätyön suorittamaan dynaamisen suunnitelman säänn�
 1. Valitse **OK** tallentaaksesi aikataulun.
 1. Valitse **OK** luodaksesi erätyön. Sulje valintaikkuna.
 
-## <a name="use-ctp-for-built-in-master-planning"></a>Käytä saatavuutta sisäiselle pääsuunnittelumoduulille
+## <a name="use-ctp-for-the-deprecated-master-planning-engine"></a>Saatavuuden käyttäminen vanhentuneelle pääsuunnittelumoduulille
 
-### <a name="create-a-new-order-by-using-ctp-for-built-in-master-planning"></a>Uuden tilauksen luominen käyttämällä saatavuutta sisäiselle pääsuunnittelumoduulille
+### <a name="create-a-new-order-by-using-ctp-for-the-deprecated-master-planning-engine"></a>Uuden tilauksen luominen käyttämällä saatavuutta vanhentuneelle pääsuunnittelumoduulille
 
 Järjestelmä määrittää uuden myyntitilauksen tai tilausrivin lisäämisen yhteydessä oletustoimituspäivämäärän tarkistusmenetelmän. Tilauksen otsikko alkaa aina käyttäen yleistä oletusmenetelmää. Jos tilatulle nimikkeelle määritetään ohitus, uusi tilausrivi käyttää kyseistä ohitusta. Muussa tapauksessa uusi tilausrivi käyttää myös yleistä oletusmenetelmää. Siksi määritä oletusmenetelmät niin, että ne vastaavat toimituspäivän tarkistusmenetelmää, jota käytät useimmiten. Tilauksen luomisen jälkeen voit ohittaa oletusmenetelmän tilauksen otsikossa ja/tai tilausrivin tasolla tarpeen mukaan. Lisätietoja on kohdassa [Aseta oletustoimituspäivämäärän tarkistusmenetelmät](#default-methods) ja [Muuta aiemmin luodut myyntitilaukset käyttämään saatavuutta (CTP)](#change-orders).
 
-### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-built-in-master-planning"></a>Vahvistetut päivämäärät voidaan näyttää, kun käytät saatavuutta sisäiselle pääsuunnittelumoduulille
+### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-the-deprecated-master-planning-engine"></a>Vahvistettujen päivämäärien tarkasteleminen, kun käytät saatavuutta vanhentuneelle pääsuunnittelumoduulille
 
-Jos käytössä on sisäinen pääsuunnittelumoduuli, saatavuuslaskentoja käytetään tilauksiin ja/tai tilausriveihin, joissa **Toimituspäivän tarkistus**- kentän arvoksi on määritetty *Saatavuus (CTP)*.
+Jos käytät vanhentunutta pääsuunnittelumoduulia, saatavuuslaskentoja käytetään tilauksiin ja/tai tilausriveihin, joissa **Toimituspäivän tarkistus**- kentän arvoksi on määritetty *Saatavuus (CTP)*.
 
-Jos myyntirivit käyttävät saatavuutta sisäiselle pääsuunnittelumoduulille, järjestelmä määrittää automaattisesti **Vahvistettu lähetyspäivämäärä**- ja **Vahvistettu vastaanottopäivämäärä**-kentät aina, kun myyntirivi tallennetaan. Jos myöhemmin teet asianmukaisen muutoksen myyntiriviin (esimerkiksi muuttamalla myyntirivin määrää tai toimipaikkaa), päivämäärät lasketaan heti uudelleen.
+Jos myyntirivit käyttävät saatavuutta vanhentuneelle pääsuunnittelumoduulille, järjestelmä määrittää automaattisesti **Vahvistettu lähetyspäivämäärä**- ja **Vahvistettu vastaanottopäivämäärä** -kentät aina, kun myyntirivi tallennetaan. Jos myöhemmin teet asianmukaisen muutoksen myyntiriviin (esimerkiksi muuttamalla myyntirivin määrää tai toimipaikkaa), päivämäärät lasketaan heti uudelleen.
 
 - Voit tarkastella myyntitilausrivin vahvistettuja toimituspäiviä avaamalla myyntitilauksen ja valitsemalla myyntirivin. Sitten tarkista **Toimitus**-välilehden **Rivin tiedot** -pikavälilehdessä **Vahvistettu lähetyspäivämäärä**- ja **Vahvistettu lähetyspäivämäärä** -kenttien arvot.
 - Voit tarkastella koko tilauksen vahvistettuja toimituspäiviä avaamalla myyntitilauksen ja valitsemalla **Otsikko**-näkymän. Sitten tarkista **Toimitus**-välilehdessä **Vahvistettu lähetyspäivämäärä**- ja **Vahvistettu lähetyspäivämäärä** -kenttien arvot.
@@ -155,8 +156,8 @@ Jos haluat muuttaa tilausta niin, että se käyttää saatavuutta tilauksen otsi
 1. Valitse **Otsikko** avataksesi otsikon tiedot **Myyntitilauksen tiedot** -sivulla.
 1. Määritä **Toimitus**-pikavälilehden **Toimituspäivän tarkistus** -kentän arvoksi jokin seuraavista arvoista käyttämäsi suunnittelumoduulin mukaan:
 
-    - *Saatavuus (CTP)* – Käytä sisäisen pääsuunnittelumoduulin toimittamaa saatavuuslaskelmaa. Jos käytät suunnittelun optimointia, *saatavuuden (CTP)* toimituspäivämäärän tarkistusmenetelmä ei ole sallittu. Siksi jos valitset tämän arvon, laskennan suorituksessa tapahtuu virhe.
-    - *Saatavuus (CTP) suunnittelun optimointia varten* – Käytä suunnittelun optimoinnin mahdollistamia saatavuuslaskelmia. Tällä asetuksella ei ole vaikutusta, jos käytössä on sisäinen pääsuunnittelumoduuli.
+    - *Saatavuus (CTP)* – Käytä vanhentuneen pääsuunnittelumoduulin toimittamaa saatavuuslaskelmaa. Jos käytät suunnittelun optimointia, *saatavuuden (CTP)* toimituspäivämäärän tarkistusmenetelmä ei ole sallittu. Siksi jos valitset tämän arvon, laskennan suorituksessa tapahtuu virhe.
+    - *Saatavuus (CTP) suunnittelun optimointia varten* – Käytä suunnittelun optimoinnin mahdollistamia saatavuuslaskelmia. Tällä asetuksella ei ole vaikutusta, jos käytät vanhentunutta pääsuunnittelumoduulia.
 
 <!-- KFM: Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
 1. Ota muutokset käyttöön valitsemalla **OK**.
@@ -165,15 +166,15 @@ Jos haluat muuttaa tilausta niin, että se käyttää saatavuutta tilauksen otsi
 
 Jos olet luonut tilausrivin eri toimituspäivän tarkistusmenetelmän avulla, voit vaihtaa saatavuuteen milloin tahansa. Rivitasolla tekemäsi muutokset eivät vaikuta muihin riveihin. Yleistilauksen toimituspäivät voivat kuitenkin siirtyä eteenpäin tai taaksepäin sen mukaan, miten kukin päivitetty rivin laskenta muuttuu. <!-- KFM: Confirm this intro at next revision -->
 
-Jos haluat muuttaa tilausta niin, että se käyttää saatavuutta sisäiselle pääsuunnittelumoduulille rivitasolla, noudata seuraavia ohjeita.
+Jos haluat muuttaa tilausta niin, että se käyttää saatavuutta vanhentuneelle pääsuunnittelumoduulille rivitasolla, noudata seuraavia ohjeita.
 
 1. Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset**.
 1. Avaa määritettävä myyntitilaus tai luo uusi.
 1. Valitse **Myyntitilauksen tiedot** -sivun **Myyntitilausrivi**-pikavälilehdestä myyntitilausrivi, jonka haluat määrittää.
 1. Määritä **Rivin tiedot** -pikavälilehden **Toimitus**-välilehdessä **Toimituspäivän tarkistus** -kentän arvoksi jokin seuraavista arvoista käyttämäsi suunnittelumoduulin mukaan:
 
-    - *Saatavuus (CTP)* – Käytä sisäisen pääsuunnittelumoduulin toimittamaa saatavuuslaskelmaa. Jos käytät suunnittelun optimointia, *saatavuuden (CTP)* toimituspäivämäärän tarkistusmenetelmä ei ole sallittu. Siksi jos valitset tämän arvon, laskennan suorituksessa tapahtuu virhe.
-    - *Saatavuus (CTP) suunnittelun optimointia varten* – Käytä suunnittelun optimoinnin mahdollistamia saatavuuslaskelmia. Tällä asetuksella ei ole vaikutusta, jos käytössä on sisäinen pääsuunnittelumoduuli.
+    - *Saatavuus (CTP)* – Käytä vanhentuneen pääsuunnittelumoduulin toimittamaa saatavuuslaskelmaa. Jos käytät suunnittelun optimointia, *saatavuuden (CTP)* toimituspäivämäärän tarkistusmenetelmä ei ole sallittu. Siksi jos valitset tämän arvon, laskennan suorituksessa tapahtuu virhe.
+    - *Saatavuus (CTP) suunnittelun optimointia varten* – Käytä suunnittelun optimoinnin mahdollistamia saatavuuslaskelmia. Tällä asetuksella ei ole vaikutusta, jos käytät vanhentunutta pääsuunnittelumoduulia.
 
     Näyttöön tulee **Käytettävissä olevat lähetys- ja vastaanottopäivämäärät** -valintaikkuna, jossa näkyvät käytettävissä olevat lähetys- ja vastaanottopäivät. Tämä valintaikkuna toimii samalla tavalla tilausriveillä kuin tilausotsikossa, kuten edellisessä osassa on kuvattu.
 

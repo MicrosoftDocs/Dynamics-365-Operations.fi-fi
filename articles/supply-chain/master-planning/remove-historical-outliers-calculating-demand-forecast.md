@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99ce8a5bb633cbe8f019299f15650e3ccd5f4314
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d4e42e566cef774c1a25cf48ec131b74924868d0
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469025"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741091"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta
 
@@ -41,9 +41,8 @@ Voit parantaa ennusteen tarkkuuta jättämällä poikkeavat arvot pois. Tämä t
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
-
-[Ennusteen tarkkuuden seuranta](monitor-forecast-accuracy.md)
+- [Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
+- [Ennusteen tarkkuuden seuranta](monitor-forecast-accuracy.md)
 
 
 
