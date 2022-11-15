@@ -2,7 +2,7 @@
 title: Monikanavamaksujen yleiskatsaus
 description: Tässä artikkelissa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commercessa.
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5cc0725b383ca6657bd19b9dd25b0c60b364467
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881706"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746122"
 ---
 # <a name="omni-channel-payments-overview"></a>Monikanavamaksujen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tässä artikkelissa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commercessa. Se sisältää kattavan luettelon tuetuista skenaarioista, tietoja toiminnoista, asetuksista ja vianmäärityksestä sekä joidenkin tavallisten ongelmien kuvauksia.
 
@@ -169,9 +170,9 @@ Noudata seuraavia vaiheita, jos haluat suorittaa skenaarion:
 6. Kirjoita hakupalkkiin **Seattle** ja valitse sitten noutopaikaksi **Seattle**-myymälä. 
 7. Valitse **OK**, jos haluat hyväksyä kuluvan päivän noutopäiväksi.
 9. Valitse **Maksa kortilla** jos haluat aloittaa maksun.
-10. Tarjoa korttimaksu määrästä, joka on maksettava talletuksesta. 
+10. Tarjoa korttimaksu määrästä, joka on maksettava talletuksesta.
 11. Suorita talletusmaksu maksupäätteessä. 
-12. Kun talletus on maksettu, valitse mahdollisuus käyttää samaa korttia toteumaa varten ja odota, kunnes tilaus on tehty. 
+12. Kun talletus on maksettu, valitse mahdollisuus käyttää samaa korttia toteumaa varten ja odota, kunnes tilaus on tehty. Jos talletuksesta maksetaan 100 % (vaihe 10 yllä), varat veloitetaan välittömästi kortilta eikä laskutuksessa ole käytettävissä varmennussanaketta, koska varat on jo veloitettu ja kirjattu maksetuiksi.
 13. Aloita myyntipiste Seattle Storessa.
 14. Valitse myyntipisteen aloitussivulla **Noudettavat tilaukset** -toiminto, jotta voit tarkastella myymälän noudettavia tilauksia. 
 15. Valitse yksi tai useita rivejä viitteenä luodusta tilauksesta ja valitse **Nouda**.
@@ -198,7 +199,7 @@ Noudata seuraavia vaiheita, jos haluat suorittaa skenaarion:
 8. Valitse **Maksa kortilla** jos haluat aloittaa maksun.
 9. Tarjoa korttimaksu määrästä, joka on maksettava talletuksesta. 
 10. Suorita talletusmaksu maksupäätteessä. 
-11. Kun talletus on maksettu, valitse mahdollisuus käyttää samaa korttia toteumaa varten ja odota, kunnes tilaus on tehty.
+11. Kun talletus on maksettu, valitse mahdollisuus käyttää samaa korttia toteumaa varten ja odota, kunnes tilaus on tehty. Jos talletuksesta maksetaan 100 % (vaihe 9 yllä), varat veloitetaan välittömästi kortilta eikä laskutuksessa ole käytettävissä varmennussanaketta, koska varat on jo veloitettu ja kirjattu maksetuiksi.
 
 Kun tilaus kerätään, pakataan ja laskutetaan taustajärjestelmässä, myyntipisteessä olevia maksutietoja käytetään, kun ne keräävät asiakkaalle toimitettavien tuotteiden varat. 
 
@@ -225,7 +226,7 @@ Tilauksen noutoa varten myymälässä olevalla asiakkaalla on mahdollisuus käyt
 
 ### <a name="invalid-authorizations"></a>Virheelliset valtuutukset
 
-Jos tilauksen luonnissa käytetty kortti ei ole enää voimassa, kun tuotteet valitaan noutoa varten, suorituksen sieppauspyyntö epäonnistuu. Myyntipistemaksuyhteys yrittää luoda uuden valtuutuksen ja siepata käyttämällä samoja korttitietoja. Jos uusi valtuutus tai sieppaus epäonnistuu, kassanhoitaja saa tiedon siitä, että maksuja ei voitu käsitellä. Kassan on tällöin saatava asiakkaalta uusi maksuerä. 
+Jos tilauksen luonnissa käytetty kortti ei ole enää voimassa, kun tuotteet valitaan noutoa varten, suorituksen sieppauspyyntö epäonnistuu. Myyntipistemaksuyhteys yrittää luoda uuden valtuutuksen ja siepata käyttämällä samoja korttitietoja. Jos uusi valtuutus tai veloitus epäonnistuu, kassanhoitaja saa tiedon siitä, että maksuja ei voitu käsitellä. Kassan on tällöin saatava asiakkaalta uusi maksuerä. 
 
 ### <a name="multiple-available-payments"></a>Useita käytettävissä olevia maksuja
 

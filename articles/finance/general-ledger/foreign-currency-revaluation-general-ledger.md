@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904525"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752800"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Kirjanpidon ulkomaanvaluutan uudelleenarvostus
 
@@ -64,7 +64,9 @@ Uudelleenarvostusprosessi voidaan suorittaa vähintään yhdelle oikeushenkilöl
 
 Uudelleenarvostus voidaan tehdä yhden tai useiden valuuttojen suhteen. Hakuun sisällytetään kaikki valuutat, jotka on kirjattu päivämäärävälillä ja jotka koskevat päätiliä (tase- tai tulostili) ja uudelleenarvostettaviksi valittuja oikeushenkilöitä. Luetteloon sisältyy kirjanpitovaluutta, mutta mitään ei uudelleenarvosteta, jos kirjanpitovaluutta on valittuna. 
 
-Määritä **Esikatsele ennen kirjausta** arvoksi **Kyllä**, jos haluat tarkastella kirjanpidon uudelleenarvostuksen tulosta. Kirjanpidon esikatselu eroaa ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostuksen simuloinnista. Ostoreskontran ja myyntireskontran simulointi on raportti, mutta kirjanpidon esikatselu voidaan kirjata suorittamatta uudelleenarvostusprosessia uudelleen. Esikatselun tulokset voidaan viedä Microsoft Exceliin säilyttämään historiatiedot määrien laskemisesta. Et voi käyttää eräkäsittelyä, jos haluat esikatsella uudelleenarvostuksen tuloksia. Esikatselussa käyttäjä voi kirjata kaikkien oikeushenkilöiden tulokset **Kirjaa** -painikkeella. Jos yhden oikeushenkilön tuloksissa on ongelma, käyttäjällä voi kirjata oikeushenkilöiden osajoukon **Valitse kirjattavat yritykset** -painikkeella. 
+Määritä **Esikatsele ennen kirjausta** arvoksi **Kyllä**, jos haluat tarkastella kirjanpidon uudelleenarvostuksen tulosta. Kirjanpidon esikatselu eroaa ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostuksen simuloinnista. Ostoreskontran ja myyntireskontran simulointi on raportti, mutta kirjanpidon esikatselu voidaan kirjata suorittamatta uudelleenarvostusprosessia uudelleen. Esikatselun tulokset voidaan viedä Microsoft Exceliin säilyttämään historiatiedot määrien laskemisesta. Et voi käyttää eräkäsittelyä, jos haluat esikatsella uudelleenarvostuksen tuloksia. Esikatselussa käyttäjä voi kirjata kaikkien oikeushenkilöiden tulokset **Kirjaa** -painikkeella. Jos yhden oikeushenkilön tuloksissa on ongelma, käyttäjällä voi kirjata oikeushenkilöiden osajoukon **Valitse kirjattavat yritykset** -painikkeella.
+
+Jos haluat jättää arviointiprosessista pois oikaisut, jotka kirjattiin käyttämällä **raportointivaluutan muutosten kirjauskansiota**, määritä **Sulje pois raportointivaluutan muutokset** -asetukseksi **Kyllä**. Raportointivaluutan muutokset sisällytetään uudelleenarviointiin oletusarvoisesti. 
 
 Kun ulkomaanvaluutan uudelleenarvostusprosessi on valmis, luodaan tietue jolla jäljitetään jokaisen ajon historia.  Kullekin juridiselle henkilölle ja kirjanpitotasolle luodaan erillinen tietue.
 

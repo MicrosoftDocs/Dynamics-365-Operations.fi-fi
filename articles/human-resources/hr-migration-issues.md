@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28c2c10a9293d00e26dfcc80ab08b89a122a6135
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733453"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752687"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Dynamics 365 Human Resources -infrastruktuurin yhdistämisen tunnetut ongelmat
 
@@ -44,10 +44,3 @@ Tarvitset seuraavat ympäristötyypit ennen kuin voit suorittaa siirron:
 
 Teamsin nykyistä Human Resoures -sovellusta siirretään tällä hetkellä Microsoft Power Platform -ratkaisuun. Lisätietoja on kohdassa [Human Resources -sovellus Teamsissa](hr-admin-teams-leave-app.md).
 
-## <a name="licensing"></a>Käyttöoikeudet
-
-Dynamics 365 Human Resources -lisensseihin ei tehdä muutoksia seuraavien osa-alueiden osalta: 
-
-- **Ostettujen lisenssien vaadittu vähimmäismäärä**
-- **Tuotantoympäristön ja eristysympäristön käyttöoikeudet** – Jos sinulla on itsenäisiä Human Resources -lisenssejä, jotka sisältävät yhden tuotantoympäristön ja yhden eristysympäristön, talous- ja toimintosovellusinfrastruktuurissa on saatavilla sama määrä lisenssejä.
-- **Eristysympäristöjen lisälisenssit** – Jos olet ostanut eristysympäristöjen lisälisenssejä erilliselle Human Resources -sovellukselle, eristysympäristöille on saatavilla sama määrä lisenssejä talous- ja toimintosovellusinfrastruktuurissa. 

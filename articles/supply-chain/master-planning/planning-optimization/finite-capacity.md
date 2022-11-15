@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689690"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740083"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Rajallisen kapasiteetin suunnittelu ja ajoitus
 
@@ -28,9 +28,8 @@ Rajallinen kapasiteetti -ominaisuuden avulla saat lisätietoja siitä, miten pal
 
 Rajallisen kapasiteetin suunnittelu ja ajoitus luo tuotantoprosesseille realistisemman aikataulun kuin ääretön latausmenetelmä. Jos resursseilla ei ole tarpeeksi kapasiteettia, toimituspäivämäärää siirretään kauemmaksi tulevaisuuteen ja työ ajoitetaan tehtäväksi sitten, kun kapasiteettia on riittävästi.
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>Suunnittelun optimoinnin tuki rajallisen kapasiteetin suunnittelua varten
-
-Rajallisen kapasiteetin suunnittelu ja ajoitus toimii lähes samalla tavalla riippumatta siitä, käytetäänkö suunnittelun optimointia vai sisäistä pääsuunnittelun moduulia. Suunnittelun optimointi ei kuitenkaan käytä **pullonkaula-aikarajan** parametria. Kun käytät suunnittelu optimointia, pullonkaularesurssit ajoitetaan aina käyttämällä samaa aikarajaa kuin muissa kuin pullonkaularesursseissa (rajallisen kapasiteetin aikarajan osoittamalla tavalla).
+> [!NOTE]
+> Rajallisen kapasiteetin suunnittelu ja ajoitus toimii lähes samalla tavalla riippumatta siitä, käytätkö suunnittelun optimointia vai vanhentunutta pääsuunnittelumoduulia. Suunnittelun optimointi ei kuitenkaan käytä **pullonkaula-aikarajan** parametria. Kun käytät suunnittelu optimointia, pullonkaularesurssit ajoitetaan aina käyttämällä samaa aikarajaa kuin muissa kuin pullonkaularesursseissa (rajallisen kapasiteetin aikarajan osoittamalla tavalla).
 
 ## <a name="set-up-finite-capacity-functionality"></a>Rajallisen kapasiteetin toimintojen määrittäminen
 

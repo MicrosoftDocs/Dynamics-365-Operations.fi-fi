@@ -2,7 +2,7 @@
 title: Tuotannon käyttöliittymän määrittäminen
 description: Tässä artikkelissa käsitellään tuotannon käyttöliittymämääritysten luontia. Kun tuotannon käyttöliittymä avataan, se lataa automaattisesti selain- ja laitekohtaisen valitun määrityksen ja työsuodattimen. Määrityksessä määritetään käytännöt, joita on käytettävä tietyssä käyttötilanteessa.
 author: johanhoffmann
-ms.date: 08/05/2022
+ms.date: 11/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
-ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
+ms.openlocfilehash: 641b293617df608bc07b97c077dbcd05664f8e2a
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9708722"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748683"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -85,17 +85,19 @@ Tämä ominaisuus tarjoaa paremman käyttökokemuksen sarja-, erä- ja lisenssin
 
 Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytössä on vanhempi versio kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Näytä täydet sarja-, erä- ja rekisterinumerot tuotannon käyttöliittymässä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-
 Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Näytä täydet sarja-, erä- ja rekisterinumerot tuotannon käyttöliittymässä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ### <a name="register-material-consumption"></a>Rekisteröi materiaalikulutus
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon työnohjausliittymää materiaalin kulutuksen, eränumeroiden ja sarjanumeroiden rekisteröimiseen. Joillekin valmistajille, erityisesti prosessiteollisuusalojen valmistajille, on nimenomaisesti rekisteröitävä kussakin erässä tai tuotantotilauksissa kulutettu materiaalimäärä. Työntekijät voivat esimerkiksi käyttää vaakaa punnitsemaan työssään kulutetun materiaalin määrän. Organisaatioiden on myös kirjattava kunkin tuotteen valmistamisen eränumerot varmistaakseen materiaalien jäljitettävyyden.
 
 Tästä ominaisuudesta on kaksi versiota. Yksi toiminto tukee vain nimikkeitä, joissa *ei ole* otettu käyttöön varastonhallintaprosesseja (WMS). Toinen tukee nimikkeitä, jotka *on* otettu käyttöön käyttämään WMS:ää. Voit käyttää tätä toimintoa ottamalla käyttöön seuraavat ominaisuudet [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (tässä järjestyksessä) yhdellä tai molemmilla toiminnoilla sen mukaan, onko käytössä WMS-nimikkeitä:
 
 - *Rekisteröi materiaalinkulutus tuotannon käyttöliittymässä (muu kuin WMS)*
-- *Rekisteröi materiaalikulutus tuotannon käyttöliittymässä (käytössä WMS:ssä)*
+- *(Esiversio) Rekisteröi materiaalikulutus tuotannon käyttöliittymässä (käytössä WMS:ssä)*
 
 > [!IMPORTANT]
 > Voit käyttää ei-WMS-toimintoa erikseen. Jos kuitenkin käytät WMS:ää, molemmat toiminnot on otettava käyttöön.
@@ -138,6 +140,25 @@ Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttö
 
 - *Lisämääritys tuotannon käyttöliittymässä*
 
+### <a name="enable-the-my-jobs-tab"></a>Omat työt -välilehden ottaminen käyttöön
+
+**Omat työt** -välilehden avulla työntekijät voivat helposti tarkastella kaikkia heille määritettyjä keskeneräisiä töitä. Tämä ominaisuus on hyödyllinen yrityksille, jotka joskus tai aina määrittävät työt tietyille työntekijöille (henkilöstöresursseille) muiden resurssityyppien (kuten koneiden) sijaan.
+
+Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Omat työt -välilehti tuotannon käyttöliittymässä*
+
+### <a name="enable-use-of-a-numpad-on-the-sign-in-page"></a>Numeronäppäimistön ottaminen käyttöön kirjautumissivulla
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Tämä ominaisuus sallii järjestelmänvalvojien lisätä tuotannon käyttöliittymän kirjautumissivulle numeronäppäimistön ohjausobjektin. Näin työntekijät voivat kirjautua sisään syöttämällä kulkukorttitunnuksensa tai henkilökohtaisen numeronsa numeronäppäimistöllä.
+
+Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Ota numeronäppäimistö käyttöön kirjautumissivulla*
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Tuotannon käyttöliittymämääritysten käyttäminen
 
 Voit luoda ja ylläpitää tuotannon toteutuksen määrityksiä valitsemalla **Tuotannonhallinta \> Määritys \> Tuotannonohjaus \> Määritä tuotantoliittymä**. **Määritä tuotantoliittymä** -sivulla on luettelo aiemmin luoduista määrityksistä. Tällä sivulla voi tehdä seuraavia toimenpiteitä:
@@ -161,6 +182,7 @@ Määritä seuraavaksi valitun konfiguraation eri asetukset seuraavissa aliosiss
 - **Lukitse työntekijä** – Jos asetuksena on *Ei*, työntekijät kirjautuvat ulos heti, kun he tekevät rekisteröinnin (kuten uuden työn): Käyttöliittymä palaa sitten kirjautumissivulle. Kun asetuksena on *Kyllä*, työntekijät pysyvät kirjautuneena tuotannon käyttöliittymään. Työntekijä voi kuitenkin kirjautua ulos manuaalisesti, jolloin toinen työntekijä voi kirjautua sisään, jolloin tuotannon käyttöliittymää käytetään edelleen samalla järjestelmäkäyttäjätilillä. Lisätietoja tämän tyyppisistä tileistä on kohdassa [Määritetyt käyttäjät](config-job-card-device.md#assigned-users).
 - **Käytä todellista kirjaamisaikaa** – Jos asetuksen on *Kyllä*, kukin uusi kirjaus vastaa tarkkaa aikaa, jolloin työntekijä on lähettänyt rekisteröitymisen. Jos asetuksena on *Ei*, käytössä on kirjautumisaika. Yleensä tämä asetus on *Kyllä*, jos **Lukitse työntekijä**- ja/tai **Yksittäinen työntekijä** -asetuksena on *Kyllä* tilanteissa, joissa työntekijät pysyvät usein kirjautuneina pitkiä aikoja.
 - **Yksittäinen työntekijä** – Asetuksena voi olla *Kyllä*, jos vain yksi työntekijä käyttää kutakin tuotannon käyttöliittymää, jossa tämä määritys on aktiivinen. Kun asetuksena on *Kyllä*, **Lukitse työntekijä** -asetuksen on automaattisesti *Kyllä*. Lisäksi tämä asetus poistaa edellytyksen (ja mahdollisuuden), jonka mukaan työntekijä kirjautuu sisään käyttämällä nimilapun tunnusta (tai vastaavaa tunnusta). Työntekijä kirjautuu sen sijaan Microsoft Dynamics 365 Supply Chain Managementiin käyttämällä järjestelmän käyttäjätiliä, joka on linkitetty *aikarekisteröityyn työntekijään* (*työntekijät*-taulukosta). Samanaikaisesti kirjaudutaan myös tuotannon käyttöliittymään.
+- **Ota numeronäppäimistö käyttöön** – Valitse *Kyllä* lisätäksesi kirjautumisnäyttöön numeronäppäimistön, jotta työntekijät voivat syöttää kulkukorttitunnuksensa tai henkilökohtaisen numeronsa kosketusnäytön numeronäppäimistön avulla. Valitse asetukseksi *Ei* piilottaaksesi numeronäppäimistön.
 - **Salli kosketusnäytön lukitseminen** – Jos asetuksena on *Kyllä*, työntekijät voivat lukita työkorttilaitteen tuotannon käyttöliittymän, jotta he voivat puhdistaa sen. Jos asetuksena on *Kyllä*, kirjautumissivulla on **Lukitse näyttö puhdistusta varten** -painike. Kun työntekijä valitsee tämän painikkeen, kosketusnäyttö lukittuu tilapäisesti tahattoman syötön estämiseksi. Näkyvissä on myös ajastin. Työntekijä voi sitten puhdistaa laitteen ja näytön turvallisesti. Kun ajastimen aika päättyy, kosketusnäyttö avautuu automaattisesti.
 - **Näytön lukituksen kesto** – Jos **Salli kosketusnäytön lukitus** -asetuksena on *Kyllä*, tällä asetuksella voi määrittää, kuinka monta sekuntia kosketusnäyttö on lukittu puhdistusta varten. Keston on oltava 5 – 120 sekunnin välillä.
 - **Luo rekisterikilpi** – Jos asetuksena on *Kyllä*, voit luoda uuden rekisterikilven aina, kun työntekijä ilmoittaa tuotannon käyttöliittymässä olevansa valmis. Rekisterikilpinumero muodostetaan **Varastonhallinnan parametrit** -sivulla määritetystä numerosarjasta. Kun asetus on *Ei*, työntekijöiden on määritettävä aiemmin määritetty rekisterikilpi, kun he ilmoittavat työn valmistumisesta.

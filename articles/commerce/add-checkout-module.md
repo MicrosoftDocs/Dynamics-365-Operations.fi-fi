@@ -2,7 +2,7 @@
 title: Kassamoduuli
 description: Tässä artikkelissa kuvataan, miten kassamoduuli lisätään sivulle ja miten pakolliset ominaisuudet määritetään.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280471"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746222"
 ---
 # <a name="checkout-module"></a>Kassamoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä artikkelissa kuvataan, miten kassamoduuli lisätään sivulle ja miten pakolliset ominaisuudet määritetään.
 
@@ -104,6 +105,8 @@ Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisu
 1. Valitse **Lopeta muokkaus** tallentaaksesi osan ja valitse sitten **Julkaise** julkaistaksesi sen.
 1. Luo malli, joka käyttää uutta kassaosaa.
 1. Luo kassasivu, joka käyttää uutta mallia.
+
+> [HUOMAUTUS] Kun käytät yhtä maksun vahvistusta [Parannettu maksutoiminnallisuus verkkokaupan kassalla](./dev-itpro/enhanced-sca.md) -artikkelissa kuvatulla tavalla, varmista  **Kassan tiedot** -osiosta, että kassaosan säilö on sijoitettu viimeiseksi. Näin varmistetaan, että kassasivu kerää kaikki tarvittavat tiedot ennen maksun lopullista vahvistusta ja tilauksen viimeistelytoimintoja. 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
