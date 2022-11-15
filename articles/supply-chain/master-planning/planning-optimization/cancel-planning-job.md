@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0474c50157295d9ecd2341b700c07f4fbf1ed51f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5f1f2c8e3e43e36d837ebf989422b0dca7819d6
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900938"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741173"
 ---
 # <a name="cancel-a-planning-job"></a>Suunnittelutyön peruuttaminen
 
@@ -29,8 +29,7 @@ ms.locfileid: "8900938"
 
 Microsoft Dynamics 365 Supply Chain Managementissa voi peruuttaa suunnittelun optimointitoimintoa käyttävän aktiivisen suunnittelutyön. Kun valitset **Peruuta** valintaikkunassa, kun suunnittelun optimointityö käynnistetään suoraan käyttöliittymästä (eli sitä ei ajeta taustalla), tämä ei peruuta suunnittelun optimointityötä. Vaikka saat varoituksen, kuten Toiminto peruutettu, sinun on silti peruutettava suunnittelutyö suunnittelun optimoinnin avulla seuraavasti.
 
-
-Aktiivinen suunnittelutyö peruutetaan seuraavien ohjeiden mukaan. 
+Aktiivinen suunnittelutyö peruutetaan seuraavien ohjeiden mukaan.
 
 > [!NOTE]
 > Vain aktiiviset työt voidaan peruuttaa.
@@ -45,18 +44,6 @@ Työn tila on **Peruutetaan**, kunnes suunnittelun optimointipalvelu vahvistaa, 
 
 > [!NOTE]
 > Tilan muutokset tulevat näkyviin, kun sivu päivitetään **Päivitä**-painikkeella.
-
-## <a name="additional-resources"></a>Lisäresurssit
-
-[Suunnittelun optimoinnin yleiskuvaus](planning-optimization-overview.md)
-
-[Suunnittelun optimoinnin aloittaminen](get-started.md)
-
-[Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
-
-[Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
-
-[Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
