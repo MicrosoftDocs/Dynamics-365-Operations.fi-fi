@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 43da249637c44b3f56e8b5e210a0e44d9ac6cb9d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335252"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740546"
 ---
 # <a name="production-planning"></a>Tuotannon suunnittelu
 
 [!include [banner](../../includes/banner.md)]
-
-Suunnittelun optimointi tukee useita tuotantoskenaarioita. Jos siirtyminen tapahtuu nykyisestä sisäisestä pääsuunnittelumoduulista, on tärkeää ottaa huomioon tietyt toiminnasta tapahtuneet muutokset.
 
 Seuraavassa videossa esitetään lyhyt johdanto joihinkin tässä artikkelissa käsiteltyihin käsitteisiin: [Dynamics 365 Supply Chain Management: Suunnitteluoptimoinnin parannukset](https://youtu.be/u1pcmZuZBTw).
 
@@ -46,10 +44,6 @@ Suunnitellut tuotantotilaukset sisältävä reititystunnuksen, jota tarvitaan tu
 
 - **Suunniteltu tuotantotilaus** – läpimenoaika perustuu vapautetun tuotteen staattiseen läpimenoaikaan.
 - **Vahvistettu tuotantotilaus** – läpimenoaika perustuu reititystietoja ja liittyviä resurssirajoituksia käyttävään aikataulutukseen.
-
-Lisätietoja toiminnon odotetusta saatavuudesta on kohdassa [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md).
-
-Jos tarvitset sellaista tuotannon toimintoa, joka ei ole vielä saatavana tuotannon optimoinnissa, voit jatkaa sisäisen pääsuunnittelumoduulin käyttöä. Mitään poikkeusta ei tarvita.
 
 ## <a name="delays"></a>Viiveet
 
@@ -76,15 +70,15 @@ Jos suunnitellut tuotantotilaukset sisältyvät suoritettavaan pääsuunnitteluu
 
 ## <a name="filters"></a><a name="filters"></a>Suodattimet
 
-Jotta suunnittelun optimoinnilla on varmasti kaikki tiedot, joita tarvitaan oikean tuloksen laskemiseen, siihen on sisällyttävä kaikki tuotteet, jotka liittyvät jollain tavoin koko suunnitellun tilauksen tuoterakenteeseen. Tuotannon sisältävissä suunnitteluskenaarioissa ei siksi kannata käyttää suodatettuja pääsuunnitteluajoja,
+Jotta pääsuunnittelulla on varmasti kaikki tiedot, joita tarvitaan oikean tuloksen laskemiseen, siihen on sisällyttävä kaikki tuotteet, jotka liittyvät jollain tavoin koko suunnitellun tilauksen tuoterakenteeseen. Tuotannon sisältävissä suunnitteluskenaarioissa ei siksi kannata käyttää suodatettuja pääsuunnitteluajoja,
 
-Vaikka riippuvaiset alikohteet havaitaan automaattisesti ja sisällytetään pääsuunnitteluajoihin sisäistä pääsuunnittelumoduulia käytettäessä, niin ei tapahdu tällä hetkellä suunnittelun optimoinnissa.
+Vaikka riippuvaiset alikohteet havaitaan automaattisesti ja sisällytetään pääsuunnitteluajoihin vanhentunutta pääsuunnittelumoduulia käytettäessä, niin ei tapahdu tällä hetkellä suunnittelun optimoinnissa.
 
 Jos esimerkiksi yhtä tuotteen A tuoterakenteen pulttia käytetään myös tuotteen B tuottamiseen, kaikkien tuotteiden A ja B tuoterakenteiden tuotteiden on sisällyttävä suodattimeen. Koska voi olla monimutkaista varmistaa, että kaikki tuotteet sisältyvät suodattimeen, suodatettuja pääsuunnitteluajoja kannattaa välttää, jos kyse on tuotantotilauksesta. Muutoin pääsuunnittelusta saadaan ei-toivottuja tuloksia.
 
 ### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Syyt, joiden vuoksi ei suositella suodattamaan pääsuunnittelun ajoja
 
-Kun suoritat tuotteelle suodatetun pääsuunnittelun, suunnittelun optimointi (toisin kuin sisäänrakennettu pääsuunnittelumoduuli) ei havaitse kaikkia tuotteen tuoterakenteen osatuotteita ja raaka-aineita eikä siksi sisällytä niitä pääsuunnitteluajoon. Vaikka suunnittelun optimointi tunnistaa tuotteen tuoterakenteen ensimmäisen tason, se ei lataa tietokannasta mitään tuoteasetuksia (kuten oletustilaustyyppiä tai nimikkeen kattavuutta).
+Kun suoritat tuotteelle suodatetun pääsuunnittelun, suunnittelun optimointi (toisin kuin vanhentunut pääsuunnittelumoduuli) ei havaitse kaikkia tuotteen tuoterakenteen osatuotteita ja raaka-aineita eikä siksi sisällytä niitä pääsuunnitteluajoon. Vaikka suunnittelun optimointi tunnistaa tuotteen tuoterakenteen ensimmäisen tason, se ei lataa tietokannasta mitään tuoteasetuksia (kuten oletustilaustyyppiä tai nimikkeen kattavuutta).
 
 Suunnittelun optimoinnissa suorituksen tiedot ladataan etukäteen ja suodattimia käytetään. Jos tiettyyn tuotteeseen sisältyvä osatuote tai raaka-aine ei kuulu suodattimeen, sitä koskevia tietoja ei siepata ajoa varten. Jos lisäksi osatuote tai raaka-aine sisältyy myös toiseen tuotteeseen, suodatettu suoritus, joka sisältää vain alkuperäisen tuotteen ja sen komponentit, poistaa aiemmin luodun, tälle toiselle tuotteelle luodun suunnitellun kysynnän.
 

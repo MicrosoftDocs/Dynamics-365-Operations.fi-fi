@@ -2,7 +2,7 @@
 title: Ennakoivat laatupäivitykset
 description: Tässä artikkelissa on tietoja laatupäivitysten ennakoivasta toimituksesta.
 author: rashmansur
-ms.date: 09/12/2022
+ms.date: 11/07/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
-ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
+ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
+ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "9731607"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9752295"
 ---
 # <a name="proactive-quality-updates"></a>Ennakoivat laatupäivitykset
 
@@ -25,6 +25,19 @@ ms.locfileid: "9731607"
 Microsoft on parantanut jatkuvasti [One Versionia](../../dev-itpro/lifecycle-services/oneversion-overview.md) viimeisten seitsemän vuoden aikana. One Versionin toimintaperiaate on yksinkertainen: mitä suurempi osa asiakkaista käyttää samaa ohjelmistoversiota, sitä laadukkaampaa palvelua heille voidaan tarjota. Ongelmat löytyvät ja ne ratkaistaan kerran, ja ratkaisut voidaan toimittaa useille asiakkaille nopeasti.
 
 Tulokset todistavat tämän hyväksi toimintaperiaatteeksi: tuotteissa on aiempaa vähemmän virhetapauksia. Jos asiakkailla on käytössä eri sovellusversioita, sovelluksissa esiintyy ongelmia, joihin on jo olemassa ratkaisut. Dynamics 365 Financea, Dynamics 365 Supply Chainia, Dynamics 365 Project Operationsia ja Dynamics 365 Commercea on jo parannettu. Uusien teknisten toimintojen ansiosta nyt on mahdollista ottaa seuraava askel. Alla on tietoja siitä, mitä Microsoft tulee tekemään jatkossa, mitä on jo tehty ja miten ja milloin uudet, häiriöittä toimivat ominaisuudet esitellään.
+
+## <a name="what-you-need-to-know"></a>Tarpeellisia tietoja
+
+- Ennakoivia laatupäivityksiä otetaan käyttöön joka kuukausi.
+- Microsoft ottaa ennakoivia laatupäivityksiä käyttöön kaikille eritysympäristöille, joiden käyttämä palvelupäivitys oli [käytössä](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change), kun ennakoivat laatupäivitykset luotiin.
+- Ennakoivien laatupäivitysten poikkeukset sallitaan asiakkaille, jotka ovat Yhdysvaltain elintarvike- ja lääkeviraston(FDA) säännösten alaisia.
+- Microsoft selvittää parhaillaan, miten ennakoivia laatupäivityksiä hallitaan säännellyille ympäristöille sekä maakohtaisten ja julkishallinnon pilvipalveluiden asiakkaille.
+- Ennakoiviin laatupäivityksiin liittyvät ilmoitukset julkaistaan [Microsoft 365 -viestikeskuksessa](https://admin.microsoft.com/AdminPortal/) ja näytetään asiakkaan Microsoft Dynamics Lifecycle Services -projektin bannerissa.
+- Asiakkaille ilmoitetaan ennakoivasta laatupäivityksestä viisi päivää ennen kuin se otetaan käyttöön ympäristössä.
+- Asiakkaat eivät voi peruuttaa tai lykätä ennakoivia laatupäivityksiä.
+- Ennakoivat laatupäivitykset asennetaan aluekohtaisen [suunnitellun ylläpitoajankohdan](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows) aikana.
+- Laatupäivitykset on suunniteltu siten, että niiden aiheuttama ongelmien tai regressioiden riski on pieni, ja Microsoftin tiedot tukevat tätä.
+- Microsoft suosittelee kohdistettua testausta yksittäisiin ongelmiin tai tiettyjä hotfix-korjauksia, jotka liittyvät ennakoivaan laatupäivitykseen.
 
 ## <a name="focus-on-quality-updates"></a>Laatupäivityksiin keskittyminen
 
@@ -40,7 +53,7 @@ Seuraavia laatupäivitysten ennakoivan toimittamisen mahdollistavia toimintoja o
 
 - **Päivittäminen niin, että käyttämättömyysaika on lähes nolla** – Jos haluat toimittaa päivityksiä ympäristöihin säännöllisesti, on tärkeää, että vaikutusta ympäristön käytettävyyteen pienennetään ja noudatetaan näin Dynamics 365:n palvelutasosopimuksia. Päivittäminen niin, että käyttämättömyysaika on lähes nolla, otettiin käyttöön alun perin parantamaan kuukausittaisia järjestelmäkorjauksia. Niissä käytettiin klusterin vikasietoa päivitetyn kuvan aktivoimiseksi ilman suuria häiriöitä. Päivitysten kohdistusmekanismia on parannettu niin, että se aiheuttaa vielä aiempaakin vähemmän häiriöitä ja kattaa sekä käyttöjärjestelmän korjaukset että laatupäivitysten käyttöönoton.
 
-Vuorovaikutteisten käyttäjien aktiivinen istunto saattaa keskeytyä, joten heidän on kirjauduttava uudelleen päivitettyyn ympäristöön. Uuden [prioriteettiin perustuvan erien ajoituksen](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) avulla erien ajoitus ja käsittely palautuu ja jatkaa toimintoja heti päivityksen jälkeen. Prioriteettiin perustuva erien ajoitus on asiakkaiden käytettävissä ennen kuin he ottavat osaa tuotantoympäristöjen laatupäivitysten ennakoivaan jakeluun.
+    Vuorovaikutteisten käyttäjien aktiivinen istunto saattaa keskeytyä, joten heidän on kirjauduttava uudelleen päivitettyyn ympäristöön. Uuden [prioriteettiin perustuvan erien ajoituksen](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) avulla erien ajoitus ja käsittely palautuu ja jatkaa toimintoja heti päivityksen jälkeen. Prioriteettiin perustuva erien ajoitus on asiakkaiden käytettävissä ennen kuin he ottavat osaa tuotantoympäristöjen laatupäivitysten ennakoivaan jakeluun.
 
 - **Yöaika** – Kullekin Azure-alueelle määritetään yöaika, jonka aikana tehdään päivitykset niin, että käyttämättömyysaika on lähes nolla.
 
@@ -56,9 +69,11 @@ Prosessimuutosten joukko otetaan käyttöön ennen ennakoivan laatupäivityksen 
 
 - **Rakenne** – Työkalut varmistavat, että laatupäivitysten koontiversiot sisältävät vain rakennemuutoksia, jotka voidaan ottaa käyttöön palvelun ollessa online-tilassa. Tämä menetelmä auttaa säilyttämään päivitysmahdollisuuden niin, että käyttämättömyysaika on lähes nolla.
 - **Lisääntynyt muutosten tarkastelu** – Tällä hetkellä käytössä on jo uusi prosessivaihe laatupäivityksen muutosten sisällytyksen hyväksyntää varten. Lisävaiheessa tapahtuvaa sisällytystä lisätään, jotta mahdollisten regressioiden mahdollisuutta voidaan vähentää. Laatupäivitykset eivät sisällä tärkeimpiä muutoksia. Muutosten sisällytysten lisääminen varmistaa, että tämä tavoite saavutetaan.
-- **Näkyvyys** – Ilmoitukset lähetetään hallintakeskuksen, Lifecycle Servicesin (LCS) ja muiden käytettävissä olevien kanavien kautta saapuvia ennakoivia laatupäivityksiä varten. Lisäksi tukiryhmät ja tapahtumaliidit näkevät, missä laatupäivitykset on otettu käyttöön ennakoivasti.
- > [!NOTE]
- > Microsoft Communications -tiimi tutkii meneillään olevaa sähköpostityökalun heikentymistä. Se estää sähköposti-ilmoitusten toimittamisen. Jatka Microsoft 365:n viestikeskuksen seurantaa perehdyttämistä ja ilmoituksia koskevia viestejä varten.
+- **Näkyvyys** – Tulevien ennakoivien laatupäivitysten ilmoitukset lähetetään hallintakeskuksen, Lifecycle Servicesin (LCS) ja muiden käytettävissä olevien kanavien kautta. Lisäksi tukiryhmät ja tapahtumaliidit näkevät, missä laatupäivitykset on otettu käyttöön ennakoivasti.
+
+    > [!NOTE]
+    > Microsoft Communications -tiimi tutkii meneillään olevaa sähköpostityökalun heikentymistä. Se estää sähköposti-ilmoitusten toimittamisen. Jatka Microsoft 365:n viestikeskuksen seurantaa perehdyttämistä ja ilmoituksia koskevia viestejä varten.
+
 - **Fail Safe -väliversiotestauksen avulla** – Väliversiotestausta käytetään koodimuutosten tallentamiseen laatupäivityksen ohjelmistovirheen ja korjaukseen liittyvän olemassa olevan toiminnon väliversiotestauksen aikana. Jos varmistuksen tai muutoksen poistaminen käytöstä on pakollista ennakoivan käyttöönoton jälkeen, se voidaan tehdä väliversiotestausjärjestelmän avulla muiden virheiden välttämiseksi.
 - **Eristysympäristön synkronoinnin määritys** – Alle 20 prosentilla asiakkaista on nykyään useita eristysympäristöjä. Asiakkailla on käytössä yksi eristysympäristö, jossa versio vastaa tuotantoa. Tämä helpottaa vianmääritystä. Jos asiakas käyttää eristysympäristöä tuotantoympäristön versiota uudemman version testaamisessa, eristysympäristö vastaanottaa uuden version laatupäivityksiä.
 
@@ -77,7 +92,7 @@ Tällä hetkellä laatupäivitykset koskevat vain eristysympäristöjä. Tähän
 Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut ylläpitoikkunat alueen mukaan?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
 ### <a name="proactive-quality-update-release-10028"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.28
-**Sovellusversio: 10.0.1265.89**
+**Sovellusversio: 10.0.1265.89**  
 **Vastaava uusin tietokanta-artikkeli: 745340**
 
 | Asema | Alueet | Valmis aikataulu| Tuleva eristysympäristön aikataulu
@@ -89,19 +104,31 @@ Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut yllä
 | Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu | Ei suunniteltu |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.29
-**Sovellusversio: 10.0.1326.70**
+**Sovellusversio: 10.0.1326.70**  
 **Vastaava uusin tietokanta-artikkeli: 748926**
 
 | Asema | Alueet | Valmis aikataulu | Tuleva eristysympäristön aikataulu|
 |---|---|---|---|
-| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 14.–17. lokakuuta 2022 | 2.–5. marraskuuta 2022 |
-| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 15.–18. lokakuuta 2022 | 2.–5. marraskuuta 2022 |
-| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 16.–19. lokakuuta 2022 | 2.–5. marraskuuta 2022 |
-| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 17.–20. lokakuuta 2022 | 2.–5. marraskuuta 2022 |
+| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 14.–17. lokakuuta 2022 ja 2.–5. marraskuuta 2022 | 13.–16. marraskuuta 2022 |
+| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 15.–18. lokakuuta 2022 ja 2.–5. marraskuuta 2022 | 13.–16. marraskuuta 2022 |
+| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 16.–19. lokakuuta 2022 ja 2.–5. marraskuuta 2022 | 13.–16. marraskuuta 2022 |
+| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 17.–20. lokakuuta 2022 ja 2.–5. marraskuuta 2022 | 13.–16. marraskuuta 2022 |
 | Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu | Ei suunniteltu |
 
+### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.30
+**Sovellusversio: Päätetään myöhemmin**
+**Vastaava uusin tietokanta-artikkeli: Päätetään myöhemmin**
+
+| Asema | Alueet | Tuleva eristysympäristön aikataulu |
+|---|---|---|
+| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 1.–4. joulukuuta 2022 |
+| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 2.–5. joulukuuta 2022 |
+| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Pohjois-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 3.–6. joulukuuta 2022 |
+| Asema 4 | Länsi-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 4.–7. joulukuuta 2022 |
+| Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu |
+
 > [!IMPORTANT] 
-> Microsoft päivittää edellisen aikataulun viisi päivää etukäteen ja lähettää sähköposti-ilmoitukset niille ympäristöille, jotka on ajoitettu vastaanottamaan nämä laatupäivitykset. Edellinen aikataulu koskee vain ympäristöjä, joille on ilmoitettu tulevasta päivityksestä. Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut ylläpitoikkunat alueen mukaan?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
+> Microsoft päivittää edellisen aikataulun viisi päivää etukäteen ja lähettää ilmoituksen ympäristöihin, jotka on ajoitettu vastaanottamaan nämä laatupäivitykset. Edellinen aikataulu koskee vain ympäristöjä, joille on ilmoitettu tulevasta päivityksestä. Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut ylläpitoikkunat alueen mukaan?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 >
 > Aikataulussa on neljän päivän aikavälejä jokaiselle alueryhmälle tai *asemalle*, jossa laatupäivitys on nyt ajoitettuna käyttöönottoa varten. Laatupäivitykset alkavat ensin eristysympäristöissä. Tämän jälkeen onnistuneiden eristysympäristön käyttöönottojen prosenttiosuuden noustessa aloitetaan käyttöönotot tuotantoympäristöissä. Asiakkaille lähetetään ennakkoilmoitukset.
 > 
@@ -124,13 +151,13 @@ Seuraavat vaiheet ovat tilapäinen ratkaisu, sillä selvitämme jatkamme aiempaa
 
 Käytä laatupäivityksen julkaisujonon tietopankkia numero 745340 ja liittyvää sovellusversiota 10.0.1265.89.
 
-1. Avaa LCS:ssä eristysympäristön **Ympäristön tiedot** -sivu. 
+1. Avaa Lifecycle Services -portaalista eristysympäristösi **Ympäristön tiedot** -sivu. 
 2. Valitse **Käytettävissä olevat päivitykset** -osassa uusimman laatupäivityksen koontiversion **Näytä päivitys** -kohta. 
 3. Vie koontiversio CSV- tai Microsoft Excel -tiedostoon.
 4. Lajittele viedyn tiedoston tiedot ajan perusteella (vanhin ensimmäisenä) ja hae sitten tietopankin numeroa 745340 **Päivitystunnus**-sarakkeessa. Näkyvissä on nyt tietopankkien deltaluettelo.
  
- > [!NOTE]
- > Vienti CSV- tai Excel-tiedostoon on tehtävä, ennen kuin ympäristö päivitetään. Muussa tapauksessa voit käyttää ympäristöä samanlaisilla määrityksellä, johon ei ole asennettu päivitystä, ja noudattaa yllä olevia ohjeita.
+> [!NOTE]
+> Vienti CSV- tai Excel-tiedostoon on tehtävä, ennen kuin ympäristö päivitetään. Muussa tapauksessa voit käyttää ympäristöä samanlaisilla määrityksellä, johon ei ole asennettu päivitystä, ja noudattaa yllä olevia ohjeita.
 
 [![Esimerkki ympäristöstä ja laatupäivityksestä.](./media/how-to-get-kb-list-pqu.png)](./media/how-to-get-kb-list-pqu.png)
 
@@ -139,8 +166,8 @@ Kriittinen ongelma tai regressio on yksi tapahtuma tai useita tapahtumia, jotka 
 
 Jos yksittäinen asiakasympäristö kärsii ongelmista, avaa palvelupyyntö ottamalla yhteyttä Microsoftin tukeen. Perustelluista syistä pysäytämme laatupäivityksen käyttöönoton kaikissa muissa ympäristöissä siihen asti, kunnes ongelma on korjattu.
 
-## <a name="can-customers-still-manually-apply-hotfix-updates-from-lcs"></a>Voivatko asiakkaat edelleen ottaa hotfix-korjaukset manuaalisesti käyttöön LCS:stä?
-Kyllä. Jotta varmistetaan käynnissä oleva pariteetti hotfix-korjausten käyttämiseksi, hotfix-korjauksia voi yhä ottaa käyttöön asiakasympäristöissä LCS:ssä. Huomaa kuitenkin, että laatupäivityksen osana käyttöön otettavat hotfix-korjaukset käyvät läpi turvallisen vakiokäyttöönottoprosessin ennen päivityksen käyttöönottoa. Tämä vähentää regressioiden riskiä korkean laadun vuoksi. Suosittelemme, että valitset laatupäivityksen hotfix-korjausten manuaalisen käyttöönoton sijaan paremman luotettavuuden vuoksi.
+## <a name="can-customers-still-manually-apply-hotfix-updates-from-lifecycle-services"></a>Voivatko asiakkaat edelleen ottaa hotfix-korjaukset manuaalisesti käyttöön Lifecycle Services -portaalista?
+Kyllä. Jotta varmistetaan pariteetti hotfix-korjausten toimintatavan kanssa, hotfix-korjauksia voidaan yhä ottaa käyttöön asiakasympäristöissä Lifecycle Services -portaalissa. Huomaa kuitenkin, että laatupäivityksen osana käyttöön otettavat hotfix-korjaukset käyvät läpi turvallisen vakiokäyttöönottoprosessin ennen päivityksen käyttöönottoa. Tämä vähentää regressioiden riskiä korkean laadun vuoksi. Suosittelemme, että valitset laatupäivityksen hotfix-korjausten manuaalisen käyttöönoton sijaan paremman luotettavuuden vuoksi.
 
 ## <a name="can-customers-proactively-install-a-quality-update-build-ahead-of-the-schedule"></a>Voivatko asiakkaat asentaa ennakoivasti laatupäivityksen koontiversion etukäteen?
 Kyllä. Laatupäivityksen voi asentaa ennakoivasti. Microsoft ohittaa päivityksen, jos ympäristön nykyinen koontiversio on sama tai uudempi kuin kyseinen laatupäivitys.
@@ -149,7 +176,7 @@ Kyllä. Laatupäivityksen voi asentaa ennakoivasti. Microsoft ohittaa päivityks
 - Laatupäivityksiä ei kohdisteta tuotantoympäristöihin, jos ympäristöllä on odottava huoltopäivitys ajoitettuna viikon ajalle siitä, kun laatupäivitys on tarkoitus tehdä.
 - Jos eristysympäristön koontiversio on sama tai uudempi kuin odottava laatupäivitys, se ohitetaan.
 - Jos tuotantoympäristön koontiversio on sama tai uudempi kuin odottava laatupäivitys, se ohitetaan.
-- Jos eristysympäristön koontiversio on sama tai uudempi tuotannon laatupäivityksen tai manuaalisen päivityksen vuoksi, tuotanto saa yhä kuukausittaisen huoltopäivityksen ajoitetun version. Jos et haluat päivittää ajoitettua tuotantoympäristöä huoltopäivityksen versiolla, voit pysäyttää huoltopäivityksen LCS:ssä. 
+- Jos eristysympäristön koontiversio on sama tai uudempi tuotannon laatupäivityksen tai manuaalisen päivityksen vuoksi, tuotanto saa yhä kuukausittaisen huoltopäivityksen ajoitetun version. Jos et haluat päivittää ajoitettua tuotantoympäristöä huoltopäivityksen versiolla, voit pysäyttää huoltopäivityksen Lifecycle Services -portaalista. 
 - Muutokset kannattaa testata uusimman laatupäivityksen koontiversion avulla. Näin varmistetaan ympäristön vakaus ja tulosten oikeellisuus.
 
 ## <a name="if-an-environment-has-an-upcoming-scheduled-action-and-a-scheduled-quality-update-in-the-same-maintenance-window-will-it-still-receive-the-quality-update"></a>Jos ympäristöllä on tuleva ajoitettu toiminto ja ajoitettu laatupäivitys samassa ylläpitoikkunassa, tuleeko laatupäivitys edelleen vastaanottaa?
@@ -164,11 +191,11 @@ Suunnitelma niitä asiakkaita varten, joita koskevat FDA-vahvistus ja -säädök
 ## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Mitä huoltopäivitysten versioita nämä laatupäivitykset tukevat?
 Kaikkien laatupäivitysten huoltopäivitysten tuettujen versioiden asiakkaat. 
 
-## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retailsdk"></a>Talous- ja toimintosovellusten käyttöönotot ja Retail-komponentit edellyttävät yleensä lisätyötä sen lisäksi, että MPOS on otettava käyttöön uudelleen. Miten nämä laatupäivitykset vaikuttavat RetailSDK:n toimintaan? 
-Koska hotfix-korjaus ei itsessään muuta laatupäivitysten tietoja, Retail-komponentteihin ei odoteta tulevat muutoksia tällä kertaa.
+## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retail-sdk"></a>Talous- ja toimintosovellusten käyttöönotot ja Retail-komponentit edellyttävät yleensä lisätyötä sen lisäksi, että MPOS on otettava käyttöön uudelleen. Miten nämä laatupäivitykset vaikuttavat Retail SDK:n toimintaan? 
+Koska hotfix-korjaus ei itsessään muuta laatupäivitysten tietoja, Retail-komponentteihin ei odoteta tulevan mitään muutoksia tällä kertaa.
 
 ## <a name="is-there-any-impact-to-cloud-hosted-environments-che"></a>Muuttuvatko pilvipalveluympäristöt (CHE)? 
-CHE-ympäristöt eivät saa laatupäivityksiä, koska ne eivät kuulu Microsoft Purview -alueeseen
+CHE-ympäristöt eivät saa laatupäivityksiä, koska ne eivät kuulu Microsoftin toiminta-alueelle.
 
 ## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Onko Microsoft Dataversen kanssa integrointiongelmia? 
 Tiedossa ei ole integrointiongelmia, jotka liittyvät Dataversen laatupäivityksiin.

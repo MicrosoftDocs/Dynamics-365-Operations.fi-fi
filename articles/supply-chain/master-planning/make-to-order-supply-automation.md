@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220554"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740191"
 ---
 # <a name="make-to-order-supply-automation"></a>Tilauksesta valmistukseen -tarjonnan automatisointi
 
@@ -32,12 +32,6 @@ ms.locfileid: "9220554"
 - Paranna konsernin sisäistä tiedonkulkua. Ostotilaukset päivitetään sisältämään toimitustavan, toimitusehtojen ja ulkoisen nimikenumeron kentät. Tämä muutos varmistaa, että kysynnän yksityiskohtaiset tiedot siirretään toimittavalle yritykselle.
 
 Tässä artikkelissa kuvataan, kuinka parannukset määritetään ja kuinka niitä käytetään.
-
-> [!NOTE]
-> Kaikki tässä artikkelissa kuvatut parannukset koskevat järjestelmiä, jotka käyttävät sisäistä pääsuunnittelua. Myös Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin apuohjelma tukee seuraavaa kahta parannusta:
->
-> - Pääsuunnitelmien viivetoleranssi
-> - Pääsuunnittelun aikana käytetyn tarvekohdistusjärjestyksen hallinta
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>Tilauksesta valmistukseen -tarjonnan automatisointiominaisuuden ottaminen käyttöön
 
@@ -73,7 +67,7 @@ Noudata seuraavia ohjeita avataksesi **Kapasiteetin kuormitus** -sivun, josta vo
 
 Nämä vaihtoehdot ovat käytettävissä myös **Pääsuunnittelun parametrit** -sivun **Vakiopäivitys**-välilehden **Päivitä merkintä** -kentässä, kun määrität oletusvalintaa **Vahvistus**-valintaikkunalle.
 
-Lisätietoja on kohdassa [Varaston merkintä suunnittelun optimoinnin avulla](planning-optimization/marking.md).
+Lisätietoja on kohdassa [Varaston merkintä](planning-optimization/marking.md).
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>Viivetoleranssin (negatiivisten päivien) asettaminen pääsuunnitelman tasolla
 

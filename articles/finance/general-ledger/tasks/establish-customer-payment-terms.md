@@ -2,7 +2,7 @@
 title: Muodosta asiakkaan maksuehdot
 description: Tämä menettely määrittää käteisalennuksen ja eräpäivän asetukset.
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9b2ae5e63a2efb4bc913efa4d88c65a70133a2d9
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065705"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752773"
 ---
 # <a name="establish-customer-payment-terms"></a>Muodosta asiakkaan maksuehdot
 
@@ -34,7 +34,11 @@ Tämä menettely määrittää käteisalennuksen ja eräpäivän asetukset. Täs
 6. Syötä **Kuukaudenpäivä**-kenttään päivämäärä. Päivämäärä syötetään numeroina, eli esim. 10. päivä. 
 7. Valitse **Tallenna**.
 8. Sulje sivu.
-9. Siirry kohtaan **Siirtymisruutu > Moduulit > Myyntireskontra > Maksujen asetukset > Maksuehdot**.
+9. Siirry kohtaan **Siirtymisruutu > Moduulit > Myyntireskontra > Maksujen asetukset > Maksuehdot**. 
+
+>[!NOTE] 
+>Jos **Maksuehdot** on **Käteinen**, **Maksuehdot**-sivulla olevan **Käteismaksu**-kentän arvon täytyy olla **Ei**.
+
 10. Valitse **Uusi**. **Maksuehtoja** käytetään eräpäivien laskennassa. Käteisalennuksen päivämäärän asetukset määritetään erillisellä sivulla. 
 11. Kirjoita **Maksuehdot**-kenttään tunnus.
 12. Syötä **Kuvaus**-kenttään kuvaus.

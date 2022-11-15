@@ -1,6 +1,6 @@
 ---
 title: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
-description: Tässä artikkelissa käsitellään, miten suunnittelun optimointitoiminnon käynnistämien suunnittelutöiden historiatietoja tarkastellaan.
+description: Tässä artikkelissa kerrotaan, miten suunnittelutöiden historiatietoja voidaan tarkastella.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863937"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740928"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Suunnitelman historia- ja suunnittelulokien tarkasteleminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa käsitellään, miten Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimointitoiminnon käynnistämien suunnittelutöiden historiatietoja tarkastellaan.
+Tässä artikkelissa kerrotaan, miten suunnittelutöiden historiatietoja voidaan tarkastella Microsoft Dynamics 365 Supply Chain Managementissa.
 
 Voit tarkastella suunnitelman historiaa avaamalla suunnitelman valitsemalla ensin **Pääsuunnittelu** \> **Asetukset** \> **Suunnitelmat** \> **Pääsuunnitelmat** ja sitten **Historia**. Historiatiedoissa on luettelo kaikista valitun suunnitelman töistä. Luettelo sisältää valmiit ja aktiiviset työt.
 
@@ -47,14 +47,6 @@ Noudattamalla seuraavia ohjeita voit tarkastella automaattisia korjauksen virhei
     - Jos käytät vanha lomaketta: Valitse toimintoruudusta **Erätyö**-välilehdeltä **Loki**.
 
 1. Valitse **Sanoman tiedot** avataksesi **Sanoman tiedot** -ruudun, jossa voit tarkastella kaikkia käsittelyn aikana siepattuja varoituksia ja virheitä.
-
-## <a name="related-resources"></a>Liittyvät resurssit
-
-- [Suunnittelun optimoinnin yleiskatsaus](planning-optimization-overview.md)
-- [Suunnittelun optimoinnin aloittaminen](get-started.md)
-- [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
-- [Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
-- [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

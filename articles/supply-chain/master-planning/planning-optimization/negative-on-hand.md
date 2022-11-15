@@ -1,6 +1,6 @@
 ---
 title: Suunnittelu negatiivisilla käytettävissä olevalla määrillä
-description: Tässä artikkelissa kerrotaan, miten negatiivista käytettävissä olevaa määrää käsitellään suunnittelun optimoinnissa.
+description: Tässä artikkelissa kerrotaan, miten negatiivinen varasto käsitellään.
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04006bb12142be69c84bc8085dd82fc99280e90b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4fc8b37fd800e3b4652513f150f9806bf1d5d67
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856132"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741119"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Suunnittelu negatiivisilla käytettävissä olevalla määrillä
 
@@ -29,7 +29,7 @@ ms.locfileid: "8856132"
 
 Jos järjestelmässä näkyy negatiivinen käytettävissä oleva koostettu määrä, suunnittelumoduuli käsittelee määrää arvona 0 (nolla), mikä helpottaa ylitarjonnan välttämistä. Tämä toiminto toimii seuraavasti:
 
-1. Suunnittelun optimointitoiminto koostaa käytettävissä olevat määrät kattavuusdimensioiden alimmalla tasolla. (Jos esimerkiksi *sijainti* ei ole kattavuusdimensio, suunnittelun optimointi koostaa käytettävissä olevat määrät *varaston* tasolla.)
+1. Pääsuunnittelu koostaa käytettävissä olevat määrät kattavuusdimensioiden alimmalla tasolla. (Jos esimerkiksi *sijainti* ei ole kattavuusdimensio, pääsuunnittelu koostaa käytettävissä olevat määrät *varaston* tasolla).
 1. Jos kattavuusdimensioiden alimman tason koostettu kokonaismäärä on negatiivinen, järjestelmä olettaa, että käytettävissä oleva määrä on todella 0 (nolla).
 
 > [!IMPORTANT]
@@ -88,14 +88,6 @@ Järjestelmä konfiguroi sen seuraavasti:
 - Myyntitilaus on olemassa *10* kpl:n määrän osalta. tuotteesta *FG*.
 - Myyntitilauksen määrä varataan fyysisesti olemassa olevalle käytettävissä olevalle varastolle.
 
-Tämän jälkeen oikaiset tuotteen *FG* määrän niin, että käytettävissä oleva varasto on 5. Koska käytettävissä oleva tuotevarasto on 5, myyntitilauksen määrä varataan nyt määrälle, joka ei ole varastossa käytettävissä (samoin kävisi, jos käytettävissä oleva varasto olisi 0, jolloin myyntitilaus varattaisiin negatiiviselle varastolle). Jos suoritat pääsuunnittelun nyt, myyntitilauksen toimitusta varten luodaan suunniteltua tilaus määrälle 5 kohteelle *FG*, koska suunnittelun optimointi aina käyttää olemassa olevaa toimitusta tai luo uuden suunnitellun tilauksen fyysisen varauksen toimitusta varten.
-
-## <a name="related-resources"></a>Liittyvät resurssit
-
-- [Suunnittelun optimoinnin yleiskatsaus](planning-optimization-overview.md)
-- [Suunnittelun optimoinnin aloittaminen](get-started.md)
-- [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
-- [Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
-- [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
+Tämän jälkeen oikaiset tuotteen *FG* määrän niin, että käytettävissä oleva varasto on 5. Koska käytettävissä oleva tuotevarasto on 5, myyntitilauksen määrä varataan nyt määrälle, joka ei ole varastossa käytettävissä (samoin kävisi, jos käytettävissä oleva varasto olisi 0, jolloin myyntitilaus varattaisiin negatiiviselle varastolle). Jos suoritat pääsuunnittelun nyt, myyntitilauksen toimitusta varten luodaan suunniteltu tilaus määrälle 5 kohteelle *FG*, koska pääsuunnittelu käyttää aina olemassa olevaa toimitusta tai luo uuden suunnitellun tilauksen fyysisen varauksen toimitusta varten.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

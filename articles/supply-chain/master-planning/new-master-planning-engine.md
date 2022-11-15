@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbbc58f0dcd833f63e84a73ac68ada60bd0c291d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846095"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739948"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Siirtyminen suunnittelun optimointiin pääsuunnittelua varten
 
@@ -31,35 +31,35 @@ Sisäinen pääsuunnittelumoduuli on aikataulutettu vanhentumaan. Microsoft Dyna
 
 Suunnittelun optimoinnin avulla pääsuunnittelulaskelmia voidaan Supply Chain Managementin ja sen Azure SQL -tietokannan ulkopuolella. Suunnittelun optimointitoimintoon liittyviä etuja ovat esimerkiksi suorituskyvyn parantuminen ja pääsuunnitteluajon vähäinen vaikutus SQL-tietokantaan. Koska nopeita suunnitteluajoja voidaan tehdä myös työaikana, suunnittelijat voivat reagoida heti kysynnän tai parametrin muutoksiin.
 
-Lisätietoja suunnittelun optimoinnista on kohdassa [Suunnittelun optimoinnin yleiskatsaus](planning-optimization/planning-optimization-overview.md).
+Lisätietoja suunnittelun optimoinnista on kohdassa [Pääsuunnittelujärjestelmän arkkitehtuuri](master-planning-architecture.md).
 
 ## <a name="obsolescence-of-the-existing-master-planning-engine"></a>Nykyisen pääsuunnittelumoduulin vanhentuminen
 
-Microsoft on parhaillaan poistamassa sisäistä suunnittelumoduulia käytöstä ja sen tilalle tulee suunnittelun optimointi. Tämä muutos vaikuttaa kaikkiin pilviympäristöihin. Sillä ei ole vaikutusta paikallisiin asennuksiin. Versiosta 10.0.16 alkaen virhesanoma avautuu, jos sisäinen pääsuunnittelu suoritetaan ilman suunniteltujen tuotantotilausten luontia. Pääsuunnittelun suorittaminen kuitenkin onnistuu virhesanomasta huolimatta.
+Microsoft on parhaillaan poistamassa vanhentunutta suunnittelumoduulia käytöstä, ja sen tilalle tulee suunnittelun optimointi. Tämä muutos vaikuttaa kaikkiin pilviympäristöihin. Sillä ei ole vaikutusta paikallisiin asennuksiin. Versiosta 10.0.16 alkaen näet virhesanoman, jos suoritat vanhentuneen pääsuunnittelumoduulin luomatta suunniteltuja tuotantotilauksia. Pääsuunnittelun suorittaminen kuitenkin onnistuu virhesanomasta huolimatta.
 
-Lisätietoja sisäisen suunnittelumoduulin vanhentumisesta on ilmoituksissa kohdassa [Dynamics 365 Supply Chain Managementin poistetut ja vanhentuneet ominaisuudet](../get-started/removed-deprecated-features-scm-updates.md).
+Lisätietoja vanhentuneesta suunnittelumoduulista on ilmoituksissa kohdassa [Dynamics 365 Supply Chain Managementin poistetut ja vanhentuneet ominaisuudet](../get-started/removed-deprecated-features-scm-updates.md).
 
 ## <a name="migration-messages-and-exceptions"></a>Siirto, sanomat ja poikkeukset
 
-Aiemmin luotujen ympäristöjen omistajat, jotka käyttävät sisäistä pääsuunnittelumoduulia suunniteltuja tuotantotilauksia luomatta, saavat poikkeusprosessia koskevan sähköpostiviestin. Siirtyminen suunnittelun optimointiin kannattaa arvioida ja suunnitella yhteistyössä kumppanin kanssa.
+Aiemmin luotujen ympäristöjen omistajat, jotka käyttävät vanhentunutta pääsuunnittelumoduulia luomatta suunniteltuja tuotantotilauksia, saavat poikkeusprosessia koskevan sähköpostiviestin. Siirtyminen suunnittelun optimointiin kannattaa arvioida ja suunnitella yhteistyössä kumppanin kanssa.
 
-Kuten edellä on todettu versiosta 10.0.16 alkaen virhesanoma avautuu, jos sisäinen pääsuunnittelu suoritetaan ilman suunniteltujen tuotantotilausten luontia. Tässä virhesanomassa on ohjeita siirtymistä ja poikkeuksen pyytämisestä.
+Kuten edellä on todettu, näet versiosta 10.0.16 alkaen virhesanoman, jos suoritat vanhentuneen pääsuunnittelumoduulin luomatta suunniteltuja tuotantotilauksia. Tässä virhesanomassa on ohjeita siirtymistä ja poikkeuksen pyytämisestä.
 
 ### <a name="new-deployments"></a>Uudet käyttöönotot
 
-Suunnittelun optimointi on kuin kaikkien uusien pilvikäyttöönottojen oletusarvoinen pääsuunnittelumoduuli. Suunnittelun optimointi on yleisesti ottaen käytettävä kaikissa uusissa käyttöönotoissa, joissa ei luoda suunniteltuja tuotantotilauksia pääsuunnittelun aikana. Jos uusi käyttöönotto on riippuvainen toiminnosta, jota suunnittelun optimointi ei tällä hetkellä tue, voit pyytää poikkeusta, jotta voit jatkaa sisäisen pääsuunnittelumoduulin käyttämistä.
+Suunnittelun optimointi on kuin kaikkien uusien pilvikäyttöönottojen oletusarvoinen pääsuunnittelumoduuli. Suunnittelun optimointi on yleisesti ottaen käytettävä kaikissa uusissa käyttöönotoissa, joissa ei luoda suunniteltuja tuotantotilauksia pääsuunnittelun aikana. Jos uusi käyttöönotto on riippuvainen toiminnosta, jota suunnittelun optimointi ei tällä hetkellä tue, voit pyytää poikkeusta, jotta voit jatkaa vanhentuneen pääsuunnittelumoduulin käyttämistä.
 
 ### <a name="existing-deployments"></a>Aiemmin luodut käyttöönotot
 
-Aiemmin luotujen pääsuunnittelu riippuvaisten pilvipohjaisten käyttöönottojen omistajien on suunniteltava suunnittelun optimointiin siirtyminen. Jos toteutus on riippuvainen toiminnosta, jota suunnittelun optimointi ei tällä hetkellä tue, voit pyytää poikkeusta, jotta voit jatkaa sisäisen pääsuunnittelumoduulin käyttämistä.
+Aiemmin luotujen pääsuunnittelu riippuvaisten pilvipohjaisten käyttöönottojen omistajien on suunniteltava suunnittelun optimointiin siirtyminen. Jos toteutus on riippuvainen toiminnosta, jota suunnittelun optimointi ei tällä hetkellä tue, voit pyytää poikkeusta, jotta voit jatkaa vanhentuneen pääsuunnittelumoduulin käyttämistä.
 
 Microsoft lähettää niiden ympäristöjen järjestelmävalvojille sähköpostiviestin, joissa käytetään tällä hetkellä vanhentuvia pääsuunnitteluprosesseja. Tässä sähköpostiviestissä on tietoja toiminnoista, jotka on tehtävä siirtymistä tai poikkeuksen pyytämistä varten.
 
 ## <a name="the-exception-process"></a>Poikkeusprosessi
 
-Voit pyytää poikkeusta, jos sisäisen pääsuunnittelumoduulin käyttöä on jatkettava, koska liiketoimintaprosessit ovat suuressa määrin riippuvaisia ainakin yhdestä toiminnosta, jota ei tällä hetkellä toteuteta suunnittelun optimoinnissa. Käytettävissä olevien ominaisuuksien luettelo on kohdassa [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization/planning-optimization-fit-analysis.md).
+Voit pyytää poikkeusta, jos sinun täytyy jatkaa vanhentuneen pääsuunnittelumoduulin käyttöä, koska liiketoimintaprosessisi ovat suuressa määrin riippuvaisia ainakin yhdestä toiminnosta, jota ei ole tällä hetkellä toteutettu suunnittelun optimoinnissa. Käytettävissä olevien ominaisuuksien luettelo on kohdassa [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization/planning-optimization-fit-analysis.md).
 
-Tällä hetkellä suunnittelun optimointiin siirtymisen poikkeuksilla on merkitystä vain, jos pääsuunnitteluprosessi ei sisällä tuotantoa (eli pääsuunnittelun luomia suunniteltuja tuotantotilauksia) ja sisäistä pääsuunnittelumoduulia tarvitaan version 10.0.15 jälkeen.
+Tällä hetkellä suunnittelun optimointiin siirtymisen poikkeuksilla on merkitystä vain, jos pääsuunnitteluprosessisi ei sisällä tuotantoa (eli pääsuunnittelun luomia suunniteltuja tuotantotilauksia) ja tarvitset vanhentunutta pääsuunnittelumoduulia version 10.0.15 jälkeenkin.
 
 Kun tarvittavat toiminnot ovat käytettävissä, Microsoft antaa lisäaikaa poikkeuksen päättymiseen saakka. Ympäristön järjestelmänvalvojalla ilmoitetaan, kun tarvittavat toiminnot ovat käytettävissä ja lisäaika on alkanut.
 
@@ -74,9 +74,9 @@ Seuraavassa vuokaaviossa on yhteenveto tämän artikkelin tiedoista, jotta voit 
 
 ### <a name="sandbox-environments"></a><a name="faq-sandbox"></a>Eristysympäristöt
 
-Voiko sisäistä pääsuunnittelua käyttää omassa eristysympäristössä? Tarvitaanko sitä varten poikkeus?
+Voinko käyttää vanhentunutta pääsuunnittelumoduulia omassa eristysympäristössäni? Tarvitaanko sitä varten poikkeus?
 
-**Vastaus:** Poikkeukset eivät yleensä koske eristysympäristöjä, koska suunnittelun optimoinnin poikkeusvirhe ei estä sisäisen pääsuunnittelumoduulin suorittamista. Jos virhesanoma on kuitenkin häiritsevä, se voidaan poistaa käytöstä IaaS- (ei Service Fabric) -eristysympäristössä suorittamalla seuraava kysely tietokannassa:
+**Vastaus:** Poikkeukset eivät tavallisesti koske eristysympäristöjä, koska suunnittelun optimoinnin poikkeusvirhe ei estä vanhentuneen pääsuunnittelumoduulin suorittamista. Jos virhesanoma on kuitenkin häiritsevä, se voidaan poistaa käytöstä IaaS- (ei Service Fabric) -eristysympäristössä suorittamalla seuraava kysely tietokannassa:
 
 ```sql
 -- Insert or update an enabled flight:
@@ -92,13 +92,13 @@ ELSE
 
 Oma ympäristön on paikallinen ympäristö. Tarvitaanko sitä varten poikkeus?
 
-**Vastaus:** Ei. Poikkeusta ei tarvita paikallisissa ympäristöissä. Sisäisen pääsuunnittelun käyttöä voidaan jatkaa. Ympäristön järjestelmänvalvojalle ilmoitetaan, jos jotakin on tehtävä.
+**Vastaus:** Ei. Poikkeusta ei tarvita paikallisissa ympäristöissä. Voit jatkaa vanhentuneen pääsuunnittelumoduulin käyttämistä. Ympäristön järjestelmänvalvojalle ilmoitetaan, jos jotakin on tehtävä.
 
 ### <a name="production-scenarios"></a>Tuotantoskenaariot
 
 Käytämme suunniteltuja tuotantotilauksia, mutta mitä tapahtuu päivitettäessä versioon 10.0.16. Onko jotakin tehtävä?
 
-**Vastaus:** Syytä huoleen ei ole. Sisäisen pääsuunnittelun käyttöä voidaan jatkaa versiossa 10.0.16. Kannattaa kuitenkin arvioida, voiko suunnittelun optimointiin siirtymisen aloittaa nykyisillä toiminnoilla. Lisäksi kannattaa pysyä ajan tasalla uusien toimintojen osalta.
+**Vastaus:** Syytä huoleen ei ole. Voit jatkaa vanhentuneen pääsuunnittelumoduulin käyttämistä versiossa 10.0.16. Kannattaa kuitenkin arvioida, voiko suunnittelun optimointiin siirtymisen aloittaa nykyisillä toiminnoilla. Lisäksi kannattaa pysyä ajan tasalla uusien toimintojen osalta.
 
 ### <a name="email-from-microsoft"></a>Microsoftin lähettämä sähköposti
 
@@ -110,9 +110,9 @@ Ympäristön järjestelmänvalvoja sai sähköpostia Microsoftilta. Tämän säh
 
 Käytössä on versio 10.0.16 tai sitä uudempi versio ja seuraava virhesanoma avautuu pääsuunnittelua suoritettaessa. Onko pääsuunnittelu estetty?
 
-> Tämä virhesanoma avautuu, koska sisäistä suunnittelumoduulia käytettiin suunnittelun optimoinnin tukemissa skenaarioissa. Suunnittelun optimointiin kannattaa siirtyä nyt, sillä nykyinen sisäinen pääsuunnittelu vanhentuu. Huomaa, että pääsuunnittelun suorittaminen onnistui.
+> Näet tämän virhesanoman, koska vanhentunutta pääsuunnittelumoduulia käytettiin suunnittelun optimoinnin tukemissa skenaarioissa. Sinun tulisi siirtyä suunnittelun optimointiin nyt, sillä sisäinen pääsuunnittelumoduuli on poistettu käytöstä. Huomaa, että pääsuunnittelun suorittaminen onnistui.
 >
-> Jos siirrossa on vahvat riippuvuudet odottaviin toimintoihin, voidaan pyytää poikkeusta sisäisen pääsuunnittelumoduulin käytön jatkamista varten.
+> Jos siirtosi on vahvasti riippuvainen tulevista ominaisuuksista, voit pyytää poikkeusta vanhentuneen pääsuunnittelumoduulin käytön jatkamista varten.
 >
 > Aloita täyttämällä seuraava kyselylomake ja pyydä tarvittaessa poikkeus suunnittelun optimointiin siirtymisessä.
 

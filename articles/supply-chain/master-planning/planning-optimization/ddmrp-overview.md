@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: cf5ca3996a882111b840e3acb5e2a4f3f26ec4b7
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689485"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740847"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Kysyntäperustainen materiaalitarvesuunnittelu (DDMRP)
 
@@ -44,6 +44,6 @@ DDMRP:tä käyttävät yleensä valmistajat, joilla monitasoisia tuoterakenteita
 
 ## <a name="ddmrp-in-dynamics-365-supply-chain-management"></a>DDMRP Dynamics 365 Supply Chain Managementissa
 
-DDMRP sisältyy Microsoft Dynamics 365 Supply Chain Managementiin, eikä sen käyttö aiheuta lisäkäyttöoikeusmaksuja. Supply Chain Managementin DDMRP-toiminto on lisätty nykyiseen **Pääsuunnittelu**-moduuliin. Sen käyttöä varten tarvitaan kuitenkin Suunnittelu optimointi -apuohjelma. 
+DDMRP sisältyy Microsoft Dynamics 365 Supply Chain Managementiin, eikä sen käyttö aiheuta lisäkäyttöoikeusmaksuja. Supply Chain Managementin DDMRP-toiminto on lisätty nykyiseen **Pääsuunnittelu**-moduuliin. Sen käyttöä varten tarvitaan kuitenkin Suunnittelu optimointi -apuohjelma.
 
 DDMRP on integroitu Supply Chain Managementin nykyisiin suunnittelumäärityksiin, ja yhdessä niiden kanssa käytettynä sen avulla saadaan liiketoimintaan sopivat suunnittelumääritykset. Sitä hallitaan uudella kattavuuskoodilla, joka eroaa täysin esimerkiksi kauden, suurimman ja pienimmän tai tarpeen käytöstä. Se ei ole uusi moduuli, eikä se korvaa nykyistä suunnittelutoimintoa. Sen avulla saadaan kuitenkin käyttöön enemmän toimintoja.

@@ -2,23 +2,23 @@
 title: Tehtävien hallinnan määrittäminen
 description: Tässä artikkelissa kerrotaan, miten tehtävienhallintatoiminnot määritetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: ff97abab330174b41af76d22c202e8338d6d37fd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: cc2d75f52b183559de344982c8e4208000af786e
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282758"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746059"
 ---
 # <a name="configure-task-management"></a>Tehtävien hallinnan määrittäminen
 
@@ -80,7 +80,11 @@ Seuraavassa kuvassa on **Tehtävienhallinta**-toiminto **Myyntipistetoiminnot**-
 
 ![Tehtävienhallintatoiminto Myyntipistetoiminnot-sivulla.](media/HQ-POS-Tasks-Notifications.png)
 
-Lisärtietoja myyntipisteen ilmoitusten määrittämisestä on kohdassa [Tilausilmoitusten näyttäminen myyntipisteessä](notifications-pos.md).
+Lisätietoja myyntipisteen ilmoitusten määrittämisestä on artikkelissa [Tilausilmoitusten näyttäminen myyntipisteessä](notifications-pos.md).
+
+> [!NOTE]
+> Kun tallennat muutoksesi, näet seuraavat varoitusviestin: **Toimintoparametria ei oteta käyttöön painikeruudukon suunnittelutoiminnossa, jos toiminnon tunnus on yhtä suuri tai pienempi kuin 4000. Jos olet luomassa mukautettua toimintoa ja haluat siirtää parametrin painikeruudukon suunnittelutoiminnosta, käytä toimintotunnusta, joka on suurempi kuin 4000**. Sulje valintaikkuna valitsemalla **Sulje**.
+
 
 ## <a name="configure-the-tasks-tile-on-a-pos-application-home-page"></a>Tehtävät-ruudun määrittäminen myyntipistesovelluksen aloitussivulla
 

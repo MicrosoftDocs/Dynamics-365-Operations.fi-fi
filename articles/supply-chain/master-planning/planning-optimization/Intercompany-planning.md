@@ -1,6 +1,6 @@
 ---
 title: Yritysten välinen suunnittelu
-description: Tässä artikkelissa käsitellään konsernin sisäistä suunnittelua ja konsernin sisäisen suunnittelun määrittämistä Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin avulla.
+description: Tässä artikkelissa käsitellään konsernin sisäistä suunnittelua ja konsernin sisäisen suunnittelun määrittämistä Microsoft Dynamics 365 Supply Chain Managementissa.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6ef551e1c2c4d90510f967855a5aa61646dc8eab
-ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
+ms.openlocfilehash: 3d1c82aa3810b37b06b9d9157e73588fc1727348
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9538562"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740029"
 ---
-# <a name="intercompany-planning"></a>Konsernin sisäinen suunnittelu
+# <a name="intercompany-planning"></a>Yritysten välinen suunnittelu
 
 [!include [banner](../../includes/banner.md)]
 
 Joissakin organisaatioissa logistiikkatoiminnot ovat riippuvaisia organisaation muista yrityksistä. Näitä toimintoja käsitellään konsernin sisäisten myyntien ja ostojen avulla, koska kullakin yrityksellä on erillinen tilikartta.
 
-Tässä artikkelissa käsitellään konsernin sisäistä suunnittelua ja konsernin sisäisen suunnittelun määrittämistä Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin avulla.
+Tässä artikkelissa käsitellään konsernin sisäistä suunnittelua ja konsernin sisäisen suunnittelun määrittämistä Microsoft Dynamics 365 Supply Chain Managementissa.
 
 Tässä artikkelissa käytetään seuraavia tärkeitä konsernin sisäisiä käsitteitä:
 

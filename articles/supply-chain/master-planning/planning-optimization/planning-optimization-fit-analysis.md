@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 4459a5d72fafe2596b7fc0cedf060b8f23bb43d2
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689991"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750704"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
 [!include [banner](../../includes/banner.md)]
 
-Suunnittelun optimoinnin sopivuusanalyysin tulos on analysoitava osana siirtoprosessia. Huomaa, että suunnittelun optimoinnin laajuus ei vastaa nykyistä sisältyvää pääsuunnittelutoimintoa. Siirtoon kannattaa valmistautua tekemällä yhteistyötä kumppanin kanssa ja tutustumalla ohjeisiin. 
+Suunnittelun optimoinnin sopivuusanalyysin tulos on analysoitava osana siirtoprosessia. Huomaa, että suunnittelun optimointi ei kata kaikkia vanhentuneen pääsuunnittelumoduulin ominaisuuksia. Siirtoon kannattaa valmistautua tekemällä yhteistyötä kumppanin kanssa ja tutustumalla ohjeisiin.
 
-Suunnittelun optimoinnin sopivuusanalyysin auttaa määrittämään, missä kohdissa sisältyvän pääsuunnittelumoduulin ja suunnittelun optimoinnin välillä voi olla eroja. Tämä analyysi tehdään nykyisten asetusten ja tietojen perusteella. 
+Suunnittelun optimoinnin sopivuusanalyysi auttaa määrittämään, mitä eroa vanhentuneella pääsuunnittelumoduulilla ja suunnittelun optimoinnilla on. Tämä analyysi tehdään nykyisten asetusten ja tietojen perusteella. 
 
 Saat suunnittelun optimoinnin sopivuusanalyysin tulokset valitsemalla ensin **Pääsuunnittelu** \> **Asetukset** \> **Suunnittelun optimoinnin sopivuusanalyysi** ja valitsemalla sitten **Suorita analyysi**. Jos analyysissa havaitaan ristiriitoja, ne mainitaan samalla sivulla. (Analyysin suorittaminen voi kestää muutaman minuutin.)
 
@@ -64,7 +64,6 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Peruskalenterit | Kalenterit, joissa käytetään peruskalenteria: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. | Tuettu | 
 | Erän käsittelykoodit | Ei-netottavissa olevan erän käsittelykoodin päätiedot: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Erien merkitseminen käytettävissä tai ei-käytettävissä oleviksi käsittelykoodien avulla](../../inventory/batch-disposition-codes.md) | Tuettu |
 | Saatavuus (CTP) | Tilauksen oletusasetukset, joiden toimituspäivämäärä on asetettu saatavuuteen (CTP): *\#* | Supply Chain Managementin versiossa 10.0.28 ja sitä uudemmassa versiossa on *Saatavuus (CTP) suunnittelun optimointia varten* -prosessi, joka tuo vahvistetut lähetys- ja vastaanottopäivämäärät saataville dynaamisen suunnittelun suorittamisen jälkeen. Supply Chain Managementin vanhojen versioiden saatavuus (CTP) -asetus ohitetaan, kun suunnittelun optimoitu on otettu käyttöön. | Tuettu |
-| Kopioi staattinen dynaamiseen suunnitelmaan | Staattisen kopioiminen ja dynaamiseen suunnitelmaan on käytössä pääsuunnitteluparametreissa. | Suunnittelun optimointi ei kopioi staattista suunnitelmaa dynaamiseen suunnitelmaan riippumatta tästä asetukseen. Yleensä tämä käsite ei ole yhtä merkityksellinen, koska suunnittelu optimointi tarjoaa nopeuden ja täydellisen uudistamisen. Jos käytössä on vähintään kaksi suunnitelmaa, pääsuunnittelu on käynnistettävä kunkin suunnitelman osalta. | – |
 | Vahvistus | Automaattisen vahvistuksen aikaraja ja kattavuusryhmiä määritetty: *\#* | Version 10.0.7 ja uudempien versioiden vahvistamista tuetaan erillisenä kiinteyttämiserätyönä, kun pääsuunnittelu on suoritettu (jos *suunnittelun optimoinnin automaattinen vahvistus* -toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Huomaa, että suunnittelun optimoinnin automaattinen vahvistus perustuu tilauspäivämäärään (aloituspäivämäärä), ei tarvepäivämäärään (päättymispäivämäärä). Näin varmistetaan, että suunniteltujen tilausten vahvistaminen tapahtuu ajallaan ilman, että läpimenoaikaa tarvitsee sisällyttää vahvistuksen aikarajakohtaan. | Tuettu |
 | Vahvistus | Automaattisen vahvistuksen määrittäminen ja nimikekattavuustietueet: *\#* | Version 10.0.7 ja uudempien versioiden automaattista vahvistamista tuetaan erillisenä kiinteyttämiserätyönä, kun pääsuunnittelu on suoritettu (jos *suunnittelun optimoinnin automaattinen vahvistus* -toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Huomaa, että suunnittelun optimoinnin automaattinen vahvistus perustuu tilauspäivämäärään (aloituspäivämäärä), ei tarvepäivämäärään (päättymispäivämäärä). Näin varmistetaan, että suunniteltujen tilausten vahvistaminen tapahtuu ajallaan ilman, että läpimenoaikaa tarvitsee sisällyttää vahvistuksen aikarajakohtaan. | Tuettu |
 | Vahvistus | Määritä pääsuunnitelmat ja automaattinen vahvistus: *\#* | Version 10.0.7 ja uudempien versioiden automaattista vahvistamista tuetaan erillisenä kiinteyttämiserätyönä, kun pääsuunnittelu on suoritettu (jos *suunnittelun optimoinnin automaattinen vahvistus* -toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Huomaa, että suunnittelun optimoinnin automaattinen vahvistus perustuu tilauspäivämäärään (aloituspäivämäärä), ei tarvepäivämäärään (päättymispäivämäärä). Näin varmistetaan, että suunniteltujen tilausten vahvistaminen tapahtuu ajallaan ilman, että läpimenoaikaa tarvitsee sisällyttää vahvistuksen aikarajakohtaan. | Tuettu |
@@ -93,34 +92,27 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Tuotantoympäristö | Kaavan versiot, joissa on oheis-/sivutuotteita: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä kaavaversioon liittyvät oheistuotteet ja sivutuotteet ohitetaan, kun suunnittelun optimointi on käytössä. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Kaavan versiot ja saanto: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä tuotto, joka liittyy kaavaversioon ohitetaan, kun suunnittelun optimointi on käytössä. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Suunnitelmat, joissa käytetään järjestystä: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä järjestys ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. | Vuoden 2022 julkaisuaalto 2 |
-| Tuotantoympäristö | Aloittamattomat vapautetut tuotantotilaukset, joiden aikataulutettu aloitus on ennen kuluvaa päivää: *\#* | Tämä ominaisuus odottaa. Jos tuotantotilaus tällä hetkellä viivästyy, pääsuunnittelu olettaa, että se valmistuu saman päivän aikana. Tällä on merkitystä vapautetuille tuotantotilauksille, joiden toimituspäivä on menneisyydessä mutta joita ei ole vielä saatu valmiiksi. | Tuleva aalto |
+| Tuotantoympäristö | Aloittamattomat vapautetut tuotantotilaukset, joiden aikataulutettu aloitus on ennen kuluvaa päivää: *\#* | Tämä ominaisuus odottaa. Jos tuotantotilaus tällä hetkellä viivästyy, pääsuunnittelu olettaa, että se valmistuu saman päivän aikana. Tällä on merkitystä vapautetuille tuotantotilauksille, joiden toimituspäivä on menneisyydessä mutta joita ei ole vielä saatu valmiiksi. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Aikataulutetut resurssit, joilla on rajallinen kapasiteetti: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä.| Tuettu |
 | Tuotantoympäristö | Suunnittelussa käytetyt reitit: *\#* | Tätä ominaisuutta tuetaan. | Tuettu |
-| Tuotantoympäristö | Hajotusta käyttävä myyntirivin varaus: *\#* | Hajotustoimintoa käyttävä myyntirivin varaus ei ole tuettu, kun suunnittelun optimointi on käytössä. | Tuleva aalto |
-| Tuotantoympäristö | Aikataulutus tuotantotilausten hajotuksen kanssa: *\#* | Aikataulu, joka käyttää tuotantotilausten räjähdystä ei ole tuettu, kun suunnittelun optimointi on käytössä. Tuotantotilaukset voidaan ajoittaa yksitellen. | Tuleva aalto |
+| Tuotantoympäristö | Hajotusta käyttävä myyntirivin varaus: *\#* | Hajotustoimintoa käyttävä myyntirivin varaus ei ole tuettu, kun suunnittelun optimointi on käytössä. | Vuoden 2022 julkaisuaalto 2 |
+| Tuotantoympäristö | Aikataulutus tuotantotilausten hajotuksen kanssa: *\#* | Aikataulu, joka käyttää tuotantotilausten räjähdystä ei ole tuettu, kun suunnittelun optimointi on käytössä. Tuotantotilaukset voidaan ajoittaa yksitellen. | Vuoden 2022 julkaisuaalto 2 |
 | Tarjouspyyntö | Pääsuunnitelmat ja tarjouspyyntö käytössä: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä tarjouspyyntöjä (RFQs) ei pidetä vaatimuksina, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 |
 | Ehdotukset | Pääsuunnitelmat, joissa ehdotukset on otettu käyttöön: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Ostoehdotukset](purchase-requisitions.md) | Tuettu |
 | Varmuusmarginaalit | Kattavuusryhmät varmuusmarginaalin kanssa: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Varmuusmarginaalit](safety-margins.md) | Tuettu |
 | Varmuusmarginaalit | Pääsuunnitelmat varmuusmarginaalin kanssa: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Varmuusmarginaalit](safety-margins.md) |  Tuettu |
-| Varmuusvaraston täyttäminen | Nimikkeiden kattavuustiedot, joissa on "täytä vähimmäisvaatimukset", poikkeavat tämän päivän päivämäärästä ja hankinta-ajasta: *\#* | Suunnittelun optimointi käyttää aina *kuluvan päivän päivämäärää ja hankinta-aikaa*. Tämä muutos tehdään, kun halutaan valmistautua yksinkertaistettuihin suunnitteluasetuksiin tulevaisuudessa. Jos toimitusaika ei sisälly varmuusvarastoon, nykyiselle alhaiselle käytettävissä olevalle varastolle luodut suunnitellut tilaukset viivästyvät aina läpimenoajan vuoksi. Tämä voi aiheuttaa merkittäviä meluongelmia ja ei-toivottuja suunniteltuja tilauksia. Paras käytäntö on muuttaa asetusta siten, että *kuluvan päivän päivämäärää + hankinta-aikaa* käytetään. Päivitä päätiedot ja varoitusten välttämiseksi. | Ei saatavilla |
-| Myyntitarjoukset | Pääsuunnitelmat ja myyntitarjoukset käytössä: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä tarjouksia ei oteta huomioon, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 tai sitä uudempi |
-| Säilyvyysaika | Pääsuunnitelmat, joissa säilyvyysaika on otettu käyttöön: *\#* | Tämä ominaisuus odottaa. | Vuoden 2022 julkaisuaalto 2 |
+| Myyntitarjoukset | Pääsuunnitelmat ja myyntitarjoukset käytössä: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä tarjouksia ei oteta huomioon, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 |
+| Säilyvyysaika | Pääsuunnitelmat, joissa säilyvyysaika on otettu käyttöön: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. | Tuettu |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Suunnittelun optimoinnin yleiskatsaus](planning-optimization-overview.md)
-
-[Suunnittelun optimoinnin aloittaminen](get-started.md)
-
-[Perinteisen pääsuunnittelun ja suunnittelun optimoinnin erot](planning-optimization-differences-with-built-in.md)
-
-[Parametrit, joita ei käytetä suunnittelun optimoinnissa](not-used-parameters.md)
-
-[Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
-
-[Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
-
-[Suunnittelutyön peruuttaminen](cancel-planning-job.md)
+- [Pääsuunnittelujärjestelmän arkkitehtuuri](../master-planning-architecture.md)
+- [Pääsuunnittelun aloittaminen](get-started.md)
+- [Perinteisen pääsuunnittelun ja suunnittelun optimoinnin erot](planning-optimization-differences-with-built-in.md)
+- [Parametrit, joita ei käytetä suunnittelun optimoinnissa](not-used-parameters.md)
+- [Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
+- [Nimikkeiden osajoukon suunnittelun suorittaminen](plan-filters.md)
+- [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Varaston merkintä suunnittelun optimoinnin avulla
-description: Tässä artikkelissa on tietoja vahvistettujen tilausten varaston merkintävaihtoehdoista suunnittelun optimointia käytettäessä.
+title: Varaston merkintä
+description: Tässä artikkelissa on tietoja vahvistettujen tilausten varaston merkintävaihtoehdoista.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c86db6a670d7d0f7bfe74b7466b9bce766e4a08d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219934"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740573"
 ---
-# <a name="inventory-marking-with-planning-optimization"></a>Varaston merkintä suunnittelun optimoinnin avulla
+# <a name="inventory-marking"></a>Varaston merkintä
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa on tietoja vahvistettujen tilausten varaston merkintävaihtoehdoista suunnittelun optimointia käytettäessä.
+Tässä artikkelissa on tietoja vahvistettujen tilausten varaston merkintävaihtoehdoista.
 
 *Merkintää* käytetään linkittämään kysyntä ja tarjonta. Se muistuttaa *tarvekohdistusta*, joka ilmaisee, miten pääsuunnittelun odotetaan kattavan kysynnän. Suunnittelun kannalta suurin ero on siinä, että merkintä on pysyvämpää kuin tarvekohdistus.
 

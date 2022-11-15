@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218799"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739867"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
 
@@ -89,7 +89,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, suunnittelun optimointi tulee jossain vaiheessa korvaamaan nykyisen Supply Chain Managementin sisäisen pääsuunnittelumoduulin. |
 | **Tuotealueet, joihin vaikutetaan**         | Supply Chain Management – Pääsuunnittelu |
 | **Käytön asetukset**              | Vain pilvipalvelussa. Suunnittelun optimointia ei tueta paikallisilla käyttöönotoilla. |
-| **Tila**                         | Vanhentunut. 1. huhtikuun 2022 jälkeen valmistusskenaarioita ei enää tueta Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Tästä päivämäärästä alkaen Microsoft lopettaa kaikki sisäisen suunnittelumoduulin aktiivisten valmistusskenaarioiden kehityksen, ei julkaise uusia ominaisuuksia ja julkaisee vain kriittisiä korjaustiedostoja. Tämän päivämäärän jälkeen kaikkien valmistusskenaarioita tukea edellyttävän yrityksen on käytettävä pääsuunnittelun laskelmissaan suunnittelun optimointia. Suunnittelun optimointi tukee täysin valmistusskenaarioita lokakuuhun 2022 mennessä. Lisätietoja on kohdassa [Suunnittelun optimoinnin dokumentointi](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Yritykset, joilla on käytössä paikalliset Supply Chain Management -käyttöönotot, voivat edelleen käyttää sisäänrakennettua pääsuunnittelumoduulia valmistusskenaarioissa huhtikuun 2022 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
+| **Tila**                         | Vanhentunut. 1. huhtikuun 2022 jälkeen valmistusskenaarioita ei enää tueta Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Tästä päivämäärästä alkaen Microsoft lopettaa kaikki sisäisen suunnittelumoduulin aktiivisten valmistusskenaarioiden kehityksen, ei julkaise uusia ominaisuuksia ja julkaisee vain kriittisiä korjaustiedostoja. Tämän päivämäärän jälkeen kaikkien valmistusskenaarioita tukea edellyttävän yrityksen on käytettävä pääsuunnittelun laskelmissaan suunnittelun optimointia. Suunnittelun optimointi tukee täysin valmistusskenaarioita lokakuuhun 2022 mennessä. Lisätietoja on kohdassa [Vanhentuneen pääsuunnittelun yleiskatsaus](../master-planning/deprecated-master-planning-overview.md).<br><br>Yritykset, joilla on käytössä paikalliset Supply Chain Management -käyttöönotot, voivat edelleen käyttää sisäänrakennettua pääsuunnittelumoduulia valmistusskenaarioissa huhtikuun 2022 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Supply Chain Managementin version 10.0.11 poistetut tai vanhentuneet ominaisuudet
 
@@ -101,7 +101,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, suunnittelun optimointi tulee jossain vaiheessa korvaamaan nykyisen Supply Chain Managementin sisäisen pääsuunnittelumoduulin. |
 | **Tuotealueet, joihin vaikutetaan**         | Supply Chain Management – Pääsuunnittelu |
 | **Käytön asetukset**              | Vain pilvipalvelussa. Suunnittelun optimointia ei tueta paikallisilla käyttöönotoilla. |
-| **Tila**                         | Vanhentunut. 1. huhtikuun 2021 jälkeen valmistusskenaarioita ei enää tueta Dynamics 365 Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Jakeluskenaarioiden osalta asiakkaiden on käytettävä suunnittelun optimointia pääsuunnittelun laskennoissa. Lisätietoja on kohdassa [Suunnittelun optimoinnin dokumentointi](../master-planning/planning-optimization/planning-optimization-overview.md). Asiakkaat, joilla on käytössä paikalliset Dynamics 365 Supply Chain Management -käyttöönotot, voivat edelleen käyttää toimitusketjun hallinnan pääsuunnittelumoduulia jakeluskenaarioissa huhtikuun 2021 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
+| **Tila**                         | Vanhentunut. 1. huhtikuun 2021 jälkeen valmistusskenaarioita ei enää tueta Dynamics 365 Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Jakeluskenaarioiden osalta asiakkaiden on käytettävä suunnittelun optimointia pääsuunnittelun laskennoissa. Lisätietoja on kohdassa [Vanhentuneen pääsuunnittelun yleiskatsaus](../master-planning/deprecated-master-planning-overview.md). Asiakkaat, joilla on käytössä paikalliset Dynamics 365 Supply Chain Management -käyttöönotot, voivat edelleen käyttää toimitusketjun hallinnan pääsuunnittelumoduulia jakeluskenaarioissa huhtikuun 2021 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poistettujen tai vanhentuneiden toimintojen aiemmat ilmoitukset
 

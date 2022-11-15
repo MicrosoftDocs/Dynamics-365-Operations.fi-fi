@@ -1,6 +1,6 @@
 ---
 title: Ostoehdotukset
-description: Tässä artikkelissa käsitellään ostoehdotusten tukemista suunnittelun optimoinnissa.
+description: Tässä artikkelissa on tietoja ostoehdotuksista.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b4dcae11e83748da3ec0368e1ddf47fedf5de23c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d9d55186307b18f4c3be78ae0828b08d3c987aad
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867895"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740681"
 ---
 # <a name="purchase-requisitions"></a>Ostoehdotukset
 
@@ -59,7 +59,7 @@ Kun hyväksyttyjen ehdotusten aikaraja määritetään yksittäiselle pääsuunn
 1. Toista vaiheet 2 ja 3 jokaisessa pääsuunnitelmassa, jossa halutaan määrittää hyväksyttyjen ehdotusten aikaraja.
 
 > [!IMPORTANT]
-> **Tulossa pian:** Hyväksyttyjen ehdotusten aikarajoja ei tueta vielä suunnittelun optimoinnissa. Niin kauan kun niitä ei tueta, kaikki **Hyväksyttyjen ehdotusten aikaraja (päivää)** -kenttään annetut arvot ohitetaan.
+> Hyväksyttyjen ehdotusten aikarajoja ei tueta suunnittelun optimoinnissa. Niin kauan kun niitä ei tueta, kaikki **Hyväksyttyjen ehdotusten aikaraja (päivää)** -kenttään annetut arvot ohitetaan.
 
 ## <a name="independent-supply-regardless-of-coverage-code"></a>Kattavuuskoodista riippumaton erillinen toimitus
 

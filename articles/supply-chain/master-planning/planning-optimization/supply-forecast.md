@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-21
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc83d10851958ec67166cb7e40cfd84dceae6651
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2bac9355bb1ac00f697ec459f494a64553e0eacc
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690077"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740138"
 ---
 # <a name="master-planning-with-supply-forecasts"></a>Pääsuunnittelu ja tarjontaennusteet
 
@@ -168,13 +168,13 @@ Kun suoritetaan pääsuunnitelma, jonka vähennysmenetelmän arvoksi on määrit
 
 Voit nyt muokata suunniteltua ostotilausta, joka luotiin edellisen suunnittelun suorituksen jälkeen ja jonka määräksi muutettiin *15 kpl*. Hyväksy ostotilaus tämän jälkeen. Kun pääsuunnitelma suoritetaan seuraavan kerran, luodaan ostotilaus toimittajalle *US-101*, sijainnille *1*, varastolle *11*, määrälle *10 kpl* ja päivämäärälle *10.10.22*. Nyt määrää vähennetään niin, että se vastaa aiemman edellisen suunnittelun suorituksen olemassa olevan, hyväksytyn tilauksen määrää.
 
-## <a name="differences-between-planning-optimization-and-the-built-in-planning-engine"></a>Suunnittelun optimoinnin ja sisäisen pääsuunnittelumoduulin erot
+## <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>Suunnittelun optimoinnin ja vanhentuneen pääsuunnittelumoduulin erot
 
-Tarjontaennusteet toimivat hieman eri tavalla riippuen käyttämästäsi suunnittelumoduulista (sisäinen pääsuunnittelu vai suunnittelun optimointi). Tässä osassa esitellään erot.
+Tarjontaennusteet toimivat hieman eri tavalla riippuen käyttämästäsi suunnittelumoduulista (suunnittelun optimointi vai vanhentunut pääsuunnittelumoduuli). Tässä osassa esitellään erot.
 
 ### <a name="vendor-groups"></a>Toimittajaryhmät
 
-Kun lisäät ennusterivin, voit määrittää toimittajan ja toimittajaryhmän. Luodut suunnitellut tilaukset ryhmitellään sisäisessä suunnittelumoduulissa toimittajan ja toimittajaryhmän arvojen yhdistelmän mukaan. Suunnittelun optimoinnissa suunnitellut tilaukset ryhmitellään toimittajan mukaan.
+Kun lisäät ennusterivin, voit määrittää toimittajan ja toimittajaryhmän. Luodut suunnitellut tilaukset ryhmitellään vanhentuneessa pääsuunnittelumoduulissa toimittajan ja toimittajaryhmän arvojen yhdistelmän mukaan. Suunnittelun optimoinnissa suunnitellut tilaukset ryhmitellään toimittajan mukaan.
 
 Alla olevassa taulukossa on esimerkkejä nimikkeen tarjontaennusteriveistä.
 
@@ -186,7 +186,7 @@ Alla olevassa taulukossa on esimerkkejä nimikkeen tarjontaennusteriveistä.
 
 Toimittaja *VendorA* on toimittajaryhmän *VendorGroupA* oletustoimittaja. Se on myös nimikkeen oletustoimittaja.
 
-Sisäinen suunnittelumoduuli luo seuraavat tilaukset:
+Vanhentunut pääsuunnittelumoduuli luo seuraavat tilaukset:
 
 - Toimittajan *VendorA*, toimittajaryhmän *VendorGroupA* ja määrän *11* suunniteltu ostotilaus
 - Toimittajan *VendorA* ja määrän *7* suunniteltu ostotilaus
@@ -197,7 +197,7 @@ Suunnittelun optimointi luo vain yhden tilauksen:
 
 ### <a name="reduction-of-general-forecasts-by-more-specific-forecasts"></a>Yleisten ennusteiden vähennys näitä tarkempien ennusteiden mukaan
 
-Sisäisessä pääsuunnittelumoduulissa tulos ei ole ennustettavissa, jos joillakin ennusteilla on toimittaja mutta joillakin ei.
+Vanhentuneessa pääsuunnittelumoduulissa tulos ei ole ennustettavissa, jos joillakin ennusteilla on toimittaja mutta joillakin ei.
 
 Suunnittelun optimoinnissa yleisiä ennusteita vähennetään aina näitä tarkemmilla ennusteilla alla olevien esimerkkien mukaisesti.
 
@@ -218,15 +218,15 @@ Yleistä ennustetta (15,00 kappaletta) vähennetään tätä tarkemmilla ennuste
 
 ### <a name="respect-for-default-order-settings-when-planned-orders-are-generated"></a>Tilauksen oletusasetusten noudattaminen suunniteltujen tilausten luomisessa
 
-Kullakin nimikkeellä voi olla tilauksen oletusasetukset, kuten ostotilauksen vähimmäismäärä. Sisäinen suunnittelumoduuli ohittaa nämä asetukset ja muuntaa näin ennusteet suunnitelluiksi tilauksiksi, joilla on sama määrä. Suunnittelun optimointi noudattaa näitä asetuksia, kun suunnitellut tilaukset luodaan tarjontaennusteista. 
+Kullakin nimikkeellä voi olla tilauksen oletusasetukset, kuten ostotilauksen vähimmäismäärä. Vanhentunut pääsuunnittelumoduuli ohittaa nämä asetukset ja muuntaa näin ennusteet suunnitelluiksi tilauksiksi, joilla on sama määrä. Suunnittelun optimointi noudattaa näitä asetuksia, kun suunnitellut tilaukset luodaan tarjontaennusteista. 
 
 ### <a name="aggregation-of-planned-orders-as-a-result-of-reduction-by-approved-orders"></a>Suunniteltujen tilausten koostaminen hyväksyttyjen tilausten mukaan tehtävän vähentämisen tuloksena
 
-Sisäinen pääsuunnittelumoduuli olettaa, vain yksi tilaus vähentää olemassa olevaa tarjontaennustetta. Jos siis useat tilaukset vastaavat tarjontaennusteriviä, vain ensimmäinen tilaus vähentää sitä. Suunnittelun optimoinnissa kaikki tarjontaennusteriviä vastaavat tilaukset vähentävät sitä.
+Vanhentunut pääsuunnittelumoduuli olettaa, vain yksi tilaus vähentää olemassa olevaa tarjontaennustetta. Jos siis useat tilaukset vastaavat tarjontaennusteriviä, vain ensimmäinen tilaus vähentää sitä. Suunnittelun optimoinnissa kaikki tarjontaennusteriviä vastaavat tilaukset vähentävät sitä.
 
 ### <a name="reduction-of-forecasts-by-matching-vendors-only"></a>Ennusteiden vähennys vain vastaavien toimittajien mukaan
 
-Kun sisäinen pääsuunnittelumoduuli vähentää ennustetta aiemmin luotujen vapautettujen ostotilausten mukaan, se ei varmista, että ostotilausten toimittaja vastaa ennusteen toimittajaa. Suunnittelun optimointi vähentää ennusteita vain niiden ostotilausten mukaan, joilla on vastaava arvo toimittajakentässä.
+Kun vanhentunut pääsuunnittelumoduuli vähentää ennustetta aiemmin luotujen vapautettujen ostotilausten mukaan, se ei varmista, että ostotilausten toimittaja vastaa ennusteen toimittajaa. Suunnittelun optimointi vähentää ennusteita vain niiden ostotilausten mukaan, joilla on vastaava arvo toimittajakentässä.
 
 Siirto- ja tuotantotilauksissa toimittajakenttä ohitetaan aina, koska sillä ei ole merkitystä näissä tilaustyypeissä.
 
@@ -234,4 +234,4 @@ Siirto- ja tuotantotilauksissa toimittajakenttä ohitetaan aina, koska sillä ei
 
 Jos nimikkeen tilauksen oletustyyppi on *Siirto*, ennusteita voidaan vähentää vain olemassa olevien suunniteltujen siirtotilausten mukaan. Tuotanto- ja ostotilauksissa kuitenkin vain vapautetut tilaukset vähentävät tarjontaennustetta.
 
-Sisäinen suunnittelumoduuli vähentää kaikkia siirtotilauksen tiloja, kun taas suunnittelun optimointi vähentää ennusteita vain niiden siirtotilausten mukaan, joiden tila on *Vapautettu*.
+Vanhentunut pääsuunnittelumoduuli vähentää kaikkia siirtotilauksen tiloja, kun taas suunnittelun optimointi vähentää ennusteita vain niiden siirtotilausten mukaan, joiden tila on *Vapautettu*.

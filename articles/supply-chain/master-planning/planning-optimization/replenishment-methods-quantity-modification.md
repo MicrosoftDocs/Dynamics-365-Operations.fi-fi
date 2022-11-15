@@ -1,6 +1,6 @@
 ---
 title: Täydennysmenetelmät ja määrän muokkaus
-description: Tässä artikkelissa on tietoja täydennystavoista suunnittelun optimoinnissa. Osassa kerrotaan myös, miten tuotteen usean tilauksen määrä vaikuttaa tulokseen.
+description: Tässä artikkelissa on tietoja täydennystavoista. Osassa kerrotaan myös, miten tuotteen usean tilauksen määrä vaikuttaa tulokseen.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,26 +11,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e0fe6c1f49bc0f6887f1b29118c1fee7a6222f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873692"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739753"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Täydennysmenetelmät ja määrän muokkaus
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa on tietoja täydennystavoista suunnittelun optimoinnissa. Osassa kerrotaan myös, miten tuotteen usean tilauksen määrä vaikuttaa tulokseen.
+Tässä artikkelissa on tietoja täydennystavoista. Osassa kerrotaan myös, miten tuotteen usean tilauksen määrä vaikuttaa tulokseen.
 
 Täydennysmenetelmiä kutsutaan myös kattavuusmenetelmiksi ja eräsyiden koon menetelmiksi.
 
 ## <a name="coverage-codes"></a>Kattavuuskoodit
 
-Suunnittelun optimointi voidaan määrittää käyttämään erilaisia täydennysmenetelmiä. Täydennysmenetelmät ovat tekniikoita, joiden avulla järjestelmä laskee vaatimuksia tuotteelle. Täydennysmenetelmät määritetään kattavuuskoodien avulla, jotka voit määrittää joko kattavuusryhmälle tai tuotteelle.
+Pääsuunnittelu voidaan määrittää käyttämään erilaisia täydennysmenetelmiä. Täydennysmenetelmät ovat tekniikoita, joiden avulla järjestelmä laskee vaatimuksia tuotteelle. Täydennysmenetelmät määritetään kattavuuskoodien avulla, jotka voit määrittää joko kattavuusryhmälle tai tuotteelle.
 
-Suunnittelun optimoinnissa voidaan käyttää seuraavia kattavuuskoodeja:
+Seuraavat kattavuuskoodit ovat käytettävissä:
 
 - **Kausi** – Täydennysmenetelmä, joka yhdistää kausikohtaisen kysynnän tuotteen yhteen tilaukseen. Tilaus suunnitellaan kauden ensimmäiselle päivälle, ja sen määrä täyttää määritetyn kauden nettotarpeet. Kausi alkaa tuotteen ensimmäisestä kysynnästä ja kattaa määritetyn ajanjakson. Seuraava kausi alkaa tuotteen seuraavista tarpeista. *Kauden* kattavuuskoodia käytetään usein ei-ennustettavissa olevan varaston asettaan, vuodenajan vaikutteille tai suurille kustannuksille. Seuraavassa kuvassa on esimerkki.
 
@@ -64,13 +64,13 @@ Voit määrittää vapautetun tuotteen **oletustilausasetus**-sivulla **ostotila
 
 ## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a>Esimerkkejä täydennyksestä, jotka käyttävät min./maks.-kohdetta. kattavuuskoodi
 
-Jos tuotteen **Kerrannais**-kentässä ei ole arvoa **oletustilausasetus** sivulla ja jos käytössä on *minimi-/maksimiarvo*. täydennysmenetelmä, suunnittelun optimointi täydentää varaston, kun arvioitu käytettävissä olevan varaston taso alittaa tietyn raja-arvon.
+Jos tuotteen **Kerrannais**-kentässä ei ole arvoa **oletustilausasetus** sivulla ja jos käytössä on *minimi-/maksimiarvo*. täydennysmenetelmä, pääsuunnittelu täydentää varaston määritettyyn tasoon, kun arvioitu käytettävissä olevan varaston taso alittaa tietyn raja-arvon.
 
 Jos määrität tuotteelle useita määriä, *minimi-/maksimimäärä* täydennysmenetelmä muuttaa toimintatapaansa ja ottaa **kerrannais**-arvon huomioon.
 
-Toisin sanoen suunnittelun optimointi täydentää varastoa määritetylle maksimitasolle, kun käytettävissä olevan varaston arvioitu taso on pienempi kuin määritetty minimitaso. Täydennysmäärän on kuitenkin oltava **Kerrannainen**-arvon kerrannainen.
+Toisin sanoen pääsuunnittelu täydentää varaston määritettyyn maksimitasoon asti, kun käytettävissä olevan varaston arvioitu taso on pienempi kuin määritetty minimitaso. Täydennysmäärän on kuitenkin oltava **Kerrannainen**-arvon kerrannainen.
 
-Jos täydennysmäärä (maksimitason ja arvioidun käytettävissä olevan varastotason välinen ero) ei ole määritetyn usean määrän kerrannainen, suunnittelun optimointi käyttää ensimmäistä mahdollista arvoa, joka yhdessä arvioidun käytettävissä olevan tason kanssa alittaa maksimitason. Jos summa on pienempi kuin vähimmäistaso, suunnittelun optimointi käyttää ensimmäistä arvoa, joka yhdessä arvioidun varastoarvon kanssa on maksimitasoa suurempi.
+Jos täydennysmäärä (maksimitason ja arvioidun käytettävissä olevan varastotason välinen ero) ei ole määritetyn usean määrän kerrannainen, pääsuunnittelu käyttää ensimmäistä mahdollista arvoa, joka yhdessä arvioidun käytettävissä olevan tason kanssa alittaa maksimitason. Jos summa on pienempi kuin vähimmäistaso, pääsuunnittelu käyttää ensimmäistä arvoa, joka yhdessä arvioidun varastoarvon kanssa on maksimitasoa suurempi.
 
 Seuraavissa osa-alueen esimerkeissä on esimerkkejä, jotka osoittavat, miten tuotteen usean tilauksen määrä vaikuttaa *minimi-/maksimi*-kentän tulokseen. täydennysmenetelmä.
 

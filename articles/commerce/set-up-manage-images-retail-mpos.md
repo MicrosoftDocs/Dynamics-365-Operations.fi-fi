@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287508"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751913"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Modern POS:n (MPOS) kuvien määrittäminen ja hallinta
 
@@ -160,7 +160,7 @@ Lukuun ottamatta Tuote-yksiköitä, voit korvata tietyn yksikkönimikkeen kuvan 
     [![Luettelokuvat-galleriasivu.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> Valikoima ei tällä hetkellä näytä kuvien esikatselua mediamallin kuvien URL-osoitteille. Luettelo-, Työntekijä-, Asiakas-, ja Luokka- yksiköiden ollessa kyseessä, jos käyttäjä antaa eksplisiittisesti URL-osoitteen tällä sivulla, suosittelemme, että ilmaiset, mikä kuva on oletuskuva, koska Commerce Scale Unitin työasemat näyttävät vain yhden kuvan kullekin Luettelolle, Asiakkaalle, Työntekijälle ja Luokalle. Jos käyttäjä ei määritä oletuskuvaa, järjestelmä määrittää oletuskuvan ja lähettää sen Commercen palvelinkutsujalle (MPOS tai Ecommerce).
+> Vain julkisesti ja anonyymisti käytettävissä olevat kuvat hahmonnetaan myyntipisteessä. Myyntipiste tukee ulkoisesti isännöityjen kuvien hahmontamista, mutta kuvat täytyy palauttaa inline octet-stream -tyyppisinä GET-pyyntöihin ilman otsikoita. Anonyymiä käyttöoikeuskäytäntöä käytettäessä, varsinkin SharePointissa isännöidyille kuville, jotka edellyttävät, että pyyntöjen otsikot sisältävät sekä host- että user-agent-otsikot, palautetaan "Kielletty"-vastaus. Tästä syystä kuvien hallintaa ei tueta käyttövalmiina, kun SharePoint toimii isäntänä. **Luettelokuvat**-galleriasivu ei näytä kuvien esikatseluita mediamallin kuvien URL-osoitteille. Koska Commerce Scale Unitin työasemat näyttävät vain yhden kuvan per Luettelo-, Asiakas-, Työntekijä- ja Luokalle-entiteetti, suosittelemme, että määrität oletuskuvan, jos annat URL-osoitteen Luettelo-, Työntekijä-, Asiakas- ja Luokka-entiteeteille tältä sivulta. Jos et määritä oletuskuvaa, järjestelmä määrittää oletuskuvan ja lähettää sen Commercen palvelinkutsujalle (MPOS tai e-commerce).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Kuvan URL-osoitteen korvaaminen tuotekuville Esikatselu-sivulta
 

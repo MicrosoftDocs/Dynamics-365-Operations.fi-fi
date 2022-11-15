@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 1a952fe5734f01325842a8a130b9322eadc67951
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335282"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740589"
 ---
 # <a name="priority-based-planning"></a>Prioriteettipohjainen suunnittelu
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta. Tämä ominaisuus lisää kysyntäperustaisen suunnittelun tuen, mikä on yksi [kysyntäperustaisen tarvelaskennan (DDMRP)](ddmrp-overview.md) vaihe. Prioriteettipohjaisessa suunnittelussa suunnittelun optimointi voi luoda suunnittelun prioriteetteihin eikä tarvepäiviin perustuvia suunniteltuja tilauksia.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta. Tämä ominaisuus lisää kysyntäperustaisen suunnittelun tuen, mikä on yksi [kysyntäperustaisen tarvelaskennan (DDMRP)](ddmrp-overview.md) vaihe. Prioriteettipohjaisessa suunnittelussa järjestelmä voi luoda suunniteltuja tilauksia, jotka perustuvat suunnittelun prioriteetteihin tarvepäivien sijaan.
 
 Prioriteettipohjaisessa suunnittelussa voidaan priorisoida täydennystilaukset, mikä varmistaa, että kiireinen tarve priorisoidaan vähemmän tärkeän tarpeen kustannuksella. Niinpä esimerkiksi negatiivisen varaston täydennystilaus priorisoidaan tavalliseen täydennyksen täyttötilaukseen nähden. Järjestelmä vo jakaa suuret tilaukset automaattisesti pienemmiksi tilauksiksi, joissa tilausrivit ryhmitellään prioriteetin mukaan. Sen jälkeen kaikki korkean prioriteetin tilaukset voidaan käsitellä ensin.
 
@@ -37,11 +37,11 @@ Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järj
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>Missä ja miten suunnittelun prioriteetti määritetään
 
-*Suunnittelun prioriteetin* tiedot kysynnästä ja tarjonnasta ovat keskeisessä asemassa prioriteettipohjaisessa suunnittelussa. Suunnittelun prioriteetti määrittää kysyntä- tai tarjontarivin tärkeyden. Suunnittelun optimointi käyttää sitä, kun **Kattavuuskoodi**-kentän asetuksena on *Prioriteetti*.
+*Suunnittelun prioriteetin* tiedot kysynnästä ja tarjonnasta ovat keskeisessä asemassa prioriteettipohjaisessa suunnittelussa. Suunnittelun prioriteetti määrittää kysyntä- tai tarjontarivin tärkeyden. Pääsuunnittelu käyttää sitä, kun **Kattavuuskoodi**-kentän asetuksena on *Prioriteetti*.
 
 Suunnittelun prioriteetti on yleensä jokin luku (0–100), jossa 0 ilmaisee tärkeydeltään suurinta. Arvo näkyy ja määritetään **Suunnittelun prioriteetti** -kentässä. Tämä kenttä on seuraavilla sivuilla: **Kysynnän ennusteen rivit**, **Myyntitilauksen tiedot**, **Ostotilauksen tiedot**, **Siirtotilauksen tiedot** ja **Suunnitellun tilauksen tiedot**.
 
-Kun soveltuvan nimikkeen tai kattavuusryhmän **Kattavuuskoodi**-kentän asetuksena on *Prioriteetti*, suunnittelun optimointi tasapainottaa tarjonnan ja kysynnän tarveperustaisen menetelmän avulla, kun se laskee suunnittelun prioriteetin sekä ottaa kunkin vapautetun tuotteen osalta huomioon arvot, jotka on määritetty **Nimikkeen kattavuus** -sivun **Minimi**-, **Uusintatilauspiste**- ja **Maksimi**-kenttiin.
+Kun soveltuvan nimikkeen tai kattavuusryhmän **Kattavuuskoodi**-kentän asetuksena on *Prioriteetti*, pääsuunnittelu tasapainottaa tarjonnan ja kysynnän tarveperustaisen menetelmän avulla, kun se laskee suunnittelun prioriteetin, sekä ottaa kunkin vapautetun tuotteen osalta huomioon arvot, jotka on määritetty **Nimikkeen kattavuus** -sivun **Minimi**-, **Uusintatilauspiste**- ja **Maksimi**-kenttiin.
 
 > [!NOTE]
 > *Prioriteetti*-arvon on **Kattavuuskoodi**-kentässä vain silloin, kun suunnittelun optimointi on otettu käyttöön.

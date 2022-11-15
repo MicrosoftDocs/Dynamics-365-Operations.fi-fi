@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f078fda02a11eb2073738d59b45f81698b707653
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37c38ab9cec8ae3c9d4decf8043b43ea2251083e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889516"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739726"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Suunnittelun optimoinnin vianmääritys 
 
@@ -37,13 +37,13 @@ Suunnittelun optimointi edellyttää korkean käytettävyyden ympäristöä, jos
 
 ## <a name="planning-of-batch-jobs-fails-when-planning-optimization-is-enabled"></a>Erätöiden suunnittelu epäonnistuu, kun suunnittelun optimointi on käytössä
 
-Kun suunnittelun optimointi otetaan käyttöön, sisäinen pääsuunnittelumoduuli poistetaan automaattisesti käytöstä. Supply Chain Managementin sisäiseen suunnittelumoduuliin luodut pääsuunnittelun erätyöt epäonnistuvat, jos ne ovat käynnistyneet suunnittelun optimoinnin ollessa käytössä. Näkyviin voi tulla esimerkiksi seuraavankaltainen virhesanoma, jonka mukaan *tämä toiminto käynnisti pääsuunnittelun, jota ei tueta, kun suunnittelun optimointi on otettu käyttöön*.
+Kun suunnittelun optimointi otetaan käyttöön, vanhentunut pääsuunnittelumoduuli poistetaan automaattisesti käytöstä. Vanhentuneelle pääsuunnittelumoduulille luodut pääsuunnittelun erätyöt epäonnistuvat, jos ne ovat käynnistyneet suunnittelun optimoinnin ollessa käytössä. Näkyviin voi tulla esimerkiksi seuraavankaltainen virhesanoma, jonka mukaan *tämä toiminto käynnisti pääsuunnittelun, jota ei tueta, kun suunnittelun optimointi on otettu käyttöön*.
 
-**Korjaus**: peruuta kaikki pääsuunnittelutyöt, jotka luotiin Supply Chain Managementin sisäiseen suunnittelumoduuliin.
+**Korjaus**: Peruuta kaikki pääsuunnittelutyöt, jotka luotiin vanhentuneelle pääsuunnittelumoduulille.
 
 ## <a name="planning-optimization-results-are-different-from-earlier-results"></a>Suunnittelun optimoinnin tulokset poikkeavat aiemmista tuloksista
 
-Suunnittelun optimointi poikkeaa sisäisestä pääsuunnittelun rakenteesta joillakin alueilla. Myös odottavat toiminnot voivat aiheuttaa tämän.
+Suunnittelun optimointi poikkeaa vanhentuneen pääsuunnittelumoduulin rakenteesta joillakin alueilla. Myös odottavat toiminnot voivat aiheuttaa tämän.
 
 **Korjaus**: Suorita suunnittelun optimoinnin kuntoanalyysi ja analysoi sitten tulokset samalla, kun selvität, mikä vaikutus niillä on liittyvän dokumentaation avulla. Lisätietoja on kohdassa [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md).
 
@@ -63,9 +63,8 @@ Tämä liittyy odottavaan toimintoon, joka suunniteltu tuotantotilausten tuen os
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Suunnittelun optimoinnin aloittaminen](get-started.md)
-
-[Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
+- [Pääsuunnittelun aloittaminen](get-started.md)
+- [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

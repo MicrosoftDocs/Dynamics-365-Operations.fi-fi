@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689773"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740820"
 ---
 # <a name="visual-and-collaborative-execution"></a>Visualisoinnin ja yhteistyön toteutus
 
@@ -34,7 +34,7 @@ Microsoft Dynamics 365 Supply Chain Managementissa voidaan seurata visuaalisesti
 1. Valitse erotuspisteeksi määritetty vapautettu nimike. (Lisätietoja on kohdassa [Varaston asemointi](ddmrp-inventory-positioning.md).)
 1. Valitse toimintoruudun **Suunnitelma**-välilehdessä **Nimikekattavuus**.
 1. Valitse **Nimikkeen kattavuus** -sivulla erotuspisteen luova nimikkeen kattavuustietue. (Tämä tietue näyttää erotuspisteet luomaan määritetyn kattavuusryhmän nimen.)
-1. Valitse **Varastosaldo**-välilehti. Tässä välilehdessä on kaavio, joka näyttää varastosaldon määrien muuttumisen ajan mittaan sekä tietylle ajanjaksolle kirjatun varastosaldotason aina, kun kyseinen suunnittelun optimointi suoritetaan. Välilehdessä on myös taulukko, josta näkee, mihin seuraavista luokista kukin kirjattu varastosaldotaso kuuluu:
+1. Valitse **Varastosaldo**-välilehti. Tässä välilehdessä on kaavio, joka näyttää varastosaldon määrien muuttumisen ajan mittaan sekä tietylle ajanjaksolle kirjatun varastosaldotason aina, kun kyseinen pääsuunnittelu suoritetaan. Välilehdessä on myös taulukko, josta näkee, mihin seuraavista luokista kukin kirjattu varastosaldotaso kuuluu:
 
     - **Kriittisen vähissä** – alle puolet jakson vähimmäismäärästä.
     - **Alhainen** – sijoittuu vähimmäismäärän puolikkaan ja vähimmäismäärän väliin.

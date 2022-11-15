@@ -1,6 +1,6 @@
 ---
 title: Pääsuunnittelu ja ostokauppasopimukset
-description: Tässä artikkelissa kuvataan, miten suunnittelun optimointi voi löytää suunnitellun tilauksen toimittajan ja/tai läpimenoajan, joka perustuu parhaaseen hintaan tai toimitusaikaan, joka löytyy ostosopimuksista.
+description: Tässä artikkelissa kuvataan, miten pääsuunnittelu voi löytää suunnitellun tilauksen toimittajan ja/tai läpimenoajan, joka perustuu parhaaseen ostokauppasopimuksista löydettyyn hintaan tai toimitusaikaan.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c36827738b13d5ca71da910d32e8877c1a408f62
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335222"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740982"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Pääsuunnittelu ja ostokauppasopimukset
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa kuvataan, miten suunnittelun optimointi voi löytää suunnitellun tilauksen toimittajan ja/tai läpimenoajan, joka perustuu parhaaseen hintaan tai toimitusaikaan, joka löytyy ostosopimuksista, jotka on määritetty tietylle tuotteelle.
+Tässä artikkelissa kuvataan, miten pääsuunnittelu voi löytää suunnitellun tilauksen toimittajan ja/tai läpimenoajan perustuen parhaaseen hintaan tai toimitusaikaan, joka löytyy kaikkien tuotteelle määritettyjen ostokauppasopimusten joukosta.
 
 ## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>Ostosopimusten ottaminen käyttöön suunnittelun optimointitoimintoa varten tai niiden käytöstäpoisto
 
@@ -35,7 +35,7 @@ Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestel
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>Valmistele järjestelmä arvioimaan ostosopimukset pääsuunnittelun aikana
 
-Noudattamalla näitä ohjeita voit määrittää järjestelmän käyttämään suunnittelun optimointia, joka arvioi ostosopimukset.
+Noudattamalla näitä ohjeita voit määrittää järjestelmän käyttämään pääsuunnittelua, joka arvioi ostokauppasopimukset.
 
 1. Valitse **Pääsuunnittelu \> Määritys \> Pääsuunnittelun parametrit**. Määritä **Suunnitellut tilaukset** -välilehden **Toimittaja**-osassa seuraavat arvot:
 
@@ -53,22 +53,22 @@ Kun järjestelmä on valmisteltu edellisessä osassa kuvatulla tavalla, varmista
 1. Varmista, että **Osto**-pikavälilehdessä ei ole määritetty toimittajaa **Toimittaja**-kentässä.
 1. Napsauta toimintoruudussa **Suunnitelma**-välilehden **Kattavuusryhmä**-kohdassa **Nimikkeen kattavuus**. Näkyviin tulee **Nimikkeen kattavuus** -sivu valitulle tuotteelle. Varmista seuraavat asetukset:
 
-    - **Yleinen**-välilehdessä voit määrittää toimittajan ohituksia. Jos haluat, että suunnittelun optimoinnin avulla voit valita toimittajan ostosopimusten avulla, estä toimittajan ohitukset poistamalla **Käytä tiettyä asetusta** -valintaruutu.
-    - **Läpimenoaika**-välilehdessä voit määrittää toimitusajan ohituksia. Jos haluat, että suunnittelun optimointi käyttää ostosopimuksia läpimenoaikojen valitsemiseen, sinun on estettävä läpimenoaikojen ohitukset. Poista niiden toimitusajan tyyppien valintaruudut, jotka haluat valita käyttämällä ostosopimuksia (**Osto**, **Tuotanto** ja/tai **Siirto**).
+    - **Yleinen**-välilehdessä voit määrittää toimittajan ohituksia. Jos haluat, että pääsuunnittelu käyttää ostokauppasopimuksia toimittajan valitsemiseen, sinun tulisi estää toimittajien ohitukset poistamalla **Käytä tiettyä asetusta** -valintaruudun valinta.
+    - **Läpimenoaika**-välilehdessä voit määrittää toimitusajan ohituksia. Jos haluat, että pääsuunnittelu käyttää ostokauppasopimuksia läpimenoaikojen valitsemiseen, sinun tulisi estää läpimenoaikojen ohitukset. Poista niiden toimitusajan tyyppien valintaruudut, jotka haluat valita käyttämällä ostosopimuksia (**Osto**, **Tuotanto** ja/tai **Siirto**).
 
 1. Palaa valitun tuotteen tietosivuun sulkemalla **Nimikkeen kattavuus** -sivu.
 1. Avaa **Tarjontaennuste**-sivu valitsemalla toimintoruudun **Suunnitelma**-välilehden **Ennuste**-ryhmästä **Tarjontaennuste**. Varmista, ettei tässä kuvassa olevalla rivillä ole arvoa **Toimittajatili**-sarakkeessa.
 1. Palaa valitun tuotteen tietosivuun sulkemalla **Tarjontaennuste**-sivu.
-1. Valitse sitten toimintoruudussa **Osto**-välilehden **Kauppasopimukset**-ryhmässä **Näytä kauppasopimukset**. Varmista, että kaikki asianmukaiset ostosopimukset on luetteloitu. Varmista myös, että **Ohita läpi menoaika** -asetuksen arvoksi on määritetty **Ei** kullekin sopimukselle, jossa haluat suunnittelun optimoinnin käyttävän kyseiselle sopimukselle määritettyä läpimenoaikaa.
-1. Napsauta toimintoruudussa **Suunnitelma**-välilehden **Tilauksen asetukset** -kohdassa **Oletusarvoiset tilauksen asetukset**. Näkyviin tulee **Oletusarvoiset tilauksen asetukset** -sivu valitulle tuotteelle. Tarkastele **Ostotilaus**-pikavälilehden **Oston läpimenoaika** -kentän arvoa. Jos nimikkeen kattavuuden läpimenoajan ohitus ei ole määritetty, suunnittelun optimointi käyttää tätä arvoa, kun se valitsee kauppasopimukset, joissa **Ohita läpimenoaika** -asetuksen arvoksi on määritetty **Kyllä**. Tämän vuoksi tätä arvoa tulee muuttaa tarpeen mukaan.
+1. Valitse sitten toimintoruudussa **Osto**-välilehden **Kauppasopimukset**-ryhmässä **Näytä kauppasopimukset**. Varmista, että kaikki asianmukaiset ostosopimukset on luetteloitu. Varmista myös, että **Ohita läpi menoaika** -asetuksen arvoksi on määritetty **Ei** kullekin sopimukselle, jossa haluat pääsuunnittelun käyttävän kyseiselle sopimukselle määritettyä läpimenoaikaa.
+1. Napsauta toimintoruudussa **Suunnitelma**-välilehden **Tilauksen asetukset** -kohdassa **Oletusarvoiset tilauksen asetukset**. Näkyviin tulee **Oletusarvoiset tilauksen asetukset** -sivu valitulle tuotteelle. Tarkastele **Ostotilaus**-pikavälilehden **Oston läpimenoaika** -kentän arvoa. Jos nimikkeen kattavuuden läpimenoajan ohitus ei ole määritetty, pääsuunnittelu käyttää tätä arvoa, kun se valitsee kauppasopimukset, joissa **Ohita läpimenoaika** -asetuksen arvoksi on määritetty **Kyllä**. Tämän vuoksi tätä arvoa tulee muuttaa tarpeen mukaan.
 1. Toista tämä toimenpide jokaiselle oleelliselle tuotteelle.
 
 > [!NOTE]
-> Suunnittelun optimointi tukee monivaluutan kauppasopimuksia. Kun järjestelmä hakee kauppasopimusta **Alhaisin yksikköhinta** -asetuksella, järjestelmä harkitsee eri valuuttoja käyttävät kauppasopimusrivit, jos kauppasopimusrivin valuutan ja yrityksen kirjanpitovaluutan välillä on määritetty vaihtokurssi. Muussa tapauksessa kauppasopimusriviä ei oteta huomioon, ja näkyviin tulee virhe pääsuunnittelun aikana. Pääsuunnittelu sisältää siis kaikkien niiden asiaankuuluvien ostosopimusrivien tiedot, joissa hinnat voidaan muuntaa kirjanpitovaluutaksi. On tärkeää muistaa, että pyöristyssääntöjä ei oteta huomioon kauppasopimuksen rivihinnan muuntamisen yhteydessä.
+> Pääsuunnittelu tukee useita valuuttoja käyttäviä ostokauppasopimuksia. Kun järjestelmä hakee kauppasopimusta **Alhaisin yksikköhinta** -asetuksella, järjestelmä harkitsee eri valuuttoja käyttävät kauppasopimusrivit, jos kauppasopimusrivin valuutan ja yrityksen kirjanpitovaluutan välillä on määritetty vaihtokurssi. Muussa tapauksessa kauppasopimusriviä ei oteta huomioon, ja näkyviin tulee virhe pääsuunnittelun aikana. Pääsuunnittelu sisältää siis kaikkien niiden asiaankuuluvien ostosopimusrivien tiedot, joissa hinnat voidaan muuntaa kirjanpitovaluutaksi. On tärkeää muistaa, että pyöristyssääntöjä ei oteta huomioon kauppasopimuksen rivihinnan muuntamisen yhteydessä.
 
-## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Esimerkkejä siitä, miten suunnittelun optimointi löytää toimittaja- ja läpimenoajat
+## <a name="examples-of-how-master-planning-finds-vendor-and-lead-times"></a>Esimerkkejä siitä, miten pääsuunnittelu löytää toimittajan ja läpimenoajat
 
-Seuraavassa taulukossa on esimerkkejä siitä, miten vapautetun tuotteen eri asetukset ja niihin liittyvät ostokauppasopimukset vaikuttavat tuloksena olevaan suunniteltuun ostotilaukseen liittyviin arvoihin. Kahden oikeanpuoleisimman sarakkeen **Lihavoidut** arvot ovat suunnittelun optimoinnin valitsemat arvot. Muiden sarakkeiden **_lihavoinnin ja kursivoinnin_** arvot ovat asetuksia, jotka tuottavat kullekin riville tulokseksi saatavat arvot.
+Seuraavassa taulukossa on esimerkkejä siitä, miten vapautetun tuotteen eri asetukset ja niihin liittyvät ostokauppasopimukset vaikuttavat tuloksena olevaan suunniteltuun ostotilaukseen liittyviin arvoihin. Kahden oikeanpuoleisimman sarakkeen **lihavoidut** arvot ovat pääsuunnittelun valitsemat arvot. Muiden sarakkeiden **_lihavoinnin ja kursivoinnin_** arvot ovat asetuksia, jotka tuottavat kullekin riville tulokseksi saatavat arvot.
 
 | Vapautettu tuote: Toimittaja | Tilauksen oletusasetuset: Läpimenoaika | Nimikekattavuus: Ohita toimittaja | Nimikekattavuus: Ohita läpimenoaika | Kauppasopimus: Toimittaja | Kauppasopimus: Läpimenoaika | Kauppasopimus: Ohita läpimenoaika | Tuloksena oleva toimittaja | Tuloksena oleva läpimenoaika |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -83,7 +83,7 @@ Seuraavassa taulukossa on esimerkkejä siitä, miten vapautetun tuotteen eri ase
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Ostosopimukset](../../procurement/purchase-agreements.md)
+- [Ostosopimukset](../../procurement/purchase-agreements.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Kattavuuden aikarajat
-description: Tässä artikkelissa käsitellään kattavuuden aikarajojen määrittämistä suunnittelun optimointia käytettäessä. Kattavuuden aikaraja ilmaiseen suunnitteluhorisontin ja -rajoituksen.
+description: Tässä artikkelissa käsitellään kattavuuden aikarajojen määrittämistä. Kattavuuden aikaraja ilmaiseen suunnitteluhorisontin ja -rajoituksen.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 987dea4c1b693fc1bb687f97d51288d5e51e7d4c
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847930"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740110"
 ---
 # <a name="coverage-time-fences"></a>Kattavuuden aikarajat
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa käsitellään *kattavuuden aikarajojen* määrittämistä suunnittelun optimointia käytettäessä. Suunnittelijat voiva määrittää suunnitteluhorisontin (kattavuuden aikarajan päivinä) sekä jättää pois kyseisen horisontin ulkopuolella olevan kysynnän ja tarjonnan. Niinpä kattavuuden aikarajat auttavat estämään sellaiset sekaannusta aiheuttavat toimitusehdotukset, joihin ei tarvitse reagoida kuin vasta kuukausien kuluttua. Esimerkkejä ovat esimerkiksi seuraavan vuoden ennuste ja asiakastilaukset, joiden läpimenoaika ylittää selvästi normaalin.
+Tässä artikkelissa käsitellään *kattavuuden aikarajojen* määrittämistä. Suunnittelijat voiva määrittää suunnitteluhorisontin (kattavuuden aikarajan päivinä) sekä jättää pois kyseisen horisontin ulkopuolella olevan kysynnän ja tarjonnan. Niinpä kattavuuden aikarajat auttavat estämään sellaiset sekaannusta aiheuttavat toimitusehdotukset, joihin ei tarvitse reagoida kuin vasta kuukausien kuluttua. Esimerkkejä ovat esimerkiksi seuraavan vuoden ennuste ja asiakastilaukset, joiden läpimenoaika ylittää selvästi normaalin.
 
 Kattavuuden aikaraja on päivien määrä kuluvan päivän jälkeen (tai tarkemmin sanottuna päivän, jolloin suunnitteluajo tehdään), jolloin toimitus ja kysyntä suljetaan pois. Viiveiden estämiseksi on varmistettava, että kattavuuden aikaraja on pidempi kuin kokonaisläpimenoaika. Järjestelmän oletusarvo on 100 päivää.
 
@@ -82,9 +82,9 @@ Seuraavat seikat kannattaa ottaa huomioon kattavuuden aikarajoja määritettäes
 - Tarvetapahtumia ei voi luoda millekään kattavuuden aikarajan ulkopuoliselle tarjonnalle ja kysynnälle.
 - Jos hyväksytty tarjonta ja kysyntä sijoittuu kattavuuden aikarajan ulkopuolelle, sitä ei ladata moduuliin. Niinpä ei käynnistä täydennystä eikä viiveitä lasketa. Tätä tarjontaa ja kysyntää ei kuitenkaan kannata poistaa järjestelmästä.
 - Varmuusvarastomäärien vaihtelut (minimitunnisteista) ohitetaan, jos ne ovat kattavuuden aikarajan ulkopuolella.
-- Konsernin sisäinen kysyntä ohitetaan, jos laskettu pyydetty lähetyspäivämäärä on kattavuuden aikarajan ulkopuolella. Huomaa, että sisäisessä pääsuunnittelussa kattavuuden aikaraja ei rajoita konsernin sisäistä kysyntää.
-- Kysynnän ennusteet ohitetaan, jos budjettipäivämäärä on kattavuuden aikarajan ulkopuolella. Huomaa, että sisäisessä pääsuunnittelussa kattavuuden aikaraja ei rajoita kysynnän ennusteita.
-- Suunnittelun optimointi ottaa aikavyöhykkeet huomioon. Se ottaa huomioon tarjonnan ja kysynnän toimipaikan aikavyöhykkeen ja suunnitteluajon ajankohdan. Esimerkki: Pääsuunnittelu käynnistetään 15. lokakuuta klo 11 Tanskassa sijaitsevassa toimipaikassa (GMT+1 aikavyöhyke), ja kattavuuden aikarajana käytetään 10 päivää. Tässä tapauksessa tarjonta ja kysyntä Seattlen toimipaikassa (GMT-8 aikavyöhyke) otetaan huomioon 25. lokakuuta klo 2.00 saakka (= kymmenen 24 tunnin päivää pääsuunnittelun käynnistymisen jälkeen, josta on vähennetty aikavyöhyke-eron vuoksi 9 tuntia). Huomaa, että sisäinen pääsuunnittelumoduuli ottaa huomioon vain aikarajan päivämäärän. Tämän vuoksi tuloksissa voi olla eroja.
+- Konsernin sisäinen kysyntä ohitetaan, jos laskettu pyydetty lähetyspäivämäärä on kattavuuden aikarajan ulkopuolella. Huomaa, että vanhentuneessa pääsuunnittelumoduulissa kattavuuden aikaraja ei rajoita konsernin sisäistä kysyntää.
+- Kysynnän ennusteet ohitetaan, jos budjettipäivämäärä on kattavuuden aikarajan ulkopuolella. Huomaa, että vanhentuneessa pääsuunnittelumoduulissa kattavuuden aikaraja ei rajoita kysynnän ennusteita.
+- Suunnittelun optimointi ottaa aikavyöhykkeet huomioon. Se ottaa huomioon tarjonnan ja kysynnän toimipaikan aikavyöhykkeen ja suunnitteluajon ajankohdan. Esimerkki: Pääsuunnittelu käynnistetään 15. lokakuuta klo 11 Tanskassa sijaitsevassa toimipaikassa (GMT+1 aikavyöhyke), ja kattavuuden aikarajana käytetään 10 päivää. Tässä tapauksessa tarjonta ja kysyntä Seattlen toimipaikassa (GMT-8 aikavyöhyke) otetaan huomioon 25. lokakuuta klo 2.00 saakka (= kymmenen 24 tunnin päivää pääsuunnittelun käynnistymisen jälkeen, josta on vähennetty aikavyöhyke-eron vuoksi 9 tuntia). Huomaa, että vanhentunut pääsuunnittelumoduuli ottaa huomioon vain aikarajan päivämäärän. Tämän vuoksi tuloksissa voi olla eroja.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
