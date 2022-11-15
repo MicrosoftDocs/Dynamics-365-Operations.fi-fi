@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
-ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.openlocfilehash: eb21dc5ca474a87fcabe2dda2a06dda7aa42ebc2
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728273"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736878"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -42,6 +42,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 
 > [!NOTE]
 > Alla mainitut toiminnot koskevat Commercen uusinta versiota. Osa toiminnosta on ehkä muuttunut tai niitä ei ollut aiemmissa versioissa.
+> Lisätietoja offline-ominaisuuksista ja -kokoonpanosta on artikkelissa [Commercen käyttöönotto offline-tilassa ja vianmääritys](dev-itpro/implementation-considerations-offline.md).
 
 | Tunnus   | Toiminto                                         | Kuvaus                                                                                                                                                                                                    | Käyttäjän toiminnot    | Tapahtumanäyttö | Aloitusnäyttö | Käytettävissä offline-tilassa? | Paikallinen |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |

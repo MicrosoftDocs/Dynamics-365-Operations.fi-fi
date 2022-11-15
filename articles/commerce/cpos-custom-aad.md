@@ -2,22 +2,19 @@
 title: CPOS:n määrittäminen käyttämään mukautettua Azure AD -sovellusta
 description: Tässä artikkelissa kerrotaan, kuinka määritetään Cloud POS (CPOS) käyttämään mukautettua Azure Active Directory (Azure AD) -sovellusta.
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9222966"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746257"
 ---
 # <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>CPOS:n määrittäminen käyttämään mukautettua Azure AD -sovellusta
 
@@ -52,6 +49,9 @@ Noudattamalla seuraavia ohjeita voit luoda ja konfiguroida mukautetun Retail Ser
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Mukautetun CPOS-sovelluksen asetukset Azure AD:ssä
 
+> [!IMPORTANT]
+> Jos olet päivittämässä olemassa olevaa mukautettua CPOS Azure AD -sovellusta, joka luotiin ennen Commerce-versiota 10.0.21, noudata ohjeita, jotka on kuvattu kohdassa [Ennen Commerce-versiota 10.0.21 luodun mukautetun CPOS Azure AD -sovelluksen päivittäminen](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+
 Noudattamalla seuraavia ohjeita voit luoda ja konfiguroida mukautetun CPOS-sovelluksen Azure AD:ssa.
 
 1. Kirjaudu [Azure Active Directory -hallintakeskukseen](https://aad.portal.azure.com) mitä tahansa Azure AD -käyttäjätiliä käyttäen. Käyttäjätilillä ei tarvitse olla järjestelmänvalvojan käyttöoikeuksia.
@@ -68,12 +68,25 @@ Noudattamalla seuraavia ohjeita voit luoda ja konfiguroida mukautetun CPOS-sovel
 1. Määritä **Luettelo**-osassa **oauth2AllowIdTokenImplicitFlow**- ja **oauth2AllowImplicitFlow**-parametrien arvoksi **tosi** ja valitse sitten **Tallenna**.
 1. Lisää kaksi väitettä noudattamalla seuraavia ohjeita **Tunnuksen määritys** -osassa:
 
-    - Valitse **Lisää valinnainen väite**. Määritä **Tunnuksen tyyppi** -kentän arvoksi **Tunnus** ja valitse sitten **sid**-väite. Valitse **Lisää**.
-    - Valitse **Lisää valinnainen väite**. Määritä **Tunnuksen tyyppi** -kentän arvoksi **Käyttöoikeudet** ja valitse sitten **sid**-väite. Valitse **Lisää**.
+    1. Valitse **Lisää valinnainen väite**. Määritä **Tunnuksen tyyppi** -kentän arvoksi **Tunnus** ja valitse sitten **sid**-väite. Valitse **Lisää**.
+    1. Valitse **Lisää valinnainen väite**. Määritä **Tunnuksen tyyppi** -kentän arvoksi **Käyttöoikeudet** ja valitse sitten **sid**-väite. Valitse **Lisää**.
 
 1. Valitse **API-käyttöoikeudet**-osassa **Lisää käyttöoikeus**.
 1. Etsi **Organisaationi käyttämät API:t** -välilehdessä Retail Server -sovellus, jonka loit [Mukautetun Retail Server -sovelluksen määrittäminen Azure AD:ssä](#set-up-a-custom-retail-server-app-in-azure-ad) -osassa. Valitse sitten **Lisää käyttöoikeudet**.
 1. Tee **Yleiskuvaus**-osassa huomautus **Sovelluksen (asiakasohjelman) tunnus** -kentän arvosta.
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>Ennen Commerce-versiota 10.0.21 luodun mukautetun CPOS Azure AD -sovelluksen päivittäminen
+
+Jos haluat päivittää ennen Commerce-versiota 10.0.21 luodun mukautetun CPOS Azure AD -sovelluksen, noudata näitä ohjeita. 
+
+1. Avaa mukautettu CPOS Azure AD -sovelluksesi Azure-portaalissa.
+1. Valitse **Todennus**-välilehti.
+1. Kopioi alkuperäinen uudelleenohjauksen URI-osoite **Verkko**-tyypistä, tallenna se myöhempää käyttöä varten ja poista se.
+1. Valitse **Lisää ympäristö** ja valitse sitten **Yhden sivun sovellus (SPA)**.
+1. Lisää yllä kopioitu alkuperäinen verkon uudelleenohjauksen URI-osoite SPA-ympäristöön.
+1. Lisää kaksi väitettä noudattamalla seuraavia ohjeita **Tunnuksen määritys** -osassa:
+    1. Valitse **Lisää valinnainen väite**. Määritä **Tunnuksen tyyppi** -kentän arvoksi **Tunnus** ja valitse sitten **sid**-väite. Valitse **Lisää**.
+    1. Valitse **Lisää valinnainen väite**. Määritä **Tunnuksen tyyppi** -kentän arvoksi **Käyttöoikeudet** ja valitse sitten **sid**-väite. Valitse **Lisää**.
 
 ## <a name="update-the-cpos-configuration-file"></a>Päivitä CPOS-konfiguraatiotiedosto
 
@@ -89,7 +102,7 @@ CPOS käyttää molempia parametreja, kun se lähettää pyyntöjä Azure AD:hen
 Seuraavaksi pitää päivittää Commerce headquartersin tunnistetietojen toimittajien asetukset.
 
 1. Avaa Commerce headquartersissa **Kaupankäynnin yhteiset parametrit** -sivu.
-1. Valitse **Tunnistetietojen toimittajat** -välilehden **Tunnistetietojen toimittajat** -osassa rivi,jossa **Tyyppi**-kentän arvona on **Azure Active Directory** ja **Myöntäjä**-kenttä osoittaa Azure AD -vuokraajaan. Tämä asetus ilmoittaa, että käytät aliruudukoita, jotka sisältävät Azure AD -vuokraajaa vastaavaan tunnistetietojen toimittajaan liittyvät tiedot.
+1. Valitse **Tunnistetietojen toimittajat** -välilehden **Tunnistetietojen toimittajat** -osassa rivi,jossa **Tyyppi**-kentän arvona on **Azure Active Directory** ja **Myöntäjä**-kenttä osoittaa Azure AD -vuokraajaan. Tämä asetus ilmoittaa, että käytät aliruudukoita, jotka sisältävät Azure AD -vuokraajaasi vastaavaan tunnistetietojen toimittajaan liittyvät tiedot.
 1. Lisää rivi valitsemalla **Liittyvät osapuolet** -osasta **Lisää**.
 1. Määritä seuraavat kentät:
 

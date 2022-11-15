@@ -1,6 +1,6 @@
 ---
 title: Pääsuunnittelu ja kysynnän ennusteet
-description: Tässä artikkelissa käsitellään kysynnän ennusteiden sisällyttämistä pääsuunnitteluun suunnittelun optimoinnin avulla
+description: Tässä artikkelissa käsitellään kysynnän ennusteiden sisällyttämistä pääsuunnittelun aikana.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878987"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739780"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Pääsuunnittelu ja kysynnän ennusteet
 
 [!include [banner](../../includes/banner.md)]
 
-Kysynnän ennusteita voi käyttää yhdessä suunnittelun optimoinnin kanssa kattamaan odotetun kysynnän pääsuunnittelussa. Kysynnän ennuste voidaan luoda manuaalisesti, se voidaan tuoda tai se voidaan luoda käyttämällä Microsoft Dynamics 365 Supply Chain Managementin kysynnän ennustetta. Lisätietoja kysynnän ennusteesta on kohdassa [Kysynnän ennusten yleiskatsaus](../introduction-demand-forecasting.md).
+Voit käyttää kysynnän ennusteita ottaaksesi odotetun kysynnän huomioon pääsuunnittelussasi. Kysynnän ennuste voidaan luoda manuaalisesti, se voidaan tuoda tai se voidaan luoda käyttämällä Microsoft Dynamics 365 Supply Chain Managementin kysynnän ennustetta. Lisätietoja kysynnän ennusteesta on kohdassa [Kysynnän ennusten yleiskatsaus](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > Suunnittelun optimointi ei tue erillistä ennustesuunnittelua. Niinpä **Pääsuunnittelun parametrit** -sivun **Nykyinen ennustesuunnitelma** -asetuksella ei ole merkitystä suunnittelun optimointia käytettäessä.
@@ -50,7 +50,7 @@ Pääsuunnitelma määritetään sisältämään kysynnän ennuste seuraavasti:
     - **Ennusteen ajanjakso** – jos **Ennustesuunnitelman** -asetuksena on *Kyllä*, määritä kuinka monta päivää (kuluvasta päivämäärästä) kysynnän ennustetta käytetään.
 
     > [!IMPORTANT]
-    > **Ennustesuunnitelma**-asetusta ei vielä tueta suunnittelun optimoinnissa.
+    > **Ennustesuunnitelma**-asetusta ei tueta suunnittelun optimoinnissa.
 
 ## <a name="set-up-a-coverage-group-to-include-a-demand-forecast"></a>Kattavuusryhmän määrittäminen sisältämään kysynnän ennuste
 

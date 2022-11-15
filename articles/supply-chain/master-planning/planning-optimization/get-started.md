@@ -1,6 +1,6 @@
 ---
-title: Suunnittelun optimoinnin aloittaminen
-description: Tässä artikkelissa käsitellään suunnittelun optimointitoiminnon käytön aloittamisesta.
+title: Pääsuunnittelun aloittaminen
+description: Tässä artikkelissa käsitellään Dynamics 365 Supply Chain Managementin pääsuunnittelun ominaisuuden käytön aloittamista.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295925"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740326"
 ---
-# <a name="get-started-with-planning-optimization"></a>Suunnittelun optimoinnin aloittaminen
+# <a name="get-started-with-master-planning"></a>Pääsuunnittelun aloittaminen
 
 [!include [banner](../../includes/banner.md)]
 
-Kuten [aiemmin ilmoitettiin](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), suunnittelun optimointi on aikataulutettu korvaamaan nykyinen sisäinen pääsuunnittelumoduuli.
-
-Jos sisäinen pääsuunnittelumoduuli on tällä hetkellä käytössä, suunnittelun optimointiin siirtymisen suunnittelu on syytä aloittaa nyt. On tärkeää aloittaa heti, koska vanheneminen voi muuten vaikuttaa toimintoihin (vaikka vanhenemista ei ole vielä ajoitettu). Siirto kannattaa tehdä heti, kun suunnittelun optimointi tukee tarvitsemiasi toimintoja. Tällöin voit aloittaa useiden suorituskyvyn parannusten hyödyntämisen ja muiden uuden palvelun ominaisuuksien käyttämisen.
-
-Suunnittelun optimointitoiminto ei tällä hetkellä tue kaikki niitä toimintoja, joita on Supply Chain Managementin sisäisessä suunnittelumoduulissa. Tämän vuoksi on tärkeää arvioida, vastaako suunnittelun optimoinnissa tällä hetkellä käytössä oleva toimintojoukko tarpeitasi. Suunnittelun optimointi ei ole tällä hetkellä oletusarvoisesti otettuna käyttöön Dynamics Lifecycle Servicesissä (LCS), joten arvionti on mahdollista tehdä ennen ominaisuuden ottamista käyttöön.
-
-> [!NOTE]
-> Poikkeusta suunnittelun optimointiin siirtymiseen on pyydettävä, jos pääsuunnitteluprosessi ei sisällä tuotantoa (pääsuunnittelun luomia suunniteltuja tuotantotilauksia) ja tarvitset sisäistä pääsuunnittelumoduulia version 10.0.15 jälkeen. Versiosta 10.0.16 alkaen ympäristöissä näytetään virhe, jos sisäinen pääsuunnittelu suoritetaan ilman suunniteltujen tuotantotilausten luontia. Suunnittelun optimointia on käytettävä kaikissa uusissa käyttöönotoissa, joissa ei luoda suunniteltuja tuotantotilauksia pääsuunnittelun aikana. Aiemmin luotujen ympäristöjen omistajat, jotka käyttävät sisäistä pääsuunnittelumoduulia suunniteltuja tuotantotilauksia luomatta, saavat poikkeusprosessia koskevan sähköpostin. Siirtyminen suunnittelun optimointiin kannattaa arvioida ja suunnitella yhteistyössä kumppanin kanssa.
-
-Ennen suunnittelun optimoinnin ottamista käyttöön on syytä arvioida suunnittelun optimoinnin sopivuusanalyysin tulokset. Lisätietoja on kohdassa [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md).
+Supply Chain Managementin pääsuunnittelun tarjoajana on ulkoinen palvelu, jota kutsutaan Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin lisäosaksi. Tässä aiheessa kuvataan, miten tämä palvelu hankitaan ja määritetään.
 
 ## <a name="availability"></a>Saatavuus
 
@@ -108,31 +99,15 @@ Yhteyden tila ilmaisee Supply Chain Managementin ja suunnittelun optimointipalve
 **Käytä suunnittelun optimointia** -vaihtoehdossa valittu asetus määrittää, mitä suunnittelumoduulia pääsuunnittelussa käytetään:
 
 - **Kyllä** – suunnittelun optimointia käytetään pääsuunnittelussa.
-- **Ei** – Supply Chain Managementin sisäistä suunnittelumoduulia käytetään pääsuunnittelussa.
+- **Ei** – Vanhentunutta pääsuunnittelumoduulia käytetään pääsuunnittelussa.
 
-Tämä asetus koskee kaikkia yrityksiä (yrityksiä). Suunnittelun optimointia ei voida käyttää joissakin yrityksissä ja sisäistä pääsuunnittelua muissa yrityksissä.
+Tämä asetus koskee kaikkia yrityksiä (yrityksiä). Suunnittelun optimointia ei voida käyttää joissakin yrityksissä ja vanhentunutta pääsuunnittelumoduulia muissa yrityksissä.
 
 > [!NOTE]
-> Jos Supply Chain Managementin sisäiselle suunnittelumoduulille aiemmin luodut suunnittelun erätyöt käynnistyvät, kun **Käytä suunnittelun optimointia** -asetuksena on **Kyllä**, kyseiset työt epäonnistuvat.
+> Jos vanhentuneelle pääsuunnittelumoduulille aiemmin luodut suunnittelun erätyöt käynnistyvät, kun **Käytä suunnittelun optimointia** -asetuksena on **Kyllä**, kyseiset työt epäonnistuvat.
 
 ### <a name="integration-with-the-setup"></a>Integrointi määrityksiin
 
 Jos suunnittelun optimointi on otettu käyttöön, suunnittelun optimoinnin apuohjelmaa käytetään pääsuunnittelussa. Tällä on vaikutusta pääsuunnittelun tuloksiin ja toimintoihin.
 
-## <a name="additional-resources"></a>Lisäresurssit
-
-[Esiversion ehdot](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Suunnittelun optimoinnin yleiskatsaus](planning-optimization-overview.md)
-
-[Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
-
-[Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
-
-[Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
-
-[Suunnittelutyön peruuttaminen](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

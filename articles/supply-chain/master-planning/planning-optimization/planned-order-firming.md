@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c2e4294cb54e9ba41467f505e361d5ee45f1f27d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335342"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740519"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -33,7 +33,7 @@ Tässä artikkelissa kuvataan kutakin menetelmää yksityiskohtaisesti.
 
 ## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Tässä artikkelissa kuvattujen ominaisuuksien ottaminen käyttöön
 
-Useimmat suunnitellut tilaustoiminnot ovat käytettävissä kaikissa Microsoft Dynamics 365 Supply Chain Managementin vakioasennuksissa, joissa käytetään suunnittelun optimointia. Joitakin tässä artikkelissa kuvatuista ominaisuuksista on kuitenkin otettava käyttöön ominaisuuksien hallinnassa, ennen kuin niitä voi käyttää.
+Useimmat suunniteltujen tilausten ominaisuudet ovat käytettävissä kaikissa Microsoft Dynamics 365 Supply Chain Managementin vakioasennuksissa. Joitakin tässä artikkelissa kuvatuista ominaisuuksista on kuitenkin otettava käyttöön ominaisuuksien hallinnassa, ennen kuin niitä voi käyttää.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Suunniteltujen tilausten rinnakkaisen vahvistuksen ottaminen käyttöön tai käytöstä poistaminen
 
@@ -91,7 +91,7 @@ Voit vahvistaa suunnitellut tilaukset manuaalisesti etsimällä ja valitsemalla 
 
 ## <a name="auto-firm-planned-orders"></a>Suunniteltujen tilausten automaattinen vahvistaminen
 
-Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuunnitteluprosessin osana. Voit määrittää kattavuusryhmien, yksittäisten nimikkeiden ja nimike- ja pääsuunnitelmien yhdistelmien vahvistamisen oletusaikarajan. Tällöin pääsuunnittelun ajon aikana suunnitellut tilaukset vahvistetaan automaattisesti, jos tilauspäivä on määritetyn vahvistamisen aikarajan sisällä. Suunnittelun optimoinnin avulla luodut suunnitellut tilaukset ja sisäinen pääsuunnittelutoiminto käsittelevät tilauspäivää (alkamispäivämäärää) eri tavalla.
+Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuunnitteluprosessin osana. Voit määrittää kattavuusryhmien, yksittäisten nimikkeiden ja nimike- ja pääsuunnitelmien yhdistelmien vahvistamisen oletusaikarajan. Tällöin pääsuunnittelun ajon aikana suunnitellut tilaukset vahvistetaan automaattisesti, jos tilauspäivä on määritetyn vahvistamisen aikarajan sisällä. Suunnittelun optimoinnin ja vanhentuneen pääsuunnittelumoduulin avulla luodut suunnitellut tilaukset käsittelevät tilauspäivän (alkamispäivän) eri tavalla.
 
 > [!NOTE]
 > Suunniteltujen ostotilausten automaattinen vahvistus on mahdollista vain, jos nimike on liitetty toimittajaan.
@@ -99,13 +99,13 @@ Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuu
 > Vahvistetuissa johdetuissa tilauksissa (alihankintaostotilauksissa) näkyy *Tarkistettavana*-tila, kun muutosten seuranta on otettu käyttöön.
 
 > [!IMPORTANT]
-> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää suunnittelun optimoinnissa, [*Suunnittelun optimoinnin automaattinen vahvistus* -toiminto](#enable-features) on otettava käyttöön järjestelmässä tämän artikkelin alussa kuvatulla tavalla. Automaattista vahvistusta voidaan käyttää aina sisäänrakennetun pääsuunnittelumoduulin kanssa.
+> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää suunnittelun optimoinnissa, [*Suunnittelun optimoinnin automaattinen vahvistus* -toiminto](#enable-features) on otettava käyttöön järjestelmässä tämän artikkelin alussa kuvatulla tavalla. Automaattista vahvistusta voidaan käyttää aina vanhentuneen pääsuunnittelumoduulin kanssa.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automaattinen vahvistus suunnittelun optimoinnilla vs. sisäänrakennettu suunnittelumoduuli
+### <a name="auto-firming-with-planning-optimization-vs-the-deprecated-master-planning-engine"></a>Automaattinen vahvistus suunnittelun optimoinnilla vs. vanhentuneella suunnittelumoduulilla
 
-Sekä suunnittelun optimointia että sisäistä suunnittelumoduulia voi käyttää suunniteltujen tilausten automaattiseen vahvistamiseen. Niillä on kuitenkin tärkeitä eroavaisuuksiakin. Esimerkiksi siinä missä suunnittelun optimointi käyttää tilauspäivää (eli aloituspäivää) määrittämään, mitkä suunnitellut tilaukset vahvistetaan, sisäinen suunnittelumoduuli käyttää tarvepäivää (eli päättymispäivää). Seuraavassa taulukossa on erojen yhteenveto.
+Sekä suunnittelun optimointia että vanhentunutta pääsuunnittelumoduulia voi käyttää suunniteltujen tilausten automaattiseen vahvistamiseen. Niillä on kuitenkin tärkeitä eroavaisuuksiakin. Esimerkiksi siinä missä suunnittelun optimointi käyttää tilauspäivää (eli aloituspäivää) määrittääkseen, mitkä suunnitellut tilaukset vahvistetaan, vanhentunut pääsuunnittelumoduuli käyttää tarvepäivää (eli päättymispäivää). Seuraavassa taulukossa on erojen yhteenveto.
 
-| Ominaisuus | Suunnittelun optimointi | Sisäinen suunnittelumoduuli |
+| Ominaisuus | Suunnittelun optimointi | Vanhentunut pääsuunnittelumoduuli |
 |---|---|---|
 | **Päivämäärän peruste** | Automaattinen vahvistus perustuu tilauspäivään (aloituspäivään). | Automaattinen vahvistus perustuu tarvepäivään (päättymispäivään). |
 | **Läpimenoaika** | Koska tilauspäivä (aloituspäivä) käynnistää vahvistuksen, läpimenoaikaa ei tarvitse sisällyttää vahvistuksen aikarajaan. | Vahvistuksen aikarajan on oltava pidempi kuin läpimenoajan, jotta voidaan varmistaa, että tilaukset vahvistetaan ajoissa. |

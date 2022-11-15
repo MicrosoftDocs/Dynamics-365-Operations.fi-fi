@@ -1,6 +1,6 @@
 ---
-title: Nettotarpeet ja tarvekohdistamistiedot, joissa on suunnittelun optimointi
-description: Tässä artikkelissa on tietoja lasketuista nettovaatimuksista ja tietojen tarvekohdista suunnittelun optimoinnissa.
+title: Nettotarpeet ja tarvekohdistustiedot
+description: Tässä artikkelissa on tietoja lasketuista nettotarpeista ja tarvekohdistustiedoista.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a31ff5490b08d92f0d966388b65de02bca25b050
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888525"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748435"
 ---
-# <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Nettotarpeet ja tarvekohdistamistiedot, joissa on suunnittelun optimointi
+# <a name="net-requirements-and-pegging-information"></a>Nettotarpeet ja tarvekohdistustiedot
 
 [!include [banner](../../includes/banner.md)]
 
-Suunnittelun optimoinnissa ajon yhteydessä on tärkeää ymmärtää sen tuotos, kuinka nykyinen toimitus kattaa kysynnän ja miksi tietty toimitus on luotu. **Nettovaatimukset** -sivulla voit paremmin ymmärtää pääsuunnittelun tuottamat lasketut tarpeet.
+Pääsuunnittelun ajon yhteydessä on tärkeää ymmärtää sen tuotos, kuinka nykyinen toimitus kattaa kysynnän ja miksi tietty toimitus on luotu. **Nettovaatimukset** -sivulla voit paremmin ymmärtää pääsuunnittelun tuottamat lasketut tarpeet.
 
-**Nettovaatimukset**-sivulla näkyvät nettovaatimukset, jotka suunnittelun optimointi on laskenut tuotteelle. Se näyttää myös pääsuunnittelun ajon aikana käyttöönottamisen kattavuusasetukset, erittelyn vaatimuksesta kokonaissummat tapahtumatyypeittain ja tarvekohdistustiedot.
+**Nettotarpeet**-sivulla näkyvät nettotarpeet, jotka pääsuunnittelu on laskenut tuotteelle. Se näyttää myös pääsuunnittelun ajon aikana käyttöönottamisen kattavuusasetukset, erittelyn vaatimuksesta kokonaissummat tapahtumatyypeittain ja tarvekohdistustiedot.
 
 ## <a name="open-the-net-requirements-page"></a>Nettotarpeet-sivun avaaminen
 
@@ -64,8 +64,8 @@ Sivun alaosassa on seuraavat välilehdet:
 Toimintoruudussa ovat käytettävissä seuraavat käskyt:
 
 - **Päivitä \> Pääsuunnittelu** - Suorita pääsuunnittelu suoraan **Nettovaatimukset**-sivulta.
-- **Päivitä \> Ennustesuunnittelu** - Suorita ennustesuunnittelu suoraan **Nettovaatimukset**-sivulta. Suunnittelun optimointi ei vielä tue tätä toimintoa.
-- **Päivitä \> Jatkuvuuden ajoitus** – Suorita jatkuvuuden ajoitus suoraan **Nettovaatimukset**-sivulta. Suunnittelun optimointi ei vielä tue tätä toimintoa.
+- **Päivitä \> Ennustesuunnittelu** - Suorita ennustesuunnittelu suoraan **Nettovaatimukset**-sivulta. Suunnittelun optimointi ei tue tätä toimintoa.
+- **Päivitä \> Jatkuvuuden ajoitus** – Suorita jatkuvuuden ajoitus suoraan **Nettovaatimukset**-sivulta. Suunnittelun optimointi ei tue tätä toimintoa.
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
@@ -133,8 +133,6 @@ Seuraavaksi avaat tuotteen *1000* **nettovaatimuksia** tarkastelemalla, miten la
     ![Myyntitilauksen tarvekohdistaminen](media/pegging-planned-purchase-order.png "Myyntitilauksen tarvekohdistaminen")
 
 > [!NOTE]
-> Koska suunnittelun optimointi ei vielä tue joitakin ominaisuuksia, *Turvallisuusvarasto*- ja *Vanhentunut erä* vaatimukset eivät sisälly **Nettotarve**-sivulle. Lisätietoja on kohdassa [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md).
->
-> Jos käytössä on sisäinen pääsuunnittelumoduuli, eräohjattuja tuotteita tuetaan. Eräohjatuissa tuotteissa vanhentunut käytettävissä oleva varasto näkyy **Nettovaatimus**-sivulla, mutta se ei ole tarvekohdissa. Vanhentuneet tämäntyyppiset käytössä olevat varastorivit näytetään *vanhentunut erä* -vaatimusriveillä **Nettovaatimus**-sivulla.
+> *Varmuusvarasto*-vaatimustyyppi ei sisälly **Nettotarpeet**-sivuun.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

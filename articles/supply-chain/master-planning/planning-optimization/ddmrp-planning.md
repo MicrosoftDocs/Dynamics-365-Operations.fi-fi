@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: f1e2cfca47d507c8de7f9323bb8e4262a0e90949
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 8ba9a6d24923b66259bc8b6cc688ec667cb000de
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689156"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740299"
 ---
 # <a name="demand-driven-planning"></a>Kysyntäperustainen suunnittelu
 
@@ -55,4 +55,4 @@ Jos pääsuunnittelu suoritetaan nyt, se luo suunnittelun tilauksen, jos nettovi
 Tässä esimerkissä luodaan 130 kappaleen suunniteltu ostotilaus. Tämä luku on yhtä suuri kuin enimmäistaso, josta on vähennetty nettovirta. Suunnitellun tilauksen prioriteetiksi määritetään 53,07, ja tämä arvo perustuu prosenttiosuuteen enimmäismäärästä. Koska nämä arvot havaittiin 20. kesäkuuta, järjestelmä luo 20. kesäkuuta päivätyn suunnitellun tilauksen ja lisää siihen nimikkeen erotetun läpimenoajan (tässä esimerkissä viisi arkipäivää). Koska viisiarkipäivää on viikko kuluvasta päivästä, suunnitellun tilauksen päivämääräksi merkitään 27. kesäkuuta.
 
 > [!NOTE]
-> Suunnittelun optimointi laskee vain erotetut nimikkeet DDMRP:n avulla. Kaikki muut nimikkeet lasketaan käyttämällä vakiotarvelaskentaa (MRP).
+> Pääsuunnittelu laskee vain erotetut nimikkeet DDMRP:n avulla. Kaikki muut nimikkeet lasketaan käyttämällä vakiotarvelaskentaa (MRP).

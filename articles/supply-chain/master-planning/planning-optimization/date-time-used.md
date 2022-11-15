@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885896"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740901"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Suunnittelun optimoinnissa käytetyt päivämäärä- ja aikaparametrit
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885896"
 
 Tässä artikkelissa on tietoja suunnittelun optimoinnin aikana käytettävistä päivämäärä- ja aikaparametreista.
 
-Kun sisäinen pääsuunnittelumoduuli käyttää kaikissa laskelmissa tapahtumapäivämääriä, suunnittelun optimointi käyttää päivämäärä- ja aika-arvoja, jotka muunnetaan päivämääriksi. Tämä toimintaero voi aiheuttaa tilanteita, joissa esimerkiksi pääsuunnittelun suorituspäivänä keskiyöllä luotuja ennustetapahtumia ei oteta huomioon, koska suunnittelun optimointi katsoo, että ne on luotu ennen kuluvaa päivämäärää.
+Kun vanhentunut pääsuunnittelumoduuli käyttää kaikissa laskelmissa tapahtumapäivämääriä, suunnittelun optimointi käyttää päivämäärä- ja aika-arvoja, jotka muunnetaan päivämääriksi. Tämä toimintaero voi aiheuttaa tilanteita, joissa esimerkiksi pääsuunnittelun suorituspäivänä keskiyöllä luotuja ennustetapahtumia ei oteta huomioon, koska suunnittelun optimointi katsoo, että ne on luotu ennen kuluvaa päivämäärää.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Varasto-otto- ja kysyntätapahtumien parametrit
 

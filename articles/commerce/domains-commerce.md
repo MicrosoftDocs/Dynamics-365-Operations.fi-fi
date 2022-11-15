@@ -2,19 +2,19 @@
 title: Toimialueet Dynamics 365 Commercessa
 description: Tässä artikkelissa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: f1a2de7984aad7d291b8a4dc68f5690d57ebe6cc
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465190"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750677"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Toimialueet Dynamics 365 Commercessa
 
@@ -29,7 +29,7 @@ Toimialueet ovat verkko-osoitteita, joiden avulla siirrytään Dynamics 365 Comm
 
 ## <a name="provisioning-and-supported-host-names"></a>Valmistelu ja tuetut isäntänimet
 
-Kun sähköisen kaupankäynnin ympäristöä valmistellaan [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) -sovelluksessa, sähköisen kaupankäynnin valmistelunäytön **Tuetut isäntänimet** -ruutua käytetään Commerce-ympäristön toimialueiden syöttämiseen. Nämä toimialueet ovat asiakkaille tarkoitettuja DNS-nimiä, joissa sähköisen kaupankäynnin verkkosivustoja isännöidään. Toimialueelle siirtyminen ei tässä vaiheessa aloita liikenteen ohjaamista Dynamics 365 Commercen toimialueelle. Toimialueen liikenne reititetään vain Commercen päätepisteeseen, kun DNS CNAME -tietue päivitetään käyttämään Commercen päätepistettä ja toimialuetta.
+Kun sähköisen kaupankäynnin ympäristöä valmistellaan [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) -sovelluksessa, sähköisen kaupankäynnin valmistelunäytön **Tuetut isäntänimet** -ruutua käytetään Commerce-ympäristön toimialueiden syöttämiseen. Nämä toimialueet ovat asiakkaille tarkoitettuja DNS-nimiä, joissa sähköisen kaupankäynnin verkkosivustoja isännöidään. Toimialueelle siirtyminen tässä vaiheessa ei aloita liikenteen ohjaamista Dynamics 365 Commercen toimialueelle. Toimialueen liikenne reititetään vain Commercen päätepisteeseen, kun DNS CNAME -tietue päivitetään käyttämään Commercen päätepistettä ja toimialuetta.
 
 > [!NOTE]
 > **Tuetut isäntänimet** -ruutuun voidaan syöttää useita toimialueita erottamalla ne puolipisteillä.
@@ -44,7 +44,7 @@ Voit luoda palvelupyynnön lisätoimialueiden lisäämiseksi ympäristöön, jos
 
 Sähköisen kaupankäynnin Dynamics 365 Commerce -ympäristön valmistelun yhteydessä Commerce luo URL-osoitteen, joka on ympäristön työosoite. Tähän URL-osoitteeseen viitataan sähköisen kaupankäynnin sivuston linkissä, joka näkyy LCS:ssä ympäristön valmistelun jälkeen. Commercen luoman URL-osoitteen muoto on `https://<e-commerce tenant name>.dynamics365commerce.ms`, jossa sähköisen kaupankäynnin vuokraajan nimi on Commercen ympäristöön LCS:lle syötetty nimi.
 
-Voit käyttää tuotantosivuston isäntänimiä myös eristysympäristössä. Tämä vaihtoehto on ihanteellinen, kun kopioit sivuston eristysympäristöstä tuotantoon.
+Voit käyttää tuotantosivuston isäntänimiä myös eristysympäristössä. Tämä vaihtoehto on ihanteellinen, kun kopioit sivustoa eristysympäristöstä tuotantoympäristöön.
 
 ## <a name="site-setup"></a>Sivuston asetukset
 
@@ -85,7 +85,7 @@ Seuraavassa kuvassa näkyy **URL-osoitteet**-sivu sivuston luontiohjelmassa sek�
 
 ## <a name="domains-in-site-builder"></a>Toimialueet sivuston luontiohjelmassa
 
-Tuetut isäntänimien arvot ovat käytettävissä. Ne voidaan liittää toimialueena, kun sivustoa määritetään. Kun tuettua isäntänimen arvoa valitaan toimialueeksi, näkyvissä on valittu toimialue. Siihen viitataan sivuston luontiohjelmassa. Tämä toimialue on vain viite Commerce-ympäristössä. Kyseisen toimialueen suoraa liikennettä ei vielä välitetä Dynamics 365 Commerceen.
+Tuetut isäntänimien arvot ovat käytettävissä. Ne voidaan liittää toimialueena, kun sivustoa määritetään. Kun valitset tuettua isäntänimen arvoa toimialueeksi, valittuun toimialueeseen viitataan sivuston luontiohjelmassa. Tämä toimialue on vain viite Commerce-ympäristössä. Kyseisen toimialueen suoraa liikennettä ei vielä ohjata Dynamics 365 Commerceen.
 
 Jos olet määrittänyt sivuston luontiohjelmassa kaksi sivustoa, joilla on eri toimialueet, voit liittää **?domain=**-määritteen käytettävään URL-osoitteeseen ja käyttää julkaistun sivuston sisältöä selaimessa.
 
@@ -93,7 +93,13 @@ Ajatellaan, että xyz-niminen ympäristö on valmisteltu ja sivuston luontiohjel
 - `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
 - `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Kun toimialueen kyselymerkkijonoa ei anneta ympäristössä, jossa on useita toimialueita, Commerce käyttää ensimmäistä toimialuetta. Jos esimerkiksi polku fabrikam annettiin ensin sivuston asetuksen aikana, URL-osoitetta `https://xyz.dynamics365commerce.ms` voidaan käyttää julkaistun sivuston sisällön käyttämisessä URL-osoitteessa `www.fabrikam.com`.
+Kun toimialueen kyselymerkkijonoa ei anneta ympäristössä, jossa on useita toimialueita, Commerce käyttää ensimmäistä antamaasi toimialuetta. Jos esimerkiksi polku fabrikam annettiin ensin sivuston asetuksen aikana, URL-osoitetta `https://xyz.dynamics365commerce.ms` voidaan käyttää julkaistun sivuston sisällön käyttämisessä URL-osoitteessa `www.fabrikam.com`.
+
+Voit lisätä myös mukautettuja toimialueita. Voit tehdä niin valitsemalla projektin ympäristön Commerce-hallintasivun **Sähköinen kaupankäynti** -alaotsikon alta **+ Lisää mukautettu toimialue**. Liukusäädin näyttää aiemmin luodut mukautetut toimialueet ja tarjoaa vaihtoehdon, jolla voit luoda uuden mukautetun toimialueen.
+
+## <a name="update-which-commerce-scale-unit-is-used"></a>Käytetyn Commerce Scale Unit -yksikön päivittäminen
+
+Commercen käyttämä Commerce Scale Unit (CSU) -yksikkö valitaan tavallisesti, kun ympäristö luodaan ensimmäistä kertaa. Commerce sallii sinun muuttaa ympäristösi käyttämää CSU-esiintymää, jotta voit ylläpitää arkkitehtuuriasi paremmin itsepalvelutoiminnoilla ja vähentää näin tarvetta ottaa yhteyttä tukipalveluun. Voit päivittää CSU-esiintymäsi valitsemalla projektin ympäristön Commerce-hallintasivulta **Päivitä Scale Unit**. Valitse CSU-esiintymäsi **Uusi Commerce Scale Unit** -liukukytkimellä ympäristöllesi käytettävissä olevien CSU-esiintymien luettelosta.
 
 ## <a name="traffic-forwarding-in-production"></a>Liikenteen välittäminen tuotannossa
 
@@ -103,9 +109,9 @@ Voit simuloida useita toimialueita käyttämällä toimialueen kyselymerkkijonon
 
 Jos haluat määrittää mukautettuja toimialueita Front Door Service -palvelun tai sisällön toimitusverkoston (CDN) avulla, käytettävissä on seuraavat kaksi vaihtoehtoa:
 
-- Määritä Front Door Service -palvelu, kuten Azure Front Door Service, joka käsittelee edustaliikennettä, ja muodosta yhteys Commerce-ympäristöön. Tämä parantaa toimialueiden ja varmenteiden hallintaa sekä enemmän yksityiskohtaisia suojauskäytäntöjä.
+- Määritä Front Door Service -palvelu, kuten Azure Front Door Service, joka käsittelee edustaliikennettä, ja muodosta yhteys Commerce-ympäristöösi. Tämä parantaa toimialueiden ja varmenteiden hallintaa ja tarjoaa tarkempia suojauskäytäntöjä.
 
-- Käytä Commercen mukana toimitettua Azure Front Door -esiintymää. Tämä edellyttää Dynamics 365 Commercen ryhmän koordinointitoimintoja toimialueen todentamiseksi ja SSL-varmenteiden hankkimista tuotannon toimialueelle.
+- Käytä Commercen mukana toimitettua Azure Front Door -esiintymää, joka edellyttää Dynamics 365 Commercen ryhmän koordinointitoimintoja toimialueen todentamiseksi ja SSL-varmenteiden hankkimista tuotantotoimialueellesi.
 
 > [!NOTE]
 > Jos käytössä on ulkoinen CDN tai Front Door Service -palvelu, varmista, että Commerce-ympäristöön saapuvalla pyynnöllä on Commercen antaman isäntänimi, mutta X-Forwarded-Host (XFH) -otsikko \<custom-domain\>. Jos esimerkiksi Commerce-päätepiste on `xyz.dynamics365commerce.ms` ja mukautettu toimialue `www.fabrikam.com`, edelleenlähetetyn pyynnön isännän otsikon on oltava `xyz.dynamics365commerce.ms` ja XFH-otsikon `www.fabrikam.com`.
@@ -114,10 +120,10 @@ Lisätietoja CDN-palvelun määrittämisestä suoraan on kohdassa [Sisällön to
 
 Jos haluat käyttää Commercen mukana toimitettua Azure Front Door -esiintymää, sinun on luotava Commercen käyttöönottoryhmän CDN-määrityksen apua koskeva palvelupyyntö. 
 
-- Anna yrityksen nimi, tuotannon toimialue, ympäristön tunnus ja tuotannon sähköisen kaupankäynnin vuokraajan nimi. 
-- Vahvista, onko tämä olemassa oleva toimialue (käytetään parhaillaan aktiivisissa sivustoissa) vai uusi toimialue. 
+- Anna yrityksesi nimi, tuotantotoimialueesi, ympäristösi tunnus ja tuotantoverkkokauppasi vuokraajan nimi. 
+- Sinun täytyy vahvistaa, onko tämä palvelupyyntö tarkoitettu nykyiselle toimialueelle (jota käytetään parhaillaan aktiiviselle sivustolle) vai uusi toimialue. 
 - Jos kyseessä on uusi toimialue, toimialueen vahvistus ja SSL-varmenne voidaan saada yhdessä vaiheessa. 
-- Toimialueelle, joka palvelee olemassa olevaa sivustoa, tarvitaan monivaiheinen prosessi. Sen avulla voidaan määrittää toimialueen vahvistus ja SSL-varmenne. Tämä prosessi sisältää 7 työpäivän palvelutasosopimuksen toimialueen julkaisemiselle. Tämä siksi, että peräkkäisiä vaiheita on useita.
+- Jos toimialue toimii sivuston isäntä, toimialueen vahvistuksen ja SSL-varmenteen määrittäminen edellyttää monivaiheista prosessia. Tämä prosessi sisältää 7 työpäivän palvelutasosopimuksen toimialueen julkaisemiselle. Tämä siksi, että peräkkäisiä vaiheita on useita.
 
 Jos haluat luoda palvelupyynnön LCS:ssä, siirry ympäristössäsi kohtaan **Tuki \> Tukea vaativat ongelmat** ja valitse **Lähetä tapaus**.
 

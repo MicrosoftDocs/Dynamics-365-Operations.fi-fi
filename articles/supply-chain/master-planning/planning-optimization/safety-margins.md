@@ -1,6 +1,6 @@
 ---
 title: Varmuusmarginaalit
-description: Tässä artikkelissa kerrotaan, miten varmuusmarginaaleja voidaan käyttää suunnittelun optimoinnin lisäosassa Microsoft Dynamics 365 Supply Chain Management -sovelluksessa.
+description: Tässä artikkelissa kuvataan, kuinka varmuusmarginaalit toimivat pääsuunnittelun aikana.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335192"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740438"
 ---
 # <a name="safety-margins"></a>Varmuusmarginaalit
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa kerrotaan, miten varmuusmarginaaleja voidaan käyttää suunnittelun optimoinnin lisäosassa Microsoft Dynamics 365 Supply Chain Management -sovelluksessa.
+Tässä artikkelissa kuvataan, kuinka varmuusmarginaalit toimivat pääsuunnittelun aikana.
 
 ## <a name="safety-margins-overview"></a>Varmuusmarginaalien yleiskatsaus
 
@@ -165,12 +165,5 @@ Kaikki varmuusmarginaalien kolme tyyppiä otetaan huomioon, kun järjestelmä m�
 Esimerkiksi nimikkeen läpimenoaika on yksi päivä ja vastaanottomarginaali on kolme päivää. Tämän nimikkeen myyntitilaus vaaditaan tänään. Tässä tapauksessa viive lasketaan seuraavasti: *läpimenoaika* + *vastaanottomarginaali* = neljä päivää. Jos siis tänään on 14.8., neljän päivän viive tuottaa tulokseksi 18.8. Seuraavassa kuvassa on esimerkki tästä tapauksesta.
 
 ![Esimerkki viiveen laskennasta.](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>Lisäresurssit
-
-[Suunnittelun optimoinnin aloittaminen](get-started.md)
-
-[Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

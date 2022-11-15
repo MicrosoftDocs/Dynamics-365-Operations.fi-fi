@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 310809799a81c6709041764f7038de2a70b7f203
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b95f131a45c11748cfd4c66c47e5a51c765ed486
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124787"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740407"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.22 (marraskuu 2021)
 
@@ -53,7 +53,7 @@ Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merki
 |---|---|
 | Suunnittelun muutosten hallinta | [Suunnittelun muutostenhallinnan yleiskuvaus](../engineering-change-management/product-engineering-overview.md) luetteloi nyt kaikki asiaan liittyvät valinnaiset ominaisuudet, jotka ovat käytettävissä ominaisuuksienhallinnassa |
 | Pääsuunnittelu | [Kysynnän ennusteiden asetukset](../master-planning/demand-forecasting-setup.md) |
-| Pääsuunnittelu | [Nettotarpeet ja tarvekohdistustiedot suunnittelun optimoinnin avulla](../master-planning/planning-optimization/net-requirements.md) |
+| Pääsuunnittelu | [Nettotarpeet ja tarvekohdistustiedot](../master-planning/planning-optimization/net-requirements.md) |
 | Varastonhallinta   | [Vapautus varastoon](../warehousing/release-to-warehouse-process.md) antaa yksityiskohtaisen yhteenvedon täydestä varastoon vapautuksen prosessista |
 
 ## <a name="additional-resources"></a>Lisäresurssit
