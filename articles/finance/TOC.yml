@@ -1188,6 +1188,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Tietoja kirjanpidon selvityksestä ja tilinpäätöksestä
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Kirjanpidon selvitysten automatisointi
+                  href: general-ledger/auto-settle.md
                 - name: Kirjanpidon ulkomaanvaluutan uudelleenarvostus
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: Kirjanpitotilin saldot

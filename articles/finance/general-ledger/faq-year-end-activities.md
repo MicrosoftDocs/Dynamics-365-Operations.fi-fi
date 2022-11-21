@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2a75d1e3e68837a437b2369ba369b0063e015b12
-ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
+ms.openlocfilehash: a25f20c320b905a2cdd3091e76e3c5e73f1a845a
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9751928"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752745"
 ---
 # <a name="year-end-activities-faq"></a>Tilinpäätöstehtävien usein kysytyt kysymykset 
 
@@ -94,6 +94,23 @@ Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järj
  
 - Moduuli: Kirjanpito
 - Ominaisuuden nimi: taloushallinnon dimensioyhdistelmien uudelleenmuodostuksen suorituskykyparannukset
+
+## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2022"></a>Ostoreskontra: mitä muutoksia vuodelle 2022 on tehty vuoden lopun 1099-raportoinnin tueksi?
+
+#### <a name="update-to-all-1099-forms"></a>Päivitys kaikkiin 1099-lomakkeisiin
+Vuoden 2022 verovuoden kaikkiin 1099-lomakkeisiin on tehty seuraavat muutokset:
+
+  - Vuonna 2021 vuosi oli kiinteänä 1099-lomakkeissa. Vuodesta 2022 alkaen raportti täyttää vuositiedon. 
+
+#### <a name="1099-misc"></a>1099-MISC
+Verovuoden 2022 lomakkeeseen 1099-MISC on tehty seuraavat päivitykset:
+
+ - Ruutu 13: näyttää nyt FATCA (Foreign Account Tax Compliance Act) ‑ilmoitusvaatimuksen. 
+ - Rasia 14: käytetään nyt ylimääräisten "kultaisten laskuvarjomaksujen" raportointiin. 
+ - Ruutu 15: käytetään nyt ylimääräistä kompensaation lykkäystä koskevien NQDC (nonqualified deferred compensation) ‑suunnitelmien alaisten maksujen raportointiin. 
+ - Ruutu 16: käytetään nyt osavaltion ennakonpidätysten raportointiin.
+ - Ruutu 17: käytetään nyt maksajan osavaltionumeron raportointiin.
+ - Ruutu 18: käytetään nyt osavaltion tuloveron tulojen raportointiin. 
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2021"></a>Ostoreskontra: mitä muutoksia vuodelle 2021 on tehty vuoden lopun 1099-raportoinnin tueksi?
 

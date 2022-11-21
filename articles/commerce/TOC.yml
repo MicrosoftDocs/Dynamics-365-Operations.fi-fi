@@ -586,10 +586,12 @@
                           href: dev-itpro/adyen-connector.md
                         - name: Dynamics 365 Payment Connector Adyenia varten -määritys
                           href: dev-itpro/adyen-connector-setup.md
-                        - name: Dynamics 365 Payment Connector Adyenia varten -usein kysytyt kysymykset
+                        - name: Dynamics 365 Payment Connector Adyenia varten – usein kysytyt kysymykset
                           href: dev-itpro/adyen-connector-faq.md
                         - name: Google Payn määrittäminen Adyenin kanssa
                           href: dev-itpro/google-pay-adyen.md
+                        - name: Apple Payn määrittäminen käytettäväksi Adyenin kanssa
+                          href: dev-itpro/apple-pay-adyen.md
                         - name: Dynamics 365 Payment Connector Adyenia varten -vianmääritys
                           href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Online-maksuvälineiden tallentaminen Adyen-yhdistimen avulla
@@ -602,9 +604,11 @@
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Laskunmaksutapojen määrittäminen
                       href: payinvoice.md
+                    - name: Ennakkomaksut Dynamics 365 Commercessa
+                      href: dev-itpro/prepayments-commerce.md
                     - name: Maksujen kaksoiskappaleiden estäminen
                       href: duplicate-payment-protection.md
-                    - name: Monikanavamaksujen yleiskatsaus
+                    - name: Monikanavaisten maksujen yleiskatsaus
                       href: omni-channel-payments.md
                     - name: Useat käytettävissä olevat maksutavat myymälästä noutoa varten
                       href: dev-itpro/multiple-payments-pickup.md

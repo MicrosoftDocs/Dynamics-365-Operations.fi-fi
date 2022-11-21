@@ -1652,6 +1652,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Käyttäjien liittäminen käyttöoikeusrooleihin
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Active Directory -suojausryhmät
+                  href: sysadmin/active-directory-security-group.md
                 - name: Mukautetun suojausmäärityksen tuonti tai vienti tiedonhallinnan avulla
                   href: sysadmin/import-export-customized-security.md
                 - name: Tehtävätallenteiden suojausdiagnostiikka

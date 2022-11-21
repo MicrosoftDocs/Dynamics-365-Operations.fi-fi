@@ -3395,6 +3395,8 @@
           items:
             - name: Varastohallinnan yleiskatsaus
               href: warehousing/warehouse-management-overview.md
+            - name: Varastonhallinta-moduulin asetusten määrittämisen aloittaminen
+              href: warehousing/get-started-with-setting-up-module.md
             - name: Saapuvan varaston työvaiheet
               items:
                 - name: Ostotilausten saapuvien kuormien varastokäsittely

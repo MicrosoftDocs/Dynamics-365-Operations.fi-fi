@@ -102,11 +102,11 @@
                   href: hr-admin-integration-choose-technology.md
                 - name: Rajoittamisen usein kysytyt kysymykset
                   href: hr-admin-integration-throttling-faq.md
-                - name: Määritä Dataverse-integrointi
+                - name: Dataverse-integroinnin määrittäminen
                   href: hr-admin-integration-common-data-service.md
                 - name: Dataverse-taulut
                   href: hr-developer-entities.md
-                - name: Määritä Dataverse-virtuaalitaulukot
+                - name: Dataverse-virtuaalitaulukoiden määrittäminen
                   href: hr-admin-integration-common-data-service-virtual-entities.md
                 - name: Human Resources -virtuaalitaulukoiden usein kysytyt kysymykset
                   href: hr-admin-virtual-entity-faq.md
@@ -302,13 +302,15 @@
                       href: hr-admin-troubleshooting-integration.md
             - name: Human Resources -asetukset
               items:
-                - name: Human Resources -parametrien määrittäminen
+                - name: Henkilöstöhallinnon parametrien määrittäminen
                   href: hr-setup-parameters.md
-                - name: Jaettujen Human resources -parametrien määrittäminen
+                - name: Jaettujen henkilöstöhallinnon parametrien määrittäminen
                   href: hr-setup-shared-parameters.md
-                - name: Määritä henkilöstöhallinnon työnkulut
+                - name: Työntekijätietojen käyttöoikeuden rajoittaminen yrityksen mukaan
+                  href: hr-advanced-security.md
+                - name: Henkilöstöhallinnon työnkulujen määrittäminen
                   href: hr-workflow-manage-employee-information.md
-                - name: Ymmärrä päivämäärä- ja kellonaikakenttiä
+                - name: Tietoja päivämäärä- ja kellonaikakentistä
                   href: hr-setup-date-time-fields.md
             - name: Määritä organisaation asetukset
               items:
@@ -844,13 +846,15 @@
           items:
             - name: Tietojen integrointiteknologian valitseminen
               href: hr-admin-integration-choose-technology.md
-            - name: Määritä Dataverse-integrointi
+            - name: Dataverse-integroinnin määrittäminen
               href: hr-admin-integration-common-data-service.md
-            - name: Määritä Dataverse-virtuaalitaulukot
+            - name: Dataverse-virtuaalitaulukoiden määrittäminen
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Virtuaalitaulukoiden integrointien suojaus
+              href: hr-security-config.md
             - name: Integroinnin määrittäminen Financen kanssa
               href: hr-admin-integration-finance.md
-            - name: Linkkien luominen kohteesta Human Resources toiseen ympäristöön
+            - name: Linkkien luominen Human Resourcesista toiseen ympäristöön
               href: configure-links.md
             - name: Integroinnin määrittäminen Dayforcen kanssa
               href: hr-admin-integration-dayforce.md

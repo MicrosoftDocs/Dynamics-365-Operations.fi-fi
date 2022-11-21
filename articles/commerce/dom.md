@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878509"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764176"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (DOM)
 
@@ -68,9 +68,9 @@ Seuraavassa kuvassa on myyntitilauksen elinkaari jaetussa tilauksen hallintajär
         > [!NOTE]
         > Yksinkertaistettu selvitys on vaihtoehto silloin, kun vähittäismyyjä haluaa kokeilla DOM-ominaisuutta ottamatta käyttöön erityistä lisenssiä. Organisaatioiden ei tulisi käyttää yksinkertaistettua selvitystä tuotantoympäristöissä.
         >
-        > Tuotannon selvitys parantaa suorituskykyä (kuten tilauksien ja tilausrivien määrää, joka voidaan käsitellä yhden suorituksen aikana) ja tulosten yhdistämistä (koska tilauserä ei ehkä tuota parhaita tuloksia joissakin tilanteissa). Jotkin säännöt, kuten **Osittaistilaukset**-sääntö ja **Sijaintien enimmäismäärä** -sääntö, edellyttävät tuotannon selvitystä.
+        > Tuotannon selvitys parantaa suorituskykyä (kuten tilauksien ja tilausrivien määrää, joka voidaan käsitellä yhden suorituksen aikana) ja tulosten yhdistämistä (koska tilauserä ei ehkä tuota parhaita tuloksia joissakin tilanteissa). **Osittaistilaukset**-sääntö edellyttää tuotannon selvitystä.
 
-6. Siirry takaisin kohtaan **Retail ja Commerce \> Jaettu tilausten hallinta \> Asetukset \> DOM-parametrit**.
+6. Siirry takaisin kohtaan **Vähittäiskauppa ja kaupankäynti \> Jaettu tilausten hallinta \> Asetukset \> DOM-parametrit**.
 7. Määritä **Numerosarjat**-välilehdessä tarvittavat numerosarjat eri DOM-yksiköille.
 
     > [!NOTE]
