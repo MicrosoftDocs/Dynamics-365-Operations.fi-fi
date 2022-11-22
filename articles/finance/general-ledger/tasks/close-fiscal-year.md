@@ -2,7 +2,7 @@
 title: Tilikauden sulkeminen
 description: Tässä toimintaohjeessa selvitetään tilinkauden lopetusprosessi, joka siirtää saldot uuteen tilikauteen.
 author: aprilolson
-ms.date: 07/11/2019
+ms.date: 11/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eb36cb856d191d64561060e7de4a1f9fd947882
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4d52e6789a96defaf1d0132fe97fc183a05af207
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717471"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779797"
 ---
 # <a name="close-the-fiscal-year"></a>Tilikauden sulkeminen
 
@@ -40,7 +40,7 @@ Jos arvoksi asetetaan **Kyllä**, luodaan kaksi tapahtumaa. Yksi tosite luodaan 
 
 5. Valitse **Kyllä**- tai **Ei**-arvo asetukselle **Muuta tilivuoden tilaksi pysyvästi suljettu**.
 
-Jos arvoksi on asetettu **Kyllä**, tilikauden tilaksi asetetaan olla Suljettu pysyvästi. Koska pysyvästi suljettua kautta ei voi avata uudelleen, on parasta asettaa tämän asetuksen arvoksi **Ei**.  
+Jos arvoksi on asetettu **Kyllä**, tilikauden tilaksi asetetaan olla **Suljettu pysyvästi**. Koska pysyvästi suljettua kautta ei voi avata uudelleen, on parasta asettaa tämän asetuksen arvoksi **Ei**.  
 
 6. Valitse **Kyllä**- tai **Ei**-arvo asetukselle **Tositenumero syötettävä manuaalisesti tilikauden lopetusprosessin aikana**.
 

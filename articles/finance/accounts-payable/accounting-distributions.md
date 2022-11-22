@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
-ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
+ms.openlocfilehash: 4330c86ee9ae35ce0f2c7bb85db533a39eafac46
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9588950"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779578"
 ---
 # <a name="accounting-distributions"></a>Kirjanpidolliset jaot
 
@@ -51,7 +51,7 @@ Yleiset kirjanpidolliset jako-ominaisuudet tarjoavat seuraavia vaihtoehtoja kirj
     -   Voit tarkastella nykyisen asiakirjan kirjanpidollista tilaa kohdassa **Viite**. Tila on koko asiakirjalle ja ilmaisee, onko asiakirja on keskeneräinen tai valmis.
 -   **Tarkastele jakoja** – Näytä asiakirjan kirjanpidolliset jaot kaikille riveille ja rahasummille. Et voi muokata kirjanpidollisia jakoja tästä näkymästä.
 
-Versioon 10.0.13 on lisätty toiminto, joka vahvistaa kirjanpidon jakotaulukon sen varmistamiseksi, että uudet kentät on määritetty oikein. Tämän toiminnon nimi on **Ota lisävahvistus asiakirjojen tiedoille käyttöön käyttämällä lähdeasiakirjan kirjanpitokehystä**. Tämä ominaisuus otetaan oletusarvoisesti käyttöön versiossa 10.0.29. 
+Lisättiin toiminto, joka vahvistaa kirjanpidon jakotaulukon sen varmistamiseksi, että uudet kentät on määritetty oikein. Tämän toiminnon nimi on **Ota lisävahvistus asiakirjojen tiedoille käyttöön käyttämällä lähdeasiakirjan kirjanpitokehystä**. Tämä ominaisuus otettiin oletusarvoisesti käyttöön versiossa 10.0.29. 
 
 Lisätietoja on kohdassa [Toimittajan laskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
 

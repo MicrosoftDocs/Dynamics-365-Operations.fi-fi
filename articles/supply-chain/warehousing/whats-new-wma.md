@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
-ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
+ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9702192"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764236"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20370"></a>Versio 2.0.37.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+- Lisättiin käyttäjäasetus, jonka avulla työntekijät voivat valita, missä sovellus näyttää tuotteen kuvat (sekä korteissa että vaiheen otsikoissa, vain vaiheen otsikoissa tai ei lainkaan). 
+- Parannettiin tietokortin näytön asettelua vähentämällä vaiheen bannerin ja määrän syöttöpyörän kokoa. Näin muulle sisällölle jää enemmän tilaa. 
+- Parannettiin käyttöliittymää Honeywell Thor -laitteen käyttämisen aikana. 
+- Parannettiin koko näytön tilaa (koskee vain laitteita, joissa on laitenäppäimistö). 
+- Parannettiin tietokorttien ja mukautettujen sivujen prioriteetin tai aliprioriteetin mukaan tehtävän lajittelun tuloksia (DataPriority tai DisplaySubPriority). 
+- Lisättiin useiden kielten tuki. 
+- Parannettu vakaus. 
+- Parannettiin useita kuvia ja kuvakkeita. 
 
 ## <a name="version-20350"></a>Versio 2.0.35.0
 

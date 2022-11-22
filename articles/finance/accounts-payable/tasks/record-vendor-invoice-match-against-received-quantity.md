@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a3f1463821a43af0d8d5f15225944b080414e4c
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: debf8ca47666252633e67e2592acd5a4e4122403
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109915"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778670"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>Toimittajan laskun kirjaaminen ja täsmäyttäminen vastaanotettuihin määriin
 
@@ -32,7 +32,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Nämä vaiheet s
 
 
 ## <a name="create-a-purchase-order"></a>Luo ostotilaus
-1. Siirry Kaikki ostotilaukset -kohtaan.
+1. Valitse **Kaikki ostotilaukset**.
 2. Valitse **Uusi**.
 3. Avaa haku valitsemalla **Toimittajan tili** -kentässä avattavan valikon painike.
 4. Kirjoita arvo **Toimittajan tili** -kenttään.

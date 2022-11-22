@@ -2,23 +2,23 @@
 title: Tytäryhtiön tietojen vieminen tiedostoihin
 description: Tässä artikkelissa kerrotaan, miten tietoja viedään Microsoft Dynamics 365 Financesta ja tuodaan konsolidoituun yritykseen.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30d69f9a2813621df410a29568644f264392fb49
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876150"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779958"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Tytäryhtiön tietojen vieminen tiedostoihin
 
@@ -32,14 +32,14 @@ ms.locfileid: "8876150"
 
     | Kenttä                             | kuvaus |
     |-----------------------------------|-------|
-    | Päätili                      | Määritä konsolidoitavat tilit. Jos haluat sisällyttää kaikki tilit, jätä tämä kenttä tyhjäksi. |
-    | Käytä konsolidointitiliä         | Jos olet määrittänyt konsolidointitilit, määritä tämän asetuksen arvoksi **Kyllä**. |
-    | Valitse konsolidointitili seuraavasta | Valitse joko **Päätili** tai **Konsolidointitiliryhmä**. |
-    | Konsolidointitiliryhmä       | Valitse valiltulle konsolidointitilille konsolidointitiliryhmä. |
-    | Konsolidointikausi              | Määritä Alkaen- ja Asti-päivämäärät konsolidoinnille. |
-    | Sisällytä todelliset summat            | Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat sisällyttää todelliset summat. |
-    | Sisällytä budjettisummat            | Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat sisällyttää budjettisummat konsolidoinneissa. |
-    | Budjettimallit                     | Määritä sisällytettävä budjettimalli. |
+    | **Päätili**                      | Määritä konsolidoitavat tilit. Jos haluat sisällyttää kaikki tilit, jätä tämä kenttä tyhjäksi. |
+    | **Käytä konsolidointitiliä**         | Jos olet määrittänyt konsolidointitilit, määritä tämän asetuksen arvoksi **Kyllä**. |
+    | **Valitse konsolidointitili seuraavasta** | Valitse joko **Päätili** tai **Konsolidointitiliryhmä**. |
+    | **Konsolidointitiliryhmä**       | Valitse valiltulle konsolidointitilille konsolidointitiliryhmä. |
+    | **Konsolidointikausi**              | Määritä Alkaen- ja Asti-päivämäärät konsolidoinnille. |
+    | **Sisällytä todelliset summat**            | Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat sisällyttää todelliset summat. |
+    | **Sisällytä budjettisummat**            | Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat sisällyttää budjettisummat konsolidoinneissa. |
+    | **Budjettimallit**                     | Määritä sisällytettävä budjettimalli. |
 
 3. Määritä **Taloushallinnon dimensiot** -välilehdessä konsolidoinnin tiedot:
 

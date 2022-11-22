@@ -1,35 +1,37 @@
 ---
 title: Myymälän tilauksen täyttäminen
-description: Tässä artikkelissa on myymälän tilauksen täyttämisen yhteenveto.
+description: Tässä artikkelissa on myymälän tilauksen täyttämisen yhteenveto Microsoft Dynamics 365 Commercessa.
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf338c6d0b6a237cad2974d36c23238029fe9b38
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854975"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785069"
 ---
 # <a name="store-order-fulfillment"></a>Myymälän tilauksen täyttäminen
 
 [!include [banner](includes/banner.md)]
+
+Tässä artikkelissa on myymälän tilauksen täyttämisen yhteenveto Microsoft Dynamics 365 Commercessa.
 
 Monet jälleenmyyjät haluaisivat optimoida tilausten täyttämisen antamalla myymälöille mahdolliseen täyttää tilauksia. Tilauksen täyttäminen myymälätasolla voi helpottaa yksittäisten myymälöiden liian suuria varastoja. Se voi olla tarpeellista myös logistiikan vuoksi tilanteissa, joissa myymälässä on ylimääräistä tilaa tai joissa se sijaitsee toimituksen kannalta lähempänä asiakasta. Näitä tarpeita varten myyntipisteissä voi käytätä yhdistettyä tilausten täyttämistoimintoa.
 
 Tietyssä myymälässä täytettävien tilausten varastoa ilmoitetaan tilauksen otsikossa tai tilausriveillä.
 
 Myyntipisteen tilauksen täyttämistoiminto on yhtenäinen myyntipisteen työalue, jossa tilaukset voidaan käsitellä myyntipisteessä. Käsiteltäviä toimintoja ovat niin tilauksen hyväksyminen, tilauksen merkitseminen lähetetyksi kuin myymälästä noudon käynnistäminen.
+
+Seuraavassa videossa on Dynamics 365 Commercen myymälän täyttämisominaisuuksien esittely ja yleiskatsaus.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Myyntipisteen yhdistetyn tilauksen täyttämisen käyttö
 

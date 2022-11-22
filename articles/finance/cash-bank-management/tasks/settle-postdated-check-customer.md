@@ -2,23 +2,23 @@
 title: Tilitä asiakkaalta jälkeen päin päivitetty lasku
 description: Voit maksaa myöhemmäksi päivätyn sekin sen jälkeen, kun pankki on selvittänyt sekin.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 896d19eb9bc53cc4987d7a500f221cca06aa11db
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9e61ac6d6785dd0383d5e5dcaca4cc55bf6deb52
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725370"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780012"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Tilitä asiakkaalta jälkeen päin päivitetty lasku
 
@@ -40,17 +40,17 @@ Tämä tehtäväopastuksen rooli on Rahastonhoitaja.
 
 Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 
-1. Valitse Luotonvalvonta > Kyselyt ja raportit > Maksut > Asiakkaan myöhemmäksi päivätyt sekit.
-2. Valitse Selvitä.
-3. Valitse Tilitä siirtokirjaukset.
+1. Valitse **Luotonvalvonta > Kyselyt ja raportit > Maksut > Asiakkaan myöhemmäksi päivätyt sekit**.
+2. Valitse **Tilitä**.
+3. Valitse **Tilitä siirtokirjaukset**.
     * Selvitä sekkitapahtumien asiakastili  
 4. Sulje sivu.
-5. Siirry kohtaan Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot.
-6. Valitse vaihtoehto Näytä-kentässä.
-7. Valitse Näytä vain käyttäjän luomat -valintaruutu tai poista sen valinta.
+5. Siirry kohtaan **Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot**.
+6. Valitse vaihtoehto **Näytä**-kentässä.
+7. Valitse **Näytä vain käyttäjän luomat** -valintaruutu tai poista sen valinta.
 8. Etsi haluamasi tietue luettelosta ja valitse se.
-9. Valitse Rivit.
-10. Valitse Tosite.
+9. Valitse **Rivit**.
+10. Valitse **Tosite**.
 11. Sulje sivu.
 
 

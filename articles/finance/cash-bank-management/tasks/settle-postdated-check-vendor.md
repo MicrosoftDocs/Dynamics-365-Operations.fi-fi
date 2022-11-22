@@ -2,23 +2,23 @@
 title: Tilitä toimittajalle jälkeen päin päivitetty lasku
 description: Tilitä toimittajalle myönnetty myöhemmäksi päivätty sekki, kun pankki on selvittänyt erääntyneen ja pankin selvittämän sekkitapahtuman.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendPostDatedChecks, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9564bf0ded6acbd05c7953798ea02959babbdfd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3e3816a2f1c95d568a173cb07daad0473703da9c
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726291"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779498"
 ---
 # <a name="settle-a-postdated-check-for-a-vendor"></a>Tilitä toimittajalle jälkeen päin päivitetty lasku
 
@@ -36,17 +36,17 @@ Suorita seuraavat menettelyt, kuin aloitat tämän menettelyn.
 
 Tämä menettelyn rooli on Rahastonhoitaja. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 
-1. Valitse Ostoreskontra > Maksut > Toimittajan myöhemmäksi päivätyt sekit.
-2. Valitse Selvitä.
-3. Valitse Tilitä siirtokirjaukset.
+1. Valitse **Ostoreskontra > Maksut > Toimittajan myöhemmäksi päivätyt sekit**.
+2. Valitse **Tilitä**.
+3. Valitse **Tilitä siirtokirjaukset**.
     * Selvitä sekkitapahtumien toimittajan tili  
 4. Sulje sivu.
-5. Siirry kohtaan Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot.
-6. Valitse Näytä-kentässä Kaikki.
-7. Valitse Näytä vain käyttäjän luomat -valintaruutu tai poista sen valinta.
+5. Siirry kohtaan **Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot**.
+6. Valitse **Näytä**-kentässä **Kaikki**.
+7. Valitse **Näytä vain käyttäjän luomat** -valintaruutu tai poista sen valinta.
 8. Merkitse valittu rivi luettelossa.
-9. Valitse Rivit.
-10. Valitse Tosite.
+9. Valitse **Rivit**.
+10. Valitse **Tosite**.
 11. Sulje sivu.
 
 

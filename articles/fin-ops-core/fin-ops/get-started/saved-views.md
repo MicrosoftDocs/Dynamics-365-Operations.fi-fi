@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220329"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757218"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
@@ -107,7 +107,7 @@ Kun luot uuden näkymän (**Tallenna nimellä** -toiminnon avulla), voit vaihtoe
 
 **Omien näkymien hallinta** -valintaikkunan avulla voit hallita omia näkemyksiäsi ja näkymien järjestystä näkymän valitsimessa. Avaa tämä sivu valitsemalla näkymän nimeä, jolloin näkyviin tulee avattava valikko. Valitse **Lisää** ja valitse sitten **Omien näkymien hallinta**.
 
-**Versio 10.0.21 tai uudempi:** Jos **Tallennettujen näkymien parannettu yritystuki** -ominaisuus on otettu käyttöön **Omien näkymien hallinta** -valintaikkunan **Omat näkymät** -osassa on osia, jossa on näkyvissä sivun käytettävissä olevat näkymät. Kaikki nykyistä yritystä koskevat näkymät näkyvät omassa osassa. **Yleiset näkymät** -osa on aina näkyvissä, joten sivun kaikkien yritysten käytettävissä olevia näkymiä voidaan hallita. 
+Jos **Tallennettujen näkymien parannettu yritystuki** -ominaisuus on otettu käyttöön **Omien näkymien hallinta** -valintaikkunan **Omat näkymät** -osassa on osia, jossa on näkyvissä sivun käytettävissä olevat näkymät. Kaikki nykyistä yritystä koskevat näkymät näkyvät omassa osassa. **Yleiset näkymät** -osa on aina näkyvissä, joten sivun kaikkien yritysten käytettävissä olevia näkymiä voidaan hallita. 
 
 Luettelon käytettävissä olevista näkymistä on käytettävissä seuraavat toiminnot.
 
@@ -138,9 +138,9 @@ Julkaise näkymä seuraavien ohjeiden avulla:
 
 1. Luo ja tallenna sen näkymän henkilökohtainen kopio, jonka haluat julkaista. 
 2. Kun näkymä on ladattuna, avaa avattavan näkymän valitsimen avattavasta valikosta näkymän nimi. 
-3. Valitse **Lisää**-painike ja sitten **Julkaise**. Julkaise-valintaikkuna aukeaa.
+3. Valitse **Lisää**-painike ja sitten **Julkaise**. **Julkaise**-valintaikkuna aukeaa.
 4. Anna näkymän nimi. Antamasi nimi on se nimi, jonka tämän näkymän vastaanottavat käyttäjät näkevät näkymänvalitsimissaan. Sivun julkaistujen näkymien nimien on oltava yksilöllisiä. Saman nimen käyttämistä kahdesti ei sallita, vaikka roolit tai yritykset, joille näkymät on kohdennettu, olisivat erilaisia.
-5. **Päivitys 10.0.17 tai uudempi:** Jos **(Esiversio) Organisaationäkymien käännöstuki** -toiminto on otettu käyttöön, näkymän nimen käännökset voidaan lisätä organisaation tarvitsemilla kielillä valitsemalla **Käännökset**-painike **Nimi**-kentän vieressä. Näkymän nimi näytetään sitten käyttäjille heidän valittuna olevalla kielellä. Voit myös määrittää oletuskielen määrittämään käännös, joka näytetään käyttäjille, kun heidän käyttämälleen kielelle ei ole määritetty käännöstä.
+5. Jos **Organisaationäkymien käännöstuki** -toiminto on otettu käyttöön, näkymän nimen käännökset voidaan lisätä organisaation tarvitsemilla kielillä valitsemalla **Käännökset**-painike **Nimi**-kentän vieressä. Näkymän nimi näytetään sitten käyttäjille heidän valittuna olevalla kielellä. Voit myös määrittää oletuskielen määrittämään käännös, joka näytetään käyttäjille, kun heidän käyttämälleen kielelle ei ole määritetty käännöstä.
 5. Valinnainen: Anna näkymän kuvaus, joka selittää näkymän saaville käyttäjille sen tarkoituksen. 
 6. Määritä, julkaistaanko näkymä valittujen käyttäjien oletusnäkyminä. Kun näkymä määritetään oletusarvoksi, käyttäjät näkevät sen, kun he avaavat kohdesivun seuraavan kerran. Jokaisen kohdekäyttäjän yksittäinen, yleinen oletusnäkymä muuttuu. Käyttäjät voivat kuitenkin edelleen muuttaa oletusnäkymiään julkaisemisen jälkeen.
 
@@ -150,9 +150,10 @@ Julkaise näkymä seuraavien ohjeiden avulla:
     > - Jos näkymä julkaistaan joidenkin tai kaikkien yritysten oletusnäkymänä, tapahtuu näin:
     >
     >    - Jos vain **Tallennetut näkymät** -perusominaisuus otetaan käyttöön, jokaiselle kohdennetulle käyttäjälle vaihdetaan yksi, yleinen oletusnäkymä. 
-    >    - **Versio 10.0.21 tai uudempi:** jos **Tallennettujen näkymien parannettu yritystuki** -ominaisuus otetaan käyttöön ja näkymä julkaistaan yritysten alijoukolle, kyseisten yritysten oletusnäkymä muuttuu jokaisen kohdennetun käyttäjän osalta.
+    >    - ** Jos **Tallennettujen näkymien parannettu yritystuki** -ominaisuus otetaan käyttöön ja näkymä julkaistaan yritysten alijoukolle, kyseisten yritysten oletusnäkymä muuttuu jokaisen kohdennetun käyttäjän osalta.
     >
     > - Jos käyttäjällä on rooleja, joissa useita näkymiä julkaistaan oletusnäkyminä, viimeksi julkaistua näkymää käytetään käyttäjän oletusnäkymänä. 
+    > - Julkaiseminen ei toimi AAD-ryhmien avulla luoduissa roolimäärityksissä. 
 
 8. Lisää käyttöoikeusroolit, jota vastaavat tämän näkymän kohteena olevia käyttäjiä. 
 9. Määritä, julkaistaanko näkymä kunkin valitun käyttöoikeusroolin aliroolille. Jos näin tehdään, valitse **Sisällytä aliroolit** -valintaruutu soveltuvien käyttöoikeusroolien rivillä. Huomaa, että tämä valintaruutu ei ole käytettävissä rooleille, joilla ei ole alirooleja.
@@ -162,7 +163,7 @@ Julkaise näkymä seuraavien ohjeiden avulla:
     > Seuraava toiminta on otettava huomioon, jos näkymä julkaistaan tietyssä yrityksessä eikä kyseistä näkymää julkaista oletusnäkymänä:
     >
     > - Jos vain **Tallennetut näkymät** -perusominaisuus otetaan käyttöön, käyttäjän sivun näkymänvalitsin näyttää näkymän vain määritetyissä yrityksissä. Sen jälkeen kun näkymä on kuitenkin ladattu ensimmäisen kerran, se näkyy aina sivun näkymävalitsimessa riippumatta siitä, mikä yritys on kyseessä.
-    > - **Version 10.0.21 tai uudempi:** Jos **Tallennettujen näkyvien parannettu yritystuki** -ominaisuus on otettu käyttöön, näkymänvalitsin näyttää näkymän aina vain määritetyille yrityksille.
+    > - Jos **Tallennettujen näkyvien parannettu yritystuki** -ominaisuus on otettu käyttöön, näkymänvalitsin näyttää näkymän aina vain määritetyille yrityksille.
 
 11. Valitse **Julkaise**.
 
@@ -259,7 +260,7 @@ Jos sivuilla on suuret näkymävalitsimet (mukautukset ja kyselyt voidaan tallen
 Jos näkymä julkaistaan tietyssä yrityksessä mutta kyseistä näkymää ei julkaista oletusnäkymänä, tulos on seuraavanlainen:
 
 - Jos vain **Tallennetut näkymät** -perusominaisuus otetaan käyttöön, käyttäjän sivun näkymänvalitsin näyttää näkymän vain määritetyissä yrityksissä. Sen jälkeen kun näkymä on kuitenkin ladattu ensimmäisen kerran, se näkyy aina sivun näkymävalitsimessa riippumatta siitä, mikä yritys on kyseessä. Tämä toiminta johtuu siitä, että käyttäjät saaman oman kopion julkaistusta näkymästä, kun se ladataan, ja omat näkymät ovat yleisiä.
-- **Version 10.0.21 tai uudempi:** Jos **Tallennettujen näkyvien parannettu yritystuki** -ominaisuus on otettu käyttöön, näkymänvalitsin näyttää näkymän aina vain määritetyille yrityksille. Tämä toiminta johtuu siitä, että näkymät (mukaan lukien omat näkymät) voidaan linkittää tiettyihin yrityksiin.
+- Jos **Tallennettujen näkyvien parannettu yritystuki** -ominaisuus on otettu käyttöön, näkymänvalitsin näyttää näkymän aina vain määritetyille yrityksille. Tämä toiminta johtuu siitä, että näkymät (mukaan lukien omat näkymät) voidaan linkittää tiettyihin yrityksiin.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

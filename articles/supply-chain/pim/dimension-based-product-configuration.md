@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8811d4a43dba05e63b270893600a622527834901
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9ba11a561f320a7f4e787e4fe3f4e6f4fb88bbfb
+ms.sourcegitcommit: ca73177dedf40df16860eaf88b1c701c61992028
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982924"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9754107"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>Dimensioihin perustuvat tuotekonfiguraatiot – yleiskatsaus
 
@@ -74,7 +74,7 @@ Luonnollinen järjestys tuotemallin dimensioihin perustuvan tuotteen rakentamise
 
 Dimensioihin perustuvaa määritysmenetelmää kannattaa käyttää tuotteisiin, joilla on rajallinen vaihtelevaisuus ja yhdistelmä standardin tuotedimension mitoista, väristä, tyylistä ja konfiguraatio on sopimaton tunnistamaan tietyn tuotevariantin. Esimerkki voisi olla polkupyörän rungon korkeus, pyörän koko, jarrutyypit ja eri vaihteet.
 
-### <a name="next-step"></a>Seuraava vaihe 
+### <a name="next-step"></a><a name="sequence"></a>Seuraava vaihe
 
 Seuraavat kahdeksan tehtäväopasta ovat siinä järjestyksessä, missä ne on tehtävä. 
 

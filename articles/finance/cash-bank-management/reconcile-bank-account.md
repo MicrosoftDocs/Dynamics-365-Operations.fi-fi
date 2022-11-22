@@ -2,24 +2,24 @@
 title: Pankkitilin täsmäyttäminen
 description: Tässä artikkelissa kerrotaan, miten pankkitili täsmäytetään.
 author: angelad116
-ms.date: 07/01/2019
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d36ff753d368bbbe6944aa5ae5010541ee92156d
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151248"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779524"
 ---
 # <a name="reconcile-a-bank-account"></a>Pankkitilin täsmäyttäminen
 
@@ -29,27 +29,27 @@ Kun saat pankin tiliotteen, sinun tulee täsmäyttää yrityksen pankkitapahtuma
 
 Et voi täsmäyttää pankkitilin tiliotetta, jos tiliotteen yhdenkään sekin tai talletuskuittimaksun tila on **Odottaa peruutusta**. Kun tarkistaja on kirjannut tai hylännyt sekin palautuksen tai talletuskuittimaksun peruutuksen, tila ei ole enää **Odottaa peruutusta** ja voit täsmäyttää pankkitilin.
 
-1.  Valitse **Maksuliikenteen hallinta** \> **Pankkitilit** \> **Pankkitilit**. Valitse pankkitilitiliotteen kanssa täsmäytettävä pankkitili ja valitse **Täsmäytä** > **Tilin täsmäytys**.
+1. Valitse **Maksuliikenteen hallinta** \> **Pankkitilit** \> **Pankkitilit**. Valitse pankkitilitiliotteen kanssa täsmäytettävä pankkitili ja valitse **Täsmäytä** > **Tilin täsmäytys**.
 
-2.  Syötä tiedot **Tiliotteen päivämäärä**- ja **Tiliote**-kenttiin. **Loppusaldo**-kenttään syötetään pankkitilin saldo sellaisena kuin se näkyy pankin tiliotteessa.
+2. Syötä tiedot **Tiliotteen päivämäärä**- ja **Tiliote**-kenttiin. **Loppusaldo**-kenttään syötetään pankkitilin saldo sellaisena kuin se näkyy pankin tiliotteessa.
 
-3.  Avaa **Tilin täsmäytys** -sivu valitsemalla **Tapahtumat**.
+3. Avaa **Tilin täsmäytys** -sivu valitsemalla **Tapahtumat**.
 
-4.  Valitse kunkin tiliotteessa olevan tapahtuman **Selvitetyt**-valintaruutu jos summa Dynamics 365 Finance -järjestelmässä vastaa tiliotteen summaa. Voit myös syöttää tai muokata arvoa **Pankkitapahtuman laji** -kentässä. Tämän kentän arvo on tärkeä pankkitapahtumien tilastojen sekä muutamien raporttien kannalta.
+4. Valitse kunkin tiliotteessa olevan tapahtuman **Selvitetyt**-valintaruutu jos summa Dynamics 365 Finance -järjestelmässä vastaa tiliotteen summaa. Voit myös syöttää tai muokata arvoa **Pankkitapahtuman laji** -kentässä. Tämän kentän arvo on tärkeä pankkitapahtumien tilastojen sekä muutamien raporttien kannalta.
     
 
-    > [!NOTE]
-    > <P>Älä valitse sellaisten tapahtumien <STRONG>Selvitetyt</STRONG>-valintaruutua, jotka eivät ole tiliotteessa. Nämä tapahtumat näkyvät edelleen tällä sivulla, kunnes ne myöhemmin täsmäytetään tiliotteen kanssa.</P>
-    > <P><STRONG>Selvitetyt</STRONG>-valintaruutu ei ole käytettävissä, jos tapahtuman tila on <STRONG>Odottaa peruutusta</STRONG>. Tapahtumilla voi olla tämä tila, jos Finance on määritetty siten, että palautukset tai peruutukset on lähetettävä tarkistettaviksi ennen kirjaamista. Kun tarkistaja on kirjannut tai hylännyt sekin palautuksen tai talletuskuittimaksun peruutuksen, tila ei ole enää <STRONG>Odottaa peruutusta</STRONG> ja voit täsmäyttää pankkitilin tiliotteen kanssa.</P>
+>[!NOTE]
+>Älä valitse sellaisten tapahtumien **Selvitetyt**-valintaruutua, jotka eivät ole tiliotteessa. Nämä tapahtumat näkyvät edelleen tällä sivulla, kunnes ne myöhemmin täsmäytetään tiliotteen kanssa.
+>**Selvitetyt**-valintaruutu ei ole käytettävissä, jos tapahtuman tila on **Odottaa peruutusta**. Tapahtumilla voi olla tämä tila, jos Finance on määritetty siten, että palautukset tai peruutukset on lähetettävä tarkistettaviksi ennen kirjaamista. Kun tarkistaja on kirjannut tai hylännyt sekin palautuksen tai talletuskuittimaksun peruutuksen, tila ei ole enää **Odottaa peruutusta** ja voit täsmäyttää pankkitilin tiliotteen kanssa.
 
-    
-    Jos haluat valita **Selvitetyt**-valintaruudun sekkivälille, jotka kaikki näkyvät tiliotteessa, valitse **Merkitse sekkiväli** ja määritä sitten kyseinen väli.
+
+Jos haluat valita **Selvitetyt**-valintaruudun sekkivälille, jotka kaikki näkyvät tiliotteessa, valitse **Merkitse sekkiväli** ja määritä sitten kyseinen väli.
 
 5.  Jos pankkitilitapahtuman summa ei vastaa tiliotteen tapahtuman summaa, syötä korjauksen summa **Oikaisusumma**-kenttään.
     
 
-    > [!NOTE]
-    > <P>Jos korjattavan tapahtuman tilikausi on suljettu, <STRONG>Oikaisusumma</STRONG>-kenttää ei voi käyttää. Luo sen sijaan avoimeen tilikauteen korjausta varten uusi rivi, jolla on tapahtuman päivämäärä. Tässä tapauksessa sinun on lisättävä taloushallinnon dimensiot, joita käytettiin alkuperäisessä tapahtumassa, ja myös vastakirjauspäätili.</P>
+> [!NOTE]
+> Jos korjattavan tapahtuman tilikausi on suljettu, **Oikaisusumma**-kenttää ei voi käyttää. Luo sen sijaan avoimeen tilikauteen korjausta varten uusi rivi, jolla on tapahtuman päivämäärä. Tässä tapauksessa sinun on lisättävä taloushallinnon dimensiot, joita käytettiin alkuperäisessä tapahtumassa, ja myös vastakirjauspäätili.
 
 
 

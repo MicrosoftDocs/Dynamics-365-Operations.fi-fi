@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 674adb70cc4372a8c5ca8c75ed3ef840d8ec7b79
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520861"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762697"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Inventory Visibility -sovelluksen käyttäminen
 
@@ -30,44 +30,73 @@ Varaston näkyvyys on mallipohjainen visualisointisovellus. Sovelluksessa on kol
 - Se tukee reaaliaikaisia käytettävissä olevan varaston kyselyjä erilaisten dimensioyhdistelmien avulla.
 - Se toimii käyttöliittymänä, jolla voi kirjata varastopyyntöjä.
 - Se antaa näkymän tuotteiden käytettävissä olevasta varastosta ja kaikista dimensioista.
-- Se antaa näkymän tuotteiden varastosaldoluettelosta ja ennalta määritetyistä dimensioista.
-
+- Se antaa näkymän tuotteiden varastosaldoluettelosta ja ennalta määritetyistä dimensioista. Varastosaldon luettelonäkymässä voi olla koko yhteenveto tai varastosaldokyselyn esiladatut tulokset.
 
 ## <a name="prerequisites"></a>Edellytykset
 
 Varaston näkyvyyden apuohjelma on asennettava ja määritettävä ennen aloittamista kohdassa [Varaston näkyvyyden asennus ja määritys](inventory-visibility-setup.md) kuvatulla tavalla.
 
-## <a name="open-the-inventory-visibility-app"></a>Varaston näkyvyyssovelluksen avaaminen
+## <a name="open-and-authenticate-the-inventory-visibility-app"></a><a name="open-authenticate"></a>Inventory Visibility -sovelluksen avaaminen ja todentaminen
 
-Voit avata varaston näkyvyyssovelluksen kirjautumalla Power Apps -ympäristöösi ja avaamalla **Varaston näkyvyyden**.
+Avaa ja todenna Inventory Visibility -sovellus alla olevien ohjeiden avulla.
 
-## <a name="configuration"></a><a name="configuration"></a>Määritys
+1. Kirjaudu Power Apps -ympäristöön.
+1. Avaa **Inventory Visibility** -sovellus.
+1. Avaa **Operational Visibility** -sivu vasemmanpuoleisessa ruudussa.
+1. Valitse **Asetukset**-painike (rataskuvake) sivun yläosassa.
+1. Syötä **Asetukset**-valintaikkunaan **Asiakastunnus**-,**Vuokraajan tunnus**- ja **Asiakkaan salasana** -arvot, jotka kirjoitit muistiin [Inventory Visibilityn asentamisen ja määrittämisen](inventory-visibility-setup.md) yhteydessä.
+1. Valitse **Päivitä**-painike **Haltijatunnus**-kentän vieressä. Järjestelmä luo uuden haltijatunnuksen syötettyjen tietojen perusteella.
 
-Varaston näkyvyyssovelluksen **Määritys**-sivu auttaa määrittämään käytettävissä olevan varaston ja alustavan varauksen. Kun apuohjelma on asennettu, oletusmääritys sisältää Microsoft Dynamics 365 Supply Chain Managementin oletusmäärityksen (`fno`-tietolähde). Oletusasetus voidaan tarkistaa. Tämän jälkeen määritystä voidaan muokata liiketoimintatarpeiden ja ulkoisen järjestelmän varastokirjaustarpeiden mukaan siten, että useissa järjestelmissä käytetään standardoitua varastomuutosten kirjausta, järjestämistä ja kyselyä.
+    ![Varastosaldokyselyn asetukset.](media/inventory-visibility-query-settings.png "Varastosaldokyselyn asetukset")
+
+1. Kun saat sallitun haltijatunnuksen, sulje valintaikkuna. Haltijatunnus vanhenee jonkin ajan kuluttua. Tämän vuoksi päivitys on tehtävä tarvittaessa määrityksen, kirjaustietojen tai kyselytietojen päivittämisen yhteydessä.
+
+## <a name="configure-the-inventory-visibility-app"></a><a name="configuration"></a>Inventory Visibility -sovelluksen määrittäminen
+
+Inventory Visibility -sovelluksen **Määritys**-sivu auttaa määrittämään yleistietojen hallinnan määrityksen ja ominaisuuksien määrityksen. Kun apuohjelma on asennettu, oletusmääritys sisältää Microsoft Dynamics 365 Supply Chain Managementin oletusmäärityksen (`fno`-tietolähde). Oletusasetus voidaan tarkistaa. Tämän jälkeen määritystä voidaan muokata liiketoimintatarpeiden ja ulkoisen järjestelmän varastokirjaustarpeiden mukaan siten, että useissa järjestelmissä käytetään standardoitua varastomuutosten kirjausta, järjestämistä ja kyselyä.
 
 Täydelliset tiedot ratkaisun määrittämisestä: [Varaston näkyvyyden määritys](inventory-visibility-configuration.md).
 
 ## <a name="operational-visibility"></a>Toiminnon aikainen näkyvyys
 
-**Toiminnon aikainen näkyvyys** -sivu antaa käytettävissä olevan varaston reaaliaikaiset tulokset erilaisten dimensioyhdistelmien perusteella. Kun *OnHandReservation*-ominaisuus on otettu käyttöön, varauspyyntöjä voi kirjata myös **Toiminnan aikainen näkyvyys** -sivulla.
+**Toiminnon aikainen näkyvyys** -sivu antaa varastosaldon varastokyselyn, varauksen kirjauksen ja kohdistuksen reaaliaikaiset tulokset erilaisten dimensioyhdistelmien perusteella. Kun *OnHandReservation*-ominaisuus on [otettu käyttöön](inventory-visibility-configuration.md), voit myös kirjata varauspyynnöt **Toiminnon aikainen näkyvyys** -sivulta.
 
 ### <a name="on-hand-query"></a>Varastosaldokysely
 
-**Varastosaldokysely**-välilehdessä on reaaliaikaisen varastosaldokyselyn tulokset.
+**Varastosaldokysely**-välilehdessä **Toiminnon aikainen näkyvyys** -sivulla voit tehdä reaaliaikaisen kyselyn varastosaldosta. Näiden ohjeiden avulla voit määrittää ja suorittaa kyselyn.
 
-Kun **Toiminnon aikainen näkyvyys** -sivun **Varastosaldokysely**-välilehti avataan, järjestelmä kysyy tunnistetietotoja, joiden avulla se voi hakea haltijatunnuksen. Sitä tarvitaan kyselyn tekemiseen varaston näkyvyyspalvelussa. Haltijatunnus voidaan liittää **BearerToken**-kenttään ja valintaikkuna sulkea. Tämän jälkeen varastosaldokyselypyyntö voidaan kirjata.
+1. Avaa **Inventory Visibility** -sovellus.
+1. Avaa **Operational Visibility** -sivu vasemmanpuoleisessa ruudussa.
+1. Syötä **Varastosaldokysely**-välilehdessä **Organisaation tunnus**-, **Toimipaikan tunnus**- ja **Sijainnin tunnus** -arvot, joista kysely tehdään.
+1. Syötä **Tuotetunnus**-kenttään vähintään yksi tuotetunnus, jotta saat kyselylle tarkan vastaavuuden. Jos jätät **Tuotetunnus**-kentän tyhjäksi, tuloksissa on kaikki tuotteet tietyssä toimipaikassa ja sijainnissa.
+1. Jos haluat saada tarkempia tuloksia (esimerkiksi näkymän dimension arvojen, kuten värin ja koon, mukaan), valitse ryhmittele dimensioiden mukaan **Tulosten ryhmittelyperuste** -kentässä.
+1. Voit etsiä nimikkeitä, joilla on tietty dimension arvo (esimerkiksi väri = punainen) valitsemalla dimension **Suodata dimensiot** -kentässä ja syöttämällä dimension arvon.
+1. Valitse **Tee kysely**. Näkyviin tulee onnistumissanoma (vihreä) tai epäonnistumisesta kertova sanoma (punainen). Jos kysely epäonnistuu, tarkista kyselyehdot ja varmista, [haltijatunnus](#open-authenticate) ei ole vanhentunut.
 
-Jos haltijatunnus ei kelpaa tai se on vanhentunut, liitä uusi tunnus **BearerToken**-kenttään. Anna oikeat **Asiakastunnus**-, **Vuokraajan tunnus** ja **Asiakasohjelman salaisuus** -arvot ja valitse **Päivitä**. Järjestelmä hakee automaattisesti uuden, kelvollisen haltijatunnuksen.
-
-Kirjaa varastosaldokysely antamalla kysely pyynnön tekstiosassa. Käytä kaavaa, jota käsitellään kohdassa [Kysely kirjausmenetelmää käyttämällä](inventory-visibility-api.md#query-with-post-method).
-
-![Varastosaldokyselyn asetukset](media/inventory-visibility-query-settings.png "Varastosaldokyselyn asetukset")
+Toinen tapa varastosaldokyselyn tekemiseksi on tehdä suoria ohjelmointirajapintapyyntöjä. Voit käyttää kyselyä `/api/environment/{environmentId}/onhand/indexquery` tai `/api/environment/{environmentId}/onhand`. Lisätietoja on kohdassa [Varaston näkyvyyden julkiset API:t](inventory-visibility-api.md).
 
 ### <a name="reservation-posting"></a>Varauksen kirjaus
 
 **Toiminnon aikainen näkyvyys** -sivun **Varauksen kirjaus** -välilehden avulla voit kirjata varauspyynnön. *OnHandReservation*-ominaisuus on otettava käyttöön ennen varauspyynnön kirjaamista. Lisätietoja tästä ominaisuudesta ja sen käyttöönotosta on kohdassa [Varaston näkyvyyssovelluksen varaukset](inventory-visibility-reservations.md).
 
-Varauspyynnön kirjaaminen edellyttää, että arvo annetaan pyynnön tekstiosassa. Käytä kaavaa, jota käsitellään kohdassa [Yhden varauspyynnön luominen](inventory-visibility-api.md#create-one-reservation-event). Valitse sitten **Kirjaa**. Pyynnön vastaustietoja voidaan tarkastella valitsemalla **Näytä tiedot**. Myös `reservationId`-arvo voidaan saada vastauksen tiedoista.
+> [!NOTE]
+> Ominaisuutta voi testata käyttöliittymän alustavan varauksen tekemisen mahdollisuuden vuoksi. Jokainen alustavan varauksen pyyntö on liitettävä tapahtuman tilausrivin muutokseen (esimerkiksi luonti, muokkaus tai poisto). Siksi on suositeltavaa tehdä vain taustatilaukseen linkitettyjä alustavia varauksia. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md).
+
+Näiden ohjeiden avulla voit kirjata alustavan varauksen pyynnön käyttöliittymän avulla.
+
+1. Avaa **Inventory Visibility** -sovellus.
+1. Avaa **Operational Visibility** -sivu vasemmanpuoleisessa ruudussa.
+1. Määritä **Varauksen kirjaus** -välilehden **Määrä**-kentässä alustavan varauksen määrä.
+1. Tyhjennä **Ota käyttöön negatiivinen varasto ylimyynnin tukemiseksi** -valintaruudun valinta estääksesi varaston ylimyynti tai ylivaraus.
+1. Valitse **Operaattori**-kentässä tietolähde ja fyysinen mitta, jotka koskevat alustavasti varattua määrää.
+1. Syötä kyselyä varten **Organisaation tunnus**-, **Toimipaikan tunnus**-, **Sijainnin tunnus**- ja **Tuotetunnus**-arvot.
+1. Jos haluat yksityiskohtaiset tulokset, valitse tietolähde, dimensiot ja dimensioiden arvot.
+
+Toinen tapa kirjata alustava varaus on tehdä suoria ohjelmointirajapintapyyntöjä. Käytä kaavaa, jota käsitellään kohdassa [Yhden varauspyynnön luominen](inventory-visibility-api.md#create-one-reservation-event). Valitse sitten **Kirjaa**. Pyynnön vastaustietoja voidaan tarkastella valitsemalla **Näytä tiedot**. Myös `reservationId`-arvo voidaan saada vastauksen tiedoista.
+
+### <a name="allocation"></a>Kohdistus
+
+Lisätietoja käyttöliittymän ja ohjelmointirajapintojen kohdistusten hallinnasta on kohdassa [Inventory Visibilityn varaston kohdistus](inventory-visibility-allocation.md).
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Varaston yhteenveto
 
@@ -84,19 +113,15 @@ Seuraavien ohjeiden avulla voit ottaa **Varaston yhteenveto** -sivun käyttöön
 
 1. Tallenna kaikki muutokset valitsemalla **Päivitä määritys**.
 
-
 > [!NOTE]
 > *OnHandMostSpecificBackgroundService*-ominaisuus seuraa vain käytettävissä olevan varaston muutoksia, jotka ovat tapahtuneet sen jälkeen, kun ominaisuus on otettu käyttöön. Niiden tuotteiden tietoja, jotka eivät ole muuttuneet sen jälkeen, kun olet ottanut toiminnon käyttöön, ei synkronoida varastopalvelun välimuistista ympäristöön Dataverse. Jos **Varaston yhteenveto** -sivulla ei ole kaikkia odotettuja käytettävissä olevia tietoja, avaa Supply Chain Management ja siirry kohtaan **Varastonhallinta > Kausittaiset tehtävät > Varaston näkyvyyden integrointi**, poista erätyö käytöstä ja ota se uudelleen käyttöön. Tämä toimii alkusysäyksenä, ja kaikki tiedot synkronoidaan *Käytettävissä olevan varaston summa* -yksikköön seuraavan 15 minuutin kuluttua. Jos haluat käyttää tätä *OnHandMostSpecificBackgroundService*-ominaisuutta, on suositeltavaa ottaa se käyttöön ennen käytettävissä olevan varaston muutosten luontia ja ottaa käyttöön **Varaston näkyvyyden integrointi** -erätyö.
 
-## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-the-inventory-visibility-onhand-query"></a>Käytettävissä olevan varaston virtaviivaistetun kyselyn esilataaminen
+## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-streamlined-onhand-query"></a>Käytettävissä olevan varaston virtaviivaistetun kyselyn esilataaminen
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 Supply Chain Management tallentaa suuren osan nykyisen käytettävissä olevan varaston tiedoista ja määrittää ne käytettävissä oleviksi useita tarkoituksia varten. Monet päivittäiset toiminnot ja kolmannen osapuolen integroinnit edellyttävät kuitenkin vain pienen osajoukon näistä tiedoista. Kun järjestelmässä tehdään kysely kaikista tiedoista, saatetaan tulokseksi saadaan suuria tietojoukkoja, joiden kokoaminen ja siirtäminen kestää kauan. Tämän vuoksi varaston näkyvyyspalvelu voi säännöllisesti hakea ja tallentaa tehostetun käytettävissä olevan varaston tietojen joukon, jolloin optimoidut tiedot ovat jatkuvasti käytettävissä. Tallennetut käytettävissä olevan varaston tiedot suodatetaan määritettyjen liiketoiminnan ehtojen perusteella. Näin varmistetaan, että vain olennaiset tiedot ovat mukana. Koska suodatut käytettävissä olevan varaston luettelot tallennetaan paikallisesti varaston näkyvyyspalveluun ja päivitetään säännöllisesti, ne tukevat nopeaa käyttöä, tarvittavien tietojen vientejä ja ulkoisten järjestelmien tehostettua integrointia.
-
-> [!NOTE]
-> Tämän ominaisuuden nykyinen esiversio voi määrittää vain esiladatut tulokset, jotka sisältävät sivuston ja sijainnin. Ominaisuuden lopullisen version tulee mahdollistaa muiden dimensioiden valinta, jotta esilataus tulosten kanssa on mahdollista.
 
 **Varaston näkyvyyden yhteenvedon esilataus** -sivulla on *Käytettävissä olevan varaston indeksin kyselyn esilatauksen tulokset* -entiteetin näkymä. Toisin kuin *Varaston yhteenveto* -entiteetti, *Käytettävissä olevan varaston indeksin kyselyn esilatauksen tulokset* -entiteetti määrittää tuotteiden käytettävissä olevan varaston luettelon yhdessä valittujen dimensioiden kanssa. Varaston näkyvyys synkronoi esiladatut yhteenvetotiedot 15 minuutin välein.
 
@@ -113,7 +138,7 @@ Dataversen **lisäsuodattimen** avulla voi luoda oman näkymän, jossa on näkyv
 
 ![Varaston yhteenveto -sivu.](media/inventory-visibility-onhand-list.png "Varaston yhteenveto -sivu")
 
-**Varaston näkyvyyden yhteenvedon esilataus** -sivulla näkyvät dimensioon liittyvät sarakkeet, koska yhteenvetotietojen lataukseen on käytetty ennalta määritettyjä dimensioita. *Dimensioita ei mukauteta, vaan järjestelmä vain tukee käytettävissä olevan varaston luetteloiden sivuston ja sijainnin dimensioita.* **Varaston näkyvyyden yhteenvedon esilataus** -sivulla ovat suodattimet, jotka ovat samanlaisia kuin **Varaston yhteenveto** -sivulla olevat valittuja dimensioita lukuun ottamatta. Seuraavassa näyttökuvassa ovat **Varaston näkyvyyden yhteenvedon esilataus** -sivulla olevat suodatuskentät.
+**Inventory Visibility -yhteenvedon esilataus** -sivulla näkyvät dimensioon liittyvät sarakkeet, koska yhteenvetotietojen lataukseen on käytetty ennalta määritettyjä dimensioita. *Dimensioita ei mukauteta, vaan järjestelmä vain tukee käytettävissä olevan varaston luetteloiden sivuston ja sijainnin dimensioita.* **Varaston näkyvyyden yhteenvedon esilataus** -sivulla ovat suodattimet, jotka ovat samanlaisia kuin **Varaston yhteenveto** -sivulla olevat valittuja dimensioita lukuun ottamatta. Seuraavassa näyttökuvassa ovat **Varaston näkyvyyden yhteenvedon esilataus** -sivulla olevat suodatuskentät.
 
 ![Varaston näkyvyyden yhteenvedon esilataus -sivu.](media/inventory-visibility-preload-onhand-list.png "Varaston näkyvyyden yhteenvedon esilataus -sivu")
 

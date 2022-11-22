@@ -2,25 +2,25 @@
 title: Tilinpäätös
 description: Tässä artikkelissa kuvataan kirjanpidon tilivuoden sulkemisprosessissa tarvittavat asetukset ja ohjeet.
 author: kweekley
-ms.date: 12/06/2021
+ms.date: 11/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e1c7722b560246fb597f0b7f91a70afecf69e22
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883210"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779740"
 ---
 # <a name="year-end-close"></a>Tilinpäätös
 
@@ -62,7 +62,7 @@ Vahvista seuraavat asetukset ennen tilivuoden sulkemisprosessin suorittamista:
 
 ## <a name="define-year-end-close-templates"></a>Tilivuoden sulkemismallien määrittäminen
 
-Kun järjestelmä on määritetty, tilivuoden sulkemisprosessin voi suorittaa. **Tilivuoden sulkemismallin asetukset** -sivulla voidaan määrittää malli yritysryhmälle, joille tilivuoden sulkemisprosessi suoritetaan. Mallia käytetään jokaisessa tilivuoden lopetuksessa, mutta se on muokattavissa organisaatiosi tarpeiden mukaan.
+Kun määritys on tehty, tilivuoden sulkemisprosessin voi suorittaa. **Tilivuoden sulkemismallin asetukset** -sivulla voidaan määrittää malli yritysryhmälle, joille tilivuoden sulkemisprosessi suoritetaan. Mallia käytetään jokaisessa tilivuoden lopetuksessa, mutta se on muokattavissa organisaatiosi tarpeiden mukaan.
 
 Määritä ensimmäiseksi mallille **Ryhmän nimi** ja valitse kirjanpidon vuosikalenteri. Sisällytettävä yritysryhmä tulisi voida tunnistaa ryhmän nimestä. Kun määrität yritysryhmiä, muista, että yritykset voidaan sisällyttää samaan ryhmään vain, jos niille on valittu sama kirjanpidon kalenteri. Mallit voi määrittää esimerkiksi maantieteellisen sijainnin perusteella erikseen pohjoisamerikkalaisille, Euroopan, Lähi-Idän ja Afrikan (EMEA) -alueen yrityksille sekä Aasian ja Tyynenmeren (APAC) alueen yrityksille.
 

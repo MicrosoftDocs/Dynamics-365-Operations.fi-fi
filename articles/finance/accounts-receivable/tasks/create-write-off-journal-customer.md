@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713668"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775296"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Poiskirjauksen kirjauskansion luominen asiakkaalle
 
@@ -48,9 +48,9 @@ Tässä tehtävän ohjauksessa näytetään, miten poiston parametrit määritet
 7. Siirry kohtaan **Siirtymisruutu > Moduulit > kirjanpito > kirjauskansioviennit > Yleiset kirjauskansiot**.
 8. Valitse poiston sisältävän kirjauskansion eränumero. Yksi rivi luodaan asiakkaan saldon palauttamiseksi. Yksi tai useita rivejä luodaan poiston kirjaamiseksi poistotilille.  
 9. Sulje sivu.
-10. Sulje sivu.
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Kirjaa pois tapahtumia perintälomakkeelta.
+
+## <a name="write-off-transactions-from-the-collections-page"></a>Kirjaa pois tapahtumia perintäsivulta
 1. Siirry kohtaan **Luotonvalvonta > Perintä > Erääntyneet saldot**.
 2. Valitse sen asiakkaan nimi, jolla on poistettavia tapahtumia. Valitse esimerkiksi Cave Wholesales (US-004).
 3. Merkitse rivi ensimmäistä tapahtumaa varten.
@@ -63,7 +63,7 @@ Tässä tehtävän ohjauksessa näytetään, miten poiston parametrit määritet
 10. Siirry kohtaan **Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot**.
 11. Valitse poiston sisältävän kirjauskansion eränumero. Yksi rivi luodaan asiakkaan saldon palauttamiseksi. Yksi tai useita rivejä luodaan poiston kirjaamiseksi poistotilille.  
 12. Sulje sivu.
-13. Sulje sivu.
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Laskun poiskirjaus Avoimet myyntilaskut -sivulta
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Myyntireskontra > Laskut > Avoimet asiakaslaskut**.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262295"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785096"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -51,7 +51,7 @@ Seuraavat LCS-ominaisuudet on poistettu käytöstä osana [One Dynamics One Plat
 | Palvelupyynnöt | En | Kyllä | Kyllä: [Itsepalvelukäyttöönotot](../deployment/infrastructure-stack.md) |
 | SharePoint -integrointi | Kyllä | Kyllä | En |
 | Määritysten ja tietojen hallinta | En | Kyllä | En |
-| Prosessitietopaketit | En | Kyllä | Kyllä: tietojen tuonti- ja vientiympäristö (DIXF) |
+| Prosessitietopaketit | En | Kyllä | Kyllä: [Tietojen tuonti- ja vientiympäristö (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
 | Ympäristön päivitys | En | Kyllä | Kyllä: [One Version](../lifecycle-services/oneversion-overview.md) -palvelupäivitykset ovat käytettävissä. |
 | Infrastruktuurin arviointityökalu | Kyllä | En | En |
 | Käyttöoikeuksien määrän arviointi | Kyllä | En | En |
@@ -71,10 +71,10 @@ Seuraavat LCS-ominaisuudet on poistettu käytöstä osana [One Dynamics One Plat
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Poistamme seuraavat salausohjelmistot noudattaaksemme nykyisiä tietoturvaprotokolliamme.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Onko toinen ominaisuus korvannut?**   | Asiakkaat voivat käyttää vain  [standardisalausohjelmistoja](/power-platform/admin/server-cipher-tls-requirements) 30. marraskuuta 2022 alkaen. Tämä muutos vaikuttaa asiakkaisiisi ja palvelimiisi, jotka kommunikoivat meidän palvelimemme kanssa. Se voi vaikuttaa esimerkiksi kolmansien osapuolten integraatioihin, jotka eivät noudata standardisalausohjelmistojemme vaatimuksia. |
+| **Onko toinen ominaisuus korvannut?**   | Asiakkaat voivat käyttää vain  [standardisalausohjelmistoja](/power-platform/admin/server-cipher-tls-requirements) 31. tammikuuta 2023 alkaen. Tämä muutos vaikuttaa asiakkaisiisi ja palvelimiisi, jotka kommunikoivat meidän palvelimemme kanssa. Se voi vaikuttaa esimerkiksi kolmansien osapuolten integraatioihin, jotka eivät noudata standardisalausohjelmistojemme vaatimuksia. |
 | **Tuotealueet, joihin vaikutetaan**         | Taloushallinnon ja toimintojen sovellukset |
 | **Käytön asetukset**              | Pilvikäyttöönotot |
-| **Tila**                         | Vanhentunut. Asiakkaiden täytyy päivittää palvelimensa 30. marraskuuta 2022 mennessä. Lisätietoja TLS-salausohjelmistojärjestyksen määrittämisestä on kohdassa  [Transport Layer Securityn (TLS) hallinta](/windows-server/security/tls/manage-tls).  |
+| **Tila**                         | Vanhentunut. Asiakkaiden täytyy päivittää palvelimensa 31. tammikuuta 2023 mennessä. Lisätietoja TLS-salausohjelmistojärjestyksen määrittämisestä on kohdassa  [Transport Layer Securityn (TLS) hallinta](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Kesäkuussa 2022 poistettavat ominaisuudet

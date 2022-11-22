@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb563008f156e1bfa6e4e9a705e9170342719ce7
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887974"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775165"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Välitilitapahtumamaksujen määritykset ja käsittely
 
 [!include [banner](../includes/banner.md)]
 
-Välitilimaksu on maksu, joka kirjataan kirjanpitoon kahdessa vaiheessa. Tätä menetelmää käytetään yleensä silloin, kun maksutavaksi on määritetty **Pankki** ja tapahtumat on kirjattava pankkitilille vain, kun tapahtuma on tyhjentänyt pankin. Voit kuitenkin käyttää sitä myös kirjanpitotilinä. Tällöin järjestelmä siirtää summan päätililtä toiselle päätilille, kun välitilikirjaus käsitellään.
+Välitilimaksu on maksu, joka kirjataan kirjanpitoon kahdessa vaiheessa. Tätä menetelmää käytetään yleensä silloin, kun maksutavaksi on määritetty **Pankki** ja tapahtumat on kirjattava pankkitilille vain, kun tapahtuma on tyhjentänyt pankin. Voit kuitenkin käyttää sitä myös kirjanpitotilinä. Tällöin summa siirretään päätililtä toiselle päätilille, kun välitilikirjaus käsitellään.
 
 Voit luoda välitilimaksuja joko ostoreskontrasta tai myyntireskontrasta. Vaikka tässä artikkelissa kerrotaan, kuinka myyntisaamisten välitilikirjaus määritetään, ostoreskontratapahtumien vaiheet ovat samanlaiset.
 

@@ -2,7 +2,7 @@
 title: Inventory Visibilityn WMS-nimikkeiden tuki
 description: Tässä artikkelissa käsitellään varaston näkyvyyden tukea nimikkeille, joissa on otettu käyttöön varastonhallintaprosessit (WMS-nimikkeet).
 author: yufeihuang
-ms.date: 03/10/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 54ce637d2d7b590988f7590eae5248276bcc4b96
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: bed402ecf20c19e81b2687efd90dba600460971a
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066607"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762736"
 ---
 # <a name="inventory-visibility-support-for-wms-items"></a>Inventory Visibilityn WMS-nimikkeiden tuki
 
@@ -45,17 +45,17 @@ Kun käytät varaston näkyvyyden edistynyttä WMS:ää, kaikkien kyselyiden tul
 
 ## <a name="when-to-use-the-feature"></a>Milloin käyttää toimintoa
 
-Varaston näkyvyyden edistynyttä WMS:ää kannattaa käyttää tilanteissa, joissa kaikki seuraavat ehdot täyttyvät:
+Inventory Visibilityn WMS:ää kannattaa käyttää tilanteissa, joissa kaikki seuraavat ehdot täyttyvät:
 
 - Supply Chain Managementin tiedot synkronoidaan varaston näkyvyyden kanssa.
 - Käytät Supply Chain Managementissa WMS:ää.
-- Käyttäjät tekevät varauksia WMS-nimikkeille, jotka ovat muulla tasolla kuin varastotasolla (esimerkiksi koska käytät varastotyötä).
+- Käyttäjät tekevät varauksia WMS-nimikkeille, jotka varastotasoa alhaisemmalla tasolla (esimerkiksi rekisterikilven tasolla, koska käsiteltävänä on varastotyö).
 
 Muissa tilanteissa käytettävissä olevan varaston kyselytulokset ovat samat riippumatta siitä, onko varaston näkyvyyden edistynyt WMS käytössä. Lisäksi suorituskyky paranee, jos toiminto ei ole käytössä näissä tilanteissa, koska laskelmia on vähemmän ja yleiskuormitus vähenee.
 
-## <a name="enable-the-advanced-wms-feature-for-inventory-visibility"></a>Varaston näkyvyyden edistyneen WMS:n ottaminen käyttöön
+## <a name="enable-the-wms-feature-for-inventory-visibility"></a>Inventory Visibilityn WMS:n ottaminen käyttöön
 
-Varaston näkyvyyden edistynyt WMS otetaan käyttöön seuraavasti.
+Inventory Visibilityn WMS otetaan käyttöön alla olevien ohjeiden avulla.
 
 1. Kirjaudu sisään Supply Chain Managementiin järjestelmänvalvojana.
 1. Avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtila ja ota käyttöön seuraavat ominaisuudet tässä järjestyksessä:
@@ -65,7 +65,7 @@ Varaston näkyvyyden edistynyt WMS otetaan käyttöön seuraavasti.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Varaston näkyvyyden integroinnin parametrit**.
 1. Määritä **Ota WMS-nimikkeet käyttöön** -pikavälilehdessä **Ota WMS-nimikkeet käyttöön**-asetukseksi *Kyllä*.
-1. Kirjaudu Power Apps -palveluun.
+1. Kirjaudu Power Apps -ympäristöön ja avaa **Varaston näkyvyys**.
 1. Avaa **Määritys**-sivu ja ota sitten käyttöön *AdvancedWHS*-toiminto **Ominaisuuden hallinta** -välilehdessä.
 1. Valitse Supply Chain Managementissa **Varastonhallinta \> Kausittaiset tehtävät \> Varaston näkyvyyden integraatio**.
 1. Valitse toimintoruudussa **Poista käytöstä**, jos haluat poistaa varaston näkyvyyden tilapäisesti käytöstä.
@@ -82,21 +82,24 @@ WMS-nimikkeiden kyselyiden tulokset ovat pohjimmiltaan samat kuin ei-WMS-nimikke
 - `ReservOrdered`
 - `ReservPhysical`
 
-Kaikki muut fyysiset mitat lasketaan samoin kuin silloin, kun varaston näkyvyyden edistys WMS ei ole käytössä.
+Kaikki muut fyysiset mitat lasketaan samoin kuin silloin, kun Inventory Visibilityn WMS ei ole käytössä.
 
 Yksityiskohtaisia tietoja WMS-nimikkeiden käytettävissä oleva varastosaldon laskennasta on [Varaukset varastonhallinnassa](https://www.microsoft.com/download/details.aspx?id=43284) -raportissa.
 
-Ne tietoentiteetit, jotka viedään Dataverseen, eivät voi vielä päivittää WMS-nimikkeiden määriä. Tietoyksiköissä näkyvät määrät ovat oikein sekä ei-WMS-nimikkeille että määrille, joihin WMS-logiikka ei vaikuta (eli muut mitat kuin `fno`-tietolähteen `AvailPhysical`, `AvailOrdered`, `ReservPhysical` ja `ReservOrdered`).
+## <a name="on-hand-list-view-and-data-entity-for-wms-items"></a>WMS-nimikkeiden varastosaldon luettelonäkymä ja tietoyksikkö
 
-Supply Chain Management -tietolähteeseen tallennettujen WMS-nimikkeiden määrien muutokset ovat kiellettyjä. Kuten muut varaston näkyvyyden toiminnot, tätä rajoitusta käytetään ristiriitojen ehkäisemiseksi.
+**Varaston näkyvyyden yhteenvedon esilataus** -sivulla on *Käytettävissä olevan varaston indeksin kyselyn esilatauksen tulokset* -entiteetin näkymä. Toisin kuin *Varaston yhteenveto* -entiteetti, *Käytettävissä olevan varaston indeksin kyselyn esilatauksen tulokset* -entiteetti määrittää tuotteiden käytettävissä olevan varaston luettelon yhdessä valittujen dimensioiden kanssa. Varaston näkyvyys synkronoi esiladatut yhteenvetotiedot 15 minuutin välein.
 
-## <a name="soft-reservations-on-wms-items-in-inventory-visibility"></a>WMS-nimikkeiden alustava varaus varaston näkyvyydessä
+Jos Inventory Visibility on käytössä WMS-nimikkeiden kanssa ja haluat tarkastella WMS-nimikkeiden varastosaldoluetteloa, on suositeltavaa ottaa käyttöön *Esilataa Inventory Visibility näkyvyys -yhteenveto* -ominaisuus (katso myös [Varastosaldon virtaviivaistetun kyselyn esilataaminen](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)). Dataversen vastaava tietoyksikkö tallentaa kyselyn esilatauksen tulokset, jotka päivitetään 15 minuutin välein. Tietoyksikön nimi on `Onhand Index Query Preload Result`.
 
-Yleisesti WMS-nimikkeiden [alustavat varaukset](inventory-visibility-reservations.md) ovat tuettuja. Voit sisällyttää WMS:ään liittyviä fyysisiä mittoja alustavien varausten laskentaan. 
+> [!IMPORTANT]
+> Dataverse-yksikkö on vain luku -muotoinen. Voit tarkastella ja viedä Inventory Visibility -yksiköiden tietoja, mutta et voi **muokata niitä**.
 
-Tiedossa on rajoitus, jonka mukaan *varattavissa*-laskelmia ei tueta tällä hetkellä WMS-nimikkeille. Jos siis varauksia on olemassa niiden nykyisten dimensioiden yläpuolella, joita varten on tehty alustava varaus, *varattavissa*-laskenta on virheellinen. Alustavat varaukset eivät muutu, kun **ifCheckAvailForReserv** -asetus on poistettu käytöstä [alustavan varauksen sovellusliittymässä](inventory-visibility-api.md#create-one-reservation-event).
+Supply Chain Management -tietolähteeseen (`fno`) tallennettujen WMS-nimikkeiden määrien muutokset ovat kiellettyjä. Tämä toiminta vastaa Inventory Visibilityn muiden ominaisuuksien toimintaa. Tämä rajoitus on pakotettu käyttöön ristiriitojen estämiseksi.
 
-Tämä rajoitus koskee myös ominaisuuksia ja mukautuksia, jotka perustuvat alustaviin varauksiin (kuten kohdistus).
+## <a name="wms-item-compatibility-for-other-functions-in-inventory-visibility"></a>WMS-nimikkeen yhteensopivuus muiden Inventory Visibilityn toimintojen kanssa
+
+WMS-nimikkeiden [alustavia varauksia](inventory-visibility-reservations.md) ja [varaston kohdistusta](inventory-visibility-allocation.md) tuetaan. Voit sisällyttää WMS:ään liittyviä fyysisiä mittoja alustavien varausten ja kohdistuksen laskentaan.
 
 ## <a name="calculate-available-to-promise-quantities"></a>Luvattavissa olevien määrien laskeminen
 

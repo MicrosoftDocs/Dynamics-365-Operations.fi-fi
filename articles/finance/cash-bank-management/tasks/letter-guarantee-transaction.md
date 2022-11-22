@@ -2,23 +2,23 @@
 title: Takausasiakirjan tapahtuma
 description: Tässä menettelyssä käsitellään takuuasiakirjaprosessi.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e025f0d0a89eb6c6ab024236400a7c65b108e6d5
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722743"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779931"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Takausasiakirjan tapahtuma
 
@@ -40,108 +40,108 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 
 
 ## <a name="create-sales-order-with-letter-of-guarantee"></a>Luo myyntitilaus, jossa on takausasiakirja
-1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
-2. Valitse Uusi.
-3. Syötä tai valitse arvo Asiakastili-kentässä.
+1. Siirry kohtaan **Myyntireskontra > Tilaukset > Kaikki myyntitilaukset**.
+2. Valitse **Uusi**.
+3. Syötä tai valitse arvo **Asiakastili**-kentässä.
 4. Laajenna Yleinen-osa.
-5. Syötä tai valitse arvo Toimipaikka-kenttään.
+5. Syötä tai valitse arvo **Toimipaikka**-kenttään.
 6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Anna tai valitse Varasto-kentässä arvo.
+7. Anna tai valitse **Varasto**-kentässä arvo.
 8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Valitse Pankkitositteen tyyppi -kentässä Takausasiakirja.
-10. Valitse OK.
-11. Syötä tai valitse arvo Nimiketunnus-kentässä.
-12. Syötä Yksikköhinta-kenttään numero.
+9. Valitse **Pankkitositteen tyyppi** -kentässä **Takausasiakirja**.
+10. Valitse **OK**.
+11. Syötä tai valitse arvo **Nimiketunnus**-kentässä.
+12. Syötä **Yksikköhinta**-kenttään numero.
 13. Laajenna Rivin erittely -osa.
 14. Valitse Toimitus-välilehti.
     * Huomautus: Valitse Toimituspäivän tarkistus = Ei mitään.  
-15. Kirjoita päivämäärä Pyydetty lähetyspäivämäärä -kenttään.
-16. Kirjoita päivämäärä Vahvistettu lähetyspäivämäärä -kenttään.
+15. Kirjoita päivämäärä **Pyydetty lähetyspäivämäärä** -kenttään.
+16. Kirjoita päivämäärä **Vahvistettu lähetyspäivämäärä** -kenttään.
 
 ## <a name="process-letter-of-guarantee_request"></a>Käsittele takausasiakirja_Pyyntö
-1. Valitse toimintoruudussa Hallitse.
-2. Valitse Takausasiakirja.
-3. Valitse toimintoruudussa Takausasiakirja.
-4. Avaa valintaikkuna valitsemalla Pyyntö.
-5. Anna tai valitse Tyyppi-kentässä arvo.
+1. Valitse toimintoruudussa **Hallitse**.
+2. Valitse **Takausasiakirja**.
+3. Valitse toimintoruudussa **Takausasiakirja**.
+4. Avaa valintaikkuna valitsemalla **Pyyntö**.
+5. Anna tai valitse **Tyyppi**-kentässä arvo.
 6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Kirjoita numero Arvo-kenttään.
-8. Anna päivämäärä ja kellonaika Vanhentumispäivä-kenttään.
-9. Valitse OK.
+7. Kirjoita numero **Arvo**-kenttään.
+8. Anna päivämäärä ja kellonaika **Vanhentumispäivä**-kenttään.
+9. Valitse **OK**.
 10. Sulje sivu.
 
 ## <a name="process-letter-of-guarantee_submit-to-bank"></a>Käsittele takausasiakirja_Lähetä pankille
-1. Valitse Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat.
+1. Valitse **Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat**.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Avaa valintaikkuna valitsemalla Lähetä pankille.
-4. Syötä tai valitse arvo Pankkitili-kentässä.
+3. Avaa valintaikkuna valitsemalla **Lähetä pankille**.
+4. Anna tai valitse arvo **Pankkitili**-kentässä.
 5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Valitse OK.
+6. Valitse **OK**.
 
 ## <a name="process-letter-of-guarantee_receive-from-bank"></a>Käsittele takausasiakirja_Ota vastaan pankista
-1. Avaa valintaikkuna valitsemalla Vastaanota pankilta.
-2. Kirjoita arvo Pankin rekisteröintinumero -kenttään.
-    * Tarkista Kate- ja Kulu-kentissä lasketut arvot.  
-3. Valitse OK.
+1. Avaa valintaikkuna valitsemalla **Vastaanota pankilta**.
+2. Kirjoita arvo **Pankin rekisteröintinumero** -kenttään.
+    * Tarkista **Kate**- ja **Kulu**-kentissä lasketut arvot.  
+3. Valitse **OK**.
 4. Laajenna Toiminnot-osa.
     * Tarkista Vastaanota pankilta -tietue.  
-5. Avaa Kirjauskansion eränumero -kentän linkki napsauttamalla.
-6. Valitse Rivit.
+5. Avaa **Kirjauskansion eränumero** -kentän linkki napsauttamalla.
+6. Valitse **Rivit**.
     * Tarkista kirjauskansiovientien kirjaus.  
 7. Sulje sivu.
 
 ## <a name="process-letter-of-guarantee_give-to-beneficiary"></a>Käsittele takausasiakirja_Anna edunsaajalle
-1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
+1. Siirry kohtaan **Myyntireskontra > Tilaukset > Kaikki myyntitilaukset**.
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-3. Valitse toimintoruudussa Hallitse.
-4. Valitse Takausasiakirja.
-5. Valitse toimintoruudussa Takausasiakirja.
-6. Avaa valintaikkuna valitsemalla Anna edunsaajalle.
-7. Valitse OK.
-8. Valitse Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat.
+3. Valitse toimintoruudussa **Hallitse**.
+4. Valitse **Takausasiakirja**.
+5. Valitse toimintoruudussa **Takausasiakirja**.
+6. Avaa valintaikkuna valitsemalla **Anna edunsaajalle** .
+7. Valitse **OK**.
+8. Valitse **Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat**.
 9. Etsi haluamasi tietue luettelosta ja valitse se.
-10. Avaa valintaikkuna valitsemalla Anna edunsaajalle.
-11. Valitse OK.
+10. Avaa valintaikkuna valitsemalla **Anna edunsaajalle** .
+11. Valitse **OK**.
 12. Laajenna Toiminnot-osa.
     * Vahvista Anna edunsaajalle -tietue.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>Käsittele takausasiakirja_Kasvata arvoa
-1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
+1. Siirry kohtaan **Myyntireskontra > Tilaukset > Kaikki myyntitilaukset**.
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-3. Valitse toimintoruudussa Hallitse.
-4. Valitse Takausasiakirja.
-5. Valitse toimintoruudussa Takausasiakirja.
-6. Avaa valintaikkuna valitsemalla Kasvata arvoa.
-7. Lisää Lisättävä arvo -kenttään numero.
-8. Valitse OK.
-9. Valitse Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat.
+3. Valitse toimintoruudussa **Hallitse**.
+4. Valitse **Takausasiakirja**.
+5. Valitse toimintoruudussa **Takausasiakirja**.
+6. Avaa valintaikkuna valitsemalla **Kasvata arvoa**.
+7. Lisää **Lisättävä arvo** -kenttään numero.
+8. Valitse **OK**.
+9. Valitse **Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat**.
 10. Etsi haluamasi tietue luettelosta ja valitse se.
-11. Avaa valintaikkuna valitsemalla Kasvata arvoa.
-12. Valitse OK.
+11. Avaa valintaikkuna valitsemalla **Kasvata arvoa**.
+12. Valitse **OK**.
 13. Laajenna Toiminnot-osa.
     * Tarkista Kasvata arvoa -tietue.  
 14. Etsi haluamasi tietue luettelosta ja valitse se.
-15. Avaa Kirjauskansion eränumero -kentän linkki napsauttamalla.
-16. Valitse Rivit.
+15. Avaa **Kirjauskansion eränumero** -kentän linkki napsauttamalla.
+16. Valitse **Rivit**.
     * Tarkista kirjatut kirjauskansioviennit.  
 
 ## <a name="process-letter-of-guarantee_liquidate"></a>Käsittele takausasiakirja_Realisoi
-1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
+1. Siirry kohtaan **Myyntireskontra > Tilaukset > Kaikki myyntitilaukset**.
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-3. Valitse toimintoruudussa Hallitse.
-4. Valitse Takausasiakirja.
-5. Valitse toimintoruudussa Takausasiakirja.
-6. Avaa valintaikkuna valitsemalla Realisoi.
-7. Valitse OK.
-8. Valitse Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat.
+3. Valitse toimintoruudussa **Hallitse**.
+4. Valitse **Takausasiakirja**.
+5. Valitse toimintoruudussa **Takausasiakirja**.
+6. Avaa valintaikkuna valitsemalla **Realisoi**.
+7. Valitse **OK**.
+8. Valitse **Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat**.
 9. Etsi haluamasi tietue luettelosta ja valitse se.
-10. Avaa valintaikkuna valitsemalla Realisoi.
-11. Valitse OK.
+10. Avaa valintaikkuna valitsemalla **Realisoi**.
+11. Valitse **OK**.
 12. Laajenna Toiminnot-osa.
     * Tarkista Realisoi-tietue.  
 13. Etsi haluamasi tietue luettelosta ja valitse se.
-14. Avaa Kirjauskansion eränumero -kentän linkki napsauttamalla.
-15. Valitse Rivit.
+14. Avaa **Kirjauskansion eränumero** -kentän linkki napsauttamalla.
+15. Valitse **Rivit**.
     * Tarkista kirjatut kirjauskansioviennit.  
 16. Sulje sivu.
 

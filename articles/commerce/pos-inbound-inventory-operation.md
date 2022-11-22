@@ -2,26 +2,19 @@
 title: Myyntipisteen saapuva varastotoiminto
 description: Tässä artikkelissa kuvataan myyntipisteen saapuva varastotoiminto.
 author: hhainesms
-ms.date: 09/17/2020
+ms.date: 11/16/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.9
-ms.custom: ''
-ms.assetid: ''
-ms.search.industry: Retail
-ms.search.form: ''
-ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 7999c8409c71c7ccf9c1d44bd86ddca6f5e8f6ff
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288349"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785015"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Myyntipisteen saapuva varastotoiminto
 
@@ -31,6 +24,11 @@ Microsoft Dynamics 365 Commercen versiossa 10.0.10 ja myöhemmissä versioissa m
 
 > [!NOTE]
 > Commercen versiossa 10.0.10 ja myöhemmissä versioissa kaikki myyntipistesovelluksen uudet myymälän varaston vastaanoton ja osto- ja siirtotilausten ominaisuudet lisätään **saapuva toiminnon** myyntipistetoimintoon. Jos käytät tällä hetkellä myyntipisteen keräily- ja vastaanottotoimintoa, on suositeltavaa kehittää strategia, jonka avulla siirrytään kyseisen toiminnon käyttämisestä uuden saapuvien ja lähtevien toimintojen käyttämiseen. Vaikka keräily- ja vastaanottotoimintoa ei poisteta tuotteesta, sitä ei enää kehitetä toiminnallisesti eikä suorituskyvyn osalta version 10.0.9 jälkeen.
+
+Seuraavassa videossa on Dynamics 365 Commercen myymälän varaston liiketoimintaprosessien ja -ominaisuuksien yleiskatsaus.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSx]
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Edellytys: Asynkronisen asiakirjakehyksen määrittäminen
 

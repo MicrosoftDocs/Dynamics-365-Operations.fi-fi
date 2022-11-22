@@ -2,25 +2,25 @@
 title: Tilikauden sulkemisen työtila
 description: Tässä artikkelissa on tilikauden sulkemisen työtilan ja liittyvän konfiguraation yleiskatsaus.
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657bdd04c8b6dd36341e0bf771a978f68f13362d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865709"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780039"
 ---
 # <a name="financial-period-close-workspace"></a>Tilikauden sulkemisen työtila
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865709"
 
 Tässä artikkelissa on **tilikauden sulkemisen** työtilan ja liittyvän konfiguraation yleiskatsaus.
 
-Tilikauden sulkemisen työtila
+## <a name="financial-period-close-workspace"></a>Tilikauden sulkemisen työtila
 
 **Tilikauden sulkemisen**  työtilassa voit seurata tilikauden sulkemisprosesseja yritysten, alueiden ja henkilöiden osalta. **Tilikauden sulkemisen** työtilasta riippuen näkyvillä ovat kaikki sulkemisaikataulun tehtävät ja tilat tai vain sinulle määritetyt tehtävät. 
 
@@ -101,7 +101,7 @@ Liitä sulkemisaikatauluun sopiva kalenteri tehtävän ajoituksessa käytettävi
 
 Määritä myös sulkemisaikatauluun liittyvät yritykset. Jos mallin tehtävät liitetään useisiin yrityksiin, jokaiselle sulkemisaikatauluun liittyvälle ja mallin tehtävään liitetylle yritykselle luodaan erilliset tehtävät. 
 
-Kun sulkemisaikataulu on valmis, valitse sille **Suljettu**-vaihtoehto. Tehtävän historia on yhä käytettävissä **Kaikki tilikauden sulkemisen tehtävät** -luettelosivulla, mutta sulkemisaikataulu poistetaan työtilasta. Kun sulkemisaikataulu on merkitty **suljetuksi**, aikatauluun ei voi lisätä tehtäviä, sen tehtäviä ei voi muokata eikä siitä voi poistaa tehtäviä.
+Kun sulkemisaikataulu on valmis, valitse **Suljettu**-vaihtoehto. Tehtävän historia on yhä käytettävissä **Kaikki tilikauden sulkemisen tehtävät** -luettelosivulla, mutta sulkemisaikataulu poistetaan työtilasta. Kun sulkemisaikataulu on merkitty **suljetuksi**, aikatauluun ei voi lisätä tehtäviä, sen tehtäviä ei voi muokata eikä siitä voi poistaa tehtäviä.
 
 
 

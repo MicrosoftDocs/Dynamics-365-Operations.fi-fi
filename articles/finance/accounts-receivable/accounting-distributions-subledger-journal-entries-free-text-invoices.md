@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e2b6d75034c06704cad4cbc800ce3311ef5330e
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f5120c4e75e821776201d5add2d498feb94d0297
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712283"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778408"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran viennit
 
@@ -30,9 +30,9 @@ Kirjanpidollisia jakoja käytetään määritettäessä summan käsittely, kuten
 
 ## <a name="accounting-distributions"></a>Kirjanpidolliset jaot
 
-Seuraavilla Vapaatekstilasku-sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin vapaatekstilaskun summalle.
+Seuraavilla **Vapaatekstilasku**-sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin vapaatekstilaskun summalle.
 
--   **Jaa summat** – Tarkastele ja muuta yksittäisen rivin ja sen alarivien, kuten verojen tai kulujen, kirjanpidollisia jakoja. Voit tarkastella ja muuttaa alarivin kirjanpidollisia jakoja myös suoraan Arvonlisäverotapahtumat- tai Kulutapahtumat-sivulla.
+-   **Jaa summat** – Tarkastele ja muuta yksittäisen rivin ja sen alarivien, kuten verojen tai kulujen, kirjanpidollisia jakoja. Voit tarkastella ja muuttaa alarivin kirjanpidollisia jakoja myös suoraan **Arvonlisäverotapahtumat**- tai **Kulutapahtumat**-sivulla.
     -   Muuta vapaatekstilaskun otsikon summia, kuten kuluja tai valuutan pyöristyssummia.
     -   Muuta vapaatekstilaskun rivisummia.
 -   **Näytä jakaumat** – Näytä asiakirjan kaikkien rivien kirjanpidolliset jaot. Et voi muuttaa kirjanpidollisia jakoja tästä näkymästä.
@@ -120,7 +120,7 @@ Kun annat vapaatekstilaskun, jokainen määrä jaetaan seuraavasti.
 </table>
 
 ## <a name="distributing-taxes"></a>Verojen jakaminen
-verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa. Jotta voit laskea arvonlisäverot, sinun on suoritettava jokin seuraavista Vapaatekstilasku-lomakkeen tehtävistä:
+verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa. Jotta voit laskea arvonlisäverot, sinun on suoritettava jokin seuraavista **Vapaatekstilasku**-lomakkeen tehtävistä:
 -   Näytä arvonlisävero.
 -   Näytä laskun summa.
 -   Näytä kassavirta.

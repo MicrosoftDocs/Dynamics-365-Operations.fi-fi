@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63b08a8493702cf319aa078ef6aa787e2094be87
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
+ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733443"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760359"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources -asiakkaiden siirto
 
@@ -38,13 +38,12 @@ Asiakkaiden siirto on "nosta ja siirrä" -tyyppinen operaatio, jossa asiakastiet
 
 ### <a name="dataverse-environment-backup-sandbox"></a>Dataverse-ympäristön varmuuskopio (eristysympäristö)
 
-1. Valinnainen, mutta suositeltavaa: Päivitä nykyinen HR-eristysympäristö käyttämällä HR-tuotantoympäristön kopiota.
-2. [Luo uusi Dataverse-ympäristö](/power-platform/admin/create-environment#create-an-environment-with-a-database) käyttämällä Power Platform -hallintakeskusta.
+ - Valinnainen, mutta suositeltavaa: Päivitä nykyinen HR-eristysympäristö käyttämällä HR-tuotantoympäristön kopiota.
+ - Luo uusi Dataverse-ympäristö käyttämällä Power Platform -hallintakeskusta.
+ - Kopioi edellisessä vaiheessa luomaasi ympäristöön nykyinen Dataverse-ympäristö, joka on linkitetty erilliseen Human Resources -sovellukseen.
 
-    > [!NOTE]
-    > Varmista tietokantaa lisätessäsi, että **Ota Dynamics 365 -sovellukset käyttöön** -vaihtoehdoksi on valittu **Kyllä**.
-
-3. [Kopioi nykyinen Dataverse-ympäristö](/power-platform/admin/copy-environment), joka on linkitetty erilliseen HR-sovellukseen, edellisessä vaiheessa luomaasi ympäristöön.
+> [!NOTE]
+> Varmista tietokantaa lisätessäsi, että **Ota Dynamics 365 -sovellukset käyttöön** -vaihtoehdoksi on valittu **Kyllä**. Lisätietoja on kohdassa [Power Platform -ympäristön valmisteleminen](hr-cust-migration.md#prepare-a-power-platform-environment)
 
 ### <a name="dataverse-capacity"></a>Dataversen kapasiteetti
 
@@ -89,9 +88,9 @@ Kun uusi Lifecycle Services -projekti on luotu ja projektin perehdytysprosessi o
 #### <a name="prepare-a-power-platform-environment"></a>Power Platform -ympäristön valmisteleminen
 
 > [!NOTE]
-> Tämä vaihe koskee vain eristysympäristön siirtoa. Kun siirrät tuotantoympäristön, siihen liitettyä Power Platform -hallintakeskusympäristöä siirretään eteenpäin.
+> Tämä vaihe koskee vain eristysympäristön siirtoa. Kun siirrät tuotantoympäristön, siihen liitettyä Power Platform -hallintakeskusympäristöä siirretään eteenpäin. Varmista tietokantaa lisätessäsi, että **Ota Dynamics 365 -sovellukset käyttöön** -painikkeen arvoksi on valittu **Kyllä**. 
 
-- Avaa Power Platform -hallintakeskus ja [luo Power Platform -ympäristö](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center), jota haluat käyttää eristysympäristön siirrossa, tai valitse aiemmin luotu ympäristö.
+- Avaa Power Platform -hallintakeskus, [luo ympäristö ja tietokanta](/power-platform/admin/create-environment#create-an-environment-with-a-database), jota haluat käyttää eristysympäristön siirrossa, tai valitse aiemmin luotu ympäristö.
 - [Kopioi ympäristö](/power-platform/admin/copy-environment) päivittääksesi yhdistämismäärityksissä käytetyn Power Platform -ympäristön.
 
 #### <a name="migrate-the-sandbox-environment"></a>Eristysympäristön siirto

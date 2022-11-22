@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 384ce8611a7dbf6adf7b8ae6ad9569e2a41c22d1
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405434"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757164"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
@@ -50,7 +50,7 @@ Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan k�
 | Sulje toimintoruudun tai valikon välilehti        | Esc                              |
 | Hiiren kakkospainikkeen napsautus                          | Vaihto+F10                        |
 | Avaa pikavalikko    | Ctrl+F10                         |
-| Suorita oletuspainike lomakkeessa/valintaikkunassa | Alt+Enter                        |
+| Suorita oletuspainike sivulla/valintaikkunassa | Alt+Enter                        |
 | Painikkeen tai ruudun napsautus                          | Enter tai Väli                   |
 | Näytä tai päivitä määräruudun tiedot       | Alt+Ylänuoli                     |
 | Tällä hetkellä käytettävissä olevien pikanäppäinten tarkasteleminen              | Alt+Vaihto+K                      |
@@ -85,36 +85,36 @@ Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan k�
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Avaa nykyisen sarakkeen ruudukkosuodatus                                                                          | Ctrl+G                   |
 | Sulje nykyisen sarakkeen ruudukkosuodatus                                                                         | Esc                      |
-| Avaa suodatinruutu (tai siirrä kohdistus suodatinruudusta päälomakkeeseen ja takaisin, jos suodatinruutu on jo avoinna) | ALT + M,F tai Ctrl + F3       |
+| Avaa suodatinruutu (tai siirrä kohdistus suodatinruudusta pääsivulle ja takaisin, jos suodatinruutu on jo avoinna) | ALT + M,F tai Ctrl + F3       |
 | Sulje suodatinruutu (kun kohdistus on suodatinruudussa)                                                               | Esc                      |
 | Avaa lisäasetusten suodatus/lajittelu                                                                                        | Ctrl+Vaihto+F3            |
 | Käytä pikasuodatinta (kun kohdistus on pikasuodattimessa)                                                              | Enter                    |
 | Käytä ruudukkosuodatinta (kun kohdistus on sarakkeen otsikon suodatuskentässä)                                             | Enter                    |
 
-## <a name="form-shortcuts"></a>Lomakkeen pikanäppäimet
+## <a name="page-shortcuts"></a>Sivun pikanäppäimet
 
-| Toiminto                                    | Näppäinyhdistelmä             |
+| Toiminto                                    | Paina              |
 |-----------------------------------------------|-------------------|
 | Luo uusi tietue                           | Alt+N             |
 | Tietueen poistaminen                               | Alt+Del tai Alt+F9 |
 | Tallenna tietue                                   | Alt+S tai Ctrl+S   |
 | Palauta                              | Ctrl+Vaihto+F5     |
 | Päivitä tiedot                                  | Vaihto+F5          |
-| Siirry lomakkeessa ensimmäiseen näkyvään kenttään   | Alt+Vaihto+F       |
+| Siirry sivulla ensimmäiseen näkyvään kenttään   | Alt+Vaihto+F       |
 | Ota muokkaustila käyttöön tai poista se käytöstä                              | F2                |
-| Asiakirjan liittäminen                             | Ctrl+Vaihto+A      |
+| Liitä asiakirja                             | Ctrl+Vaihto+A      |
 | Vie Exceliin                               | Ctrl+Vaihto+E      |
 | Siirry edelliseen tietueeseen (ruudukon ulkopuolella)  | Ctrl+Ylänuoli     |
 | Siirry seuraavaan tietueeseen (ruudukon ulkopuolella)      | Ctrl+Alanuoli   |
 | Siirry ensimmäiseen tietueeseen (ruudukon ulkopuolella)     | Ctrl+Home         |
 | Siirry viimeiseen tietueeseen (ruudukon ulkopuolella)      | Ctrl+End          |
-| Sulje lomake (napsauta Takaisin)                   | Esc               |
-| Sulje ja tallenna lomake             | Vaihto+Esc         |
-| Sulje lomake ja hylkää tallentamattomat muutokset | Alt+Vaihto+Q       |
+| Sulje sivu (valitse Takaisin-painike)<br><br>**Huomautus:** Jos avoinna on ponnahdusikkuna (esimerkiksi työkaluvihje, päivämäärän valitsin tai avattava valikko), ohita ensin ponnahdusikkuna Esc-näppäimen avulla.       | Esc               |
+| Sulje ja tallenna sivu             | Vaihto+Esc         |
+| Sulje sivu hylkäämällä muutokset, joita ei ole tallennettu | Alt+Vaihto+Q       |
 
-## <a name="form-navigation-shortcuts"></a>Lomakkeen siirtymispikanäppäimet
+## <a name="page-navigation-shortcuts"></a>Sivun siirtymispikanäppäimet
 
-| Toiminto                                          | Näppäinyhdistelmä                                        |
+| Toiminto                                          | Paina                                         |
 |-----------------------------------------------------|----------------------------------------------|
 | Siirry seuraavaan/edelliseen kenttään                     | Sarkain / Vaihto+Sarkain                              |
 | Siirry seuraavaan/edelliseen välilehteen                       | Alt+Vaihto+Oikea nuoli / Alt+Vaihto+Vasen nuoli |
@@ -192,13 +192,13 @@ Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan k�
 | Avaa ohjeruutu.                                                            | Ctrl+?                     |
 | Avaa jäljityksen jäsennin                                                         | Alt+Vaihto+T                |
 | Siirry siirtymisruutuun                                                   | Alt + F1                     |
-| Aseta/poista lomakkeen suosikkimerkintä (kun siirtymisruudun kohdistin on lomakkeessa)   | Vaihto+F                    |
+| Aseta/poista sivun suosikkimerkintä (kun siirtymisruudun kohdistin on sivulla)   | Vaihto+F                    |
 | Siirry vakiotoimintoruutuun                                              | ALT + M,A tai Ctrl + F6         |
 | Siirry suodatinruutuun (voi sisältää ruudun avaamisen)                        | ALT + M,F tai Ctrl + F3         |
 | Siirrä kohdistus sivun sisältöön (kun kohdistus on suodatinruudussa)                | ALT + M,M tai Ctrl + F3         |
-| Siirry Tiedot-lomakkeen siirtymisluetteloon (voi sisältää lomakkeen avaamisen)    | ALT + M,S tai Ctrl + F8         |
+| Siirry siirtymisluetteloon (voi sisältää luettelon avaamisen)    | ALT + M,S tai Ctrl + F8         |
 | Siirrä kohdistus sivun sisältöön (kun kohdistus on siirtymisluettelossa)            | ALT + M,M tai Ctrl + F8         |
-| Sulje tietolomakkeen siirtymisluettelo (kun kohdistus on siirtymisluettelossa) | Esc                        |
+| Sulje siirtymisluettelo (kun kohdistus on siirtymisluettelossa) | Esc                        |
 | Siirry pääsivun sisältöön (kun kohdistus on toisessa ruudussa)                    | Alt+M,M                    |
 | Siirry tietoruutuun (voi sisältää ruudun avaamisen)                       | ALT + M,B tai Ctrl + F2         |
 | Siirry seuraavaan ominaisuuksien kuvaselitteeseen                                              | Alt+M,C                    |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: bfc1c2021387ed35e6ccb513167e896eddef2eaf
+ms.sourcegitcommit: ea79bf014bbf495ac8e28db29502c8bd85a75f32
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752717"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9759597"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Pankkitilin täsmäytyksen edistyneen tuonnin käyttöönottäminen sähköisen raportoinnin avulla
 
@@ -34,9 +34,12 @@ Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliot
 2. Valitse **Microsoft**-määrityspalveluntarjoajan ruudusta **Arkistot**.
 3. Valitse **Yleinen** ja valitse sitten **Avaa**.
 4. Jos tietovarastoon on oltava yhteys, valitse sininen linkki valintaikkunasta.
-5. Etsi konfigurointiluettelosta **Pankkitilin täsmäytyksen lisätoimintojen tiliotemalli \> ABR BAI2 -muoto**..
+5. Etsi konfigurointiluettelosta **Pankkitilin täsmäytyksen lisätoimintojen tiliotemalli \> ABR BAI2 -muoto**.
 6. Valitse **BAI2**-muoto.
 7. Valitse **Versiot**-pikavälilehdellä valitun uusin versio ja valitse sitten **Tuo**.
+
+>[!NOTE]
+>**BAI2-pankkitiliotemalli** vanhenee myöhemmin. 
 
 ## <a name="set-up-the-bank-statement-format"></a>Määritä tiliotemuotoilu
 

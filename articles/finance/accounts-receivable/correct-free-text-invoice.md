@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c83ac47bc5e7f7ed223c772591cf8a7c1e63a40
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b3cc07a1f0ba444250eddcf892681e2ca63e9c1a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715494"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780521"
 ---
 # <a name="correct-a-free-text-invoice"></a>Vapaatekstilaskun korjaus
 
@@ -28,7 +28,11 @@ ms.locfileid: "9715494"
 
 Tässä artikkelissa kerrotaan, miten kirjattu vapaatekstilasku korjataan ja luodaan uudelleen korjattuna laskuna.
 
-Voit korjata kirjatun vapaatekstilaskun avaamalla kirjatun vapaatekstilaskun. Valitse **Lasku**-sivulla **Peruuta** ja sitten **Korjaa lasku**. Valitse syykoodi, lisää kommentit ja valitse päivämäärä uudelle korjatulle laskulle. Voit muokata korjattua laskua ja kirjata sen. 
+Voit korjata jo kirjatun vapaatekstilaskun seuraavasti: 
+1. Avaa kirjattu vapaatekstilasku. 
+2. Valitse **Lasku**-sivulla **Peruuta** ja sitten **Korjaa lasku**. 
+3. Valitse syykoodi, lisää kommentit ja valitse päivämäärä uudelle korjatulle laskulle.
+4. Voit muokata korjattua laskua ja kirjata sen. 
 
 Kun kirjaat korjatun laskun, hyvityssummalle luodaan alkuperäisen laskun suuruinen peruutuslasku. Alkuperäisen laskun ja peruutuslasku yhteissaldo onkin tämän vuoksi 0 (nolla). Peruutuslasku tilitetään alkuperäiseen laskuun. 
 

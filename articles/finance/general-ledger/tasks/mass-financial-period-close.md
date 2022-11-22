@@ -2,7 +2,7 @@
 title: Tilikauden joukkosulkeminen
 description: Tässä artikkelissa kuvataan, miten kausi asetetaan pitoon tai pysyvästi suljetuksi useammalle yritykselle kerralla.
 author: aprilolson
-ms.date: 08/16/2019
+ms.date: 11/16/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8a85d512842b27f2d74507be16a8f2819f483e0d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872438"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779807"
 ---
 # <a name="mass-financial-period-close"></a>Tilikauden joukkosulkeminen
 
@@ -26,7 +26,11 @@ ms.locfileid: "8872438"
 
 Tässä artikkelissa kuvataan, miten kausi asetetaan pitoon tai pysyvästi suljetuksi useammalle yritykselle kerralla. Lisäksi tehtävässä näytetään, miten käyttäjäryhmän kirjaukset voi rajoittaa tiettyihin moduuleihin.
 
-1. Siirry siirtymisruudussa kohtaan **Kirjanpito > Kausi suljettu > Kirjanpidon kalenterit**. Huomaa, että luettelossa näytettävät yritykset riippuvat sivulla valitusta vuosikalenterista. Vain valittua vuosikalenteria käyttävät yritykset näytetään.
+1. Siirry siirtymisruudussa kohtaan **Kirjanpito > Kausi suljettu > Kirjanpidon kalenterit**. 
+
+>[!NOTE]
+> Luettelossa näytettävät yritykset riippuvat sivulla valitusta vuosikalenterista. Vain valittua vuosikalenteria käyttävät yritykset näytetään.
+
 2. Valitse **Muokkaa**.
 3. Valitse kausi, jonka tilaa haluat muokata.
 4. Valitse yritykset, joiden tilan haluat päivittää. Voit valita kaikki yritykset nopeasti valitsemalla valintaruudun ruudukon vasemmalla puolella.  
@@ -34,7 +38,7 @@ Tässä artikkelissa kuvataan, miten kausi asetetaan pitoon tai pysyvästi sulje
 6. Valitse **Sovellus**-moduulissa päivitettävä moduuli. Klikkaa **Valitse**.
 7. Valitse **Käyttöoikeustaso**-kohtaan **Kaikki**, **Ei mitään** tai tietty käyttäjäryhmä. Klikkaa **Valitse**.  
 - **Kaikki** - kaikilla käyttäjillä, joilla on moduulin muokkausoikeudet, voivat tehdä kirjauksia avoimena kautena. 
-- **Ei mitään** - käyttäjät eivät saa kirjata moduuliin avoimena kautena. Tietty käyttäjäryhmä ilmaisee, että vain ryhmän jäsenet voivat kirjata moduuliin avoimena kautena.  
+- **Ei mitään** – käyttäjät eivät saa kirjata moduuliin avoimena kautena. Tietty käyttäjäryhmä ilmaisee, että vain ryhmän jäsenet voivat kirjata moduuliin avoimena kautena.  
 8. Valitse **Päivitä**. 
 9. Päivitä tila valitsemalla toinen kausi.
 10. Valitse yritykset, joiden kauden tilan haluat päivittää.
