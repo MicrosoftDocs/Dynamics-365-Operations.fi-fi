@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 786aecf69bae3d07ac80a55b4dc835dd8129bd59
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779931"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803961"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Takausasiakirjan tapahtuma
 
@@ -43,7 +43,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 1. Siirry kohtaan **Myyntireskontra > Tilaukset > Kaikki myyntitilaukset**.
 2. Valitse **Uusi**.
 3. Syötä tai valitse arvo **Asiakastili**-kentässä.
-4. Laajenna Yleinen-osa.
+4. Laajenna **Yleiset**-osa.
 5. Syötä tai valitse arvo **Toimipaikka**-kenttään.
 6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 7. Anna tai valitse **Varasto**-kentässä arvo.
@@ -52,9 +52,12 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 10. Valitse **OK**.
 11. Syötä tai valitse arvo **Nimiketunnus**-kentässä.
 12. Syötä **Yksikköhinta**-kenttään numero.
-13. Laajenna Rivin erittely -osa.
-14. Valitse Toimitus-välilehti.
-    * Huomautus: Valitse Toimituspäivän tarkistus = Ei mitään.  
+13. Laajenna **Rivin erittely** -osa.
+14. Valitse **Toimitus**-välilehti.
+
+>[!Note] 
+>Valitse **Toimituspäivän tarkistus** = **Ei mitään**  
+
 15. Kirjoita päivämäärä **Pyydetty lähetyspäivämäärä** -kenttään.
 16. Kirjoita päivämäärä **Vahvistettu lähetyspäivämäärä** -kenttään.
 
@@ -83,7 +86,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 2. Kirjoita arvo **Pankin rekisteröintinumero** -kenttään.
     * Tarkista **Kate**- ja **Kulu**-kentissä lasketut arvot.  
 3. Valitse **OK**.
-4. Laajenna Toiminnot-osa.
+4. Laajenna **Toiminnot**-osa.
     * Tarkista Vastaanota pankilta -tietue.  
 5. Avaa **Kirjauskansion eränumero** -kentän linkki napsauttamalla.
 6. Valitse **Rivit**.
@@ -102,7 +105,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 9. Etsi haluamasi tietue luettelosta ja valitse se.
 10. Avaa valintaikkuna valitsemalla **Anna edunsaajalle** .
 11. Valitse **OK**.
-12. Laajenna Toiminnot-osa.
+12. Laajenna **Toiminnot**-osa.
     * Vahvista Anna edunsaajalle -tietue.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>Käsittele takausasiakirja_Kasvata arvoa
@@ -118,7 +121,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 10. Etsi haluamasi tietue luettelosta ja valitse se.
 11. Avaa valintaikkuna valitsemalla **Kasvata arvoa**.
 12. Valitse **OK**.
-13. Laajenna Toiminnot-osa.
+13. Laajenna **Toiminnot**-osa.
     * Tarkista Kasvata arvoa -tietue.  
 14. Etsi haluamasi tietue luettelosta ja valitse se.
 15. Avaa **Kirjauskansion eränumero** -kentän linkki napsauttamalla.
@@ -137,7 +140,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 9. Etsi haluamasi tietue luettelosta ja valitse se.
 10. Avaa valintaikkuna valitsemalla **Realisoi**.
 11. Valitse **OK**.
-12. Laajenna Toiminnot-osa.
+12. Laajenna **Toiminnot**-osa.
     * Tarkista Realisoi-tietue.  
 13. Etsi haluamasi tietue luettelosta ja valitse se.
 14. Avaa **Kirjauskansion eränumero** -kentän linkki napsauttamalla.

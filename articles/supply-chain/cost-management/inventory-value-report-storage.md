@@ -2,21 +2,21 @@
 title: Varastoarvon raportit
 description: Tässä artikkelissa käsitellään varaston arvon raporttien määrittämistä, luomista ja käyttämistä. Näissä raporteissa on tietoja varastotilanteen ja kirjanpitovaraston määristä ja summista.
 author: JennySong-SH
-ms.date: 08/05/2022
+ms.date: 11/28/2022
 ms.topic: article
-ms.search.form: InventValueProcess, InventValueReportSetup
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6b21f6a7856526863914aac73d50e5c3a70605e8
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334922"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806403"
 ---
 # <a name="inventory-value-reports"></a>Varastoarvon raportit
 
@@ -129,7 +129,7 @@ Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestel
     - **Suora ulkoistaminen** – Kun asetukseksi valitaan *Kyllä*, keskeneräisen työn suoran ulkoistamisen kustannukset näytetään. Tästä tiedostoa on hyötyä alihankinnassa.
     - **Erittelytaso** – Raportin näyttöasetuksen valinta:
 
-        - *Tapahtumat* – Kaikki liittyvien tapahtumien näyttäminen raportissa. Huomaa, että suorituskykyongelmia voi esiintyä, jos tarkasteltavissa raporteissa on runsaasti tapahtumia. Niinpä tätä asetusta käytettäessä kannattaa käyttää **Varaston arvon raportin tallennustila** -raporttia.
+        - *Tapahtumat* – Kaikki liittyvien tapahtumien näyttäminen raportissa. Suorituskykyongelmia voi esiintyä, jos tarkasteltavissa raporteissa on runsaasti tapahtumia. Niinpä tätä asetusta käytettäessä kannattaa käyttää **Varaston arvon raportin tallennustila** -raporttia.
         - *Yhteensä* – yhteistuloksen näyttäminen.
 
     - **Sisällytä alkusaldo** – Kun asetukseksi valitaan *Kyllä*, alkusaldo näytetään. Tämä asetus on käytettävissä vain, kun **Erittelytaso**-kentän asetuksena on *Tapahtumat*.
@@ -172,7 +172,7 @@ Kun olet luonut raportin, voit tarkastella sitä ja tutustua sen tietoihin millo
     - **Suodatin**-kentän avulla voit suodattaa raportin minkä tahansa useiden käytettävissä olevan sarakkeen arvon mukaan.
     - Käytä näytä-valikkoa ( **Suodatin**-kentän yläpuolella) lajittelu- ja suodatusvaihtoehtojen suosikkiyhdistelmien tallentamiseen ja lataamiseen.
 
-## <a name="export-an-inventory-value-report-storage-report"></a>Varaston arvon raportin tallennustila -raportin vieminen
+## <a name="export-an-inventory-value-report-storage-report"></a><a name="export-stored-report"></a>Varaston arvon raportin tallennustila -raportin vieminen
 
 Jokainen luotu raportti tallennetaan **Varastoarvo**-tietoentiteettiin. Voit käyttää Supply Chain Management -sovelluksen vakiotiedonhallintatoimintoja, jos haluat viedä tämän entiteetin tiedot mihin tahansa tuettuun tietomuotoon, kuten CSV- tai Excel-muotoon.
 
@@ -203,6 +203,34 @@ Seuraavassa esimerkissä näytetään, miten **Varaston arvon raportin tallennus
 1. Näkyviin tulevalla **Suorituksen yhteenveto** -sivulla näkyy vientityön tila ja vietyjen entiteettien luettelo. Valitse **Entiteetin käsittelyn tila** -osassa listasta **Varaston arvo** -yksikkö. Lataa tästä yksiköstä viedyt tiedot valitsemalla **Lataa tiedosto**.
 
 Lisätietoja tietojen hallinnan käyttämisestä tietojen viemisessä on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+## <a name="delete-stored-inventory-value-reports"></a>Poista tallennetut varastoarvon raportit
+
+Kun tallennettujen varastoarvon raporttien määrä lisääntyy, ne saattavat alkaa viedä liikaa tilaa tietokannassasi. Tämä tilanne voi vaikuttaa järjestelmän suorituskykyyn ja aiheuttaa tallennuskustannusten nousua. Siksi raportit on ehkä siivottava aika ajoin poistamalla vanhempia raportteja.
+
+> [!IMPORTANT]
+> Ennen kuin poistat aiemmin muodostettuja varastoarvon raportteja, on hyvin suositeltavaa, että ensin [viet raportit](#export-stored-report) ja tallennat ne ulkoisesti, koska niitä ei voi mahdollisesti muodostaa uudelleen myöhemmin. Tämä rajoitus johtuu siitä, että kun muodostat varastoarvoraportin, järjestelmä toimii tästä päivästä taaksepäin ja käsittelee kaikki varastotapahtumatietueet käänteisessä järjestyksessä. Jos yrität mennä raporttia muodostaessasi liian kauas taaksepäin, käsiteltävien tapahtumien määrä voi nousta niin suureksi, että järjestelmä tekee aikakatkaisun ennen kuin raportin muodostaminen on valmis. Uusien raporttien etäisyys menneisyyteen riippuu järjestelmässäsi kyseisellä aikavälillä olevien varastotapahtumien määrästä.
+
+### <a name="delete-one-report-at-a-time"></a>Yhden raportin poistaminen kerrallaan
+
+Noudattamalla näitä ohjeita voit poistaa yhden tallennetun raportin kerrallaan.
+
+1. [Vie raportti](#export-stored-report), jonka suunnittelet poistavasi, ja tallenna se ulkoiseen sijaintiin tulevaa käyttöä varten.
+1. Valitse **Kustannushintojen hallinta \> Kyselyt ja raportit \> Varaston arvoraportin tallennus**.
+1. Valitse poistettava raportti luetteloruudusta.
+1. Valitse toimintoruudussa **Poista**.
+1. Varoitussanoma muistuttaa, että muodostetut raportit kannattaa varmuuskopioida. Valitse **Kyllä**, jos olet valmis etenemään poistoon.
+
+### <a name="delete-several-reports-at-the-same-time"></a>Usean raportin poistaminen samanaikaisesti
+
+Noudattamalla näitä ohjeita voit poistaa useita tallennettuja raportteja kerralla.
+
+1. [Vie kaikki raportit](#export-stored-report), jotka suunnittelet poistavasi, ja tallenna ne ulkoiseen sijaintiin tulevaa käyttöä varten.
+1. Siirry kohtaan **Kustannustenhallinta \> Varastokirjanpito \> Puhdistus \> Varaston arvon raportin tietojen puhdistus**.
+1. Valitse **Varaston arvon raportin tietojen puhdistus** -valintaikkunassa, **Poista varastoarvoraportti, jonka suoritusajankohta on aiempi kuin** -kentässä päivämäärä, jota edeltävältä ajalta varastoarvoraportit poistetaan.
+1. **Sisällytettävät tietueet** -pikavälilehdessä voit valita lisää suodatusehtoja rajoittaaksesi poistettavaa raporttijoukkoa. Valitse **Suodatin**, jolloin vakiokyselyeditori-ikkuna avautuu. Tässä ikkunassa määritetään poistettavien raporttien ominaisuudet.
+1. Määritä **Suorita taustalla** -pikavälilehdessä, miten, milloin ja kuinka usein raporttien poistaminen tehdään. Kentät toimivat samalla tavalla kuin muissakin [taustatöissä](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) Supply Chain Managementissa. Tämä työ suoritetaan kuitenkin yleensä manuaalisesti aina, kun sitä tarvitaan.
+1. Poista määritetyt raportit napsauttamalla **OK**.
 
 ## <a name="generate-a-standard-inventory-value-report"></a>Varaston arvon vakioraportin luominen
 
@@ -245,6 +273,6 @@ Yleensä varaston arvon raporttia käytetään varaston arvon ja määrän tarka
 - Tarkista nimikkeen varasto- ja seurantadimensioryhmät. Vain niiden dimensioiden arvot voidaan näyttää raportissa, joissa **Kirjanpitovarasto**-asetus on otettu käyttöön.
 - Valitse **Kustannushintojen hallinta \> Varaston kirjanpitokäytäntöjen määrittäminen \> Varaston arvon raportit**, valitse sitten raportin luontiin käytetyt raporttimääritykset ja varmista, että tarvittavat varastodimensiot on valittu **Näytä**-sarakkeessa.
 
-Esimerkki: Nimikkeen nimiketunnus on *A0001*. Varastodimensioryhmässä varastokirjanpito on otettu käyttöön vain toimipaikassa. Varastotilanne on otettu käyttöön sekä toimipaikassa että varastossa. Seurantadimensioryhmässä eränumero otettu käyttöön varastotilanteessa mutta ei kirjanpitovarastossa. Tämän jälkeen käytetään raporttimääritystä, jossa valitaan niin toimipaikka, varasto kuin eränumerokin. Raporttia tarkasteltaessa näkyvissä on toimipaikan arvo. Varaston ja eränumeron sarakkeet ovat tyhjiä. Tämä esimerkki osoittaakin, että varaston arvot raportit näyttävät vain kirjanpitovarastossa käyttöönotetun varastodimension.
+Esimerkki: Nimikkeen nimiketunnus on *A0001*. Varastodimensioryhmässä varastokirjanpito on otettu käyttöön vain toimipaikassa. Varastotilanne on otettu käyttöön sekä toimipaikassa että varastossa. Seurantadimensioryhmässä eränumero otettu käyttöön varastotilanteessa mutta ei kirjanpitovarastossa. Tämän jälkeen käytetään raporttimääritystä, jossa valitaan niin toimipaikka, varasto kuin eränumerokin. Raporttia tarkasteltaessa näkyvissä on toimipaikan arvo. Varaston ja eränumeron sarakkeet ovat tyhjiä. Tämä esimerkki osoittaakin, että varaston arvot raportit näyttävät vain kirjanpitovarastossa käyttöönotetut varastodimensiot.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,30 +15,30 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1db95720d56cc538f2d702137889467a9892d99c
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b75637bfb38c13591223ff11be36d958b3972d4f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715178"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804126"
 ---
 # <a name="cash-discounts"></a>Käteisalennukset
 
 [!include [banner](../includes/banner.md)]
 
-Käteisalennukset määritetään ja jaetaan osto- ja myyntireskontrassa.  Käytettävissä oleva käteisalennus voidaan määrittää myyntilaskulla tai toimittajan laskulla. Se käytetään, jos lasku maksetaan käteisalennuksen päivänä. 
+Käteisalennukset määritetään ja jaetaan osto- ja myyntireskontrassa. Käytettävissä oleva käteisalennus voidaan määrittää myyntilaskulla tai toimittajan laskulla. Se käytetään, jos lasku maksetaan käteisalennuksen päivänä. 
 
 ## <a name="cash-discounts"></a>Käteisalennukset
 
-Asiakkaiden ja toimittajien käteisalennuksia luodaan Käteisalennukset-sivulla. Voit lisäksi määrittää Seuraava alennuskoodi -kentässä sarjan peräkkäisiä käteisalennuksia, jotka tulevat voimaan, kun edellisen vanhenee. Lisätietoja on myöhemmin tässä artikkelissa kohdassa Esimerkki: käteisalennussarja. Jos lasku, hyvitystapahtuma (maksu tai hyvityslasku) tai molemmat annetaan jonain muuna valuuttana kuin yrityksen kirjanpitovaluuttana, käteisalennus lasketaan käyttämällä vaihtokurssia, joka perustuu maksun tai hyvityslaskun päivämäärään. Jos lasku tai luottoasiakirja annetaan eri yrityksille ja jos yrityksillä on eri kirjanpitovaluutat, vaihtokurssi haetaan laskun yrityksestä luottoasiakirjan päivämäärällä. Lisätietoja on myöhemmin tässä artikkelissa kohdassa Esimerkki: käteisalennusten vaihtokurssit.
+Asiakkaiden ja toimittajien käteisalennuksia luodaan **Käteisalennukset**-sivulla. Voit lisäksi määrittää **Seuraava alennuskoodi** -kentässä sarjan peräkkäisiä käteisalennuksia, jotka tulevat voimaan, kun edellisen vanhenee. Lisätietoja on myöhemmin tässä artikkelissa kohdassa Esimerkki: käteisalennussarja. Jos lasku, hyvitystapahtuma (maksu tai hyvityslasku) tai molemmat annetaan jonain muuna valuuttana kuin yrityksen kirjanpitovaluuttana, käteisalennus lasketaan käyttämällä vaihtokurssia, joka perustuu maksun tai hyvityslaskun päivämäärään. Jos lasku tai luottoasiakirja annetaan eri yrityksille ja jos yrityksillä on eri kirjanpitovaluutat, vaihtokurssi haetaan laskun yrityksestä luottoasiakirjan päivämäärällä. Lisätietoja on myöhemmin tässä artikkelissa kohdassa Esimerkki: käteisalennusten vaihtokurssit.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Käteisalennuksen päätilin oletusjärjestys
 
 Jos lasku maksetaan käteisalennukseen oikeuttavassa määräajassa, käteisalennus kirjataan automaattisesti käteisalennuksen päätilille seuraavassa oletusjärjestyksessä:
-1.  Asiakkaan Tilitä avoimet tapahtumat -sivun tai toimittajan Tilitä avoimet tapahtumat -sivun Vaihtoehtoinen käteisalennustili -kentässä määritetty päätili.
-2.  Päätili, joka on määritetty sen kirjanpidon kirjausryhmän Asiakkaan käteisalennus- tai Toimittajan käteisalennus -kentässä, joka on liitetty laskun arvonlisäverokoodiin. Määritä kirjanpidon kirjausryhmät Kirjanpidon kirjausryhmät -sivulla ja määritä ne Arvolisäverokoodi-sivun arvonlisäverokoodeihin.
-3.  Pääkirjaustili, joka on tilitetyssä laskussa olevan käteisalennuskoodin Käteisalennukset-sivun Asiakkaan alennusten päätili- tai Toimittajan alennusten päätili -kentässä.
-4.  Automaattisten tapahtumien tilit -sivulla määritetty käteisalennusten päätili.
+1.  Päätili, joka on määritetty **Vaihtoehtoinen käteisalennustili** -kentässä asiakkaan **Tilitä avoimet tapahtumat** -sivulla tai toimittajan **Tilitä avoimet tapahtumat** -sivulla.
+2.  Päätili, joka on määritetty sen kirjanpidon kirjausryhmän  **Asiakkaan käteisalennus**- tai **Toimittajan käteisalennus** -kentässä, joka on liitetty laskun arvonlisäverokoodiin. Määritä kirjanpidon kirjausryhmät **Kirjanpidon kirjausryhmät** -sivulla ja määritä ne **Arvolisäverokoodit**-sivun arvonlisäverokoodeihin.
+3.  Pääkirjaustili, joka on tilitetyssä laskussa olevan käteisalennuskoodin **Käteisalennukset**-sivulla joko **Asiakkaan alennusten päätili** -kentässä tai **Toimittajan alennusten päätili** -kentässä.
+4.  **Automaattisten tapahtumien tilit** -sivulla määritetty käteisalennusten päätili.
 
 ## <a name="example-series-of-cash-discounts"></a> Esimerkki: käteisalennussarja
 Määritä kolme käteisalennuskoodia seuraavasti:
@@ -46,7 +46,7 @@ Määritä kolme käteisalennuskoodia seuraavasti:
 -   Koodi 10D5% – 5 %:n käteisalennus, jos lasku maksetaan 10 päivän kuluessa.
 -   Koodi 14D2% – 2 %:n käteisalennus, jos lasku maksetaan 14 päivän kuluessa.
 
-Seuraava alennuskoodi -kenttä:
+**Seuraava alennuskoodi** -kentässä:
 -   Valitse koodille 5D10% vaihtoehto 10D5%.
 -   Valitse koodille 10D5% vaihtoehto 14D2%.
 -   Jätä 14P2%-koodin osalta Seuraava alennuskoodi -kenttä tyhjäksi.
@@ -61,7 +61,7 @@ Yrityksen kirjanpitovaluutta on euro ja Yhdysvaltain dollarille on määritetty 
 1 000 dollarin lasku kirjataan 15.2. käteisalennusehdolla 20D2%. Laskun summa kirjanpitovaluutassa on 1 100 EUR 980 dollarin maksu täsmäytetään laskun kanssa 1.3. Käteisalennussumma on 20 dollaria. Maksun summa kirjanpitovaluuttana on 784 euroa. Käteisalennuksen summa kirjanpitovaluuttana lasketaan käyttämällä maaliskuun 1. päivän vaihtokurssia : 20 \* 80 / 100 = 16 euroa.
 
 > [!NOTE]
-> Jos Myyntireskontran parametrit- tai Ostoreskontran parametrit -sivulla valitaan Laske käteisalennukset osamaksuille -vaihtoehto, käytetään osamaksun maksupäivänä voimassaolevaa vaihtokurssia. 
+> Jos **Myyntireskontran parametrit**- tai **Ostoreskontran parametrit** -sivulla valitaan **Laske käteisalennukset osamaksuille** -vaihtoehto, käytetään osamaksun maksupäivänä voimassaolevaa vaihtokurssia. 
 
 
 

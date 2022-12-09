@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d7fc58ad71365275d5e82a277554bee99c43a
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 8e613bc97a41b62e81ebfbcb8c08e33a60603648
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151341"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803907"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
@@ -37,7 +37,10 @@ Voit ladata yhden tilin tai useiden tilien tietoja sisältävän tiliotteen. Jos
 -   Jos haluat tuoda yhden tilin tiliotetiedoston, valitse ensin **Tuo useiden pankkitilien tiliote kaikista yrityksistä** -asetukseksi **Ei** ja valitse sitten tiliotteeseen liitetty pankkitili. Valitse liitetty tiliotetiedosto valitsemalla **Selaa** ja valitse sitten **Lataa palvelimeen**.
 -   Jos haluat tuoda yhden, useita tilejä sisältävän tiliotetiedoston, valitse **Tuo useiden pankkitilien tiliote kaikista yrityksistä** -asetukseksi **Kyllä**. Valitse liitetty tiliotetiedosto valitsemalla **Selaa** ja valitse sitten **Lataa palvelimeen**.
 
-Jos mitään sähköisen tiedoston tiliotetta ei voida liittää pankkitiliin tai jos se on liitetty useisiin pankkitileihin käyttämällä tunnistekenttiä, niitä ei tuoda. Muita tiedoston tiliotteita voidaan silti tuoda. Käyttäjä saa tällöin viestin, jossa ilmoitetaan, että tiliotteiden tuonti ei onnistunut määritetylle pankkitilille. Huomaa, että käyttäjällä, joka tuo tiliotetiedoston, täytyy olla yrityksen käyttöoikeudet, jotta hän voi tuoda tiliotteita yrityksen pankkitileiltä. 
+Jos mitään sähköisen tiedoston tiliotetta ei voida liittää pankkitiliin tai jos se on liitetty useisiin pankkitileihin käyttämällä tunnistekenttiä, niitä ei tuoda. Muita tiedoston tiliotteita voidaan silti tuoda. Käyttäjä saa tällöin viestin, jossa ilmoitetaan, että tiliotteiden tuonti ei onnistunut määritetylle pankkitilille. 
+
+>[!Note] 
+>Käyttäjällä, joka tuo tiliotetiedoston, täytyy olla yrityksen käyttöoikeudet, jotta hän voi tuoda tiliotteita yrityksen pankkitileiltä. 
 
 Voit myös ladata useita tiliotetiedostoja Financeen yhdellä kertaa käyttämällä zip-tiedostoa. Jos haluat tuoda useita tilejä sisältäviä useita tiliotetiedostoja, lisää kaikki tiliotetiedostot yhteen zip-tiedostoon. Valitse **Tuo tiliotteet** -valintaikkunassa **Tuo useiden pankkitilien tiliote kaikista yrityksistä** -asetukseksi **Kyllä**. Valitse tiliotetiedostot sisältävä zip-tiedosto valitsemalla **Selaa** ja valitse sitten **Lataa palvelimeen**. Tuontiprosessin tunnistaa zip-tiedoston ja lataa kaikki siihen sisältyvät tiliotteet, riippumatta pankkitilin omistavasta yrityksestä.
 

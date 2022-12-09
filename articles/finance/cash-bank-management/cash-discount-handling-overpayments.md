@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1afc8aec18c61b1ce488472adf540e47540eaa17
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: d7c4e98481bc3607d3dce68a6b6cb0478524442f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715521"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804152"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Ylisuurten maksujen käteisalennukset
 
@@ -53,7 +53,9 @@ Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa. M
 | Maksu       | –95,00 | 0,00    |
 | Käteisalennus | –10,50 | 0,00    |
 
-Seuraavat kirjanpitomerkinnät luodaan maksulle ja täsmäytykselle. **Maksu**
+Seuraavat kirjanpitomerkinnät luodaan maksulle ja täsmäytykselle.
+
+**Maksu**
 
 | Tili             | Veloitussumma | Kredit-summa |
 |---------------------|--------------|---------------|
@@ -85,7 +87,9 @@ Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa. M
 | Maksu       | –95,00 | –0,50   |
 | Käteisalennus | –10,50 | 0,00    |
 
-Liikamaksun summa 0,50 säilyy avoimena saldona maksuissa ja se voidaan täsmätä toisen laskun kanssa. Seuraavat kirjanpitomerkinnät luodaan maksulle ja täsmäytykselle. **Maksu**
+Liikamaksun summa 0,50 säilyy avoimena saldona maksuissa ja se voidaan täsmätä toisen laskun kanssa. Seuraavat kirjanpitomerkinnät luodaan maksulle ja täsmäytykselle. 
+
+**Maksu**
 
 | Tili             | Veloitussumma | Kredit-summa |
 |---------------------|--------------|---------------|
@@ -118,7 +122,9 @@ Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa. M
 | Maksu       | –95,00 | –0,00   |
 | Käteisalennus | –10,00 | 0,00    |
 
-Käteisalennuksen määrä vähennetään arvosta 10,50 arvoon 10,00. Maksua ja laskua pidetään selvitettyinä. **Maksu**
+Käteisalennuksen määrä vähennetään arvosta 10,50 arvoon 10,00. Maksua ja laskua pidetään selvitettyinä. 
+
+**Maksu**
 
 | Tili             | Veloitussumma | Kredit-summa |
 |---------------------|--------------|---------------|

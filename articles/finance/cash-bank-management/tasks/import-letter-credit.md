@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f07748c2dc41f6411add1d54589652baa7fc3fbb
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 95a79b3c391c15099aee0a8d34419e1cf48fafbc
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779435"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803988"
 ---
 # <a name="import-letter-of-credit"></a>Tuo remburssi
 
@@ -42,7 +42,10 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 10. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 11. Kirjoita päivämäärä **Kirjauspäivä**-kenttään.
 12. Kirjoita päivämäärä **Toimituspäivämäärä**-kenttään.
-    * Huomautus: **Pankkitositteen tyyppi** -kentän arvon on oltava **Remburssi**.  
+
+>[!Note] 
+>**Pankkitositteen tyyppi** -kentän arvon on oltava **Remburssi**.  
+
 13. Valitse **OK**.
 14. Syötä tai valitse arvo **Nimiketunnus**-kentässä.
 15. Etsi haluamasi tietue luettelosta ja valitse se.
@@ -97,7 +100,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 1. Valitse toimintoruudussa **Vastaanota**.
 2. Valitse **Tuotteen vastaanotto**.
 3. Kirjoita **PurchParmTable_Num**-kenttään arvo.
-    * Valitse remburssiviittauksen avulla luotu lähetyksen numero.  
+    * Valitse remburssiviittauksen avulla luotu **lähetyksen numero**.  
 4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 5. Kirjoita päivämäärä **Tuotteen vastaanottopäivämäärä** -kenttään.
 6. Valitse **OK**.
@@ -108,7 +111,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 1. Valitse **Maksuliikenteen hallinta > Luottokirjeet > Tuontiremburssi ja tuontiperintä**.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
 3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Tarkista Tuo remburssitapahtuma -tila.     
+    * Tarkista **Tuo remburssitapahtuma -tila**.     
 4. Sulje sivu.
 5. Sulje sivu.
 
@@ -152,7 +155,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 6. Syötä **Päivämäärä**-kenttään päivämäärä.
 7. Määritä **Tili**-kenttään haluamasi arvot.
 8. Valitse **Selvitä tapahtumat**.
-9. Laajenna Summat-osa.
+9. Laajenna **Summat**-osa.
 10. Valitse vaihtoehto **Näytä**-kentässä.
     * Tarkista, että **Pankkitositteen numero**- ja **Lähetyksen numero** -kentät on päivitetty.  
 11. Valitse **Merkitse**-valintaruutu.
@@ -167,12 +170,12 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 1. Valitse **Maksuliikenteen hallinta > Luottokirjeet > Tuontiremburssi ja tuontiperintä**.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
 3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Tarkista Tuo remburssitapahtuma -tila.   
+    * Tarkista **Tuo remburssitapahtuma -tila**.   
 4. Sulje sivu.
 
 ## <a name="verify-the-bank-facility-limit-and-utilization-report"></a>Tarkista pankkilimiitti ja käyttöraportti
 1. Valitse **Maksuliikenteen hallinta > Kyselyt ja raportit > Luottokirjeet tai takaukset > Pankkipalvelut ja käyttö -raportti**.
-2. Laajenna Tietueet-kohta ja sisällytä osaan.
+2. Laajenna **Sisällytettävät tietueet** -osa.
 3. Valitse **Suodatin**.
     * Määritä **Ehdot**-kenttä pakollisen pankkitilin avulla.  
 4. Anna tai valitse arvo **Ehdot**-kentässä.

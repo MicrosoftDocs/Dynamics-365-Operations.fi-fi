@@ -14,12 +14,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 12de50f26127c54c2f82ace43487de10e7125aea
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779524"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804207"
 ---
 # <a name="reconcile-a-bank-account"></a>Pankkitilin täsmäyttäminen
 
@@ -63,7 +63,7 @@ Jos haluat valita **Selvitetyt**-valintaruudun sekkivälille, jotka kaikki näky
 
 ## <a name="cancel-bank-statement-reconciliation"></a>Peruuta tiliotteen täsmäytys 
 
-Peruuta tiliotteen täsmäytys -toiminnon avulla voit peruuttaa tiliotteen täsmäytyksen. Jos haluat käyttää tätä ominaisuutta, ota käyttöön **Peruuta tiliotteen täsmäytys** -ominaisuus **Toimintojen hallinta** -työtilassa. Sinun on myös otettava käyttöön **Salli tiliotteen muokkaus** -parametri. Voit tehdä tämän siirtymällä kohtaan **Maksuliikenteen hallinta > Asetukset > Maksuliikennetiedot > Pankkitilin täsmäytys**.
+**Peruuta tiliotteen täsmäytys** -toiminnon avulla voit peruuttaa tiliotteen täsmäytyksen. Jos haluat käyttää tätä ominaisuutta, ota käyttöön **Peruuta tiliotteen täsmäytys** -ominaisuus **Toimintojen hallinta** -työtilassa. Sinun on myös otettava käyttöön **Salli tiliotteen muokkaus** -parametri. Voit tehdä tämän siirtymällä kohtaan **Maksuliikenteen hallinta > Asetukset > Maksuliikennetiedot > Pankkitilin täsmäytys**.
  
 Tiliotteen täsmäytykset voidaan peruuttaa vain siinä aikajärjestyksessä, jossa ne on syötetty. Kun tiliotteen täsmäytys peruutetaan, uudet tapahtumat ja korjaukset peruutetaan ja kaikki muut tapahtumat merkitään täsmäyttämättömiksi.
  

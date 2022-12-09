@@ -564,12 +564,14 @@
               href: hr-leave-and-absence-plans.md
             - name: Työntekijöiden liittäminen lomasuunnitelmaan
               href: hr-leave-and-absence-enroll.md
-            - name: Jaksota loma- ja poissaolosuunnitelmat
+            - name: Loma- ja poissaolosuunnitelmien jaksottaminen
               href: hr-leave-and-absence-accrue.md
             - name: Loman keskeyttäminen
               href: hr-leave-and-absence-suspend-leave.md
             - name: Virkavapaapyyntö
               href: hr-employee-self-service-request-leave-of-absence.md
+            - name: Kestoltaan avoimen virkavapaan luominen
+              href: hr-create-open-leave-absence.md
             - name: Työntekijän loman hallinta
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Loma- ja poissaoloanalyysien tarkasteleminen

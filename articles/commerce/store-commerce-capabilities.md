@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-09-30
-ms.openlocfilehash: d713cc0e9537ae20ffddee6e77779a16e74bd779
-ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
+ms.openlocfilehash: 58f2ab1f913d3629de7971c8eeb2d1821161e44f
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "9725634"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788509"
 ---
 # <a name="store-commerce-app-capabilities"></a>Store Commerce ‑sovelluksen ominaisuudet
 
@@ -41,7 +41,7 @@ Tämä artikkeli tarjoaa yleiskatsauksen Store Commerce -sovelluksen ominaisuuks
 
 | Toiminto | Kuvaus | Dokumentaatio | Lisäsisältö |
 |---|---|---|---|
-| Useita laitetyyppejä | Store Commerce -sovellusta tuetaan useilla laitetyypeillä, kuten tietokoneilla, tableteilla ja mobiililaitteilla. Responsiivinen käyttöliittymä (UI) mahdollistaa asettelun koon muuttamisen ja säätämisen näytön koon perusteella. | [Visuaaliset kokoonpanot](pos-screen-layouts.md) | |
+| Useita laitetyyppejä | Store Commerce -sovellusta tuetaan useilla laitetyypeillä, kuten tietokoneilla, tableteilla ja mobiililaitteilla. Responsiivinen käyttöliittymä (UI) mahdollistaa asettelun koon muuttamisen ja säätämisen näytön koon perusteella. | [Visuaaliset kokoonpanot](pos-screen-layouts.md) |  |
 | Tukee useita alustoja | Store Commerce -sovellusta tuetaan verkossa sekä Windows-, iOS- ja Android-alustoilla. | [Alustat](dev-itpro/hybridapp.md) | |
 | Tuotemerkki | Näytön suunnitteluohjelma sallii sinun mukauttaa näyttöasetteluita liiketoimintavaatimuksiesi mukaisiksi. Lisäksi voit luoda teemoja, asetteluita, värejä ja kuvia työntekijöiden roolien perusteella sekä jakaa niitä käyttäjille pitääksesi brändisi yhtenäisenä ja edistääksesi helppokäyttöisyyttä. | [Visuaaliset kokoonpanot](pos-screen-layouts.md) | [Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | Topologia | Erilaisia myymälöiden topologioita tuetaan verkon saatavuuden perusteella. | <p>[Topologia](dev-itpro/retail-modern-pos-architecture.md)</p><p>[Infograafi](dev-itpro/retail-in-store-topology.md)</p> | |
@@ -77,7 +77,7 @@ Tämä artikkeli tarjoaa yleiskatsauksen Store Commerce -sovelluksen ominaisuuks
 | Tuotehaku | Hae tuotteita nimen perusteella ja tarkenna hakuja käyttämällä tuotteen määritteitä, kuten tuotemerkki, hinta ja materiaali. Tämä ominaisuus perustuu Azure Cognitive Search -palveluun. | [Pilvipohjainen haku](cloud-powered-search-overview.md) | |
 | Tuotteen tiedot -sivut | Monipuoliset tuotetietosivut voivat sisältää kuvia, kuvauksen, tuotteen määritteet ja suositeltuja tuotteita. Suositukset perustuvat suosituspalveluun. | | |
 | Tuotteiden vertailu | Vertaile useita tuotteita ja auta asiakkaita valitsemaan tuote ja lisäämään se tapahtumaan. | | |
-| Loputon käytävä | Tutki muiden myymälöiden varastoa helposti ja luo tilauksia. | [Varastohaku](pos-inventory-lookup-operation.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Loputon käytävä | Tutki muiden myymälöiden varastoa helposti ja luo tilauksia. | [Varastohaku](pos-inventory-lookup-operation.md) | <p>[Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 | Suositukset | Edistä tuotteiden lisä- ja ristiinmyyntiä suosituspalvelun palvelulla. Tämä palvelu hyödyntää patentoitua teknologiaa ehdottaakseen suosituksia ostotrendien ja erilaisten ominaisuuksien perusteella, esimerkiksi juuri saapuneita, samankaltaisia tai suosituimpia tuotteita. Nämä suositukset ovat käytettävissä tuotetietosivuilla, **Asiakastiedot**-sivulla ja **Tapahtumat**-sivulla. | [Suositukset](product-recommendations.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-recommendations-march-2-2021) |
 
 ## <a name="customer-relationship"></a>Asiakassuhde
@@ -88,12 +88,12 @@ Tämä artikkeli tarjoaa yleiskatsauksen Store Commerce -sovelluksen ominaisuuks
 | Asiakkaan määritteet | Asiakkaiden määritteiden kehys mahdollistaa asiakkaisiin liittyvien lisätietojen keräämisen liiketoimintavaatimusten perusteella. | [Ominaisuudet](dev-itpro/customer-attributes.md) | |
 | Asiakastietojen sivu | Monipuolinen asiakastietojen sivu tarjoaa kaikkikanavaisen näkymän asiakkaan vuorovaikutuksista eri kanavilla. Näihin vuorovaikutukset sisältävät ostokset, toivomusluettelot ja kanta-asiakkuuspisteet. | | |
 | Pilvipohjainen asiakashaku | Hae asiakkaita esimerkiksi nimen, puhelinnumeron, sähköpostiosoitteen, kanta-asiakaskortin ja osoitteen perusteella. | [Pilvipohjainen haku](pos-search-improvements.md#customer-search) | |
-| Kanta-asiakkuus ja palkkiot | Asiakkaat voivat liittyä kanta-asiakasohjelmiin ja ansaita ja lunastaa kanta-asiakkuuspisteitä eri kanavien kautta. | [Kanta-asiakkuus](set-up-customer-loyalty-program.md) | |
-| Asiakashallinta | Hallitse tärkeimpiä asiakkaita asiakaskirjan avulla ja seuraa tehtäviä ja huomautuksia asiakasprofiilissa. Dynamics 365 Customer Insights -integraation avulla myymälän työntekijät saavat vinkkejä siitä, miten kunkin asiakkaan kanssa kannattaisi seuraavaksi toimia. | [Asiakashallinta](clienteling-overview.md#activities-and-notes) | |
+| Kanta-asiakkuus ja palkkiot | Asiakkaat voivat liittyä kanta-asiakasohjelmiin ja ansaita ja lunastaa kanta-asiakkuuspisteitä eri kanavien kautta. | [Kanta-asiakkuus](set-up-customer-loyalty-program.md) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5c2wW) |
+| Asiakashallinta | Hallitse tärkeimpiä asiakkaita asiakaskirjan avulla ja seuraa tehtäviä ja huomautuksia asiakasprofiilissa. Dynamics 365 Customer Insights -integraation avulla myymälän työntekijät saavat vinkkejä siitä, miten kunkin asiakkaan kanssa kannattaisi seuraavaksi toimia. | [Asiakashallinta](clienteling-overview.md#activities-and-notes) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSP) |
 
 ## <a name="pricing-and-discounts"></a>Hinnoittelu ja alennukset
 
-| Toiminto | Kuvaus | Dokumentaatio | Lisäsisältö |
+| Ominaisuus | kuvaus | Dokumentaatio | Lisäsisältö |
 |---|---|---|---|
 | Kauppasopimukset | Hinnoittelupäälliköt voivat käyttää kauppasopimuksia määrittääkseen erikoishintoja, jotka perustuvat tiettyjen asiakkaiden pitkäaikaisiin sopimuksiin. | [Hinnoittelu](price-management.md)| [Video](https://www.youtube.com/watch?v=r2VD8IxHesM) |
 | Myyntisopimukset | Hinnoittelupäälliköt voivat käyttää myyntisopimuksia määrittääkseen sopimuksiin perustuvia hintoja yritysten välisille kaupankäyntiskenaarioille (B2B). | [Hinnoittelu](price-management.md) | |
@@ -132,25 +132,25 @@ Tämä artikkeli tarjoaa yleiskatsauksen Store Commerce -sovelluksen ominaisuuks
 | Tilauksen määritteet | Tilausten määritteiden kehys mahdollistaa tilauksiin liittyvien tietojen keräämisen liiketoimintavaatimusten perusteella. | [Ominaisuudet](dev-itpro/order-attributes.md) | |
 | Suoratoimitus | Toimittaja voi merkitä nimikkeitä toimitettavaksi suoraan asiakkaan osoitteeseen. Suoraa toimitusta kutsutaan myös suoratoimitukseksi. | [Suoratoimitus](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | Tarjous | Myymälän työntekijät voivat luoda asiakkaille tarjouksia ja määrittää erikoishinnan, manuaalisia alennuksia ja tarjouksen voimassaolopäivän. | [Tarjous](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
-| Täyttäminen | Myymälät voivat noutaa, pakata ja lähettää tilauksia. Paketteihin, jotka ovat valmiita toimitettavaksi, voidaan lisätä pakkausluettelo. | [Täyttäminen](order-fulfillment-overview.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021) |
-| Jaettu tilausten hallinta (JTH) | Store Commerce -sovellus tukee tilausten täyttämisen älykästä optimointia, jossa liiketoimintastrategioita voidaan määrittää liiketoiminnan luonteen, asiakkaan tyypin, tilauksen alkuperän ja tilauksen toimitustavan perusteella. | [JTH](dom.md) | |
+| Täyttäminen | Myymälät voivat noutaa, pakata ja lähettää tilauksia. Paketteihin, jotka ovat valmiita toimitettavaksi, voidaan lisätä pakkausluettelo. | [Täyttäminen](order-fulfillment-overview.md) | <p>[Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021)</p> <p>[Video](https://www.microsoft.com/videoplayer/embed/RE5bRXE)</p>|
+| Jaettu tilausten hallinta (JTH) | Store Commerce -sovellus tukee tilausten täyttämisen älykästä optimointia, jossa liiketoimintastrategioita voidaan määrittää liiketoiminnan luonteen, asiakkaan tyypin, tilauksen alkuperän ja tilauksen toimitustavan perusteella. | [JTH](dom.md) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bRYl)|
 
-## <a name="inventory-management"></a>Inventoinnin- ja varastonhallinta
+## <a name="inventory-management"></a>Varastonhallinta
 
-| Toiminto | Kuvaus | Dokumentaatio | Lisäsisältö |
+| Ominaisuus | kuvaus | Dokumentaatio | Lisäsisältö |
 |---|---|---|---|
 | Ostovaatimus | Tehosta saatavilla olevan varaston jakelua jakelukeskuksesta useisiin myymälöihin tai varastoihin. | [Ostovaatimus](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Cross-docking | Tehosta saapuvien ostotilausten varaston jakelua useisiin myymälöihin tai varastoihin. | [Cross-docking](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Saapuva varasto | Vastaanota varastoa toimittajalta ostotilauksen kautta tai toisesta varastosta siirtotilauksen avulla. Luo saapuva ostotilaus tai siirtotilauspyyntö. | [Saapuva](pos-inbound-inventory-operation.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Lähtevä varasto | Toimita varastoa toiseen varastoon siirtotilauksen avulla ja luo lähtevä siirtotilauspyyntö. | [Lähtevä](pos-outbound-inventory-operation.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Varastohaku | Tarkista myymälöissä ja varastoissa saatavilla oleva tuotevarasto sekä varaston luvattavissa oleva määrä (ATP) tulevilta päivämääriltä. | [Varastohaku](pos-inventory-lookup-operation.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Varaston oikaisu | Oikaise myymälän saapuva tai lähtevä varasto tiettyjen liiketoimintavaatimusten täyttämiseksi ilman myyntiä, vastaanottoa tai uudelleenlaskentaa. | [Varaston oikaisu](work-with-store-inventory.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Varaston inventoinnit | Laske fyysinen varasto ja säädä järjestelmän kirjanpitovarastoa sen mukaisesti. | [Inventointi](work-with-store-inventory.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Varaston siirto | Siirrä varastoa myymälän sisäisten sijaintien välillä. | [Siirto](work-with-store-inventory.md) | [Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Saapuva varasto | Vastaanota varastoa toimittajalta ostotilauksen kautta tai toisesta varastosta siirtotilauksen avulla. Luo saapuva ostotilaus tai siirtotilauspyyntö. | [Saapuva](pos-inbound-inventory-operation.md) | <p>[Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Lähtevä varasto | Toimita varastoa toiseen varastoon siirtotilauksen avulla ja luo lähtevä siirtotilauspyyntö. | [Lähtevä](pos-outbound-inventory-operation.md) | <p>[Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Varastohaku | Tarkista myymälöissä ja varastoissa saatavilla oleva tuotevarasto sekä varaston luvattavissa oleva määrä (ATP) tulevilta päivämääriltä. | [Varastohaku](pos-inventory-lookup-operation.md) | <p>[Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Varaston oikaisu | Oikaise myymälän saapuva tai lähtevä varasto tiettyjen liiketoimintavaatimusten täyttämiseksi ilman myyntiä, vastaanottoa tai uudelleenlaskentaa. | [Varaston oikaisu](work-with-store-inventory.md) | <p>[Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Varaston inventoinnit | Laske fyysinen varasto ja säädä järjestelmän kirjanpitovarastoa sen mukaisesti. | [Inventointi](work-with-store-inventory.md) | <p>[Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)<p> |
+| Varaston siirto | Siirrä varastoa myymälän sisäisten sijaintien välillä. | [Varastotapahtuma](work-with-store-inventory.md) | <p>[Teknisiä tietoja](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 
 ## <a name="financials"></a>Myyntitiedot
 
-| Toiminto | Kuvaus | Dokumentaatio | Lisäsisältö |
+| Ominaisuus | kuvaus | Dokumentaatio | Lisäsisältö |
 |---|---|---|---|
 | Kassanhallinta | Store Commerce -sovellus tukee käteisen ja muiden myymälässä määritettyjen maksuvälineiden hallintaa. Lisäksi myymälässä voidaan ottaa käyttöön työvuorojen täsmäytys käteisvarojen edistyneiden hallintatoimintojen käyttämistä varten. | [Maksu](cash-mgmt.md) | |
 | Tilinpäätökset ja täsmäytys | Myymälän käteis- ja maksutapahtumat kirjataan Commerce headquarters -sovellukseen laskelmien kirjausprosessien avulla. | [Laskelmat](retail-statements.md) | |

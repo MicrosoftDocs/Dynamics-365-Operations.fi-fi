@@ -2,7 +2,7 @@
 title: Päivitysprosessi
 description: Microsoft Dynamics 365 Human Resourceson todellinen ohjelmisto palveluna (SaaS), joka tarjoaa jatkuvia ja kosketusvapaita palvelupäivityksiä sovellus- ja ympäristömuutoksille.
 author: twheeloc
-ms.date: 09/01/2022
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 197b3c5717494ab3c80a57cda337a9021293bf73
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520807"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819293"
 ---
 # <a name="update-process"></a>Päivitysprosessi
 
@@ -41,7 +41,7 @@ Päivitykset julkaistaan säännöllisesti kaikkiin ympäristöihin. Human Resou
 
 Human Resources -päivitykset tehdään kaikissa ympäristöissä automaattisesti. Human Resourcesiin liittyy kahdenlaisia julkaisuja:
 
-- **Palvelupäivitykset**: Kahden viikon välein ilmestyvät päivitykset, joissa on virheiden korjauksia ja uusia toimintoja. Palvelupäivityksiä ovat myös soveltuvat Platform update -päivitykset, kun ne julkaistaan. Lisätietoja ympäristön julkaisuista esitetään kohdassa [Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Päivityksillä on vaiheittainen maailmanlaajuinen käyttöönotto eri alueilla. Lisätietoja päivityksistä on kohdassa [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md).
+- **Palvelupäivityksiä** ovat myös soveltuvat Platform update -päivitykset, kun ne julkaistaan. Poikkeuspohjaisten päivitysten lisäksi Dynamics 365 Finance -alustan päivitysten GA:n (yleisen saatavuus) jälkeen tapahtuvat säännölliset palvelupäivitykset. Lisätietoja ympäristön julkaisuista esitetään kohdassa [Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Päivityksillä on vaiheittainen maailmanlaajuinen käyttöönotto eri alueilla. Lisätietoja päivityksistä on kohdassa [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md).
 
 - **Dataverse -ratkaisujen päivitykset**: Nämä päivitykset suoritetaan noin kuuden viikon välein tarpeen mukaan. Niihin kuuluu uusia yksikköjä ja muutoksia olemassa oleviin yksikköihin Dataversessä. Nämä päivitykset julkaistaan samoilla alueilla kuin kahdesti viikossa ilmestyvät päivitykset, ja niiden replikointi kaikissa palvelinkeskuksissa kestää noin kuusi viikkoa. Ratkaisupäivitykset saattavat olla linjassa kahdesti viikossa ilmestyvien palvelupäivitysten kanssa.
 
@@ -55,15 +55,6 @@ Tarvittaessa Human Resources toimittaa seuraavanlaisia korjauksia:
 - **Hätäkorjaus**: ennakoivia ja reaktiivisia hotfix-korjauksia, jotka ovat luonteeltaan erillisiä, voivat sisältää vain määritykseen tai koodiin kohdistuvia muutoksia käytössä olevan sivun ongelmien ratkaisemiseksi ja voidaan suorittaa erillään kahdesti viikossa ilmestyvistä palvelupäivitysjulkaisuista
 
 Julkaisut tarkistetaan, testataan ja vahvistetaan sisäisessä ympäristössä. Kun koontiversiot on hyväksytty, ne otetaan käyttöön tuotannossa.
-
-## <a name="release-cadence-exceptions-in-2021"></a>Vapauta tahtipoikkeukset vuonna 2021
-
-Lomien vuoksi vuoden 2021 marraskuun ja joulukuun julkaisuaikataulu on seuraava:
-
-- Marraskuun julkaisu: 1.11.–14.11.
-- Joulukuun julkaisu: 29.11.–12.12.
- 
-Kahden viikon julkaisuväli jatkuu tavalliseen tapaan 10.1.2022.
 
 ## <a name="communications"></a>Viestintä
 

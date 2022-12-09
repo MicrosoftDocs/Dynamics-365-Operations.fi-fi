@@ -1011,10 +1011,26 @@
                 - name: URL-uudelleenohjausten joukkolataus palveluun
                   href: upload-bulk-redirects.md
                 - name: Kuluttajakaupan vuokraajan määrittäminen Commercessa
-                  href: set-up-B2C-tenant.md
+                  items:
+                    - name: Kuluttajakaupan vuokraajan määrittäminen
+                      href: set-up-B2C-tenant.md
+                    - name: 'Azure AD:n kuluttajakaupan vuokraajan luominen tai olemassa olevaan Azure AD:n kuluttajakaupan vuokraajaan linkittäminen'
+                      href: create-link-aad-b2c-tenant.md
+                    - name: Kuluttajakaupan sovelluksen luominen
+                      href: create-b2c-app.md
+                    - name: Käyttäjän työnkulkukäytäntöjen luominen
+                      href: create-user-flow-policies.md
+                    - name: Yhteisöpalvelun tunnistetietojen tarjoajien lisääminen
+                      href: add-social-identity-providers.md
+                    - name: 'Commerce headquarters -sovelluksen päivittäminen Azure AD:n kuluttajakaupan tiedoilla'
+                      href: update-hq-aad-b2c-info.md
+                    - name: Kuluttajakaupan vuokraajan määrittäminen sivuston luontitoiminnossa
+                      href: config-b2c-tenant-site-builder.md
+                    - name: Lisätietoja kuluttajakaupasta
+                      href: additional-b2c-info.md
                 - name: Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia varten
                   href: custom-pages-user-logins.md
-                - name: Ota käyttöön käyttäjätietueiden automaattinen linkitys asiakastileihin
+                - name: Käyttäjätietueiden asiakastileihin tapahtuvan automaattisen linkityksen ottaminen käyttöön
                   href: identity-record-linking.md
                 - name: Useiden kuluttajakaupan vuokraajien määrittäminen Commerce-ympäristössä
                   href: configure-multi-B2C-tenants.md
@@ -1568,8 +1584,10 @@
                   href: localizations/rus-customer-information.md
             - name: Saudi-Arabia
               items:
-                - name: QR-koodien luominen ja niiden tulostaminen kuitteihin Saudi-Arabiaan
+                - name: Saudi-Arabian QR-koodien luominen ja niiden tulostaminen kuitteihin
                   href: localizations/emea-sau-qr-code.md
+                - name: Saudi-Arabian yksinkertaistettujen sähköisten laskujen luominen ja lähettäminen
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: Ruotsi
               items:
                 - name: Kassakoneen toiminnot
@@ -2988,7 +3006,7 @@
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: Online-tilausten verot on laskettu väärin
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Oletusmaksupalveluun liittyvä tilauksen synkronointivirhe
+                - name: Asynkronisen tilausten synkronoinnin ongelmat
                   href: troubleshoot/synchronization-error.md
             - name: Maksuliikenne
               items:

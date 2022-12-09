@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 4298d7114e0237072c242e83e51951a922e34e5a
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: e8f80aa4cc0a7248506e0725881b8f575a0c7ff4
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780510"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788537"
 ---
 # <a name="create-a-free-text-invoice"></a>Luo tekstimuotoinen lasku
 
@@ -69,6 +69,8 @@ Tässä artikkelissa käsitellään vapaatekstilaskuja. Tässä menettelyssä k�
     * Voit muuttaa laskun tulostamisen aikataulua. Tulosta kukin lasku päivityksen yhteydessä valitsemalla **Nykyinen**. Tulosta vasta kaikkien laskujen päivityksen jälkeen valitsemalla **Jälkeen**.
     * Voit muuttaa tapaa, jolla asiakkaan luottoraja tarkistetaan ennen laskun kirjausta, muuttamalla **Luottorajatyyppi**-kentän arvon.
     * Voit lopettaa vapaatekstilaskujen kirjaamisen, kun **myyntireskontran parametrit** -sivun **Päivitykset**-välilehdessä tapahtuu virhe (**Myyntireskontra > Asetukset > Myyntireskontran parametrit**). Valitse **Kyllä**, kun haluat **lopettaa vapaatekstilaskujen kirjaamisen ensimmäiseen virhe** -parametriin, kun haluat lopettaa vapaatekstilaskujen kirjauksen virheen ilmaantuessa. Jos eräkirjaus tapahtuu, kirjausprosessi pysähtyy virheeseen ja erän tilaksi asetetaan **Virhe**. Jos tätä vaihtoehtoa ei valita, kirjaus ohittaa laskun, jossa on kirjausvirhe, ja jatkaa lisälaskujen kirjaamista. Jos kirjauserässä on virhe, kirjausvirhe ei estä muiden laskujen kirjaamista. Erän tilaksi tulee **päättynyt**. Yksityiskohtainen kirjausprosessiraportti on käytettävissä erätyöhistorian tarkistamista varten.
+    * Microsoft Dynamics 365 Finance 10.0.30:ssa **Summien laskennan parannus vapaatekstilaskun kirjaamisessa** -ominaisuus mahdollistaa tehokkaamman toiminnan ja parantaa kirjaamisen suorituskykyä. Kun tämä ominaisuus on käytössä, kirjaus tallentaa lasketut summat sen sijaan, että summat lasketaisiin uudelleen useita kertoja kirjausprosessin aikana. 
+    * Microsoft Dynamics 365 Finance 10.0.31:ssa **Vapaatekstilaskujen eräkirjausprosessin parannus** -ominaisuus mahdollistaa tehokkaamman toiminnan ja parantaa kirjaamisen suorituskykyä. Kun tämä ominaisuus on käytössä, kirjaaminen käyttää mallia, joka hallitsee erän kirjauksen kuormitusta kiinteässä määrässä säikeitä sen sijaan, että rajattomalle säiemäärälle määritettäisiin kiinteä määrä asiakirjoja.
     * Voit tulostaa laskun, jos valitset **Kyllä**.
     * Voit kirjata laskun, jos valitset **Kyllä**. Voit tulostaa laskun ilman, että se kirjataan.
 

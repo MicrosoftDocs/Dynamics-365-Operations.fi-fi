@@ -2,7 +2,7 @@
 title: Toimittajan kirjausprofiilit
 description: Toimittajan kirjausprofiilit ohjaavat toimittajatapahtumien kirjaamista kirjanpitoon.
 author: abruer
-ms.date: 06/12/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.form: VendPosting
-ms.openlocfilehash: 922612e536164c7985f0be107f67ad8bbaef7898
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 09f27ef510f38c10fc265b682a492ba5872b6d3e
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272975"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799596"
 ---
 # <a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
 
@@ -94,7 +94,7 @@ Jos haluat määrittää kaikille toimittajatapahtumille saman kirjausprofiilin,
 </tr>
 <tr class="even">
 <td><strong>Saapuminen</strong></td>
-<td>Valitse se kirjanpitotili, jolle hyväksymistä odottavien toimittajan laskujen tiedot kirjataan. Tiedot tallennetaan laskurekisterikirjauskansioon. Oletetaan esimerkiksi, että käyttäjä tallentaa toimittajan laskujen perustiedot laskurekisteriin, kun laskut vastaanotetaan. Kun laskurekisteri kirjataan, tapahtumat kirjataan tässä ja <strong>Vastatili</strong>-kentässä annetulle tilille. Kun laskut hyväksytään, velka siirretään saapumistililtä toimittajan reskontratilille.</td>
+<td>Valitse se kirjanpitotili, jolle hyväksymistä odottavien toimittajan laskujen tiedot kirjataan. Tiedot tallennetaan <strong>laskurekisterikirjauskansioon</strong>. Oletetaan esimerkiksi, että käyttäjä tallentaa toimittajan laskujen perustiedot laskurekisteriin, kun laskut vastaanotetaan. Kun laskurekisteri kirjataan, tapahtumat kirjataan tässä ja <strong>Vastatili</strong>-kentässä annetulle tilille. Kun laskut hyväksytään, velka siirretään saapumistililtä toimittajan reskontratilille.</td>
 </tr>
 <tr class="odd">
 <td><strong>Vastatili</strong></td>
@@ -110,10 +110,10 @@ Määritä tapahtumille, joilla on valittu kirjausprofiili, tilitetäänkö tapa
 
 Määritä kirjausprofiili määrittämällä seuraavat arvot
 
-| Kenttä          | Kuvaus                                                                                                                                                                                                    |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kenttä          | Kuvaus             |
+|----------------|--------------------------------------------------------------------------|
 | **Tilitys** | Ota tämän kirjausprofiilin sisältävien tapahtumien automaattinen tilitys käyttöön valitsemalla tämä asetus. Jos tämä asetus poistetaan käytöstä, tapahtumat on tilitettävä manuaalisesti **Tilitä avoimet tapahtumat** -sivulla. |
-| **Peruuta**     | Valitse tämä asetus, jos haluat mahdollisuuden tämän kirjausprofiilin sisältävien tapahtumien peruuttamiseen.                                                                                                               |
+| **Peruuta**     | Valitse tämä asetus, jos haluat mahdollisuuden tämän kirjausprofiilin sisältävien tapahtumien peruuttamiseen.                              |
 | **Sulje**      | Valitse toinen kirjausprofiili, jota siirrytään käyttämään, kun tämän kirjausprofiilin tapahtumia suljetaan. Tapahtuma katsotaan suljetuksi, kun se on selvitetty kokonaan.                                       |
 
 

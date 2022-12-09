@@ -2,7 +2,7 @@
 title: Talousraportin komponentit
 description: Tässä artikkelissa käsitellään raportin määritysten osia tai rakenneosia käytetään talousraportoinnissa.
 author: aprilolson
-ms.date: 10/27/2017
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: af5cd63c2dbd531b4c8097b6149d7e67fe112259
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280028"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802712"
 ---
 # <a name="financial-report-components"></a>Taloushallinnon raportin komponentit
 
@@ -28,7 +28,7 @@ ms.locfileid: "9280028"
 
 Tässä artikkelissa käsitellään raportin määritysten osia tai rakenneosia käytetään talousraportoinnissa. Näitä rakenneosia ovat rivi-, sarake- ja raportointipuun määritykset. Tässä artikkelissa kerrotaan, miten rakenneosat järjestetään ja lukitaan.
 
-Talousraporttien suunnittelutoiminnon suunnitteluperiaate on hajottaa tiedot mahdollisimman pieniksi osiksi tai rakenneosiksi. Tämän jälkeen näitä voi sitten yhdistellä tarpeen mukaan. Tällä tavoin raporttimuotoilu on erillään taloustiedoista ja voit muuttaa raportin muotoa ilman, että taloustietoja on muokattava Microsoft Dynamics ERP -järjestelmässä. Tämän rakenneosatoiminnon avulla voit yhdistää tekstiä, summia ja laskelmia sekä muodostaa niiden avulla tarvittavia raportteja. Lisäksi joustavat toiminnot kannustavat myös luovuuteen, koska toimintojen tarkasteleminen eri tavoilla on helppoa. Raportin määrityksen yksittäiset rakenneosat ovat samanlaisia kuin kolmiulotteiset laskentataulukot, mutta ne ovat laskentataulukkoja tehokkaampia. Raportin määritys määrittää raportissa käytettävän rivin, sarakkeen ja valinnaisesti myös raportointipuun määrityksen. Se sisältää myös tietoja luodun raportin tallennuspaikasta ja sen muotoilusta.
+Talousraporttien suunnittelutoiminnon suunnitteluperiaate on hajottaa tiedot mahdollisimman pieniksi osiksi tai rakenneosiksi. Tämän jälkeen näitä voi sitten yhdistellä tarpeen mukaan. Tällä tavoin raporttimuotoilu on erillään taloustiedoista ja voit muuttaa raportin muotoa ilman, että taloustietoja on muokattava Microsoft Dynamics 365 Financessa. Tämän rakenneosatoiminnon avulla voit yhdistää tekstiä, summia ja laskelmia sekä muodostaa niiden avulla tarvittavia raportteja. Lisäksi joustavat toiminnot kannustavat myös luovuuteen, koska toimintojen tarkasteleminen eri tavoilla on helppoa. Raportin määrityksen yksittäiset rakenneosat ovat samanlaisia kuin kolmiulotteiset laskentataulukot, mutta ne ovat laskentataulukkoja tehokkaampia. Raportin määritys määrittää raportissa käytettävän rivin, sarakkeen ja valinnaisesti myös raportointipuun määrityksen. Se sisältää myös tietoja luodun raportin tallennuspaikasta ja sen muotoilusta.
 
 ## <a name="building-blocks-of-a-report"></a>Raportin rakenneosat
 
@@ -52,7 +52,7 @@ Järjestä rakenneosat Report Designerissa kansioiden avulla. Kaikki kansiot lii
     - Napsauta pääkansiota hiiren kakkospainikkeella ja valitse sitten **Uusi kansio**.
     - Valitse ensin pääkansiossa **Tiedosto** ja sitten **Uusi kansio**.
 
-3. Kun uusi kansio tulee näkyviin, anna sille nimi ja paina Enter-näppäintä.
+3. Kun uusi kansio tulee näkyviin, anna sille nimi ja paina **Enter**-näppäintä.
 
 ## <a name="lock-a-building-block"></a> Rakenneosan lukitseminen
 Voit suojata ja lukita rakenneosan luomalla sille salasanan. Voit nostaa tällä tavoin raportin osan suojaustasoa ilman, että koko järjestelmän suojaus nousee. Salasana auttaa suojaamaan tärkeitä rakenneosan tietoja, joita tarvitaan kuukauden lopussa tehtävässä raportointiprosessissa. Rakenneosan lukitseminen on mahdollista kaikilla käyttäjärooleilla. Muilla käyttäjillä on kuitenkin aina lukitun osan lukuoikeus. Käyttäjät voivat avata lukitun osan, muuttaa sitä sekä tallentaa sen uudella nimellä. Järjestelmänvalvojan roolin omaava käyttäjä voi aina käyttää ja muuttaa lukittua rakenneosaa.
@@ -80,7 +80,7 @@ Voit tarkastella kaikkia rakenneosaryhmään liitettyjä rakenneosia. Voit myös
 
 Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhmässä. Voit käyttää vietyä rakenneosan ryhmää varmuuskopiona. Voit myös kopioida viedyt tiedot asennusten välillä. Raporttien suunnitteluohjelma ja rakenneosaryhmä sisältävät yhdessä viitatut fonttityylit ja dimensioyhdistelmät.
 
-1. Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
+1. Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Rakenneosaryhmät**.
 2. Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosaryhmä, jonka haluat viedä, ja valitse sitten **Vie**.
 3. Valitse **Vie**-valintaikkunassa vietävät raporttien määritykset.
 
@@ -99,7 +99,7 @@ Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhm
 
 Voit viedä rakenneosaryhmän aiemmin luotuun rakenneosaryhmään. Alkuperäiset fonttityylit ja yritysviittaukset säilyvät kaikissa tuoduissa rakenneosaryhmissä, ja ne sisältävät tarvittavat dimensioyhdistelmät.
 
-1. Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
+1. Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Rakenneosaryhmät**.
 2. Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosa, johon haluat tuoda rakenneosaryhmän, ja valitse sitten **Tuo**.
 3. Valitse **Avaa**-valintaikkunassa rakenneosaryhmä, jonka haluat tuoda, ja valitse sitten **Avaa**.
 4. Valitse **Tuo**-valintaikkunassa tuotavat raporttien määritykset.

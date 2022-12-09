@@ -2,7 +2,7 @@
 title: Talousraporttien suunnittelutoiminnon rivimääritykset
 description: Rivin määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin rivin sisällön.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.form: FinancialReports
-ms.openlocfilehash: 1481d95bc7a02294b499e07308df2d26a3ab0e3a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 3325f76f991ea6d2a1b6131f299460e529d63d38
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274690"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802442"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Talousraporttien suunnittelutoiminnon rivimääritykset
 
@@ -94,7 +94,7 @@ Jos taseessa on pyöristettyjä summia, kokonaissummat eivät ehkä täsmää. T
 
 Voit oikaista taseen pyöristyksen seuraavasti.
 
-1. Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
+1. Valitse Report Designerissa **Rivien määritykset** ja avaa sitten muokattava rivin määritys.
 2. Valitse **Muokkaa**-valikosta **Pyöristysoikaisu**.
 3. Syötä **Pyöristyksen oikaisut** -valintaikkunaan seuraavat arvot:
 
@@ -156,7 +156,7 @@ Voit luoda ja muokata raportin fonttityylejä. Voit sitten käyttää näitä ty
 
 Rivin määrityksessä määritetty muotoilu korvaa sarakkeen ja raportin määrityksessä määritetyn muotoilun. Voit muokata tekstimuotoa muotoilun työkalurivin ohjausobjekteilla. Nämä ohjausobjektit ovat Microsoft Windowsin vakio-ohjausobjekteja.
 
-1. Avaa raporttien suunnitteluohjelmassa rivimääritys, jota haluat muokata.
+1. Avaa Report Designer -ohjelmassa muokattava rivin määritys.
 2. Valitse muokattavat solut. Voit valita useita soluja pitämällä Ctrl-näppäintä alhaalla valinnan aikana.
 3. Ota muoto käyttöön valitsemalla muodon työkalurivipainike. Jos haluat esimerkiksi sisentää rivin, valitse rivi ja valitse sitten **Kasvata sisennystä** ![Kasvata sisennystä.](media/indent.gif "Kasvata sisennystä") työkaluriviltä.
 

@@ -2,7 +2,7 @@
 title: Tallennetut näkymät
 description: Tässä artikkelissa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
 author: jasongre
-ms.date: 07/26/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
-ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
+ms.openlocfilehash: 571a4f403da0d20256f788c791cab273827c91b5
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9757218"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799488"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
@@ -55,7 +55,7 @@ Näkymän valitsimessa on kaksi kokovaihtoehtoa:
  
 Jos valitset näkymän nimen, näyttöön tulee valintaikkunanäkymä, jossa näkyy käytettävissä olevien näkymien luettelo.
 
-**Version 10.0.21 tai uudempi:** Jos **Tallennettujen näkyvien parannettu yritystuki** -ominaisuus on otettu käyttöön, käytettävissä olevat näkymät näkyvät näkymänvalitsimessa kahdessa osassa. Ensimmäisessä osassa on näkyvissä kaikki nykyisen yrityksen näkymät ja toisessa osassa on näkyvissä kaikissa yrityksissä käytettävissä olevat näkymät. Ensimmäinen osa näkyy vain, jos sivulla on yrityskohtaisia näkymiä.
+Jos **Tallennettujen näkyvien parannettu yritystuki** -ominaisuus on otettu käyttöön, käytettävissä olevat näkymät näkyvät näkymänvalitsimessa kahdessa osassa. Ensimmäisessä osassa on näkyvissä kaikki nykyisen yrityksen näkymät ja toisessa osassa on näkyvissä kaikissa yrityksissä käytettävissä olevat näkymät. Ensimmäinen osa näkyy vain, jos sivulla on yrityskohtaisia näkymiä.
 
 - **Vakionäkymä** – **Vakionäkymä** on sivun valmis näkymä, johon ei ole kohdistettu mukautuksia.
 - **Henkilökohtaiset näkymät** – Näkymät ilman riippulukkoja edustavat henkilökohtaisia näkymiä. Nämä ovat näkymiä, jotka joko olet luonut tai jotka järjestelmänvalvoja on antanut sinulle.
@@ -81,7 +81,7 @@ Jos haluat tallentaa muutokset, toimi seuraavasti.
     1. Valitse **Tallenna nimellä**. 
     2. Anna **Tallenna näkymä nimellä** ruudussa näkymän nimi ja valinnaisesti myös sen kuvaus.
     3. Jos tätä näkymää halutaan käyttää oletusnäkymänä, valitse **Kiinnitä oletukseksi**. Lisätietoja oletusnäkymistä on seuraavassa osassa [Oletusnäkymän muuttaminen](#changing-the-default-view). 
-    4. **Versio 10.0.21 tai uudempi:** jos **Tallennettujen näkymien parannettu yritystuki** -ominaisuus on otettu käytötön, tämän näkymän osalta voidaan valita, onko se kaikkien yritysten vai vain yritysten alijoukon käytettävissä.
+    4. Jos **Tallennettujen näkymien parannettu yritystuki** -ominaisuus on otettu käytötön, tämän näkymän osalta voidaan valita, onko se kaikkien yritysten vai vain yritysten alijoukon käytettävissä.
     5. Valitse **Tallenna**.
 
 ## <a name="changing-the-default-view"></a>Oletusnäkymän muuttaminen
@@ -90,7 +90,7 @@ Oletusnäkymä on näkymä, jota järjestelmä yrittää avata, kun avaat sivun 
 
 > [!NOTE]
 > - **Tallennetut näkymät** -perusominaisuudessa on yksi, yleinen kaikkia yrityksiä koskeva oletusnäkymä. Jos muutat oletusnäkymää, kyseinen näkymä avataan oletusarvoisesti käytössä olevasta yrityksestä huolimatta.
-> - **Versio 10.0.21 tai uudempi:** kun **Tallennettujen näkymien parannettu yritystuki** -ominaisuus on otettu käyttöön, kullakin yrityksellä voi olla oma sivukohtainen oletusnäkymä.
+> - Kun **Tallennettujen näkymien parannettu yritystuki** -ominaisuus on otettu käyttöön, kullakin yrityksellä voi olla oma sivukohtainen oletusnäkymä.
 
 Voit vaihtaa sivun oletusnäkymää toimimalla seuraavasti:
 
@@ -101,7 +101,7 @@ Voit vaihtaa sivun oletusnäkymää toimimalla seuraavasti:
 Kun luot uuden näkymän (**Tallenna nimellä** -toiminnon avulla), voit vaihtoehtoisesti määrittää uuden näkymän oletusnäkymiksi määrittämällä **PIN-tunnuksen oletusasetukseksi** ennen näkymän tallentamista.
 
 > [!WARNING]
-> Joissakin tapauksissa oletusnäkymään liittyvää kyselyä ei suoriteta, kun sivu avataan ensimmäisen kerran. Jos esimerkiksi avaat sivun ruudun kautta, ruudun kysely suoritetaan riippumatta oletusnäkymään liittyvästä kyselystä. Jos lisäksi avataan sivu, jonka **vakionäkymässä** on jo määritetty kysely, alkuperäinen kysely suoritetaan oletusnäkymän kyselyn sijaan. Tässä tapauksessa näyttöön tulee tietosanoma, kun näkymä ladataan. Jos näkymää vaihdetaan sivun lataamisen jälkeen, näkymän kysely on mahdollista suorittaa odotetusti. Alkaen versiosta 10.0.10 vastaanotettava tietosanoma sisältää upotetun toiminnon, jonka avulla voit ladata oletusnäkymän kyselyn suoraan.
+> Joissakin tapauksissa oletusnäkymään liittyvää kyselyä ei suoriteta, kun sivu avataan ensimmäisen kerran. Jos esimerkiksi avaat sivun ruudun kautta, ruudun kysely suoritetaan riippumatta oletusnäkymään liittyvästä kyselystä. Jos lisäksi avataan sivu, jonka **vakionäkymässä** on jo määritetty kysely, alkuperäinen kysely suoritetaan oletusnäkymän kyselyn sijaan. Tässä tapauksessa saat tietosanoman, kun näkymä on ladattu upotetun toiminnon kanssa ja voit ladata oletusnäkymän kyselyn suoraan. Jos näkymää vaihdetaan sivun lataamisen jälkeen, näkymän kysely on mahdollista suorittaa odotetusti. 
 
 ## <a name="managing-personal-views"></a>Henkilökohtaisten näkymien hallinta
 

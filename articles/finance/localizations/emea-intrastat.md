@@ -1,8 +1,8 @@
 ---
 title: Intrastat – yleiskatsaus
 description: Tämä artikkeli sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa.
-author: EvgenyPopovMBS
-ms.date: 01/13/2021
+author: mrolecki
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom:
 - "28581"
 - intro-internal
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 762de8a098c61bc0d717c038d6ca0ff6d649bff3
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894777"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815708"
 ---
 # <a name="intrastat-overview"></a>Intrastat – yleiskatsaus
 
@@ -187,7 +187,7 @@ Tässä skenaariossa käytetään **DEMF**-yritystä.
 #### <a name="set-up-foreign-trade-parameters"></a>Määritä ulkomaankaupan parametrit
 
 1. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Ulkomaankaupan parametrit**.
-2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentässä **11**.
+2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtuman** **koodin** kentässä **11**.
 3. Varmista, että **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kenttään on määritetty **Intrastat**.
 
 #### <a name="create-a-purchase-order"></a>Luo ostotilaus
@@ -196,7 +196,7 @@ Tässä skenaariossa käytetään **DEMF**-yritystä.
 2. Valitse toimintoruudussa **Uusi**.
 3. Valitse **Luo ostotilaus** -valintaikkunan **Toimittajatili**-kentässä **DE-001**.
 4. Valitse **OK**.
-5. Tarkista **Otsikko**-välilehden **Ulkomaankauppa**-pikavälilehdessä, että **Tapahtumakoodi**-kentän määrityksenä on **11**.
+5. Tarkista **Otsikko**-välilehden **Ulkomaan** **kaupan** pikavälilehdessä, että **Tapahtumakoodi**-kentän määrityksenä on **11**.
 6. Valitse **Rivit**-välilehden **Ostotilauksen rivit** -pikavälilehden **Nimikkeen numero** -kentässä **D0003**. Anna sitten **Määrä**-kenttään **10**.
 7. Varmista **Rivin tiedot**-pikavälilehden **Ulkomaankauppa**-välilehden **Ulkomaankauppa**-osiossa, että **Tapahtumakoodi**-kenttä on asetettu automaattisesti.
 8. Valitse **Kulut**-osan **Myyntitiedot**-valikon **Ostotilausrivit**-pikavälilehdestä **Ylläpidä kuluja**.
@@ -312,7 +312,7 @@ Tässä esimerkissä Saksan yrityksen on ostettava 10 yksikköä Italian yrityks
 1. Valitse **Organisaation hallinta** > **Organisaatio** > **Yritykset** ja valitse **DEMF**.
 2. Varmista **Osoitteet**-pikavälilehdellä, että **Maa/alue**-kentän arvoksi on määritetty **DEU(Saksa)**.
 3. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Ulkomaankaupan parametrit**.
-4. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentässä **11**.
+4. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtuman** **koodin** kentässä **11**.
 5. Varmista, että **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kenttään on määritetty **Intrastat**.
 6. Valitse **Ostoreskontra** > **Toimittajat** > **Kaikki toimittajat**.
 7. Valitse ruudukossa **DE-001**.
@@ -365,7 +365,7 @@ Tässä esimerkissä Saksan yrityksen on ostettava 10 yksikköä Italian yrityks
 2. Valitse toimintoruudussa **Uusi**.
 3. Valitse **Luo ostotilaus** -valintaikkunan **Toimittajatili**-kentässä **DE-001**.
 4. Valitse **OK**.
-5. Tarkista **Otsikko**-välilehden **Ulkomaankauppa**-pikavälilehdessä, että **Tapahtumakoodi**-kentän määrityksenä on **11**.
+5. Tarkista **Otsikko**-välilehden **Ulkomaan** **kaupan** pikavälilehdessä, että **Tapahtumakoodi**-kentän määrityksenä on **11**.
 6. Valitse **Rivit**-välilehden **Ostotilauksen rivit** -pikavälilehden **Nimikkeen numero** -kentässä **F00007**. Anna sitten **Määrä**-kenttään **10**.
 7. Varmista **Rivin tiedot**-pikavälilehden **Ulkomaankauppa**-välilehden **Ulkomaankauppa**-osiossa, että **Tapahtumakoodi**- ja **Kauppatavara**-kentät on asetettu automaattisesti.
 8. Valitse toimintoruudun **Ostot**-välilehden **Toiminnot**-ryhmässä **Vahvista**.
@@ -387,6 +387,28 @@ Tässä esimerkissä Saksan yrityksen on ostettava 10 yksikköä Italian yrityks
 5. Tarkista ostotilauksen **Yleiset**-välilehti. Huomaa, että **Yksikkö**-osan **lisäyksiköiden määrä**- ja **Lisäyksikkö**-kentät määritetään automaattisesti.
 
    ![Ostotilauksen tiedot Intrastat-sivun Yleiset-välilehdessä](media/intrastat_overview_6.png)
+   
+## <a name="list-of-countryregion-specific-articles"></a>Luettelo maa-/aluekohtaisista artikkeleista
+Seuraavassa taulukossa on lueteltu käytettävissä olevat maa-/aluekohtaiset Intrastat-artikkelit.
+
+| Maa tai alue          | Linkitä      |
+|------------------|-----------|
+| Itävalta          |[Itävallan Intrastat](emea-aut-intrastat.md)| 
+| Belgia          |[Belgian Intrastat](emea-bel-intrastat.md)|
+| Tšekin tasavalta   |[Tšekin Intrastat](emea-cze-intrastat.md)|
+| Tanska          |[Tanskan Intrastat](emea-dnk-intrastat.md)|
+| Viro          |[Viron Intrastat](emea-est-intrastat.md)|
+| Suomi          |[Suomen Intrastat](emea-fin-intrastat.md)|
+| Ranska           |[Ranskan Intrastat](emea-fra-intrastat.md)|
+| Saksa          |[Saksan Intrastat](emea-deu-intrastat.md)|
+| Unkari          |[Unkarin Intrastat](emea-hun-intrastat.md)|
+| Italia            |[Italian intrastat](emea-ita-intrastat.md)|
+| Latvia           |[Latvian Intrastat](emea-lva-intrastat.md)|
+| Liettua        |[Liettuan Intrastat](emea-ltu-intrastat.md)|
+| Alankomaat      |[Alankomaiden Intrastat](emea-nl-intrastat.md)|
+| Puola           |[Puolan Intrastat](emea-pol-intrastat.md)|
+| Espanja            |[Espanjan Intrastat](emea-esp-intrastat.md)|
+| Ruotsi           |[Ruotsin Intrastat](emea-swe-intrastat.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

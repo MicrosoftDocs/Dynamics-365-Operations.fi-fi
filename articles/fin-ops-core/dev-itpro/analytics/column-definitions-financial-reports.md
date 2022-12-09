@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.form: FinancialReports
-ms.openlocfilehash: d23d6afde0daa44b8527c624305bdfd0fb4cbd53
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 97f6c869e8d05e37ec3001d5de262ab8927d735a
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291885"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802793"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
 
@@ -51,7 +51,7 @@ Sarakkeen määritys voi sisältää 2–255 saraketta.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Sarakkeen poistaminen sarakemäärityksestä
 
-1. Valitse raporttien suunnitteluohjelmassa **Sarakemääritykset** ja avaa sen jälkeen muokattava sarakemääritys.
+1. Valitse Report Designerissa **Sarakkeiden määritykset** ja avaa muokattava sarakkeen määritys.
 2. Valitse poistettava sarake.
 3. Valitse **Muokkaa**-valikosta **Poista sarake**.
 
@@ -72,19 +72,19 @@ Nämä tiedot näkyvät seuraavilla sarakkeen määrityksen alueilla:
 
 - Sarakkeiden tietorivit sijaitsevat sarakkeen määrityksen otsikoiden rivien alla. Sarakkeiden tietorivit määrittävät raportin tiedot. Seuraavassa taulukossa luetellaan sarakkeiden tietorivit.
 
-    | Sarakkeen tietorivin nimi                                                | Kuvaus                                                                                            |
-    |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-    | Sarakelaji                                                           | (Pakollinen) Määritä sarakkeen tietojen tyyppi.                                                     |
-    | Kirjakoodi/määriteluokka                                          | Määritä **FD**- ja **ATTR**-tyypin sarakkeiden taloushallinnon tiedot.                       |
-    | Tilikausi, Katetut jaksot                                    | Määritä **FD**-tyypin sarakkeiden taloushallinnon tiedot.                                     |
-    | Resepti                                                               | Määritä **CALC**-tyypin sarakkeiden laskentakaava.                                        |
-    | Sarakkeen leveys, Lisävälilyönnit ennen saraketta, Muotoilun ohitus, Tulostuksen hallinta | Määritä erikoismuotoiluasetukset.                                                                        |
-    | Sarakkeen rajoitukset                                                   | Rajoita tietoja.                                                                                         |
-    | Raportoinnin yksikkö                                                        | Rajoita saraketta niin, että sarakkeessa näkyvät vain tietyn raportoinnin yksikön tiedot.                      |
-    | Valuutan näyttö, Valuuttasuodatin                                      | Muotoile valuuttaa.                                                                                       |
-    | Dimensiosuodatin                                                      | Määritä tietojen rajoituksessa käytettävä suodatin tietyille taloushallinnon tietojen raportoinnin yksiköille.                           |
-    | Määritesuodatin                                                      | Määritä taloushallinnon tietojen rajoituksessa käytettävä suodatin.                                                       |
-    | Alkamispäivämäärä, Päättymispäivämäärä                                                   | Rajoita taloushallinnon tiedot tietyille päivämäärille.                                                         |
+    | Sarakkeen tietorivin nimi                                                | Kuvaus                                                    |
+    |-----------------------------------------------------------------------|-------------------------------------------------------------------------|
+    | Sarakelaji                                                           | (Pakollinen) Määritä sarakkeen tietojen tyyppi.                                      |
+    | Kirjakoodi/määriteluokka                                          | Määritä **FD**- ja **ATTR**-tyypin sarakkeiden taloushallinnon tiedot.     |
+    | Tilikausi, Katetut jaksot                                    | Määritä **FD**-tyypin sarakkeiden taloushallinnon tiedot.              |
+    | Resepti                                                               | Määritä **CALC**-tyypin sarakkeiden laskentakaava.                  |
+    | Sarakkeen leveys, Lisävälilyönnit ennen saraketta, Muotoilun ohitus, Tulostuksen hallinta | Määritä erikoismuotoiluasetukset.                                               |
+    | Sarakkeen rajoitukset                                                   | Rajoita tietoja.                                                                        |
+    | Raportoinnin yksikkö                                                        | Rajoita saraketta niin, että sarakkeessa näkyvät vain tietyn raportoinnin yksikön tiedot.      |
+    | Valuutan näyttö, Valuuttasuodatin                                      | Muotoile valuuttaa.                                                                      |
+    | Dimensiosuodatin                                                      | Määritä tietojen rajoituksessa käytettävä suodatin tietyille taloushallinnon tietojen raportoinnin yksiköille.           |
+    | Määritesuodatin                                                      | Määritä taloushallinnon tietojen rajoituksessa käytettävä suodatin.                                      |
+    | Alkamispäivämäärä, Päättymispäivämäärä                                                   | Rajoita taloushallinnon tiedot tietyille päivämäärille.                                    |
     | Perustelu                                                         | Tasaa rivin määrityksessä määritetty kuvausteksti vasemmalle tai oikealle tai keskitä se. |
 
 ## <a name="column-restrictions-in-a-column-definition"></a>Sarakkeen rajoitukset sarakkeen määrityksessä
@@ -133,7 +133,7 @@ Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä ot
 
 Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä otsikoita **Sarakeotsikko**-valintaikkunassa. Seuraavassa taulukossa esitellään **Sarakeotsikot**-valintaikkunan kentät.
 
-| Kenttä                 | Kuvaus |
+| Kenttä                 | kuvaus |
 |-----------------------|-------------|
 | Sarakeotsikon teksti    | Tämä teksti näkyy sarakeotsikossa. Voit kirjoittaa tekstin suoraan kenttään tai valita sarakeotsikon aina raportin luomisen yhteydessä päivittävän vaihtoehdon valitsemalla **Lisää automaattinen teksti**. Voit lisätä useita automaattisen tekstin koodeja valitsemalla uudelleen **Lisää automaattinen teksti** ja valitsemalla sitten toisen koodin luettelosta. |
 | Muotoiluasetukset        | Käytä sarakeotsikossa muotoilua, kuten ruuutua tai alleviivausta. |
@@ -148,7 +148,7 @@ Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä ot
 4. Valitse **Muotoiluasetukset**-kentässä otsikon muoto.
 5. Syötä **Levitä mistä** -kenttään sen sarakkeen kirjain, josta sarakeotsikko alkaa. Syötä **Levitä mihin** -kenttään sen sarakkeen kirjain, johon sarakeotsikko loppuu.
 6. Määritä **Tasaus**-kohdassa, tasataanko otsikon teksti vasemmalle vai oikealle vai keskitetäänkö se.
-7. Napsauta **OK**.
+7. Valitse **OK**.
 
 ### <a name="add-a-column-header-row"></a>Sarakeotsikon rivin lisääminen
 
@@ -211,18 +211,18 @@ Ehdollisen koonnin otsikot voivat olla useiden tietyn jakson tietoihin perustuvi
 
 Käyttäjä on luomassa dynaamista kuuden kuukauden ennusteen raporttia. Käyttäjä haluaa tulostaa toteutuneita tietoja sisältäviin sarakkeisiin sanan Toteutunut ja budjettiennusteita sisältäviin sarakkeisiin sanan Budjetti. Raportti suoritetaan joka kuukausi, joten kuukausi kuukaudelta toteutuneita sarakkeita on yksi enemmän ja budjettisarakkeita yksi vähemmän. Vaikka käyttäjä voi muokata sarakkeen määritystä otsikoiden oikaisua varten manuaalisesti aina, kun raportti luodaan, hän päättää luoda ehdollisen koonnin otsikot ja säästää aikaa ja työtä. Näin otsikot luodaan automaattisesti oikeisiin sarakkeisiin aina, kun raportti suoritetaan. Käyttäjä avaa Report Designerin, valitsee siirtymisruudussa **Sarakkeen määritys** -kohdan ja avaa raportin sarakkeen määrityksen. Sitten käyttäjä syöttää seuraavat tiedot: Raportin määrityksen perusjakso on 4.
 
-|      Muoto         |  A   | D             | K             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
-|---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Otsikko 1            |      | Todellinen        | Budjetti        |               |               |               |               |               |               |               |               |               |               |
-| Otsikko 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
-| Otsikko 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
-| Saraketyyppi         | KUV | TD            | TD            | TD            | TD            | TD            | TD            | TD            | TD            | TD            | TD            | FD            | FD            |
+|  Muoto   |  A   | D     | K      | D       | E        | F       | G       | H      | I             | J             | K             | L             | M             |
+|-----------|------|-------|--------|---------|----------|---------|---------|---------|-------------|---------------|---------------|---------------|---------------|
+| Otsikko 1   |    | Todellinen    | Budjetti        |         |         |        |       |          |        |               |               |               |               |
+| Otsikko 2   |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
+| Otsikko 3    |      |       |        |        |        |         |        |          |               |               |               |               |               |
+| Saraketyyppi  | KUV | TD   | TD     | TD    | TD   | TD    | TD      | TD            | TD            | TD            | TD            | FD            | FD            |
 | Kirjakoodi/määrite |      | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    |
-| Tilikausi         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
-| Kausi              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
+| Tilikausi |  | BASE   | BASE   | BASE   | BASE   | BASE    | BASE    | BASE     | BASE          | BASE          | BASE          | BASE          | BASE          |
+| Kausi  |     | 1      | 1       | 2      | 2      | 3       | 3       | 4        | 4             | 5             | 5             | 6             | 6             |
 | Katetut kaudet     |      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      |
-| Sarakkeen leveys        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
-| Tulostusohjaus       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
+| Sarakkeen leveys   | 30   | 10    | 10     | 10     | 10    | 10    | 10    | 10     | 10            | 10            | 10            | 10            | 10            |
+| Tulostusohjaus  |    | P&lt;=B    | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B   | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B  | P&gt;B   | P&lt;=B       | P&gt;B        |
 
 Tämän jälkeen käyttäjä kaksoisnapsauttaa sarakeotsikon solua sarakkeessa B ja avaa **Sarakeotsikko**-valintaikkunan, johon hän syöttää seuraavat tiedot.
 
@@ -292,7 +292,7 @@ Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa kä
 
 #### <a name="assign-a-format-currency-override-to-a-report-column"></a>Valuutan muotoilun korvaamisen määrittäminen raportin sarakkeelle
 
-1. Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.
+1. Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
 2. Kaksoisnapsauta **Muotoilun/valuutan korvaus** -solua summasarakkeessa.
 3. Valitse **Muotoilun ohitus** -valintaikkunassa muotoiluasetukset.
 
@@ -306,7 +306,7 @@ Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa kä
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Piilotettu                                     | Tämän sarakkeen summat suljetaan pois tulostettavasta raportista ja laskutoimituksista. Voit ottaa piilotetun sarakkeen mukaan laskutoimitukseen viittaamalla sarakkeeseen suoraan laskentakaavassa. Piilotettu sarake C voidaan esimerkiksi sisällyttää seuraavaan laskutoimitukseen: **B+C+D**. Piilotettua saraketta C ei kuitenkaan oteta mukaan esimerkiksi seuraavaan laskutoimitukseen: **B:D**. |
 | XCR                | Merkin muuttaminen, jos rivin tavallinen saldo on kredit | Luo budjetti tai vertaileva raportti, jossa mikä tahansa kielteinen varianssi (kuten tuoton vaje tai kulujen ylitys) on aina negatiivinen. Ota tämä koodi käyttöön **CALC**-sarakkeessa ja vaihda sarakesumman etumerkki, jos annetun rivin tavallinen saldo on kredit (kuten rivin määrityksen **Tavallinen saldo** -sarakkeen **C**-arvo määrittää).<p><strong>Huomautus:</strong> Varmista, että <strong>TOT</strong>- ja </strong>CAL</strong>-riveille, joissa usein on kredit-saldo, syötetään rivin määrityksen <strong>Tavallinen saldo</strong> -sarakkeeseen <strong>C</strong>.</p> |
-| X0                 | Sarakkeen piilottaminen, jos ne ovat nollia tai tyhjiä          | Sulje **FD**-sarake pois raportista, jos sarakkeen kaikki solut ovat tyhjiä tai sisältävät vain nollia. |
+| X0            | Sarakkeen piilottaminen, jos ne ovat nollia tai tyhjiä   | Sulje **FD**-sarake pois raportista, jos sarakkeen kaikki solut ovat tyhjiä tai sisältävät vain nollia. |
 | SR                 | Estä pyöristys                               | Estä tämän sarakkeen summien pyöristys. |
 | XR                 | Piilota koonti                                 | Piilota koonti. Jos raportissa käytetään raportointipuuta, tämän sarakkeen summia ei koota vastaaviksi ylätason solmuiksi. |
 | RP                 | Sarakkeen toistaminen jokaisella sivulla                      | Toista määritetty sarake raportin jokaisella sivulla. Voit käyttää esimerkiksi tulostuksen **RP**-hallintakoodia, kun haluat sisällyttää rivien koodeja noutavan **ROW**-tyyppiä olevan sarakkeen jokaiselle sivulla. |
@@ -325,7 +325,7 @@ Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa kä
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Tulostuksen hallintakoodin lisääminen raporttisarakkeeseen
 
-1. Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.
+1. Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
 2. Kaksoisnapsauta **Tulostusohjaus**-solua.
 3. Valitse **Tulostuksen hallinta** -valintaikkunassa koodi **Valitse tulostuksen hallinnan asetukset** -luettelosta. Voit valita useita koodeja pitämällä Ctrl-näppäintä alhaalla koodien valinnan aikana.
 4. Valitse vaihtoehto **Ehdollisen tulostuksen asetukset** -kentässä. Oletusasetus on **(ei mitään)**. Voit valita vain yhden ehdollisen tulostuskoodin kerrallaan.
@@ -436,7 +436,7 @@ Voit siirtyä tilikauden ulkopuolelle minkä tahansa jakson määrityksissä. Vo
 
 ### <a name="specify-the-periods-for-an-fd-column"></a>TD-sarakkeen kausien määrittäminen
 
-1. Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.
+1. Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
 2. Kaksoisnapsauta **FD**-sarakkeessa **Jakso**-rivin solua. Valitse sitten vaihtoehto luettelosta.
 3. Tee kaava valmiiksi siirtymisruudun yläpuolella olevalla kaavarivillä tai **Jakso**-solussa. Korvaa kaikki numeromerkit (\#) sopivalla arvolla.
 
@@ -458,7 +458,7 @@ Voit siirtyä tilikauden ulkopuolelle minkä tahansa jakson määrityksissä. Vo
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Sarakkeen määrityksen määritesuodatin
 
-Määritteet ovat taloushallinnon tietojen arvoja, jotka määrittävät tilin tai tapahtuman tarkemmin. Tilimääritteitä ovat **Käyttöomaisuus**, **Velka**, **Tuotto** ja **Kulu**. Tapahtumamääritteitä ovat **Tapahtuman kuvaus** ja **Tapahtuman käyttöpäivämäärä**. Määritetuki voi vaihdella eri Microsoft Dynamics ERP -järjestelmien kesken. **Määritesuodatin**-solu rajoittaa **FD**-sarakkeiden tiedot määritettyihin määriteluokkien arvoihin tai alueisiin. Vaikka tätä toimintoa voi käyttää yhdessä **ATTR**-sarakkeen kanssa, **ATTR**-sarake ei ole pakollinen. **FD**-sarake sisältää tilien tai tapahtumien rajoituksen, jonka raportti saa määritesuodattimesta.
+Määritteet ovat taloushallinnon tietojen arvoja, jotka määrittävät tilin tai tapahtuman tarkemmin. Tilimääritteitä ovat **Käyttöomaisuus**, **Velka**, **Tuotto** ja **Kulu**. Tapahtumamääritteitä ovat **Tapahtuman kuvaus** ja **Tapahtuman käyttöpäivämäärä**. Määritetuki voi vaihdella Microsoft Dynamics 365 Financen välillä. **Määritesuodatin**-solu rajoittaa **FD**-sarakkeiden tiedot määritettyihin määriteluokkien arvoihin tai alueisiin. Vaikka tätä toimintoa voi käyttää yhdessä **ATTR**-sarakkeen kanssa, **ATTR**-sarake ei ole pakollinen. **FD**-sarake sisältää tilien tai tapahtumien rajoituksen, jonka raportti saa määritesuodattimesta.
 
 > [!NOTE]
 > Jos haluat tarkistaa, mitä määritteitä ERP-järjestelmäsi tukee, tutustu järjestelmäsi integrointioppaaseen.
@@ -510,7 +510,7 @@ Usean valuutan raportti voi näyttää summat kirjanpidon kirjanpitovaluutassa, 
 - **Valuutan näyttö** – määrittää, minkä tyypin valuutassa (kirjanpito, raportointi, tapahtuma tai muunnettu raportointi) tapahtumat näytetään. Raportointivaluuttaan muuntamistoimintoa kutsutaan joskus valuutan muuntamiseksi. Valuutan muunnon avulla kirjanpidon summat voidaan raportoida muussa kuin yrityksen perusvaluutassa tai raportointivaluutassa, jossa tapahtuma annettiin.
 - **Valuuttasuodatin** – Määritä valuuttasuodatin. Vain valitussa valuutassa syötetyt tapahtumat näytetään raportissa.
 
-> 
+
 Seuraavien vaiheiden avulla voit määrittää yrityksen kirjanpitovaluutan.
 
 1. Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Yritykset**.
@@ -541,8 +541,8 @@ Seuraavassa taulukossa näytetään tulokset, joita saadaan **Valuutan näyttö*
 | Valuutan näyttö -solu                        | Valuuttasuodatin-solu | Raportin tulos |
 |----------------------------------------------|----------------------|---------------|
 | Tapahtumavaluutta                 | **JENI**              | **6 000 Y** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat. |
-| Kirjanpitovaluutta kirjanpidosta | **JENI**              |**60 $** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat, jotka näytetään Yhdysvaltojen dollareina.<p><strong>Huomautus:</strong> Muuntokurssina käytetään noin 100 jeniä yhtä Yhdysvaltojen dollaria kohti.</p> |
-| Kirjanpitovaluutta kirjanpidosta | Tyhjä                | **2 310 $** – Tuloksessa näytetään kaikki tiedot kirjanpidossa määritetyssä kirjanpitovaluutassa.<p><strong>Huomautus:</strong> Tämä summa on kaikkien tapahtumien summa kirjanpitovaluutassa.</p> |
+| Tilivaluutta kirjanpidosta | **JENI**              |**60 $** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat, jotka näytetään Yhdysvaltojen dollareina.<p><strong>Huomautus:</strong> Muuntokurssina käytetään noin 100 jeniä yhtä Yhdysvaltojen dollaria kohti.</p> |
+| Tilivaluutta kirjanpidosta | Tyhjä                | **2 310 $** – Tuloksessa näytetään kaikki tiedot kirjanpidossa määritetyssä kirjanpitovaluutassa.<p><strong>Huomautus:</strong> Tämä summa on kaikkien tapahtumien summa kirjanpitovaluutassa.</p> |
 | Tapahtumavaluutta                 | Tyhjä                | **2 250 $** – Tuloksessa näytetään kaikki summat valuutassa, jossa tapahtuma suoritettiin. Tämä tarkoittaa sitä, että kokonaissummassa eri valuuttojen summat lasketaan yhteen. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Laskenta-sarake sarakkeen määrityksessä

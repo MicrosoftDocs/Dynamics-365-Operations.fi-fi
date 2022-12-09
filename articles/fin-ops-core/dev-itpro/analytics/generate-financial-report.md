@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 59ec6978d83f5c51309bc7d90d47366774cb2880
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f55fe1a23735d8631a5918fa49e08f74eee4d37
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898824"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802766"
 ---
 # <a name="generate-financial-reports"></a>Taloushallinnon raporttien luominen
 
@@ -32,7 +32,7 @@ Luo raportti avaamalla raportin määritys ja valitsemalla sitten työkalurivill
 
 Raportin luonnin edetessä seuraavat raportin jonon tilanilmaisimet voivat näkyä **Raportin jonotila** -sivulla.
 
-| Tila          | Alue | Kuvaus|
+| Tila          | Tila | kuvaus|
 |-----------------|--------|--------------------|
 | Asetetaan jonoon        | Väliaikainen |Raportin määritys tarkistetaan, ennen kuin raportti asetetaan luontijonoon.                    |
 | Jonossa          | Väliaikainen | Raportti siirtyy raportinluontijonoon ja odottaa käsittelyä.                      |
@@ -67,7 +67,7 @@ Voit luoda raportti **raporttien suunnitteluohjelman** avulla avaamalla raportti
 
 Raporttiryhmät ovat tehokas tapa luoda useita raportteja samanaikaisesti. Oletetaan esimerkiksi, että tiedät, että kuukauden lopussa käyttäjät luovat joka kuukausi kahdeksan raporttia. Luo raporttiryhmä ja sen sijaan, että valitset **Luo** kullekin ryhmän kahdeksalle raportille, voit valita **Luo** raporttiryhmälle, jolloin kahdeksan raporttia luodaan yhdessä vaiheessa. Kun valitun raporttiryhmän raportit on luotu, voit tarkastella yksittäisiä raportteja kohdassa **Talousraportit** (**Kirjanpito > Kyselyt ja raportit > Talousraportit**) to view the individual reports. Jos haluat määrittää raporttiryhmän, tee seuraavat toimet.
 
-1. Valitse raporttien suunnitteluohjelmassa **Raporttiryhmät**. 
+1. Valitse **raporttien suunnitteluohjelmassa** **Raporttiryhmät**. 
 2. Valitse raporttiryhmään sisällytettävät raporttimääritykset. 
 3. Valitse kullekin ryhmään sisällytettävälle raportille korvattavan yrityksen, tietojen ja päivämäärän asetukset.
    On suositeltavaa määrittää kullekin raportille **Yritys**, **Kausi**, **Vuosi** ja **Erittelytaso**. 
@@ -76,21 +76,21 @@ Raporttiryhmät ovat tehokas tapa luoda useita raportteja samanaikaisesti. Olete
 ## <a name="schedule-report-generation"></a>Raporttien luonnin ajoittaminen
 Useissa yrityksissä on tietty raporttijoukko, joka suoritetaan tietyin aikavälein liiketoimintaprosessien tarpeiden mukaan. Voit ajoittaa raportin muodostumaan säännöllisesti, esim. päivittäin, viikoittain, kuukausittain tai vuosittain. Voit ajoittaa yksittäisiä raportteja tai raporttiryhmiä, jotka sisältävät useita yrityksiä. Jokaiselle sisällytettävälle yritykselle on määritettävä tunnistetiedot, jotka voivat olla esimerkiksi samat kuin raporttipuumäärityksessä. Jos tunnistetietosi eivät ole voimassa, raportti näyttää sinulle vain ne tiedot, joihin sinulla on käyttöoikeus, kuten yritys, johon olet kirjautunut kyseisellä hetkellä. Tuotostiedot luetaan ensin raporttiryhmästä ja sen jälkeen yksittäisistä raporteista.
 
-Kun raporttien aikatauluja luodaan ja tallennetaan, ne näytetään siirtymisruudun kohdassa Raporttien aikataulut. Voit luoda kansioita raporttien järjestämistä varten. Jos aikataulun yksittäistä raporttia ei voida suorittaa, muut raportit silti suoritetaan.
+Kun raporttien aikatauluja luodaan ja tallennetaan, ne näytetään siirtymisruudun kohdassa **Raporttien aikataulut**. Voit luoda kansioita raporttien järjestämistä varten. Jos aikataulun yksittäistä raporttia ei voida suorittaa, muut raportit silti suoritetaan.
 
 > [!IMPORTANT]
 > Voit luoda, muokata ja poistaa raporttien ajoituksia, jos sinulla on suunnittelijan tai järjestelmänvalvojan rooli. Kun raportti on ajettu, sen luomiseen käytetään sen käyttäjän tunnistetietoja, joka on luonut raportin.
 
 ### <a name="create-a-report-schedule"></a>Raporttiaikataulun luominen
 
-1. Valitse raportin suunnitteluohjelman **Tiedosto**-valikossa **Uusi** ja valitse sitten **Raporttiaikataulu**. Näyttöön avautuu valintaikkuna **Uusi raporttiaikataulu**.
+1. Valitse **raportin suunnitteluohjelman** **Tiedosto**-valikossa **Uusi** ja valitse sitten **Raporttiaikataulu**. Näyttöön avautuu valintaikkuna **Uusi raporttiaikataulu**.
 2. Valitse kohdassa **Asetukset** yksittäinen ajastettava raportti tai raporttiryhmä. Käytettävissä ovat vain sellaisen yrityksen tai rakenneosavalikoiman raportit tai raporttiryhmät, johon olet kirjautuneena.
 3. Valitse **Aktiivinen** -valintaruutu ottaaksesi käyttöön raporttiaikataulun. Vain raportin luonut käyttäjä tai järjestelmänvalvoja voi ottaa raporttiaikataulun käyttöön tai poistaa sen käytöstä.
 4. Syötä yrityksen tunnistetiedot valitsemalla **Käyttöoikeudet** -painike. Oletusarvon mukaan sinun kirjautumistietojasi käytetään yritykselle, johon olet kirjautuneena. Jos muita yrityksiä on mukana valinnassa, esim. raportointipuun määrityksissä, valitse **Käytä erillisiä tunnistetietoja** ja syötä sitten jonkin toisen raporttiaikatauluun sisältyvän yrityksen tunnistetiedot. Voit valita **Windows-todennuksen** tai kirjoittaa käyttäjänimen ja salasanan kullekin yhtiölle. Tallenna näiden yhtiöiden tunnistetiedot valitsemalla **Tallenna tunnistetiedot** -valintaruutu ja valitse sitten **OK** sulkeaksesi valintaikkunan.
 5. Valitse päivä, jolloin aikataulun tulee alkaa, kohdassa **Tiheys** kentässä **Aloita toisto**. Oletusarvon mukaan valitaan asiakastietokoneen järjestelmäpäivämäärä.
 6. Valitse aika, jolloin raportin tulee muodostua, **Muodosta raportti klo** -kentässä. Jos määrität ajan, joka on ennen kuluvaa järjestelmän aikaa, raportti suoritetaan seuraavana ajoitettuna päivänä.
-7. Määritä raportin muodostumistiheys **Toistumismalli**-alueella. Oletuksena valitaan **Päivittäin** ja Aikaväli (päivinä) -arvoksi 1. Muut vaihtoehdot ovat Viikoittain, Kuukausittain ja Vuosittain.
-8. Valitse Toistojen alue -alueesta, milloin raporttia ei enää luoda.
+7. Määritä raportin muodostumistiheys **Toistumismalli**-alueella. Oletuksena valitaan **Päivittäin** ja **Aikaväli (päivinä)** -arvoksi **1**. Muut vaihtoehdot ovat **Viikoittain**, **Kuukausittain** ja **Vuosittain**.
+8. Valitse alueella **Toistumisalue**, milloin raportin luonnin tulee päättyä.
 
     - **Ei päättymispäivää** – Raporttiaikataulu jatkuu toistaiseksi.
     - **Määritä esiintymien määrä** – Raporttiaikataulu jatkuu määritetyn toistojen määrän ajan ja poistetaan sitten käytöstä.
@@ -116,7 +116,7 @@ Sinun on oltava raporttiaikataulun omistaja tai sinulla on oltava järjestelmän
 
 ### <a name="credentials-and-report-schedules"></a>Tunnistetiedot ja raportin aikataulut
 
-Jos et syötä tarvittavia tunnistetietoja kaikille raportteihin sisältyville yhtiöille, saat seuraavan sanoman tallentaessasi raporttiaikataulun: Sinun on syötettävä tunnistetietosi raporttiaikatauluun sisältyville yhtiöille. Määritä tunnistetiedot valitsemalla Käyttöoikeudet-painike.
+Jos et syötä tarvittavia tunnistetietoja kaikille raportteihin sisältyville yhtiöille, saat seuraavan sanoman tallentaessasi raporttiaikataulun: Sinun on syötettävä tunnistetietosi raporttiaikatauluun sisältyville yhtiöille. Määritä tunnistetiedot valitsemalla **Käyttöoikeudet**-painike.
 
 Esimerkissä käyttäjä kirjautuu yritykseen A käyttämällä käyttäjänimeä ja salasanaa. Käyttäjä luo aikataulun raportille, joka käyttää raportointipuun määrityksiä tietojen keräämiseen useista yrityksistä. Kun raporttiaikataulu tallennetaan, näyttöön tulee kehote, jossa käyttäjää pyydetään antamaan raporttipuumäärityksessä määritettyjen yritysten tunnistetiedot. Kun tunnistetietojesi voimassaolo päättyy, raporttiaikataulun raportteja ei luoda, kunnes tunnistetiedot on päivitetty. Raporttijonoon tulee sanoma ilmaisemaan, että käyttöoikeudet on päivitettävä. Raporttiaikataulu epäonnistuu, jos mikään seuraavista skenaarioista tapahtuu (koska ne vaativat tunnistetietoja):
 
@@ -151,7 +151,7 @@ On epätodennäköisempää, että arvovälejä sisältävissä raporteissa on p
 8. Valitse **Päivitä** päivittääksesi poikkeukset, jotka olet käsitellyt. Valitse **Kyllä** suorittaaksesi täyden päivityksen kaikille tuloksille, tai valitse **Ei** suorittaaksesi osittaisen päivityksen käsitellyille nimikkeille.
 
     > [!NOTE]
-    > Lomake päivitetään automaattisesti sen avautuessa, ellei sitä ole avattu viimeisen 15 minuutin aikana.
+    > Sivu päivitetään automaattisesti sen avautuessa, ellei sitä ole avattu viimeisen 15 minuutin aikana.
 
 9. Kun ongelmat on ratkaistu, valitse **OK** sulkeaksesi valintaruudun.
 

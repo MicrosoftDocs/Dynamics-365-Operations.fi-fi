@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872265"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806372"
 ---
 # <a name="recruiting-request"></a>Työhönottopyyntö
 
@@ -68,7 +68,7 @@ Kuvaa pyyntöä rekrytoida työhön.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ Kuvaa pyyntöä rekrytoida työhön.
 | **Tila**<br>mshr_status<br>*RecruitingRequestStatus*-asetusjoukko | Luku/Kirjoitus<br>Vaadittu<br> | Ilmaisee työhönottopyynnön tilan. |
 | **Kuvaus**<br>mshr_description<br>*Merkkijono* | Luku/Kirjoitus<br>Vaadittu | Pyynnön kuvaus. |
 | **Työhönottopyynnön sijainnin tunnus**<br>mshr_recruitingrequestlocationid<br>*Merkkijono* | Luku/Kirjoitus<br>Valinnainen | Käyttäjän luettava tähän pyyntöön liitetyn työsijainnin yksilöivä tunnus. |
-| **Työhönottosijainnin tunnuksen arvo**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Vain luku<br>Valinnainen<br>Viiteavain: mshr_hcmrecruitingrequestlocationentity-yksikön mshr_hcmrecruitingrequestlocationentityid | Järjestelmän luoma pyyntöön valitun työhönottosijainnin yksilöivä GUID-tunnus. |
+| **Työhönottosijainnin tunnuksen arvo**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Vain luku<br>Valinnainen<br>Viiteavain: mshr_hcmrecruitingrequestlocationentity-yksikön mshr_hcmrecruitingrequestlocationentityid | Järjestelmän luoma pyyntöön valitun työhönottosijainnin yksilöivä GUID-tunnus. |
 | **Huomautukset**<br>mshr_comments<br>*Merkkijono* | Luku/Kirjoitus<br>Valinnainen | Työhönottopäälliköiden ja rekrytointihenkilöiden pyyntöön liittyvät huomautukset. |
 | **Työn tunnus**<br>mshr_jobid<br>*Merkkijono* | Kirjoita kerran<br>Vaadittu |   Käyttäjän luettava tähän pyyntöön liitetyn kaikkien toimien yhteisen työn yksilöivä tunnus. |
 | **Työtunnuksen arvo**<br>_mshr_fk_job_id_value<br>*GUID* | Vain luku<br>Vaadittu<br>Viiteavain: mshr_hcmjobentity-yksikön mshr_hcmjobentityid | Järjestelmän luoma tähän työhönottopyyntöön liitetyn kaikkien toimien yhteisen työn yksilöivä tunnus. |

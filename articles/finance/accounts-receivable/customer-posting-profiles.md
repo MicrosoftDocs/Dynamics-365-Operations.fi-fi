@@ -2,7 +2,7 @@
 title: Asiakkaan kirjausprofiilit
 description: Tässä artikkelissa kuvataan asiakkaan kirjausprofiileita, joiden avulla määritetään asiakastapahtumien kirjaus kirjanpitoon.
 author: JodiChristiansen
-ms.date: 12/22/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04cf5b8656bccde974fb1adfdf830080e2f52436
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891692"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799569"
 ---
 # <a name="customer-posting-profiles"></a>Asiakkaan kirjausprofiilit
 
@@ -58,15 +58,15 @@ Jos haluat määrittää kaikille asiakastapahtumille saman kirjausprofiilin, m�
 </thead>
 <tbody>
 <tr>
-<td>Kirjausprofiili</td>
+<td><strong>Kirjausprofiili</strong></td>
 <td>Anna kirjausprofiilin koodi. Voit esimerkiksi luoda kaksi kirjausprofiilia, jotta asiakassaldot saadaan yhdelle tilille kansallisena valuuttana ja toiselle ulkomaan valuuttana. Ensimmäisen tilin nimi voi olla vaikkapa Kansallinen ja toisen Ulkomainen.</td>
 </tr>
 <tr>
-<td>Kuvaus</td>
+<td><strong>Kuvaus</strong></td>
 <td>Anna kirjausprofiilin kuvaus. Tätä käytetään vain helpottamaan kirjausprofiilin tunnistamista, kun sivua tarkastellaan.</td>
 </tr>
 <tr>
-<td>Tilikoodi</td>
+<td><strong>Tilikoodi</strong></td>
 <td>Määritä, koskeeko kirjausprofiili yhtä asiakasta, asiakasryhmää vai kaikki asiakkaita:
 <ul>
 <li><b>Taulu</b> – Kirjausprofiili koskee yksittäistä asiakasta. Valitse asiakastili <b>Tilin/ryhmän numero</b> -kentässä.</li>
@@ -76,33 +76,33 @@ Jos haluat määrittää kaikille asiakastapahtumille saman kirjausprofiilin, m�
 </td>
 </tr>
 <tr>
-<td>Tilin/ryhmän numero</td>
+<td><strong>Tilin/ryhmän numero</strong></td>
 <td>Jos <b>Taulu</b> on valittu <b>Tilikoodi</b>-kentässä, valitse kirjausprofiiliin liitetyn asiakkaan tilinumero. Jos <b>Ryhmä</b> on valittu, valitse asiakasryhmä. Jos <b>Kaikki</b> on valittu, jätä tämä kenttä tyhjäksi.</td>
 </tr>
 <tr>
-<td>Reskontratili</td>
+<td><strong>Reskontratili</strong></td>
 <td>Valitse päätili, jota käytetään myyntireskontran kauppatilinä kirjausprofiiliin liitetyillä asiakkailla. Tämä tili on <b>Asiakkaan saldo</b> -kirjaustyypin tili.</td>
 </tr>
 <tr>
-<td>Maksujen rahatili</td>
-<td>Valitse kassavirtaennusteissa käytettävä maksuvalmiustili. Tämä kenttä näkyy vain, jos kassavirtaennusteet ovat käytössä.</td>
+<td><strong>Maksujen rahatili</strong></td>
+<td>Valitse kassavirtaennusteissa käytettävä <strong>maksuvalmiustili</strong>. Tämä kenttä näkyy vain, jos kassavirtaennusteet ovat käytössä.</td>
 </tr>
 <tr>
-<td>Arvonlisäveron ennakkomaksut</td>
+<td><strong>Arvonlisäveron ennakkomaksut</strong></td>
 <td><p>Valitse arvonlisäveron tili etuajassa saatuja maksuja varten.</p>
 <p><strong>Huomautus:</strong> Määritä <b>Myyntireskontran parametrit</b> -sivulla kirjausprofiili, jota käytetään, kun maksu on merkitty ennakkomaksuksi.</p>
 </td>
 </tr>
 <tr>
-<td>Alennustili</td>
+<td><strong>Alennustili</strong></td>
 <td>Valitse alennusvelkojen kirjanpitotili</td>
 </tr>
 <tr>
-<td>Maksukehotukset</td>
+<td><strong>Maksukehotukset</strong></td>
 <td>Valitse maksukehotussarjan tunnus, jota käytetään asiakkaille, joille kirjausprofiili on määritetty.</td>
 </tr>
 <tr>
-<td>Korkoryhmä</td>
+<td><strong>Korkoryhmä</strong></td>
 <td>Valitse korkokoodi, jolla lasketaan korko asiakkaille, joille kirjausprofiili on määritetty.</td>
 </tr>
 </tbody>

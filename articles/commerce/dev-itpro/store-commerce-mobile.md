@@ -2,32 +2,33 @@
 title: Store Commerce ‑sovellus mobiiliympäristöille
 description: Tässä artikkelissa kerrotaan, miten Microsoft Dynamics 365 Commerce Store Commerce -sovelluksen käyttäminen aloitetaan Android- ja iOS-laitteessa.
 author: stuharg
-ms.date: 10/07/2022
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2018-10-29
-ms.openlocfilehash: 1f07a130629863ebd9d036378436cf360e90ac26
-ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
+ms.openlocfilehash: dc952698a2a3301aff312e8310c58cbbb9cfe290
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9642337"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815780"
 ---
 # <a name="store-commerce-app-for-mobile-platforms"></a>Store Commerce ‑sovellus mobiiliympäristöille
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tässä artikkelissa kerrotaan, miten Microsoft Dynamics 365 Commerce Store Commerce -sovellusten käyttäminen aloitetaan Android- ja iOS-laitteessa.
 
-Dynamics 365 Commerce -mobiilisovelluksissa Android- ja iOS-laitteita varten otetaan käyttöön mobiililaitteen myyntipistelaitteet jälleenmyyntiympäristöä varten suoraviivaisesti ja yksinkertaisesti. Store Commerce -mobiilisovellukset sisältävät kaikki [Store Commerce -sovellus Windowsille](store-commerce.md) -sovelluksen ominaisuudet ja hyödyt puhelin- ja tablettimuotoista käyttöä varten. Store Commerce -mobiilisovellukset voidaan asentaa suoraan Apple- ja Google Play -sovelluskaupoista. Kehittäjän ei tarvitse luoda uutta sovelluspakettia niiden käyttöönottamista tai päivittämistä varten. 
+Dynamics 365 Commerce -mobiilisovelluksissa Android- ja iOS-laitteita varten otetaan käyttöön mobiililaitteen myyntipistelaitteet jälleenmyyntiympäristöä varten suoraviivaisesti ja yksinkertaisesti. Store Commerce -mobiilisovellukset tarjoavat lähes kaikki samat ominaisuudet ja edut kuin [Store Commerce -sovellus Windowsille](store-commerce.md), ja ne toimivat hyvin erilaisissa iOS- ja Android-puhelimissa ja -tableteissa. Store Commerce -mobiilisovellukset voidaan asentaa suoraan Apple- ja Google Play -sovelluskaupoista. Kehittäjän ei tarvitse luoda uutta sovelluspakettia niiden käyttöönottamista tai päivittämistä varten. 
 
 Store Commerce -mobiilisovellukset säilyttävät täydellisen toiminnallisen pariteetin nykyisten Retail-hybridisovellusten kanssa. Lisäksi Store Commerce for iOS sisältää määritetyn laiteaseman tuen, jotta iOS-laitteet voivat olla yhteydessä verkossa olevien maksupäätteiden, kuittitulostimien ja kassojen kanssa ilman jaetun laiteaseman käyttöönottoa. 
 
 > [!IMPORTANT]
-> Store Commerce -sovellukset Windowsille, Android ja iOS ovat Dynamics 365 Commercen myyntipistesovellusten seuraava sukupolvi. Nykyinen Modern POS (MPOS) -sovellus ja [Retail-hybridisovellukset](hybridapp.md) mobiililaitteelle vanhenee lokakuussa 2023. Microsoft ehdottaa, että kaikissa uusissa myyntipistekäyttöönotoissa käytetään Store Commerce- tai Cloud POS (CPOS) -sovellusta. Olemassa olevien asiakkaiden tulisi suunnitella siirtyminen Retail-hybridisovelluksesta Store Commerce -sovellukseen. Lisätietoja MPOS- ja Retail-hybridisovellusten vanhentumisaikataulusta on kohdassa [Dynamics 365 Commercen kaupallisen teknologiapinon modernisointi](https://www.microsoft.com/download/details.aspx?id=103896). 
+> Store Commerce -sovellukset Windowsille, Android ja iOS ovat Dynamics 365 Commercen myyntipistesovellusten seuraava sukupolvi. Store Commerce -sovellukset tarjoavat lukuisia parannuksia verrattuna edeltäjiinsä. Samalla niissä on samat toiminnot ja ominaisuudet. Microsoft poistaa MPOS:n sekä Android- ja iOS Retail POS -hybridisovellukset loppuvuodesta 2023 ja suosittelee Store Commercen tai Cloud POS:n (CPOS) käyttämistä kaikissa uusissa POS-käyttöönotoissa. Olemassa olevien asiakkaiden tulisi suunnitella siirtyminen Retail-hybridisovelluksista Store Commerce -sovellukseen. Lisätietoja: [Siirry Modern POS -sovelluksesta Store Commerceen](pos-extension/migrate-mpos-store-commerce.md). 
 
 ## <a name="app-architecture"></a>Sovellusarkkitehtuuri
 
@@ -51,7 +52,7 @@ Store Commerce -mobiilisovellukset vaativat Dynamics 365 Commercen erityisesti C
 Voit asentaa Store Commerce -mobiilisovellukset suoraan Google Play -kaupasta tai Apple App Storesta. 
 
 - [Store Commerce -sovellus Androidille](https://aka.ms/storecommerceandroid)
-- Store Commerce -sovellus iOS:lle (saatavana pian)
+- [Store Commerce -sovellus iOS:lle](https://aka.ms/storecommerceios)
 
 Android-sovellus (.apk) ja Apple-sovellus (.ipa) -paketit voidaan pian ladata Microsoft Dynamics Lifecycle Servicesin Jaettu omaisuuskirjasto -kohdassa. 
 

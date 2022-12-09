@@ -2,7 +2,7 @@
 title: Keskitettyjen maksujen tilityksen yleiskatsaus
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Financen keskitettyjen maksujen tilitystä.
 author: angelad116
-ms.date: 08/02/2018
+ms.date: 11/22/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 42c359edbe49af151ac76c9873c0d429bbe1ca12
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151159"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804223"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Keskitettyjen maksujen tilityksen yleiskatsaus
 
@@ -84,11 +84,11 @@ Yritystenvälisen tilitysprosessin aikana luotavat käteisalennukset kirjataan l
 
 Liian suuret ja pienet maksut sekä pyöristyserojen toleranssit määritetään liian suurten maksujen maksuyrityksen sekä liian pienten maksujen laskuyrityksen mukaan. Käytettävä asiakkaiden kirjaustili määräytyy **Käteisalennuksen hallinta** -kentän **Myyntireskontran parametrit** -sivulla ja toimittajien kirjaustili **Käteisalennuksen hallinta** -kentän **Ostoreskontran parametrit**-sivulla.
 
--   Jos käteisalennuksen hallinta-asetus on Yksilöity tai Yksilöimätön ja käteisalennus kirjataan eri yritykseen liian suuren maksuna, käytetään automaattista tilityypin valintaa asiakkaan käteisalennukselle, toimittajan käteisalennukselle tai pyöristykselle kirjanpitovaluutassa. Voit määrittää nämä tilit **Automaattisten tapahtumien tilit** -sivulla.
--   Jos käteisalennuksen hallinta-asetus on Yksilöimätön ja käteisalennus kirjataan samaan yritykseen liian suurena maksuna (maksuyritys ja laskuyritys on sama), käteisalennustiliä oikaistaan. Jos esimerkiksi 100,00:n lasku sisältää 3,00:n käteisalennuksen ja tämä lasku tilitetään 98,00:n maksulla, käteisalennukseksi oikaistaan 1,00. Nettokäteisalennus on 2,00.
--   Jos käteisalennuksen hallinta-asetus on Yksilöimätön, käteisalennus kirjataan samaan yritykseen liian suurena maksuna ja liian suuri tai liian pieni maksu tilitetään useilla laskuilla, jotka sisältävät käteisalennuksia, ja käteisalennustiliä oikaistaan viimeisen laskun mukaan.
+-   Jos käteisalennuksen hallinta-asetus on **Yksilöity** tai **Yksilöimätön** ja käteisalennus kirjataan eri yritykseen liian suuren maksuna, käytetään automaattista tilityypin valintaa asiakkaan käteisalennukselle, toimittajan käteisalennukselle tai pyöristykselle kirjanpitovaluutassa. Voit määrittää nämä tilit **Automaattisten tapahtumien tilit** -sivulla.
+-   Jos käteisalennuksen hallinta-asetus on **Yksilöimätön** ja käteisalennus kirjataan samaan yritykseen liian suurena maksuna (maksuyritys ja laskuyritys on sama), käteisalennustiliä oikaistaan. Jos esimerkiksi 100,00:n lasku sisältää 3,00:n käteisalennuksen ja tämä lasku tilitetään 98,00:n maksulla, käteisalennukseksi oikaistaan 1,00. Nettokäteisalennus on 2,00.
+-   Jos käteisalennuksen hallinta-asetus on **Yksilöimätön**, käteisalennus kirjataan samaan yritykseen liian suurena maksuna ja liian suuri tai liian pieni maksu tilitetään useilla laskuilla, jotka sisältävät käteisalennuksia, ja käteisalennustiliä oikaistaan viimeisen laskun mukaan.
 
-Jos käteisalennuksen hallinta-asetus on Yksilöimätön, yksilöimättömät maksutilityssäännöt pätevät vain seuraavissa tilanteissa:
+Jos käteisalennuksen hallinta-asetus on **Yksilöimätön**, yksilöimättömät maksutilityssäännöt pätevät vain seuraavissa tilanteissa:
 -   Kyseessä on liian suuri maksu.
 -   Liian suuri maksu tilitetään vähintään yhdellä käteisalennuksen sisältävällä laskulla.
 -   Käteisalennus kirjataan samaan yritykseen kuin liian suuri maksu.

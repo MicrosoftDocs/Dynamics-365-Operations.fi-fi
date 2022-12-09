@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-10-01
 ms.dyn365.ops.version: 10.0.31
-ms.openlocfilehash: 05ccd9794ffeba6a09d6fec0a57ffad2b59707ad
-ms.sourcegitcommit: 87e75aa6af2c3280316d7d73eafa14a52353a5e4
+ms.openlocfilehash: ed4325095163415d05a56128cb1f0334440fe0e5
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "9709856"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787523"
 ---
 # <a name="preview-of-dynamics-365-commerce-10031-february-2023"></a>Dynamics 365 Commercein esiversio 10.0.31 (helmikuu 2023)
 
@@ -38,6 +38,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän art
 | Maksut | [Apple Payn ottaminen käyttöön Dynamics 365 Payment Connector Adyenia varten -ratkaisussa](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-apple-pay-dynamics-365-payment-connector-adyen)  | Sähköisen kaupankäynnin asiakkaat voivat käyttää Apple Pay -ratkaisua ostoskori- ja kassasivuilla tuettujen laitteiden ja selainten käytön yhteydessä. | Kehittäjän suostumus |
 | Maksut  |  Commerce lisäsi ominaisuuden, joka rajoittaa tapaa, jolla asiakkaat käyttävät toistuvia maksutunnuksia Commerce headquartersin käyttöliittymässä. Maksulomakkeet, kuten **Puhelinkeskuksen myyntitilaukset**-sivu, eivät enää näytä asiakkaan aiemmin käyttämää toistuvaa maksutunnusta uudessa tapahtumassa käytettäväksi. Puhelinkeskuksen tai Commerce headquartersin käyttäjille näytetään vain määritetty tallennetun kortin syöte Commercen **Asiakasmaksut**-näytössä tai asiakkaan sovelluksessa myyntitilauksen kautta maksettaessa uuden tapahtuman maksun käsittelyn yhteydessä. | [Maksutunnuksen käytön rajoittaminen](../dev-itpro/limit-token-usage.md)  |  Toimintojen hallinta<p>*Rajoita maksutunnuksen käyttö tilauksen kontekstiin*  |
 | Myyntipiste | [Ostotilausten luominen myyntipisteessä](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/create-purchase-orders-pos)  |  Parannettu saapuva varastotoiminto myyntipisteen sovelluksessa antaa käyttäjille mahdollisuuden luoda, muokata ja vahvistaa ostotilauspyyntöjä. |  Toimintojen hallinta<p>*Mahdollisuus luoda ostotilauspyyntö myyntipisteessä*   |
+| Lisäkieliä saatavilla | Neljä lisäkieltä saatavilla | Ensisijaisten kielten luettelossa on neljä uutta kieltä käyttäjän valittaviksi: korea, portugali (Portugali), vietnam ja kiina (perinteinen). Valitse tämä vaihtoehto siirtymällä kohtaan **Käyttäjän asetukset \> Asetukset \> Kieli- ja maa/alue**. | Paikalliset asetukset |  
 
 
 

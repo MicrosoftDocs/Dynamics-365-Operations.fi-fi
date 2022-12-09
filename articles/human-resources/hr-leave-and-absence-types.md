@@ -2,7 +2,7 @@
 title: Määritä loman ja poissaolon tyypit
 description: Määritä Dynamics 365 Human Resourcesissa lomatyypit, joita työntekijät voivat valita.
 author: twheeloc
-ms.date: 09/09/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
-ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
+ms.openlocfilehash: e35c5fed886ebf9a453c22b3e04ca9ffe50b6d70
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9323955"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805201"
 ---
 # <a name="configure-leave-and-absence-types"></a>Määritä loman ja poissaolon tyypit
+
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,19 +43,25 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 1. Valitse **Lomat ja poissaolot** -työtilassa **Linkit**-välilehti.
 2. Valitse **Asetukset**-kohdasta **Loma- ja poissaolotyypit**.
 3. Valitse **Uusi**.
-4. Kirjoita lomatyypin nimi **Tyyppi**-kohtaan, valitse työnkulku **Työnkulun tunnus** -kohdasta ja kirjoita kuvaus **Kuvaus**-kohtaan.
+4. Kirjoita lomatyypin nimi **Tyyppi**-kohtaan , syötä kuvaus **Kuvaus**-kohtaan ja valitse työnkulku **Työnkulun tunnus** -kentästä. Valitse pyyntötyyppi **pyyntötyyppi**-kentässä lomatyypin mukaan. Valitse esimerkiksi **poissaolo** tai **virkavapaa**.
 5. Valitse **Yleinen**-kohdasta **Ei mitään**, **Ajoitettu** tai **Ennakoimaton** **Luokan** avattavasta luettelosta.
 6. Valitse ansaitsemiskoodi avattavasta **Ansaitsemiskoodi**-valikosta.
 7. Valitse **Vaadittu syykoodi** -kohdassa, haluatko vaatia syykoodin. Jos haluat vaatia syykoodeja, ne on ehkä lisättävä. Valitse **Syykoodit**-kohdasta **Lisää**, valitse syykoodi ja valitse sitten sen vieressä oleva **Käytössä** valintaruutu.
-8. Valitse **Rajoita käyttöoikeuksia valittuihin rooleihin** -kohdassa, haluatko rajoittaa käyttöä. Valitse sitten käyttöoikeusroolit **Tämän lomatyypin käyttöoikeusroolit** -kohdasta. Käyttöoikeusroolit määritetään työnkulussa, jonka valitsit **Työnkulun tunnus** -kohdasta aiemmin tässä toimintosarjassa.
-9. Valitse **Kalenterin väri** -kohdassa, mikä väri näytetään tämän lomatyypin loma- ja poissaolokalentereissa. 
-10. Valitse **Keskeytyssuhteet**-kohdassa haluatko, että tämä lomatyyppi keskeyttää toisen lomatyypin tai tulee toisen lomatyypin keskeyttämäksi. Kun poissaoloa koskeva poissaolopyyntö jätetään, keskeytetyn loman tyypiksi luodaan automaattisesti loman keskeytys. 
-11. Valitse **Tallenna**.
+8. Jos pyyntötyyppi on **virkavapaa**, toimi seuraavasti:
+
+      1. Valitse kohdassa **kestoltaan avoin**, tulisiko käyttäjillä olla mahdollisuus luoda kestoltaan avoimia lomia.
+      2. Jos **kestoltaan avoin** on käytössä, voit valita, tuleeko työntekijöiden lähettää ilmoitus työhön palaamisesta, kun he palaavat lomalta.
+      3. Jos työntekijöiden on lähetettävä ilmoitus työhön palaamisesta, voidaan ottaa käyttöön kohta **Ota käyttöön ilmoitus työhön palaamisesta**. Jos **Ota käyttöön ilmoitus työhön palaamisesta** on otettu käyttöön, **Liite pakollinen** on otettu automaattisesti käyttöön, eikä sitä voi ottaa pois käytöstä.
+
+9. Jos käyttäjien on ladattava asiakirjoja, kun he luovat tai päivittävät lomapyyntöjä, voidaan ottaa käyttöön kohta **Liite pakollinen**.
+10. Valitse **Rajoita käyttöoikeuksia valittuihin rooleihin** -kohdassa, haluatko rajoittaa käyttöä. Valitse kohdassa **Tämän lomatyypin käyttöoikeusroolit** käyttöoikeusroolit. Käyttöoikeusroolit määritetään työnkulussa, jonka valitsit **Työnkulun tunnus** -kohdasta aiemmin tässä toimintosarjassa.
+11. Valitse **Kalenterin väri** -kohdassa, mikä väri näytetään tämän lomatyypin loma- ja poissaolokalentereissa.
+11. Valitse **Keskeytyssuhteet**-kohdassa haluatko, että tämä lomatyyppi keskeyttää toisen lomatyypin tai tulee toisen lomatyypin keskeyttämäksi. Kun poissaoloa koskeva poissaolopyyntö jätetään, keskeytetyn loman tyypiksi luodaan automaattisesti loman keskeytys.
+12. Valitse **Tallenna**.
 
 ## <a name="configure-leave-type-rules"></a>Lomatyypin sääntöjen määrittäminen
 
 1. Määritä **Loma ja poissaolo** -tyypin pyöristysasetukset. Vaihtoehtoja ovat **Ei mitään**, **Ylös**, **Alas** ja **Lähin**. Voit myös määrittää lomatyypin pyöristystarkkuuden.
-
 2. Määritä lomatyypin **Lomakorjaukset**. Kun valitset tämän vaihtoehdon, työpäivään kuuluvien lomien määrää käytetään sen määrittämiseen, miten lomatyypille voidaan jaksottaa aikaa. Jos esimerkiksi joulupäivä osuu maanantaihin, henkilöstöhallinto vähentää yhden päivän lomatyypistä jaksotusten käsittelyn yhteydessä.
 
    Voit määrittää lomat työaikakalenteriin. Lisätietoja on ohjeaiheessa [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md).
@@ -69,7 +77,7 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 
 1. Valitse **Loma ja poissaolo** -sivun **Linkit**-välilehden **Asetukset**-kohdassa **Loma- ja poissaolotyypit**.
 
-2. Valitse loma- ja poissaolotyyppi luettelosta. Määritä tämän jälkeen **Yleiset**-osassa **Liite pakollinen** -kenttää käyttämällä, onko liite ladattava, kun työntekijä lähettää uuden lomapyynnön valittua lomatyyppiä käyttäen. 
+2. Valitse **loma- ja poissaolotyyppi** luettelosta. Määritä **Yleiset**-osassa **Liite pakollinen** -kenttää käyttämällä, onko liite ladattava, kun työntekijä lähettää uuden lomapyynnön valittua lomatyyppiä käyttäen. 
 
 Työntekijöiden on ladattava liite, kun he lähettävät uuden lomapyynnön, jonka lomatyypissä **Liite pakollinen** -kenttä on käytössä. Lomapyynnön hyväksyjät voivat käyttää määritettyjen työnimikkeiden **Liitteet**-vaihtoehtoa tarkastellakseen liitettä, joka on ladattu lomapyynnön osana. Jos lomapyyntöä käytetään Human Resources -sovelluksesta Microsoft Teamsissä, **Näyttötiedot**-valintaa lomapyynnössä voidaan käyttää sen tietojen ja mahdollisten liitteiden tarkasteluun.
 

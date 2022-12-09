@@ -2,7 +2,7 @@
 title: Kirjanpidon selvitykset
 description: Tässä artikkelissa käsitellään tapaa, jolla Tapahtuman selvitykset -sivun avulla selvitetään kirjanpitotapahtumia ja tehdään käänteisiä tilityksiä.
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 39fd6c6677565a4b1e9a9bf6f43a4c630cb5e07b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6357629f83873437eb62a4839fafd8efd98fffc1
+ms.sourcegitcommit: 9041fa6e00ecbdf1a1880659d9bdfff4d888f20e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902484"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9800628"
 ---
 # <a name="ledger-settlements"></a>Kirjanpidon selvitykset
 
@@ -90,7 +90,12 @@ Voit tehdä tarvittaessa käänteisen tilityksen.
     > [!IMPORTANT]
     > Kaikki tapahtumat, joilla on sama tilitystunnus, palautetaan, vaikka niitä ei olisi merkitty. Esimerkiksi neljä riviä on merkitty ja selvitetty. Kaikilla neljällä rivillä on sama tilitystunnus. Jos merkitset jo jonkin näistä neljästä rivistä ja valitset sitten **Palauta merkityt tapahtumat**, kaikki neljä riviä palautetaan.
 
+## <a name="unmark-for-selected-users"></a>Merkinnän poistaminen valituille käyttäjille
+Valitse **Merkinnän poistaminen valituille käyttäjille** poistaaksesi kirjanpitoon täsmäytettyjen tapahtumien merkinnän kaikkien yritysten osalta käyttäjätunnuksen mukaan. Tämän avulla esimerkiksi laskentapäällikkö voi poistaa tapahtuman merkinnän lomalle lähteneen ja täsmäytyksen kesken jättäneen käyttäjän osalta tai organisaatiosta lähteneen käyttäjän osalta. Tämän toiminnon avulla toinen käyttäjä voi merkitä tapahtuman selvitettäväksi.
 
+
+## <a name="unmark-all-transactions"></a>Poista kaikkien tapahtumien merkinnät
+Valitse **Poista kaikkien tapahtumien merkinnät** poistaaksesi kaikkien kirjanpitoon täsmäytettyjen tapahtumien merkinnät kaikkien käyttäjien ja yritysten osalta käyttäjätunnuksen mukaan. Tämä toiminto on käytössä järjestelmänvalvojan roolille.
 
 
 

@@ -2,7 +2,7 @@
 title: Raporttien suunnitteluohjelman raporttikomponenttien järjestäminen
 description: Tässä artikkelissa käsitellään aiemmin luotujen Report Designerin raporttien, rakennusosien ja objektien järjestämistä.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6abad01232d05e94321d0d568d2e801d92875ae
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: a94a88114072792243026e441e6c5a62ee80fc56
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135876"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802685"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Järjestä Report Designerin raporttiosat
 
@@ -33,11 +33,11 @@ Voit nimetä uudelleen kansioita, raportteja, rakenneosia ja muita objekteja Rep
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Kansion tai rakenneosan nimeäminen uudelleen Report Designerissa
 Raporttien suunnitteluohjelmalla voidaan nimetä uudelleen kansiot sekä raportti-, rivi-, sarake- ja raporttipuumääritykset.
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Kansion tai rakenneosan nimeäminen uudelleen raporttien suunnitteluohjelmalla
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Kansion tai rakenneosan nimeäminen uudelleen Report Designerissa
 
 1. Etsi kansio tai kohde, jonka haluat nimetä uudelleen, käyttämällä raporttien suunnitteluohjelman siirtymisruutua.
 2. Valitse kansio tai objekti hiiren kakkospainikkeella ja valitse sitten **Nimeä uudelleen**. Siirtymisruudun **Nimi**-kenttä tulee käyttöön.
-3. Kirjoita uusi nimi ja paina sitten Enter-näppäintä.
+3. Kirjoita uusi nimi ja paina sitten **Enter**-näppäintä.
 4. Jos rakenneosa on rivin määritys, sarakkeen määritys tai raportointipuun määritys, muut siihen liitetyt rakenneosat on päivitettävä. Valitse ensin vaiheessa 3 uudelleennimetty rakenneosa hiiren kakkospainikkeella, valitse sitten **Liitokset** ja valitse lopuksi luettelosta päivitettävä kohde.
 5. Toista vaihe 4, kunnes kaikki liitokset on päivitetty.
 
@@ -60,7 +60,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 3. Tee tarvittavat muutokset **Raporttiryhmä**-välilehdessä.
 4. Tallenna muokattu raporttiryhmä valitsemalla **Tiedosto**-valikosta **Tallenna**. Voit myös napsauttaa **Tallenna**-painiketta ![Tallenna](media/save.gif "Tallenna") työkaluriviltä.
 
-> [HUOMAUTUS] Jos olet ajoittanut raporttien luonnin tapahtumaan tietyin väliajoin, voit ohittaa nämä asetukset ja luoda raportin heti.
+> [NOTE] Jos olet ajoittanut raporttien luonnin tapahtumaan tietyin väliajoin, voit ohittaa nämä asetukset ja luoda raportin heti.
 
 ### <a name="generate-a-report-group-report"></a>Raporttiryhmän raportin luonti
 
@@ -81,7 +81,7 @@ Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjek
 <thead>
 <tr>
 <th>Ohjausobjekti</th>
-<th>Kuvaus</th>
+<th>kuvaus</th>
 </tr>
 </thead>
 <tbody>
@@ -113,7 +113,7 @@ Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjek
 </tr>
 <tr>
 <td>Sisällytetään kaikki raportointivaluutat</td>
-<td>Mahdolliset Microsoft Dynamics ERP -järjestelmässä määritetyt lisäraportointivaluutat on lueteltu täällä. Valitsemalla tämän valintaruudun voit luoda lisäraportteja annetuissa valuutoissa. Niitä raportteja voi sitten tarkastella verkkokatseluohjelmassa napsauttamalla <strong>Valuutta</strong>-painiketta ja valitsemalla valuutan.</td>
+<td>Mahdolliset Microsoft Dynamics 365 Finance -järjestelmässä määritetyt lisäraportointivaluutat on lueteltu täällä. Valitsemalla tämän valintaruudun voit luoda lisäraportteja annetuissa valuutoissa. Niitä raportteja voi sitten tarkastella verkkokatseluohjelmassa napsauttamalla <strong>Valuutta</strong>-painiketta ja valitsemalla valuutan.</td>
 </tr>
 <tr>
 <td>Päivämäärätietoa ei ole tallennettu raportin määrityksiin</td>
@@ -145,7 +145,7 @@ Vain oletusarvoiset perusjaksoasetukset tallennetaan raportin määrityksiin.</t
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Taloushallinnon raportointi](financial-reporting-intro.md)
+[Talousraportointi](financial-reporting-intro.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

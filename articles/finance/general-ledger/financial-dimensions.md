@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
-ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
+ms.openlocfilehash: adfa2c1164550e32b07da25de0d96aa82430b980
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680355"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799623"
 ---
 # <a name="financial-dimensions"></a>Taloushallinnon dimensiot
 
@@ -136,6 +136,12 @@ Voit määrittää johdetut dimensioiden segmentit ja arvot yksikköjen avulla.
 - Johdetun dimension arvon yksikön avulla voit tuoda arvot, jotka on johdettava kullekin ohjaavalle dimensiolle.
 
 Kun käytät yksikköä tietojen tuontiin, jos tämä yksikkö tuo dimensioita, tuonnin aikana sovelletaan johdetun dimension sääntöjä, jollei yksikkö nimenomaisesti korvaa näitä dimensioita.
+
+## <a name="financial-dimension-service"></a>Taloushallinnon dimension palvelu
+
+Taloushallinnon dimension palvelun lisäosa on käytettävissä Microsoft Dynamics Lifecycle Services -ympäristössäsi. Se parantaa suorituskykyä, kun käytät tiedonhallintaa paljon rivejä sisältävän kirjauskansion tuontiin. Jos haluat käyttää tätä palvelua, se on otettava käyttöön **Taloushallinnon dimension palveluparametrit** -sivulla. Palvelu toimii tällä hetkellä vain tuoduissa kirjauskansioissa, joissa on 500 riviä tai enemmän. Lisäksi se voi käsitellä tällä hetkellä vain yleisiä kirjauskansioita, joissa **Kirjanpito**-tilityyppi on määritetty kirjauskansion riveillä. Muita kirjauskansion rivien tilityyppejä, kuten **asiakas**, **toimittaja** ja **pankki**, ei tällä hetkellä tueta. Tätä palvelua ei käynnistetä, kun johdetut dimensiot on määritetty järjestelmässä.
+
+Taloushallinnon dimension palvelu parantaa suorituskykyä, kun kirjauskansioita tuodaan käyttämällä uutta palvelua, joka toimii rinnakkain tiedon tuonnin kanssa. Se toimii kirjauskansiossa vain päätilin ja taloushallinnon dimension tiedoissa ja muodostaa dimensioyhdistelmät, jotka on määritetty kirjanpitotilin merkkijonokentässä kirjauskansion riveillä. Käsittely muuntaa tämän merkkijonon rakenteiseksi tietovarastoksi, jota taloushallinnon dimensio käyttää koko tuotteessa vahvistusta, yhteenvetoraportointia ja kyselyjä varten. Lisätietoja taloushallinnon dimension tietojen yhteenvetoraportoinnista: [Taloushallinnon dimensioyhdistelmät](financial-dimension-sets.md).
 
 Lisätietoja on seuraavissa aiheissa:
 

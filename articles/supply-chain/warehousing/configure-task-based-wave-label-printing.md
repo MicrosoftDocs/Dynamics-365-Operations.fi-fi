@@ -2,7 +2,7 @@
 title: Aallon etikettien tulostamisen ajoittaminen aallon aikana
 description: Tässä artikkelissa kuvataan, miten tehtäväpohjaisen aallon etikettien tulostustoiminnon voi määrittää ja käyttää.
 author: perlynne
-ms.date: 06/09/2021
+ms.date: 12/02/2022
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e788e5a9206e46ada6490d4a0196c7ea8ca6af15
+ms.sourcegitcommit: 04e42c495d018e457fb3b038cadc4fe75ecbba12
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889454"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9822359"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Aallon etikettien tulostamisen ajoittaminen aallon aikana
 
@@ -32,7 +32,6 @@ Kun käytät *Tehtäväpohjaista aallon etikettien tulostustoimintoa*, järjeste
 
 Jos haluat käyttää tässä artikkelissa kuvattuja ominaisuuksia, niiden on oltava käytössä järjestelmässäsi. Ota [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa käyttöön ominaisuudet seuraavassa järjestyksessä:
 
-1. *Aallon etikettien tulostus* – Tämä ominaisuus on pakollinen, jotta voit aaltoprosessimenetelmässä ottaa käyttöön aallon etikettien tulostuksen.
 1. *Organisaation laajuinen töiden esto* – Tämä ominaisuus tarvitaan ajoitetun työn luomisen sekä manuaaliseen että automaattiseen määritykseen. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
 1. *Tehtäväpohjainen aallon etikettien tulostaminen* – Tätä toimintoa tarvitaan, jotta aallon etiketti voidaan jakaa erilliseen tapahtuma-alueeseen.
 

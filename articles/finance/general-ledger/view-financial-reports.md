@@ -2,7 +2,7 @@
 title: Näytä raportit
 description: Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 Financessa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f932bbef2543e4894c65b9a04c1ef66f1b3ab8e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907889"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802388"
 ---
 # <a name="view-financial-reports"></a>Näytä raportit
 
@@ -31,7 +31,7 @@ Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin p
 ## <a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
 
 ## <a name="open-a-financial-report"></a>Avaa taloudellinen raportti
-Voit avata raportin valitsemalla raportin nimen. Kun raportti avataan ensimmäistä kertaa, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2015, raportti luotiin päivämäärälle 31.7.2015. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
+Voit avata raportin valitsemalla raportin nimen. Kun raportti avataan ensimmäistä kertaa, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2020, raportti luotiin päivämäärälle 31.7.2020. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
 
 ## <a name="drill-down-on-a-financial-report"></a>Raportin tietoihin perehtyminen
 Taloudelliset raportit voivat sisältää useita yksityiskohtaisia tasoja. Taloushallinnon taso on ensimmäinen taso jonka näet, kun avaat taloushallinnon raportin. Siirtyäksesi kirjanpitotasoon, valitse tiedot joihin haluat perehtyä. Esimerkiksi, tarkastellaksesi tilin myyntitietoja, valitse myyntitiedot, joita haluat tutkia. Kirjanpitotasolta, voit mennä alaspäin tarkastelemaan tapahtumia, joista tilin saldo muodostuu. Voit tarkastella tapahtumia kahdella tavalla: raportin tapahtumat ja tositetapahtumat.
@@ -46,12 +46,12 @@ Voit lisätä ominaisuus- ja dimensiosuodattimia tai vaihtaa budjettisuunnitelma
 
 -   Käyttääksesi raportissa ominaisuus suodattimia, valitse **lisää ominaisuus suodatin**. Valitse määrite, näppäile määritteen arvo ja klikkaa sitten **OK**. Esimerkiksi jos valitset **tililuokka**-määritteen, syötä **myynti** määritteen arvona. Poistaaksesi määritte-suodattimen, klikkaa **poista**.
 -   Käyttääksesi raportissa dimensioiden suodattimia, valitse **Lisää dimension suodatin**. Valitse dimensio ja kirjoittaa joko dimensiotunnus tai valitse dimensio luettelosta. Poistaaksesi dimensiosuodattimen, klikkaa **poista**.
--   Muuttaaksesi skenaariota **todellinen vs. budjetti** -raportissa, valitse uusi skenaario ja valitse sitten **OK**. Jos valittu skenaario on eri tilikaudelle, tuloksia ei palauteta. Jos esimerkiksi raportti luodaan FY2015:lle ja nykyinen skenaario on FY2015 ja uusi valittu skenaario on FY2016, tuloksia ei palauteta. Jos tarvitaan uusi skenaario eri tilikaudelle, luo skenaarioon liittyvä uusi raportti tilikaudelle.
+-   Muuttaaksesi skenaariota **todellinen vs. budjetti** -raportissa, valitse uusi skenaario ja valitse sitten **OK**. Jos valittu skenaario on eri tilikaudelle, tuloksia ei palauteta. Jos esimerkiksi raportti luodaan FY2015:lle ja nykyinen skenaario on FY2020 ja uusi valittu skenaario on FY2016, tuloksia ei palauteta. Jos tarvitaan uusi skenaario eri tilikaudelle, luo skenaarioon liittyvä uusi raportti tilikaudelle.
 
 Kun klikkaat **OK**, kaikki valitsemasi vaihtoehdot käytetään raporttiin. Jos päätät, että et halua käyttää valittuja asetuksia, klikkaa **peruuta**.
 
 ## <a name="update-a-financial-report"></a>Päivitä talousraportti
-Voit päivittää (päivitys) talousraportin siten, että siinä näkyy kaikkein viimeisimmät tiedot sille vuodelle ja kaudelle, jolle raportti luotiin. Jos esimerkiksi päivität talousraportin, joka on luotu lokakuulle 2015, raportti sisältää kaikki uudet lokakuulle 2015 kirjatut tapahtumat. Päivitä raportti valitsemalla toimintoruudussa **Päivitä**. Päivitetty raportti on saatavissa vain sen päivittäneelle henkilölle. Raportti on julkaistava, jotta muut käyttäjät näkevät samat tiedot.
+Voit päivittää (päivitys) talousraportin siten, että siinä näkyy kaikkein viimeisimmät tiedot sille vuodelle ja kaudelle, jolle raportti luotiin. Jos esimerkiksi päivität talousraportin, joka on luotu lokakuulle 2020, raportti sisältää kaikki uudet lokakuulle 2020 kirjatut tapahtumat. Päivitä raportti valitsemalla toimintoruudussa **Päivitä**. Päivitetty raportti on saatavissa vain sen päivittäneelle henkilölle. Raportti on julkaistava, jotta muut käyttäjät näkevät samat tiedot.
 
 ## <a name="publish-a-financial-report"></a>Julkaise talousraportti
 Kun olet päivittänyt talousraportin, voit julkaista sen. Organisaation muut käyttäjät voivat sitten tarkastella sitä. Julkaistaksesi raportin toimintoruudussa, klikkaa **julkaise**.

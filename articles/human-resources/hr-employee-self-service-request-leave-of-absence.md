@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51c6cb7c5706bb4bd7080c7f7d679e49771443d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e6c98246e94670dd5f882fcbbd1f269e57f66faf
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869833"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805284"
 ---
 # <a name="request-a-leave-of-absence"></a>Virkavapaan pyytäminen
 
@@ -51,6 +51,22 @@ Voit lähettää poissaoloja koskevan pyynnön ja tarkastella lomapyyntöjen til
 1. Valitse **työntekijän itsepalvelu** -työtilassa **Lisää** (…) **Vapaasaldot**-ruudusta.
 
 2. Jos haluat tarkastella virkavapaapyyntöjäsi, valitse **Näytä virkavapaapyyntö**.
+
+## <a name="update-a-leave-of-absence-request"></a>Virkavapaapyynnön päivittäminen
+
+1. Valitse **työntekijän itsepalvelu** -työtilassa, **Virkavapaa**-ruudussa **Lisää (...)**.
+2. Valitse päivitettävä virkavapaapyyntö ja valitse sitten **Päivitä virkavapaa**.
+3. Päivitä **Päättymispäivä**-kentässä arvo, joka vastaa virkavapaan pidentämistä tai lyhentämistä.
+4. Jos päättymispäivä on vahvistettu, määritä **Vahvista päättymispäivä** arvoon **Kyllä**.
+5. Kun **Vahvista päättymispäivä** on määritetty arvoon **Kyllä**, voit ladata ilmoituksen työhön palaamisesta. Valitse sitten valintaruutu vahvistaaksesi, että ilmoitus työhön palaamisesta on ladattu.
+6. Valitse **Lähetä** päivittääksesi virkavapaapyynnön.
+
+## <a name="cancel-a-leave-of-absence-request"></a>Virkavapaapyynnön peruuttaminen
+
+1. Valitse **työntekijän itsepalvelu** -työtilassa, **Virkavapaa**-ruudussa **Lisää (...)**.
+2. Valitse peruutettava virkavapaapyyntö ja valitse sitten **Päivitä virkavapaa**.
+3. Määritä **Peruuta loma** -asetukseksi **Kyllä**.
+4. Valitse **Lähetä** peruuttaaksesi virkavapaapyynnön.
 
 ## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Lomapyyntöjen tuominen muista järjestelmistä tai vanhemmista järjestelmistä
 

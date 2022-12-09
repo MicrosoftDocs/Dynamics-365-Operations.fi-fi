@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
-ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
+ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2022
-ms.locfileid: "9775402"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805311"
 ---
 # <a name="proactive-quality-updates"></a>Ennakoivat laatupäivitykset
 
@@ -105,19 +105,19 @@ Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut yllä
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.29
 **Sovellusversio: 10.0.1326.70**  
-**Vastaava uusin tietokanta-artikkeli: 748926**
+**Vastaava uusin tietokanta-artikkeli: 750332**
 
 | Asema | Alueet | Valmis aikataulu | Tuleva eristysympäristön aikataulu|
 |---|---|---|---|
-| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 14.–17. lokakuuta 2022 ja 2.–5. marraskuuta 2022 | 13.–16. marraskuuta 2022 |
-| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 15.–18. lokakuuta 2022 ja 2.–5. marraskuuta 2022 | 13.–16. marraskuuta 2022 |
-| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 16.–19. lokakuuta 2022 ja 2.–5. marraskuuta 2022 | 13.–16. marraskuuta 2022 |
-| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 17.–20. lokakuuta 2022 ja 2.–5. marraskuuta 2022 | 15.–18. marraskuuta 2022 |
+| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 14.–17.10.2022, 2.–5.11.2022, 13.–16.11.2022 | 5.–8. joulukuuta|
+| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 15.–18.10.2022, 2.–5.11.2022, 13.–16.11.2022 | 5.–8. joulukuuta|
+| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 16.–19.10.2022, 2.–5.11.2022, 13.–16.11.2022 | 5.–8. joulukuuta|
+| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 17.–20.10.2022, 2.–5.11.2022, 15.–18.11.2022 | 5.–8. joulukuuta|
 | Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu | Ei suunniteltu |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.30
-**Sovellusversio: Päätetään myöhemmin**
-**Vastaava uusin tietokanta-artikkeli: Päätetään myöhemmin**
+**Sovellusversio: 10.0.1362.77**
+**Vastaava uusin tietokanta-artikkeli: 767597**
 
 | Asema | Alueet | Tuleva eristysympäristön aikataulu |
 |---|---|---|
@@ -147,14 +147,14 @@ Microsoft pyrkii pitämään julkaisuputken riittävän tehokkaana, jotta piente
 Ei Laatupäivitysten tärkein tavoite on varmistaa, että asiakkaiden käytettävissä olevat perusominaisuudet kuten tietosuoja, yksityisyys, luotettavuus, saatavuus ja suorituskyky paranevat jatkuvasti. Jos päivitystä viivytetään tai jos se keskeytetään, tietosuoja, saatavuus ja luotettavuus voivat olla vaarassa.
 
 ## <a name="how-do-i-know-what-set-of-changes-went-into-a-quality-update-payload"></a>Miten tiedän, mikä muutosjoukko laatupäivityksen tiedoissa on?
-Seuraavat vaiheet ovat tilapäinen ratkaisu, sillä selvitämme jatkamme aiempaa paremman ratkaisun etsimistä määrittääksemme niiden muutosten luettelon, jotka siirtyvät laatupäivityksen tietoihin. 
+Noudata seuraavia ohjeita ja tunnista muutosluettelo, joka siirtyy laatupäivitykseen. 
 
-Käytä laatupäivityksen julkaisujonon tietopankkia numero 745340 ja liittyvää sovellusversiota 10.0.1265.89.
+Käytä laatupäivityksen julkaisujonon tietopankkia numero 10.0.28 ja liittyvää sovellusversiota 10.0.1265.89.
 
 1. Avaa Lifecycle Services -portaalista eristysympäristösi **Ympäristön tiedot** -sivu. 
 2. Valitse **Käytettävissä olevat päivitykset** -osassa uusimman laatupäivityksen koontiversion **Näytä päivitys** -kohta. 
 3. Vie koontiversio CSV- tai Microsoft Excel -tiedostoon.
-4. Lajittele viedyn tiedoston tiedot ajan perusteella (vanhin ensimmäisenä) ja hae sitten tietopankin numeroa 745340 **Päivitystunnus**-sarakkeessa. Näkyvissä on nyt tietopankkien deltaluettelo.
+4. Suodata ja valitse viedyssä tiedostossa **Koontiversio**, jonka numero on pienempi tai yhtä suuri kuin 10.0.1265.89. Näkyvissä tulisi nyt olla deltatiedot.
  
 > [!NOTE]
 > Vienti CSV- tai Excel-tiedostoon on tehtävä, ennen kuin ympäristö päivitetään. Muussa tapauksessa voit käyttää ympäristöä samanlaisilla määrityksellä, johon ei ole asennettu päivitystä, ja noudattaa yllä olevia ohjeita.
@@ -185,8 +185,8 @@ Jos löytyy ristiriita ennalta ajoitetuissa toiminnoissa, kuten tietyn ajankohda
 ## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Voiko ympäristön tuoda takaisin aiempaan tilaan, jos laatupäivityksen jälkeen on ongelmia?
 Kun laatupäivitys on otettu käyttöön, ei voi palata aiempaan tilaan missään olosuhteissa. Käytettävissä ovat vain korjaustiedoston etenemisvalinnat, joiden avulla ongelmia voi pienentää.
 
-## <a name="what-about-fda-regulation-and-gpx"></a>Miten FDA-säännökset ja GPX toimivat?
-Suunnitelma niitä asiakkaita varten, joita koskevat FDA-vahvistus ja -säädökset, on yhä kehitettävänä. Ilmoitamme päivityksistä tässä pian. Tällä hetkellä kaikki asiakkaat on vapautettu laatupäivityksistä. Varmista, että asiakas käyttää FDA-säännöksiä, kohdassa [Microsoft Azure GPX -tarjooma](/azure/compliance/offerings/offering-gxp).
+## <a name="what-about-fda-regulation-and-gxp"></a>Miten FDA-säännökset ja GxP toimivat?
+Suunnitelma niitä asiakkaita varten, joita koskevat FDA-vahvistus ja -säädökset, on yhä kehitettävänä. Ilmoitamme päivityksistä tässä pian. Tällä hetkellä kaikki asiakkaat on vapautettu laatupäivityksistä. Varmista, että asiakas käyttää FDA-säännöksiä, kohdassa [Microsoft Azure GxP -tarjooma](/azure/compliance/offerings/offering-gxp).
 
 ## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Mitä huoltopäivitysten versioita nämä laatupäivitykset tukevat?
 Kaikkien laatupäivitysten huoltopäivitysten tuettujen versioiden asiakkaat. 

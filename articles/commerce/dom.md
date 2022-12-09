@@ -1,26 +1,21 @@
 ---
 title: Jaettu tilausten hallinta (DOM)
-description: Tässä artikkelissa käsitellään Dynamics 365 Commercen jaetun tilausten hallinnan (DOM) toimintoja.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Commercen jaetun tilausten hallinnan (DOM) toimintoja.
 author: josaw1
-ms.date: 02/08/2022
+ms.date: 11/16/2022
 ms.topic: index-page
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: cfb89544580141ed397d27886f51fd0f1ac138d2
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764176"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785177"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (DOM)
 
@@ -34,9 +29,14 @@ Jaettu tilausten hallinta käyttää sekalukuohjelmointia (MIP) ja ennakoivia an
 
 Seuraavassa kuvassa on myyntitilauksen elinkaari jaetussa tilauksen hallintajärjestelmässä.
 
-![Myyntitilauksen elinkaari jaetussa tilauksen hallintakontekstissa](./media/flow.png "Myyntitilauksen elinkaari jaetussa tilauksen hallintakontekstissa")
+![Myyntitilauksen elinkaari jaetun tilausten hallinnan kontekstissa](./media/flow.png "Myyntitilauksen elinkaari jaetussa tilauksen hallintakontekstissa")
 
-## <a name="set-up-dom"></a>DOM:n määrittäminen
+Seuraava video antaa yleiskuvan Dynamics 365 Commercen jaetun tilausten hallinnan ominaisuuksista
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
+
+## <a name="set-up-dom"></a>Jaetun tilausten hallinnan määrittäminen
 
 1. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**.
 2. Laajenna **Konfigurointiavaimet**-välilehdessä **Commerce**-solmu ja valitse **Jaettu tilausten hallinta** -valintaruutu.

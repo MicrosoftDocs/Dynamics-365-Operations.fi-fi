@@ -2,7 +2,7 @@
 title: Report Designer -ohjelman käyttöliittymä
 description: Tässä artikkelissa käsitellään Report Designerissa liikkumista ja omia tarpeita vastaamien asetusten käyttämistä.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.form: FinancialReports
-ms.openlocfilehash: 3bc3ddb9f04f7f6f2a63b2ecccfe04fbaf2eadfc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25d913e6f5d4c95dceda1291a2c33abe37348574
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274724"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802739"
 ---
 # <a name="report-designer-interface"></a>Report Designer -ohjelman käyttöliittymä
 
@@ -67,19 +67,19 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Tyhjennä                                  | Poista valitun rakenneosan solun sisältö. |
 | Etsi                                   | Avaa **Etsi ja korvaa** -valintaikkuna, jossa voit hakea tekstiä näkymäruudussa. |
 | Korvaa                                | Avaa **Etsi ja korvaa** -valintaikkuna, jossa voit hakea ja korvata tekstiä näkymäruudussa. |
-| Lisää rivejä dimensioista            | Avaa **Lisää rivejä dimensioista** -valintaikkuna, jossa voi valita rivin määritykseen sisällytettäviä dimensioarvoja. Tämä komento on käytettävissä rivin määrityksestä. |
+| Lisää rivit dimensioista            | Avaa **Lisää rivejä dimensioista** -valintaikkuna, jossa voi valita rivin määritykseen sisällytettäviä dimensioarvoja. Tämä komento on käytettävissä rivin määrityksestä. |
 | Numeroi rivit uudelleen                          | Numeroi kaikki numeeriset rivien koodit uudelleen. Tämä komento on käytettävissä rivin määrityksestä. |
-| Rivien linkit                              | Avaa **Rivien linkit** -valintaikkuna, jossa voi määrittää rivien ja raportointipuiden määritysten tietolinkkien lähteet. Tämä komento on käytettävissä rivin määrityksestä. |
-| Pyöristyksen oikaisu                    | Avaa **Pyöristysten oikaisut** -valintaikkuna, jossa voi määrittää pyöristyksen parametrit. Tämä komento on käytettävissä rivin määrityksestä. |
-| Hallitse dimensioyhdistelmiä                  | Avaa **Dimensioyhdistelmät**-valintaikkuna, jossa voi luoda ja muokata dimensiojoukkoja. Tämä komento on käytettävissä rivin tai raportointipuun määrityksestä. |
+| Rivilinkit                              | Avaa **Rivien linkit** -valintaikkuna, jossa voi määrittää rivien ja raportointipuiden määritysten tietolinkkien lähteet. Tämä komento on käytettävissä rivin määrityksestä. |
+| Pyöristysoikaisu                    | Avaa **Pyöristysten oikaisut** -valintaikkuna, jossa voi määrittää pyöristyksen parametrit. Tämä komento on käytettävissä rivin määrityksestä. |
+| Dimensioyhdistelmien hallinta                  | Avaa **Dimensioyhdistelmät**-valintaikkuna, jossa voi luoda ja muokata dimensiojoukkoja. Tämä komento on käytettävissä rivin tai raportointipuun määrityksestä. |
 | Lisää rivi                             | Lisää tyhjä rivi rivin määritykseen tai tyhjään otsikkoriviin sarakkeen määrityksestä. Tämä komento on käytettävissä rivin tai sarakkeen määrityksestä. |
 | Poista rivi                             | Poista valittu rivi rivin määrityksestä tai valitusta otsikkorivistä sarakkeen määrityksessä. Tämä komento on käytettävissä rivin tai sarakkeen määrityksestä. |
 | Lisää sarake                          | Lisää tyhjä sarake sarakkeen määritykseen. Tämä komento on käytettävissä sarakkeen määrityksestä. |
 | Poista sarake                          | Poista valittu sarake sarakkeen määrityksestä. Tämä komento on käytettävissä sarakkeen määrityksestä. |
-| Lisää raportointiyksiköitä dimensioista | Avaa **Lisää raportointiyksiköitä dimensioista** -valintaikkuna, jossa voi valita raportointipuun määritykseen sisällytettäviä dimensioarvoja. Tämä komento on käytettävissä raportointipuun määrityksestä. |
+| Lisää raporttiyksiköt dimensioista | Avaa **Lisää raportointiyksiköitä dimensioista** -valintaikkuna, jossa voi valita raportointipuun määritykseen sisällytettäviä dimensioarvoja. Tämä komento on käytettävissä raportointipuun määrityksestä. |
 | Tuo dimensioyhdistelmän hierarkia         | Avaa **Dimensioyhdistelmän hierarkia** -valintaikkuna, jossa voit tuoda dimensioyhdistelmän hierarkian taloushallinnon tiedoista. Tämä komento on käytettävissä järjestelmässä raportointipuun määrityksestä ..\\financial-dimensions\\dimension-based. |
 | Lisää raporttiyksikkö                  | Lisää tyhjä rivi raportointipuun määritykseen. Tämä komento on käytettävissä raportointipuun määrityksestä. |
-| Poista raportointiyksikkö                  | Poista valittu raportointiyksikön rivi raportointipuun määrityksestä. Tämä komento on käytettävissä raporttipuumäärityksestä. |
+| Poista raporttiyksikkö                  | Poista valittu raportointiyksikön rivi raportointipuun määrityksestä. Tämä komento on käytettävissä raporttipuumäärityksestä. |
 
 ### <a name="view-menu"></a>Näytä-valikko
 
@@ -96,7 +96,7 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 
 **Muotoilu**-valikko on niiden käyttäjien käytettävissä, joilla on **suunnittelijan** tai **järjestelmänvalvojan** rooli. Tämä valikko sisältää alla esiteltävät komennot.
 
-| Komento               | Kuvaus |
+| Komento               | kuvaus |
 |-----------------------|-------------|
 | Tyylit ja muotoilu | Avaa **Tyyli ja muotoilu** -valintaikkuna, jossa voi luoda ja muokata rivien ja sarakkeiden määritysten tekstin tyyliä. Tämä komento on käytettävissä rivin tai sarakkeen määrityksestä. |
 | Sarakkeen leveys          | Avaa **Sarakkeen leveys** -valintaikkuna, jossa voi määrittää valitun sarakkeen leveyden. Tämä komento on käytettävissä rivin, sarakkeen tai raportointipuun määrityksestä. |
@@ -194,18 +194,18 @@ Vakiotyökalurivi mahdollistaa tiedostojen ja muokkauskomentojen nopean käyttä
 
 Muotoilutyökalurivin avulla tyylikomennot on helppo ottaa käyttöön. Tämä työkalurivi sisältää seuraavat painikkeet.
 
-| Painike                                                                                                       | kuvaus                                             |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Fonttityyli-painike.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Ota valittu fonttityyli käyttöön nykyisessä tekstissä.      |
-| [![Fontti-painike.](./media/fonttype.png)](./media/fonttype.png)                                                 | Määritä nykyinen teksti valitulla fontilla.              |
+| Painike                                                                                                       | kuvaus                                           |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| [![Fonttityyli-painike.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Ota valittu fonttityyli käyttöön nykyisessä tekstissä.   |
+| [![Fontti-painike.](./media/fonttype.png)](./media/fonttype.png)                                                 | Määritä nykyinen teksti valitulla fontilla.           |
 | [![Fonttikoko-painike.](./media/fontsize.png)](./media/fontsize.png)                                            | Määritä nykyinen teksti valitulla fonttikoolla (pisteinä). |
-| [![Lihavoi-painike.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Lihavoi nykyinen teksti.                             |
-| [![Kursivoi-painike.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Kursivoi nykyinen teksti.                           |
-| [![Alleviivaa-painike.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Alleviivaa nykyinen teksti.                             |
-| [![Pienennä sisennystä -painike.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Pienennä nykyisen tekstin sisennystä.                |
-| [![Suurenna sisennystä -painike.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Suurenna nykyisen tekstin sisennystä.                |
-| [![Taustaväri-painike.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Muuta nykyisen solun taustaväriä.        |
-| [![Fontin väri -painike.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Muuta nykyisen tekstin väriä.                   |
+| [![Lihavoi-painike.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Lihavoi nykyinen teksti.                          |
+| [![Kursivoi-painike.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Kursivoi nykyinen teksti.                        |
+| [![Alleviivaa-painike.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Alleviivaa nykyinen teksti.                          |
+| [![Pienennä sisennystä -painike.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Pienennä nykyisen tekstin sisennystä.             |
+| [![Suurenna sisennystä -painike.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Suurenna nykyisen tekstin sisennystä.             |
+| [![Taustaväri-painike.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Muuta nykyisen solun taustaväriä.     |
+| [![Fontin väri -painike.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Muuta nykyisen tekstin väriä.                |
 
 ### <a name="report-designer-toolbar"></a>Report Designer -työkalurivi
 
@@ -213,9 +213,9 @@ Reporter Designer -työkaluriviltä voi käyttää nopeasti Report Designerin si
 
 | Painike                                                                                              | kuvaus |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Raportin määritys -painike.](./media/reportc130389.png)](./media/reportc130389.png)                 | Näytä **Ikkuna**-valikossa näkyvä raportin määritys. |
-| [![Rivin määritys -painike.](./media/rowc130389.png)](./media/rowc130389.png)                          | Näyttää aktiivisen raportin määritykseen liitetyn rivin määrityksen. |
-| [![Sarakkeen määritys -painike.](./media/columnc130389.png)](./media/columnc130389.png)                 | Näyttää aktiivisen raportin määritykseen liitetyn sarakkeen määrityksen. |
+| [![Raportin määritys -painike.](./media/reportc130389.png)](./media/reportc130389.png)            | Näytä **Ikkuna**-valikossa näkyvä raportin määritys. |
+| [![Rivin määritys -painike.](./media/rowc130389.png)](./media/rowc130389.png)             | Näyttää aktiivisen raportin määritykseen liitetyn rivin määrityksen. |
+| [![Sarakkeen määritys -painike.](./media/columnc130389.png)](./media/columnc130389.png)  | Näyttää aktiivisen raportin määritykseen liitetyn sarakkeen määrityksen. |
 | [![Raportointipuun määritys -painike.](./media/treec130389.png)](./media/treec130389.png)             | Näyttää aktiivisen raportin määritykseen liitetyn raportointipuun määrityksen. |
 | [![Report Viewer -painike.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Käynnistä Report Viewer ja näytä luodun raportin uusin versio. Tämä painike on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti. |
 | [![Luo raportti -painike.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Luo raportti aktiivisesta raporttimäärityksestä. Tämä painike on käytettävissä raporttimäärityksessä. |

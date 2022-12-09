@@ -2,7 +2,7 @@
 title: Tarkastele ja suunnittele talousraportteja
 description: Tässä artikkelissa on harjoituksia, joissa selitetään, miten raportteja tarkastellaan ja luodaan Microsoft Dynamics 365 Financessa.
 author: jcart1106
-ms.date: 10/02/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.form: FinancialReportingSetup
-ms.openlocfilehash: b6709f90065c91c55a489f101da430db33355a75
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 92474e7b99af7d83b2089b6652558630c60824c1
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9273422"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799515"
 ---
 # <a name="view-and-design-financial-reports"></a>Tarkastele ja suunnittele ja raportteja
 
@@ -51,30 +51,30 @@ Tässä harjoituksessa luodaan ja tutustutaan nykyiseen oletusraporttiin. Tämä
     > [!NOTE]
     > Järjestelmä pyytää lataamaan yhden napsautuksen raporttien suunnitteluohjelman ja kirjautumaan sisään. Kirjaudu sisään tunnistetietojesi avulla.
 
-7. Muuta perusvuodeksi 2012 ja valitse **Luo**. Kun raportti luodaan raportin suunnittelijalla, se avautuu uudessa selaimen välilehdessä. Voit joko tutkia raporttia selaimen uudessa välilehdessä tai mennä alkuperäiseen selaimen välilehteen ja avata raportin siellä valitsemalla sen **Tilinpäätökset**-luettelosta.
+7. Muuta perusvuodeksi 2021 ja valitse **Luo**. Kun raportti luodaan raportin suunnittelijalla, se avautuu uudessa selaimen välilehdessä. Voit joko tutkia raporttia selaimen uudessa välilehdessä tai mennä alkuperäiseen selaimen välilehteen ja avata raportin siellä valitsemalla sen **Tilinpäätökset**-luettelosta.
 8. Valitse yksi summista perehtyäksesi raportin tilitietoihin avatussa raportissa.
 9. Kun olet tilitiedoissa, valitse tili, jossa on tietoja, ja **perehdy raporttiin tapahtumatasolla**. Raportin tapahtumatasolla näet ominaisuudet (määritteet), jotka sisältyvät raportin rakenteeseen. Tapahtumasta ja tilistä riippuen voit nähdä vähintään yhden määritteen.
 10. Sulje raportin tapahtumataso.
-11. Valitse sama tai eri tili ja **avaa tositetapahtumat**. Tositetapahtumat suodatetaan jakson, vuoden ja tilin + valitun tilin dimensioiden yhdistelmän mukaan. Tositetapahtumissa, voit tutustua tapahtuman muihin tietoihin.
-12. Sulje tositetapahtumat. Taloushallinnon raportissa voit tarkastella tietoja joko eri jaksoilta ja vuodelta, tai eri ominaisuuksia ja dimensioita käyttäen. Tämä tehdään käyttämällä **Raporttiasetuksia**.
+11. Valitse sama tai eri tili ja **avaa tositetapahtumat**. Tositetapahtumat suodatetaan jakson, vuoden ja tilin + valitun tilin dimensioiden yhdistelmän mukaan. **Tositetapahtumissa** voit tutustua tapahtuman muihin tietoihin.
+12. Sulje **tositetapahtumat**. Taloushallinnon raportissa voit tarkastella tietoja joko eri jaksoilta ja vuodelta, tai eri ominaisuuksia ja dimensioita käyttäen. Tämä tehdään käyttämällä **Raporttiasetuksia**.
 13. Valitse **Raporttivaihtoehto**.
 14. Valitse **Lisää dimensiosuodatin** ja valitse **Liiketoimintayksikkö**.
-15. Kirjoita 001 kenttään ja valitse **OK**. Raportissa näkyy nyt vain 001 liiketoimintayksikön tiedot. Tämä on raportin mukautettu näkymä eivätkä muut voi tarkastella sitä.
+15. Syötä **001** kenttään ja valitse **OK**. Raportissa näkyy nyt vain 001 liiketoimintayksikön tiedot. Tämä on raportin mukautettu näkymä eivätkä muut voi tarkastella sitä.
 16. Sulje suodatettu raportti. Raportit voidaan näyttää millä tahansa sovellukseen lisättynä valuuttana.
 17. Valitse **Valuutta**, sitten valitse **EUR**. Raportti näkyy nyt euroina. Kaikki valuuttakoodit tai symbolit, jotka sisältyvät raportin rakenteeseen, näkyvät nyt sovelettuna valuuttana. Jos valuutalle ei ole määritetty valuuttatunnusta, valuuttasymbolia ei näytetä.
 18. Sulje **Kirjanpidon tiedot** -raportti.
 19. Sulje **Raportin suunnittelija**.
 
 ## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Harjoitus 2: Lisää muita tiliominaisuuksia raportin rakenteeseen
-Tässä harjoituksessa muokataan nykyistä oletusraporttia. Päivität sekä rivimäärityksen sisältämään kaikki tilit että sarakemäärityksen sisältämään tilin määritteet. Kun päivitykset ovat valmiit, luot juuri valmistuneen raportin ja tutkit raporttia. Aloitamme talousraporttiluettelosta.
+Tässä harjoituksessa muokataan nykyistä oletusraporttia. Päivität sekä rivimäärityksen sisältämään kaikki tilit että sarakemäärityksen sisältämään tilin määritteet. Kun päivitykset ovat valmiit, luot juuri valmistuneen raportin ja tutkit raporttia. Aloitamme **talousraporttiluettelosta**.
 
-1. Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
+1. Siirry **Tilinpäätökset** kohdassa **Kyselyitä ja raportit** kirjanpidossa.
 2. Valitse raportin rivi **Koetaseen yhteenveto: oletusarvo**.
 3. Valitse **Muokkaa**. **Koetaseen yhteenveto – oletusarvo** avautuu raportin suunnittelussa.
-4. Valitse **Tiedosto**, sitten **Tallenna nimellä** ja anna raportille nimeksi "Saldoraportti ominaisuuksilla".
+4. Valitse **Tiedosto**, sitten **Tallenna nimellä** ja anna raportille nimeksi **Saldoraportti ominaisuuksilla**.
 
     > [!NOTE]
-    > Aina kun uusi raportti luodaan raportin suunnittelussa, tilinpäätösten luettelo päivitetään.
+    > Aina kun uusi raportti luodaan raportin suunnittelussa, **tilinpäätösten** luettelo päivitetään.
 
 5. Valitse rivinmääritys kuvake oletusraportista, avataksesi **Pääkirja – oletusrivin määritys**.
 6. Tallenna rivimääritys nimellä **Saldoraportti ominaisuuksilla**.
@@ -107,7 +107,7 @@ Tässä harjoituksessa muokataan nykyistä oletusraporttia. Päivität sekä riv
 26. Sulje **Raportin suunnittelija**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Harjoitus 3: Luo moniulotteinen raportti käyttämällä raportointipuuta
-Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet luomaan raportointipuun ja lisäämään raporttimääritykseen tuottaaksesi kustannuspaikka / jaetun tuloslaskelman. Kun päivitykset ovat valmiita, tulet luomaan kustannuspaikka / jaetun tuloslaskelman ja tutkimaan raporttia käyttämällä raportointipuuta. Aloitamme talousraporttiluettelosta.
+Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet luomaan raportointipuun ja lisäämään raporttimääritykseen tuottaaksesi **kustannuspaikka / jaetun tuloslaskelman**. Kun päivitykset ovat valmiita, tulet luomaan **kustannuspaikka / jaetun tuloslaskelman** ja tutkimaan raporttia käyttämällä raportointipuuta. Aloitamme **talousraporttiluettelosta**.
 
 1. Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
 2. Valitse raportin rivi **Tuloslaskelma: oletusarvo**.
@@ -116,8 +116,8 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet luomaan raporto
 5. Valitse **Muokkaa**-valikosta **Lisää raporttiyksiköt dimensioista**.
 6. Poista kaikkien dimensioiden valintaruutujen valinnat lukuun ottamatta **kustannuspaikkaa**.
 7. Valitse **Dimensio**-kenttä kustannuspaikan dimensiolle, kirjoita kenttään **007** ja paina sarkainta. **Dimensioon**-kentässä, kirjoita **018**.
-8. **Tallenna** tulospuu nimellä **Kustannuspaikat yksikön mukaan.** Nyt kun raporttipuu on luotu, muokkaa raporttipuuta sisältämään kolme uutta koontiyksikköä: markkinointi, toiminnot ja vähittäismyynti.
-9. **Ikkuna**-valikossa, klikkaa **Kustannuspaikat jaon mukaan**. (Jos raportointipuu on suljettu, valitse se raportointipuun määrityksistä siirtymisruudussa.)
+8. **Tallenna** tulospuu nimellä **Kustannuspaikat yksikön mukaan**. Nyt kun raporttipuu on luotu, muokkaa raporttipuuta sisältämään kolme uutta koontiyksikköä: markkinointi, toiminnot ja vähittäismyynti.
+9. **Ikkuna**-valikossa, klikkaa **Kustannuspaikat jaon mukaan**. (Jos raportointipuu on suljettu, valitse se **raportointipuun määrityksistä** siirtymisruudussa.)
 10. Klikkaa yksikköä numero kaksi **Messut** ja klikkaa **Lisää raportoinnin yksikkö** -kuvaketta.
 11. Kaksoisnapsauta uuden rivin yksikkö-saraketta ja valitse **USMF**.
 12. Kirjoita **Markkinointi** sarakkeisiin B ja C.
@@ -131,13 +131,13 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet luomaan raporto
 20. Valitse **Alenna raportoinnin yksikkö**. Pane merkille, että yksikkö näkyy nyt **markkinoinnin** lapsiobjektina.
 21. Valitse neljäs yksikkö, **Markkinointikampanja** ja napsauta hiiren kakkospainikkeella.
 22. Valitse **Alenna raportoinnin yksikkö**.
-23. Valitse **Palvelutoiminnot** graafisessa esityksessä. Pidä vasenta hiiripainiketta alhaalla ja vedä yksikön ylös **työvaiheisiin**. Vapauta vasen hiiri pudottamalla yksikkö toimintojen vyöryttämiseen. Toista **tuotannolle, laadunvalvonnalle, logistiikalle, hankinnalle ja hallinnalle**.
+23. Valitse **Palvelutoiminnot** graafisessa esityksessä. Pidä vasenta hiiripainiketta alhaalla ja vedä yksikön ylös **työvaiheisiin**. Vapauta vasen hiiri pudottamalla yksikkö toimintojen vyöryttämiseen. Toista **tuotannolle**, **laadunvalvonnalle**, **logistiikalle**, **hankinnalle** ja **hallinnalle**.
 24. Tee **Lähtö**, **Super**, **Marketti** ja **Online** aliluokkia **Vähittäismyynti** joko alentamalla ne alemmalle tasolle tai vetämällä ja pudottamalla.
 25. Tallenna tuloksena uudelleen organisaatio. Nyt kun raportointipuu on luotu ja järjestelty, se voidaan lisätä raportin määritykseen.
 26. Valitse **Window** -valikosta **Tuloslaskelma – oletusarvo** avataksesi raportin määrityksen.
 27. Valitse **Puutyyppi** -avattavan luettelon nuolta ja valitse **Raportointi puu**.
 28. Klikkaa puun avattavan luettelon nuolta ja valitse **Kustannuspaikat yksikön mukaan**.
-29. Vaihda perusvuodeksi **2012**, **tallenna** muutokset ja **luo** raportti. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
+29. Vaihda perusvuodeksi **2021**, **tallenna** muutokset ja **luo** raportti. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
 30. Valitse **Raportointipuun** avattava valikko tarkastellaksesi raportointiyksiköitä. Vaihtoehtoisesti voit perehtyä raportin sarakkeeseen nähdäksesi kaikki saldot kaikille yksiköille raportointipuussa.
 31. Sulje **Tuloslaskelma - oletus**.
 32. Sulje **Raportin suunnittelija**.
@@ -145,11 +145,11 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet luomaan raporto
 ## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Harjoitus 4: Luo konsolidoitu raportti käyttämällä organisaatiohierarkiaa
 Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet lisäämään organisaatiohierarkian raporttimääritykseen tuottaaksesi konsolidoidun tuloslaskelman ja taseen. Kun päivitykset ovat valmiita, tulet luomaan konsolidoidun raportin ja tutkimaan raporttia käyttämällä raporttipuuta. Aloitamme talousraporttiluettelosta.
 
-1. Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
+1. Siirry **Tilinpäätökset** kohdassa **Kyselyitä ja raportit** kirjanpidossa.
 2. Valitse raportin rivi **Tase ja tuloslaskelma rinnakkain: oletusarvo**.
 3. Valitse **Muokkaa**. **Tase ja tuloslaskelma rinnakkain: oletusarvo** aukaisee raportin suunnittelijan.
 4. Valitse **Tiedosto** &gt; **Tallenna nimellä** ja anna raportille nimeksi **Konsolidoitu tase ja tuloslaskelma rinnakkain**.
-5. Muuta perusvuodeksi 2012.
+5. Muuta perusvuodeksi 2021.
 6. Klikkaa puutyypin avattavaa nuolta ja valitse **Organisaatiohierarkiat**.
 7. Napsauta puun avattavaa luettelon nuolta ja valitse **Contoso Holdings**.
 8. Tallenna muutokset ja luo raportti. Valitse tarvittaessa kaikki raportointiin yksiköt. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
@@ -162,16 +162,16 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet lisäämään o
 15. Sulje **Raportin suunnittelija**.
 
 ## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Harjoitus 5: Luo rinnakkainen osastojen raportti
-Luot tässä harjoituksessa uuden raportin. Raportti on rinnakkainen osastojen tuloslaskelmaan. Käytät aiemmin luotua rivimääritystä, mutta luo uusi raporttimääritys ja uusi sarakemääritys, joka käyttää dimensiosuodattimia. Aloitamme talousraporttiluettelosta.
+Luot tässä harjoituksessa uuden raportin. Raportti on rinnakkainen osastojen tuloslaskelmaan. Käytät aiemmin luotua rivimääritystä, mutta luo uusi raporttimääritys ja uusi sarakemääritys, joka käyttää dimensiosuodattimia. Aloitamme **talousraporttiluettelosta**.
 
-1. Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
+1. Siirry **Tilinpäätökset** kohdassa **Kyselyitä ja raportit** kirjanpidossa.
 2. Valitse **Uusi**. Raportin suunnittelija avautuu tyhjän raportin määrityksen kanssa. Ensimmäinen tehtäväsi on luoda sarakkeen määritys.
 3. Luo uusi sarakkeen määritys valitsemalla **Tiedosto**, sitten **Uusi** ja sen jälkeen **Sarakemääritys**.
 4. **Sarake A:ssa**, valitse **DESC** saraketyypiksi.
 5. **Sarakkeessa B**, valitse **FD** saraketyypiksi.
 6. Valitse kaksoisnapsauttamalla **Dimensiosuodatus**-kenttä.
 7. **Dimensio**-ikkunassa, kaksoisnapsauta **Osasto**-saraketta.
-8. Valintaikkunan yksittäisellä osalla tai alueosalla, valitse **ellipsi** **Mistä**-kenttään nähdäksesi osastoluettelon.
+8. Valintaikkunan **yksittäisellä osalla tai alueosalla**, valitse **ellipsi** **Mistä**-kenttään nähdäksesi osastoluettelon.
 9. Valitse osasto **022**, **Myynti ja Markkinointi** ja sitten klikkaa **OK**.
 10. Toista vaiheet 5-8 osastoille 23-25.
 11. **Otsikko 2** -rivissä, jokaiselle FD-sarakkeelle, kirjoita seuraavat osaston kuvaukset:
@@ -185,7 +185,7 @@ Luot tässä harjoituksessa uuden raportin. Raportti on rinnakkainen osastojen t
 13. Valitse **Window** -valikosta **Uusi raportin määritys** avataksesi raportin määrityksen.
 14. Valitse **Tuloslaskelma – oletusarvo** rivimäärityksenä ja **Rinnakkaisosastot** sarakkeen määrityksenä.
 15. Tallenna raportin määritys nimellä **Rinnakkainen osastojen tuloslaskelma**.
-16. Muuta perusvuodeksi **2012**.
+16. Muuta perusvuodeksi **2021**.
 17. Muuta yksityiskohtatasoksi **Rahoitus, tili ja tapahtuma**.
 18. **Tallenna** muutokset ja **luo**. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
 

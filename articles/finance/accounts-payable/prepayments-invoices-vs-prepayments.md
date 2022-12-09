@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62f828b93075c134778da280243c0875edf99300
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 1d123a341a471dd37fcc33e0025ce5e98235a27f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715826"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804260"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Ennakkomaksulaskujen ja ennakkomaksujen vertailu
 
@@ -70,7 +70,8 @@ Ostoreskontran yhteenvetovastatili määritetään **Toimittajan kirjaus** -prof
 ## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Ennakkomaksulaskun tietoja sisältävän ostotilauksen luominen
 Kun toimittaja kertoo, että ostotilauksen sisältämät tavarat ja palvelut edellyttävät ennakkomaksua, liittyvän ostotilauksen ennakkomaksun arvo on määritettävä. Siirry kohtaan **Ostoreskontra \> Yhteiset \> Ostotilaukset \> Kaikki ostotilaukset** ja etsi toimittajan ostotilaus. Valitse toimintoruudussa ensin **Osto**-välilehti ja sitten **Ennakkomaksu**. Kirjoita ennakkomaksun tiedot, mukaan lukien kuvaus, ennakkomaksun arvo, ja tieto siitä, onko ennakkomaksu kiinteä määrä vai prosenttiosuus ja ennakkomaksun luokan tunniste. 
 
-Huomaa, että ostotilauksen useat ennakkomaksumääritykset eivät ole sallittuja. Jos haluat sallia useita ostotilauksen ennakkomaksuja, kirjaa maksut käyttämällä maksukirjauskansiota ennakkomaksulaskun asemesta.
+> [!Note] 
+> Ostotilauksen useat ennakkomaksumääritykset eivät ole sallittuja. Jos haluat sallia useita ostotilauksen ennakkomaksuja, kirjaa maksut käyttämällä maksukirjauskansiota ennakkomaksulaskun asemesta.
 
 Ennakkomaksu voidaan poistaa ostotilauksesta, ellet ole jo tilittänyt maksua kirjatulle ennakkomaksulaskulle tai kirjannut vakiolaskua. Voit poistaa ennakkomaksun tiedot ostotilauksesta valitsemalla **Ostoreskontra \> Yhteiset \> Ostotilaukset \> Kaikki ostotilaukset** ja etsi toimittajan ostotilaus. Valitse toimintoruudussa ensin **Osto**-välilehti ja sitten **Poista ennakkomaksu**.
 
