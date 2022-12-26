@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-06-20
-ms.openlocfilehash: 0949b9d7a4b181605d43956932b4fc095940bd64
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 896847cee696e221b2114f7f28a0b56e73fc911b
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780355"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838226"
 ---
 # <a name="set-up-apple-pay-with-adyen-in-dynamics-365-commerce"></a>Apple Payn määrittäminen Adyenia varten Dynamics 365 Commercessa
 
@@ -102,13 +102,6 @@ Voit määrittää Commercen verkkokaupan Apple Paylle alla olevien ohjeiden muk
 
 1. Kun myyjän tiedot on syötetty, suorita **1070**-kanavan määrityksen jakelun ajoitustyö.
 
-## <a name="configure-commerce-pos-for-apple-pay"></a>Commercen myyntipisteen määrittäminen Apple Payta varten
-
-Myyntipistemääritys käyttää laiteprofiilin **EFT-palvelu**-kentän määritystä Dynamics 365 Payment Connector Adyenia varten -yhdistimessä. Määritä Commerce headquartersissa EFT-palvelun Dynamics 365 Payment Connector Adyenia varten -yhdistimelle kohdan [Dynamics 365:n POS-laiteprofiili -osassa](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile) ohjeiden mukaan.
-
-Varmista, että maksuvälinetyyppien luetteloon lisätään **ApplePay** **Tuetut maksuvälinetyypit** -kentässä. Erottele maksuvälinetyypit toisistaan luettelossa puolipisteen (;) avulla.
-
-Adyen-yhdistimen yhdistävä käsittelijä sieppaa lompakon korttityypit, joita Apple Pay käyttää kassapäätteessä.
 
 ### <a name="configure-content-security-policies-in-site-builder"></a>Sisällön suojauskäytäntöjen määrittäminen sivustonmuodostimessa
 
@@ -138,6 +131,14 @@ Jos haluat määrittää Apple Payn kassan maksuvaihtoehdoksi sivustossa (muu ku
 **Apple Pay** -maksupainike näkyy vain tuetuissa Apple Pay -laitteissa (iPhone- ja iPad-laitteissa sekä Safari-selaimissa, jotka tukevat Apple Payta). Jos käyttäjä ei käytä mitään näistä laitteista, **Apple Pay** -maksupainike on piilotettu näkymässä.
 
 Kun käyttäjä valitsee **Apple Pay** -maksupainikkeen, näkyviin tulee **Apple Pay** -valintaikkuna. Siinä käyttäjä voi tehdä todennuksen Apple Pay -laitteessa tai -selaimessa. **Apple Pay** -valintaikkunassa näkyy yhteenveto tilaussummasta ja maksumenetelmästä, jonka käyttäjä on määrittänyt Apple-lompakolle. Käyttäjä voi tarkistaa nämä tiedot ja suorittaa maksun loppuun valitsemalla **Maksa**. Kun maksu on valmis, käyttäjä ohjataan **Tilaus on valmis** -sivuston sivulle, jossa näkyy valmiin tapahtuman yksityiskohtainen tilausyhteenveto.
+
+## <a name="configure-commerce-pos-for-apple-pay"></a>Commercen myyntipisteen määrittäminen Apple Payta varten
+
+Myyntipistemääritys käyttää laiteprofiilin **EFT-palvelu**-kentän määritystä Dynamics 365 Payment Connector Adyenia varten -yhdistimessä. Määritä Commerce headquartersissa EFT-palvelun Adyenin Dynamics 365 Payment Connector -yhdistimelle kohdan [Dynamics 365:n myyntipisteen laiteprofiilin määrittäminen](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile) ohjeiden mukaan.
+
+Varmista, että maksuvälinetyyppien luetteloon lisätään **ApplePay** **Tuetut maksuvälinetyypit** -kentässä. Erottele maksuvälinetyypit toisistaan luettelossa puolipisteen (;) avulla.
+
+Adyen-yhdistimen yhdistävä käsittelijä sieppaa lompakon korttityypit, joita Apple Pay käyttää kassapäätteessä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

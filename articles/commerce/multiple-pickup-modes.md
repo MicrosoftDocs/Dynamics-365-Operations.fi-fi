@@ -2,7 +2,7 @@
 title: Useiden noutotoimitustapojen ottaminen käyttöön asiakastilauksille
 description: Tässä artikkelissa kerrotaan Microsoft Dynamics 365 Commercen toiminnoista, joiden avulla voit luoda asiakastilauksia noudettavaksi myymälästä.
 author: hhainesms
-ms.date: 06/07/2021
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,29 +12,29 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e4d8883b3dc1c4a0e12bcb00b6441f76d73da92e
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858905"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831581"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Useiden noutotoimitustapojen ottaminen käyttöön asiakastilauksille
 
 [!include [banner](includes/banner.md)]
 
 
-Microsoft Dynamics 365 Commerce -versiossa 10.0.16 ja uudemmissa versioissa organisaatiot voivat määrittää useita toimitustapoja, joita ostajat tai myyjät voivat valita, kun he luovat tilauksen, joka noudetaan myymälästä. Tällä tavoin organisaatiot voivat tarjota ostajille useita noutovaihtoehtoja. Esimerkiksi monet jälleenmyyjät tarjoavat nyt ostajille mahdollisuuden valita tilauksen noudon myymälästä tai tien varresta. Commerce tukee näiden eri noutotoimitustapojen konfigurointia. Käyttäjät voivat hyödyntää niitä, kun he luovat asiakastilauksia missä tahansa tuetussa Commerce-kanavassa (sähköinen kaupankäynti, puhelinkeskus tai myymälä).
+Microsoft Dynamics 365 Commercessa organisaatiot voivat määrittää useita toimitustapoja, joita ostajat tai myyjät voivat valita, kun he luovat tilauksen, joka noudetaan myymälästä. Tällä tavoin organisaatiot voivat tarjota ostajille useita noutovaihtoehtoja. Esimerkiksi monet jälleenmyyjät tarjoavat nyt ostajille mahdollisuuden valita tilauksen noudon myymälästä tai tien varresta. Commerce tukee näiden eri noutotoimitustapojen konfigurointia. Käyttäjät voivat hyödyntää niitä, kun he luovat asiakastilauksia missä tahansa tuetussa Commerce-kanavassa (sähköinen kaupankäynti, puhelinkeskus tai myymälä).
 
 ## <a name="enable-and-configure-pickup-delivery-modes"></a>Noutotoimitustapojen käyttöönotto ja määritys
 
-Jos haluat käyttää tätä toimintoa, ota **Useiden noutotoimitustapojen tuki** -ominaisuus käyttöön **Ominaisuuksien hallinta** -työtilassa Commerce Headquarters -sovelluksessa. Kun otat toiminnon käyttöön, lisämääritykset ovat pakollisia.
+Commerce headquartersin **Ominaisuuksien hallinta** -työtilan **Useiden noutotoimitustapojen tuki** -ominaisuudesta on tehty pakollinen ja se on otettava ympäristössä käyttöön.
 
-Commerce-versiossa 10.0.15 ja aiemmissa versioissa organisaatiot voivat määrittää vain yhden toimitustavan nimetyksi noutotoimitustavaksi. Tämä määritelmä tehdään **Commerce-parametrit** -sivulla. Kun otat versiossa 10.0.16 tai uudemmasa versiossa käyttöön **Useiden noutotoimitustapojen tuki** -ominaisuuden, toimitustapa, joka oli määritetty aiemmin noutotoimitustavaksi **Commerce-parametrit** -sivulla, kopioidaan automaattisesti noutotoimitustapojen uuteen kokoonpanoon.
+Jos noutotoimitustapa määritettiin aiemmin **Commerce-parametrit**-sivulla, kyseinen tila näkyy noutotoimitustilojen nykyisessä määrityksessä.
 
 ![Noutotoimitustavat Commerce-parametrit-sivulla.](media/multiplepickupparameter.png)
 
-Kun olet määrittänyt **Useiden noutotoimitustapojen tuki** -ominaisuuden käyttöön, voit määrittää useita noutotoimitustapoja **Noutotoimitustapa**-ruudukon **Toimitustapa**-pikavälilehdessä **Asiakastilaukset**-välilehdessä **Commerce-parametrit** -sivulla.
+**Noutotoimitustapa**-ruudussa voidaan määrittää useita noutotoimitustapoja valitsemalla **Commerce-parametrit** > **Asiakastilaukset**-välilehti > **Toimitustavat**-pikavälilehti.  
 
 **Noutotoimitustapa**- ja **Sähköinen toimitustapa**- kentät sekä **Näytä lähetystilauksissa vain rahdinkuljettajien toimitustavat** asetus on siirretty tähän pikavälilehteen.
 
@@ -47,8 +47,6 @@ Kun olet määrittänyt lisänoutotoimitustavat, lisää ne **Commerce-parametri
 > [!NOTE]
 > Sen lisäksi, että käytössä on nykyinen noutotoimitustapa, joka kopioidaan **Noutotoimitustapa**-ruudukkoon, kun otat käyttöön **Useiden noutotoimitustapojen tuki** -ominaisuuden, sinun on konfiguroitava jokaiselle luomallesi noutotoimitustavalle uudet toimitustavat. Kun lisäät toimitustapoja **Noutotoimitustapa**-ruudukkoon, Commerce tarkistaa, käyttävätkö aktiiviset avoimet myyntirivit jo niitä. Jos avoimia myyntirivejä löytyy, näyttöön tulee virhesanoma. Toimitustapoja ei pidetä noutotoimitustapoina, ennen kuin kaikki niitä käyttävät avoimet myyntirivit on suljettu (joko laskutettu tai peruutettu).
 
-> [!IMPORTANT]
-> Kun olet määrittänyt useamman kuin yhden noutotoimitustavan **Commerce-parametrit** -sivulla, **Useiden noutotoimitustapojen tuki** -ominaisuus muuttuu pakolliseksi eikä sitä voi enää poistaa käytöstä. Jos toiminto on poistettava käytöstä, poista kaikki paitsi yksi noutotoimitustapa **Noutotoimitustapa**-ruudukosta. Kun vain yksi noutotoimitustapa määritetään, toimintoa ei enää pidetä pakollisena, ja se voidaan poistaa käytöstä.
 
 ### <a name="e-commerce-site-configurations"></a>Sähköisen kaupankäynnin sivuston määritykset
 

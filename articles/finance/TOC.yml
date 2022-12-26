@@ -1166,8 +1166,10 @@
                   href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Kirjanpidon laskelma päätilin mukaan
                   href: general-ledger/general-ledger-statement-by-main-account.md
-                - name: Veron vakiotarkistustiedoston (SAF-T) elektroninen raportti
+                - name: Veron vakiotarkistustiedoston (SAF-T) sähköinen raportti
                   href: general-ledger/standard-audit-file.md
+                - name: Kirjanpitotapahtuman selvityskysely
+                  href: general-ledger/ledger-settlement-inquiry.md
             - name: Kauden sulkeminen
               items:
                 - name: Kirjanpidon sulkeminen kauden lopussa
@@ -1186,8 +1188,20 @@
                   href: general-ledger/faq-year-end-activities.md
                 - name: Kirjanpidon selvitykset
                   href: general-ledger/ledger-settlements.md
-                - name: Tietoja kirjanpidon selvityksestä ja tilinpäätöksestä
-                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Tietojen selvittäminen kirjanpidon selvityksen ja tilinpäätöksen välillä
+                  items:
+                    - name: Tietojen selvittäminen kirjanpidon selvityksen ja tilinpäätöksen välillä
+                      href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                    - name: Valmistautuminen tietojen selvittämiseen kirjanpidon selvityksen välillä ennen tilinpäätöstä
+                      href: general-ledger/ledger-settle-yec.md
+                    - name: Valmistautuminen tietojen selvittämiseen kirjanpidon selvityksen välillä tilinpäätöksen jälkeen
+                      href: general-ledger/ledger-settle-yec-after.md
+                    - name: Tietojen selvittäminen kirjanpidon selvityksen ja raportointivaluutan välillä ‑ominaisuus ei täsmää
+                      href: general-ledger/reporting-currency-yec.md
+                    - name: Tietojen selvittäminen kirjanpidon selvityksen välillä ‑ominaisuus ennen tilinpäätöstä kyselyikkunan avulla
+                      href: general-ledger/ledger-settlement-yec-inquiry-before.md
+                    - name: Tietojen selvittäminen kirjanpidon selvityksen välillä ‑ominaisuus tilinpäätöksen jälkeen kyselyikkunan avulla
+                      href: general-ledger/ledger-settlement-yec-inquiry-after.md
                 - name: Kirjanpidon selvitysten automatisointi
                   href: general-ledger/auto-settle.md
                 - name: Kirjanpidon ulkomaanvaluutan uudelleenarvostus
@@ -1786,7 +1800,7 @@
                       href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
                     - name: Kirjanpitotiliote päätilin mukaan ja arvonlisäveron erittelyraportti
                       href: general-ledger/general-ledger-statement-by-main-account.md
-                    - name: Veron vakiotarkistustiedoston (SAF-T) elektroninen raportti
+                    - name: Veron vakiotarkistustiedoston (SAF-T) sähköinen raportti
                       href: general-ledger/standard-audit-file.md
                     - name: Määritä arvonlisäveron tilityskaudet
                       href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md

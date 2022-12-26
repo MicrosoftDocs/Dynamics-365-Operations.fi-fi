@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
-ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
+ms.openlocfilehash: 0a4e436cc1af6b71049f75fb66bdfb89ca38df9f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9762697"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831771"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Inventory Visibility -sovelluksen käyttäminen
 
@@ -106,7 +106,7 @@ Seuraavien ohjeiden avulla voit ottaa **Varaston yhteenveto** -sivun käyttöön
 
 1. Avaa **Määritykset**-sivu.
 1. Avaa **Ominaisuuksien hallinta ja asetukset** -välilehti.
-1. Määritä **OnHandMostSpecificBackgroundService**-toiminnon vaihtopainikkeen arvoksi *Kyllä*.
+1. Määritä *OnHandMostSpecificBackgroundService*-toiminnon vaihtopainikkeen arvoksi *Kyllä*.
 1. Kun toiminto on otettu käyttöön **Palvelun määritys** -osa on käytettävissä ja sisältää rivin **OnHandMostSpecificBackgroundService**-toiminnon määrittämistä varten. Tämän asetuksen avulla voit valita varaston yhteenvetotietojen synkronointivälin. Muuta synkronoinnin välistä aikaa **Arvo**-sarakkeen **Ylös**- ja **Alas**-painikkeiden avulla (pienin mahdollinen väli on 5 minuuttia). Valitse sitten **Tallenna**.
 
     ![OnHandMostSpecificBackgroundService-asetus](media/inventory-visibility-ohms-freq.png "OnHandMostSpecificBackgroundService-asetus")
@@ -125,10 +125,10 @@ Supply Chain Management tallentaa suuren osan nykyisen käytettävissä olevan v
 
 **Varaston näkyvyyden yhteenvedon esilataus** -sivulla on *Käytettävissä olevan varaston indeksin kyselyn esilatauksen tulokset* -entiteetin näkymä. Toisin kuin *Varaston yhteenveto* -entiteetti, *Käytettävissä olevan varaston indeksin kyselyn esilatauksen tulokset* -entiteetti määrittää tuotteiden käytettävissä olevan varaston luettelon yhdessä valittujen dimensioiden kanssa. Varaston näkyvyys synkronoi esiladatut yhteenvetotiedot 15 minuutin välein.
 
-Jos haluat tarkastella **Varaston näkyvyyden yhteenvedon esilataus** -välilehteä, ota käyttöön *OnHandIndexQueryPreloadBackgroundService*-ominaisuus **Määritys**-sivun **Ominaisuuksien hallinta** -välilehdessä. Valitse **Päivitä määritys** (katso myös [Varaston näkyvyyden määrittäminen](inventory-visibility-configuration.md) -kohta).
+Tietojen tarkasteleminen **Esilataa Varaston näkyvyys -yhteenveto** -välilehdessä edellyttää, että *OnHandIndexQueryPreloadBackgroundService*-ominaisuus otetaan käyttöön ja määritetään. Ohjeet ovat kohdassa [Valmiiksi ladattujen varastosaldokyselyjen ottaminen käyttöön ja määrittäminen](inventory-visibility-configuration.md#query-preload-configuration).
 
 > [!NOTE]
-> Kuten *OnhandMostSpecificBackgroudService*-ominaisuuden kohdalla, *OnHandIndexQueryPreloadBackgroundService*-ominaisuus käsittelee vain käytettävissä olevan varaston muutoksia, jotka ovat tapahtuneet ominaisuuden käyttöönoton jälkeen. Niiden tuotteiden tietoja, jotka eivät ole muuttuneet sen jälkeen, kun olet ottanut toiminnon käyttöön, ei synkronoida varastopalvelun välimuistista ympäristöön Dataverse. Jos **Varaston yhteenveto** -sivulla ei ole kaikkia odotettuja käytettävissä olevia tietoja, siirry kohtaan **Varastonhallinta > Kausittaiset tehtävät > Varaston näkyvyyden integrointi**, poista erätyö käytöstä ja ota se uudelleen käyttöön. Tämä toimii alkusysäyksenä, ja kaikki tiedot synkronoidaan *Käytettävissä olevan varaston indeksin kyselyn esilatauksen tulokset* -yksikköön seuraavan 15 minuutin kuluttua. Jos haluat käyttää tätä toimintoa, on suositeltavaa ottaa se käyttöön ennen käytettävissä olevan varaston muutosten luontia ja ottaa käyttöön **Varaston näkyvyyden integrointi** -erätyö.
+> *OnHandMostSpecificBackgroundService*-ominaisuuden tavoin *OnHandIndexQueryPreloadBackgroundService*-ominaisuus käsittelee vain käytettävissä olevan varaston muutoksia, jotka ovat tapahtuneet ominaisuuden käyttöönoton jälkeen. Niiden tuotteiden tietoja, jotka eivät ole muuttuneet sen jälkeen, kun olet ottanut toiminnon käyttöön, ei synkronoida varastopalvelun välimuistista ympäristöön Dataverse. Jos **Varaston yhteenveto** -sivulla ei ole kaikkia odotettuja käytettävissä olevia tietoja, siirry kohtaan **Varastonhallinta > Kausittaiset tehtävät > Varaston näkyvyyden integrointi**, poista erätyö käytöstä ja ota se uudelleen käyttöön. Tämä toimii alkusysäyksenä, ja kaikki tiedot synkronoidaan *Käytettävissä olevan varaston indeksin kyselyn esilatauksen tulokset* -yksikköön seuraavan 15 minuutin kuluttua. Jos haluat käyttää tätä toimintoa, on suositeltavaa ottaa se käyttöön ennen käytettävissä olevan varaston muutosten luontia ja ottaa käyttöön **Varaston näkyvyyden integrointi** -erätyö.
 
 ## <a name="filter-and-browse-the-inventory-summaries"></a><a name="additional-tip-for-viewing-data"></a>Varaston yhteenvetojen suodattaminen ja selaaminen
 

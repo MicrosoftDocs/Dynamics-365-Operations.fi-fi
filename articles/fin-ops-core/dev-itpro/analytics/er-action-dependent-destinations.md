@@ -2,7 +2,7 @@
 title: Toiminnosta riippuvaisten ER-kohteiden määrittäminen
 description: Tässä artikkelissa käsitellään lähteviä asiakirjoja luomaan määritetyn sähköisen raportoinnin (ER) muodon toiminnosta riippuvaisten kohteiden määrittämistä.
 author: kfend
-ms.date: 02/09/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: 10.0.17
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
-ms.openlocfilehash: babd123e4c8007e3adc545bb92a2dc83bab93f4e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 80a432a431891c02e4bf5c71cfe2bd9642c41c75
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286244"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843794"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Toiminnosta riippuvaisten ER-kohteiden määrittäminen
 
@@ -32,7 +32,7 @@ Microsoft Dynamics 365 Financen **versiossa 10.0.17 ja sitä uudemmissa versiois
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Toiminnosta riippuvaisten ER-kohteiden tuominen käyttöön
 
-Toiminnosta riippuvaiset ER-kohteet voidaan määrittää nykyisessä Finance-esiintymässä ja [uusi](er-apis-app10-0-17.md) ER-ohjelmointirajapinta ottaa käyttöön avaamalla [Ominaisuuksien hallinta](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) -työtila ja ottamalla **Määritä eri PM-toiminnoissa käytettävät ER-kohteet** -toiminto käyttöön. [Tiettyjen](#reports-list-wave1) raporttien määritettyjen ER-kohteiden käyttäminen suorituksen aikana edellyttää, että **Reititä käyttäjän toimintokohtaisiin ER-kohteisiin perustuvien PM-raporttien tulos (aalto 1)** -toiminto otetaan käyttöön.
+Toiminnosta riippuvaiset ER-kohteet voidaan määrittää nykyisessä Finance-esiintymässä ja [uusi](er-apis-app10-0-17.md) ER-ohjelmointirajapinta ottaa käyttöön avaamalla [Ominaisuuksien hallinta](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) -työtila ja ottamalla **Määritä eri PM-toiminnoissa käytettävät ER-kohteet** -toiminto käyttöön. Raporttien määritettyjen ER-kohteiden käyttäminen suorituksen aikana edellyttää, että **ER-kohteeseen perustuvien käyttäjätoimikohtaisten PM-raporttien reittituloste (aalto 1)** -toiminto otetaan käyttöön.
 
 ## <a name="configure-action-dependent-er-destinations"></a>Toiminnosta riippuvaisten ER-kohteiden määrittäminen
 
@@ -89,6 +89,51 @@ Seuraavassa kuvassa on esimerkki **Sähköisen raportointimuodon kohteet** -vali
 > [!NOTE]
 > Jos suoritettavan ER-muodon useille osille on määritetty ER-kohteita, vaihtoehto annetaan erikseen kullekin ER-muodon määritetylle osalle.
 
+Jos valitun asiakirjan raporttimalleina on käytettävissä useita ER-muotoja, kaikkien käytettävien ER-raporttimallien kaikki ER-kohteet näytetään valintaikkunassa ja niihin voi tehdä manuaalisia muutoksia varten suorituspalvelussa.
+
+Jos yksikään [SQL Server Reporting Services (SSRS)](SSRS-report.md) -raporttimalli ei ole käytettävissä valitussa asiakirjassa, tulostuksenhallinnan kohteiden vakiovalinta piilotetaan dynaamisesti.
+
+Financen versiosta **10.0.31** alkaen määritettyjä ER-kohteita voidaan muuttaa suorituksen aikana manuaalisesti seuraavissa liiketoiminta-asiakirjoissa:
+
+- Asiakkaan tiliote
+- Korkolasku
+- Maksukehotus
+- Asiakkaan maksuehdotus
+- Toimittajan maksuehdotus
+
+Mahdollisuus muuttaa ER-kohteita suorituksen aikana aktivoidaan ottamalla **Salli ER-kohteiden muuttaminen suorituksen aikana** -toiminto käyttöön [Ominaisuuksien hallinta](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) -työtilassa.
+
+> [!IMPORTANT]
+> **Asiakkaan maksuehdotus**- ja **Toimittajan maksuehdotus** -raporteissa mahdollisuus muuttaa ER-kohteita manuaalisesti on käytettävissä vain, jos **ForcePrintJobSettings**-väliversio on otettu käyttöön.
+
+[![ER-kohteiden suorituksenaikainen muuttaminen](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+> [!NOTE]
+> Kun **Käytä tulostuksenhallinnan kohdetta** -asetuksena on **Kyllä**, järjestelmä käyttää tietyille ER-raporteille määritettyjä ER-oletuskohteita. Kaikki valintaikkunassa tehdyt manuaaliset muutokset ohitetaan. Määritä **Käytä tulostuksenhallinnan kohdetta** -asetukseksi **Ei**, jos ER-kohteisiin käsitellään asiakirjoja, jotka on määritetty valintaikkunassa juuri ennen raporttien suorittamista.
+
+Seuraavia liiketoiminta-asiakirjoja suoritettaessa käyttäjän ei nimenomaisesti oleta valitsevan toimintoa:
+
+- Asiakkaan tiliote
+- Korkolasku
+- Maksukehotus
+- Asiakkaan maksuehdotus
+- Toimittajan maksuehdotus
+
+Seuraavan logiikan avulla päätellään käytettävä toiminto edellisiä raportteja käsiteltäessä:
+
+- Jos **ForcePrintJobSettings**-väliversio on otettu käyttöön:
+
+    - Jos **Käytä tulostuksenhallinnan kohdetta** -asetuksena on **Kyllä**, **Tulosta**-toimintoa käytetään.
+    - Jos **Käytä tulostuksenhallinnan kohdetta** -asetuksena on **Ei**, **Näytä**-toimintoa käytetään.
+
+- Jos **ForcePrintJobSettings**-väliversiota ei ole otettu käyttöön:
+
+    - Jos **Käytä tulostuksenhallinnan kohdetta** -asetuksena on **Kyllä**, **Tulosta**-toimintoa käytetään **Asiakkaan maksuehdotus**- ja **Toimittajan maksuehdotus** -raporteissa.
+    - Jos **Käytä tulostuksenhallinnan kohdetta** -asetuksena on **Ei**, **Asiakkaan maksuehdotus**- ja **Toimittajan maksuehdotus** -raporteissa käytetään aina SSRS-raporttimallia riippumatta siitä, mitä ER-asetuksia on määritetty.
+    - **Tulosta**-toimintoa käytetään aina **Asiakkaan tiliote**-, **Korkolasku**- ja **Maksukehotus**-raporteissa.
+
+Edeltävässä logiikassa **Tulosta**- tai **Näytä**-toimintoa voi käyttää toimintokohtaisten ER-raporttikohteiden määrittämiseen. Suorituksen aikana ER-kohteet määritetään vain tietylle valintaikkunassa suodatettavalle toiminnolle.
+
 ## <a name="verify-the-provided-user-action"></a>Annetun käyttäjän toiminnon tarkistaminen
 
 Tiettyä käyttäjän toimintoa suoritettaessa voidaan tarkistaa, mikä käyttäjän toiminto on mahdollisesti annettu suoritettavaa ER-muotoa varten. Tämä tarkistus on tärkeä, kun on määritettävä toiminnosta riippuvaisia ER-kohteita mutta ei ole varmuutta siitä, onko jokin käyttäjän toimintokoodi mahdollisesti annettu. Esimerkiksi vapaatekstilaskun kirjaamista aloitettaessa ja määritettäessä **Tulosta lasku** -asetukseksi **Kyllä** **Kirjaa vapaatekstilasku** -valintaikkunassa, **Käytä tulostuksenhallinnan kohdetta** -asetukseksi voidaan valita **Kyllä** tai **Ei**.
@@ -105,23 +150,9 @@ Annettu käyttäjän toimintokoodi tarkistetaan seuraavasti:
 
     ![Sähköisen raportoinnin ajolokit -sivulla on tietoja käyttäjän toimintokoodista, joka on annettu ER-muodon suodatetusta ajosta.](./media/er-destination-action-dependent-03.png)
 
-## <a name=""></a><a name="reports-list-wave1">Liiketoiminta-asiakirjojen luettelo (aalto 1)</a>
-
-**Reititä käyttäjän toimintokohtaisiin ER-kohteisiin perustuvien PM-raporttien tulos (aalto 1)** -toiminto hallitsee seuraavia liiketoiminta-asiakirjoja:
-
-- Myyntilasku (vapaatekstilasku)
-- Myyntilasku (myyntilasku)
-- Ostotilaus
-- Ostotilauksen ostokysely
-- Myyntitilausvahvistus
-- Maksukehotus
-- Korkolasku
-- Toimittajan maksuehdotus
-- Tarjouspyyntö
-
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
+[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 
 [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 

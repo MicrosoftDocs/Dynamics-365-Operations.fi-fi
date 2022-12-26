@@ -2,19 +2,19 @@
 title: Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 description: Tämä artikkeli on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
-ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
+ms.openlocfilehash: 3f1b555a016a56cc41ab397e3708f20482f25f09
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "9631233"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831855"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -134,7 +134,7 @@ Jos kuntotarkastus epäonnistuu, kuntotarkastuksen valintaikkuna avautuu myyntip
 - **Peruuta** – Jos käyttäjä valitsee tämän painikkeen, myyntipiste peruuttaa viimeisimmän toiminnon. (Nimikettä ei esimerkiksi lisätä uuteen toimintoon.)
 
 > [!NOTE]
-> Kuntotarkastus suoritetaan vain, jos nykyinen toiminto edellyttää kirjanpidon rekisteröintiä ja jos **Jatka virheen ilmetessä** -parametri on poistettu kirjanpidon rekisteröintiprosessin nykyisessä vaiheessa käytöstä. Lisätietoja on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+> Kuntotarkastus suorittaan vain, jos nykyinen toiminto edellyttää kirjanpidon rekisteröintiä ja jos **Jatka virheen ilmetessä** -parametri on poistettu kirjanpidon rekisteröintiprosessin nykyisessä vaiheessa käytöstä. Lisätietoja on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Kirjanpidon vastauksen tallentaminen kirjanpitotapahtumassa
 
@@ -172,19 +172,17 @@ Seuraavat kirjanpidon integrointimallit ovat käytettävissä Commerce SDK:ssa:
 - [Tarkistusyksikön integrointimalli – Ruotsi](./emea-swe-fi-sample.md)
 - [Saksan tilikausirekisteröintipalvelun integroinnin malli](./emea-deu-fi-sample.md)
 - [Näyte kuittitulostimen integroinnista Venäjällä](./rus-fpi-sample.md)
+- [Digitaalinen allekirjoitusnäyte Norjassa](./emea-nor-cash-registers.md)
 
 Seuraava kirjanpidon integrointitoiminto otetaan käyttöön myös käyttämällä kirjanpidon integrointikehystä, mutta se on saatavana käyttövalmiina eikä se sisälly Commerce SDK:hon:
 
 - [Brasilian tilikausirekisteröinti](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Digitaalinen allekirjoitus Ranskassa](./emea-fra-cash-registers.md)
 
-Myös seuraava kirjanpidon integrointitoiminto on käytettävissä Commerce SDK:ssa, mutta se ei tällä hetkellä käytä kirjanpidon integrointikehikkoa. Tämä toiminto on tarkoitus siirtää kirjanpidon integrointikehikkoon myöhemmissä päivityksissä.
-
-- [Digitaalinen allekirjoitus Norjassa](./emea-nor-cash-registers.md)
-
 Seuraava vanha kirjanpidon integrointitoiminto, joka on käytettävissä Commerce SDK:ssa, ei käytä kirjanpidon integrointikehystä, ja se poistetaan käytöstä myöhemmissä päivityksissä:
 
 - [Tarkistusyksikön integrointimalli – Ruotsi (vanha)](./retail-sdk-control-unit-sample.md)
 - [Digitaalinen allekirjoitus Ranskassa (vanha)](./emea-fra-deployment.md)
+- [Digitaalinen allekirjoitus Norjassa (vanha)](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

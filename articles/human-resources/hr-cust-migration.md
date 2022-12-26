@@ -2,7 +2,7 @@
 title: Dynamics 365 Human Resources -asiakkaiden siirto talous- ja toimintosovellusinfrastruktuuriin
 description: Tässä artikkelissa kuvataan Microsoft Dynamics 365 Human Resources -asiakkaiden siirtoa talous- ja toimintosovellusinfrastruktuuriin.
 author: twheeloc
-ms.date: 10/25/2022
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
-ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
+ms.openlocfilehash: ab9680c2d1caa08c15aed325f4153aac6eae63c3
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/11/2022
-ms.locfileid: "9760359"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831717"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources -asiakkaiden siirto
 
@@ -67,7 +67,7 @@ Luo uusi projekti noudattamalla seuraavia ohjeita.
 7. Hyväksy ehdot ja edellytykset valitsemalla valintaruutu.
 8. Valitse **Luo**.
 
-Kun olet luonut uuden Lifecycle Services -projektin, määritä ja konfiguroi se noudattamalla seuraavia ohjeita:
+Kun olet luonut uuden Lifecycle Services -projektin, tee projektin asetusten määritys seuraavasti.
 
 1. Viimeistele projektin perehdytys valitsemalla **Projektin perehdytys**. Lisätietoja on kohdassa [Projektin käyttöönotto](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md).
 
@@ -158,6 +158,7 @@ Kun olet siirtänyt ja vahvistanut eristysympäristön, siirrä tuotantoympäris
 
 - Tilauksen arviointityökalu tulisi olla suoritettuna.
 - [Julkaisuvalmiuden arviointi](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) tulisi olla suoritettuna.
+- Tuotantoympäristön siirron Lifecycle Servicesissä käynnistävällä käyttäjällä on oltava järjestelmänvalvojan rooli Power Platformissa. 
 
 #### <a name="migrate-the-production-environment"></a>Tuotantoympäristön siirto
 

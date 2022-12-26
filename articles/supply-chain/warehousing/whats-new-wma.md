@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 61d3ebc85d3c3d20bb17acd7364adc04cd2f3f94
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764236"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843677"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20390"></a>Versio 2.0.39.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+- Parempi vakaus. 
+- **Mukautettu**-sivun kenttiä ei enää lajitella automaattisesti prioriteetti- ja aliprioriteettiasetusten perusteella.  
+- Sovellus käyttää nyt kunkin kentän prioriteetti- ja aliprioriteettiasetuksia sivun ensisijaisen kentän määrittämiseen. Ensisijainen kenttä näkyy vaiheen otsikossa. 
+- Korjattiin ongelma, jossa näyttönäppäimistöä ei piilotettu Androidissa.
+- Korjattiin ongelma, jossa määrän hyrräkuvakkeessa näkyi virheellinen oikea arvo *siirron* työnkulkua avattaessa. 
+- Korjattiin ongelma, jossa määrän hyrräkuvakkeen vain luku -muotoinen arvo ei keskittynyt oikein. 
+- Korjattiin ongelma, jossa verkkosivut eivät avautuneet **Tietoja**-sivulta. 
+- *Automaattinen*-väriteema saa nyt oletusulkoasun (vaalea tai tumma) mobiililaitteen käyttöjärjestelmässä määritetyn yleisen teeman perusteella.
 
 ## <a name="version-20370"></a>Versio 2.0.37.0
 

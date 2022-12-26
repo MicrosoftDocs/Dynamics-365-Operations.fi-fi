@@ -2,7 +2,7 @@
 title: Dataverse-taulut
 description: Microsoft Dynamics 365 Human Resources käyttää Dataverseä laajennettavuuden ja integroinnin skenaarioiden mahdollistamiseksi.
 author: twheeloc
-ms.date: 01/25/2021
+ms.date: 12/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 702a4063e45dfc64f1edb4351f9bf80491338502
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 51be30f10c8e5f5e962f54f720f66c712a785835
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692251"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838579"
 ---
 # <a name="dataverse-tables"></a>Dataverse-taulut
 
@@ -35,105 +35,110 @@ Microsoft Dynamics 365 Human Resources käyttää Dataverseä laajennettavuuden 
 
 Seuraavat Dataverse-taulut ovat käytössä Human Resources -yksiköiden perusteella.
 
+Lisätietoja tunnetuista ongelmista on kohdassa [Lifecycle Servicesin (LCS) ongelmahaku](/dev-itpro/lifecycle-services/issue-search-lcs).
+
 ## <a name="benefit-tables"></a>Etutaulut
 
-| Nimi | Taulu |
-| --- | --- |
-| Edun laskentatiheys | cdm_benefitcalculationfrequency |
-| Edun laskennan toistuvuuden maksukausi | cdm_benefitcalculationfrequencypayperiod |
-| Edun laskentahinta | cdm_benefitcalculationrate |
-| Edun laskentahinnan tiedot | cdm_benefitcalculationratedetail |
-| Etuusvaihtoehto | cdm_benefitoption |
-| Etusuunnitelma | cdm_benefitplan (Ei käytössä mukautetulla kentän tuella) |
-| Edun tyyppi | cdm_benefittype |
+| Nimi | Taulukko | Tunnetut ongelmat  | Tila |
+| --- | --- |    --------|----------  |
+| Edun laskentatiheys | cdm_benefitcalculationfrequency |     |     |
+| Edun laskennan toistuvuuden maksukausi | cdm_benefitcalculationfrequencypayperiod |     |     |
+| Edun laskentahinta | cdm_benefitcalculationrate |    |     |
+| Edun laskentahinnan tiedot | cdm_benefitcalculationratedetail |753225 | Ratkaistu  |
+| Etuusvaihtoehto | cdm_benefitoption |    |     |
+| Etusuunnitelma | cdm_benefitplan (Ei käytössä mukautetulla kentän tuella) |    |     |
+| Edun tyyppi | cdm_benefittype |    |     |
 
 ## <a name="business-process-tasks-tables"></a>Liiketoimintaprosessin tehtävien taulut
 
-| Nimi | Taulu |
-| --- | --- |
-| Liiketoimintaprosessin kalenteri | cdm_businessprocesscalendar |
-| Liiketoimintaprosessin ryhmämääritys | cdm_businessprocessgroupassignment |
-| Liiketoimintaprosessikirjaston tehtäväryhmä | cdm_businessprocesslibrarytaskgroup |
-| Liiketoimintaprosessin vaihe | cdm_businessprocessstage |
-| Tarkistusluettelomallin otsikko | cdm_businessprocesstemplateheader |
-| Tarkistusluettelomallin tehtävä | cdm_businessprocesstemplatetask |
+| Nimi | Taulukko |Tunnetut ongelmat  | Tila |
+| --- | --- |   --------|----------   |
+| Liiketoimintaprosessin kalenteri | cdm_businessprocesscalendar | 751867 | Ratkaistu |
+| Liiketoimintaprosessin ryhmämääritys | cdm_businessprocessgroupassignment | 751869  751863 | Käytössä|
+| Liiketoimintaprosessikirjaston tehtäväryhmä | cdm_businessprocesslibrarytaskgroup |751866 | Valmis |
+| Liiketoimintaprosessin vaihe | cdm_businessprocessstage |      |     |
+| Tarkistusluettelomallin otsikko | cdm_businessprocesstemplateheader |     |     |
+| Tarkistusluettelomallin tehtävä | cdm_businessprocesstemplatetask |      |     |
 
 ## <a name="compensation-tables"></a>Kompensaatiotaulut
 
-| Nimi | Taulu |
-| --- | --- |
-| Kiinteä kompensaatiosuunnitelma | cdm_compensationfixedplan |
-| Kompensaatioruudukko | cdm_compensationgrid |
-| Kompensaatiotaso | cdm_compensationlevel |
-| Kompensaation maksutiheys | cdm_compensationpayfrequency |
-| Kompensaation viitepisteiden asetukset | cdm_compensationreferencepointsetup |
-| Kompensaation viitepisteen asetusrivi | cdm_compensationreferencepointsetupline |
-| Kompensaatioalue | cdm_compensationregion |
-| Kompensaatiorakenne | cdm_compensationstructure |
-| Muuttuva kompensaatiosuunnitelma | cdm_compensationvariableplan |
-| Muuttuvan kompensaatiosuunnitelman taso | cdm_compensationvariableplanlevel |
-| Muuttuvan kompensaatiosuunnitelman tyyppi | cdm_compensationvariableplantype |
-| Kiinteä kompensaatiotapahtuma | cdm_fixedcompensationevent |
-| Hyvityssääntö | cdm_vestingrule |
-| Työntekijän kiinteä kompensaatio | cdm_workerfixedcompensation |
+| Nimi | Taulukko |Tunnetut ongelmat  | Tila |
+| --- | --- | ----------      | -------    |
+| Kiinteä kompensaatiosuunnitelma | cdm_compensationfixedplan |754453 | Valmis |
+| Kompensaatioruudukko | cdm_compensationgrid |             |     |
+| Kompensaatiotaso | cdm_compensationlevel |           |     |
+| Kompensaation maksutiheys | cdm_compensationpayfrequency |                  |     |
+| Kompensaation viitepisteiden asetukset | cdm_compensationreferencepointsetup |               |     |
+| Kompensaation viitepisteen asetusrivi | cdm_compensationreferencepointsetupline |             |     |
+| Kompensaatioalue | cdm_compensationregion |                   |     |
+| Kompensaatiorakenne | cdm_compensationstructure |    754456        | Valmis    |
+| Muuttuva kompensaatiosuunnitelma | cdm_compensationvariableplan |               |     |
+| Muuttuvan kompensaatiosuunnitelman taso | cdm_compensationvariableplanlevel |                |     |
+| Muuttuvan kompensaatiosuunnitelman tyyppi | cdm_compensationvariableplantype |               |     |
+| Kiinteä kompensaatiotapahtuma | cdm_fixedcompensationevent |               |     |
+| Hyvityssääntö | cdm_vestingrule |              |     |
+| Työntekijän kiinteä kompensaatio | cdm_workerfixedcompensation |              |     |
 
 ## <a name="organization-tables"></a>Organisaatiotaulut
 
-| Nimi | Taulu |
-| --- | --- |
-| Osasto | cdm_department |
-| Työsuhde | cdm_employment |
-| Yhtiö | cdm_company |
-| Tehtävä | cdm_job |
-| Työtehtävä | cdm_jobfunction |
-| Toimi | cdm_jobposition |
-| Toimityyppi | cdm_positiontype |
-| Toimen työntekijän toimeksianto | cdm_positionworkerassignmentmap |
-| Toimen dimensio | cdm_jobpositiondimension|
-| Työlaji | cdm_jobtype |
-| Kieli | cdm_language |
-| Tehtävänimike | cdm_title |
+| Nimi | Taulukko |Tunnetut ongelmat  | Tila |
+| --- | --- | ----------      | -------    |
+| Osasto | cdm_department |  752194    | Valmis    |
+| Työsuhde | cdm_employment | 762414  |  Valmis  |
+| Yhtiö | cdm_company |  |     |
+| Tehtävä | cdm_job |  |     |
+| Työtehtävä | cdm_jobfunction |        |     |
+| Toimi | cdm_jobposition | 752214      | Valmis    |
+| Toimityyppi | cdm_positiontype |            |     |
+| Toimen työntekijän toimeksianto | cdm_positionworkerassignmentmap | 752224    |  Valmis   |
+| Toimen dimensio | cdm_jobpositiondimension|       |     |
+| Työlaji | cdm_jobtype |      |     |
+| Kieli | cdm_language |        |     |
+| Tehtävänimike | cdm_title |       |     |
 
 > [!NOTE]
 > Talous hallinnon dimensiot **Toimityypille**, **Toimen työntekijämääritykselle** ja **Työllisyydelle** tarjoavat yhdensuuntaisen integroinnin Dataverse -järjestelmään. Taloushallinnon dimensioiden päivityksiä ei tällä hetkellä synkronoida Dataverse -sovelluksesta Human Resources -sovellukseen. 
 
 ## <a name="leave-and-absence-tables"></a>Loma- ja poissaolotaulut
 
-| Nimi | Taulu |
-| --- | --- |
-| Lomapankkitapahtuma | cdm_leavebanktransaction |
-| Lomarekisteröinti | cdm_leaveenrollment |
-| Lomasuunnitelma | cdm_leaveplan |
-| Lomapyyntö | cdm_leaverequest |
-| Lomapyynnön tiedot | cdm_leaverequestdetail |
-| Lomatyyppi | cdm_leavetype |
-| Lomatyypin syykoodi | cdm_leavetypereasoncode |
+| Nimi | Taulukko | Tunnetut ongelmat  | Tila |
+| --- | --- |   ----------      | -------    |
+| Lomapankkitapahtuma | cdm_leavebanktransaction |  752252    |    Ratkaistu |
+| Lomarekisteröinti | cdm_leaveenrollment |  752934    |Valmis     |
+| Lomasuunnitelma | cdm_leaveplan |   752232   |   Valmis  |
+| Lomapyyntö | cdm_leaverequest | 753207     | Valmis    |
+| Lomapyynnön tiedot | cdm_leaverequestdetail | 753207     |   Valmis  |
+| Lomatyyppi | cdm_leavetype |      |     |
+| Lomatyypin syykoodi | cdm_leavetypereasoncode |         |     |
+
+>[!NOTE]
+>Kaksoiskirjoituksen integrointi Lomien ja poissaolojen Dataverse-taulukoiden avulla on käytettävissä vain, kun **Määritä useita lomatyyppejä yhdessä lomasuunnitelmassa** -ominaisuus on otettu käyttöön Microsoft Dynamics 365 Financessa käyttämällä **ominaisuuksien hallintaa**. 
 
 ## <a name="payroll-tables"></a>Palkanlaskentataulut
 
-| Nimi | Taulu |
-| --- | --- |
-| Maksujakso | cdm_paycycle |
-| Maksukausi | cdm_payperiod |
-| Palkkalaji | cdm_payrollearningcode |
-| Pankkitilisuoritukset | cdm_bankaccountdisbursement |
-| Verotusalue | cdm_taxregion |
+| Nimi | Taulukko |Tunnetut ongelmat  | Tila |
+| --- | --- |  ----------      | -------    |
+| Maksujakso | cdm_paycycle |    |     |
+| Maksukausi | cdm_payperiod |          |     |
+| Palkkalaji | cdm_payrollearningcode |   754458        |   Valmis  |
+| Pankkitilisuoritukset | cdm_bankaccountdisbursement |    751904     |   Valmis  |
+| Verotusalue | cdm_taxregion |          |     |
 
 ## <a name="worker-tables"></a>Työntekijätaulut
 
-| Nimi | Taulu |
-| --- | --- |
-| Työntekijä | cdm_worker |
-| Työntekijän osoite | cdm_workeraddress |
-| Työntekijän henkilötiedot | cdm_workerpersonaldetail |
-| Työntekijän tunnusnumero | cdm_workerpersonidentificationnumber |
-| Työntekijän tunnustyyppi | cdm_workerpersonidentificationtype |
-| Työkalenteri | cdm_workcalendar |
-| Työkalenteripäivämäärä | cdm_workcalendarday |
-| Työkalenterin lomapäivä |cdm_workcalendarholiday |
-| Työkalenterin lomapäivärivi | cdm_workcalendarholidayline |
-| Työkalenterin aikaväli | cdm_workcalendartimeinterval (Ei käytössä mukautetulla kentän tuella) |
-| Työntekijän pankkitili | cdm_workerbankaccount |
+| Nimi | Taulukko |Tunnetut ongelmat  | Tila |
+| --- | --- |----------      | -------    |
+| Työntekijä | cdm_worker |    751906    |    Valmis |
+| Työntekijän osoite | cdm_workeraddress |   754465     |Valmis     |
+| Työntekijän henkilötiedot | cdm_workerpersonaldetail |   751906     |   Valmis  |
+| Työntekijän tunnusnumero | cdm_workerpersonidentificationnumber |  766704      |   Valmis  |
+| Työntekijän tunnustyyppi | cdm_workerpersonidentificationtype |        |     |
+| Työkalenteri | cdm_workcalendar |        |     |
+| Työkalenteripäivämäärä | cdm_workcalendarday |        |     |
+| Työkalenterin lomapäivä |cdm_workcalendarholiday |        |     |
+| Työkalenterin lomapäivärivi | cdm_workcalendarholidayline |        |     |
+| Työkalenterin aikaväli | cdm_workcalendartimeinterval (Ei käytössä mukautetulla kentän tuella) |        |     |
+| Työntekijän pankkitili | cdm_workerbankaccount |        |     |
 
 ## <a name="worker-setup-tables"></a>Työntekijän asetustaulut
 

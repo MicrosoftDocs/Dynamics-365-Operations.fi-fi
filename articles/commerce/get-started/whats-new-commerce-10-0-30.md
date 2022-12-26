@@ -2,7 +2,7 @@
 title: Dynamics 365 Commercein esiversio 10.0.30 (Marraskuu 2022)
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Commercein 10.0.30 uusia tai muuttuneita toimintoja.
 author: josaw1
-ms.date: 08/31/2022
+ms.date: 12/07/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-09-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 0149c9671e8baeb26965b4f136ed91d09e2d039b
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: a449c7eff21c059555f9659ea932705858d26275
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405547"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831744"
 ---
 # <a name="preview-of-dynamics-365-commerce-10030-november-2022"></a>Dynamics 365 Commercein esiversio 10.0.30 (Marraskuu 2022)
 
@@ -35,7 +35,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän art
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---------|------------------|----------------|--------------| 
 | Asiakaspalvelu   | Keskustelu sähköisen kaupankäynnin sivustolla Power Virtual Agents -botin avulla. | Tämän ominaisuuden avulla sähköisen kaupankäynnin sivuston käyttäjät voivat valita Power Virtual Agents -keskustelubotin tukipyyntöjä varten. | Järjestelmänvalvoja/tekijät antavat käyttäjille oikeudet |
-| Merkitykselliset tiedot  |  Suoratoista myyntipisteen toiminnallisten merkityksellisten tietojen tapahtumat Application Insights -tilille. | [Application Insightsin lokien käyttäminen](../dev-itpro/retail-component-events-diagnostics-troubleshooting.md#enable-diagnostic-events-in-application-insights)   |  IT-ammattilaisen/-kehittäjän suostumus   |
+| Merkitykselliset tiedot  |  Suoratoista myyntipisteen toiminnallisten merkityksellisten tietojen tapahtumat Application Insights -tilille. | [Application Insightsin lokien käyttäminen](../dev-itpro/operational-insights.md#enable-diagnostic-events-in-application-insights)   |  IT-ammattilaisen/-kehittäjän suostumus   |
 |  Maksut  | PayPal-tilauksen tuki 29 päivän valtuutusjakson jälkeen. | PayPalin pisin valtuutusjakso on 29 päivää. Tämän jälkeen on luotava uusi valtuutus ja tilaustunnus. Vaihtoehtoisesti PayPal tarjoaa mahdollisuuden, jossa PayPal-tilaukseen voidaan viitata yleisenä tilauksena. Tämän ansiosta samalla tilaustunnuksella voi olla useita valtuutuksia ja sieppauksia sen sijaan, että uusi valtuutus ja tilaustunnus olisi luotava 29 päivän kuluttua. | Kun PayPalin maksuyhdistintä määritetään Commerce headquartersissa, **OrderIntent**-kenttä lisätään. Kentässä voi olla seuraavat kaksi arvoa:<p><p>- **Valtuuta** - Tämä määritys on oletusarvo (jos kenttä jätetään tyhjäksi **Valtuuta** on oletusarvo). Kun **OrderIntent**-kohdan arvoksi määritetään **Valtuuta**, se vastaa PayPalin **processing_instruction**-arvoa **NO_INSTRUCTION**-kohdassa. PayPal valtuuttaa tilauksen. Valtuutusta ei voi muuttaa, kun käytetään tätä arvoa.<p>- **Tallenna** - Kun **OrderIntent**-arvoksi määritetään **Tallenna**, arvo vastaa PayPalin **processing_instruction**-arvoa **ORDER_SAVED_EXPLICITLY**-kohdassa. Tilauksen viitteet tallennetaan PayPal-palveluun, kun tätä arvoa käytetään.  |
 | Myyntipisteen sisäänkirjaus  | [Itsepalvelun diagnoosiominaisuuksien käyttöönotto myyntipisteen sisäänkirjauksessa](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-self-serve-diagnosis-capabilities-pos-sign-in)  |  Tämä ominaisuus mahdollistaa itsepalvelun diagnoosiominaisuuksien käyttämisen myyntipisteessä ja Commerce headquartersissa. Ominaisuuksien avulla myymälän työntekijät ja esimiehet voivat nopeasti määrittää myyntipisteen sisäänkirjauksen ongelmien syyt ja korjata ne.<p><p>- Myyntipisteen sisäänkirjausnäytössä näkyviä virhesanomia parannettiin niin, että niissä näkyvät konkreettisen syyn tiedot. Ne auttavat myyntipistettä käyttäviä myymälän työntekijöitä ymmärtämään, mikä epäonnistui, ja suorittamaan tarvittavat toiminnot ongelman ratkaisemiseksi.<p>- **Testisisäänkirjaus**-ominaisuus on käytettävissä **Työntekijät**-sivulla Commerce headquartersissa. Sen avulla myyntipisteen laitteet määrittäneet myymälän esimiehet voivat simuloida myyntipisteen sisäänkirjauksen. Jos sisäänkirjaus epäonnistuu, tämän ominaisuuden avulla esimiehet voivat käyttää toiminnallisia vianmääritysoppaita ja tarkistaa asiaankuuluvat määritykset, korjata ongelmia ja vahvistaa korjaukset.  | Käytössä oletusarvoisesti |
 

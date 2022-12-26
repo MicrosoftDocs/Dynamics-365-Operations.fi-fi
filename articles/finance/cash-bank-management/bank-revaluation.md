@@ -2,23 +2,23 @@
 title: Pankin ulkomaanvaluutan uudelleenarvostus
 description: Tämä artikkelissa sisältää yhteenvedon pankin ulkomaanvaluutan uudelleenarvostusprosessista. Se sisältää tietoja asetuksista, prosessin suorittamisesta ja laskemisesta sekä uudelleenarvostustapahtumien peruutuksesta.
 author: angelad116
-ms.date: 05/16/2019
+ms.date: 12/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8efec304e745332c332030b33363403869870532
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 2d5e8a36d3b4d44c9ad0454db94164adebf80997
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151428"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887256"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Pankin ulkomaanvaluutan uudelleenarvostus
 
@@ -39,17 +39,8 @@ Seuraavat asetukset on määritettävä ennen uudelleenarvostusprosessin suoritt
 - Määritä vaihtokurssin tyyppi **Kirjanpito**-sivulla. Jos päätilin vaihtokurssin tyyppiä ei ole määritetty, tätä vaihtokurssia käytetään ulkomaanvaluutan uudelleenarvostuksen yhteydessä.
 - Määritä **Kirjanpito**-sivulla valuutan uudelleenarvostuksen toteutuneen voiton, toteutuneen tappion, toteutumattoman voiton ja toteutumattoman tappion tilit. Toteutuneen voiton ja tappion tilejä käytetään, kun myyntireskontran ja ostoreskontran tapahtumat selvitetään. Toteutumattoman voiton ja tappion tilejä käytetään avointen tapahtumien ja kirjanpidon päätilien uudelleenarvostuksessa.
 - Valitse **Valuutan uudelleenarvostustilit** -sivulla kullekin valuutalle ja yritykselle eri valuutan uudelleenarvostustilit. Jos tilejä ei ole määritetty, käytetään **Kirjanpito**-sivun tilejä.
+- Lisää numerojärjestys ulkomaanvaluutan uudelleenarvostukseen **Maksuliikennetiedot**-sivun **Numerojärjestykset**-välilehdessä.
 
-## <a name="enable-foreign-currency-revaluation"></a>Ulkomaanvaluutan uudelleenarvostuksen käyttöönotto
-
-Pankin ulkomaanvaluutan uudelleenarvostustoiminto on otettava käyttöön ennen ulkomaanvaluutan uudelleenarvostusten käsittelyä.
-
-1. Valitse **Maksuliikenteen hallinta \> Asetukset \> Maksuliikennetiedot**.
-2. Määritä **Yleiset**-välilehden **Ulkomaanvaluutan uudelleenarvostus** -kohdassa **Ota käyttöön pankin uudelleenarvostus** -vaihtoehdon arvoksi **Kyllä**, jos haluat ottaa toiminnon käyttöön nykyisessä yrityksessä. 
-3. Lisää **Numerosarjat**-välilehdessä ulkomaanvaluutan uudelleenarvostuksen numerosarja.
-4. Päivitä selain, jolloin näkyviin tulee **Ulkomaanvaluutan uudelleenarvostus** alueen sivun **Kausittaiset tehtävät** -osaan.
-
-Ota toiminto käyttöön kaikissa yrityksissä, joissa ulkomaanvaluutan uudelleenarvostus on käytössä. Jos sinut on määritetty järjestelmänvalvojan rooliin tai toimintojen hallinnan rooliin, voit poistaa tämän vaiheen ottamalla käyttöön **Pankin uudelleenarvostusominaisuuden ilman parametria** **Ominaisuuden hallinta** -työtilassa.
 
 > [!NOTE]
 > Jos yrityksessä käytetään Venäjän, Puolan tai Unkarin maa- tai aluekoodia, voit jo tehdä pankin ulkomaanvaluutan uudelleenarvostuksen. Et voi käyttää ulkomaanvaluutan uudelleenarvostusta, joka on käytössä muissa maissa tai muilla alueilla.

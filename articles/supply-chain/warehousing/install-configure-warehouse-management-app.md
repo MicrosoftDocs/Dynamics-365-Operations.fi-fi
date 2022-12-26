@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
-ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
+ms.openlocfilehash: 1333881f80c735794784831d4042bfe7d070b796
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714759"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838469"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Warehouse Management ‑mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
@@ -58,10 +58,10 @@ Helpoin tapa asentaa sovellus yksittäiseen laitteeseen on asentaa se sovelluska
 
 Sovelluskaupasta asentamisen sijaan voit myös ladata sovelluksen Microsoft App Centeristä. App Centerissä on asennettavat paketit, jotka voidaan siirtää laitteiden välillä. Nykyisen version lisäksi App Centerissä voit myös ladata aiempia versioita ja esikatsella versioita, jotka voivat sisältää tulevia toimintoja, joita voit kokeilla. Voit ladata Varastonhallinta-mobiilisovelluksen nykyiset, aiemmat tai esikatseluversiot Microsoft App Centeristä käyttämällä jotakin seuraavista linkeistä:
 
-- **Windows (UWP):** [Varastonhallinta (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+- **Windows (UWP):** [Varastonhallinta (Windows)](https://aka.ms/wma-windows-official-release)  
     Ohjeita ladatun paketin asentamisesta Windows-laitteella ja tarvittavien sertifikaattien asennuksesta on kohdassa [Koontiversion asentaminen App Centeristä](/appcenter/distribution/installation).
 
-- **Android:** [Varastonhallinta (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+- **Android:** [Varastonhallinta (Android)](https://aka.ms/wma-android-official-release)  
     Jos lataat esiversion, sen asentamisessa on muutamia lisävaiheita. Lisätietoja on kohdassa [Android-sovellusten testaaminen](/appcenter/distribution/testers/testing-android).
 
 Lisätietoja App Centeristä ladatun koontiversion asentamisesta on kohdassa [Koontiversion asentaminen](/appcenter/distribution/installation).

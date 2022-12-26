@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: fd9877365977694ca29f4d9116bcae45360306d5
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135454"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843623"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Yleisen varastokirjanpidon aloitussivu
 
@@ -40,11 +40,17 @@ Tämä käytäntö on kokoelma varastokirjanpitokäytäntöjä, jotka voidaan li
 
 Yleinen varastokirjanpito on tällä hetkellä saatavilla seuraavilla Azuren maantieteellinen alueilla:
 
-- Yhdysvallat
-- Eurooppa
-- Iso-Britannia
 - Australia
 - Kanada
+- Kiina
+- Eurooppa
+- Ranska
+- Norja
+- Etelä-Afrikka
+- Sveitsi
+- Yhdistyneet arabiemiirikunnat
+- Yhdistynyt kuningaskunta
+- Yhdysvallat
 
 Jos yrität asentaa apuohjelman toiselta maantieteelliseltä alueelta, Microsoft Dynamics Lifecycle Services (LCS) näyttää sanoman, jonka mukaan maantieteellistä aluettasi ei tueta. Yleinen varastokirjanpito ei tue Supply Chain Managementin paikallista käyttöä.
 

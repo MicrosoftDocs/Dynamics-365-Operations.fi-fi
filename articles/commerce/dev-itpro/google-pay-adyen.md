@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c3f049946c66fcd8560f7c08a4cb2beab0dcd5b2
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: cdf950fc7b3720543d93e108d4e3c3c2ab254e09
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9115027"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838388"
 ---
 # <a name="configure-google-pay-with-adyen"></a>Google Payn määrittäminen Adyen-käyttöä varten
 
@@ -90,11 +90,6 @@ Commerce-verkkokauppa määritetään käyttämään Google Payta seuraavasti.
 
 1. Kun yhdistimen ominaisuudet on määritetty, suorita **1070 (Kanavan konfigurointi**) -jakeluaikataulutyö.
 
-## <a name="configure-commerce-pos-for-google-pay"></a>Commercen myyntipisteen määrittäminen Google Payta varten
-
-Myyntipistemääritys käyttää laiteprofiilin **EFT-palvelu**-kentän asetusta Adyenin Dynamics 365 Payment Connectorissa. Lisätietoja sähköisen rahansiirtopalvelun (EFT-palvelun) määrittämisestä Adyenin Dynamics 365 Payment Connectorille Commerce headquartersissa on [Dynamics 365:n POS-laiteprofiili -osassa](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-Adyen-yhdistimen yhdistävä käsittelijä sieppaa lompakon korttityypit, joita Google Pay käyttää kassapäätteessä.
 
 ### <a name="use-the-payment-express-module-with-google-pay"></a>Google Payn pikamaksumoduuliin käyttäminen
 
@@ -223,6 +218,12 @@ Järjestys, jossa toimitustavat näkyvät pikamaksumoduulissa, määritetään k
 Kassamoduuli käyttää myös toimitusvaihtoehtomoduulia, kun toimitustavat hahmonnetaan kassalla. Lisätietoja on kohdassa [Toimitusvaihtoehdot-moduuli](../delivery-options-module.md).
 
 Toimitustavat näytetään, kun lisätään **Toimitustavat**-luetteloon verkkokaupassa.
+
+## <a name="configure-commerce-pos-for-google-pay"></a>Commercen myyntipisteen määrittäminen Google Payta varten
+
+Myyntipistemääritys käyttää laiteprofiilin **EFT-palvelu**-kentän asetusta Adyenin Dynamics 365 Payment Connectorissa. Lisätietoja sähköisen rahansiirtopalvelun (EFT-palvelun) määrittämisestä Adyenin Dynamics 365 Payment Connectorille Commerce headquartersissa on kohdassa [Dynamics 365:n myyntipisteen laiteprofiilin määrittäminen](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+Adyen-yhdistimen yhdistävä käsittelijä sieppaa lompakon korttityypit, joita Google Pay käyttää kassapäätteessä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

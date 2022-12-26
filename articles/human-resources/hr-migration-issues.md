@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: 3fe21df8be010ace3070ad08ed95f3d3efc7b01d
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752687"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838552"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Dynamics 365 Human Resources -infrastruktuurin yhdistämisen tunnetut ongelmat
 
@@ -43,4 +43,8 @@ Tarvitset seuraavat ympäristötyypit ennen kuin voit suorittaa siirron:
 ## <a name="teams-integration"></a>Teams-integrointi
 
 Teamsin nykyistä Human Resoures -sovellusta siirretään tällä hetkellä Microsoft Power Platform -ratkaisuun. Lisätietoja on kohdassa [Human Resources -sovellus Teamsissa](hr-admin-teams-leave-app.md).
+
+## <a name="dual-write-integration"></a>Kaksoiskirjoituksen integrointi
+
+Kaksoiskirjoitus on valmis infrastruktuuri, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakasvuorovaikutussovellusten sekä talous- ja toimintosovellusten välillä. Jos organisaatio käyttää kaksoiskirjoitusta integroinneissa, joillakin löydetyillä ongelmilla voi olla merkitystä. Lisätietoja Dataverse-taulukoista ja ongelmista on kohdassa [Dataverse-taulukot](hr-developer-entities.md).
 

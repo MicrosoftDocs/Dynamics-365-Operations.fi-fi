@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b2f5f56e757e89339c12fd41c59848b4c987a2f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846854"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831830"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
@@ -64,7 +64,7 @@ Konsolidointi verkossa tukee esimerkiksi seuraavia konsolidointiskenaarioita:
 - Useita raportointivaluuttoja sisältäviä konsolidointeja
 
 ## <a name="legal-entity-setup"></a>Yrityksen määritys
-Yritys on määritettävä ennen konsolidoinnin käsittelyä. Voit suorittaa konsolidoinnin niin monta kertaa kuin on tarpeellista ja kaikki tiedot muunnetaan lähdeyrityksen kirjanpitovaluutasta konsolidointiyritykselle määritettyyn valuuttaan. Niinpä jos seuraavassa organisaatiorakenteessa kaikkien pohjoisamerikkalaisten yritysten valuutta on ensin muutettava Yhdysvaltain dollareiksi (USD) ja sitten euroiksi (EUR), mikä on emoyrityksen valuutta, tarvitset ainakin kaksi konsolidointiyritystä.
+Yritys on määritettävä ennen konsolidoinnin käsittelyä. Voit suorittaa konsolidoinnin niin monta kertaa kuin on tarpeellista, ja kaikki tiedot muunnetaan lähdeyrityksen kirjanpito- tai raportointivaluutasta konsolidointiyritykselle määritettyyn valuuttaan. Niinpä jos seuraavassa organisaatiorakenteessa kaikkien pohjoisamerikkalaisten yritysten valuutta on ensin muutettava Yhdysvaltain dollareiksi (USD) ja sitten euroiksi (EUR), mikä on emoyrityksen valuutta, tarvitset ainakin kaksi konsolidointiyritystä.
 
 ![Organisaatiorakenne.](./media/organizational-structure.png "Organisaatiorakenne")
 

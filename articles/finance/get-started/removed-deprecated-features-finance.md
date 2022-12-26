@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 25d13aa26565e5753b87c843b43cf46f8276b642
+ms.sourcegitcommit: 6c05bcd27e6ee72f01cb66e2cfd1e929e0365830
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643791"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9854076"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -124,11 +124,10 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä, ettei **ALV-ilmoitusta (AT)** sähköisessä raportoinnissa (ER) **ALV-ilmoitusmallin (AT)** alla enää tueta. Uudet **ALV-ilmoitus XML (AT)** ja **ALV-ilmoitus Excel (AT)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
 
-### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>Saksan ELSTER-ilmoitus (suunnittelu raportointikoodien perusteella)
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format"></a>Saksan ELSTER-ilmoitus (suunniteltu raportointikoodien perusteella), \"Sähköisen veroilmoituksen loki\" -valikkovaihtoehto ja -sivu, \"Sähköisen veroilmoituksen asetukset\" -valikkovaihtoehto ja -sivu, Saksalainen raportin asettelu (TaxReport_DE) SSRS-muoto
 
 [ALV-ilmoitus](../localizations/emea-de-vat-declaration.md)</br>
 [Sähköisen veroilmoituksen määrittäminen, Saksa](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
-[ALV-ilmoituksen antaminen sähköisesti (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -136,9 +135,9 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
 | **Tuotealueet, joihin vaikutetaan**         | Hakemus |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä, ettei **Elster (DE)**- ja **Elster-malli (DE)**- sähköisen raportoinnin (ER) -muotoja enää tueta. Uudet **ALV-ilmoitus XML (DE)** ja **ALV-ilmoitus Excel (DE)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
+| **Tila**                         | Vanhentunut:1.12.2022 mennessä ei enää tueta sähköisen raportoinnin (ER) muotoa **Elster (DE)** ja **Elster-mallia**. Uudet ER-muodot **ALV-ilmoitus XML (DE)** ja **ALV-ilmoitus Excel (DE)** otetaan käyttöön **Veroilmoitus**-mallissa. Myöskään seuraavia ei enää tueta: **Vero** \> **Ilmoitukset** \> **Arvonlisävero** \> **Sähköisen veroilmoituksen loki** -valikkovaihtoehto ja -sivu, **Vero** \> **Määritykset** \> **Arvonlisävero** \> **Sähköisen veroilmoituksen asetukset** -valikkovaihtoehtoa ja -sivua, **Vero** \> **Määritykset** \> **Arvonlisävero** \> **Sähköiset verotodistukset** -valikkovaihtoehto ja -sivu sekä Saksalainen raportin asettelu (TaxReport\_DE) SQL Server Reporting Services (SSRS) -muoto. Saksan ALV-ilmoitusprosessia tuetaan [sähköisen viestinnän](../general-ledger/electronic-messaging.md) toiminnoilla. Lisätietoja on kohdassa [Saksan ALV-ilmoitus](../localizations/emea-deu-vat-declaration-germany.md). |
 
-### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>Alankomaiden OB-ilmoitus (suunnittelu raportointikoodien perusteella)
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes-electronic-ob-declaration-menu-item-and-page-dutch-report-layout-taxreport_nl-ssrs-format"></a>Alankomaiden OB-ilmoitus (suunnittelu raportointikoodien perusteella) \"Sähköinen OB-ilmoitus\" -valikkovaihtoehto ja -sivu, Hollannin ilmoituksen asettelu (TaxReport_NL) SSRS-muoto
 
 [OB-ilmoitus](../localizations/emea-nl-vat-declaration.md)
 
@@ -148,7 +147,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
 | **Tuotealueet, joihin vaikutetaan**         | Hakemus |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä lopettavamme **OB-ilmoituksen (NL)** ja **OB-ilmoitusmallin** sähköisen raportoinnin (ER) tukemisen. Uudet **ALV-ilmoitus XML (NL)** ja **ALV-ilmoitus Excel (NL)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
+| **Tila**                         | Vanhentunut: 1.12.2022 alkaen ei enää tueta sähköisen raportoinnin (ER) muotoa **OB-ilmoituksen (NL)** ja **OB-ilmoitusmallia**. Uudet ER-muodot **ALV-ilmoitus XML (NL)** ja **ALV-ilmoitus Excel (NL)** otetaan käyttöön **Veroilmoitus**-mallissa. Myöskään seuraavia ei enää tueta: **Vero** \> **Ilmoitukset** \> **Arvonlisävero** \> **Sähköinen OB-ilmoitus** -valikkovaihtoehto ja -sivu sekä Hollannin ilmoituksen asettelu (TaxReport_NL) SSRS-muoto. Alankomaiden ALV-ilmoitusprosessia tuetaan [sähköisen viestinnän](../general-ledger/electronic-messaging.md) toiminnoilla. Lisätietoja on kohdassa [Alankomaiden ALV-ilmoitus](../localizations/emea-nl-vat-declaration-netherlands.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Financen version 10.0.20 poistetut tai vanhentuneet ominaisuudet
 

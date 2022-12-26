@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7f2a9b9e52b80c0feae0ac0dcb1ddf0a5c0cd27c
+ms.sourcegitcommit: 8aba7d2f45ef03a14f33f4b430ce92a11c876e2e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111657"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9884113"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Erillinen kaksoiskirjoitussovelluksen hallintapaketti
 
@@ -183,6 +183,7 @@ Toimitusketjun kaksoiskirjoituspaketti riippuu seuraavista kolmesta paketista. N
 - Kaksoiskirjoituksen sovellusydinpaketti
 - Financen kaksoiskirjoituspaketti
 - Human Resourcesin kaksoiskirjoituspaketti
+- Dynamics 365 HR:n yhteiset taulukot
 
 ## <a name="dual-write-finance"></a>Financen kaksoiskirjoitus
 

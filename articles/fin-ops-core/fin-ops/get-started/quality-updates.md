@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
-ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
+ms.openlocfilehash: 7d8de017c54a13a9935d74d33a57813922c9f823
+ms.sourcegitcommit: 8aee31d6dffabe13969dd5b9de4e0bf95f53e67e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/29/2022
-ms.locfileid: "9805311"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887127"
 ---
 # <a name="proactive-quality-updates"></a>Ennakoivat laatupäivitykset
 
@@ -29,15 +29,23 @@ Tulokset todistavat tämän hyväksi toimintaperiaatteeksi: tuotteissa on aiempa
 ## <a name="what-you-need-to-know"></a>Tarpeellisia tietoja
 
 - Ennakoivia laatupäivityksiä otetaan käyttöön joka kuukausi.
-- Microsoft ottaa ennakoivia laatupäivityksiä käyttöön kaikille eritysympäristöille, joiden käyttämä palvelupäivitys oli [käytössä](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change), kun ennakoivat laatupäivitykset luotiin.
-- Ennakoivien laatupäivitysten poikkeukset sallitaan asiakkaille, jotka ovat Yhdysvaltain elintarvike- ja lääkeviraston(FDA) säännösten alaisia.
+- Ennakoivien laatupäivitysten poikkeukset sallitaan vain asiakkaille, jotka ovat Yhdysvaltain elintarvike- ja lääkeviraston (FDA) säännösten alaisia.
+- Ennakoivat laatupäivitykset eivät koskaan vaihda asennettua ympäristöä aikaisempaan versioon tai automaattisesti päivitä yhtä palvelupäivityksen versiota toiseen versioon. 
 - Microsoft selvittää parhaillaan, miten ennakoivia laatupäivityksiä hallitaan säännellyille ympäristöille sekä maakohtaisten ja julkishallinnon pilvipalveluiden asiakkaille.
-- Ennakoiviin laatupäivityksiin liittyvät ilmoitukset julkaistaan [Microsoft 365 -viestikeskuksessa](https://admin.microsoft.com/AdminPortal/) ja näytetään asiakkaan Microsoft Dynamics Lifecycle Services -projektin bannerissa.
+- Ennakoiviin laatupäivityksiin liittyvät ilmoitukset julkaistaan [Microsoft 365:n viestikeskuksessa](https://admin.microsoft.com/AdminPortal/).
 - Asiakkaille ilmoitetaan ennakoivasta laatupäivityksestä viisi päivää ennen kuin se otetaan käyttöön ympäristössä.
 - Asiakkaat eivät voi peruuttaa tai lykätä ennakoivia laatupäivityksiä.
 - Ennakoivat laatupäivitykset asennetaan aluekohtaisen [suunnitellun ylläpitoajankohdan](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows) aikana.
 - Laatupäivitykset on suunniteltu siten, että niiden aiheuttama ongelmien tai regressioiden riski on pieni, ja Microsoftin tiedot tukevat tätä.
 - Microsoft suosittelee kohdistettua testausta yksittäisiin ongelmiin tai tiettyjä hotfix-korjauksia, jotka liittyvät ennakoivaan laatupäivitykseen.
+- Kaikki eristysympäristöt otetaan käytötön 7. tammikuuta 2023 mennessä. Poikkeuksena ovat eristysympäristöt, jotka on määräysten vuoksi aikasidonnaisia.
+- Ennakoivien laatupäivitysten käyttöönotto tuotannossa alkaa 21. tammikuuta 2023. 
+- Käyttöönotto tuotannosta alkaa vain sellaisten Lifecycle Services -projektien osalta, joiden eristysympäristöt on otettu käyttöön ja jotka vastaanottavat säännöllisesti ennakoivia laatupäivityksiä kaikkiin tuettuihin palvelupäivitysversioihin. Tämä koskee vain asiakasympäristöjä, joita mitkään määräyksistä johtuvat tai lakisääteiset poikkeukset eivät koske.
+- Eristys- ja tuotantoympäristöjen ennakoivien laatupäivitysten täydellinen vuoden 2023 aikataulu on jäljempänä.
+- Kullakin palvelupäivityksellä on aikakin yksi ennakoivien laatupäivitysten meneillään oleva julkaisusuunniteltu tai sellaisen on tarkoitus alkaa. Kun ennakoivien laatupäivitysten prosessi on otettu ympäristöissä käyttöön, niihin kaikkiin saatetaan saada ennalta ajoitettu ennakoiva laatupäivitys siirryttäessä palvelupäivityksen uuteen versioon. Jos tarkoitus on päivittää palvelupäivityksen uuteen versioon, aikataulusta voi tarkistaa, mikä on palvelupäivityksen ennakoivan laatupäivityksen aikataulu. 
+
+> [!Note]
+> Standard-suorituskykytesti (taso4)- ja Premium-suorituskykytesti (taso5) -eristysympäristöt sekä tuotantoympäristöt saavat ennakoivat laatupäivitykset viikonloppuisin. 
 
 ## <a name="focus-on-quality-updates"></a>Laatupäivityksiin keskittyminen
 
@@ -75,33 +83,22 @@ Prosessimuutosten joukko otetaan käyttöön ennen ennakoivan laatupäivityksen 
     > Microsoft Communications -tiimi tutkii meneillään olevaa sähköpostityökalun heikentymistä. Se estää sähköposti-ilmoitusten toimittamisen. Jatka Microsoft 365:n viestikeskuksen seurantaa perehdyttämistä ja ilmoituksia koskevia viestejä varten.
 
 - **Fail Safe -väliversiotestauksen avulla** – Väliversiotestausta käytetään koodimuutosten tallentamiseen laatupäivityksen ohjelmistovirheen ja korjaukseen liittyvän olemassa olevan toiminnon väliversiotestauksen aikana. Jos varmistuksen tai muutoksen poistaminen käytöstä on pakollista ennakoivan käyttöönoton jälkeen, se voidaan tehdä väliversiotestausjärjestelmän avulla muiden virheiden välttämiseksi.
-- **Eristysympäristön synkronoinnin määritys** – Alle 20 prosentilla asiakkaista on nykyään useita eristysympäristöjä. Asiakkailla on käytössä yksi eristysympäristö, jossa versio vastaa tuotantoa. Tämä helpottaa vianmääritystä. Jos asiakas käyttää eristysympäristöä tuotantoympäristön versiota uudemman version testaamisessa, eristysympäristö vastaanottaa uuden version laatupäivityksiä.
+- **Eristysympäristön synkronoinnin määritys** – Porrastetun päivityksen valitsemista erilliseen eristysympäristöön tuotantoympäristön ohella ei tueta tällä hetkellä. Kaikki tason-2 ja tason-3 eristysympäristöt saavat Lifecycle Services -projekteissa ennakoivat päivitykset ainakin 7 päivää ennen tuotantoympäristöjä. Tämä koskee siis vain asiakasympäristöjä, joita mitkään määräyksistä johtuvat tai lakisääteiset poikkeukset eivät koske.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Mikä on laatupäivitysten toimituksen toteutussuunnitelma?
 
-Eristysympäristöjen ennakoivien laatupäivitysten jakelun odotetaan alkavan vuoden 2022 syyskuun lopulla tai lokakuussa Azuren julkisen pilvipalvelun asiakkaille. Myös kokeiluympäristöt alkavat vastaanottaa ennakoivan päivityksen käyttöönottoja samaan aikaan. Syyskuussa kaikille asiakkaille lähetään ilmoitus heidän ympäristöjensä suunnitellusta aikataulusta. Poikkeuksia ennakoivaan päivitysjakeluprosessiin sallitaan vain FDA:n säännösten alaisille asiakkaille. Selvitämme parhaillaan, miten säänneltyjä ympäristöjä sekä maakohtaisen ja julkishallinnon pilvipalvelun asiakkaita tullaan hallinnoimaan.
+Eristysympäristöjen ennakoivien laatupäivitysten jakelu alkoi vuoden 2022 syyskuussa Azuren julkisen pilven asiakkaille. 1. tammikuuta 2023 mennessä ennakoivat laatupäivitykset on otettu käyttöön 99 prosentissa eristysympäristöistä.
 
-Seuraavan kuuden kuukauden jakson aikana lisäämme vähittäin ennakoivia päivityksiä vastaanottavien eristysympäristöjen prosenttiosuutta, kunnes kaikki määritetyt ympäristöt on lisätty. Tämän jälkeen päivitetään tuotantoympäristöt. Koko jakson aikana valvomme, että käyttöönottoprosessi sujuu saumattomasti ja tietopaketit siirtyvät häiriöittä.
+Poikkeuksia ennakoivaan päivitysjakeluprosessiin sallitaan vain FDA:n säännösten alaisille asiakkaille. Selvitämme parhaillaan, miten säänneltyjä ympäristöjä sekä maakohtaisen ja julkishallinnon pilvipalvelun asiakkaita tullaan hallinnoimaan. 
 
-Asiakkaat vastaanottavat jatkuvasti pieniä määriä tietoja, joten ajan tasalla pysyminen on todennäköisesti aiempaa helpompaa. Muutamme päivityksen käyttöönoton väliä, kun prosessi voidaan suorittaa ilman keskeytyksiä. Tämä prosessi toimii jo tehokkaasti Dataverse-ympäristössä ja -sovelluksissa. Prosessi tuo toivottuja parannuksia palvelun laatuun. Haluamme toimia samalla tavalla talous- ja toimintosovellusten kanssa.
+Asiakkaat vastaanottavat jatkuvasti pieniä määriä tietoja, joten ajan tasalla pysyminen on todennäköisesti aiempaa helpompaa. Muutamme päivityksen käyttöönoton väliä, kun prosessi voidaan suorittaa ilman keskeytyksiä. Tämä prosessi toimii jo tehokkaasti Dataverse-ympäristössä ja -sovelluksissa. Prosessi tuo toivottuja parannuksia palvelun laatuun. Samalla tavoin jatketaan toimintaa talous- ja toimintosovellusten osalta.
+
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Milloin tuotantoympäristöjen laatupäivitykset alkavat?
-Tällä hetkellä laatupäivitykset koskevat vain eristysympäristöjä. Tähän tilaan päivitetään tuotantoympäristöjen aloituspäivämäärä, kun käytettävissä on eristysympäristöjen ennakoivien päivitysten konkreettisia tietoja ja mittauksia tuotannon valmiusasteen mittaamiseksi.
+Vuoden 2023 alkupuolella aloitetaan 15. tammikuuta alkaen ennakoivien päivitysten käyttöönotto tuotantoympäristöissä. Ennakoivia päivityksiä vastaanottavien tuotantoympäristöjen prosenttiosuutta lisätään vähitellen. Kohteena ovat vain sellaiset Lifecycle Services -projektin tuotantoympäristöt, joissa ennakoivien päivitysten vastaanotto on jo otettu käyttöön eristysympäristöissä. Asiakkaille, joiden tuotantoympäristöissä päivitykset otetaan käyttöön, ilmoitetaan asiasta ennen päivitystä ilmoituskeskuksessa tai Lifecycle Servicesin ilmoituspalkissa. Eristys- ja tuotantoympäristöjen ennakoivien laatupäivitysten täydellinen vuoden 2023 aikataulu on jäljempänä.
 
 ## <a name="what-is-the-schedule-for-sandbox-proactive-quality-updates"></a>Mikä on eristysympäristön ennakoivien laatupäivitysten aikataulu?
 Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut ylläpitoikkunat alueen mukaan?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
-
-### <a name="proactive-quality-update-release-10028"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.28
-**Sovellusversio: 10.0.1265.89**  
-**Vastaava uusin tietokanta-artikkeli: 745340**
-
-| Asema | Alueet | Valmis aikataulu| Tuleva eristysympäristön aikataulu
-|---|---|---|---|
-| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 15.-18. syyskuuta 2022, 19.-22. syyskuuta 2022 ja 7.-10. lokakuuta 2022 | 25.–28. lokakuuta 2022 |
-| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 25.–28. syyskuuta 2022 ja 7.–10. lokakuuta 2022 | 25.–28. lokakuuta 2022 |
-| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 26.–29. syyskuuta 2022 ja 7.–10. lokakuuta 2022 | 25.–28. lokakuuta 2022 |
-| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 28. syyskuuta - 1. lokakuuta 2022 ja 7.–10. lokakuuta 2022 | 25.–28. lokakuuta 2022 |
-| Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu | Ei suunniteltu |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.29
 **Sovellusversio: 10.0.1326.70**  
@@ -109,23 +106,83 @@ Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut yllä
 
 | Asema | Alueet | Valmis aikataulu | Tuleva eristysympäristön aikataulu|
 |---|---|---|---|
-| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 14.–17.10.2022, 2.–5.11.2022, 13.–16.11.2022 | 5.–8. joulukuuta|
-| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 15.–18.10.2022, 2.–5.11.2022, 13.–16.11.2022 | 5.–8. joulukuuta|
-| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 16.–19.10.2022, 2.–5.11.2022, 13.–16.11.2022 | 5.–8. joulukuuta|
-| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 17.–20.10.2022, 2.–5.11.2022, 15.–18.11.2022 | 5.–8. joulukuuta|
+| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 14.–17. lokakuuta 2022, 2.–5. marraskuuta 2022, 13.–16. marraskuuta 2022, 5.–8. joulukuuta 2022 | 2.–5. tammikuuta 2023 |
+| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 15.–18. lokakuuta 2022, 2.–5. marraskuuta 2022, 13.–16. marraskuuta 2022, 5.–8. joulukuuta 2022 | 2.–5. tammikuuta 2023 |
+| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Länsi-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 16.–19. lokakuuta 2022, 2.–5. marraskuuta 2022, 13.–16. marraskuuta 2022, 5.–8. joulukuuta 2022 | 2.–5. tammikuuta 2023 |
+| Asema 4 | Pohjois-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 17.–20. lokakuuta 2022, 2.–5. marraskuuta 2022, 15.–18. marraskuuta 2022, 5.–8. joulukuuta 2022 | 2.–5. tammikuuta 2023 |
 | Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu | Ei suunniteltu |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a>Ennakoiva laatupäivitysjulkaisu: 10.0.30
 **Sovellusversio: 10.0.1362.77**
 **Vastaava uusin tietokanta-artikkeli: 767597**
 
-| Asema | Alueet | Tuleva eristysympäristön aikataulu |
+| Asema | Alueet | Valmis aikataulu | Tuleva eristysympäristön aikataulu |
+|---|---|---|---|
+| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 1.–4. joulukuuta 2022 |  13.–16. joulukuuta 2022 | 
+| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 2.–5. joulukuuta 2022 |  13.–16. joulukuuta 2022 | 
+| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Pohjois-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 3.–6. joulukuuta 2022 |  13.–16. joulukuuta 2022 | 
+| Asema 4 | Länsi-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 4.–7. joulukuuta 2022 |  13.–16. joulukuuta 2022 | 
+| Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu | Ei suunniteltu |
+
+### <a name="proactive-quality-update-calendar-year-2023-schedule"></a><a name="schedule"></a> Ennakoivan laatupäivityksen aikataulu kalenterivuonna 2023
+
+#### <a name="stations-to-region-mapping"></a><a name="Stations-Regions"></a> Yhdistäminen asemilta alueelle
+
+| Asemat | Alueet |
+|---|---|
+| Asema 1 | Päätetään myöhemmin |
+| Asema 2 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen |
+| Asema 3 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia |
+| Asema 4 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Pohjois-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat |
+| Asema 5 | Länsi-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat |
+| Asema 6 | DoD, Government Community Cloud , Kiina |
+
+
+> [!IMPORTANT]
+> Tämä on vuoden 2023 korkean tason aikataulu. Tarkempi aikataulu on jäljempänä olevassa mallissa, joka koskee tammikuun 10.0.30-versiota 2. Tarkka aikataulu ja sovelluksen versio päivitetään 7 päivää ennen laatupäivityksen julkaisujonon alkamista.
+
+> [!Note]
+> Vain käyttöönotetut tuotantoympäristöt saavat 10.0.30 version 2 julkaisujonon päivityksen; käyttöönotetuille ympäristöille ilmoitetaan siitä erikseen.
+
+| Laatupäivityksen julkaisujono | Julkaisun katkaisuajankohta | Julkaisujonon kesto |
 |---|---|---|
-| Asema 1 | Kanada - keskinen, Kanada - itäinen, Ranska - keskinen, Intia - keskinen, Norja - itäinen, Sveitsi - läntinen | 1.–4. joulukuuta 2022 |
-| Asema 2 | Ranska - etelä, Intia - etelä, Norja - länsi, Sveitsi - pohjoinen, Etelä-Afrikka - pohjoinen, Australia - itä, Yhdistynyt kuningaskunta - etelä, Yhdistyneet arabiemiirikunnat - pohjoinen, Japani - itä, Australia - koillinen, Kaakkois-Aasia | 2.–5. joulukuuta 2022 |
-| Asema 3 | Itä-Aasia, Yhdistynyt kuningaskunta - länsi, Japani - länsi, Brasilia - etelä, Pohjois-Eurooppa, Itä-Yhdysvallat, keskinen Yhdistyneet arabiemiirikunnat | 3.–6. joulukuuta 2022 |
-| Asema 4 | Länsi-Eurooppa, Keski-Yhdysvallat, Länsi-Yhdysvallat | 4.–7. joulukuuta 2022 |
-| Asema 5 | DoD, Government Community Cloud , Kiina | Ei suunniteltu |
+| 10.0.30 versio-2 | 16. joulukuuta 2022 | 2.–29. tammikuuta 2023 |
+| 10.0.30 versio-3 | 13. tammikuuta 2023 | 30. tammikuuta–25.helmikuuta 2023 |
+| 10.0.30 versio-4 | 24. helmikuuta 2023 | 6. maaliskuuta–8. huhtikuuta 2023 |
+| 10.0.31 versio-1 | 3. helmikuuta 2023 | 13. helmikuuta–18.maaliskuuta 2023|
+| 10.0.31 versio-2 | 3. maaliskuuta 2023 | 13. maaliskuuta–15. huhtikuuta 2023|
+| 10.0.31 versio-3 | 14. huhtikuuta 2023 | 24. huhtikuuta–27. toukokuuta 2023|
+| 10.0.32 versio-1 | 31. maaliskuuta 2023 | 10. huhtikuuta–13. toukokuuta 2023|
+| 10.0.32 versio-2 | 28. huhtikuuta 2023 | 8. toukokuuta–10. kesäkuuta 2023|
+| 10.0.32 versio-3 | 26. toukokuuta 2023 | 5. kesäkuuta–8. heinäkuuta 2023|
+| 10.0.33 versio-1 | 28. huhtikuuta 2023 | 8. toukokuuta–10. kesäkuuta 2023|
+| 10.0.33 versio-2 | 26. toukokuuta 2023 | 5. kesäkuuta–8. heinäkuuta 2023|
+| 10.0.33 versio-3 | 14. heinäkuuta 2023 | 24. heinäkuuta–26. elokuuta 2023|
+| 10.0.34 versio-1 | 23. kesäkuuta 2023 | 3. heinäkuuta–5. elokuuta 2023|
+| 10.0.34 versio-2 | 21. heinäkuuta 2023 | 31. heinäkuuta–2. syyskuuta 2023|
+| 10.0.34 versio-3 | 1. syyskuuta 2023 | 11. syyskuuta – 14. lokakuuta 2023|
+| 10.0.35 versio-1 | 28. heinäkuuta 2023 | 7. elokuuta–9. syyskuuta 2023|
+| 10.0.35 versio-2 | 25. elokuuta 2023 | 4. syyskuuta–7. lokakuuta 2023|
+| 10.0.35 versio-3 | 20. lokakuuta 2023 | 30. lokakuuta–16. joulukuuta 2023|
+| 10.0.36 versio-1 | 29. syyskuuta 2023 | 9. lokakuuta–11. marraskuuta 2023|
+| 10.0.36 versio-2 | 27. lokakuuta 2023 | 6. marraskuuta–16. joulukuuta 2023|
+| 10.0.36 versio-3 | 12. tammikuuta 2024 | 22. tammikuuta 2023–24.helmikuuta 2024|
+| 10.0.37 versio-1 | 3. marraskuuta 2023 | 13. marraskuuta 2023–6. tammikuuta 2024|
+| 10.0.37 versio-2 | 30. joulukuuta 2023 | 8. tammikuuta–10. helmikuuta 2024|
+| 10.0.37 versio-3 | 27. tammikuuta 2024 | 5. helmikuuta–9. maaliskuuta 2024|
+| 10.0.37 versio-4 | 23. helmikuuta 2024 | 4. maaliskuuta–6. huhtikuuta 2024|
+
+### <a name="proactive-quality-update-upcoming-10030-release-2-train-schedule"></a><a name="schedule"></a> Proaktiivisen laatupäivityksen tulevan 10.0.30 version-2 julkaisujonon aikataulu
+**Sovellusversio: 10.0.1362.99**
+
+| Asemat | Tuleva eristysympäristön aikataulu | Tulevan tuotantoversion aikataulu |
+|---|---|---|
+| Asema 1 | Ei saatavilla | Ei saatavilla |
+| Asema 2 | 2.–5. tammikuuta 2023 | 21.–22. tammikuuta 2023 |
+| Asema 3 | 3.–6. tammikuuta 2023 | 28.–29. tammikuuta 2023 |
+| Asema 4 | 9.–12. tammikuuta 2023 | Ei saatavilla |
+| Asema 5 | 16.–19. tammikuuta 2023 | Ei saatavilla |
+| Asema 6 | Ei saatavilla | Ei saatavilla |
 
 > [!IMPORTANT] 
 > Microsoft päivittää edellisen aikataulun viisi päivää etukäteen ja lähettää ilmoituksen ympäristöihin, jotka on ajoitettu vastaanottamaan nämä laatupäivitykset. Edellinen aikataulu koskee vain ympäristöjä, joille on ilmoitettu tulevasta päivityksestä. Lisätietoja kunkin alueen yöajasta on kohdassa [Mitkä ovat suunnitellut ylläpitoikkunat alueen mukaan?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
-ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
+ms.openlocfilehash: 180b3c64b9eb506f162071a67b1fa9b728a569ce
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2022
-ms.locfileid: "9802712"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831607"
 ---
 # <a name="financial-report-components"></a>Taloushallinnon raportin komponentit
 
@@ -65,7 +65,7 @@ Voit poistaa rakenneosan lukituksen avaamalla rakenneosan ja valitsemalla sitten
 
 ## <a name="building-block-groups"></a>Rakenneosaryhmät
 
-Rakenneosat ovat raporttia varten luotavia rivien, sarakkeiden, raportointipuiden ja raporttien määrityksiä. Rakenneosaryhmät ovat määritysten ja dimensioyhdistelmien kokoelmia.
+Rakenneosat ovat raporttia varten luotavia rivien, sarakkeiden, raportointipuiden ja raporttien määrityksiä. Rakenneosaryhmät ovat määritysten ja dimensioarvoyhdistelmien kokoelmia.
 
 ### <a name="view-a-building-block-group"></a>Rakenneosaryhmän katseleminen
 
@@ -78,17 +78,17 @@ Voit tarkastella kaikkia rakenneosaryhmään liitettyjä rakenneosia. Voit myös
 
 ### <a name="export-a-building-block-group"></a>Rakenneosaryhmän vieminen
 
-Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhmässä. Voit käyttää vietyä rakenneosan ryhmää varmuuskopiona. Voit myös kopioida viedyt tiedot asennusten välillä. Raporttien suunnitteluohjelma ja rakenneosaryhmä sisältävät yhdessä viitatut fonttityylit ja dimensioyhdistelmät.
+Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhmässä. Voit käyttää vietyä rakenneosan ryhmää varmuuskopiona. Voit myös kopioida viedyt tiedot asennusten välillä. Report Designer ja rakenneosaryhmä sisältävät yhdessä viitatut fonttityylit ja dimensioarvoyhdistelmät.
 
 1. Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Rakenneosaryhmät**.
 2. Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosaryhmä, jonka haluat viedä, ja valitse sitten **Vie**.
 3. Valitse **Vie**-valintaikkunassa vietävät raporttien määritykset.
 
     - Voit viedä kaikki raporttien määritykset ja liittyvät rakenneosat valitsemalla **Valitse kaikki**.
-    - Voit viedä tiettyjä raportti-, rivi-, sarake-, puu- ja dimensioyhdistelmiä valitsemalla kyseisen välilehden ja valitsemalla sitten vietävät kohteet. Voit valita välilehdessä useita kohteita pitämällä Ctrl-näppäintä alhaalla.
+    - Voit viedä tiettyjä raportti-, rivi-, sarake-, puu- ja dimensioarvoyhdistelmiä valitsemalla kyseisen välilehden ja valitsemalla sitten vietävät kohteet. Voit valita välilehdessä useita kohteita pitämällä Ctrl-näppäintä alhaalla.
 
     > [!NOTE]
-    > Kun valitset vietävät raportit, niihin liittyvät rivit, sarakkeet, puut ja dimensioyhdistelmät tulevat valituiksi.
+    > Kun valitset vietävät raportit, niihin liittyvät rivit, sarakkeet, puut ja dimensioarvoyhdistelmät tulevat valituiksi.
 
 4. Kun vietävien kohteiden valinta on tehty, valitse **Vie**.
 5. Valitse **Tallenna nimellä** -valintaikkunassa sijainti, jonne rakenneosaryhmä viedään.
@@ -97,7 +97,7 @@ Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhm
 
 ### <a name="import-a-building-block-group"></a> Rakenneosaryhmän tuominen
 
-Voit viedä rakenneosaryhmän aiemmin luotuun rakenneosaryhmään. Alkuperäiset fonttityylit ja yritysviittaukset säilyvät kaikissa tuoduissa rakenneosaryhmissä, ja ne sisältävät tarvittavat dimensioyhdistelmät.
+Voit viedä rakenneosaryhmän aiemmin luotuun rakenneosaryhmään. Alkuperäiset fonttityylit ja yritysviittaukset säilyvät kaikissa tuoduissa rakenneosaryhmissä, ja ne sisältävät tarvittavat dimensioarvoyhdistelmät.
 
 1. Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Rakenneosaryhmät**.
 2. Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosa, johon haluat tuoda rakenneosaryhmän, ja valitse sitten **Tuo**.
@@ -105,7 +105,7 @@ Voit viedä rakenneosaryhmän aiemmin luotuun rakenneosaryhmään. Alkuperäiset
 4. Valitse **Tuo**-valintaikkunassa tuotavat raporttien määritykset.
 
     - Voit tuoda kaikki raporttien määritykset ja niitä tukevat rakenneosat valitsemalla **Valitse kaikki**.
-    - Voit tuoda tiettyjä raportti-, rivi-, sarake-, puu- tai dimensioyhdistelmiä valitsemalla tuotavat raportti-, rivi-, sarake-, puu- tai dimensioyhdistelmät.
+    - Voit tuoda tiettyjä raportti-, rivi-, sarake-, puu- tai dimensioarvoyhdistelmiä valitsemalla tuotavat raportti-, rivi-, sarake-, puu- tai dimensioarvoyhdistelmät.
 
 5. Kun tuotavien kohteiden valinta on tehty, valitse **Tuo**.
 

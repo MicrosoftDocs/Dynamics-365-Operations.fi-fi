@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: bbb5f3d4c61907243bed404f3ab7bea05c78b1c0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0e1092c0c5c49c6a99dd441c75f545fc831c0b03
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276451"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831554"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Valitse Store Commerce tai Cloud POS
 
@@ -71,7 +71,7 @@ Ympäristön ja lomakekertoimen lisäksi jälleenmyyjien on valittava myymäläl
 |----------------------------|---------------------|-------------------|-------------------|
 | Store Commerce Windowsille | Pilvi tai RSSU       | Kyllä               | Kyllä               |
 | Store Commerce Androidille | Pilvi tai RSSU       | En                | Kyllä               |
-| Store Commerce iOS-ympäristöön     | Pilvi tai RSSU       | En                | En                |
+| Store Commerce iOS-ympäristöön     | Pilvi tai RSSU       | En                | Kyllä               |
 | Cloud POS                  | Pilvi tai RSSU       | En                | En                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
@@ -90,7 +90,7 @@ Jälleenmyyjien on myös pohdittava, miten myyntipiste käyttää oheislaitteita
 |----------------------------|----------------|---------------------|--------------------|
 | Store Commerce Windowsille | Kyllä            | Kyllä                 | Kyllä                |
 | Store Commerce Androidille | En             | Kyllä                 | Kyllä                |
-| Store Commerce iOS-ympäristöön     | En             | En                  | Kyllä                |
+| Store Commerce iOS-ympäristöön     | En             | Kyllä                 | Kyllä                |
 | Cloud POS                  | En             | En                  | Kyllä                |
 
 Lisätietoja laiteasemista kohdassa [Retail-laiteaseman määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).

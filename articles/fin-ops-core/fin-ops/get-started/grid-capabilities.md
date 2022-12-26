@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 6d14bba13dbf701a8c27c10ac2d318b071092bc1
+ms.sourcegitcommit: 77ffeccffff28fbb6ff576864d7abddd412cdab6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405462"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "9852370"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -225,6 +225,7 @@ Tässä osassa luettelo uuden ruudukko-ohjausobjektin tunnetuista ongelmista.
 ### <a name="open-issues"></a>Avoimet asiat
 - Kun **Uusi ruudukon ohjausobjekti** -toiminto on otettu käyttöön, jotkin sivut jatkavat olemassa olevan ruudukon ohjausobjektin käyttämistä. Näin tapahtuu seuraavissa tilanteissa:
  
+    - [Ratkaistu] Ongelma 762533: Odottamaton asiakasohjelman virhe valittaessa korttiluettelon riviä.
     - [Ratkaistu] Sivulla on korttiluettelo, joka hahmonnetaan käyttämällä useaa saraketta.
         - **Uusi ruudukon ohjausobjekti** tukee tätä korttiluettelotyyppiä versiosta 10.0.30 alkaen. Kaikki käyttö, joissa forceLegacyGrid() on mukana tätä tarkoitusta varten, voidaan poistaa. 
     - [Ratkaistu] Sivulla on ryhmitelty korttiluettelo.

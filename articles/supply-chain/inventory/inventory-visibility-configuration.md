@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 2a368535c9644e174d1a2460ac0891c9dc1b1b3f
+ms.sourcegitcommit: 44f0b4ef8d74c86b5c5040be37981e32eb43e1a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9765706"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "9850020"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibilityn määrittäminen
 
@@ -32,6 +32,7 @@ Ennen varaston näkyvyyssovelluksen käytön aloittamista on tehtävä seuraavat
 - [Osion määritykset](#partition-configuration)
 - [Tuotehierarkiaindeksin määritykset](#index-configuration)
 - [Varausmääritykset (valinnainen)](#reservation-configuration)
+- [Kyselyn esilatauksen määritys (valinnainen)](#query-preload-configuration)
 - [Oletusmääritysnäyte](#default-configuration-sample)
 
 ## <a name="prerequisites"></a>Edellytykset
@@ -40,7 +41,7 @@ Varaston näkyvyyden apuohjelma on asennettava ja määritettävä ennen aloitta
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Varaston näkyvyyssovelluksen määrityssivu
 
-Power Appsissa [varaston näkyvyyssovelluksen](inventory-visibility-power-platform.md) **Määritys**-sivu auttaa määrittämään käytettävissä olevan varaston ja alustavan varauksen. Kun apuohjelma on asennettu, oletusmääritys sisältää Microsoft Dynamics 365 Supply Chain Managementin arvon (`fno`-tietolähde). Oletusasetukset voidaan tarkistaa. Määritystä voidaan lisäksi muokata liiketoimintatarpeiden ja ulkoisen järjestelmän varastokirjaustarpeiden mukaan siten, että useissa järjestelmissä käytetään standardoitua varastomuutosten kirjausta, järjestämistä ja kyselyä. Tämän artikkelin jäljellä olevissa osissa selitetään, miten kutakin **Määritys**-sivun osaa käytetään.
+Power Appsissa [varaston näkyvyyssovelluksen](inventory-visibility-power-platform.md) **Määritys**-sivu auttaa määrittämään käytettävissä olevan varaston ja alustavan varauksen. Kun apuohjelma on asennettu, oletusmääritys sisältää Microsoft Dynamics 365 Supply Chain Managementin arvon (`fno`-tietolähde). Oletusasetukset voidaan tarkistaa. Määritystä voidaan lisäksi muokata liiketoimintatarpeiden ja ulkoisen järjestelmän varastokirjaustarpeiden mukaan siten, että useissa järjestelmissä käytetään standardoitua varastomuutosten kirjausta, järjestämistä ja kyselyä. Tämän artikkelin jäljellä olevissa osissa käsitellään **Määritys**-sivun kunkin osan käyttämistä.
 
 Kun määritykset on tehty, muista valita sovelluksessa **Päivitä määritys**.
 
@@ -52,10 +53,13 @@ Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominai
 |---|---|
 | *OnHandReservation* | Tämä ominaisuus auttaa sinua luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Tämä ominaisuus sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Synkronoinnin oletustiheys on 15 minuuttia. Se voidaan määrittää tehtäväksi enintään 5 minuutin välein. Lisätietoja on kohdassa [Varastoyhteenveto](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Tämän ominaisuuden avulla voit esiladata varaston näkyvyyden käytettävissä olevan varastosaldon kyselyitä, joiden avulla voidaan koota käytettävissä olevan varaston luettelot ennalta valituilla dimensioilla. Oletussynkronointitiheys on 15 minuuttia. Lisätietoja on kohdassa [Varastosaldon virtaviivaistetun kyselyn esilataaminen](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
+| *OnHandIndexQueryPreloadBackgroundService* | Tämä ominaisuus noutaa ja tallentaa säännöllisesti käytettävissä olevan varaston yhteenvetotiedot valmiiksi määritettyjen dimensioiden perusteella. Se tuottaa varastoyhteenvedon, joka sisältää vain päivittäiseen liiketoimintaan liittyvä dimensiot ja joka yhteensopiva varastonhallintaprosesseja käyttävien nimikkeiden kanssa. Lisätietoja on kohdissa [Valmiiksi ladattujen käytettävissä olevan varaston kyselyjen ottaminen käyttöön ja määrittäminen](#query-preload-configuration) ja [Käytettävissä olevan varaston virtaviivaistetun kyselyn esilataaminen](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Tämä valinnainen ominaisuus ottaa käyttöön käytettävissä olevan vaihtoaikataulun ja luvattavissa olevan määrän (ATP) ominaisuudet. Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulu ja luvattavissa ole aikataulu](inventory-visibility-available-to-promise.md). |
 | *Varaus* | Tämän valinnaisen ominaisuuden avulla Inventory Visibility voi mahdollistaa varaston suojauksen (ring fencing) ja ylimyynnin hallinnan. Lisätietoja on kohdassa [Varaston näkyvyyden varaston kohdistus](inventory-visibility-allocation.md). |
 | *Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys tukee nimikkeitä, jotka on otettu käyttöön varastonhallintaprosesseissa (WMS). Lisätietoja on kohdassa [Varaston näkyvyyden tuki WMS-nimikkeille](inventory-visibility-whs-support.md). |
+
+> [!IMPORTANT]
+> On suositeltavaa käyttää joko *OnHandIndexQueryPreloadBackgroundService*- tai *OnHandMostSpecificBackgroundService*-ominaisuutta mutta ei molempia. Molempien ominaisuuksien ottaminen käyttää vaikuttaa suorituskykyyn.
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Palvelun päätepisteen etsiminen
 
@@ -178,6 +182,15 @@ Jos tietolähde on Supply Chain Management, fyysisiä oletusmittoja ei tarvitse 
 1. Kirjaudu Power Apps -ympäristöön ja avaa **Varaston näkyvyys**.
 1. Avaa **Määritykset**-sivu.
 1. Valitse **Tietolähde**-välilehdessä tietolähde, johon lisätään fyysiset mitat (esimerkiksi tietolähde `ecommerce`). Valitse sitten **Fyysiset mitat** -osassa **Lisää** ja määritä mitan nimi (esimerkiksi `Returned`, jos haluat tallentaa palautetut määrät tässä tietolähteessä Inventory Visibilityyn). Tallenna muutokset.
+
+### <a name="extended-dimensions"></a>Laajennetut dimensiot
+
+Asiakkaat, jotka haluavat käyttää ulkoisia tietolähteitä tietolähteessä, voivat hyödyntää Dynamics 365:n laajennettavuutta luomalla `InventOnHandChangeEventDimensionSet`- ja `InventInventoryDataServiceBatchJobTask`-luokille [luokkalaajennuksia](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md).
+
+Tietokanta on muistettava synkronoida laajennusten luonnin jälkeen, sillä mukautetut kentät lisätään näin `InventSum`-taulukkoon. Sen jälkeen mukautetut dimensiot voidaan yhdistää tämän artikkelin Dimensiot-osan ohjeiden mukaisesti mihin tahansa varaston kahdeksaan laajennettuun `BaseDimensions`-dimensioon.
+
+> [!NOTE] 
+> Lisätietoja laajennusten luomisesta on kohdassa [Laajennettavuuden aloitussivu](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### <a name="calculated-measures"></a>Laskennalliset mitat
 
@@ -496,6 +509,30 @@ Kelvollisen dimensiojärjestyksen on noudatettava varaushierarkiaa tarkasti dime
 ## <a name="available-to-promise-configuration-optional"></a>Luvattavissa oleva konfiguraatio (valinnainen)
 
 Voit määrittää varaston näkyvyyden sallimaan tulevien käytettävissä olevien muutosten ajoituksen ja luvattavissa olevien (ATP)määrien laskemisen. ATP on tuotteen määrä, joka on saatavilla ja joka voidaan luvata asiakkaalle seuraavalla kaudella. Tämän laskelman käyttö voi lisätä tilauksen täyttämiskykyä merkittävästi. Jotta tätä toimintoa voi käyttää, se on otettava käyttöön **ominaisuuksien hallinta** -välilehdessä ja määritettävä sen asetukset **ATP-asetus**-välilehdissä. Lisätietoja on kohdassa [Varaston näkyvyys - käytettävissä olevan varaston muutosaikataulut ja luvattavissa oleva määrä](inventory-visibility-available-to-promise.md).
+
+## <a name="turn-on-and-configure-preloaded-on-hand-queries-optional"></a><a name="query-preload-configuration"></a>Valmiiksi ladattujen käytettävissä olevan varaston kyselyjen ottaminen käyttöön ja määrittäminen (valinnainen)
+
+Varaston näkyvyys voi noutaa ja tallentaa säännöllisesti käytettävissä olevan varaston yhteenvetotiedot valmiiksi määritettyjen dimensioiden perusteella. Näin saadaan seuraavat edut:
+
+- Selkeä näkymä, johon tallennettava varastoyhteenveto sisältää vain päivittäiseen liiketoimintaan liittyvät dimensiot.
+- Varastoyhteenveto on yhteensopiva sellaisten nimikkeiden kanssa, joissa on otettu käyttöön varastonhallintaprosessit.
+
+Lisätietoja tämän ominaisuuden käyttämisestä sen jälkeen, kun se on määritetty, on kohdassa [Käytettävissä olevan varaston virtaviivaistetun kyselyn esilataaminen](inventory-visibility-power-platform.md#preload-streamlined-onhand-query).
+
+> [!IMPORTANT]
+> On suositeltavaa käyttää joko *OnHandIndexQueryPreloadBackgroundService*- tai *OnHandMostSpecificBackgroundService*-ominaisuutta mutta ei molempia. Molempien ominaisuuksien ottaminen käyttää vaikuttaa suorituskykyyn.
+
+Määritä ominaisuus seuraavasti:
+
+1. Kirjaudu varaston näkyvyyden Power App -sovellukseen.
+1. Valitse **Määritys \> Ominaisuuksien hallinta ja asetukset**.
+1. Jos *OnHandIndexQueryPreloadBackgroundService*-ominaisuus on otettu jo käyttöön, se kannattaa poistaa käytöstä nyt, koska puhdistamisprosessin valmistuminen voi kestää erittäin kauan. Se voidaan ottaa uudelleen käyttöön myöhemmin tässä menettelyssä.
+1. Avaa **Esilatausasetus**-välilehti.
+1. Valitse **Vaihe 1: Esilatauksen tallennustilan tyhjentäminen** -osassa **Tyhjennä**. Tämä asetus tyhjentää tietokannan ja valmistelee sen hyväksymään uudet ryhmittelyasetukset.
+1. Syötä **Vaihe 2: arvoihin perustuvan ryhmittelyn määrittäminen** -osan **Tulosten ryhmittelyperuste** -kenttään pilkuin eroteltu luettelo kentän nimistä, joiden perusteella kyselyn tulokset ryhmitellään. Tätä asetusta ei voi muuttaa sen jälkeen, kun esiladatussa tallennustietokannassa on tietoja, muutoin kuin tyhjentämällä tietokannan edellisessä vaiheessa kuvatulla tavalla.
+1. Valitse **Määritys \> Ominaisuuksien hallinta ja asetukset**.
+1. *OnHandIndexQueryPreloadBackgroundService*-ominaisuus käyttöön.
+1. Hyväksy muutokset valitsemalla **Päivitä määritys** **Määritys**-sivun oikeassa yläkulmassa.
 
 ## <a name="complete-and-update-the-configuration"></a>Määrityksen viimeisteleminen ja päivittäminen
 
